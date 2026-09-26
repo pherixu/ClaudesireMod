@@ -1,0 +1,14 @@
+[
+  
+  {
+    "type": "mutation",
+    "id": "DEVILHUNTER",
+    "name": "Devil Hunter",
+    "points": 1,
+    "description": "You have been bred to slay demons.",
+    "starting_trait": true,
+    "purifiable": false,
+    "valid": false,
+    "spells_learned": [[ "taunt", 1 ],[ "devil_step", 1 ],[ "chrono_haste", 1 ] ]
+  }
+]

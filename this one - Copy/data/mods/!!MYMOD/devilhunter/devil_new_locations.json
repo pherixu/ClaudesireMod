@@ -1,0 +1,402 @@
+[
+  {
+    "type": "overmap_terrain",
+    "id": "devildojo_fire",
+    "copy-from": "generic_city_building",
+    "name": "fire ninjutsu dojo",
+    "sym": "D",
+    "color": "i_red"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devildojo_fire_roof",
+    "copy-from": "generic_city_building",
+    "name": "fire ninjutsu dojo roof",
+    "sym": "D",
+    "color": "i_red"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devildojo_fire_upper_roof",
+    "copy-from": "generic_city_building",
+    "name": "fire ninjutsu dojo roof",
+    "sym": "D",
+    "color": "i_red"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devildojo_water",
+    "copy-from": "generic_city_building",
+    "name": "water ninjutsu dojo",
+    "sym": "D",
+    "color": "i_blue"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devildojo_water_roof",
+    "copy-from": "generic_city_building",
+    "name": "water ninjutsu dojo roof",
+    "sym": "D",
+    "color": "i_blue"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devildojo_water_upper_roof",
+    "copy-from": "generic_city_building",
+    "name": "water ninjutsu dojo roof",
+    "sym": "D",
+    "color": "i_blue"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devildojo_wind",
+    "copy-from": "generic_city_building",
+    "name": "wind ninjutsu dojo",
+    "sym": "D",
+    "color": "i_light_cyan"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devildojo_wind_roof",
+    "copy-from": "generic_city_building",
+    "name": "wind ninjutsu dojo roof",
+    "sym": "D",
+    "color": "i_light_cyan"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devildojo_wind_upper_roof",
+    "copy-from": "generic_city_building",
+    "name": "wind ninjutsu dojo roof",
+    "sym": "D",
+    "color": "i_light_cyan"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devildojo_earth",
+    "copy-from": "generic_city_building",
+    "name": "earth ninjutsu dojo",
+    "sym": "D",
+    "color": "i_brown"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devildojo_earth_roof",
+    "copy-from": "generic_city_building",
+    "name": "earth ninjutsu dojo roof",
+    "sym": "D",
+    "color": "i_brown"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devildojo_earth_upper_roof",
+    "copy-from": "generic_city_building",
+    "name": "earth ninjutsu dojo roof",
+    "sym": "D",
+    "color": "i_brown"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devildojo_lightning",
+    "copy-from": "generic_city_building",
+    "name": "lightning ninjutsu dojo",
+    "sym": "D",
+    "color": "i_yellow"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devildojo_lightning_roof",
+    "copy-from": "generic_city_building",
+    "name": "lightning ninjutsu dojo roof",
+    "sym": "D",
+    "color": "i_yellow"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devildojo_lightning_upper_roof",
+    "copy-from": "generic_city_building",
+    "name": "lightning ninjutsu dojo roof",
+    "sym": "D",
+    "color": "i_yellow"
+  },
+  {
+    "type": "overmap_special",
+    "id": "devilmilsurplus",
+    "overmaps": [
+      {
+        "point": [
+          0,
+          0,
+          0
+        ],
+        "overmap": "devilmilsurplus_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          1
+        ],
+        "overmap": "devilmilsurplus_roof_north"
+      }
+    ],
+    "locations": [
+      "wilderness"
+    ],
+    "city_distance": [
+      20,
+      -1
+    ],
+    "city_sizes": [
+      0,
+      20
+    ],
+    "occurrences": [
+      1,
+      3
+    ],
+    "flags": [
+      "ELECTRIC_GRID"
+    ]
+  },
+  {
+    "type": "overmap_special",
+    "id": "devildojo_fire",
+    "overmaps": [
+      {
+        "point": [
+          0,
+          0,
+          0
+        ],
+        "overmap": "devildojo_fire_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          1
+        ],
+        "overmap": "devildojo_fire_roof_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          2
+        ],
+        "overmap": "devildojo_fire_upper_roof_north"
+      }
+    ],
+    "locations": [
+      "wilderness"
+    ],
+    "city_distance": [
+      20,
+      -1
+    ],
+    "city_sizes": [
+      0,
+      20
+    ],
+    "occurrences": [
+      1,
+      2
+    ],
+    "flags": [
+      "ELECTRIC_GRID"
+    ]
+  },
+  {
+    "type": "overmap_special",
+    "id": "devildojo_water",
+    "overmaps": [
+      {
+        "point": [
+          0,
+          0,
+          0
+        ],
+        "overmap": "devildojo_water_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          1
+        ],
+        "overmap": "devildojo_water_roof_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          2
+        ],
+        "overmap": "devildojo_water_upper_roof_north"
+      }
+    ],
+    "locations": [
+      "wilderness"
+    ],
+    "city_distance": [
+      20,
+      -1
+    ],
+    "city_sizes": [
+      0,
+      20
+    ],
+    "occurrences": [
+      1,
+      2
+    ],
+    "flags": [
+      "ELECTRIC_GRID"
+    ]
+  },
+  {
+    "type": "overmap_special",
+    "id": "devildojo_wind",
+    "overmaps": [
+      {
+        "point": [
+          0,
+          0,
+          0
+        ],
+        "overmap": "devildojo_wind_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          1
+        ],
+        "overmap": "devildojo_wind_roof_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          2
+        ],
+        "overmap": "devildojo_wind_upper_roof_north"
+      }
+    ],
+    "locations": [
+      "wilderness"
+    ],
+    "city_distance": [
+      20,
+      -1
+    ],
+    "city_sizes": [
+      0,
+      20
+    ],
+    "occurrences": [
+      1,
+      2
+    ],
+    "flags": [
+      "ELECTRIC_GRID"
+    ]
+  },
+  {
+    "type": "overmap_special",
+    "id": "devildojo_earth",
+    "overmaps": [
+      {
+        "point": [
+          0,
+          0,
+          0
+        ],
+        "overmap": "devildojo_earth_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          1
+        ],
+        "overmap": "devildojo_earth_roof_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          2
+        ],
+        "overmap": "devildojo_earth_upper_roof_north"
+      }
+    ],
+    "locations": [
+      "wilderness"
+    ],
+    "city_distance": [
+      20,
+      -1
+    ],
+    "city_sizes": [
+      0,
+      20
+    ],
+    "occurrences": [
+      1,
+      2
+    ],
+    "flags": [
+      "ELECTRIC_GRID"
+    ]
+  },
+  {
+    "type": "overmap_special",
+    "id": "devildojo_lightning",
+    "overmaps": [
+      {
+        "point": [
+          0,
+          0,
+          0
+        ],
+        "overmap": "devildojo_lightning_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          1
+        ],
+        "overmap": "devildojo_lightning_roof_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          2
+        ],
+        "overmap": "devildojo_lightning_upper_roof_north"
+      }
+    ],
+    "locations": [
+      "wilderness"
+    ],
+    "city_distance": [
+      20,
+      -1
+    ],
+    "city_sizes": [
+      0,
+      20
+    ],
+    "occurrences": [
+      1,
+      2
+    ],
+    "flags": [
+      "ELECTRIC_GRID"
+    ]
+  }
+]

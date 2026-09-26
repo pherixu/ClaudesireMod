@@ -1,0 +1,44 @@
+[
+  {
+    "id": "noldori_warbow",
+    "copy-from": "bow_base",
+    "type": "GUN",
+    "looks_like": "compgreatbow",
+    "symbol": "(",
+    "color": "light_cyan",
+    "name": { "str": "Noldori Warbow" },
+    "description": "An enormous composite warbow of Noldori craft, its limbs banded in rune-etched silver. Patterned after the greatest bows of old and then surpassed in every way: it looses arrows harder, truer, and faster than anything forged by human hands.",
+    "price": "0 cent",
+    "price_postapoc": "0 cent",
+    "material": [ "wood", "rune" ],
+    "extend": {
+      "flags": [ "STR_DRAW", "ALLOWS_WINGS", "NO_REPAIR", "NO_SALVAGE" ]
+    },
+    "min_strength": 15,
+    "weight": "3000 g",
+    "volume": "6 L",
+    "armor_data": {
+      "covers": [ "torso" ],
+      "encumbrance": 20
+    },
+    "bashing": 17,
+    "loudness": 40,
+    "durability": 10,
+    "ranged_damage": {
+      "damage_type": "stab",
+      "amount": 115,
+      "armor_penetration": 6
+    },
+    "range": 34,
+    "dispersion": 350,
+    "reload": 40,
+    "valid_mod_locations": [
+      [ "grip", 1 ],
+      [ "underbarrel", 1 ],
+      [ "sights", 1 ],
+      [ "accessories", 2 ],
+      [ "stabilizer", 1 ],
+      [ "dampening", 1 ]
+    ]
+  }
+]

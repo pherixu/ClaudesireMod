@@ -1,0 +1,5366 @@
+[
+  {
+    "id": "chakra_focus",
+    "type": "SPELL",
+    "name": {
+      "str": "Chakra Focusing Stance"
+    },
+    "description": "you clasp your hands together and focus all of your energy into generating chakra.",
+    "valid_targets": [
+      "self"
+    ],
+    "min_damage": 33,
+    "max_damage": 33,
+    "max_level": 1,
+    "effect": "recover_energy",
+    "effect_str": "MANA",
+    "energy_source": "STAMINA",
+    "base_casting_time": 50,
+    "base_energy_cost": 333,
+    "flags": [
+      "SOMATIC",
+      "PAIN_NORESIST",
+      "NO_EXPLOSION_VFX"
+    ]
+  },
+  {
+    "type": "SPELL",
+    "id": "body_flicker",
+    "name": "Body Flicker Jutsu",
+    "description": "The user focuses all of their chakra into rapidly moving their body from place to place.",
+    "valid_targets": [
+      "hostile",
+      "ground"
+    ],
+    "flags": [
+      "NO_FAIL"
+    ],
+    "effect": "dash",
+    "min_damage": 1,
+    "max_damage": 1,
+    "damage_increment": 1,
+    "damage_type": "bash",
+    "min_range": 36,
+    "max_range": 56,
+    "range_increment": 1,
+    "min_aoe": 1,
+    "max_aoe": 1,
+    "base_casting_time": 21,
+    "casting_time_increment": -1,
+    "final_casting_time": 1,
+    "base_energy_cost": 182,
+    "difficulty": -10,
+    "extra_effects": [
+      {
+        "id": "handsign_drain",
+        "min_level": 1,
+        "hit_self": true
+      }
+    ],
+    "max_level": 20,
+    "energy_source": "MANA"
+  },
+  {
+    "id": "genjutsu",
+    "type": "SPELL",
+    "name": "Visual Genjutsu",
+    "description": "You project your chakra into the mind of the target, stunning them and causing them to see illusions of your choice. Takes a large amount of chakra.",
+    "valid_targets": [
+      "hostile"
+    ],
+    "flags": [
+      "NO_FAIL",
+      "NO_HANDS",
+      "NO_LEGS"
+    ],
+    "effect": "mod_moves",
+    "energy_source": "MANA",
+    "difficulty": -1,
+    "max_level": 50,
+    "base_casting_time": 1000,
+    "casting_time_increment": -20,
+    "final_casting_time": 11,
+    "base_energy_cost": 15000,
+    "min_aoe": 0,
+    "max_aoe": 0,
+    "min_damage": -1000,
+    "damage_increment": -500,
+    "max_damage": -26000,
+    "min_range": 30,
+    "max_range": 30
+  },
+  {
+    "id": "chakra_healing",
+    "type": "SPELL",
+    "name": {
+      "str": "Healing Jutsu"
+    },
+    "description": "By placing your hand on the target you are able to spend some chakra to heal damage.",
+    "valid_targets": [
+      "self",
+      "ally"
+    ],
+    "min_damage": -18,
+    "max_damage": -48,
+    "damage_increment": -1,
+    "max_level": 20,
+    "min_range": 1,
+    "max_range": 1,
+    "range_increment": 0.5,
+    "effect": "target_attack",
+    "base_casting_time": 250,
+    "casting_time_increment": -11,
+    "final_casting_time": 25,
+    "base_energy_cost": 1000,
+    "scale_int": true,
+    "flags": [
+      "SOMATIC",
+      "NO_LEGS"
+    ],
+    "extra_effects": [
+      {
+        "id": "handsign_drain",
+        "min_level": 1,
+        "hit_self": true
+      }
+    ],
+    "spell_class": "BIOMANCER",
+    "difficulty": 8,
+    "energy_source": "MANA"
+  },
+  {
+    "id": "byakugan_armor",
+    "type": "TOOL_ARMOR",
+    "name": {
+      "str": "Byakugan Sight"
+    },
+    "description": "Using the gift of your dojutsu allows you to see farther than sight would allow.",
+    "weight": "300 g",
+    "volume": "500 ml",
+    "price": "25 USD",
+    "price_postapoc": "50 cent",
+    "material": [
+      "chakra"
+    ],
+    "symbol": "[",
+    "color": "dark_gray",
+    "covers": [
+      "head",
+      "mouth",
+      "eyes",
+      "torso",
+      "arms",
+      "hands",
+      "legs",
+      "feet"
+    ],
+    "coverage": 100,
+    "warmth": 0,
+    "material_thickness": 2,
+    "artifact_data": {
+      "effects_worn": [
+        "AEP_CLAIRVOYANCE_PLUS"
+      ]
+    },
+    "flags": [
+      "VARSIZE",
+      "SKINTIGHT",
+      "NO_TAKEOFF",
+      "POWERARMOR_COMPATIBLE",
+      "AURA",
+      "WATER_FRIENDLY"
+    ]
+  },
+  {
+    "id": "byakugan_sight",
+    "type": "SPELL",
+    "name": {
+      "str": "Byakugan Sight"
+    },
+    "description": "Creates a chakra cloak made from lightning to protect the user!",
+    "valid_targets": [
+      "self"
+    ],
+    "flags": [
+      "NO_HANDS",
+      "NO_FAIL",
+      "NO_LEGS",
+      "NO_EXPLOSION_VFX"
+    ],
+    "min_damage": 1,
+    "max_damage": 1,
+    "effect": "spawn_item",
+    "effect_str": "byakugan_armor",
+    "energy_source": "MANA",
+    "extra_effects": [
+      {
+        "id": "handsign_drain",
+        "min_level": 1,
+        "hit_self": true
+      }
+    ],
+    "difficulty": -10,
+    "max_level": 1,
+    "base_casting_time": 1,
+    "casting_time_increment": -3,
+    "final_casting_time": 1,
+    "base_energy_cost": 100,
+    "min_duration": 1000,
+    "max_duration": 1000,
+    "duration_increment": 2000
+  },
+  {
+    "id": "handsign_drain",
+    "type": "SPELL",
+    "name": {
+      "str": "Stamina Drain Per Jutsu Handsign"
+    },
+    "description": "the old stamina drain spells are redundant but im too lazy to remove them -221 per level.",
+    "valid_targets": [
+      "self"
+    ],
+    "min_damage": -221,
+    "max_damage": -9724,
+    "damage_increment": -221,
+    "max_level": 44,
+    "effect": "recover_energy",
+    "effect_str": "STAMINA",
+    "energy_source": "STAMINA",
+    "base_casting_time": 1,
+    "base_energy_cost": 1,
+    "energy_increment": 1,
+    "flags": [
+      "SOMATIC",
+      "VERBAL",
+      "PAIN_NORESIST",
+      "NO_EXPLOSION_VFX"
+    ],
+    "final_energy_cost": 1
+  },
+  {
+    "id": "drain1547",
+    "type": "SPELL",
+    "name": {
+      "str": "Stamina Drain 1547"
+    },
+    "description": "1547 stamina damage for 4 sign jutsu.",
+    "valid_targets": [
+      "self"
+    ],
+    "min_damage": -1547,
+    "max_damage": -1547,
+    "damage_increment": 2,
+    "max_level": 1,
+    "effect": "recover_energy",
+    "effect_str": "STAMINA",
+    "energy_source": "STAMINA",
+    "base_casting_time": 1,
+    "base_energy_cost": 1,
+    "energy_increment": 1,
+    "flags": [
+      "SOMATIC",
+      "VERBAL",
+      "PAIN_NORESIST",
+      "NO_EXPLOSION_VFX"
+    ],
+    "final_energy_cost": 1
+  },
+  {
+    "id": "drain1105",
+    "type": "SPELL",
+    "name": {
+      "str": "Stamina Drain 1105"
+    },
+    "description": "1105 stamina damage for 4 sign jutsu.",
+    "valid_targets": [
+      "self"
+    ],
+    "min_damage": -1105,
+    "max_damage": -1105,
+    "damage_increment": 2,
+    "max_level": 1,
+    "effect": "recover_energy",
+    "effect_str": "STAMINA",
+    "energy_source": "STAMINA",
+    "base_casting_time": 1,
+    "base_energy_cost": 1,
+    "energy_increment": 1,
+    "flags": [
+      "SOMATIC",
+      "VERBAL",
+      "PAIN_NORESIST",
+      "NO_EXPLOSION_VFX"
+    ],
+    "final_energy_cost": 1
+  },
+  {
+    "id": "drain1326",
+    "type": "SPELL",
+    "name": {
+      "str": "Stamina Drain 1326"
+    },
+    "description": "1326 stamina damage for 4 sign jutsu.",
+    "valid_targets": [
+      "self"
+    ],
+    "min_damage": -1326,
+    "max_damage": -1326,
+    "damage_increment": 2,
+    "max_level": 1,
+    "effect": "recover_energy",
+    "effect_str": "STAMINA",
+    "energy_source": "STAMINA",
+    "base_casting_time": 1,
+    "base_energy_cost": 1,
+    "energy_increment": 1,
+    "flags": [
+      "SOMATIC",
+      "VERBAL",
+      "PAIN_NORESIST",
+      "NO_EXPLOSION_VFX"
+    ],
+    "final_energy_cost": 1
+  },
+  {
+    "id": "drain884",
+    "type": "SPELL",
+    "name": {
+      "str": "Stamina Drain 884"
+    },
+    "description": "884 stamina damage for 4 sign jutsu.",
+    "valid_targets": [
+      "self"
+    ],
+    "min_damage": -884,
+    "max_damage": -884,
+    "damage_increment": 2,
+    "max_level": 1,
+    "effect": "recover_energy",
+    "effect_str": "STAMINA",
+    "energy_source": "STAMINA",
+    "base_casting_time": 1,
+    "base_energy_cost": 1,
+    "energy_increment": 1,
+    "flags": [
+      "SOMATIC",
+      "VERBAL",
+      "PAIN_NORESIST",
+      "NO_EXPLOSION_VFX"
+    ],
+    "final_energy_cost": 1
+  },
+  {
+    "id": "drain663",
+    "type": "SPELL",
+    "name": {
+      "str": "Stamina Drain 663"
+    },
+    "description": "663 stamina damage for 3 sign jutsu.",
+    "valid_targets": [
+      "self"
+    ],
+    "min_damage": -663,
+    "max_damage": -663,
+    "damage_increment": 2,
+    "max_level": 1,
+    "effect": "recover_energy",
+    "effect_str": "STAMINA",
+    "energy_source": "STAMINA",
+    "base_casting_time": 1,
+    "base_energy_cost": 1,
+    "energy_increment": 1,
+    "flags": [
+      "SOMATIC",
+      "VERBAL",
+      "PAIN_NORESIST",
+      "NO_EXPLOSION_VFX"
+    ],
+    "final_energy_cost": 1
+  },
+  {
+    "id": "drain442",
+    "type": "SPELL",
+    "name": {
+      "str": "Stamina Drain 442"
+    },
+    "description": "221 stamina damage for 2 sign jutsu.",
+    "valid_targets": [
+      "self"
+    ],
+    "min_damage": -442,
+    "max_damage": -442,
+    "damage_increment": 2,
+    "max_level": 1,
+    "effect": "recover_energy",
+    "effect_str": "STAMINA",
+    "energy_source": "STAMINA",
+    "base_casting_time": 1,
+    "base_energy_cost": 1,
+    "energy_increment": 1,
+    "flags": [
+      "SOMATIC",
+      "VERBAL",
+      "PAIN_NORESIST",
+      "NO_EXPLOSION_VFX"
+    ],
+    "final_energy_cost": 1
+  },
+  {
+    "id": "drain221",
+    "type": "SPELL",
+    "name": {
+      "str": "Stamina Drain 221"
+    },
+    "description": "221 stamina damage for 1 sign jutsu.",
+    "valid_targets": [
+      "self"
+    ],
+    "min_damage": -221,
+    "max_damage": -221,
+    "damage_increment": 2,
+    "max_level": 1,
+    "effect": "recover_energy",
+    "effect_str": "STAMINA",
+    "energy_source": "STAMINA",
+    "base_casting_time": 1,
+    "base_energy_cost": 1,
+    "energy_increment": 1,
+    "flags": [
+      "SOMATIC",
+      "VERBAL",
+      "PAIN_NORESIST",
+      "NO_EXPLOSION_VFX"
+    ],
+    "final_energy_cost": 1
+  },
+  {
+    "id": "chidori_senbon_extra",
+    "type": "SPELL",
+    "name": {
+      "str": "Chidori Duplication Technique"
+    },
+    "effect": "projectile_attack",
+    "description": "Throw a ninja tool and use chakra to duplicate the object in mid-air.",
+    "valid_targets": [
+      "hostile"
+    ],
+    "min_damage": 75,
+    "damage_increment": 5,
+    "max_damage": 185,
+    "difficulty": -10,
+    "max_level": 20,
+    "min_range": 24,
+    "max_range": 44,
+    "range_increment": 1,
+    "energy_source": "MANA",
+    "base_energy_cost": 10,
+    "base_casting_time": 35,
+    "final_casting_time": 35,
+    "sound_description": "a zing",
+    "flags": [
+      "NO_FAIL",
+      "NO_LEGS"
+    ],
+    "damage_type": "electric"
+  },
+  {
+    "id": "chakra_aim_extra",
+    "type": "SPELL",
+    "name": {
+      "str": "Shuriken Duplication Technique"
+    },
+    "effect": "projectile_attack",
+    "description": "Throw a ninja tool and use chakra to duplicate the object in mid-air.",
+    "valid_targets": [
+      "hostile"
+    ],
+    "min_damage": 75,
+    "damage_increment": 5,
+    "max_damage": 185,
+    "difficulty": -10,
+    "max_level": 20,
+    "min_range": 24,
+    "max_range": 44,
+    "range_increment": 1,
+    "energy_source": "MANA",
+    "base_energy_cost": 10,
+    "base_casting_time": 35,
+    "final_casting_time": 35,
+    "sound_description": "a zing",
+    "flags": [
+      "NO_FAIL",
+      "NO_LEGS"
+    ],
+    "damage_type": "cut"
+  },
+  {
+    "id": "chakra_aim",
+    "type": "SPELL",
+    "name": {
+      "str": "Shuriken Duplication Technique"
+    },
+    "description": "Throw a ninja tool and use chakra to duplicate the object in mid-air.",
+    "valid_targets": [
+      "hostile"
+    ],
+    "min_damage": 1,
+    "max_damage": 20,
+    "//": "level 20 will max out your number of summons",
+    "components": "spell_components_allthrow",
+    "damage_increment": 1,
+    "max_level": 1,
+    "difficulty": 1,
+    "effect": "projectile_attack",
+    "energy_source": "MANA",
+    "base_energy_cost": 1,
+    "extra_effects": [
+      {
+        "id": "chakra_aim_extra",
+        "max_level": 20
+      }
+    ],
+    "//2": "one minute",
+    "base_casting_time": 1,
+    "min_range": 23,
+    "max_range": 43,
+    "min_aoe": 0,
+    "max_aoe": 0,
+    "flags": [
+      "NO_FAIL",
+      "WONDER",
+      "NO_EXPLOSION_VFX"
+    ],
+    "min_duration": 1000,
+    "max_duration": 1000,
+    "duration_increment": 4000
+  },
+  {
+    "id": "fire_shuriken",
+    "type": "SPELL",
+    "name": {
+      "str": "Fire Style: Fire Shuriken"
+    },
+    "effect": "projectile_attack",
+    "description": "Use chakra to direct a thrown ninja tool with precise accuracy and increased power.",
+    "valid_targets": [
+      "hostile"
+    ],
+    "effect_str": "onfire",
+    "min_damage": 75,
+    "damage_increment": 10,
+    "max_damage": 285,
+    "difficulty": -10,
+    "max_level": 20,
+    "min_range": 24,
+    "max_range": 44,
+    "range_increment": 1,
+    "duration_increment": 100,
+    "min_duration": 200,
+    "max_duration": 2200,
+    "energy_source": "MANA",
+    "components": "spell_components_shuriken",
+    "base_energy_cost": 10,
+    "base_casting_time": 35,
+    "final_casting_time": 35,
+    "sound_description": "a zing",
+    "flags": [
+      "NO_FAIL",
+      "NO_LEGS"
+    ],
+    "damage_type": "fire"
+  },
+  {
+    "id": "chidori_senbon",
+    "type": "SPELL",
+    "name": {
+      "str": "Lightning Style: Chidori Senbon Barrage"
+    },
+    "effect": "projectile_attack",
+    "description": "Create a chidori in your hand and focus it into a handful of senbon, then by projecting your chakra outwards you create a flurry of paralyzing electrical senbon damaging foes.",
+    "valid_targets": [
+      "hostile"
+    ],
+    "effect_str": "paralyzepoison",
+    "min_damage": 75,
+    "damage_increment": 10,
+    "max_damage": 285,
+    "difficulty": -10,
+    "max_level": 20,
+    "min_range": 24,
+    "max_range": 44,
+    "range_increment": 1,
+    "duration_increment": 100,
+    "min_duration": 200,
+    "max_duration": 2200,
+    "energy_source": "MANA",
+    "components": "spell_components_senbon",
+    "extra_effects": [
+      {
+        "id": "chidori_senbon_extra"
+      },
+      {
+        "id": "chidori_senbon_extra"
+      },
+      {
+        "id": "chidori_senbon_extra"
+      },
+      {
+        "id": "chidori_senbon_extra"
+      },
+      {
+        "id": "chidori_senbon_extra"
+      },
+      {
+        "id": "chidori_senbon_extra"
+      },
+      {
+        "id": "chidori_senbon_extra"
+      },
+      {
+        "id": "chidori_senbon_extra"
+      },
+      {
+        "id": "chidori_senbon_extra"
+      },
+      {
+        "id": "chidori_senbon_extra"
+      },
+      {
+        "id": "drain1547",
+        "hit_self": true
+      }
+    ],
+    "base_energy_cost": 10,
+    "base_casting_time": 35,
+    "final_casting_time": 35,
+    "sound_description": "a zing",
+    "flags": [
+      "NO_FAIL",
+      "NO_LEGS"
+    ],
+    "damage_type": "electric"
+  },
+  {
+    "id": "flying_sparrow",
+    "type": "SPELL",
+    "name": {
+      "str": "Wind Style: Flying Sparrow"
+    },
+    "effect": "line_attack",
+    "description": "Infuse wind chakra into a kunai and launch it dealing damage in a line.",
+    "valid_targets": [
+      "hostile"
+    ],
+    "min_damage": 75,
+    "damage_increment": 15,
+    "max_damage": 385,
+    "difficulty": -10,
+    "max_level": 20,
+    "min_aoe": 2,
+    "max_aoe": 2,
+    "min_range": 24,
+    "max_range": 34,
+    "range_increment": 0.5,
+    "energy_source": "MANA",
+    "components": "spell_components_kunai",
+    "extra_effects": [
+      {
+        "id": "handsign_drain",
+        "min_level": 1,
+        "hit_self": true
+      }
+    ],
+    "base_energy_cost": 10,
+    "base_casting_time": 35,
+    "final_casting_time": 35,
+    "sound_description": "a zing",
+    "flags": [
+      "NO_FAIL",
+      "NO_LEGS"
+    ],
+    "damage_type": "stab"
+  },
+  {
+    "id": "summon_tornado",
+    "type": "SPELL",
+    "name": {
+      "str": "Wind Style: Great Slashing Tornado "
+    },
+    "description": "You summon a chakra construct to aid you in battle.",
+    "valid_targets": [
+      "ground"
+    ],
+    "min_damage": 1,
+    "max_damage": 5,
+    "//": "level 20 will max out your number of summons",
+    "damage_increment": 0.25,
+    "max_level": 20,
+    "difficulty": -10,
+    "effect": "summon",
+    "effect_str": "mon_tornado_chakra",
+    "extra_effects": [
+      {
+        "id": "handsign_drain",
+        "min_level": 44,
+        "hit_self": true
+      }
+    ],
+    "energy_source": "MANA",
+    "base_energy_cost": 4004,
+    "//2": "one minute",
+    "base_casting_time": 1804,
+    "casting_time_increment": -3,
+    "final_casting_time": 1650,
+    "min_range": 11,
+    "max_range": 11,
+    "min_aoe": 3,
+    "max_aoe": 3,
+    "flags": [
+      "SILENT",
+      "VERBAL",
+      "NO_EXPLOSION_VFX"
+    ],
+    "min_duration": 9999000,
+    "max_duration": 9999000,
+    "duration_increment": 4000
+  },
+  {
+    "type": "SPELL",
+    "id": "airbullet",
+    "name": "Wind Style: Air Bullet",
+    "description": "You use chakra to form the air into a small dense ball and launch it at an enemy.",
+    "valid_targets": [
+      "hostile"
+    ],
+    "flags": [
+      "NO_FAIL"
+    ],
+    "effect": "projectile_attack",
+    "min_damage": 85,
+    "damage_increment": 10,
+    "max_damage": 285,
+    "damage_type": "bullet",
+    "min_range": 55,
+    "max_range": 55,
+    "min_aoe": 0,
+    "max_aoe": 0,
+    "base_casting_time": 41,
+    "casting_time_increment": -1,
+    "final_casting_time": 21,
+    "base_energy_cost": 182,
+    "difficulty": -10,
+    "extra_effects": [
+      {
+        "id": "handsign_drain",
+        "min_level": 2,
+        "hit_self": true
+      }
+    ],
+    "max_level": 20,
+    "energy_source": "MANA"
+  },
+  {
+    "id": "galepalm",
+    "type": "SPELL",
+    "name": "Wind Style: Gale Palm",
+    "description": "The user focuses chakra into their palm and releases it quickly to repel the target long distances.",
+    "effect": "directed_push",
+    "valid_targets": [
+      "hostile",
+      "ground"
+    ],
+    "flags": [
+      "SILENT",
+      "NO_EXPLOSION_VFX",
+      "RANDOM_DAMAGE",
+      "SOMATIC"
+    ],
+    "min_range": 1,
+    "max_range": 1,
+    "melee_dam": [
+      "physical",
+      "elemental"
+    ],
+    "max_level": 20,
+    "difficulty": -10,
+    "min_damage": 18,
+    "damage_increment": 1,
+    "max_damage": 38,
+    "min_aoe": 0,
+    "max_aoe": 0,
+    "energy_source": "MANA",
+    "base_casting_time": 41,
+    "casting_time_increment": -1,
+    "final_casting_time": 21,
+    "extra_effects": [
+      {
+        "id": "handsign_drain",
+        "min_level": 2,
+        "hit_self": true
+      }
+    ],
+    "base_energy_cost": 273
+  },
+  {
+    "id": "air_push",
+    "type": "SPELL",
+    "name": "Air Push",
+    "description": "Channel the natural energy of the universe to push an enemy.",
+    "effect": "directed_push",
+    "valid_targets": [
+      "hostile",
+      "ground"
+    ],
+    "flags": [
+      "SILENT",
+      "NO_EXPLOSION_VFX",
+      "RANDOM_DAMAGE",
+      "SOMATIC"
+    ],
+    "min_range": 10,
+    "range_increment": 1,
+    "max_range": 30,
+    "max_level": 20,
+    "difficulty": -10,
+    "min_damage": 4,
+    "damage_increment": 1,
+    "max_damage": 24,
+    "min_aoe": 2,
+    "max_aoe": 2,
+    "base_casting_time": 100,
+    "final_casting_time": 10,
+    "energy_source": "MANA",
+    "base_energy_cost": 1,
+    "final_energy_cost": 1,
+    "casting_time_increment": -10,
+    "energy_increment": -100
+  },
+  {
+    "type": "SPELL",
+    "id": "airpush",
+    "name": "Wind Style: Great Vacuum Cannon",
+    "description": "The user expels chakra from their mouth to blast an area with compressed air causing knockback and damage.",
+    "valid_targets": [
+      "hostile"
+    ],
+    "flags": [
+      "NO_FAIL"
+    ],
+    "effect": "projectile_attack",
+    "min_damage": 45,
+    "max_damage": 245,
+    "damage_increment": 10,
+    "damage_type": "bash",
+    "min_range": 35,
+    "max_range": 35,
+    "min_aoe": 2,
+    "max_aoe": 2,
+    "base_casting_time": 41,
+    "casting_time_increment": -1,
+    "final_casting_time": 21,
+    "base_energy_cost": 273,
+    "difficulty": -10,
+    "extra_effects": [
+      {
+        "id": "handsign_drain",
+        "min_level": 3,
+        "hit_self": true
+      },
+      {
+        "id": "air_push"
+      }
+    ],
+    "max_level": 20,
+    "energy_source": "MANA"
+  },
+  {
+    "type": "SPELL",
+    "id": "rasenshuriken",
+    "name": "Wind Style: Rasenshuriken",
+    "description": "An advanced form of rasengan in which the user focuses even more chakra into their hand giving the rasengan the ability to be thrown.",
+    "valid_targets": [
+      "hostile",
+      "ground"
+    ],
+    "flags": [
+      "NO_FAIL"
+    ],
+    "effect": "projectile_attack",
+    "min_damage": 200,
+    "max_damage": 800,
+    "damage_increment": 15,
+    "damage_type": "true",
+    "min_range": 1,
+    "range_increment": 2,
+    "max_range": 41,
+    "min_aoe": 1,
+    "max_aoe": 11,
+    "aoe_increment": 0.5,
+    "base_casting_time": 41,
+    "casting_time_increment": -1,
+    "final_casting_time": 21,
+    "base_energy_cost": 1365,
+    "difficulty": -10,
+    "extra_effects": [
+      {
+        "id": "handsign_drain",
+        "min_level": 15,
+        "hit_self": true
+      }
+    ],
+    "max_level": 40,
+    "energy_source": "MANA"
+  },
+  {
+    "type": "SPELL",
+    "id": "rasengan",
+    "name": "Wind Style: Rasengan",
+    "description": "The user focuses chakra into a fine point in the palm of their hand, compressing and rotating the chakra until it's immensely powerful.",
+    "valid_targets": [
+      "hostile",
+      "ground"
+    ],
+    "flags": [
+      "NO_FAIL"
+    ],
+    "effect": "target_attack",
+    "melee_dam": [
+      "physical",
+      "elemental"
+    ],
+    "min_damage": 195,
+    "max_damage": 795,
+    "damage_increment": 15,
+    "damage_type": "true",
+    "min_range": 1,
+    "max_range": 1,
+    "min_aoe": 0,
+    "max_aoe": 0,
+    "base_casting_time": 41,
+    "casting_time_increment": -1,
+    "final_casting_time": 21,
+    "base_energy_cost": 546,
+    "difficulty": -10,
+    "extra_effects": [
+      {
+        "id": "handsign_drain",
+        "min_level": 6,
+        "hit_self": true
+      }
+    ],
+    "max_level": 40,
+    "energy_source": "MANA"
+  },
+  {
+    "type": "SPELL",
+    "id": "parapunch",
+    "name": "Lightning Style: Paralyzing Punch",
+    "description": "The user infuses lightning chakra into their hand and overwhelms the targets nervous system with a strike, stunning them and making them unable to control their body.",
+    "valid_targets": [
+      "hostile",
+      "ground"
+    ],
+    "flags": [
+      "NO_FAIL"
+    ],
+    "effect": "target_attack",
+    "melee_dam": [
+      "physical",
+      "elemental"
+    ],
+    "effect_str": "stunned",
+    "min_damage": 105,
+    "damage_increment": 10,
+    "max_damage": 305,
+    "damage_type": "bash",
+    "min_range": 1,
+    "max_range": 1,
+    "min_duration": 1000,
+    "duration_increment": 500,
+    "max_duration": 11000,
+    "min_aoe": 0,
+    "max_aoe": 0,
+    "base_casting_time": 41,
+    "casting_time_increment": -1,
+    "final_casting_time": 21,
+    "base_energy_cost": 364,
+    "difficulty": -10,
+    "extra_effects": [
+      {
+        "id": "handsign_drain",
+        "min_level": 4,
+        "hit_self": true
+      }
+    ],
+    "max_level": 20,
+    "energy_source": "MANA"
+  },
+  {
+    "type": "SPELL",
+    "id": "lariat_dmg",
+    "name": "lariat dmg ef",
+    "description": "The user gathers lightning chakra into their hand, propelling themselves forward at extreme speeds to attack their opponent.",
+    "valid_targets": [
+      "hostile",
+      "ground"
+    ],
+    "flags": [
+      "NO_FAIL"
+    ],
+    "effect": "target_attack",
+    "min_damage": 75,
+    "max_damage": 275,
+    "damage_increment": 1,
+    "damage_type": "electric",
+    "min_range": 16,
+    "max_range": 16,
+    "min_aoe": 0,
+    "max_aoe": 0,
+    "base_casting_time": 41,
+    "casting_time_increment": -1,
+    "final_casting_time": 21,
+    "melee_dam": [
+      "physical",
+      "elemental"
+    ],
+    "base_energy_cost": 182,
+    "difficulty": -10,
+    "max_level": 20,
+    "energy_source": "MANA"
+  },
+  {
+    "type": "SPELL",
+    "id": "lariat",
+    "name": "Lightning Style: Lariat",
+    "description": "The user infuses lightning chakra into their body and flashes forward in a blitz, causing high damage and knocking them down.",
+    "valid_targets": [
+      "hostile",
+      "ground"
+    ],
+    "flags": [
+      "NO_FAIL"
+    ],
+    "effect": "dash",
+    "effect_str": "downed",
+    "melee_dam": [
+      "physical",
+      "elemental"
+    ],
+    "min_damage": 75,
+    "damage_increment": 10,
+    "max_damage": 275,
+    "damage_type": "bash",
+    "min_range": 33,
+    "max_range": 53,
+    "range_increment": 1,
+    "min_aoe": 1,
+    "max_aoe": 1,
+    "base_casting_time": 41,
+    "casting_time_increment": -2,
+    "final_casting_time": 1,
+    "base_energy_cost": 364,
+    "difficulty": -10,
+    "extra_effects": [
+      {
+        "id": "handsign_drain",
+        "min_level": 4,
+        "hit_self": true
+      },
+      {
+        "id": "lariat_dmg"
+      }
+    ],
+    "max_level": 20,
+    "energy_source": "MANA"
+  },
+  {
+    "type": "SPELL",
+    "id": "chidori_dmg",
+    "name": "chidori dmg ef",
+    "description": "The user gathers lightning chakra into their hand, propelling themselves forward at extreme speeds to attack their opponent.",
+    "valid_targets": [
+      "hostile",
+      "ground"
+    ],
+    "flags": [
+      "NO_FAIL"
+    ],
+    "effect": "target_attack",
+    "min_damage": 175,
+    "max_damage": 375,
+    "damage_increment": 10,
+    "damage_type": "electric",
+    "min_range": 16,
+    "max_range": 16,
+    "min_aoe": 0,
+    "max_aoe": 0,
+    "base_casting_time": 41,
+    "casting_time_increment": -1,
+    "melee_dam": [
+      "physical",
+      "elemental"
+    ],
+    "final_casting_time": 21,
+    "base_energy_cost": 182,
+    "difficulty": -10,
+    "max_level": 20,
+    "energy_source": "MANA"
+  },
+  {
+    "type": "SPELL",
+    "id": "chidori",
+    "name": "Lightning Style: Chidori",
+    "description": "The user gathers lightning chakra into their hand, propelling themselves forward at extreme speeds to attack their opponent.",
+    "valid_targets": [
+      "hostile",
+      "ground"
+    ],
+    "flags": [
+      "NO_FAIL"
+    ],
+    "effect": "dash",
+    "min_damage": 175,
+    "max_damage": 375,
+    "damage_increment": 10,
+    "damage_type": "electric",
+    "min_range": 16,
+    "max_range": 36,
+    "range_increment": 1,
+    "min_aoe": 1,
+    "max_aoe": 1,
+    "base_casting_time": 41,
+    "casting_time_increment": -1,
+    "final_casting_time": 21,
+    "melee_dam": [
+      "physical",
+      "elemental"
+    ],
+    "base_energy_cost": 182,
+    "difficulty": -10,
+    "extra_effects": [
+      {
+        "id": "handsign_drain",
+        "min_level": 3,
+        "hit_self": true
+      },
+      {
+        "id": "chidori_dmg"
+      }
+    ],
+    "max_level": 20,
+    "energy_source": "MANA"
+  },
+  {
+    "id": "summon_kirin",
+    "type": "SPELL",
+    "name": {
+      "str": "Lightning Style: Kirin"
+    },
+    "description": "You summon a chakra construct to aid you in battle.",
+    "valid_targets": [
+      "ground"
+    ],
+    "min_damage": 1,
+    "max_damage": 1,
+    "//": "level 20 will max out your number of summons",
+    "damage_increment": 0.25,
+    "max_level": 20,
+    "difficulty": -10,
+    "effect": "summon",
+    "effect_str": "mon_kirin",
+    "extra_effects": [
+      {
+        "id": "handsign_drain",
+        "min_level": 44,
+        "hit_self": true
+      }
+    ],
+    "energy_source": "MANA",
+    "base_energy_cost": 14004,
+    "//2": "one minute",
+    "base_casting_time": 3333,
+    "casting_time_increment": -100,
+    "final_casting_time": 1111,
+    "min_range": 11,
+    "max_range": 31,
+    "range_increment": 1,
+    "min_aoe": 3,
+    "max_aoe": 3,
+    "flags": [
+      "SILENT",
+      "VERBAL",
+      "NO_EXPLOSION_VFX"
+    ],
+    "min_duration": 9999000,
+    "max_duration": 9999000,
+    "duration_increment": 4000
+  },
+  {
+    "id": "chidori_blade",
+    "type": "SPELL",
+    "name": {
+      "str": "Lightning Style: Chidori Blade"
+    },
+    "description": "An advanced form of chidori wherein you project the lightning in a straight line out towards your target from a range rather than charging in.",
+    "effect": "line_attack",
+    "valid_targets": [
+      "ally",
+      "hostile",
+      "ground"
+    ],
+    "flags": [
+      "SOMATIC",
+      "VERBAL",
+      "NO_LEGS"
+    ],
+    "field_id": "fd_electricity",
+    "field_chance": 1,
+    "min_field_intensity": 2,
+    "max_field_intensity": 3,
+    "max_level": 20,
+    "min_damage": 185,
+    "damage_increment": 10,
+    "max_damage": 385,
+    "min_aoe": 0,
+    "max_aoe": 0,
+    "min_range": 17,
+    "max_range": 47,
+    "range_increment": 1.5,
+    "extra_effects": [
+      {
+        "id": "handsign_drain",
+        "min_level": 3,
+        "hit_self": true
+      }
+    ],
+    "base_energy_cost": 273,
+    "base_casting_time": 123,
+    "casting_time_increment": -3,
+    "final_casting_time": 61,
+    "energy_source": "MANA",
+    "difficulty": -10,
+    "damage_type": "electric"
+  },
+  {
+    "id": "flashpillar",
+    "type": "SPELL",
+    "name": "Lightning Style: Flash Pillars",
+    "description": "Summons a multitude of lightning pillars that blind targets in an area.",
+    "effect": "target_attack",
+    "flags": [
+      "SILENT",
+      "NO_EXPLOSION_VFX"
+    ],
+    "valid_targets": [
+      "hostile",
+      "ground"
+    ],
+    "effect_str": "blind",
+    "field_id": "fd_electricity",
+    "field_chance": 4,
+    "min_field_intensity": 3,
+    "max_field_intensity": 3,
+    "extra_effects": [
+      {
+        "id": "drain884",
+        "hit_self": true
+      }
+    ],
+    "min_range": 19,
+    "range_increment": 1,
+    "max_range": 39,
+    "min_aoe": 5,
+    "max_aoe": 15,
+    "aoe_increment": 1,
+    "max_level": 20,
+    "min_damage": 15,
+    "min_duration": 1000,
+    "max_damage": 15,
+    "difficulty": -10,
+    "base_casting_time": 164,
+    "casting_time_increment": -3,
+    "final_casting_time": 101,
+    "energy_source": "MANA",
+    "damage_type": "electric",
+    "base_energy_cost": 364
+  },
+  {
+    "id": "elecconejutsu",
+    "type": "SPELL",
+    "name": {
+      "str": "Lightning Style: Lightning Strike"
+    },
+    "description": "You clasp your hands together and shoot out lightning in a narrow cone at the target.",
+    "effect": "cone_attack",
+    "valid_targets": [
+      "self",
+      "ally",
+      "hostile",
+      "ground"
+    ],
+    "flags": [
+      "SOMATIC",
+      "VERBAL",
+      "NO_LEGS"
+    ],
+    "field_id": "fd_electricity",
+    "field_chance": 3,
+    "min_field_intensity": 2,
+    "max_field_intensity": 3,
+    "max_level": 20,
+    "min_damage": 45,
+    "damage_increment": 10,
+    "max_damage": 245,
+    "min_aoe": 36,
+    "aoe_increment": 1,
+    "max_aoe": 56,
+    "min_range": 17,
+    "max_range": 27,
+    "range_increment": 1,
+    "extra_effects": [
+      {
+        "id": "handsign_drain",
+        "min_level": 3,
+        "hit_self": true
+      }
+    ],
+    "base_energy_cost": 273,
+    "base_casting_time": 123,
+    "casting_time_increment": -3,
+    "final_casting_time": 61,
+    "energy_source": "MANA",
+    "difficulty": -10,
+    "damage_type": "electric"
+  },
+  {
+    "id": "lightcloudjutsu",
+    "type": "SPELL",
+    "name": {
+      "str": "Lightning Style: Thunder Bolts"
+    },
+    "description": "You clasp your hands together and emit lightning all around.",
+    "effect": "cone_attack",
+    "valid_targets": [
+      "self",
+      "ally",
+      "hostile",
+      "ground"
+    ],
+    "flags": [
+      "SOMATIC",
+      "VERBAL",
+      "NO_LEGS"
+    ],
+    "field_id": "fd_electricity",
+    "field_chance": 3,
+    "min_field_intensity": 2,
+    "max_field_intensity": 3,
+    "max_level": 20,
+    "min_damage": 45,
+    "max_damage": 245,
+    "damage_increment": 10,
+    "min_aoe": 359,
+    "max_aoe": 359,
+    "min_range": 6,
+    "max_range": 26,
+    "range_increment": 1,
+    "extra_effects": [
+      {
+        "id": "handsign_drain",
+        "min_level": 6,
+        "hit_self": true
+      }
+    ],
+    "base_energy_cost": 546,
+    "base_casting_time": 246,
+    "casting_time_increment": -3,
+    "final_casting_time": 161,
+    "energy_source": "MANA",
+    "difficulty": -10,
+    "damage_type": "electric"
+  },
+  {
+    "id": "elec_chakra_cloak",
+    "type": "TOOL_ARMOR",
+    "name": {
+      "str": "Lightning Style Chakra Cloak"
+    },
+    "description": "The only form of nintaijutsu known to shinobi, an infusion of chakra that manifests a physical form, protecting and enhancing the user.",
+    "weight": "300 g",
+    "volume": "500 ml",
+    "price": "25 USD",
+    "price_postapoc": "50 cent",
+    "material": [
+      "chakra"
+    ],
+    "symbol": "[",
+    "color": "dark_gray",
+    "covers": [
+      "head",
+      "mouth",
+      "eyes",
+      "torso",
+      "arms",
+      "hands",
+      "legs",
+      "feet"
+    ],
+    "coverage": 100,
+    "warmth": 0,
+    "material_thickness": 2,
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            {
+              "value": "BONUS_DODGE",
+              "add": 4
+            },
+            {
+              "value": "SPEED",
+              "add": 100
+            },
+            {
+              "value": "MOVE_COST",
+              "add": -10
+            },
+            {
+              "value": "ATTACK_COST",
+              "add": -10
+            },
+            {
+              "value": "ARMOR_ELEC",
+              "add": -20
+            },
+            {
+              "value": "DEXTERITY",
+              "add": 8
+            },
+            {
+              "value": "STRENGTH",
+              "add": 8
+            }
+          ]
+        }
+      ]
+    },
+    "flags": [
+      "VARSIZE",
+      "SKINTIGHT",
+      "NO_TAKEOFF",
+      "POWERARMOR_COMPATIBLE",
+      "WATER_FRIENDLY"
+    ]
+  },
+  {
+    "id": "elec_armor",
+    "type": "SPELL",
+    "name": {
+      "str": "Lightning Style: Armor"
+    },
+    "description": "Creates a chakra cloak made from lightning to protect the user!",
+    "valid_targets": [
+      "self"
+    ],
+    "flags": [
+      "CONCENTRATE",
+      "LOUD",
+      "VERBAL",
+      "NO_LEGS",
+      "NO_EXPLOSION_VFX"
+    ],
+    "min_damage": 1,
+    "max_damage": 1,
+    "effect": "spawn_item",
+    "effect_str": "elec_chakra_cloak",
+    "energy_source": "MANA",
+    "extra_effects": [
+      {
+        "id": "handsign_drain",
+        "min_level": 10,
+        "hit_self": true
+      }
+    ],
+    "difficulty": -10,
+    "max_level": 20,
+    "base_casting_time": 410,
+    "casting_time_increment": -3,
+    "final_casting_time": 301,
+    "base_energy_cost": 910,
+    "min_duration": 10000,
+    "max_duration": 30000,
+    "duration_increment": 2000
+  },
+  {
+    "id": "fireconejutsu",
+    "type": "SPELL",
+    "name": {
+      "str": "Fire Style: Dragon Flame Jutsu"
+    },
+    "description": "You clasp your hands together and emit flames a great sea using chakra.",
+    "effect": "cone_attack",
+    "valid_targets": [
+      "self",
+      "ally",
+      "hostile",
+      "ground"
+    ],
+    "flags": [
+      "SOMATIC",
+      "VERBAL",
+      "NO_LEGS"
+    ],
+    "field_id": "fd_fire",
+    "field_chance": 5,
+    "min_field_intensity": 2,
+    "max_field_intensity": 3,
+    "max_level": 20,
+    "min_damage": 75,
+    "max_damage": 275,
+    "damage_increment": 10,
+    "min_aoe": 75,
+    "max_aoe": 75,
+    "aoe_increment": 0.1,
+    "min_range": 17,
+    "max_range": 27,
+    "range_increment": 1,
+    "extra_effects": [
+      {
+        "id": "drain1326",
+        "hit_self": true
+      }
+    ],
+    "base_casting_time": 164,
+    "casting_time_increment": -3,
+    "final_casting_time": 101,
+    "base_energy_cost": 546,
+    "energy_source": "MANA",
+    "difficulty": -10,
+    "damage_type": "fire"
+  },
+  {
+    "id": "firesmoke",
+    "type": "SPELL",
+    "name": "Fire Style: Burning Ash",
+    "description": "Spawns smoke.",
+    "effect": "target_attack",
+    "flags": [
+      "SILENT",
+      "NO_EXPLOSION_VFX"
+    ],
+    "valid_targets": [
+      "hostile",
+      "ground"
+    ],
+    "field_id": "fd_smoke",
+    "field_chance": 2,
+    "min_field_intensity": 3,
+    "max_field_intensity": 3,
+    "extra_effects": [
+      {
+        "id": "drain884",
+        "hit_self": true
+      }
+    ],
+    "min_range": 19,
+    "max_range": 39,
+    "range_increment": 1,
+    "min_aoe": 4,
+    "max_aoe": 14,
+    "aoe_increment": 1,
+    "max_level": 20,
+    "min_damage": 25,
+    "damage_increment": 36,
+    "max_damage": 225,
+    "min_duration": 500,
+    "max_duration": 1500,
+    "duration_increment": 100,
+    "difficulty": -10,
+    "base_casting_time": 164,
+    "casting_time_increment": -3,
+    "final_casting_time": 101,
+    "energy_source": "MANA",
+    "damage_type": "fire",
+    "base_energy_cost": 364
+  },
+  {
+    "id": "foxfire_spell",
+    "type": "SPELL",
+    "name": {
+      "str": "Fire Style: Fox Fire Jutsu"
+    },
+    "description": "Spawns 10 fireballs around the user to use freely, while floating around the user the chakra fireballs provide defenses as well, a forbidden jutsu due to it's highly destructive power.",
+    "valid_targets": [
+      "self"
+    ],
+    "flags": [
+      "SOMATIC",
+      "LOUD",
+      "NO_EXPLOSION_VFX"
+    ],
+    "min_damage": 1,
+    "max_damage": 1,
+    "effect": "spawn_item",
+    "effect_str": "foxfire_aura",
+    "energy_source": "MANA",
+    "difficulty": -10,
+    "max_level": 20,
+    "extra_effects": [
+      {
+        "id": "drain1326",
+        "hit_self": true
+      }
+    ],
+    "base_casting_time": 246,
+    "casting_time_increment": -3,
+    "final_casting_time": 161,
+    "base_energy_cost": 1546,
+    "min_duration": 10000,
+    "duration_increment": 5000,
+    "max_duration": 100000
+  },
+  {
+    "id": "fireballjutsu",
+    "type": "SPELL",
+    "name": {
+      "str": "Fire Style: Fireball Jutsu"
+    },
+    "description": "You clasp your hands together and emit flames in the shape of a sphere using chakra.",
+    "effect": "projectile_attack",
+    "valid_targets": [
+      "self",
+      "ally",
+      "hostile",
+      "ground"
+    ],
+    "flags": [
+      "SOMATIC",
+      "VERBAL",
+      "NO_LEGS"
+    ],
+    "field_id": "fd_fire",
+    "field_chance": 5,
+    "min_field_intensity": 2,
+    "max_field_intensity": 3,
+    "max_level": 20,
+    "min_damage": 200,
+    "damage_increment": 15,
+    "max_damage": 500,
+    "min_aoe": 7,
+    "max_aoe": 7,
+    "min_range": 25,
+    "max_range": 35,
+    "range_increment": 1,
+    "extra_effects": [
+      {
+        "id": "drain1326",
+        "hit_self": true
+      }
+    ],
+    "base_casting_time": 246,
+    "casting_time_increment": -3,
+    "final_casting_time": 161,
+    "base_energy_cost": 546,
+    "energy_source": "MANA",
+    "difficulty": -10,
+    "damage_type": "fire"
+  },
+  {
+    "id": "firefield_jutsu",
+    "type": "SPELL",
+    "name": {
+      "str": "Fire Style: Giant Fire Blast"
+    },
+    "description": "You clasp your hands together and emit intense flames in an area using chakra.",
+    "effect": "projectile_attack",
+    "valid_targets": [
+      "self",
+      "ally",
+      "hostile",
+      "ground"
+    ],
+    "flags": [
+      "SOMATIC",
+      "VERBAL",
+      "NO_LEGS"
+    ],
+    "field_id": "fd_fire",
+    "field_chance": 1,
+    "min_field_intensity": 3,
+    "max_field_intensity": 3,
+    "max_level": 20,
+    "min_damage": 3,
+    "max_damage": 23,
+    "damage_increment": 1,
+    "min_aoe": 7,
+    "max_aoe": 17,
+    "aoe_increment": 0.5,
+    "min_range": 17,
+    "max_range": 37,
+    "range_increment": 1,
+    "extra_effects": [
+      {
+        "id": "drain1326",
+        "hit_self": true
+      }
+    ],
+    "base_casting_time": 164,
+    "casting_time_increment": -3,
+    "final_casting_time": 101,
+    "base_energy_cost": 546,
+    "energy_source": "MANA",
+    "difficulty": -10,
+    "damage_type": "fire"
+  },
+  {
+    "id": "foxfireball",
+    "type": "SPELL",
+    "name": {
+      "str": "Fire Style: Fox Fire Ball Jutsu"
+    },
+    "description": "You clasp your hands together and emit flames in the shape of a sphere using chakra.",
+    "effect": "projectile_attack",
+    "valid_targets": [
+      "self",
+      "ally",
+      "hostile",
+      "ground"
+    ],
+    "flags": [
+      "SOMATIC",
+      "VERBAL",
+      "NO_LEGS"
+    ],
+    "field_id": "fd_fire",
+    "field_chance": 5,
+    "min_field_intensity": 2,
+    "max_field_intensity": 3,
+    "max_level": 20,
+    "min_damage": 1000,
+    "max_damage": 1000,
+    "min_aoe": 4,
+    "max_aoe": 4,
+    "min_range": 25,
+    "max_range": 25,
+    "base_casting_time": 125,
+    "casting_time_increment": -3,
+    "final_casting_time": 55,
+    "base_energy_cost": 1,
+    "energy_source": "MANA",
+    "difficulty": -10,
+    "damage_type": "fire"
+  },
+  {
+    "id": "summon_mines",
+    "type": "SPELL",
+    "name": {
+      "str": "Fire Style: Paper Bomb Mine"
+    },
+    "description": "You summon chakra constructs that explode enemies.",
+    "valid_targets": [
+      "ground"
+    ],
+    "min_damage": 1,
+    "max_damage": 11,
+    "//": "level 20 will max out your number of summons",
+    "damage_increment": 0.5,
+    "max_level": 20,
+    "difficulty": -10,
+    "effect": "summon",
+    "effect_str": "mon_paper_mine",
+    "extra_effects": [
+      {
+        "id": "drain1326",
+        "hit_self": true
+      }
+    ],
+    "components": "spell_components_pbomb",
+    "energy_source": "MANA",
+    "base_energy_cost": 546,
+    "//2": "one minute",
+    "base_casting_time": 246,
+    "casting_time_increment": -13,
+    "final_casting_time": 61,
+    "min_range": 11,
+    "max_range": 31,
+    "range_increment": 1,
+    "aoe_increment": 0.5,
+    "min_aoe": 3,
+    "max_aoe": 9,
+    "flags": [
+      "SILENT",
+      "VERBAL",
+      "NO_EXPLOSION_VFX"
+    ],
+    "min_duration": 120000,
+    "max_duration": 315000,
+    "duration_increment": 4000
+  },
+  {
+    "id": "summon_phoenix",
+    "type": "SPELL",
+    "name": {
+      "str": "Fire Style: Phoenix Fire Jutsu"
+    },
+    "description": "You summon 3 chakra constructs that chase and explode enemies.",
+    "valid_targets": [
+      "ground"
+    ],
+    "min_damage": 3,
+    "max_damage": 13,
+    "//": "level 20 will max out your number of summons",
+    "damage_increment": 0.5,
+    "max_level": 20,
+    "difficulty": -10,
+    "effect": "summon",
+    "effect_str": "mon_phoenix_small",
+    "extra_effects": [
+      {
+        "id": "drain1326",
+        "hit_self": true
+      }
+    ],
+    "energy_source": "MANA",
+    "base_energy_cost": 546,
+    "//2": "one minute",
+    "base_casting_time": 246,
+    "casting_time_increment": -3,
+    "final_casting_time": 161,
+    "min_range": 11,
+    "max_range": 21,
+    "range_increment": 1,
+    "aoe_increment": 0.5,
+    "min_aoe": 3,
+    "max_aoe": 9,
+    "flags": [
+      "SILENT",
+      "VERBAL",
+      "NO_EXPLOSION_VFX"
+    ],
+    "min_duration": 120000,
+    "max_duration": 315000,
+    "duration_increment": 4000
+  },
+  {
+    "id": "summon_largephoenix",
+    "type": "SPELL",
+    "name": {
+      "str": "Fire Style: Giant Phoenix Fire Jutsu"
+    },
+    "description": "You summon 1 giant phoenix that chases and explode enemies.",
+    "valid_targets": [
+      "ground"
+    ],
+    "min_damage": 1,
+    "max_damage": 5,
+    "//": "level 20 will max out your number of summons",
+    "damage_increment": 0.25,
+    "max_level": 20,
+    "difficulty": -10,
+    "effect": "summon",
+    "effect_str": "mon_phoenix_large",
+    "energy_source": "MANA",
+    "base_energy_cost": 1146,
+    "extra_effects": [
+      {
+        "id": "drain1326",
+        "hit_self": true
+      }
+    ],
+    "//2": "one minute",
+    "base_casting_time": 246,
+    "casting_time_increment": -3,
+    "final_casting_time": 161,
+    "min_range": 11,
+    "max_range": 11,
+    "min_aoe": 1,
+    "max_aoe": 1,
+    "flags": [
+      "SILENT",
+      "VERBAL",
+      "NO_EXPLOSION_VFX"
+    ],
+    "min_duration": 120000,
+    "max_duration": 315000,
+    "duration_increment": 4000
+  },
+  {
+    "id": "waterbody_aura",
+    "type": "TOOL_ARMOR",
+    "name": {
+      "str": "Water Body Jutsu"
+    },
+    "description": "an aura of 10 fireballs that can be cast freely.",
+    "weight": "3 kg",
+    "volume": "3 L",
+    "price": "50 USD",
+    "price_postapoc": "5 USD",
+    "to_hit": -1,
+    "bashing": 8,
+    "material": [
+      "rune"
+    ],
+    "symbol": "[",
+    "color": "blue",
+    "covers": [
+      "legs",
+      "torso",
+      "arms",
+      "hands",
+      "head",
+      "feet",
+      "mouth",
+      "eyes"
+    ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            {
+              "value": "BONUS_DODGE",
+              "add": 4
+            },
+            {
+              "value": "ARMOR_BASH",
+              "add": -55
+            },
+            {
+              "value": "ARMOR_CUT",
+              "add": -55
+            },
+            {
+              "value": "ARMOR_STAB",
+              "add": -55
+            },
+            {
+              "value": "ARMOR_BULLET",
+              "add": -85
+            },
+            {
+              "value": "ARMOR_ACID",
+              "add": -5
+            },
+            {
+              "value": "ARMOR_COLD",
+              "add": -25
+            },
+            {
+              "value": "ARMOR_HEAT",
+              "add": -100
+            },
+            {
+              "value": "ARMOR_ELEC",
+              "add": 20
+            }
+          ]
+        }
+      ]
+    },
+    "coverage": 90,
+    "encumbrance": 1,
+    "warmth": 5,
+    "material_thickness": 5,
+    "techniques": [
+      "WBLOCK_2"
+    ],
+    "flags": [
+      "OVERSIZE",
+      "AURA",
+      "BLOCK_WHILE_WORN",
+      "POWERARMOR_COMPATIBLE"
+    ]
+  },
+  {
+    "id": "foxfire_aura",
+    "type": "TOOL_ARMOR",
+    "name": {
+      "str": "Fox Fire Jutsu"
+    },
+    "description": "an aura of 10 fireballs that can be cast freely.",
+    "weight": "3 kg",
+    "volume": "3 L",
+    "price": "50 USD",
+    "price_postapoc": "5 USD",
+    "to_hit": -1,
+    "bashing": 8,
+    "material": [
+      "rune"
+    ],
+    "symbol": "[",
+    "color": "brown",
+    "covers": [
+      "arm_either",
+      "hand_either"
+    ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            {
+              "value": "BONUS_DODGE",
+              "add": 4
+            },
+            {
+              "value": "ARMOR_BASH",
+              "add": -15
+            },
+            {
+              "value": "ARMOR_CUT",
+              "add": -15
+            },
+            {
+              "value": "ARMOR_BULLET",
+              "add": -25
+            },
+            {
+              "value": "ARMOR_ACID",
+              "add": -15
+            },
+            {
+              "value": "ARMOR_COLD",
+              "add": -25
+            },
+            {
+              "value": "ARMOR_HEAT",
+              "add": -55
+            },
+            {
+              "value": "ARMOR_ELEC",
+              "add": -15
+            },
+            {
+              "value": "DEXTERITY",
+              "add": 8
+            },
+            {
+              "value": "STRENGTH",
+              "add": 8
+            }
+          ]
+        }
+      ]
+    },
+    "coverage": 90,
+    "encumbrance": 1,
+    "warmth": 5,
+    "material_thickness": 1,
+    "initial_charges": 10,
+    "max_charges": 10,
+    "charges_per_use": 1,
+    "use_action": [
+      {
+        "type": "cast_spell",
+        "spell_id": "foxfireball",
+        "no_fail": true,
+        "level": 1,
+        "need_wielding": false
+      }
+    ],
+    "techniques": [
+      "WBLOCK_2"
+    ],
+    "flags": [
+      "OVERSIZE",
+      "AURA",
+      "BLOCK_WHILE_WORN",
+      "POWERARMOR_COMPATIBLE"
+    ]
+  },
+  {
+    "type": "AMMO",
+    "id": "water_tendril",
+    "price": "20 USD",
+    "copy-from": "bolt_cf",
+    "name": {
+      "str": "water tendrils"
+    },
+    "symbol": "=",
+    "description": "Thin tendrils of chakra infused water that have solidified into projectiles.",
+    "material": [
+      "superalloy"
+    ],
+    "volume": "250 ml",
+    "price_postapoc": "15 USD",
+    "ammo_type": "bolt",
+    "weight": "30 g",
+    "dont_recover_one_in": 1
+  },
+  {
+    "id": "chakra_eel_gun",
+    "copy-from": "xbow_base",
+    "type": "GUN",
+    "name": {
+      "str": "hazardous reactor - monster version"
+    },
+    "description": "It's too crazy.",
+    "price": "324 USD",
+    "material": [
+      "iron"
+    ],
+    "extend": {
+      "flags": [
+        "FIRE_TWOHAND",
+        "TRADER_AVOID",
+        "RADIOACTIVE",
+        "LEAK_DAM"
+      ]
+    },
+    "weight": "6803 g",
+    "volume": "5 L",
+    "ammo_effects": [
+      "PLASMA",
+      "DRAW_AS_LINE"
+    ],
+    "price_postapoc": "40 USD",
+    "bashing": 20,
+    "to_hit": -1,
+    "ranged_damage": {
+      "damage_type": "bullet",
+      "amount": 111
+    },
+    "range": 44,
+    "dispersion": 3000,
+    "recoil": 30,
+    "durability": 8,
+    "reload": 100,
+    "valid_mod_locations": [
+      [
+        "sling",
+        1
+      ],
+      [
+        "dampening",
+        1
+      ],
+      [
+        "accessories",
+        1
+      ],
+      [
+        "sights",
+        1
+      ]
+    ]
+  },
+  {
+    "id": "tornado_gun",
+    "copy-from": "xbow_base",
+    "type": "GUN",
+    "name": {
+      "str": "hazardous reactor - monster version"
+    },
+    "description": "It's too crazy.",
+    "price": "324 USD",
+    "material": [
+      "iron"
+    ],
+    "extend": {
+      "flags": [
+        "FIRE_TWOHAND",
+        "TRADER_AVOID",
+        "RADIOACTIVE",
+        "LEAK_DAM"
+      ]
+    },
+    "weight": "6803 g",
+    "volume": "5 L",
+    "ammo_effects": [
+      "LARGE_BEANBAG"
+    ],
+    "price_postapoc": "40 USD",
+    "bashing": 20,
+    "to_hit": -1,
+    "ranged_damage": {
+      "damage_type": "bullet",
+      "amount": 111
+    },
+    "range": 2,
+    "dispersion": 3000,
+    "recoil": 30,
+    "durability": 8,
+    "reload": 100,
+    "valid_mod_locations": [
+      [
+        "sling",
+        1
+      ],
+      [
+        "dampening",
+        1
+      ],
+      [
+        "accessories",
+        1
+      ],
+      [
+        "sights",
+        1
+      ]
+    ]
+  },
+  {
+    "id": "emit_mist",
+    "type": "emit",
+    "field": "fd_fog",
+    "intensity": 1,
+    "qty": 4,
+    "chance": 90
+  },
+  {
+    "id": "kirin_gun",
+    "copy-from": "xbow_base",
+    "type": "GUN",
+    "name": {
+      "str": "hazardous reactor - monster version"
+    },
+    "description": "It's too crazy.",
+    "price": "324 USD",
+    "material": [
+      "iron"
+    ],
+    "extend": {
+      "flags": [
+        "FIRE_TWOHAND",
+        "TRADER_AVOID",
+        "RADIOACTIVE",
+        "LEAK_DAM"
+      ]
+    },
+    "weight": "6803 g",
+    "volume": "5 L",
+    "ammo_effects": [
+      "LIGHTNING",
+      "FLARE"
+    ],
+    "price_postapoc": "40 USD",
+    "bashing": 20,
+    "to_hit": -1,
+    "ranged_damage": {
+      "damage_type": "acid",
+      "amount": 111
+    },
+    "range": 2,
+    "dispersion": 3000,
+    "recoil": 30,
+    "durability": 8,
+    "reload": 100,
+    "valid_mod_locations": [
+      [
+        "sling",
+        1
+      ],
+      [
+        "dampening",
+        1
+      ],
+      [
+        "accessories",
+        1
+      ],
+      [
+        "sights",
+        1
+      ]
+    ]
+  },
+  {
+    "id": "earth_gun",
+    "copy-from": "xbow_base",
+    "type": "GUN",
+    "name": {
+      "str": "hazardous reactor - monster version"
+    },
+    "description": "It's too crazy.",
+    "price": "324 USD",
+    "material": [
+      "iron"
+    ],
+    "extend": {
+      "flags": [
+        "FIRE_TWOHAND",
+        "TRADER_AVOID",
+        "RADIOACTIVE",
+        "LEAK_DAM"
+      ]
+    },
+    "weight": "6803 g",
+    "volume": "5 L",
+    "ammo_effects": [
+      "TANGLE",
+      "ACIDBOMB"
+    ],
+    "price_postapoc": "40 USD",
+    "bashing": 20,
+    "to_hit": -1,
+    "ranged_damage": {
+      "damage_type": "acid",
+      "amount": 111
+    },
+    "range": 2,
+    "dispersion": 3000,
+    "recoil": 30,
+    "durability": 8,
+    "reload": 100,
+    "valid_mod_locations": [
+      [
+        "sling",
+        1
+      ],
+      [
+        "dampening",
+        1
+      ],
+      [
+        "accessories",
+        1
+      ],
+      [
+        "sights",
+        1
+      ]
+    ]
+  },
+  {
+    "id": "kirin_death",
+    "type": "SPELL",
+    "name": "kirinsplosion!",
+    "description": "Pulls all objects inside.",
+    "effect": "target_attack",
+    "flags": [
+      "SILENT"
+    ],
+    "effect_filter": [
+      "self"
+    ],
+    "valid_targets": [
+      "self"
+    ],
+    "extra_effects": [
+      {
+        "id": "kirinbomb",
+        "hit_self": true,
+        "max_level": 3
+      }
+    ],
+    "min_range": 1,
+    "max_range": 1,
+    "min_aoe": 2,
+    "max_aoe": 2,
+    "max_level": 20,
+    "min_damage": 999,
+    "max_damage": 999,
+    "difficulty": 1,
+    "base_casting_time": 1,
+    "energy_source": "MANA",
+    "base_energy_cost": 1
+  },
+  {
+    "id": "kirinbomb",
+    "type": "SPELL",
+    "name": "Kirin Bomb",
+    "description": "Kills the toad bomb monster.",
+    "effect": "target_attack",
+    "flags": [
+      "SILENT"
+    ],
+    "effect_filter": [
+      "hostile",
+      "ground"
+    ],
+    "valid_targets": [
+      "hostile",
+      "ground"
+    ],
+    "field_id": "fd_electricity",
+    "field_chance": 3,
+    "min_field_intensity": 2,
+    "max_field_intensity": 3,
+    "min_range": 100,
+    "max_range": 100,
+    "min_aoe": 23,
+    "max_aoe": 23,
+    "max_level": 20,
+    "min_damage": 6666,
+    "max_damage": 6666,
+    "difficulty": 1,
+    "base_casting_time": 1,
+    "energy_source": "MANA",
+    "damage_type": "fire",
+    "base_energy_cost": 1
+  },
+  {
+    "id": "mon_kirin",
+    "type": "MONSTER",
+    "name": "Kirin",
+    "description": "A construct made of chakra.",
+    "default_faction": "devil",
+    "bodytype": "human",
+    "species": [
+      "DEVIL"
+    ],
+    "material": [
+      "iflesh"
+    ],
+    "diff": 2,
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 1000,
+    "speed": 480,
+    "symbol": "h",
+    "color": "red",
+    "path_settings": {
+      "max_dist": 1
+    },
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 7,
+    "melee_dice": 1,
+    "melee_dice_sides": 1,
+    "melee_damage": [
+      {
+        "damage_type": "heat",
+        "amount": 1
+      }
+    ],
+    "special_attacks": [
+      [
+        "SHOCKSTORM",
+        2
+      ],
+      [
+        "SMASH",
+        6
+      ],
+      {
+        "type": "gun",
+        "cooldown": 2,
+        "move_cost": 1,
+        "target_moving_vehicles": true,
+        "gun_type": "kirin_gun",
+        "description": "Kirin strikes with thunderous might!",
+        "fake_skills": [
+          [
+            "gun",
+            8
+          ],
+          [
+            "rifle",
+            8
+          ],
+          [
+            "pistol",
+            10
+          ]
+        ],
+        "fake_dex": 55,
+        "fake_per": 55,
+        "ranges": [
+          [
+            0,
+            30,
+            "DEFAULT"
+          ]
+        ],
+        "no_crits": true
+      },
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "kirin_death",
+          "min_level": 1
+        },
+        "cooldown": 4
+      }
+    ],
+    "dodge": 2,
+    "armor_cold": 1,
+    "armor_electric": 4,
+    "armor_acid": 10,
+    "armor_fire": 1,
+    "armor_cut": 1,
+    "armor_stab": 1,
+    "armor_bullet": 30,
+    "armor_bash": 10,
+    "vision_day": 20,
+    "vision_night": 50,
+    "death_drops": "slugdrops",
+    "harvest": "human",
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "HEARS",
+      "WEBWALK",
+      "HARDTOSHOOT",
+      "CLIMBS",
+      "NO_BREATHE",
+      "PATH_AVOID_DANGER_1"
+    ]
+  },
+  {
+    "id": "water_prison_bubble",
+    "type": "SPELL",
+    "name": {
+      "str": "Water Style: Water Prison Monster Jutsu"
+    },
+    "description": "Petrifies the target for 20 seconds.",
+    "valid_targets": [
+      "hostile"
+    ],
+    "extra_effects": [
+      {
+        "id": "summon_puddle_prison",
+        "min_level": 20
+      },
+      {
+        "id": "bubblebombself",
+        "min_level": 3,
+        "hit_self": true
+      }
+    ],
+    "min_damage": -2000,
+    "max_damage": -20000,
+    "damage_increment": -1000,
+    "max_level": 20,
+    "min_range": 1,
+    "max_range": 1,
+    "range_increment": 1,
+    "min_aoe": 0,
+    "max_aoe": 0,
+    "aoe_increment": 1,
+    "effect": "mod_moves",
+    "base_energy_cost": 573,
+    "base_casting_time": 323,
+    "casting_time_increment": -3,
+    "final_casting_time": 261,
+    "flags": [
+      "SILENT",
+      "NO_EXPLOSION_VFX"
+    ],
+    "difficulty": -10,
+    "energy_source": "MANA"
+  },
+  {
+    "id": "bubble_death",
+    "type": "SPELL",
+    "name": "Bubblesplosion!",
+    "description": "Pulls all objects inside.",
+    "effect": "target_attack",
+    "flags": [
+      "SILENT",
+      "NO_EXPLOSION_VFX"
+    ],
+    "effect_filter": [
+      "self"
+    ],
+    "valid_targets": [
+      "self"
+    ],
+    "extra_effects": [
+      {
+        "id": "water_prison_bubble",
+        "max_level": 10
+      }
+    ],
+    "min_range": 1,
+    "max_range": 1,
+    "min_aoe": 2,
+    "max_aoe": 2,
+    "max_level": 20,
+    "min_damage": 22,
+    "max_damage": 22,
+    "difficulty": 1,
+    "base_casting_time": 1,
+    "energy_source": "MANA",
+    "base_energy_cost": 1
+  },
+  {
+    "id": "bubblebombself",
+    "type": "SPELL",
+    "name": "Bubble Bomb",
+    "description": "Kills the toad bomb monster.",
+    "effect": "target_attack",
+    "flags": [
+      "SILENT",
+      "NO_EXPLOSION_VFX"
+    ],
+    "effect_filter": [
+      "self",
+      "hostile",
+      "ground"
+    ],
+    "valid_targets": [
+      "hostile",
+      "ground"
+    ],
+    "field_id": "fd_fog",
+    "field_chance": 1,
+    "min_field_intensity": 2,
+    "max_field_intensity": 2,
+    "min_range": 1,
+    "max_range": 1,
+    "min_aoe": 2,
+    "max_aoe": 2,
+    "max_level": 20,
+    "min_damage": 100,
+    "max_damage": 100,
+    "difficulty": 1,
+    "base_casting_time": 1,
+    "min_duration": 500,
+    "energy_source": "MANA",
+    "damage_type": "cold",
+    "base_energy_cost": 1
+  },
+  {
+    "id": "mon_bubble_prison",
+    "type": "MONSTER",
+    "name": "Chakra Bubble",
+    "description": "A construct made of chakra.",
+    "default_faction": "devil",
+    "bodytype": "human",
+    "species": [
+      "DEVIL"
+    ],
+    "looks_like": "mon_chakra_bubble",
+    "material": [
+      "iflesh"
+    ],
+    "diff": 2,
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 10,
+    "speed": 333,
+    "symbol": "h",
+    "color": "red",
+    "path_settings": {
+      "max_dist": 1
+    },
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 7,
+    "melee_dice": 1,
+    "melee_dice_sides": 1,
+    "melee_damage": [
+      {
+        "damage_type": "cold",
+        "amount": 1
+      }
+    ],
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "bubble_death",
+          "min_level": 10
+        },
+        "cooldown": 1
+      }
+    ],
+    "dodge": 2,
+    "armor_cold": 1,
+    "armor_electric": 4,
+    "armor_acid": 10,
+    "armor_fire": 1,
+    "armor_cut": 1,
+    "armor_stab": 1,
+    "armor_bullet": 30,
+    "armor_bash": 10,
+    "vision_day": 20,
+    "vision_night": 50,
+    "death_drops": "slugdrops",
+    "harvest": "human",
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "HEARS",
+      "WEBWALK",
+      "HARDTOSHOOT",
+      "CLIMBS",
+      "NO_BREATHE",
+      "PATH_AVOID_DANGER_1"
+    ]
+  },
+  {
+    "id": "paper_death",
+    "type": "SPELL",
+    "name": "Phoenixplosion!",
+    "description": "Pulls all objects inside.",
+    "effect": "target_attack",
+    "flags": [
+      "SILENT"
+    ],
+    "effect_filter": [
+      "self"
+    ],
+    "valid_targets": [
+      "self"
+    ],
+    "extra_effects": [
+      {
+        "id": "minebomb",
+        "hit_self": true,
+        "max_level": 3
+      }
+    ],
+    "min_range": 1,
+    "max_range": 1,
+    "min_aoe": 2,
+    "max_aoe": 2,
+    "max_level": 20,
+    "min_damage": 22,
+    "max_damage": 22,
+    "difficulty": 1,
+    "base_casting_time": 1,
+    "energy_source": "MANA",
+    "base_energy_cost": 1
+  },
+  {
+    "id": "minebomb",
+    "type": "SPELL",
+    "name": "Phoenix Bomb",
+    "description": "Kills the toad bomb monster.",
+    "effect": "target_attack",
+    "flags": [
+      "SILENT"
+    ],
+    "effect_filter": [
+      "self",
+      "hostile",
+      "ground"
+    ],
+    "valid_targets": [
+      "hostile",
+      "ground"
+    ],
+    "field_id": "fd_fire",
+    "field_chance": 4,
+    "min_field_intensity": 2,
+    "max_field_intensity": 3,
+    "min_range": 1,
+    "max_range": 1,
+    "min_aoe": 12,
+    "max_aoe": 12,
+    "max_level": 20,
+    "min_damage": 555,
+    "max_damage": 555,
+    "difficulty": 1,
+    "base_casting_time": 1,
+    "energy_source": "MANA",
+    "damage_type": "fire",
+    "base_energy_cost": 1
+  },
+  {
+    "id": "mon_paper_mine",
+    "type": "MONSTER",
+    "name": "Chakra Mine",
+    "description": "A construct made of chakra.",
+    "default_faction": "devil",
+    "bodytype": "human",
+    "species": [
+      "DEVIL"
+    ],
+    "material": [
+      "iflesh"
+    ],
+    "diff": 2,
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 1,
+    "speed": 180,
+    "symbol": "h",
+    "color": "red",
+    "path_settings": {
+      "max_dist": 1
+    },
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 7,
+    "melee_dice": 1,
+    "melee_dice_sides": 1,
+    "melee_damage": [
+      {
+        "damage_type": "heat",
+        "amount": 1
+      }
+    ],
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "paper_death",
+          "min_level": 1
+        },
+        "cooldown": 4
+      }
+    ],
+    "dodge": 2,
+    "armor_cold": 1,
+    "armor_electric": 4,
+    "armor_acid": 10,
+    "armor_fire": 1,
+    "armor_cut": 1,
+    "armor_stab": 1,
+    "armor_bullet": 30,
+    "armor_bash": 10,
+    "vision_day": 20,
+    "vision_night": 50,
+    "death_drops": "slugdrops",
+    "death_function": [
+      "EXPLODE"
+    ],
+    "harvest": "human",
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "HEARS",
+      "IMMOBILE",
+      "HARDTOSHOOT",
+      "CLIMBS",
+      "NO_BREATHE",
+      "PATH_AVOID_DANGER_1"
+    ]
+  },
+  {
+    "id": "phoenix_death",
+    "type": "SPELL",
+    "name": "Phoenixplosion!",
+    "description": "Pulls all objects inside.",
+    "effect": "target_attack",
+    "flags": [
+      "SILENT"
+    ],
+    "effect_filter": [
+      "self"
+    ],
+    "valid_targets": [
+      "self"
+    ],
+    "extra_effects": [
+      {
+        "id": "phoenixbomb",
+        "hit_self": true,
+        "max_level": 3
+      }
+    ],
+    "min_range": 1,
+    "max_range": 1,
+    "min_aoe": 2,
+    "max_aoe": 2,
+    "max_level": 20,
+    "min_damage": 22,
+    "max_damage": 22,
+    "difficulty": 1,
+    "base_casting_time": 1,
+    "energy_source": "MANA",
+    "base_energy_cost": 1
+  },
+  {
+    "id": "phoenixbomb",
+    "type": "SPELL",
+    "name": "Phoenix Bomb",
+    "description": "Kills the toad bomb monster.",
+    "effect": "target_attack",
+    "flags": [
+      "SILENT"
+    ],
+    "effect_filter": [
+      "self",
+      "hostile",
+      "ground"
+    ],
+    "valid_targets": [
+      "hostile",
+      "ground"
+    ],
+    "field_id": "fd_fire",
+    "field_chance": 4,
+    "min_field_intensity": 2,
+    "max_field_intensity": 3,
+    "min_range": 1,
+    "max_range": 1,
+    "min_aoe": 3,
+    "max_aoe": 3,
+    "max_level": 20,
+    "min_damage": 100,
+    "max_damage": 100,
+    "difficulty": 1,
+    "base_casting_time": 1,
+    "energy_source": "MANA",
+    "damage_type": "fire",
+    "base_energy_cost": 1
+  },
+  {
+    "id": "mon_phoenix_small",
+    "type": "MONSTER",
+    "name": "Chakra Phoenix",
+    "description": "A construct made of chakra.",
+    "default_faction": "devil",
+    "bodytype": "human",
+    "species": [
+      "DEVIL"
+    ],
+    "material": [
+      "iflesh"
+    ],
+    "diff": 2,
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 1,
+    "speed": 180,
+    "symbol": "h",
+    "color": "red",
+    "path_settings": {
+      "max_dist": 1
+    },
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 7,
+    "melee_dice": 1,
+    "melee_dice_sides": 1,
+    "melee_damage": [
+      {
+        "damage_type": "heat",
+        "amount": 1
+      }
+    ],
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "phoenix_death",
+          "min_level": 1
+        },
+        "cooldown": 4
+      }
+    ],
+    "dodge": 2,
+    "armor_cold": 1,
+    "armor_electric": 4,
+    "armor_acid": 10,
+    "armor_fire": 1,
+    "armor_cut": 1,
+    "armor_stab": 1,
+    "armor_bullet": 30,
+    "armor_bash": 10,
+    "vision_day": 20,
+    "vision_night": 50,
+    "death_drops": "slugdrops",
+    "harvest": "human",
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "HEARS",
+      "WEBWALK",
+      "HARDTOSHOOT",
+      "CLIMBS",
+      "NO_BREATHE",
+      "PATH_AVOID_DANGER_1"
+    ]
+  },
+  {
+    "id": "largephoenix_death",
+    "type": "SPELL",
+    "name": "Phoenixplosion!",
+    "description": "Pulls all objects inside.",
+    "effect": "target_attack",
+    "flags": [
+      "SILENT"
+    ],
+    "effect_filter": [
+      "self"
+    ],
+    "valid_targets": [
+      "self"
+    ],
+    "extra_effects": [
+      {
+        "id": "largephoenixbomb",
+        "hit_self": true,
+        "max_level": 3
+      }
+    ],
+    "min_range": 1,
+    "max_range": 1,
+    "min_aoe": 2,
+    "max_aoe": 2,
+    "max_level": 20,
+    "min_damage": 22,
+    "max_damage": 22,
+    "difficulty": 1,
+    "base_casting_time": 1,
+    "energy_source": "MANA",
+    "base_energy_cost": 1
+  },
+  {
+    "id": "largephoenixbomb",
+    "type": "SPELL",
+    "name": "Phoenix Bomb",
+    "description": "Kills the toad bomb monster.",
+    "effect": "target_attack",
+    "flags": [
+      "SILENT"
+    ],
+    "effect_filter": [
+      "self",
+      "hostile",
+      "ground"
+    ],
+    "valid_targets": [
+      "hostile",
+      "ground"
+    ],
+    "field_id": "fd_fire",
+    "field_chance": 4,
+    "min_field_intensity": 2,
+    "max_field_intensity": 3,
+    "min_range": 1,
+    "max_range": 1,
+    "min_aoe": 7,
+    "max_aoe": 7,
+    "max_level": 20,
+    "min_damage": 500,
+    "max_damage": 500,
+    "difficulty": 1,
+    "base_casting_time": 1,
+    "energy_source": "MANA",
+    "damage_type": "fire",
+    "base_energy_cost": 1
+  },
+  {
+    "id": "mon_phoenix_large",
+    "type": "MONSTER",
+    "name": "Giant Chakra Phoenix",
+    "description": "A construct made of chakra.",
+    "default_faction": "devil",
+    "bodytype": "human",
+    "species": [
+      "DEVIL"
+    ],
+    "material": [
+      "iflesh"
+    ],
+    "diff": 2,
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 1,
+    "speed": 180,
+    "symbol": "h",
+    "color": "red",
+    "path_settings": {
+      "max_dist": 1
+    },
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 7,
+    "melee_dice": 1,
+    "melee_dice_sides": 1,
+    "melee_damage": [
+      {
+        "damage_type": "heat",
+        "amount": 1
+      }
+    ],
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "largephoenix_death",
+          "min_level": 1
+        },
+        "cooldown": 4
+      }
+    ],
+    "dodge": 2,
+    "armor_cold": 1,
+    "armor_electric": 4,
+    "armor_acid": 10,
+    "armor_fire": 1,
+    "armor_cut": 1,
+    "armor_stab": 1,
+    "armor_bullet": 30,
+    "armor_bash": 10,
+    "vision_day": 20,
+    "vision_night": 50,
+    "death_drops": "slugdrops",
+    "harvest": "human",
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "HEARS",
+      "WEBWALK",
+      "HARDTOSHOOT",
+      "CLIMBS",
+      "NO_BREATHE",
+      "PATH_AVOID_DANGER_1"
+    ]
+  },
+  {
+    "type": "SPELL",
+    "id": "drill_dmg",
+    "name": "drill dmg ef",
+    "description": "The user gathers lightning chakra into their hand, propelling themselves forward at extreme speeds to attack their opponent.",
+    "valid_targets": [
+      "hostile",
+      "ground"
+    ],
+    "flags": [
+      "NO_FAIL"
+    ],
+    "effect": "target_attack",
+    "min_damage": 75,
+    "max_damage": 75,
+    "damage_increment": 1,
+    "damage_type": "electric",
+    "min_range": 16,
+    "max_range": 16,
+    "min_aoe": 0,
+    "max_aoe": 0,
+    "base_casting_time": 41,
+    "casting_time_increment": -1,
+    "final_casting_time": 21,
+    "base_energy_cost": 182,
+    "melee_dam": [
+      "physical",
+      "elemental"
+    ],
+    "difficulty": -10,
+    "max_level": 20,
+    "energy_source": "MANA"
+  },
+  {
+    "id": "waterbody_spell",
+    "type": "SPELL",
+    "name": {
+      "str": "Water Style: Water Body Jutsu"
+    },
+    "description": "Morph your body entirely into liquid form, preventing most forms of mundane damage.",
+    "valid_targets": [
+      "self"
+    ],
+    "flags": [
+      "SOMATIC",
+      "LOUD",
+      "NO_EXPLOSION_VFX"
+    ],
+    "min_damage": 1,
+    "max_damage": 1,
+    "effect": "spawn_item",
+    "effect_str": "waterbody_aura",
+    "energy_source": "MANA",
+    "difficulty": -10,
+    "max_level": 20,
+    "extra_effects": [
+      {
+        "id": "drain1326",
+        "hit_self": true
+      }
+    ],
+    "base_casting_time": 246,
+    "casting_time_increment": -3,
+    "final_casting_time": 161,
+    "base_energy_cost": 2546,
+    "min_duration": 20000,
+    "duration_increment": 5000,
+    "max_duration": 110000
+  },
+  {
+    "type": "SPELL",
+    "id": "water_drill",
+    "name": "Water Style: Hardened Water Drill",
+    "description": "the user summons a typhoon under the opponent, while quickly approaching them and attacking them with hyper pressurized water formed around their hand.",
+    "valid_targets": [
+      "hostile",
+      "ground"
+    ],
+    "flags": [
+      "NO_FAIL"
+    ],
+    "effect": "dash",
+    "effect_str": "downed",
+    "min_damage": 75,
+    "max_damage": 275,
+    "damage_increment": 10,
+    "damage_type": "bullet",
+    "min_range": 5,
+    "max_range": 5,
+    "min_aoe": 1,
+    "max_aoe": 1,
+    "base_casting_time": 41,
+    "casting_time_increment": -1,
+    "final_casting_time": 21,
+    "melee_dam": [
+      "physical",
+      "elemental"
+    ],
+    "base_energy_cost": 364,
+    "difficulty": -10,
+    "extra_effects": [
+      {
+        "id": "handsign_drain",
+        "min_level": 4,
+        "hit_self": true
+      },
+      {
+        "id": "drill_dmg"
+      }
+    ],
+    "max_level": 20,
+    "energy_source": "MANA"
+  },
+  {
+    "id": "hidden_mist",
+    "type": "SPELL",
+    "name": "Water Style: Hidden Mist Jutsu",
+    "description": "Spawns smoke.",
+    "effect": "target_attack",
+    "flags": [
+      "SILENT",
+      "NO_EXPLOSION_VFX"
+    ],
+    "valid_targets": [
+      "hostile",
+      "self",
+      "ground"
+    ],
+    "field_id": "fd_fog",
+    "field_chance": 2,
+    "min_field_intensity": 2,
+    "max_field_intensity": 3,
+    "extra_effects": [
+      {
+        "id": "handsign_drain",
+        "min_level": 6,
+        "hit_self": true
+      },
+      {
+        "id": "invisibility",
+        "hit_self": true
+      }
+    ],
+    "min_range": 0,
+    "max_range": 0,
+    "min_aoe": 48,
+    "max_aoe": 68,
+    "aoe_increment": 1,
+    "max_level": 20,
+    "min_damage": 0,
+    "min_duration": 999999,
+    "max_damage": 0,
+    "difficulty": -10,
+    "base_casting_time": 164,
+    "casting_time_increment": -3,
+    "final_casting_time": 101,
+    "energy_source": "MANA",
+    "damage_type": "cold",
+    "base_energy_cost": 364
+  },
+  {
+    "id": "falling_rain",
+    "type": "SPELL",
+    "name": "Water Style: Falling Rain Needles",
+    "description": "Cover the battlefield in chakra-infused rain that damages enemies.",
+    "effect": "target_attack",
+    "flags": [
+      "SILENT",
+      "NO_EXPLOSION_VFX"
+    ],
+    "valid_targets": [
+      "hostile",
+      "ground"
+    ],
+    "field_id": "fd_fog",
+    "field_chance": 2,
+    "min_field_intensity": 2,
+    "max_field_intensity": 3,
+    "extra_effects": [
+      {
+        "id": "handsign_drain",
+        "min_level": 10,
+        "hit_self": true
+      }
+    ],
+    "min_range": 0,
+    "max_range": 0,
+    "min_aoe": 48,
+    "max_aoe": 68,
+    "max_level": 20,
+    "min_damage": 30,
+    "min_duration": 999999,
+    "max_damage": 130,
+    "damage_increment": 5,
+    "aoe_increment": 1,
+    "difficulty": -10,
+    "base_casting_time": 410,
+    "casting_time_increment": -3,
+    "final_casting_time": 331,
+    "energy_source": "MANA",
+    "damage_type": "cut",
+    "base_energy_cost": 910
+  },
+  {
+    "id": "water_prison",
+    "type": "SPELL",
+    "name": {
+      "str": "Water Style: Water Prison Jutsu"
+    },
+    "description": "Petrifies the target for 20 seconds.",
+    "valid_targets": [
+      "hostile"
+    ],
+    "extra_effects": [
+      {
+        "id": "summon_puddle_prison",
+        "min_level": 20
+      },
+      {
+        "id": "handsign_drain",
+        "min_level": 3,
+        "hit_self": true
+      }
+    ],
+    "min_damage": -2000,
+    "max_damage": -20000,
+    "damage_increment": -1000,
+    "max_level": 1,
+    "min_range": 4,
+    "max_range": 24,
+    "range_increment": 1,
+    "min_aoe": 1,
+    "max_aoe": 11,
+    "aoe_increment": 1,
+    "effect": "mod_moves",
+    "base_energy_cost": 573,
+    "base_casting_time": 323,
+    "casting_time_increment": -3,
+    "final_casting_time": 261,
+    "flags": [
+      "SOMATIC",
+      "VERBAL"
+    ],
+    "difficulty": -10,
+    "energy_source": "MANA"
+  },
+  {
+    "id": "water_line",
+    "type": "SPELL",
+    "name": {
+      "str": "Water Style: Severing Wave"
+    },
+    "description": "You knead chakra in your abdomen and focus it out through your mouth to create an extremely fast and precise stream of water to puncture your target.",
+    "effect": "line_attack",
+    "valid_targets": [
+      "ally",
+      "hostile",
+      "ground"
+    ],
+    "flags": [
+      "LOUD",
+      "SOMATIC",
+      "NO_LEGS"
+    ],
+    "max_level": 20,
+    "min_damage": 175,
+    "max_damage": 375,
+    "damage_increment": 10,
+    "min_range": 33,
+    "max_range": 53,
+    "range_increment": 1,
+    "difficulty": -10,
+    "min_aoe": 0,
+    "max_aoe": 0,
+    "extra_effects": [
+      {
+        "id": "handsign_drain",
+        "min_level": 6,
+        "hit_self": true
+      }
+    ],
+    "base_casting_time": 246,
+    "casting_time_increment": -3,
+    "final_casting_time": 161,
+    "base_energy_cost": 546,
+    "field_chance": 1,
+    "damage_type": "bullet",
+    "energy_source": "MANA"
+  },
+  {
+    "id": "summon_bubbles_stun",
+    "type": "SPELL",
+    "name": {
+      "str": "Water Style: Bubble Jutsu, Stunning Bubble Strikes"
+    },
+    "description": "You summon a chakra construct to aid you in battle.",
+    "valid_targets": [
+      "ground"
+    ],
+    "min_damage": 4,
+    "max_damage": 17,
+    "//": "level 20 will max out your number of summons",
+    "damage_increment": 0.5,
+    "max_level": 20,
+    "difficulty": -10,
+    "effect": "summon",
+    "effect_str": "mon_bubble_prison",
+    "extra_effects": [
+      {
+        "id": "handsign_drain",
+        "min_level": 22,
+        "hit_self": true
+      }
+    ],
+    "energy_source": "MANA",
+    "base_energy_cost": 2002,
+    "//2": "one minute",
+    "base_casting_time": 902,
+    "casting_time_increment": -13,
+    "final_casting_time": 522,
+    "min_range": 11,
+    "max_range": 11,
+    "min_aoe": 5,
+    "max_aoe": 5,
+    "flags": [
+      "SILENT",
+      "VERBAL",
+      "NO_EXPLOSION_VFX"
+    ],
+    "min_duration": 120000,
+    "max_duration": 315000,
+    "duration_increment": 4000
+  },
+  {
+    "id": "summon_bubbles",
+    "type": "SPELL",
+    "name": {
+      "str": "Water Style: Great Explosive Bubble Barrage"
+    },
+    "description": "You summon a chakra construct to aid you in battle.",
+    "valid_targets": [
+      "ground"
+    ],
+    "min_damage": 4,
+    "max_damage": 17,
+    "//": "level 20 will max out your number of summons",
+    "damage_increment": 0.5,
+    "max_level": 20,
+    "difficulty": -10,
+    "effect": "summon",
+    "effect_str": "mon_chakra_bubble",
+    "extra_effects": [
+      {
+        "id": "handsign_drain",
+        "min_level": 22,
+        "hit_self": true
+      }
+    ],
+    "energy_source": "MANA",
+    "base_energy_cost": 2002,
+    "//2": "one minute",
+    "base_casting_time": 902,
+    "casting_time_increment": -13,
+    "final_casting_time": 522,
+    "min_range": 11,
+    "max_range": 11,
+    "min_aoe": 5,
+    "max_aoe": 5,
+    "flags": [
+      "SILENT",
+      "VERBAL",
+      "NO_EXPLOSION_VFX"
+    ],
+    "min_duration": 120000,
+    "max_duration": 315000,
+    "duration_increment": 4000
+  },
+  {
+    "id": "summon_eels",
+    "type": "SPELL",
+    "name": {
+      "str": "Water Style: Water Dragon Jutsu"
+    },
+    "description": "You summon a chakra construct to aid you in battle.",
+    "valid_targets": [
+      "ground"
+    ],
+    "min_damage": 1,
+    "max_damage": 13,
+    "//": "level 20 will max out your number of summons",
+    "damage_increment": 0.5,
+    "max_level": 20,
+    "difficulty": -10,
+    "effect": "summon",
+    "effect_str": "mon_water_dragon",
+    "extra_effects": [
+      {
+        "id": "handsign_drain",
+        "min_level": 22,
+        "hit_self": true
+      }
+    ],
+    "energy_source": "MANA",
+    "base_energy_cost": 2002,
+    "//2": "one minute",
+    "base_casting_time": 902,
+    "casting_time_increment": -3,
+    "final_casting_time": 722,
+    "min_range": 11,
+    "max_range": 11,
+    "min_aoe": 3,
+    "max_aoe": 3,
+    "flags": [
+      "SILENT",
+      "VERBAL",
+      "NO_EXPLOSION_VFX"
+    ],
+    "min_duration": 120000,
+    "max_duration": 315000,
+    "duration_increment": 4000
+  },
+  {
+    "id": "summon_water_draco",
+    "type": "SPELL",
+    "name": {
+      "str": "Water Style: Giant Water Dragon Jutsu"
+    },
+    "description": "You summon a chakra construct to aid you in battle.",
+    "valid_targets": [
+      "ground"
+    ],
+    "min_damage": 1,
+    "max_damage": 5,
+    "//": "level 20 will max out your number of summons",
+    "damage_increment": 0.25,
+    "max_level": 44,
+    "difficulty": -10,
+    "effect": "summon",
+    "effect_str": "mon_water_dragon_large",
+    "extra_effects": [
+      {
+        "id": "handsign_drain",
+        "min_level": 44,
+        "hit_self": true
+      }
+    ],
+    "energy_source": "MANA",
+    "base_energy_cost": 4004,
+    "//2": "one minute",
+    "base_casting_time": 1804,
+    "casting_time_increment": -3,
+    "final_casting_time": 1650,
+    "min_range": 11,
+    "max_range": 11,
+    "min_aoe": 3,
+    "max_aoe": 3,
+    "flags": [
+      "SILENT",
+      "VERBAL",
+      "NO_EXPLOSION_VFX"
+    ],
+    "min_duration": 9999000,
+    "max_duration": 9999000,
+    "duration_increment": 4000
+  },
+  {
+    "id": "bubble_gun",
+    "weapon_category": [
+      "ENERGY_WEAPONS"
+    ],
+    "type": "GUN",
+    "symbol": "%",
+    "color": "red",
+    "name": {
+      "str": "Bubble Fake Gun"
+    },
+    "description": "Electricity unnaturally arcs from the tips of this alien frond.",
+    "material": [
+      "hflesh"
+    ],
+    "flags": [
+      "PRIMITIVE_RANGED_WEAPON",
+      "NEVER_JAMS",
+      "NONCONDUCTIVE",
+      "NO_REPAIR",
+      "WATERPROOF_GUN",
+      "NO_SALVAGE",
+      "NO_UNLOAD"
+    ],
+    "skill": "pistol",
+    "ammo_effects": [
+      "EXPLOSIVE_BIG"
+    ],
+    "ranged_damage": {
+      "damage_type": "heat",
+      "amount": 55,
+      "armor_penetration": 80
+    },
+    "weight": "540 g",
+    "volume": "750 ml",
+    "bashing": 2,
+    "to_hit": 6,
+    "reload_noise_volume": 2,
+    "loudness": 2,
+    "range": 1,
+    "dispersion": 1,
+    "durability": 8
+  },
+  {
+    "id": "mon_chakra_bubble",
+    "type": "MONSTER",
+    "name": "Chakra Bubble",
+    "description": "A construct made of chakra.",
+    "default_faction": "devil",
+    "bodytype": "human",
+    "species": [
+      "DEVIL"
+    ],
+    "material": [
+      "iflesh"
+    ],
+    "diff": 2,
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 1,
+    "speed": 480,
+    "symbol": "h",
+    "color": "red",
+    "path_settings": {
+      "max_dist": 1
+    },
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 7,
+    "melee_dice": 1,
+    "melee_dice_sides": 1,
+    "melee_damage": [
+      {
+        "damage_type": "heat",
+        "amount": 1
+      }
+    ],
+    "special_attacks": [
+      {
+        "type": "gun",
+        "cooldown": 2,
+        "move_cost": 1,
+        "gun_type": "bubble_gun",
+        "no_ammo_sound": "no ammo!",
+        "fake_skills": [
+          [
+            "gun",
+            9
+          ],
+          [
+            "pistol",
+            9
+          ],
+          [
+            "throw",
+            9
+          ]
+        ],
+        "fake_dex": 25,
+        "fake_per": 25,
+        "require_targeting_player": false,
+        "ranges": [
+          [
+            0,
+            1,
+            "DEFAULT"
+          ]
+        ],
+        "description": "The chakra bubble explodes!",
+        "no_crits": false
+      }
+    ],
+    "dodge": 2,
+    "armor_cold": 1,
+    "armor_electric": 4,
+    "armor_acid": 10,
+    "armor_fire": 1,
+    "armor_cut": 1,
+    "armor_stab": 1,
+    "armor_bullet": 30,
+    "armor_bash": 10,
+    "vision_day": 20,
+    "vision_night": 50,
+    "death_drops": "slugdrops",
+    "harvest": "human",
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "HEARS",
+      "WEBWALK",
+      "HARDTOSHOOT",
+      "CLIMBS",
+      "NO_BREATHE",
+      "PATH_AVOID_DANGER_1"
+    ]
+  },
+  {
+    "id": "sand_burial_dmg",
+    "type": "SPELL",
+    "name": {
+      "str": "Water Style: Water Prison Jutsu"
+    },
+    "description": "Petrifies the target for 20 seconds.",
+    "valid_targets": [
+      "hostile"
+    ],
+    "min_damage": 200,
+    "max_damage": 600,
+    "damage_increment": 20,
+    "max_level": 20,
+    "min_range": 24,
+    "max_range": 44,
+    "range_increment": 1,
+    "min_aoe": 1,
+    "max_aoe": 1,
+    "aoe_increment": 1,
+    "effect": "target_attack",
+    "damage_type": "bash",
+    "base_energy_cost": 573,
+    "base_casting_time": 323,
+    "casting_time_increment": -13,
+    "final_casting_time": 261,
+    "flags": [
+      "SOMATIC",
+      "VERBAL"
+    ],
+    "difficulty": -10,
+    "energy_source": "MANA"
+  },
+  {
+    "id": "sand_burial",
+    "type": "SPELL",
+    "name": {
+      "str": "Sand Burial"
+    },
+    "description": "Petrifies the target for 20 seconds.",
+    "valid_targets": [
+      "hostile"
+    ],
+    "extra_effects": [
+      {
+        "id": "summon_sand_prison",
+        "min_level": 20
+      },
+      {
+        "id": "sand_burial_dmg",
+        "min_level": 1
+      }
+    ],
+    "min_damage": -2000,
+    "max_damage": -20000,
+    "damage_increment": -1000,
+    "max_level": 10,
+    "min_range": 24,
+    "max_range": 44,
+    "range_increment": 1,
+    "min_aoe": 1,
+    "max_aoe": 1,
+    "aoe_increment": 1,
+    "effect": "mod_moves",
+    "base_energy_cost": 573,
+    "base_casting_time": 323,
+    "casting_time_increment": -3,
+    "final_casting_time": 261,
+    "flags": [
+      "SOMATIC",
+      "VERBAL"
+    ],
+    "difficulty": -10,
+    "energy_source": "MANA"
+  },
+  {
+    "id": "bash_terrain",
+    "type": "SPELL",
+    "name": {
+      "str": "Earth Style: Earthen Corridor"
+    },
+    "description": "Bash through terrain.",
+    "valid_targets": [
+      "ground"
+    ],
+    "effect": "bash",
+    "base_energy_cost": 91,
+    "base_casting_time": 41,
+    "casting_time_increment": -1,
+    "range_increment": 1,
+    "final_casting_time": 11,
+    "extra_effects": [
+      {
+        "id": "handsign_drain",
+        "min_level": 1,
+        "hit_self": true
+      }
+    ],
+    "flags": [
+      "IGNORE_WALLS",
+      "SILENT",
+      "NO_EXPLOSION_VFX"
+    ],
+    "max_level": 20,
+    "min_range": 1,
+    "max_range": 21,
+    "min_damage": 250,
+    "max_damage": 250,
+    "min_aoe": 0,
+    "max_aoe": 0
+  },
+  {
+    "id": "earthfist",
+    "type": "GENERIC",
+    "weapon_category": [
+      "FIST_WEAPONS"
+    ],
+    "name": {
+      "str": "Stone Fist Jutsu"
+    },
+    "description": "A magical flexible stonelike substance for protection and attack.",
+    "weight": "1 g",
+    "volume": "250 ml",
+    "price": "1 cent",
+    "to_hit": 4,
+    "bashing": 85,
+    "material": [
+      "superalloy"
+    ],
+    "symbol": "[",
+    "color": "light_gray",
+    "armor_data": {
+      "covers": [
+        "hands",
+        "arms"
+      ],
+      "coverage": 100,
+      "encumbrance": 0,
+      "warmth": 20,
+      "material_thickness": 5,
+      "environmental_protection": 10
+    },
+    "qualities": [
+      [
+        "HAMMER",
+        1
+      ]
+    ],
+    "flags": [
+      "VARSIZE",
+      "STURDY",
+      "UNARMED_WEAPON",
+      "DURABLE_MELEE",
+      "NONCONDUCTIVE",
+      "MAGIC_FOCUS",
+      "POWERARMOR_COMPATIBLE"
+    ],
+    "techniques": [
+      "WBLOCK_3"
+    ]
+  },
+  {
+    "id": "summon_earth_dragon",
+    "type": "SPELL",
+    "name": {
+      "str": "Earth Style: Stone and Earth Dragon Jutsu"
+    },
+    "description": "This spell must be used on a mud dragon head after using earth dragon bullet technique to create a fully formed earth dragon to aid you in battle.",
+    "valid_targets": [
+      "ground"
+    ],
+    "min_damage": 1,
+    "max_damage": 1,
+    "targeted_monster_ids": [
+      "mon_mud_dragonhead"
+    ],
+    "//": "level 20 will max out your number of summons",
+    "damage_increment": 0.5,
+    "max_level": 20,
+    "difficulty": -10,
+    "effect": "summon",
+    "effect_str": "mon_earth_dragon",
+    "extra_effects": [
+      {
+        "id": "handsign_drain",
+        "min_level": 44,
+        "hit_self": true
+      }
+    ],
+    "energy_source": "MANA",
+    "base_energy_cost": 12002,
+    "//2": "one minute",
+    "base_casting_time": 902,
+    "casting_time_increment": -3,
+    "final_casting_time": 722,
+    "min_range": 11,
+    "max_range": 11,
+    "min_aoe": 3,
+    "max_aoe": 3,
+    "flags": [
+      "SILENT",
+      "VERBAL",
+      "NO_EXPLOSION_VFX"
+    ],
+    "min_duration": 120000,
+    "max_duration": 315000,
+    "duration_increment": 4000
+  },
+  {
+    "id": "earthskin",
+    "type": "GENERIC",
+    "name": {
+      "str": "Petrifying Jutsu"
+    },
+    "description": "A magical flexible stonelike substance for protection and attack.",
+    "weight": "1 g",
+    "volume": "250 ml",
+    "price": "1 cent",
+    "to_hit": 1,
+    "bashing": 25,
+    "material": [
+      "superalloy"
+    ],
+    "symbol": "[",
+    "color": "light_gray",
+    "armor_data": {
+      "covers": [
+        "legs",
+        "torso",
+        "arms",
+        "hands",
+        "head",
+        "feet",
+        "mouth",
+        "eyes"
+      ],
+      "coverage": 100,
+      "encumbrance": 0,
+      "warmth": 20,
+      "material_thickness": 5,
+      "environmental_protection": 10
+    },
+    "qualities": [
+      [
+        "HAMMER",
+        1
+      ]
+    ],
+    "flags": [
+      "VARSIZE",
+      "AURA",
+      "DURABLE_MELEE",
+      "NONCONDUCTIVE",
+      "MAGIC_FOCUS",
+      "POWERARMOR_COMPATIBLE"
+    ],
+    "techniques": [
+      "WBLOCK_3"
+    ]
+  },
+  {
+    "id": "earthfist",
+    "type": "SPELL",
+    "name": {
+      "str": "Earth Style: Stone Fist Jutsu"
+    },
+    "description": "Encases your arms and hands in a sheath of chakra-infused stone, you can punch and defend yourself with it in melee combat.",
+    "valid_targets": [
+      "self"
+    ],
+    "flags": [
+      "SOMATIC",
+      "LOUD",
+      "NO_EXPLOSION_VFX"
+    ],
+    "min_damage": 1,
+    "max_damage": 1,
+    "effect": "spawn_item",
+    "effect_str": "earthfist",
+    "spell_class": "EARTHCHAKRA",
+    "extra_effects": [
+      {
+        "id": "drain1105",
+        "hit_self": true
+      }
+    ],
+    "energy_source": "MANA",
+    "difficulty": -10,
+    "max_level": 20,
+    "base_casting_time": 205,
+    "final_casting_time": 99,
+    "casting_time_increment": -3,
+    "base_energy_cost": 455,
+    "min_duration": 10000,
+    "max_duration": 30000,
+    "duration_increment": 2000
+  },
+  {
+    "id": "earthskin",
+    "type": "SPELL",
+    "name": {
+      "str": "Earth Style: Petrifying Jutsu"
+    },
+    "description": "Encases your arms and hands in a sheath of chakra-infused stone, you can punch and defend yourself with it in melee combat.",
+    "valid_targets": [
+      "self"
+    ],
+    "flags": [
+      "SOMATIC",
+      "LOUD",
+      "NO_EXPLOSION_VFX"
+    ],
+    "min_damage": 1,
+    "max_damage": 1,
+    "effect": "spawn_item",
+    "effect_str": "earthskin",
+    "extra_effects": [
+      {
+        "id": "drain1105",
+        "hit_self": true
+      }
+    ],
+    "energy_source": "MANA",
+    "difficulty": -10,
+    "max_level": 20,
+    "base_casting_time": 405,
+    "final_casting_time": 299,
+    "casting_time_increment": -3,
+    "base_energy_cost": 455,
+    "min_duration": 10000,
+    "max_duration": 30000,
+    "duration_increment": 2000
+  },
+  {
+    "id": "thrown_stone",
+    "type": "SPELL",
+    "name": "Thrown Stones",
+    "description": "this spell is an extra effect of virid_shot.",
+    "valid_targets": [
+      "hostile"
+    ],
+    "flags": [
+      "NO_LEGS",
+      "RANDOM_TARGET",
+      "NO_FAIL"
+    ],
+    "effect": "projectile_attack",
+    "damage_type": "bash",
+    "min_damage": 22,
+    "damage_increment": 3.0,
+    "max_damage": 82,
+    "min_range": 24,
+    "range_increment": 0.5,
+    "max_range": 35,
+    "base_energy_cost": 7,
+    "difficulty": -10,
+    "max_level": 1,
+    "base_casting_time": 10,
+    "energy_source": "MANA"
+  },
+  {
+    "id": "thrown_stones_jutsu",
+    "type": "SPELL",
+    "name": {
+      "str": "Earth Style: Flying Stones"
+    },
+    "effect": "projectile_attack",
+    "description": "Causes an intense force at the location, damaging the target.",
+    "valid_targets": [
+      "hostile"
+    ],
+    "min_damage": 22,
+    "max_damage": 82,
+    "damage_increment": 3,
+    "difficulty": -10,
+    "max_level": 20,
+    "min_range": 24,
+    "max_range": 34,
+    "range_increment": 0.5,
+    "energy_source": "MANA",
+    "base_energy_cost": 637,
+    "base_casting_time": 287,
+    "final_casting_time": 185,
+    "sound_description": "a zing",
+    "flags": [
+      "SOMATIC",
+      "RANDOM_TARGET",
+      "NO_LEGS"
+    ],
+    "damage_type": "bash",
+    "extra_effects": [
+      {
+        "id": "thrown_stone"
+      },
+      {
+        "id": "thrown_stone"
+      },
+      {
+        "id": "thrown_stone"
+      },
+      {
+        "id": "thrown_stone"
+      },
+      {
+        "id": "thrown_stone"
+      },
+      {
+        "id": "thrown_stone"
+      },
+      {
+        "id": "thrown_stone"
+      },
+      {
+        "id": "thrown_stone"
+      },
+      {
+        "id": "thrown_stone"
+      },
+      {
+        "id": "thrown_stone"
+      },
+      {
+        "id": "thrown_stone"
+      },
+      {
+        "id": "thrown_stone"
+      },
+      {
+        "id": "thrown_stone"
+      },
+      {
+        "id": "thrown_stone"
+      },
+      {
+        "id": "thrown_stone"
+      },
+      {
+        "id": "thrown_stone"
+      },
+      {
+        "id": "thrown_stone"
+      },
+      {
+        "id": "thrown_stone"
+      },
+      {
+        "id": "thrown_stone"
+      },
+      {
+        "id": "thrown_stone"
+      },
+      {
+        "id": "drain1547",
+        "hit_self": true
+      }
+    ]
+  },
+  {
+    "id": "tunnelport",
+    "type": "SPELL",
+    "name": "Earth Style: Tunneling Technique",
+    "description": "You tunnel underground a short distance.",
+    "effect": "target_attack",
+    "valid_targets": [
+      "ground"
+    ],
+    "flags": [
+      "SWAP_POS",
+      "SILENT",
+      "NO_LEGS",
+      "NO_EXPLOSION_VFX",
+      "NO_HANDS"
+    ],
+    "min_range": 15,
+    "max_range": 35,
+    "max_level": 10,
+    "difficulty": -10,
+    "base_casting_time": 864,
+    "final_casting_time": 461,
+    "energy_source": "MANA",
+    "extra_effects": [
+      {
+        "id": "drain884",
+        "hit_self": true
+      }
+    ],
+    "base_energy_cost": 364,
+    "range_increment": 1,
+    "casting_time_increment": -3,
+    "energy_increment": -100
+  },
+  {
+    "id": "summon_rockwall",
+    "type": "SPELL",
+    "name": {
+      "str": "Earth Style: Mud Wall"
+    },
+    "description": "You draw a large boulder out of the ground using chakra",
+    "valid_targets": [
+      "ground"
+    ],
+    "flags": [
+      "SOMATIC",
+      "NO_LEGS",
+      "SILENT"
+    ],
+    "extra_effects": [
+      {
+        "id": "drain884",
+        "hit_self": true
+      }
+    ],
+    "min_damage": 1,
+    "damage_type": "true",
+    "max_damage": 1,
+    "min_range": 20,
+    "max_range": 40,
+    "range_increment": 1,
+    "base_energy_cost": 364,
+    "base_casting_time": 164,
+    "casting_time_increment": -3,
+    "final_casting_time": 101,
+    "difficulty": -10,
+    "max_level": 20,
+    "energy_source": "MANA",
+    "effect_str": "rocksummon",
+    "effect": "ter_transform"
+  },
+  {
+    "id": "summon_rockwall_prison",
+    "type": "SPELL",
+    "name": {
+      "str": "Earth Style: Mud Wall Prison"
+    },
+    "description": "You draw a large boulder out of the ground using chakra",
+    "valid_targets": [
+      "hostile",
+      "ally",
+      "ground",
+      "self"
+    ],
+    "flags": [
+      "SOMATIC",
+      "NO_LEGS",
+      "SILENT"
+    ],
+    "extra_effects": [
+      {
+        "id": "drain884",
+        "hit_self": true
+      }
+    ],
+    "min_damage": 1,
+    "damage_type": "true",
+    "max_damage": 1,
+    "min_aoe": 1,
+    "max_aoe": 1,
+    "min_range": 20,
+    "max_range": 40,
+    "range_increment": 1,
+    "base_energy_cost": 364,
+    "base_casting_time": 164,
+    "casting_time_increment": -3,
+    "final_casting_time": 101,
+    "difficulty": -10,
+    "max_level": 20,
+    "energy_source": "MANA",
+    "effect_str": "rocksummon",
+    "effect": "ter_transform"
+  },
+  {
+    "type": "ter_furn_transform",
+    "id": "rocksummon",
+    "furniture": [
+      {
+        "result": "f_boulder_large"
+      }
+    ]
+  },
+  {
+    "id": "mon_mud_dragonhead",
+    "type": "MONSTER",
+    "name": "Mud Dragon Head",
+    "description": "-.",
+    "default_faction": "devil",
+    "bodytype": "human",
+    "species": [
+      "DEVIL"
+    ],
+    "material": [
+      "iflesh"
+    ],
+    "diff": 2,
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 500,
+    "speed": 120,
+    "symbol": "h",
+    "color": "red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 1,
+    "melee_dice": 1,
+    "melee_dice_sides": 1,
+    "melee_damage": [
+      {
+        "damage_type": "acid",
+        "amount": 1
+      }
+    ],
+    "special_when_hit": [
+      "ACIDSPLASH",
+      33
+    ],
+    "dodge": 1,
+    "armor_cold": 1,
+    "armor_electric": 20,
+    "armor_acid": 50,
+    "armor_fire": 30,
+    "armor_cut": 10,
+    "armor_stab": 30,
+    "armor_bullet": 30,
+    "armor_bash": 10,
+    "vision_day": 17,
+    "vision_night": 50,
+    "special_attacks": [
+      [
+        "SPIT_SAP",
+        2
+      ]
+    ],
+    "death_drops": "slugdrops",
+    "harvest": "boss1",
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "ACIDPROOF",
+      "POISON",
+      "ACIDTRAIL",
+      "ACID_BLOOD",
+      "HEARS",
+      "IMMOBILE",
+      "HARDTOSHOOT",
+      "NO_BREATHE",
+      "PATH_AVOID_DANGER_1",
+      "PUSH_MON"
+    ]
+  },
+  {
+    "id": "mon_mudwolf",
+    "type": "MONSTER",
+    "name": {
+      "str": "mud wolf"
+    },
+    "description": "A chakra summon with the appearance of a wolf made of mud.",
+    "default_faction": "wolf",
+    "bodytype": "dog",
+    "categories": [
+      "WILDLIFE"
+    ],
+    "species": [
+      "MAMMAL"
+    ],
+    "volume": "600000 ml",
+    "weight": "600000 g",
+    "hp": 300,
+    "speed": 150,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "W",
+    "color": "light_gray",
+    "aggression": 50,
+    "morale": 100,
+    "melee_skill": 8,
+    "melee_dice": 3,
+    "melee_dice_sides": 12,
+    "melee_cut": 12,
+    "dodge": 2,
+    "armor_bash": 8,
+    "armor_cut": 10,
+    "vision_day": 50,
+    "vision_night": 5,
+    "harvest": "mutant_mammal_large_toothy_fur",
+    "path_settings": {
+      "max_dist": 10
+    },
+    "special_attacks": [
+      {
+        "type": "bite",
+        "cooldown": 5,
+        "damage_max_instance": [
+          {
+            "damage_type": "stab",
+            "amount": 15,
+            "armor_penetration": 10
+          }
+        ]
+      }
+    ],
+    "anger_triggers": [
+      "STALK",
+      "FRIEND_ATTACKED",
+      "FRIEND_DIED",
+      "PLAYER_WEAK",
+      "PLAYER_CLOSE"
+    ],
+    "placate_triggers": [
+      "MEAT"
+    ],
+    "death_function": [
+      "NORMAL"
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "ANIMAL",
+      "PATH_AVOID_DANGER_1",
+      "WARM",
+      "KEENNOSE"
+    ]
+  },
+  {
+    "id": "summon_mudwolf",
+    "type": "SPELL",
+    "name": {
+      "str": "Earth Style: Mud Wolves"
+    },
+    "description": "Summons 3 wolves made of mud formed with chakra to your aid",
+    "valid_targets": [
+      "ground"
+    ],
+    "min_damage": 2,
+    "max_damage": 15,
+    "//": "level 20 will max out your number of summons",
+    "damage_increment": 0.8,
+    "max_level": 20,
+    "difficulty": -10,
+    "extra_effects": [
+      {
+        "id": "drain663",
+        "hit_self": true
+      }
+    ],
+    "effect": "summon",
+    "effect_str": "mon_mudwolf",
+    "energy_source": "MANA",
+    "base_energy_cost": 573,
+    "//2": "one minute",
+    "base_casting_time": 323,
+    "casting_time_increment": -3,
+    "final_casting_time": 261,
+    "min_range": 7,
+    "max_range": 17,
+    "min_aoe": 2,
+    "max_aoe": 5,
+    "range_increment": 0.5,
+    "aoe_increment": 0.5,
+    "flags": [
+      "SOMATIC"
+    ],
+    "min_duration": 120000,
+    "max_duration": 315000,
+    "duration_increment": 4000
+  },
+  {
+    "id": "summon_mudhead",
+    "type": "SPELL",
+    "name": {
+      "str": "Earth Style: Earth Dragon Bullet Technique"
+    },
+    "description": "Summons the head of a mud dragon to shoot chakra infused mud at the enemy",
+    "valid_targets": [
+      "ground"
+    ],
+    "min_damage": 1,
+    "max_damage": 7,
+    "//": "level 20 will max out your number of summons",
+    "damage_increment": 0.3,
+    "max_level": 20,
+    "difficulty": -10,
+    "extra_effects": [
+      {
+        "id": "drain663",
+        "hit_self": true
+      }
+    ],
+    "effect": "summon",
+    "effect_str": "mon_mud_dragonhead",
+    "energy_source": "MANA",
+    "base_energy_cost": 573,
+    "//2": "one minute",
+    "base_casting_time": 223,
+    "casting_time_increment": -3,
+    "final_casting_time": 161,
+    "min_range": 7,
+    "max_range": 17,
+    "range_increment": 1,
+    "min_aoe": 1,
+    "max_aoe": 1,
+    "flags": [
+      "SOMATIC"
+    ],
+    "min_duration": 120000,
+    "max_duration": 315000,
+    "duration_increment": 4000
+  },
+  {
+    "id": "earthsmoke",
+    "type": "SPELL",
+    "name": "Earth Style: Dust Storm",
+    "description": "Spawns smoke.",
+    "effect": "target_attack",
+    "flags": [
+      "SILENT",
+      "NO_EXPLOSION_VFX"
+    ],
+    "valid_targets": [
+      "hostile",
+      "ground"
+    ],
+    "field_id": "fd_smoke",
+    "field_chance": 2,
+    "min_field_intensity": 3,
+    "max_field_intensity": 3,
+    "extra_effects": [
+      {
+        "id": "drain884",
+        "hit_self": true
+      }
+    ],
+    "min_range": 19,
+    "max_range": 29,
+    "range_increment": 0.5,
+    "aoe_increment": 0.5,
+    "min_aoe": 8,
+    "max_aoe": 18,
+    "max_level": 20,
+    "min_damage": 10,
+    "min_duration": 100,
+    "max_damage": 210,
+    "damage_increment": 10,
+    "difficulty": -10,
+    "base_casting_time": 164,
+    "casting_time_increment": -3,
+    "final_casting_time": 101,
+    "energy_source": "MANA",
+    "damage_type": "bio",
+    "base_energy_cost": 364
+  },
+  {
+    "id": "summon_rubble",
+    "type": "SPELL",
+    "name": {
+      "str": "Earth Style: Gravel"
+    },
+    "description": "You create a large field of rubble using chakra",
+    "valid_targets": [
+      "ground"
+    ],
+    "flags": [
+      "SOMATIC",
+      "NO_LEGS",
+      "SILENT"
+    ],
+    "min_aoe": 4,
+    "max_aoe": 14,
+    "aoe_increment": 0.5,
+    "min_damage": 1,
+    "damage_increment": 1.5,
+    "extra_effects": [
+      {
+        "id": "drain884",
+        "hit_self": true
+      }
+    ],
+    "damage_type": "true",
+    "max_damage": 1,
+    "min_range": 20,
+    "range_increment": 0.8,
+    "max_range": 39,
+    "base_energy_cost": 364,
+    "difficulty": -10,
+    "max_level": 20,
+    "base_casting_time": 164,
+    "casting_time_increment": -3,
+    "final_casting_time": 101,
+    "energy_source": "MANA",
+    "effect_str": "rubblesummon",
+    "effect": "ter_transform"
+  },
+  {
+    "type": "ter_furn_transform",
+    "id": "rocksummon",
+    "furniture": [
+      {
+        "result": [
+          "f_boulder_large"
+        ],
+        "valid_furniture": [
+          "f_null"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "ter_furn_transform",
+    "id": "rubblesummon",
+    "furniture": [
+      {
+        "result": [
+          "f_rubble_rock"
+        ],
+        "valid_furniture": [
+          "f_null"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "ter_furn_transform",
+    "id": "sand_puddle",
+    "//": "Furniture alteration has to be able to reasonably check for most intervening furniture and remove it.",
+    "terrain": [
+      {
+        "result": "t_sand",
+        "valid_flags": [
+          "FLAT"
+        ],
+        "diggable": true
+      }
+    ],
+    "furniture": [
+      {
+        "result": "f_null",
+        "valid_flags": [
+          "TRANSPARENT",
+          "WALL"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "ter_furn_transform",
+    "id": "water_puddle",
+    "//": "Furniture alteration has to be able to reasonably check for most intervening furniture and remove it.",
+    "terrain": [
+      {
+        "result": "t_water_sh",
+        "valid_flags": [
+          "FLAT"
+        ],
+        "diggable": true
+      }
+    ],
+    "furniture": [
+      {
+        "result": "f_null",
+        "valid_flags": [
+          "TRANSPARENT",
+          "WALL"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "summon_sand_prison",
+    "type": "SPELL",
+    "name": {
+      "str": "monster jutsu sand prison"
+    },
+    "description": "You create a large field of rubble using chakra",
+    "valid_targets": [
+      "ground"
+    ],
+    "flags": [
+      "SOMATIC",
+      "NO_LEGS",
+      "SILENT"
+    ],
+    "min_aoe": 1,
+    "max_aoe": 1,
+    "min_damage": 1,
+    "extra_effects": [
+      {
+        "id": "drain884",
+        "hit_self": true
+      }
+    ],
+    "damage_type": "true",
+    "max_damage": 1,
+    "min_range": 20,
+    "range_increment": 0.8,
+    "max_range": 39,
+    "base_energy_cost": 364,
+    "difficulty": -10,
+    "max_level": 20,
+    "base_casting_time": 164,
+    "casting_time_increment": -3,
+    "final_casting_time": 101,
+    "energy_source": "MANA",
+    "effect_str": "sand_puddle",
+    "effect": "ter_transform"
+  },
+  {
+    "id": "summon_puddle_prison",
+    "type": "SPELL",
+    "name": {
+      "str": "monster jutsu waterfall prison"
+    },
+    "description": "You create a large field of rubble using chakra",
+    "valid_targets": [
+      "ground"
+    ],
+    "flags": [
+      "SOMATIC",
+      "NO_LEGS",
+      "SILENT"
+    ],
+    "min_aoe": 1,
+    "max_aoe": 1,
+    "min_damage": 1,
+    "extra_effects": [
+      {
+        "id": "drain884",
+        "hit_self": true
+      }
+    ],
+    "damage_type": "true",
+    "max_damage": 1,
+    "min_range": 20,
+    "range_increment": 0.8,
+    "max_range": 39,
+    "base_energy_cost": 364,
+    "difficulty": -10,
+    "max_level": 20,
+    "base_casting_time": 164,
+    "casting_time_increment": -3,
+    "final_casting_time": 101,
+    "energy_source": "MANA",
+    "effect_str": "water_puddle",
+    "effect": "ter_transform"
+  },
+  {
+    "id": "summon_puddle",
+    "type": "SPELL",
+    "name": {
+      "str": "monster jutsu waterfall"
+    },
+    "description": "You create a large field of rubble using chakra",
+    "valid_targets": [
+      "ground"
+    ],
+    "flags": [
+      "SOMATIC",
+      "NO_LEGS",
+      "SILENT"
+    ],
+    "min_aoe": 4,
+    "max_aoe": 4,
+    "min_damage": 4,
+    "extra_effects": [
+      {
+        "id": "drain884",
+        "hit_self": true
+      }
+    ],
+    "damage_type": "true",
+    "max_damage": 4,
+    "min_range": 20,
+    "range_increment": 0.8,
+    "max_range": 39,
+    "base_energy_cost": 364,
+    "difficulty": -10,
+    "max_level": 20,
+    "base_casting_time": 164,
+    "casting_time_increment": -3,
+    "final_casting_time": 101,
+    "energy_source": "MANA",
+    "effect_str": "water_puddle",
+    "effect": "ter_transform"
+  },
+  {
+    "id": "tornado_push",
+    "type": "SPELL",
+    "name": "Tornado Push",
+    "description": "The user focuses chakra into their palm and releases it quickly to repel the target long distances.",
+    "effect": "directed_push",
+    "valid_targets": [
+      "hostile",
+      "ground"
+    ],
+    "flags": [
+      "SILENT",
+      "NO_EXPLOSION_VFX",
+      "RANDOM_DAMAGE",
+      "SOMATIC"
+    ],
+    "min_range": 2,
+    "max_range": 2,
+    "melee_dam": [
+      "physical",
+      "elemental"
+    ],
+    "max_level": 20,
+    "difficulty": -10,
+    "min_damage": 20,
+    "damage_increment": 1,
+    "max_damage": 50,
+    "min_aoe": 0,
+    "max_aoe": 0,
+    "energy_source": "MANA",
+    "base_casting_time": 41,
+    "casting_time_increment": -1,
+    "final_casting_time": 21,
+    "extra_effects": [
+      {
+        "id": "handsign_drain",
+        "min_level": 2,
+        "hit_self": true
+      }
+    ],
+    "base_energy_cost": 273
+  },
+  {
+    "id": "mon_tornado_chakra",
+    "type": "MONSTER",
+    "name": "Chakra Tornado",
+    "description": "A construct made of chakra.",
+    "default_faction": "devil",
+    "bodytype": "human",
+    "species": [
+      "DEVIL"
+    ],
+    "material": [
+      "iflesh"
+    ],
+    "diff": 2,
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 1320,
+    "speed": 222,
+    "symbol": "h",
+    "color": "red",
+    "path_settings": {
+      "max_dist": 1
+    },
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 7,
+    "melee_dice": 4,
+    "melee_dice_sides": 8,
+    "starting_ammo": {
+      "water_tendril": 140
+    },
+    "melee_damage": [
+      {
+        "damage_type": "bash",
+        "amount": 25
+      }
+    ],
+    "special_attacks": [
+      [
+        "RANGED_PULL",
+        5
+      ],
+      [
+        "SMASH",
+        5
+      ],
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "tornado_push",
+          "min_level": 1
+        },
+        "cooldown": 18
+      },
+      {
+        "type": "gun",
+        "cooldown": 2,
+        "move_cost": 80,
+        "gun_type": "tornado_gun",
+        "ammo_type": "water_tendril",
+        "fake_skills": [
+          [
+            "gun",
+            10
+          ],
+          [
+            "xbow",
+            10
+          ]
+        ],
+        "fake_dex": 18,
+        "fake_per": 19,
+        "ranges": [
+          [
+            2,
+            30,
+            "DEFAULT"
+          ]
+        ],
+        "require_targeting_player": false,
+        "no_ammo_sound": "The tornado rages on.",
+        "description": "The tornado blasts a target with force, stunning them.",
+        "no_crits": true
+      }
+    ],
+    "dodge": 2,
+    "armor_cold": 50,
+    "armor_electric": 15,
+    "armor_acid": 1,
+    "armor_fire": 80,
+    "armor_cut": 1,
+    "armor_stab": 1,
+    "armor_bullet": 11,
+    "armor_bash": 1,
+    "vision_day": 20,
+    "vision_night": 50,
+    "death_drops": "slugdrops",
+    "harvest": "human",
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "HEARS",
+      "WEBWALK",
+      "HIT_AND_RUN",
+      "HARDTOSHOOT",
+      "CLIMBS",
+      "NO_BREATHE",
+      "PATH_AVOID_DANGER_1"
+    ]
+  },
+  {
+    "id": "earth_clone_mother",
+    "type": "SPELL",
+    "name": {
+      "str": "Earth Clone Spell"
+    },
+    "description": "Call forth monks to your aid",
+    "valid_targets": [
+      "hostile"
+    ],
+    "min_damage": 1,
+    "max_damage": 1,
+    "//": "level 20 will max out your number of summons",
+    "damage_increment": 1,
+    "max_level": 1,
+    "difficulty": 1,
+    "effect": "target_attack",
+    "energy_source": "HP",
+    "base_energy_cost": 1,
+    "extra_effects": [
+      {
+        "id": "thrown_stones_jutsu",
+        "max_level": 1
+      },
+      {
+        "id": "chakra_aim",
+        "max_level": 1
+      },
+      {
+        "id": "thrown_stones_jutsu",
+        "max_level": 1
+      },
+      {
+        "id": "chakra_aim",
+        "max_level": 1
+      },
+      {
+        "id": "summon_mudwolf",
+        "max_level": 1
+      },
+      {
+        "id": "summon_mudhead",
+        "max_level": 1
+      },
+      {
+        "id": "bash_terrain",
+        "max_level": 1
+      },
+      {
+        "id": "earthfist",
+        "max_level": 1
+      },
+      {
+        "id": "earthskin",
+        "max_level": 1
+      },
+      {
+        "id": "thrown_stones_jutsu",
+        "max_level": 1
+      },
+      {
+        "id": "chakra_aim",
+        "max_level": 1
+      },
+      {
+        "id": "tunnelport",
+        "max_level": 1
+      },
+      {
+        "id": "summon_rockwall",
+        "max_level": 1
+      },
+      {
+        "id": "summon_rockwall_prison",
+        "max_level": 1
+      },
+      {
+        "id": "summon_mudwolf",
+        "max_level": 1
+      },
+      {
+        "id": "summon_mudhead",
+        "max_level": 1
+      },
+      {
+        "id": "earthsmoke",
+        "max_level": 1
+      },
+      {
+        "id": "summon_rubble",
+        "max_level": 1
+      }
+    ],
+    "//2": "one minute",
+    "base_casting_time": 1,
+    "min_range": 23,
+    "max_range": 23,
+    "min_aoe": 9,
+    "max_aoe": 9,
+    "flags": [
+      "PERMANENT",
+      "WONDER",
+      "NO_EXPLOSION_VFX"
+    ],
+    "min_duration": 1000,
+    "max_duration": 1000,
+    "duration_increment": 4000
+  },
+  {
+    "id": "mon_earth_dragon",
+    "type": "MONSTER",
+    "name": "Chakra Dragon",
+    "description": "A construct made of chakra.",
+    "default_faction": "devil",
+    "bodytype": "human",
+    "species": [
+      "DEVIL"
+    ],
+    "material": [
+      "iflesh"
+    ],
+    "diff": 2,
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 1320,
+    "speed": 244,
+    "symbol": "h",
+    "color": "red",
+    "path_settings": {
+      "max_dist": 1
+    },
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 7,
+    "melee_dice": 4,
+    "melee_dice_sides": 8,
+    "starting_ammo": {
+      "water_tendril": 140
+    },
+    "melee_damage": [
+      {
+        "damage_type": "bash",
+        "amount": 1
+      }
+    ],
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "earth_clone_mother",
+          "min_level": 1
+        },
+        "cooldown": 18
+      },
+      {
+        "type": "gun",
+        "cooldown": 4,
+        "move_cost": 1,
+        "target_moving_vehicles": true,
+        "gun_type": "earth_gun",
+        "description": "The chakra dragon unleashes its acidic breath!",
+        "fake_skills": [
+          [
+            "gun",
+            8
+          ],
+          [
+            "rifle",
+            8
+          ],
+          [
+            "pistol",
+            10
+          ]
+        ],
+        "fake_dex": 55,
+        "fake_per": 55,
+        "ranges": [
+          [
+            0,
+            30,
+            "DEFAULT"
+          ]
+        ],
+        "no_crits": true
+      }
+    ],
+    "dodge": 2,
+    "armor_cold": 50,
+    "armor_electric": 15,
+    "armor_acid": 61,
+    "armor_fire": 80,
+    "armor_cut": 21,
+    "armor_stab": 21,
+    "armor_bullet": 41,
+    "armor_bash": 21,
+    "vision_day": 20,
+    "vision_night": 50,
+    "death_drops": "slugdrops",
+    "harvest": "human",
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "HEARS",
+      "WEBWALK",
+      "HIT_AND_RUN",
+      "HARDTOSHOOT",
+      "CLIMBS",
+      "NO_BREATHE",
+      "PATH_AVOID_DANGER_1"
+    ]
+  },
+  {
+    "id": "mon_water_dragon",
+    "type": "MONSTER",
+    "name": "Chakra Eel",
+    "description": "A construct made of chakra.",
+    "default_faction": "devil",
+    "bodytype": "human",
+    "species": [
+      "DEVIL"
+    ],
+    "material": [
+      "iflesh"
+    ],
+    "diff": 2,
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 320,
+    "speed": 180,
+    "symbol": "h",
+    "color": "red",
+    "path_settings": {
+      "max_dist": 1
+    },
+    "emit_fields": [
+      {
+        "emit_id": "emit_mist",
+        "delay": "2 s"
+      }
+    ],
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 7,
+    "melee_dice": 4,
+    "melee_dice_sides": 8,
+    "starting_ammo": {
+      "water_tendril": 140
+    },
+    "melee_damage": [
+      {
+        "damage_type": "cold",
+        "amount": 1
+      }
+    ],
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "summon_puddle",
+          "min_level": 1
+        },
+        "cooldown": 18
+      },
+      {
+        "type": "gun",
+        "cooldown": 23,
+        "move_cost": 80,
+        "gun_type": "chakra_eel_gun",
+        "ammo_type": "water_tendril",
+        "fake_skills": [
+          [
+            "gun",
+            10
+          ],
+          [
+            "xbow",
+            10
+          ]
+        ],
+        "fake_dex": 18,
+        "fake_per": 19,
+        "ranges": [
+          [
+            2,
+            30,
+            "DEFAULT"
+          ]
+        ],
+        "require_targeting_player": false,
+        "no_ammo_sound": "The chakra eel twists and curls it's body.",
+        "description": "The chakra eel writhes around and tendrils of water strike the opponent.",
+        "no_crits": true
+      }
+    ],
+    "dodge": 2,
+    "armor_cold": 50,
+    "armor_electric": 15,
+    "armor_acid": 1,
+    "armor_fire": 80,
+    "armor_cut": 1,
+    "armor_stab": 1,
+    "armor_bullet": 11,
+    "armor_bash": 1,
+    "vision_day": 20,
+    "vision_night": 50,
+    "death_drops": "slugdrops",
+    "harvest": "human",
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "HEARS",
+      "WEBWALK",
+      "HIT_AND_RUN",
+      "HARDTOSHOOT",
+      "CLIMBS",
+      "NO_BREATHE",
+      "PATH_AVOID_DANGER_1"
+    ]
+  },
+  {
+    "id": "mon_water_dragon_large",
+    "type": "MONSTER",
+    "name": "Chakra Dragon",
+    "description": "A construct made of chakra.",
+    "default_faction": "devil",
+    "bodytype": "human",
+    "species": [
+      "DEVIL"
+    ],
+    "material": [
+      "iflesh"
+    ],
+    "diff": 2,
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 820,
+    "speed": 280,
+    "symbol": "h",
+    "color": "red",
+    "path_settings": {
+      "max_dist": 1
+    },
+    "emit_fields": [
+      {
+        "emit_id": "emit_mist",
+        "delay": "2 s"
+      }
+    ],
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 7,
+    "melee_dice": 5,
+    "melee_dice_sides": 8,
+    "starting_ammo": {
+      "water_tendril": 240
+    },
+    "melee_damage": [
+      {
+        "damage_type": "cold",
+        "amount": 1
+      }
+    ],
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "summon_puddle",
+          "min_level": 1
+        },
+        "cooldown": 9
+      },
+      {
+        "type": "gun",
+        "cooldown": 15,
+        "move_cost": 80,
+        "gun_type": "chakra_eel_gun",
+        "ammo_type": "water_tendril",
+        "fake_skills": [
+          [
+            "gun",
+            10
+          ],
+          [
+            "xbow",
+            10
+          ]
+        ],
+        "fake_dex": 18,
+        "fake_per": 19,
+        "ranges": [
+          [
+            2,
+            30,
+            "DEFAULT"
+          ]
+        ],
+        "require_targeting_player": false,
+        "no_ammo_sound": "The chakra eel twists and curls it's body.",
+        "description": "The chakra eel writhes around and tendrils of water strike the opponent.",
+        "no_crits": true
+      }
+    ],
+    "dodge": 2,
+    "armor_cold": 50,
+    "armor_electric": 15,
+    "armor_acid": 1,
+    "armor_fire": 80,
+    "armor_cut": 1,
+    "armor_stab": 1,
+    "armor_bullet": 11,
+    "armor_bash": 1,
+    "vision_day": 20,
+    "vision_night": 50,
+    "death_drops": "slugdrops",
+    "harvest": "human",
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "HEARS",
+      "WEBWALK",
+      "HIT_AND_RUN",
+      "HARDTOSHOOT",
+      "CLIMBS",
+      "NO_BREATHE",
+      "PATH_AVOID_DANGER_1"
+    ]
+  }
+]

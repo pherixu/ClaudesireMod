@@ -1,0 +1,977 @@
+[
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "dungeon_hall_1", "dungeon_hall_2", "dungeon_hall_3", "dungeon_hall_4" ],
+    "weight": 100,
+    "object": {
+      "fill_ter": "t_rock_floor",
+      "rows": [
+        "       |       |       |",
+        "       |       |       |",
+        "       |       |       |",
+        "       +       +       |",
+        "       |       |       |",
+        "       |       |       |",
+        "       |       |       |",
+        "---?---|---+---|---?---|",
+        "       |       |       |",
+        "       |       |       |",
+        "       |       |       |",
+        "       ?       +       M",
+        "       |       |       M",
+        "       |       |       |",
+        "       |       |       |",
+        "---+---|---+---|---?---|",
+        "       |       |       |",
+        "       |       |       |",
+        "       |       |       |",
+        "       +       +       |",
+        "       |       |       |",
+        "       |       |       |",
+        "       |       |       |",
+        "-----------MM----------|"
+      ],
+      "palettes": [ "dungeon_palette" ],
+      "terrain": { "?": [ "t_rock_wall", "t_door_c", "t_door_bar_c" ] },
+      "place_nested": [
+        { "chunks": [ "dgn_spawn_7x7_crossdoors" ], "x": 0, "y": 0 },
+        { "chunks": [ "dgn_spawn_7x7" ], "x": 0, "y": 8 },
+        { "chunks": [ "dgn_spawn_7x7_crossdoors" ], "x": 0, "y": 16 },
+        { "chunks": [ "dgn_spawn_7x7" ], "x": 8, "y": 0 },
+        { "chunks": [ "dgn_spawn_7x7_crossdoors" ], "x": 8, "y": 8 },
+        { "chunks": [ "dgn_spawn_7x7" ], "x": 8, "y": 16 },
+        { "chunks": [ "dgn_spawn_7x7_wall_sw" ], "x": 15, "y": 0 },
+        { "chunks": [ "dgn_spawn_7x7" ], "x": 16, "y": 8 },
+        { "chunks": [ "dgn_spawn_7x7_wall_nw" ], "x": 15, "y": 15 },
+        { "chunks": [ "dgn_sub_t_concrete_wall" ], "x": 15, "y": 7 },
+        { "chunks": [ "dgn_sub_t_concrete_wall" ], "x": 15, "y": 15 },
+        { "chunks": [ "dgn_border_walls" ], "x": 0, "y": 0 }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "dungeon_hall_1", "dungeon_hall_2", "dungeon_hall_3", "dungeon_hall_4" ],
+    "weight": 100,
+    "object": {
+      "fill_ter": "t_rock_floor",
+      "rotation": [ 0, 1 ],
+      "//": "Only allows 0,1 orientation so the right-side rooms stay against a north or east wall",
+      "rows": [
+        "...............|xcccc.X|",
+        "...............W......X|",
+        "...HtH...HtH...|-------|",
+        "..-----+-----..|       |",
+        "..|         |..|       |",
+        "..|         |..|       |",
+        "..|         |..+       |",
+        "..|         |..|       |",
+        "..?         ?..|       |",
+        "..|         |..|       |",
+        "..|         |..----?---|",
+        "..|         |...........",
+        "..|         |...........",
+        "-?-----?-----..----+---|",
+        "          |....|       |",
+        "          g....|       |",
+        "          g..|-|       |",
+        "          |..|f|       |",
+        "          G..W.|       |",
+        "          |..|-|       |",
+        "          g..|T|       |",
+        "          g..W.|---W---|",
+        "          |..|S|X.....X|",
+        "          |..|-|X.ccc.X|"
+      ],
+      "palettes": [ "dungeon_palette", "dungeon_loot_research" ],
+      "furniture": { "H": [ "f_armchair" ] },
+      "terrain": {
+        "?": [ "t_rock_wall", "t_rock_wall", "t_door_c" ],
+        "g": [ "t_window_bars" ],
+        "G": [ "t_door_bar_c" ]
+      },
+      "mapping": {
+        "f": { "items": [ { "item": "dgn_provisions", "chance": 30 }, { "item": "dgn_provisions", "chance": 60 } ] },
+        "t": { "items": [ { "item": "dgn_scribe", "chance": 3 } ] }
+      },
+      "place_nested": [
+        { "chunks": [ "dgn_spawn_9x9_crossdoors" ], "x": 3, "y": 4 },
+        { "chunks": [ "dgn_spawn_9x9" ], "x": [ 0, 1 ], "y": 14 },
+        { "chunks": [ "dgn_spawn_7x7_wall_sw" ], "x": 15, "y": 3 },
+        { "chunks": [ "dgn_spawn_7x7_crossdoors" ], "x": 16, "y": 14 }
+      ]
+    }
+  },
+  {
+    "//": "electricity room, 2/3 chance of shock malfunction",
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "dungeon_hall_1", "dungeon_hall_2", "dungeon_hall_3", "dungeon_hall_4" ],
+    "weight": 50,
+    "object": {
+      "fill_ter": "t_rock_floor",
+      "rotation": [ 0, 1 ],
+      "//": "Only allows 0,1 orientation so the right-side rooms stay against a north or east wall",
+      "rows": [
+        ".......|r......|X.ccc.X|",
+        ".......|r......|X.....X|",
+        "......%|.......|---W---|",
+        "|LLLLL||.......|       |",
+        "......%.......l|       |",
+        "..............l|       |",
+        "...............+       |",
+        "...............|       |",
+        "FFFHFFFFFFFFHFF|       |",
+        "..........F....|       |",
+        "..........F....----?---|",
+        ".....PPP..F.............",
+        ".....PPP..F.............",
+        "..........F....----+---|",
+        "..........H....|       |",
+        "..........F....|       |",
+        "FFFFFHFFFFFFF|-|       |",
+        ".............|r|       |",
+        "r............+.|       |",
+        "r............|-|       |",
+        "--+---.......|T|       |",
+        "c...c|.......W.|---W---|",
+        "c...c|.......|S|X.....X|",
+        "c...c|.rrr...|-|X.ccc.X|"
+      ],
+      "palettes": [ "dungeon_palette", "dungeon_loot_research" ],
+      "furniture": { "f": "f_null" },
+      "terrain": {
+        "?": [ "t_rock_wall", "t_rock_wall", "t_door_c" ],
+        "P": "t_dgn_golem_heart",
+        "F": "t_bars",
+        "f": "t_bars",
+        "H": "t_gate_metal_c"
+      },
+      "mapping": { "r": { "items": [ { "item": "dgn_alchemy", "chance": 10 }, { "item": "dgn_alchemy", "chance": 10 } ] } },
+      "place_nested": [
+        { "chunks": [ "null", "dgn_sub_fd_fire_vent", "dgn_sub_fd_fire_vent" ], "x": 7, "y": 12 },
+        { "chunks": [ "dgn_spawn_7x7_crossdoors" ], "x": 16, "y": 3 },
+        { "chunks": [ "dgn_spawn_7x7_crossdoors" ], "x": 16, "y": 14 },
+        { "chunks": [ "dgn_sub_f_crate_utility_room" ], "x": [ 0, 5 ], "y": [ 0, 2 ], "repeat": 8 }
+      ]
+    }
+  },
+  {
+    "//": "Shock vent which spews electricity every ~10th turn.",
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "dgn_sub_fd_fire_vent",
+    "object": { "mapgensize": [ 1, 1 ], "place_fields": [ { "field": "fd_fire_vent", "x": 0, "y": 0 } ] }
+  },
+  {
+    "//": "chemlab and conveyor belts",
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "dungeon_hall_1", "dungeon_hall_2", "dungeon_hall_3", "dungeon_hall_4" ],
+    "weight": 100,
+    "object": {
+      "fill_ter": "t_rock_floor",
+      "rotation": [ 0, 1 ],
+      "//": "Only allows 0,1 orientation so the right-side rooms stay against a north or east wall",
+      "rows": [
+        "..hxh........----------|",
+        ".............|         |",
+        "..---..---...|         |",
+        "..c|c..c|c...|         |",
+        "..c|c..c|c...|         |",
+        "..---..---...+         |",
+        "..c|c..c|c...|         |",
+        "..c|c..c|c...|         |",
+        "..---..---...|         |",
+        ".............|         |",
+        "-----------MM-----?----|",
+        "........................",
+        "........................",
+        ".%..%..%..%....----+---|",
+        ".=..=..=..=....|       |",
+        ".=..=..=..=....|       |",
+        ".=..=..=..=....|       |",
+        ".=..=..=..=....?       |",
+        ".=..=..=..=....|       |",
+        ".=..=..=..=....|       |",
+        ".=..=..=..=...l|       |",
+        ".=..=..=..=...l|---W---|",
+        ".%..%..%..%...l|X.....X|",
+        "..............l|X.ccc.X|"
+      ],
+      "palettes": [ "dungeon_palette", "dungeon_loot_research" ],
+      "terrain": {
+        "?": [ "t_rock_wall", "t_rock_wall", "t_door_c" ],
+        "=": "t_rock_floor",
+        "%": "t_dgn_clockwork"
+      },
+      "mapping": { "c": { "items": [ { "item": "dgn_alchemy", "chance": 20 }, { "item": "dgn_alchemy", "chance": 20 } ] } },
+      "place_nested": [
+        { "chunks": [ "dgn_spawn_9x9_wall_sw" ], "x": 13, "y": 1 },
+        { "chunks": [ "dgn_sub_t_concrete_wall" ], "x": 13, "y": 10 },
+        { "chunks": [ "dgn_spawn_7x7_crossdoors" ], "x": 16, "y": 14 },
+        { "chunks": [ [ "null", 80 ], [ "dgn_hood_windfall", 20 ] ], "x": 2, "y": 2 }
+      ]
+    }
+  },
+  {
+    "//": "large chemlab",
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "dungeon_hall_1", "dungeon_hall_2", "dungeon_hall_3", "dungeon_hall_4" ],
+    "weight": 100,
+    "object": {
+      "fill_ter": "t_rock_floor",
+      "rotation": [ 0, 3 ],
+      "rows": [
+        "...!....!......!.....rrr",
+        "........................",
+        "..---..---....---..---..",
+        "..c|c..c|c....c|c..c|c..",
+        "..c|c..c|c....c|c..c|c..",
+        "..---..---....---..---..",
+        "..c|c..c|c....c|c..c|c..",
+        "..c|c..c|c....c|c..c|c..",
+        "..---..---....---..---..",
+        "........................",
+        "........................",
+        "...C....C......C....C...",
+        "...x....x......7....x...",
+        "........................",
+        "........................",
+        "..---..---.....|---+---|",
+        "..c|c..c|c.....|       |",
+        "..c|c..c|c.....|       |",
+        "..---..---.....|       |",
+        "..c|c..c|c.....?       |",
+        "..c|c..c|c.....|       |",
+        "..---..---.....|       |",
+        "..............l|       |",
+        "rrr.....!.....l|-------|"
+      ],
+      "palettes": [ "dungeon_palette", "dungeon_loot_research" ],
+      "furniture": { "f": "f_null", "C": "f_alembic" },
+      "terrain": {
+        "?": [ "t_rock_wall", "t_rock_wall", "t_door_c" ],
+        "!": [ "t_rock_floor", "t_rock_floor", "t_dgn_orb_broken", "t_dgn_golem_heart" ],
+        "7": "t_dgn_orb",
+        "C": "t_rock_floor"
+      },
+      "mapping": {
+        "c": { "items": [ { "item": "dgn_alchemy", "chance": 10 }, { "item": "dgn_alchemy", "chance": 10 } ] },
+        "r": { "items": [ { "item": "dgn_alchemy", "chance": 30 } ] }
+      },
+      "computers": {
+        "7": {
+          "name": "Blood Scrying Bowl",
+          "options": [ { "name": "Divine the blood", "action": "blood_anal" } ],
+          "failures": [ { "action": "destroy_blood" } ]
+        }
+      },
+      "place_nested": [
+        { "chunks": [ "dgn_spawn_7x7_wall_nw" ], "x": 15, "y": 15 },
+        { "chunks": [ [ "null", 80 ], [ "dgn_largechem_windfall", 20 ] ], "x": 0, "y": 0 }
+      ],
+      "place_monster": [
+        {
+          "group": "GROUP_DUNGEON_COMMON",
+          "x": [ 9, 15 ],
+          "y": [ 9, 15 ],
+          "chance": 10,
+          "pack_size": [ 2, 4 ]
+        }
+      ]
+    }
+  },
+  {
+    "//": "Add mutagens to a cluster of 4 lab hoods.",
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "dgn_hood_windfall",
+    "object": {
+      "mapgensize": [ 10, 10 ],
+      "place_items": [
+        { "item": "dgn_alchemy", "x": 0, "y": [ 1, 2 ], "chance": 50, "repeat": [ 1, 4 ] },
+        { "item": "dgn_alchemy", "x": 2, "y": [ 1, 2 ], "chance": 50, "repeat": [ 1, 4 ] },
+        { "item": "dgn_alchemy", "x": 0, "y": [ 4, 5 ], "chance": 50, "repeat": [ 1, 4 ] },
+        { "item": "dgn_alchemy", "x": 2, "y": [ 4, 5 ], "chance": 50, "repeat": [ 1, 4 ] },
+        { "item": "dgn_alchemy", "x": 5, "y": [ 1, 2 ], "chance": 50, "repeat": [ 1, 4 ] },
+        { "item": "dgn_alchemy", "x": 7, "y": [ 1, 2 ], "chance": 50, "repeat": [ 1, 4 ] },
+        { "item": "dgn_alchemy", "x": 5, "y": [ 4, 5 ], "chance": 50, "repeat": [ 1, 4 ] },
+        { "item": "dgn_alchemy", "x": 7, "y": [ 4, 5 ], "chance": 50, "repeat": [ 1, 4 ] }
+      ]
+    }
+  },
+  {
+    "//": "Large chemlab: add mutagens, shift centrifuges into cloning vats, maybe secubots.",
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "dgn_largechem_windfall",
+    "object": {
+      "mapgensize": [ 24, 24 ],
+      "set": [
+        { "point": "terrain", "id": "t_dgn_cauldron", "x": 3, "y": 11 },
+        { "point": "terrain", "id": "t_dgn_cauldron", "x": 3, "y": 12 },
+        { "point": "terrain", "id": "t_dgn_cauldron", "x": 8, "y": 11 },
+        { "point": "terrain", "id": "t_dgn_cauldron", "x": 8, "y": 12 },
+        { "point": "furniture", "id": "f_null", "x": 3, "y": 11 },
+        { "point": "furniture", "id": "f_null", "x": 8, "y": 11 }
+      ],
+      "place_items": [
+        { "item": "dgn_alchemy", "x": 3, "y": 11, "chance": 66 },
+        { "item": "dgn_alchemy", "x": 3, "y": 12, "chance": 66 },
+        { "item": "dgn_alchemy", "x": 8, "y": 11, "chance": 66 },
+        { "item": "dgn_alchemy", "x": 8, "y": 12, "chance": 66 }
+      ],
+      "place_nested": [
+        { "chunks": [ "dgn_hood_windfall" ], "x": 2, "y": 2 },
+        { "chunks": [ "dgn_hood_windfall" ], "x": 14, "y": 2 },
+        { "chunks": [ "dgn_hood_windfall" ], "x": 2, "y": 15 }
+      ],
+      "place_monster": [
+        {
+          "group": "GROUP_DUNGEON_UNCOMMON",
+          "x": [ 9, 15 ],
+          "y": [ 9, 15 ],
+          "chance": 33,
+          "pack_size": [ 1, 2 ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "dungeon_hall_1", "dungeon_hall_2", "dungeon_hall_3", "dungeon_hall_4" ],
+    "weight": 50,
+    "object": {
+      "rotation": [ 3, 4 ],
+      "fill_ter": "t_rock_floor",
+      "rows": [
+        "........................",
+        "l.......................",
+        "l..----+-------?----....",
+        "l..|       |       |..hh",
+        "l..|       |       |..tt",
+        "...|       |       |..hh",
+        "l..?       |       ?....",
+        "l..|       |       |..hh",
+        "l..|       |       |..tt",
+        "l..|       |       |..hh",
+        "...|---------|-+----....",
+        "...|         |f....+....",
+        "...|         |---+---|..",
+        "...|         |       |..",
+        "l..|         |       |..",
+        "l..+         |       |..",
+        "l..|         |       ?..",
+        "l..|         |       |..",
+        "...|         |       |..",
+        "l..|         |       |..",
+        "l..-----?--------?----..",
+        "l.......................",
+        "x.......................",
+        "-----------..-----------"
+      ],
+      "palettes": [ "dungeon_palette", "dungeon_loot_home_office" ],
+      "terrain": { "?": [ "t_rock_wall", "t_rock_wall", "t_door_c" ] },
+      "mapping": { "t": { "items": [ { "item": "dgn_provisions", "chance": 20 } ] } },
+      "place_nested": [
+        { "chunks": [ "dgn_spawn_7x7_wall_nw" ], "x": 3, "y": 2 },
+        { "chunks": [ "dgn_spawn_7x7_crossdoors" ], "x": 12, "y": 3 },
+        { "chunks": [ "dgn_spawn_9x9_wall_sw" ], "x": 3, "y": 11 },
+        { "chunks": [ "dgn_spawn_7x7_crossdoors" ], "x": 14, "y": 13 }
+      ]
+    }
+  },
+  {
+    "//": "rooms + reception desk",
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "dungeon_hall_1", "dungeon_hall_2", "dungeon_hall_3", "dungeon_hall_4" ],
+    "weight": 50,
+    "object": {
+      "rotation": [ 3, 4 ],
+      "fill_ter": "t_rock_floor",
+      "rows": [
+        "........................",
+        "l.......................",
+        "l..-----?--------?----..",
+        "l..|         |       |..",
+        "l..|         |       |..",
+        "...|         |       |..",
+        "l..|         |       ?..",
+        "l..+         |       |..",
+        "l..|         |       |..",
+        "l..|         |       |..",
+        "...|         |---+---|..",
+        "...|         |..........",
+        "...|---------|..........",
+        "...|       |C|cccxc...hh",
+        "l..|       | +...hc...tt",
+        "l..|       |f|....c...hh",
+        "l..?       |--cc.cc.....",
+        "l..|       |T|........hh",
+        "...|       | W........tt",
+        "l..|       |S|........hh",
+        "l..----+------..........",
+        "l.................hth...",
+        "x.................hth..^",
+        "-----------..-----------"
+      ],
+      "palettes": [ "dungeon_palette", "dungeon_loot_home_office" ],
+      "terrain": { "?": [ "t_rock_wall", "t_rock_wall", "t_door_c" ] },
+      "furniture": { "^": "f_cave_mushrooms", "C": "f_cupboard" },
+      "mapping": { "C": { "items": [ { "item": "dgn_provisions", "chance": 40 } ] }, "t": { "items": [ { "item": "dgn_provisions", "chance": 10 } ] } },
+      "place_nested": [
+        { "chunks": [ "dgn_spawn_9x9_wall_nw" ], "x": 3, "y": 2 },
+        { "chunks": [ "dgn_spawn_7x7_crossdoors" ], "x": 14, "y": 3 },
+        { "chunks": [ "dgn_spawn_7x7_wall_sw" ], "x": 3, "y": 13 }
+      ]
+    }
+  },
+  {
+    "//": "utility with random room",
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "dungeon_hall_1", "dungeon_hall_2", "dungeon_hall_3", "dungeon_hall_4" ],
+    "weight": 50,
+    "object": {
+      "rotation": [ 0, 3 ],
+      "fill_ter": "t_rock_floor",
+      "rows": [
+        ".......|...............l",
+        ".......L...............l",
+        ".......L....----?----..l",
+        ".......L....|       |..l",
+        ".......L....|       |..l",
+        ".......L....|       |..l",
+        "......%|%...+       |..l",
+        "-------|....|       |..l",
+        "............|       |-+-",
+        "............|       |...",
+        "x....-----?----------...",
+        "....l|         |........",
+        "....l|         |........",
+        "--+--|         |........",
+        ".....|         |..fFFHFF",
+        ".c.c.?         +..f.....",
+        ".c.c.|         |..fXX..X",
+        ".c.c.|         |..fXX..X",
+        ".....|         |..f....r",
+        "--+--|         |..fXX..r",
+        "RR.RR-----?-----..fXX..r",
+        ".....+............H....r",
+        ".RRR.|............f.....",
+        ".....|............f.rrrr"
+      ],
+      "palettes": [ "dungeon_palette" ],
+      "furniture": { "^": "f_cave_mushrooms", "f": "f_null", "R": "f_rack_wood" },
+      "terrain": {
+        "F": "t_bars",
+        "f": "t_bars",
+        "H": "t_gate_metal_c",
+        "?": [ "t_rock_wall", "t_rock_wall", "t_door_c" ]
+      },
+      "mapping": {
+        "X": {
+          "items": [ { "item": "dgn_alchemy", "chance": 30 }, { "item": "dgn_alchemy", "chance": 15 }, { "item": "dgn_alchemy", "chance": 8 } ]
+        },
+        "R": { "items": [ { "item": "dgn_alchemy", "chance": 60 } ] },
+        "l": {
+          "items": [
+            { "item": "dgn_scribe", "chance": 10 },
+            { "item": "dgn_library", "chance": 3 },
+            { "item": "dgn_alchemy", "chance": 3 },
+            { "item": "dgn_potions", "chance": 3 },
+            { "item": "dgn_potions", "chance": 3 },
+            { "item": "dgn_wardrobe", "chance": 3 },
+            { "item": "dgn_wardrobe", "chance": 3 },
+            { "item": "dgn_wardrobe", "chance": 3 }
+          ]
+        },
+        "r": { "items": [ { "item": "dgn_alchemy", "chance": 30 } ] },
+        "c": { "items": [ { "item": "dgn_alchemy", "chance": 30 }, { "item": "dgn_alchemy", "chance": 30 } ] }
+      },
+      "place_monster": [ { "group": "GROUP_DUNGEON_UNCOMMON", "x": 11, "y": 9, "chance": 20 } ],
+      "place_nested": [
+        { "chunks": [ "dgn_spawn_9x9_crossdoors" ], "x": 6, "y": 11 },
+        { "chunks": [ "dgn_spawn_7x7_wall_nw" ], "x": 12, "y": 2 },
+        { "chunks": [ "dgn_sub_f_crate_utility_room" ], "x": [ 0, 6 ], "y": [ 0, 5 ], "repeat": 16 }
+      ]
+    }
+  },
+  {
+    "//": "autodoc operating theater",
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "dungeon_hall_1", "dungeon_hall_2", "dungeon_hall_3", "dungeon_hall_4" ],
+    "weight": 100,
+    "object": {
+      "rotation": [ 0, 3 ],
+      "fill_ter": "t_rock_floor",
+      "rows": [
+        "..cccccc.|...|,,,|..|,,,",
+        "c........|...|,,,|.6|,,,",
+        "c..C8cc..|...|,,,g..g,,,",
+        "c........g...|,,,g..g,,,",
+        "c........g...|,,,L..L,,,",
+        "......llS|...|---|..|---",
+        "--gg-G---|...|,,,|..|,,,",
+        ".............|,,,g..g,,,",
+        ".............|,,,g..g,,,",
+        ".............|,,,L..L,,,",
+        "........|-ggg----|..|---",
+        "........|r,,,r|t--G-|...",
+        "........g,,/,,L.....G...",
+        "........g,,?,%|-ggg-|...",
+        "........|r,,,r|.........",
+        "........|-ggg-|.........",
+        "........................",
+        "........................",
+        "..........dd7dd.........",
+        "..........d.h.d.........",
+        "...ddxdd.........ddxdd..",
+        "...d.h.d.........d.h.d..",
+        "........................",
+        "........................"
+      ],
+      "palettes": [ "dungeon_palette", "dungeon_loot_research" ],
+      "furniture": { "?": "f_altar", "/": "f_slab", "C": "f_alembic" },
+      "terrain": {
+        ",": "t_carpet_purple",
+        "C": "t_carpet_purple",
+        "?": "t_carpet_purple",
+        "/": "t_carpet_purple",
+        "7": "t_dgn_orb",
+        "8": "t_dgn_orb",
+        "r": "t_carpet_purple"
+      },
+      "place_loot": [ { "group": "dgn_potions", "x": 15, "y": 11 } ],
+      "mapping": {
+        "r": {
+          "items": [
+            { "item": "dgn_alchemy", "chance": 60 },
+            { "item": "dgn_alchemy", "chance": 20 },
+            { "item": "dgn_relic_vault", "chance": 10 },
+            { "item": "dgn_relic_vault", "chance": 10 },
+            { "item": "dgn_alchemy", "chance": 5 }
+          ]
+        }
+      },
+      "items": { "?": { "item": "dgn_potions", "chance": 100 } },
+      "computers": {
+        "6": {
+          "name": "Ritual Chamber Sigil",
+          "security": 0,
+          "options": [ { "name": "BREAK THE WARDS - OPEN ALL DOORS", "action": "open", "security": 0 } ],
+          "failures": [ { "action": "damage" }, { "action": "shutdown" } ]
+        },
+        "7": {
+          "name": "Ritual Chamber Sigil",
+          "security": 2,
+          "options": [ { "name": "UNLOCK THE ALTAR DOOR", "action": "unlock", "security": 6 } ],
+          "failures": [ { "action": "damage" }, { "action": "shutdown" } ]
+        },
+        "8": {
+          "name": "Blood Scrying Bowl",
+          "options": [ { "name": "Divine the blood", "action": "blood_anal" } ],
+          "failures": [ { "action": "destroy_blood" } ]
+        }
+      },
+      "place_monster": [
+        { "group": "GROUP_DUNGEON_UNCOMMON", "x": [ 14, 16 ], "y": [ 1, 4 ], "chance": 90 },
+        { "group": "GROUP_DUNGEON_UNCOMMON", "x": [ 14, 16 ], "y": [ 6, 9 ], "chance": 90 },
+        { "group": "GROUP_DUNGEON_UNCOMMON", "x": [ 21, 22 ], "y": [ 1, 4 ], "chance": 90 },
+        { "group": "GROUP_DUNGEON_UNCOMMON", "x": [ 21, 22 ], "y": [ 6, 9 ], "chance": 90 },
+        { "group": "GROUP_DUNGEON_UNCOMMON", "x": [ 11, 13 ], "y": [ 13, 14 ], "chance": 50 }
+      ]
+    }
+  },
+  {
+    "//": "medical wing, autodoc + centrifuge, monster in autodoc room",
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "dungeon_hall_1", "dungeon_hall_2", "dungeon_hall_3", "dungeon_hall_4" ],
+    "weight": 50,
+    "object": {
+      "rotation": [ 0, 1 ],
+      "fill_ter": "t_rock_floor",
+      "rows": [
+        "....l|.......|---------|",
+        "....l|.......|         |",
+        "bb...+.......|         |",
+        "bb...+.......|         |",
+        "...ht|.......|         |",
+        "-----|..C6...+         |",
+        "....l|.......|         |",
+        "bb...+.......|         |",
+        "bb...+.......|         |",
+        "...ht|.......|         |",
+        "-----|.......|----?----|",
+        ".............M..........",
+        ".............M..........",
+        "-----|.......|----+----|",
+        "....l|.......|         |",
+        "bb...+.......|         |",
+        "bb...+.......|         |",
+        "...ht|.......|         |",
+        "-----|..Cx...?         |",
+        "...ht|.......|         |",
+        "bb...+.......|         |",
+        "bb...+.......|         |",
+        "....l|.......|         |",
+        "87..l|.......----------|"
+      ],
+      "palettes": [ "dungeon_palette" ],
+      "terrain": {
+        "C": "t_floor",
+        "?": [ "t_rock_wall", "t_rock_wall", "t_door_c" ],
+        "7": "t_floor",
+        "8": "t_floor"
+      },
+      "furniture": { "7": "f_altar", "8": "f_slab", "C": "f_alembic" },
+      "items": {
+        "b": { "item": "dgn_potions", "chance": 33 },
+        "l": { "item": "dgn_potions", "chance": 50 },
+        "t": { "item": "dgn_provisions", "chance": 15 },
+        "7": { "item": "dgn_potions", "chance": 100 }
+      },
+      "computers": {
+        "6": {
+          "name": "Blood Scrying Bowl",
+          "options": [ { "name": "Divine the blood", "action": "blood_anal" } ],
+          "failures": [ { "action": "destroy_blood" } ]
+        }
+      },
+      "place_monster": [
+        {
+          "group": "GROUP_DUNGEON_UNCOMMON",
+          "x": [ 1, 4 ],
+          "y": [ 19, 21 ],
+          "chance": 90
+        }
+      ],
+      "place_nested": [
+        { "chunks": [ "dgn_spawn_9x9_wall_sw" ], "x": 13, "y": 1 },
+        { "chunks": [ "dgn_spawn_9x9_wall_nw" ], "x": 13, "y": 13 },
+        { "chunks": [ "dgn_sub_t_concrete_wall" ], "x": 13, "y": 10 },
+        { "chunks": [ "dgn_sub_t_concrete_wall" ], "x": 13, "y": 13 }
+      ]
+    }
+  },
+  {
+    "//": "alien containment.",
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "dungeon_hall_1", "dungeon_hall_2", "dungeon_hall_3", "dungeon_hall_4" ],
+    "weight": 100,
+    "object": {
+      "rotation": [ 0, 3 ],
+      "fill_ter": "t_rock_floor",
+      "rows": [
+        ",,,,,|..|.....|.........",
+        ",,,,,|7.|.....|..cc8C...",
+        ",,,,,g..g.....g.......l.",
+        ",,,,,g..g.....g.......l.",
+        ",,,,,L..g.....|.......S.",
+        "-----|..|.....|-ggG-gg--",
+        ",,,,,L..g...............",
+        ",,,,,g..g...............",
+        ",,,,,g..g...............",
+        ",,,,,|..|-gggg-|........",
+        "----||G-|%,,,,,|........",
+        "....G...L,,,,,,g........",
+        "....|-g-|,,,,,,g........",
+        "........|,,,,,,|........",
+        "........|-gggg-|........",
+        "........................",
+        ".........cxc6cc.........",
+        ".........ch.h.c.........",
+        "........................",
+        ".ccxcc............ccxcc.",
+        ".c.h.c............c.h.c.",
+        "........................",
+        "........................",
+        "........................"
+      ],
+      "palettes": [ "dungeon_palette" ],
+      "furniture": { "C": "f_alembic" },
+      "terrain": { "C": "t_carpet_purple", "7": "t_dgn_orb", ",": "t_carpet_purple" },
+      "mapping": {
+        "c": { "items": [ { "item": "dgn_scribe", "chance": 30 }, { "item": "dgn_alchemy", "chance": 15 } ] },
+        "l": { "items": [ { "item": "dgn_alchemy", "chance": 60 } ] }
+      },
+      "computers": {
+        "6": {
+          "name": "Beast Pen Control",
+          "security": 4,
+          "options": [
+            { "name": "RELEASE THE BEASTS", "action": "unlock", "security": 4 },
+            { "name": "PURGING RITE", "action": "disconnect", "security": 7 }
+          ],
+          "failures": [ { "action": "damage" }, { "action": "shutdown" } ]
+        },
+        "7": {
+          "name": "Beast Pen Sigil",
+          "security": 4,
+          "options": [ { "name": "RELEASE THE BEASTS", "action": "unlock", "security": 4 } ],
+          "failures": [ { "action": "damage" }, { "action": "shutdown" } ]
+        },
+        "8": {
+          "name": "Blood Scrying Bowl",
+          "options": [ { "name": "Divine the blood", "action": "blood_anal" } ],
+          "failures": [ { "action": "destroy_blood" } ]
+        }
+      },
+      "place_monster": [
+        { "group": "GROUP_DUNGEON_RARE", "x": 12, "y": 12 },
+        { "group": "GROUP_DUNGEON_COMMON", "x": 2, "y": 2, "chance": 30 },
+        { "group": "GROUP_DUNGEON_UNCOMMON", "x": 2, "y": 7 },
+        { "group": "GROUP_DUNGEON_COMMON", "x": [ 10, 14 ], "y": [ 16, 18 ], "chance": 50, "pack_size": [ 1, 3 ] }
+      ]
+    }
+  },
+  {
+    "//": "operations or utility",
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "dungeon_hall_1", "dungeon_hall_2", "dungeon_hall_3", "dungeon_hall_4" ],
+    "weight": 100,
+    "object": {
+      "rotation": [ 0, 3 ],
+      "fill_ter": "t_rock_floor",
+      "rows": [
+        ".....|...........f.rrrrr",
+        ".lll.|...........f......",
+        ".....W...........H.....r",
+        "llll.|...........fXX...r",
+        "-----|FFFF|---|..fXX...r",
+        ".....f....|...|..f.....r",
+        ".p!p.f.PP.|.&.|..fXX...X",
+        ".p!p.f.PP.|.x.|..fXX...X",
+        ".....f.PP.|...|..f......",
+        ".....H....|-M-|..fFFHFFf",
+        "FFHFFf........f.........",
+        ".....f........f.........",
+        ".....fFFFHFFFFf.........",
+        ".......................x",
+        "x................|-g-g--",
+        "-------|.........|^.....",
+        "......%|%........G......",
+        ".......L.........|..ddd.",
+        ".......L.........g..dh..",
+        ".......L.........g......",
+        ".......L.........g......",
+        ".......L.........|dh....",
+        ".......L.........|dxd.^.",
+        ".......|.........|......"
+      ],
+      "palettes": [ "dungeon_palette" ],
+      "furniture": { "^": "f_cave_mushrooms", "f": "f_null" },
+      "terrain": {
+        "F": "t_bars",
+        "f": "t_bars",
+        "H": "t_gate_metal_c",
+        "&": "t_column",
+        "P": "t_dgn_golem_heart",
+        "!": "t_dgn_clockwork",
+        "p": "t_bars",
+        "g": "t_window_bars",
+        "G": "t_door_bar_c"
+      },
+      "mapping": {
+        "X": {
+          "items": [ { "item": "dgn_alchemy", "chance": 30 }, { "item": "dgn_alchemy", "chance": 15 }, { "item": "dgn_alchemy", "chance": 8 } ]
+        },
+        "l": { "items": [ { "item": "dgn_alchemy", "chance": 60 } ] },
+        "r": { "items": [ { "item": "dgn_alchemy", "chance": 30 } ] }
+      },
+      "place_monster": [ { "group": "GROUP_DUNGEON_COMMON", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 50, "pack_size": [ 2, 3 ] } ],
+      "place_nested": [ { "chunks": [ "dgn_sub_f_crate_utility_room" ], "x": [ 0, 6 ], "y": [ 17, 23 ], "repeat": 16 } ]
+    }
+  },
+  {
+    "//": "Places a crate, 25% chance of being pre-opened, with robots/science/sewage parts.",
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "dgn_sub_f_crate_utility_room",
+    "object": {
+      "mapgensize": [ 1, 1 ],
+      "rows": [ "X" ],
+      "terrain": { "X": "t_rock_floor" },
+      "furniture": { "X": [ "f_crate_c", "f_crate_c", "f_crate_c", "f_crate_o" ] },
+      "mapping": {
+        "X": {
+          "items": [ { "item": "dgn_alchemy", "chance": 30 }, { "item": "dgn_alchemy", "chance": 15 }, { "item": "dgn_alchemy", "chance": 8 } ]
+        }
+      }
+    }
+  },
+  {
+    "//": "Tribute",
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "dungeon_hall_1", "dungeon_hall_2", "dungeon_hall_3", "dungeon_hall_4" ],
+    "weight": 50,
+    "object": {
+      "rotation": [ 0, 3 ],
+      "fill_ter": "t_rock_floor",
+      "rows": [
+        "#########|....|#########",
+        "#|-|-|###|....|###|-|---",
+        "#|T|T|---|....|---|T.|T.",
+        "#|.|.|EEEM....MEEE|..|..",
+        "#|=|=|EEEM....MEEE|=-|=-",
+        "#|...|EEe|....|eEE|.....",
+        "#|...|---|....|---|.....",
+        "#|...+............+.....",
+        "#|ScS|............|cScS.",
+        "-|---|............|-----",
+        "........................",
+        "........................",
+        ".................w......",
+        "................www.....",
+        "--gggGgg-|....|-gggggg-|",
+        "ff.......|....gWWWWWWWW|",
+        "...htth..g....gWWWWWWWl|",
+        "...htth..g....gWWWcWWWl|",
+        ".........G....LWWWcWWWW|",
+        ".........g....|%WWCWWWW|",
+        "...htth..g....gWWWxWWWW|",
+        "...htth..g....gWWWWWWhd|",
+        "........^|....grrrWWdxd|",
+        ".........|....|---------"
+      ],
+      "palettes": [ "dungeon_palette", "dungeon_loot_home_office" ],
+      "furniture": { "^": "f_cave_mushrooms", "C": "f_alembic" },
+      "terrain": {
+        "E": "t_carpet_yellow",
+        "e": "t_dgn_orb_broken",
+        "w": "t_water_sh",
+        "W": "t_water_dp",
+        "=": "t_door_c",
+        "C": "t_rock_floor"
+      },
+      "mapping": { "t": { "items": [ { "item": "dgn_provisions", "chance": 20 } ] } },
+      "place_loot": [
+        { "group": "everyday_corpse", "x": 17, "y": 15 },
+        { "group": "everyday_corpse", "x": 8, "y": 3 },
+        { "group": "everyday_corpse", "x": 10, "y": 3 },
+        { "group": "dgn_armory", "x": 18, "y": 15 }
+      ],
+      "place_monster": [ { "group": "GROUP_DUNGEON_COMMON", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 50, "pack_size": [ 2, 3 ] } ]
+    }
+  },
+  {
+    "//": "analyzer",
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "dungeon_hall_1", "dungeon_hall_2", "dungeon_hall_3", "dungeon_hall_4" ],
+    "weight": 100,
+    "object": {
+      "rotation": [ 0, 3 ],
+      "fill_ter": "t_rock_floor",
+      "rows": [
+        "........................",
+        "........................",
+        "........................",
+        "........................",
+        "....|-ggggggggggg-|.....",
+        "....|.............|.....",
+        "....g.....&.&.....g.....",
+        "....g......,......g.....",
+        "....g.....&6&.....g.....",
+        "....g.............g.....",
+        "....grrr.rrrrr.rrrg.....",
+        "....gcxc..cxc..cxcg.....",
+        "....gch....h....hcg.....",
+        "....|.............|.....",
+        "....|-G|..cxc..|G-|.....",
+        "....G..g...h...g..G.....",
+        "....g..g.......g..g.....",
+        "....|..|.......|..|.....",
+        "....|-g|ggggggg|g-|.....",
+        "........................",
+        "........................",
+        "........................",
+        "........................",
+        "........................"
+      ],
+      "palettes": [ "dungeon_palette", "dungeon_loot_home_office" ],
+      "furniture": { "r": "f_null" },
+      "terrain": { ",": "t_carpet_purple", "&": "t_column", "g": "t_window_bars", "G": "t_door_bar_c", "r": "t_bars" },
+      "computers": {
+        "6": {
+          "name": "Oracle of Melchior",
+          "security": 4,
+          "options": [
+            { "name": "Decipher the Runes", "action": "data_anal", "security": 4 },
+            { "name": "Offer Knowledge to Melchior", "action": "disconnect", "security": 7 },
+            { "name": "Commune with Melchior", "action": "disconnect", "security": 12 }
+          ],
+          "failures": [ { "action": "damage" }, { "action": "alarm" }, { "action": "destroy_data" } ]
+        }
+      },
+      "place_monster": [ { "group": "GROUP_DUNGEON_COMMON", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 50, "pack_size": [ 1, 3 ] } ]
+    }
+  },
+  {
+    "//": "Apartments",
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "dungeon_hall_1", "dungeon_hall_2", "dungeon_hall_3", "dungeon_hall_4" ],
+    "weight": 100,
+    "object": {
+      "rotation": [ 0, 1 ],
+      "fill_ter": "t_carpet_purple",
+      "rows": [
+        "BB|FFFt |`````| tFFF|BB|",
+        "  +   F w`````w F   +  |",
+        "TS|   F +`````+ F   |ST|",
+        "--|V  F w`hth`w F  V|--|",
+        "rr--|   -w---w-   |--rr|",
+        "-+|s|   !S!|!S!   |s|+-|",
+        "    |     !|!     |   x|",
+        " t  +     O|O     +   t|",
+        "bb  |hh   ḟ|ḟ   hh|  bb|",
+        "bb ]|tt   !|!   tt|] bb|",
+        "--------+-----+--------|",
+        "........................",
+        "........................",
+        "--------+-----+--------|",
+        "bb ]|tt   !|!   tt|] bb|",
+        "bb  |hh   ḟ|ḟ   hh|  bb|",
+        " t  +     O|O     +   t|",
+        "    |     !|!     |    |",
+        "-+|s|   !S!|!S!   |s|+-|",
+        "rr--|   -w---w-   |--rr|",
+        "--|V  F w`hth`w F  V|--|",
+        "TS|   F +`````+ F   |ST|",
+        "  +   F w`````w F   +  |",
+        "BB|FFFt |`````| tFFF|BB|"
+      ],
+      "palettes": [ "dungeon_palette", "dungeon_loot_home_office" ],
+      "furniture": { "F": "f_bench", "B": "f_bathtub", "!": "f_counter", "O": "f_fireplace", "V": "f_table" },
+      "terrain": { "w": "t_window_stained_red", "`": "t_grass", "+": "t_door_c" },
+      "mapping": {
+        "t": { "items": [ { "item": "dgn_bedroom", "chance": 20 } ] },
+        "F": { "items": [ { "item": "dgn_bedroom", "chance": 5 } ] },
+        "ḟ": { "items": [ { "item": "dgn_provisions", "chance": 80 } ] },
+        "!": { "items": [ { "item": "dgn_provisions", "chance": 40 } ] },
+        "O": { "items": [ { "item": "dgn_provisions", "chance": 70 } ] },
+        "r": {
+          "items": [
+            { "item": "dgn_wardrobe", "chance": 20 },
+            { "item": "dgn_alchemy", "chance": 40 },
+            { "item": "dgn_alchemy", "chance": 10 },
+            { "item": "dgn_provisions", "chance": 30 }
+          ]
+        },
+        "V": { "items": [ { "item": "dgn_bedroom" } ] }
+      }
+    }
+  }
+]

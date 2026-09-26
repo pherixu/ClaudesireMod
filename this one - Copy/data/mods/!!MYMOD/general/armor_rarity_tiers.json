@@ -1,0 +1,88 @@
+[
+  {
+    "id": "armor_common",
+    "type": "item_group",
+    "//": "Common-tier armor/gear loot.",
+    "items": [
+      { "item": "shield_beskar", "prob": 12 },
+      { "item": "beskar_greaves", "prob": 12 },
+      { "item": "helmet_rune", "prob": 12 },
+      { "item": "rune_greaves", "prob": 12 },
+      { "item": "beskar_cuirass", "prob": 12 },
+      { "item": "gauntlets_beskar", "prob": 12 },
+      { "item": "gauntlets_rune", "prob": 12 },
+      { "item": "rune_cuirass", "prob": 12 },
+      { "item": "thief_glove", "prob": 12 },
+      { "item": "devilstraps", "prob": 12 },
+      { "item": "quick_scabbard", "prob": 12 },
+      { "item": "sol_ring", "prob": 12 },
+      { "item": "proto_gimbal", "prob": 12 }
+    ]
+  },
+  {
+    "id": "armor_uncommon",
+    "type": "item_group",
+    "items": [
+      { "group": "iounstones", "prob": 12 },
+      { "item": "helmet_beskar", "prob": 12 },
+      { "item": "holy_halo", "prob": 12 },
+      { "item": "sage_surplice", "prob": 12 },
+      { "item": "shark_cuirass", "prob": 12 },
+      { "item": "soul_cage", "prob": 12 },
+      { "item": "sacrifice_brand", "prob": 12 },
+      { "item": "havel_ring", "prob": 12 },
+      { "item": "psychic_shield", "prob": 12 },
+      { "item": "arcane_signet", "prob": 12 }
+    ]
+  },
+  {
+    "id": "armor_rare",
+    "type": "item_group",
+    "items": [
+      { "item": "fire_cuirass", "prob": 8 },
+      { "item": "ice_cuirass", "prob": 8 },
+      { "item": "acid_cuirass", "prob": 8 },
+      { "item": "elec_cuirass", "prob": 8 },
+      { "item": "vibrant_halo", "prob": 8 },
+      { "item": "rune_cape", "prob": 8 },
+      { "item": "moon_surcoat", "prob": 8 },
+      { "item": "sun_gambeson", "prob": 8 },
+      { "item": "timechamber", "prob": 8 },
+      { "item": "inner_sanctuary", "prob": 8 },
+      { "item": "ragtime_breaker", "prob": 8 },
+      { "item": "black_lotus", "prob": 8 },
+      { "item": "overture_breaker", "prob": 8 },
+      { "item": "gerbera_breaker", "prob": 8 }
+    ]
+  },
+  {
+    "id": "armor_very_rare",
+    "type": "item_group",
+    "items": [
+      { "item": "inner_flame", "prob": 5 },
+      { "item": "gaia_gear", "prob": 5 },
+      { "item": "genji_gear", "prob": 5 },
+      { "item": "iceborn_gauntlet", "prob": 5 },
+      { "item": "randuins_omen", "prob": 5 },
+      { "item": "fimbulwinter", "prob": 5 },
+      { "item": "frozen_heart", "prob": 5 },
+      { "item": "ice_ring", "prob": 5 },
+      { "item": "fire_ring", "prob": 5 },
+      { "item": "elec_ring", "prob": 5 },
+      { "item": "acid_ring", "prob": 5 }
+    ]
+  },
+  {
+    "id": "armor_legendary",
+    "type": "item_group",
+    "items": [
+      { "item": "nilfurs_boast", "prob": 3 },
+      { "item": "rabadons", "prob": 3 },
+      { "item": "winter_ring", "prob": 3 },
+      { "item": "convention_of_elements", "prob": 3 },
+      { "item": "narya", "prob": 3 },
+      { "item": "philo_stone", "prob": 3 },
+      { "item": "vamp_mask", "prob": 3 }
+    ]
+  }
+]

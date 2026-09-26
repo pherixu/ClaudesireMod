@@ -1,0 +1,374 @@
+[
+  {
+    "type": "overmap_terrain",
+    "id": "deviltower1_ground",
+    "copy-from": "generic_city_building",
+    "sym": "W",
+    "color": "light_blue",
+    "name": "devil tower"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "deviltower1_living",
+    "copy-from": "deviltower1_ground"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "deviltower1_golems",
+    "copy-from": "deviltower1_ground"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "deviltower1_study",
+    "copy-from": "deviltower1_ground"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "deviltower1_roof",
+    "copy-from": "deviltower1_ground"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "deviltower2_ground",
+    "copy-from": "deviltower1_ground"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "deviltower2_stairs1",
+    "copy-from": "deviltower1_ground"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "deviltower2_stairs2",
+    "copy-from": "deviltower1_ground"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "deviltower2_study",
+    "copy-from": "deviltower1_ground"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "deviltower2_roof",
+    "copy-from": "deviltower1_ground"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "deviltower3_ground",
+    "copy-from": "generic_city_building",
+    "sym": "W",
+    "color": "light_blue",
+    "name": "devil tower"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "deviltower3_living",
+    "copy-from": "deviltower1_ground"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "deviltower3_golems",
+    "copy-from": "deviltower1_ground"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "deviltower3_study",
+    "copy-from": "deviltower1_ground"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "deviltower3_roof",
+    "copy-from": "deviltower1_ground"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "deviltower4_ground",
+    "copy-from": "deviltower1_ground"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "deviltower4_stairs1",
+    "copy-from": "deviltower1_ground"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "deviltower4_stairs2",
+    "copy-from": "deviltower1_ground"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "deviltower4_study",
+    "copy-from": "deviltower1_ground"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "deviltower4_roof",
+    "copy-from": "deviltower1_ground"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "deviltower5_ground",
+    "copy-from": "generic_city_building",
+    "sym": "W",
+    "color": "light_blue",
+    "name": "devil tower"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "deviltower5_living",
+    "copy-from": "deviltower1_ground"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "deviltower5_golems",
+    "copy-from": "deviltower1_ground"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "deviltower5_study",
+    "copy-from": "deviltower1_ground"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "deviltower5_roof",
+    "copy-from": "deviltower1_ground"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "deviltower6_ground",
+    "copy-from": "deviltower1_ground"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "deviltower6_stairs1",
+    "copy-from": "deviltower1_ground"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "deviltower6_stairs2",
+    "copy-from": "deviltower1_ground"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "deviltower6_study",
+    "copy-from": "deviltower1_ground"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "deviltower6_roof",
+    "copy-from": "deviltower1_ground"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devilbar",
+    "copy-from": "generic_city_building",
+    "name": "devil bar",
+    "sym": "b",
+    "color": "i_red",
+    "extend": {
+      "flags": [
+        "SOURCE_FOOD",
+        "SOURCE_DRINK",
+        "SOURCE_LUXURY"
+      ]
+    }
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devilbar_roof",
+    "copy-from": "generic_city_building",
+    "name": "devil bar roof",
+    "sym": "b",
+    "color": "i_red"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devilteashop",
+    "copy-from": "generic_city_building",
+    "name": "devil tea house",
+    "sym": "t",
+    "color": "i_red",
+    "extend": {
+      "flags": [
+        "SOURCE_FOOD",
+        "SOURCE_DRINK"
+      ]
+    }
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devilteashop_roof",
+    "copy-from": "generic_city_building",
+    "name": "devil tea house roof",
+    "sym": "t",
+    "color": "i_red"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devillmoe",
+    "copy-from": "generic_city_building",
+    "name": "devil bunker",
+    "sym": "M",
+    "color": "i_red"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devillmoe_roof",
+    "copy-from": "generic_city_building",
+    "name": "devil bunker roof",
+    "sym": "M",
+    "color": "i_red"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devillmoe_under",
+    "copy-from": "generic_city_building",
+    "name": "devil bunker (lower)",
+    "sym": "M",
+    "color": "i_red"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devilgunstore",
+    "copy-from": "generic_city_building",
+    "name": "demon arsenal",
+    "sym": "g",
+    "color": "i_red"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devilgunstore_roof",
+    "copy-from": "generic_city_building",
+    "name": "demon arsenal roof",
+    "sym": "g",
+    "color": "i_red"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devillibrary",
+    "copy-from": "generic_city_building",
+    "name": "mystical library",
+    "sym": "L",
+    "color": "i_red"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devillibrary_roof",
+    "copy-from": "generic_city_building",
+    "name": "mystical library roof",
+    "sym": "L",
+    "color": "i_red"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devilfort_1_NW",
+    "copy-from": "generic_city_building",
+    "name": "devil fort",
+    "sym": "F",
+    "color": "i_red"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devilfort_1_NE",
+    "copy-from": "generic_city_building",
+    "name": "devil fort",
+    "sym": "F",
+    "color": "i_red"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devilfort_1_SW",
+    "copy-from": "generic_city_building",
+    "name": "devil fort",
+    "sym": "F",
+    "color": "i_red"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devilfort_1_SE",
+    "copy-from": "generic_city_building",
+    "name": "devil fort",
+    "sym": "F",
+    "color": "i_red"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devilfort_2_NW",
+    "copy-from": "generic_city_building",
+    "name": "devil fort",
+    "sym": "F",
+    "color": "i_red"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devilfort_2_NE",
+    "copy-from": "generic_city_building",
+    "name": "devil fort",
+    "sym": "F",
+    "color": "i_red"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devilfort_2_SW",
+    "copy-from": "generic_city_building",
+    "name": "devil fort",
+    "sym": "F",
+    "color": "i_red"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devilfort_2_SE",
+    "copy-from": "generic_city_building",
+    "name": "devil fort",
+    "sym": "F",
+    "color": "i_red"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devilfort_roof_NW",
+    "copy-from": "generic_city_building",
+    "name": "devil fort",
+    "sym": "F",
+    "color": "i_red"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devilfort_roof_NE",
+    "copy-from": "generic_city_building",
+    "name": "devil fort",
+    "sym": "F",
+    "color": "i_red"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devilfort_roof_SW",
+    "copy-from": "generic_city_building",
+    "name": "devil fort",
+    "sym": "F",
+    "color": "i_red"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devilfort_roof_SE",
+    "copy-from": "generic_city_building",
+    "name": "devil fort",
+    "sym": "F",
+    "color": "i_red"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devilmilsurplus",
+    "copy-from": "generic_city_building",
+    "name": "demon surplus depot",
+    "sym": "M",
+    "color": "i_red"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devilmilsurplus_roof",
+    "copy-from": "generic_city_building",
+    "name": "demon surplus depot roof",
+    "sym": "M",
+    "color": "i_red"
+  }
+]

@@ -1,0 +1,2347 @@
+[
+  {
+    "type": "item_group",
+    "id": "devil_dojo_fire_scrolls",
+    "subtype": "distribution",
+    "//": "Fire nature scroll trove; neutral scrolls are rarer",
+    "entries": [
+      {
+        "item": "fire_clone_scroll",
+        "prob": 10
+      },
+      {
+        "item": "fire_shuriken_scroll",
+        "prob": 10
+      },
+      {
+        "item": "mines_scroll",
+        "prob": 10
+      },
+      {
+        "item": "fireconejutsu_scroll",
+        "prob": 10
+      },
+      {
+        "item": "firesmoke_scroll",
+        "prob": 10
+      },
+      {
+        "item": "foxfire_scroll",
+        "prob": 10
+      },
+      {
+        "item": "fireballjutsu_scroll",
+        "prob": 10
+      },
+      {
+        "item": "firefield_jutsu_scroll",
+        "prob": 10
+      },
+      {
+        "item": "summon_phoenix_scroll",
+        "prob": 10
+      },
+      {
+        "item": "summon_largephoenix_scroll",
+        "prob": 10
+      },
+      {
+        "item": "shadow_clone_scroll",
+        "prob": 3
+      },
+      {
+        "item": "genjutsu_scroll",
+        "prob": 3
+      },
+      {
+        "item": "heal_scroll",
+        "prob": 3
+      },
+      {
+        "item": "flicker_scroll",
+        "prob": 3
+      },
+      {
+        "item": "gates_scroll",
+        "prob": 3
+      },
+      {
+        "item": "focus_scroll",
+        "prob": 3
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "devil_dojo_water_scrolls",
+    "subtype": "distribution",
+    "//": "Water nature scroll trove; neutral scrolls are rarer",
+    "entries": [
+      {
+        "item": "water_clone_scroll",
+        "prob": 10
+      },
+      {
+        "item": "stun_bubble_scroll",
+        "prob": 10
+      },
+      {
+        "item": "bubble_scroll",
+        "prob": 10
+      },
+      {
+        "item": "waterbody_scroll",
+        "prob": 10
+      },
+      {
+        "item": "water_drill_scroll",
+        "prob": 10
+      },
+      {
+        "item": "hidden_mist_scroll",
+        "prob": 10
+      },
+      {
+        "item": "falling_rain_scroll",
+        "prob": 10
+      },
+      {
+        "item": "water_prison_scroll",
+        "prob": 10
+      },
+      {
+        "item": "water_line_scroll",
+        "prob": 10
+      },
+      {
+        "item": "summon_eels_scroll",
+        "prob": 10
+      },
+      {
+        "item": "summon_water_draco_scroll",
+        "prob": 10
+      },
+      {
+        "item": "shadow_clone_scroll",
+        "prob": 3
+      },
+      {
+        "item": "genjutsu_scroll",
+        "prob": 3
+      },
+      {
+        "item": "heal_scroll",
+        "prob": 3
+      },
+      {
+        "item": "flicker_scroll",
+        "prob": 3
+      },
+      {
+        "item": "gates_scroll",
+        "prob": 3
+      },
+      {
+        "item": "focus_scroll",
+        "prob": 3
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "devil_dojo_wind_scrolls",
+    "subtype": "distribution",
+    "//": "Wind nature scroll trove; neutral scrolls are rarer",
+    "entries": [
+      {
+        "item": "wind_clone_scroll",
+        "prob": 10
+      },
+      {
+        "item": "tornado_scroll",
+        "prob": 10
+      },
+      {
+        "item": "sparrow_scroll",
+        "prob": 10
+      },
+      {
+        "item": "galepalm_scroll",
+        "prob": 10
+      },
+      {
+        "item": "airbullet_scroll",
+        "prob": 10
+      },
+      {
+        "item": "airpush_scroll",
+        "prob": 10
+      },
+      {
+        "item": "rasengan_scroll",
+        "prob": 10
+      },
+      {
+        "item": "rasenshuriken_scroll",
+        "prob": 10
+      },
+      {
+        "item": "shadow_clone_scroll",
+        "prob": 3
+      },
+      {
+        "item": "genjutsu_scroll",
+        "prob": 3
+      },
+      {
+        "item": "heal_scroll",
+        "prob": 3
+      },
+      {
+        "item": "flicker_scroll",
+        "prob": 3
+      },
+      {
+        "item": "gates_scroll",
+        "prob": 3
+      },
+      {
+        "item": "focus_scroll",
+        "prob": 3
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "devil_dojo_earth_scrolls",
+    "subtype": "distribution",
+    "//": "Earth nature scroll trove; neutral scrolls are rarer",
+    "entries": [
+      {
+        "item": "earth_dragon_scroll",
+        "prob": 10
+      },
+      {
+        "item": "earth_clone_scroll",
+        "prob": 10
+      },
+      {
+        "item": "prison_rock_scroll",
+        "prob": 10
+      },
+      {
+        "item": "bash_terrain_scroll",
+        "prob": 10
+      },
+      {
+        "item": "earthskin_scroll",
+        "prob": 10
+      },
+      {
+        "item": "earthfist_scroll",
+        "prob": 10
+      },
+      {
+        "item": "thrown_stone_scroll",
+        "prob": 10
+      },
+      {
+        "item": "tunnelport_scroll",
+        "prob": 10
+      },
+      {
+        "item": "summon_rockwall_scroll",
+        "prob": 10
+      },
+      {
+        "item": "summon_mudwolf_scroll",
+        "prob": 10
+      },
+      {
+        "item": "summon_mudhead_scroll",
+        "prob": 10
+      },
+      {
+        "item": "earthsmoke_scroll",
+        "prob": 10
+      },
+      {
+        "item": "summon_rubble_scroll",
+        "prob": 10
+      },
+      {
+        "item": "shadow_clone_scroll",
+        "prob": 3
+      },
+      {
+        "item": "genjutsu_scroll",
+        "prob": 3
+      },
+      {
+        "item": "heal_scroll",
+        "prob": 3
+      },
+      {
+        "item": "flicker_scroll",
+        "prob": 3
+      },
+      {
+        "item": "gates_scroll",
+        "prob": 3
+      },
+      {
+        "item": "focus_scroll",
+        "prob": 3
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "devil_dojo_lightning_scrolls",
+    "subtype": "distribution",
+    "//": "Lightning nature scroll trove; neutral scrolls are rarer",
+    "entries": [
+      {
+        "item": "lightning_clone_scroll",
+        "prob": 10
+      },
+      {
+        "item": "chidori_senbon_scroll",
+        "prob": 10
+      },
+      {
+        "item": "kirin_scroll",
+        "prob": 10
+      },
+      {
+        "item": "chidori_blade_scroll",
+        "prob": 10
+      },
+      {
+        "item": "parapunch_scroll",
+        "prob": 10
+      },
+      {
+        "item": "lariat_scroll",
+        "prob": 10
+      },
+      {
+        "item": "chidori_scroll",
+        "prob": 10
+      },
+      {
+        "item": "flashpillar_scroll",
+        "prob": 10
+      },
+      {
+        "item": "eleccone_scroll",
+        "prob": 10
+      },
+      {
+        "item": "lightcloud_scroll",
+        "prob": 10
+      },
+      {
+        "item": "elec_armor_scroll",
+        "prob": 10
+      },
+      {
+        "item": "shadow_clone_scroll",
+        "prob": 3
+      },
+      {
+        "item": "genjutsu_scroll",
+        "prob": 3
+      },
+      {
+        "item": "heal_scroll",
+        "prob": 3
+      },
+      {
+        "item": "flicker_scroll",
+        "prob": 3
+      },
+      {
+        "item": "gates_scroll",
+        "prob": 3
+      },
+      {
+        "item": "focus_scroll",
+        "prob": 3
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "devil_dojo_ninja_wear",
+    "subtype": "distribution",
+    "//": "Ninja headbands, suits, robes, gi",
+    "entries": [
+      {
+        "item": "ninja_headband",
+        "prob": 20
+      },
+      {
+        "item": "chunin_headband",
+        "prob": 15
+      },
+      {
+        "item": "jonin_headband",
+        "prob": 8
+      },
+      {
+        "item": "anbu_mask",
+        "prob": 8
+      },
+      {
+        "item": "shinobi_suit",
+        "prob": 12
+      },
+      {
+        "item": "zentai",
+        "prob": 12
+      },
+      {
+        "item": "kage_robes",
+        "prob": 3
+      },
+      {
+        "item": "akatsuke_robes",
+        "prob": 3
+      },
+      {
+        "item": "sand_gourd",
+        "prob": 3
+      },
+      {
+        "item": "tabi_gi",
+        "prob": 6
+      },
+      {
+        "item": "zubon_gi",
+        "prob": 6
+      },
+      {
+        "item": "obi_gi",
+        "prob": 6
+      },
+      {
+        "group": "gi",
+        "prob": 15
+      },
+      {
+        "group": "judo_belts",
+        "prob": 10
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "devil_dojo_ninja_arms",
+    "subtype": "distribution",
+    "//": "Ninja tools and dojo weapons",
+    "entries": [
+      {
+        "item": "kunai",
+        "prob": 20,
+        "count": [
+          2,
+          6
+        ]
+      },
+      {
+        "item": "shuriken",
+        "prob": 20,
+        "count": [
+          3,
+          8
+        ]
+      },
+      {
+        "item": "senbon",
+        "prob": 12,
+        "count": [
+          3,
+          10
+        ]
+      },
+      {
+        "item": "doublekunai",
+        "prob": 8
+      },
+      {
+        "item": "triplekunai",
+        "prob": 6
+      },
+      {
+        "item": "fumashuriken",
+        "prob": 4
+      },
+      {
+        "item": "retractshuriken",
+        "prob": 4
+      },
+      {
+        "item": "paperbomb",
+        "prob": 10,
+        "count": [
+          1,
+          4
+        ]
+      },
+      {
+        "item": "kiba",
+        "prob": 1
+      },
+      {
+        "item": "gunbai",
+        "prob": 1
+      },
+      {
+        "item": "foldfan",
+        "prob": 1
+      },
+      {
+        "item": "katana",
+        "prob": 6
+      },
+      {
+        "item": "wakizashi",
+        "prob": 8
+      },
+      {
+        "item": "tanto",
+        "prob": 8
+      },
+      {
+        "item": "nodachi",
+        "prob": 3
+      },
+      {
+        "item": "naginata",
+        "prob": 3
+      },
+      {
+        "item": "bokken",
+        "prob": 8
+      },
+      {
+        "item": "tonfa",
+        "prob": 5
+      },
+      {
+        "item": "sai_weapon",
+        "prob": 6
+      },
+      {
+        "item": "katar",
+        "prob": 3
+      },
+      {
+        "group": "crystalkunai",
+        "prob": 3
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "devil_dojo_manuals",
+    "subtype": "distribution",
+    "//": "Fighting style manuals, ninjutsu weighted up",
+    "entries": [
+      {
+        "item": "manual_ninjutsu",
+        "prob": 30
+      },
+      {
+        "item": "manual_niten",
+        "prob": 10
+      },
+      {
+        "item": "manual_karate",
+        "prob": 8
+      },
+      {
+        "item": "manual_judo",
+        "prob": 8
+      },
+      {
+        "item": "manual_aikido",
+        "prob": 8
+      },
+      {
+        "item": "manual_sojutsu",
+        "prob": 6
+      },
+      {
+        "group": "dojo_manuals",
+        "prob": 40
+      }
+    ]
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [
+      "devildojo_fire"
+    ],
+    "weight": 1000,
+    "object": {
+      "fill_ter": "t_floor",
+      "rows": [
+        "  --------ssss-------- `",
+        "  -,-----,spps,-----,-  ",
+        "  -,-----,spps,-----,-  ",
+        "  -,-----,spps,-----,-  ",
+        "  -,-----,spps,-----,-  ",
+        "  -,-----,ssss,-----,-  ",
+        "  qgggggggg++ggggggggq  ",
+        " px.RRRRRR....RRRRRR.xp ",
+        " px.################.xp ",
+        " px.################.xp ",
+        "  x.################.x  ",
+        " px.################.xp ",
+        " px.################.xp ",
+        " px.################.xp ",
+        "  x.################.x  ",
+        " px.################.xp ",
+        " 4x..................xp ",
+        " pxqqqqqqqqqq''qqqqqqxp ",
+        "  xLLLLLLLLLq..q.DC.yx  ",
+        " px.........'..q.DDD.xp ",
+        " pxBBB...BBBq..'.....xp ",
+        " pxqqq...qqqq'qq.....xp ",
+        "  xS.'.y.'.Tq.<qXXXXXx  ",
+        "  qqqqqqqqqqqqqqqqqqqq  "
+      ],
+      "terrain": {
+        " ": [
+          [
+            "t_grass",
+            5
+          ],
+          [
+            "t_grass_long",
+            2
+          ],
+          "t_dirt"
+        ],
+        "`": "t_dirt",
+        "p": "t_grass_long",
+        "'": "t_door_c",
+        "+": "t_door_glass_c",
+        ",": "t_pavement_y",
+        "-": "t_pavement",
+        ".": "t_floor",
+        "g": "t_wall_glass",
+        "q": "t_wall_g",
+        "s": "t_sidewalk",
+        "4": "t_gutter_downspout",
+        "x": "t_wall_b",
+        "<": "t_stairs_up"
+      },
+      "furniture": {
+        "`": "f_street_light",
+        "y": [
+          "f_indoor_plant",
+          "f_indoor_plant_y"
+        ],
+        "#": "f_tatami",
+        "B": "f_bench",
+        "C": "f_chair",
+        "D": "f_desk",
+        "L": "f_locker",
+        "S": "f_shower",
+        "X": "f_rack",
+        "p": [
+          "f_datura",
+          "f_bluebell",
+          "f_mutpoppy",
+          "f_dahlia",
+          "f_flower_tulip",
+          "f_chamomile",
+          "f_flower_spurge",
+          "f_lily"
+        ],
+        "R": "f_rack"
+      },
+      "toilets": {
+        "T": {}
+      },
+      "place_items": [
+        {
+          "item": "devil_dojo_ninja_wear",
+          "x": [
+            3,
+            11
+          ],
+          "y": [
+            18,
+            18
+          ],
+          "chance": 85,
+          "repeat": [
+            3,
+            6
+          ]
+        },
+        {
+          "item": "judo_belts",
+          "x": [
+            3,
+            11
+          ],
+          "y": [
+            18,
+            18
+          ],
+          "chance": 70,
+          "repeat": [
+            1,
+            2
+          ]
+        },
+        {
+          "item": "devil_dojo_manuals",
+          "x": [
+            17,
+            19
+          ],
+          "y": [
+            19,
+            19
+          ],
+          "chance": 100,
+          "repeat": [
+            1,
+            2
+          ]
+        },
+        {
+          "item": "devil_dojo_fire_scrolls",
+          "x": [
+            17,
+            19
+          ],
+          "y": [
+            19,
+            19
+          ],
+          "chance": 80,
+          "repeat": [
+            1,
+            3
+          ]
+        },
+        {
+          "item": "weapons_rare",
+          "x": [ 3, 19 ],
+          "y": [ 3, 19 ],
+          "chance": 6
+        },
+        {
+          "item": "armor_rare",
+          "x": [ 3, 19 ],
+          "y": [ 3, 19 ],
+          "chance": 6
+        }
+      ],
+      "place_item": [
+        {
+          "item": "judo_belt_black",
+          "x": 17,
+          "y": 18
+        }
+      ],
+      "items": {
+        "R": {
+          "item": "devil_dojo_fire_scrolls",
+          "chance": 100,
+          "repeat": [
+            4,
+            8
+          ]
+        },
+        "X": {
+          "item": "devil_dojo_ninja_arms",
+          "chance": 100,
+          "repeat": [
+            3,
+            6
+          ]
+        }
+      },
+      "place_monsters": [
+        {
+          "monster": "GROUP_TOWER_DEVIL",
+          "x": [
+            1,
+            22
+          ],
+          "y": [
+            1,
+            22
+          ],
+          "density": 0.4
+        }
+      ],
+      "place_monster": [
+        {
+          "monster": "mon_shinobi_fire",
+          "x": [
+            1,
+            22
+          ],
+          "y": [
+            1,
+            22
+          ],
+          "chance": 100
+        }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": "devildojo_fire_roof",
+    "object": {
+      "fill_ter": "t_flat_roof",
+      "rows": [
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "  --------------------  ",
+        "  -..................-  ",
+        "  -..................-  ",
+        "  -...oooooooooooo...-  ",
+        "  -...oooooooooooo...-  ",
+        "  -...oooooooooooo...-  ",
+        "  -...oooooooooooo...-  ",
+        "  -...oooooooooooo...-  ",
+        "  -..................-  ",
+        "  -..................-  ",
+        "  5..................-  ",
+        "  -..................-  ",
+        "  -..................-  ",
+        "  -..................-  ",
+        "  -.........#####+####  ",
+        "  -........4#******Sx#  ",
+        "  -.........#*>*SS**x#  ",
+        "  ----------##########  "
+      ],
+      "palettes": [
+        "roof_palette"
+      ],
+      "terrain": {
+        ">": "t_stairs_down",
+        "#": "t_wall_b",
+        "*": "t_thconc_floor",
+        "S": "t_thconc_floor",
+        "+": "t_door_c",
+        "x": [
+          "t_machinery_light",
+          "t_machinery_heavy",
+          "t_machinery_old",
+          "t_machinery_electronic"
+        ]
+      },
+      "furniture": {
+        "S": "f_filing_cabinet"
+      },
+      "items": {
+        "t": {
+          "item": "office_paper",
+          "chance": 25,
+          "repeat": [
+            2,
+            4
+          ]
+        }
+      },
+      "place_nested": [
+        {
+          "chunks": [
+            [
+              "null",
+              20
+            ],
+            [
+              "roof_2x2_utilities_b",
+              15
+            ],
+            [
+              "roof_2x2_utilities_c",
+              5
+            ],
+            [
+              "roof_2x2_utilities_d",
+              40
+            ],
+            [
+              "roof_2x2_utilities",
+              50
+            ]
+          ],
+          "x": [
+            4,
+            15
+          ],
+          "y": 15
+        }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": "devildojo_fire_upper_roof",
+    "object": {
+      "fill_ter": "t_flat_roof",
+      "rows": [
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "            ----------  ",
+        "            5........-  ",
+        "            -......:.-  ",
+        "            ----------  "
+      ],
+      "palettes": [
+        "roof_palette"
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [
+      "devildojo_water"
+    ],
+    "weight": 1000,
+    "object": {
+      "fill_ter": "t_floor",
+      "rows": [
+        "  --------ssss-------- `",
+        "  -,-----,spps,-----,-  ",
+        "  -,-----,spps,-----,-  ",
+        "  -,-----,spps,-----,-  ",
+        "  -,-----,spps,-----,-  ",
+        "  -,-----,ssss,-----,-  ",
+        "  qgggggggg++ggggggggq  ",
+        " px.RRRRRR....RRRRRR.xp ",
+        " px.################.xp ",
+        " px.################.xp ",
+        "  x.################.x  ",
+        " px.################.xp ",
+        " px.################.xp ",
+        " px.################.xp ",
+        "  x.################.x  ",
+        " px.################.xp ",
+        " 4x..................xp ",
+        " pxqqqqqqqqqq''qqqqqqxp ",
+        "  xLLLLLLLLLq..q.DC.yx  ",
+        " px.........'..q.DDD.xp ",
+        " pxBBB...BBBq..'.....xp ",
+        " pxqqq...qqqq'qq.....xp ",
+        "  xS.'.y.'.Tq.<qXXXXXx  ",
+        "  qqqqqqqqqqqqqqqqqqqq  "
+      ],
+      "terrain": {
+        " ": [
+          [
+            "t_grass",
+            5
+          ],
+          [
+            "t_grass_long",
+            2
+          ],
+          "t_dirt"
+        ],
+        "`": "t_dirt",
+        "p": "t_grass_long",
+        "'": "t_door_c",
+        "+": "t_door_glass_c",
+        ",": "t_pavement_y",
+        "-": "t_pavement",
+        ".": "t_floor",
+        "g": "t_wall_glass",
+        "q": "t_wall_g",
+        "s": "t_sidewalk",
+        "4": "t_gutter_downspout",
+        "x": "t_wall_b",
+        "<": "t_stairs_up"
+      },
+      "furniture": {
+        "`": "f_street_light",
+        "y": [
+          "f_indoor_plant",
+          "f_indoor_plant_y"
+        ],
+        "#": "f_tatami",
+        "B": "f_bench",
+        "C": "f_chair",
+        "D": "f_desk",
+        "L": "f_locker",
+        "S": "f_shower",
+        "X": "f_rack",
+        "p": [
+          "f_datura",
+          "f_bluebell",
+          "f_mutpoppy",
+          "f_dahlia",
+          "f_flower_tulip",
+          "f_chamomile",
+          "f_flower_spurge",
+          "f_lily"
+        ],
+        "R": "f_rack"
+      },
+      "toilets": {
+        "T": {}
+      },
+      "place_items": [
+        {
+          "item": "devil_dojo_ninja_wear",
+          "x": [
+            3,
+            11
+          ],
+          "y": [
+            18,
+            18
+          ],
+          "chance": 85,
+          "repeat": [
+            3,
+            6
+          ]
+        },
+        {
+          "item": "judo_belts",
+          "x": [
+            3,
+            11
+          ],
+          "y": [
+            18,
+            18
+          ],
+          "chance": 70,
+          "repeat": [
+            1,
+            2
+          ]
+        },
+        {
+          "item": "devil_dojo_manuals",
+          "x": [
+            17,
+            19
+          ],
+          "y": [
+            19,
+            19
+          ],
+          "chance": 100,
+          "repeat": [
+            1,
+            2
+          ]
+        },
+        {
+          "item": "devil_dojo_water_scrolls",
+          "x": [
+            17,
+            19
+          ],
+          "y": [
+            19,
+            19
+          ],
+          "chance": 80,
+          "repeat": [
+            1,
+            3
+          ]
+        },
+        {
+          "item": "weapons_rare",
+          "x": [ 3, 19 ],
+          "y": [ 3, 19 ],
+          "chance": 6
+        },
+        {
+          "item": "armor_rare",
+          "x": [ 3, 19 ],
+          "y": [ 3, 19 ],
+          "chance": 6
+        }
+      ],
+      "place_item": [
+        {
+          "item": "judo_belt_black",
+          "x": 17,
+          "y": 18
+        }
+      ],
+      "items": {
+        "R": {
+          "item": "devil_dojo_water_scrolls",
+          "chance": 100,
+          "repeat": [
+            4,
+            8
+          ]
+        },
+        "X": {
+          "item": "devil_dojo_ninja_arms",
+          "chance": 100,
+          "repeat": [
+            3,
+            6
+          ]
+        }
+      },
+      "place_monsters": [
+        {
+          "monster": "GROUP_TOWER_DEVIL",
+          "x": [
+            1,
+            22
+          ],
+          "y": [
+            1,
+            22
+          ],
+          "density": 0.4
+        }
+      ],
+      "place_monster": [
+        {
+          "monster": "mon_shinobi_water",
+          "x": [
+            1,
+            22
+          ],
+          "y": [
+            1,
+            22
+          ],
+          "chance": 100
+        }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": "devildojo_water_roof",
+    "object": {
+      "fill_ter": "t_flat_roof",
+      "rows": [
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "  --------------------  ",
+        "  -..................-  ",
+        "  -..................-  ",
+        "  -...oooooooooooo...-  ",
+        "  -...oooooooooooo...-  ",
+        "  -...oooooooooooo...-  ",
+        "  -...oooooooooooo...-  ",
+        "  -...oooooooooooo...-  ",
+        "  -..................-  ",
+        "  -..................-  ",
+        "  5..................-  ",
+        "  -..................-  ",
+        "  -..................-  ",
+        "  -..................-  ",
+        "  -.........#####+####  ",
+        "  -........4#******Sx#  ",
+        "  -.........#*>*SS**x#  ",
+        "  ----------##########  "
+      ],
+      "palettes": [
+        "roof_palette"
+      ],
+      "terrain": {
+        ">": "t_stairs_down",
+        "#": "t_wall_b",
+        "*": "t_thconc_floor",
+        "S": "t_thconc_floor",
+        "+": "t_door_c",
+        "x": [
+          "t_machinery_light",
+          "t_machinery_heavy",
+          "t_machinery_old",
+          "t_machinery_electronic"
+        ]
+      },
+      "furniture": {
+        "S": "f_filing_cabinet"
+      },
+      "items": {
+        "t": {
+          "item": "office_paper",
+          "chance": 25,
+          "repeat": [
+            2,
+            4
+          ]
+        }
+      },
+      "place_nested": [
+        {
+          "chunks": [
+            [
+              "null",
+              20
+            ],
+            [
+              "roof_2x2_utilities_b",
+              15
+            ],
+            [
+              "roof_2x2_utilities_c",
+              5
+            ],
+            [
+              "roof_2x2_utilities_d",
+              40
+            ],
+            [
+              "roof_2x2_utilities",
+              50
+            ]
+          ],
+          "x": [
+            4,
+            15
+          ],
+          "y": 15
+        }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": "devildojo_water_upper_roof",
+    "object": {
+      "fill_ter": "t_flat_roof",
+      "rows": [
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "            ----------  ",
+        "            5........-  ",
+        "            -......:.-  ",
+        "            ----------  "
+      ],
+      "palettes": [
+        "roof_palette"
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [
+      "devildojo_wind"
+    ],
+    "weight": 1000,
+    "object": {
+      "fill_ter": "t_floor",
+      "rows": [
+        "  --------ssss-------- `",
+        "  -,-----,spps,-----,-  ",
+        "  -,-----,spps,-----,-  ",
+        "  -,-----,spps,-----,-  ",
+        "  -,-----,spps,-----,-  ",
+        "  -,-----,ssss,-----,-  ",
+        "  qgggggggg++ggggggggq  ",
+        " px.RRRRRR....RRRRRR.xp ",
+        " px.################.xp ",
+        " px.################.xp ",
+        "  x.################.x  ",
+        " px.################.xp ",
+        " px.################.xp ",
+        " px.################.xp ",
+        "  x.################.x  ",
+        " px.################.xp ",
+        " 4x..................xp ",
+        " pxqqqqqqqqqq''qqqqqqxp ",
+        "  xLLLLLLLLLq..q.DC.yx  ",
+        " px.........'..q.DDD.xp ",
+        " pxBBB...BBBq..'.....xp ",
+        " pxqqq...qqqq'qq.....xp ",
+        "  xS.'.y.'.Tq.<qXXXXXx  ",
+        "  qqqqqqqqqqqqqqqqqqqq  "
+      ],
+      "terrain": {
+        " ": [
+          [
+            "t_grass",
+            5
+          ],
+          [
+            "t_grass_long",
+            2
+          ],
+          "t_dirt"
+        ],
+        "`": "t_dirt",
+        "p": "t_grass_long",
+        "'": "t_door_c",
+        "+": "t_door_glass_c",
+        ",": "t_pavement_y",
+        "-": "t_pavement",
+        ".": "t_floor",
+        "g": "t_wall_glass",
+        "q": "t_wall_g",
+        "s": "t_sidewalk",
+        "4": "t_gutter_downspout",
+        "x": "t_wall_b",
+        "<": "t_stairs_up"
+      },
+      "furniture": {
+        "`": "f_street_light",
+        "y": [
+          "f_indoor_plant",
+          "f_indoor_plant_y"
+        ],
+        "#": "f_tatami",
+        "B": "f_bench",
+        "C": "f_chair",
+        "D": "f_desk",
+        "L": "f_locker",
+        "S": "f_shower",
+        "X": "f_rack",
+        "p": [
+          "f_datura",
+          "f_bluebell",
+          "f_mutpoppy",
+          "f_dahlia",
+          "f_flower_tulip",
+          "f_chamomile",
+          "f_flower_spurge",
+          "f_lily"
+        ],
+        "R": "f_rack"
+      },
+      "toilets": {
+        "T": {}
+      },
+      "place_items": [
+        {
+          "item": "devil_dojo_ninja_wear",
+          "x": [
+            3,
+            11
+          ],
+          "y": [
+            18,
+            18
+          ],
+          "chance": 85,
+          "repeat": [
+            3,
+            6
+          ]
+        },
+        {
+          "item": "judo_belts",
+          "x": [
+            3,
+            11
+          ],
+          "y": [
+            18,
+            18
+          ],
+          "chance": 70,
+          "repeat": [
+            1,
+            2
+          ]
+        },
+        {
+          "item": "devil_dojo_manuals",
+          "x": [
+            17,
+            19
+          ],
+          "y": [
+            19,
+            19
+          ],
+          "chance": 100,
+          "repeat": [
+            1,
+            2
+          ]
+        },
+        {
+          "item": "devil_dojo_wind_scrolls",
+          "x": [
+            17,
+            19
+          ],
+          "y": [
+            19,
+            19
+          ],
+          "chance": 80,
+          "repeat": [
+            1,
+            3
+          ]
+        },
+        {
+          "item": "weapons_uncommon",
+          "x": [ 3, 19 ],
+          "y": [ 3, 19 ],
+          "chance": 8
+        },
+        {
+          "item": "armor_uncommon",
+          "x": [ 3, 19 ],
+          "y": [ 3, 19 ],
+          "chance": 8
+        }
+      ],
+      "place_item": [
+        {
+          "item": "judo_belt_black",
+          "x": 17,
+          "y": 18
+        }
+      ],
+      "items": {
+        "R": {
+          "item": "devil_dojo_wind_scrolls",
+          "chance": 100,
+          "repeat": [
+            4,
+            8
+          ]
+        },
+        "X": {
+          "item": "devil_dojo_ninja_arms",
+          "chance": 100,
+          "repeat": [
+            3,
+            6
+          ]
+        }
+      },
+      "place_monsters": [
+        {
+          "monster": "GROUP_TOWER_DEVIL",
+          "x": [
+            1,
+            22
+          ],
+          "y": [
+            1,
+            22
+          ],
+          "density": 0.4
+        }
+      ],
+      "place_monster": [
+        {
+          "monster": "mon_shinobi_wind",
+          "x": [
+            1,
+            22
+          ],
+          "y": [
+            1,
+            22
+          ],
+          "chance": 100
+        }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": "devildojo_wind_roof",
+    "object": {
+      "fill_ter": "t_flat_roof",
+      "rows": [
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "  --------------------  ",
+        "  -..................-  ",
+        "  -..................-  ",
+        "  -...oooooooooooo...-  ",
+        "  -...oooooooooooo...-  ",
+        "  -...oooooooooooo...-  ",
+        "  -...oooooooooooo...-  ",
+        "  -...oooooooooooo...-  ",
+        "  -..................-  ",
+        "  -..................-  ",
+        "  5..................-  ",
+        "  -..................-  ",
+        "  -..................-  ",
+        "  -..................-  ",
+        "  -.........#####+####  ",
+        "  -........4#******Sx#  ",
+        "  -.........#*>*SS**x#  ",
+        "  ----------##########  "
+      ],
+      "palettes": [
+        "roof_palette"
+      ],
+      "terrain": {
+        ">": "t_stairs_down",
+        "#": "t_wall_b",
+        "*": "t_thconc_floor",
+        "S": "t_thconc_floor",
+        "+": "t_door_c",
+        "x": [
+          "t_machinery_light",
+          "t_machinery_heavy",
+          "t_machinery_old",
+          "t_machinery_electronic"
+        ]
+      },
+      "furniture": {
+        "S": "f_filing_cabinet"
+      },
+      "items": {
+        "t": {
+          "item": "office_paper",
+          "chance": 25,
+          "repeat": [
+            2,
+            4
+          ]
+        }
+      },
+      "place_nested": [
+        {
+          "chunks": [
+            [
+              "null",
+              20
+            ],
+            [
+              "roof_2x2_utilities_b",
+              15
+            ],
+            [
+              "roof_2x2_utilities_c",
+              5
+            ],
+            [
+              "roof_2x2_utilities_d",
+              40
+            ],
+            [
+              "roof_2x2_utilities",
+              50
+            ]
+          ],
+          "x": [
+            4,
+            15
+          ],
+          "y": 15
+        }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": "devildojo_wind_upper_roof",
+    "object": {
+      "fill_ter": "t_flat_roof",
+      "rows": [
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "            ----------  ",
+        "            5........-  ",
+        "            -......:.-  ",
+        "            ----------  "
+      ],
+      "palettes": [
+        "roof_palette"
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [
+      "devildojo_earth"
+    ],
+    "weight": 1000,
+    "object": {
+      "fill_ter": "t_floor",
+      "rows": [
+        "  --------ssss-------- `",
+        "  -,-----,spps,-----,-  ",
+        "  -,-----,spps,-----,-  ",
+        "  -,-----,spps,-----,-  ",
+        "  -,-----,spps,-----,-  ",
+        "  -,-----,ssss,-----,-  ",
+        "  qgggggggg++ggggggggq  ",
+        " px.RRRRRR....RRRRRR.xp ",
+        " px.################.xp ",
+        " px.################.xp ",
+        "  x.################.x  ",
+        " px.################.xp ",
+        " px.################.xp ",
+        " px.################.xp ",
+        "  x.################.x  ",
+        " px.################.xp ",
+        " 4x..................xp ",
+        " pxqqqqqqqqqq''qqqqqqxp ",
+        "  xLLLLLLLLLq..q.DC.yx  ",
+        " px.........'..q.DDD.xp ",
+        " pxBBB...BBBq..'.....xp ",
+        " pxqqq...qqqq'qq.....xp ",
+        "  xS.'.y.'.Tq.<qXXXXXx  ",
+        "  qqqqqqqqqqqqqqqqqqqq  "
+      ],
+      "terrain": {
+        " ": [
+          [
+            "t_grass",
+            5
+          ],
+          [
+            "t_grass_long",
+            2
+          ],
+          "t_dirt"
+        ],
+        "`": "t_dirt",
+        "p": "t_grass_long",
+        "'": "t_door_c",
+        "+": "t_door_glass_c",
+        ",": "t_pavement_y",
+        "-": "t_pavement",
+        ".": "t_floor",
+        "g": "t_wall_glass",
+        "q": "t_wall_g",
+        "s": "t_sidewalk",
+        "4": "t_gutter_downspout",
+        "x": "t_wall_b",
+        "<": "t_stairs_up"
+      },
+      "furniture": {
+        "`": "f_street_light",
+        "y": [
+          "f_indoor_plant",
+          "f_indoor_plant_y"
+        ],
+        "#": "f_tatami",
+        "B": "f_bench",
+        "C": "f_chair",
+        "D": "f_desk",
+        "L": "f_locker",
+        "S": "f_shower",
+        "X": "f_rack",
+        "p": [
+          "f_datura",
+          "f_bluebell",
+          "f_mutpoppy",
+          "f_dahlia",
+          "f_flower_tulip",
+          "f_chamomile",
+          "f_flower_spurge",
+          "f_lily"
+        ],
+        "R": "f_rack"
+      },
+      "toilets": {
+        "T": {}
+      },
+      "place_items": [
+        {
+          "item": "devil_dojo_ninja_wear",
+          "x": [
+            3,
+            11
+          ],
+          "y": [
+            18,
+            18
+          ],
+          "chance": 85,
+          "repeat": [
+            3,
+            6
+          ]
+        },
+        {
+          "item": "judo_belts",
+          "x": [
+            3,
+            11
+          ],
+          "y": [
+            18,
+            18
+          ],
+          "chance": 70,
+          "repeat": [
+            1,
+            2
+          ]
+        },
+        {
+          "item": "devil_dojo_manuals",
+          "x": [
+            17,
+            19
+          ],
+          "y": [
+            19,
+            19
+          ],
+          "chance": 100,
+          "repeat": [
+            1,
+            2
+          ]
+        },
+        {
+          "item": "devil_dojo_earth_scrolls",
+          "x": [
+            17,
+            19
+          ],
+          "y": [
+            19,
+            19
+          ],
+          "chance": 80,
+          "repeat": [
+            1,
+            3
+          ]
+        },
+        {
+          "item": "weapons_uncommon",
+          "x": [ 3, 19 ],
+          "y": [ 3, 19 ],
+          "chance": 8
+        },
+        {
+          "item": "armor_uncommon",
+          "x": [ 3, 19 ],
+          "y": [ 3, 19 ],
+          "chance": 8
+        }
+      ],
+      "place_item": [
+        {
+          "item": "judo_belt_black",
+          "x": 17,
+          "y": 18
+        }
+      ],
+      "items": {
+        "R": {
+          "item": "devil_dojo_earth_scrolls",
+          "chance": 100,
+          "repeat": [
+            4,
+            8
+          ]
+        },
+        "X": {
+          "item": "devil_dojo_ninja_arms",
+          "chance": 100,
+          "repeat": [
+            3,
+            6
+          ]
+        }
+      },
+      "place_monsters": [
+        {
+          "monster": "GROUP_TOWER_DEVIL",
+          "x": [
+            1,
+            22
+          ],
+          "y": [
+            1,
+            22
+          ],
+          "density": 0.4
+        }
+      ],
+      "place_monster": [
+        {
+          "monster": "mon_shinobi_earth",
+          "x": [
+            1,
+            22
+          ],
+          "y": [
+            1,
+            22
+          ],
+          "chance": 100
+        }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": "devildojo_earth_roof",
+    "object": {
+      "fill_ter": "t_flat_roof",
+      "rows": [
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "  --------------------  ",
+        "  -..................-  ",
+        "  -..................-  ",
+        "  -...oooooooooooo...-  ",
+        "  -...oooooooooooo...-  ",
+        "  -...oooooooooooo...-  ",
+        "  -...oooooooooooo...-  ",
+        "  -...oooooooooooo...-  ",
+        "  -..................-  ",
+        "  -..................-  ",
+        "  5..................-  ",
+        "  -..................-  ",
+        "  -..................-  ",
+        "  -..................-  ",
+        "  -.........#####+####  ",
+        "  -........4#******Sx#  ",
+        "  -.........#*>*SS**x#  ",
+        "  ----------##########  "
+      ],
+      "palettes": [
+        "roof_palette"
+      ],
+      "terrain": {
+        ">": "t_stairs_down",
+        "#": "t_wall_b",
+        "*": "t_thconc_floor",
+        "S": "t_thconc_floor",
+        "+": "t_door_c",
+        "x": [
+          "t_machinery_light",
+          "t_machinery_heavy",
+          "t_machinery_old",
+          "t_machinery_electronic"
+        ]
+      },
+      "furniture": {
+        "S": "f_filing_cabinet"
+      },
+      "items": {
+        "t": {
+          "item": "office_paper",
+          "chance": 25,
+          "repeat": [
+            2,
+            4
+          ]
+        }
+      },
+      "place_nested": [
+        {
+          "chunks": [
+            [
+              "null",
+              20
+            ],
+            [
+              "roof_2x2_utilities_b",
+              15
+            ],
+            [
+              "roof_2x2_utilities_c",
+              5
+            ],
+            [
+              "roof_2x2_utilities_d",
+              40
+            ],
+            [
+              "roof_2x2_utilities",
+              50
+            ]
+          ],
+          "x": [
+            4,
+            15
+          ],
+          "y": 15
+        }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": "devildojo_earth_upper_roof",
+    "object": {
+      "fill_ter": "t_flat_roof",
+      "rows": [
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "            ----------  ",
+        "            5........-  ",
+        "            -......:.-  ",
+        "            ----------  "
+      ],
+      "palettes": [
+        "roof_palette"
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [
+      "devildojo_lightning"
+    ],
+    "weight": 1000,
+    "object": {
+      "fill_ter": "t_floor",
+      "rows": [
+        "  --------ssss-------- `",
+        "  -,-----,spps,-----,-  ",
+        "  -,-----,spps,-----,-  ",
+        "  -,-----,spps,-----,-  ",
+        "  -,-----,spps,-----,-  ",
+        "  -,-----,ssss,-----,-  ",
+        "  qgggggggg++ggggggggq  ",
+        " px.RRRRRR....RRRRRR.xp ",
+        " px.################.xp ",
+        " px.################.xp ",
+        "  x.################.x  ",
+        " px.################.xp ",
+        " px.################.xp ",
+        " px.################.xp ",
+        "  x.################.x  ",
+        " px.################.xp ",
+        " 4x..................xp ",
+        " pxqqqqqqqqqq''qqqqqqxp ",
+        "  xLLLLLLLLLq..q.DC.yx  ",
+        " px.........'..q.DDD.xp ",
+        " pxBBB...BBBq..'.....xp ",
+        " pxqqq...qqqq'qq.....xp ",
+        "  xS.'.y.'.Tq.<qXXXXXx  ",
+        "  qqqqqqqqqqqqqqqqqqqq  "
+      ],
+      "terrain": {
+        " ": [
+          [
+            "t_grass",
+            5
+          ],
+          [
+            "t_grass_long",
+            2
+          ],
+          "t_dirt"
+        ],
+        "`": "t_dirt",
+        "p": "t_grass_long",
+        "'": "t_door_c",
+        "+": "t_door_glass_c",
+        ",": "t_pavement_y",
+        "-": "t_pavement",
+        ".": "t_floor",
+        "g": "t_wall_glass",
+        "q": "t_wall_g",
+        "s": "t_sidewalk",
+        "4": "t_gutter_downspout",
+        "x": "t_wall_b",
+        "<": "t_stairs_up"
+      },
+      "furniture": {
+        "`": "f_street_light",
+        "y": [
+          "f_indoor_plant",
+          "f_indoor_plant_y"
+        ],
+        "#": "f_tatami",
+        "B": "f_bench",
+        "C": "f_chair",
+        "D": "f_desk",
+        "L": "f_locker",
+        "S": "f_shower",
+        "X": "f_rack",
+        "p": [
+          "f_datura",
+          "f_bluebell",
+          "f_mutpoppy",
+          "f_dahlia",
+          "f_flower_tulip",
+          "f_chamomile",
+          "f_flower_spurge",
+          "f_lily"
+        ],
+        "R": "f_rack"
+      },
+      "toilets": {
+        "T": {}
+      },
+      "place_items": [
+        {
+          "item": "devil_dojo_ninja_wear",
+          "x": [
+            3,
+            11
+          ],
+          "y": [
+            18,
+            18
+          ],
+          "chance": 85,
+          "repeat": [
+            3,
+            6
+          ]
+        },
+        {
+          "item": "judo_belts",
+          "x": [
+            3,
+            11
+          ],
+          "y": [
+            18,
+            18
+          ],
+          "chance": 70,
+          "repeat": [
+            1,
+            2
+          ]
+        },
+        {
+          "item": "devil_dojo_manuals",
+          "x": [
+            17,
+            19
+          ],
+          "y": [
+            19,
+            19
+          ],
+          "chance": 100,
+          "repeat": [
+            1,
+            2
+          ]
+        },
+        {
+          "item": "devil_dojo_lightning_scrolls",
+          "x": [
+            17,
+            19
+          ],
+          "y": [
+            19,
+            19
+          ],
+          "chance": 80,
+          "repeat": [
+            1,
+            3
+          ]
+        },
+        {
+          "item": "weapons_rare",
+          "x": [ 3, 19 ],
+          "y": [ 3, 19 ],
+          "chance": 6
+        },
+        {
+          "item": "armor_rare",
+          "x": [ 3, 19 ],
+          "y": [ 3, 19 ],
+          "chance": 6
+        }
+      ],
+      "place_item": [
+        {
+          "item": "judo_belt_black",
+          "x": 17,
+          "y": 18
+        }
+      ],
+      "items": {
+        "R": {
+          "item": "devil_dojo_lightning_scrolls",
+          "chance": 100,
+          "repeat": [
+            4,
+            8
+          ]
+        },
+        "X": {
+          "item": "devil_dojo_ninja_arms",
+          "chance": 100,
+          "repeat": [
+            3,
+            6
+          ]
+        }
+      },
+      "place_monsters": [
+        {
+          "monster": "GROUP_TOWER_DEVIL",
+          "x": [
+            1,
+            22
+          ],
+          "y": [
+            1,
+            22
+          ],
+          "density": 0.4
+        }
+      ],
+      "place_monster": [
+        {
+          "monster": "mon_shinobi_lightning",
+          "x": [
+            1,
+            22
+          ],
+          "y": [
+            1,
+            22
+          ],
+          "chance": 100
+        }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": "devildojo_lightning_roof",
+    "object": {
+      "fill_ter": "t_flat_roof",
+      "rows": [
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "  --------------------  ",
+        "  -..................-  ",
+        "  -..................-  ",
+        "  -...oooooooooooo...-  ",
+        "  -...oooooooooooo...-  ",
+        "  -...oooooooooooo...-  ",
+        "  -...oooooooooooo...-  ",
+        "  -...oooooooooooo...-  ",
+        "  -..................-  ",
+        "  -..................-  ",
+        "  5..................-  ",
+        "  -..................-  ",
+        "  -..................-  ",
+        "  -..................-  ",
+        "  -.........#####+####  ",
+        "  -........4#******Sx#  ",
+        "  -.........#*>*SS**x#  ",
+        "  ----------##########  "
+      ],
+      "palettes": [
+        "roof_palette"
+      ],
+      "terrain": {
+        ">": "t_stairs_down",
+        "#": "t_wall_b",
+        "*": "t_thconc_floor",
+        "S": "t_thconc_floor",
+        "+": "t_door_c",
+        "x": [
+          "t_machinery_light",
+          "t_machinery_heavy",
+          "t_machinery_old",
+          "t_machinery_electronic"
+        ]
+      },
+      "furniture": {
+        "S": "f_filing_cabinet"
+      },
+      "items": {
+        "t": {
+          "item": "office_paper",
+          "chance": 25,
+          "repeat": [
+            2,
+            4
+          ]
+        }
+      },
+      "place_nested": [
+        {
+          "chunks": [
+            [
+              "null",
+              20
+            ],
+            [
+              "roof_2x2_utilities_b",
+              15
+            ],
+            [
+              "roof_2x2_utilities_c",
+              5
+            ],
+            [
+              "roof_2x2_utilities_d",
+              40
+            ],
+            [
+              "roof_2x2_utilities",
+              50
+            ]
+          ],
+          "x": [
+            4,
+            15
+          ],
+          "y": 15
+        }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": "devildojo_lightning_upper_roof",
+    "object": {
+      "fill_ter": "t_flat_roof",
+      "rows": [
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "            ----------  ",
+        "            5........-  ",
+        "            -......:.-  ",
+        "            ----------  "
+      ],
+      "palettes": [
+        "roof_palette"
+      ]
+    }
+  }
+]

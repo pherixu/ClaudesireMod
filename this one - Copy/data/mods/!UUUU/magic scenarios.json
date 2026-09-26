@@ -1,0 +1,61 @@
+[
+{
+    "type": "scenario",
+    "id": "anothermagicaldayinparadise",
+    "name": "Another Magical Day In Paradise",
+    "points": -9,
+	"vehicle": "motorcycle_enduro", 
+    "description": "Well, it ain't looking good. You might've pushed your luck a little too far this time. Guys with guns looking to kill you around every corner, plus you heard something about the world ending? Could be worse. After all, it's just another day in paradise.",
+    "allowed_locs": [
+		"sloc_magic_basement",
+		"sloc_lake_retreat",
+		"sloc_magic_tower1",
+		"sloc_magic_tower2",
+		"sloc_magic_academy"
+    ],
+	    "professions": [
+      "wizard_novice",
+      "novice_necromancer",
+      "novice_earthshaper",
+      "novice_technomancer",
+      "novice_stormshaper",
+      "novice_kelvinist",
+	  "black_mage",
+	  "proto_lich",
+	  "death_knight",
+	  "holy_knight",
+	  "rune_knight",
+	  "flame_knight",
+	  "frost_knight",
+	  "storm_knight",
+	  "acid_knight",
+	  "prof_padawan",
+	  "prof_jedi",
+	  "prof_apprentice",
+	  "prof_sith"
+    ],
+
+    "start_name": "Another Magical Day in Paradise",
+    "surround_groups": [ [ "GROUP_ANOTHER_DAY_IN_PARADISE", 30.0 ] ],
+	"forced_traits": [ "OPTIMISTIC" ],
+    "flags": [ "LONE_START", "ALLOW_OUTSIDE" ]
+  },
+    {
+    "type": "start_location",
+    "id": "sloc_magic_tower1",
+    "name": "Wizard's Tower1",
+    "terrain": [ "wizardtower1_ground" ],
+  },
+      {
+    "type": "start_location",
+    "id": "sloc_magic_tower2",
+    "name": "Wizard's Tower2",
+    "terrain": [ "wizardtower2_ground" ],
+  },
+        {
+    "type": "start_location",
+    "id": "sloc_magic_academy",
+    "name": "Magic Academy",
+    "terrain": [ "magic_academy_ground" ],
+  }
+]

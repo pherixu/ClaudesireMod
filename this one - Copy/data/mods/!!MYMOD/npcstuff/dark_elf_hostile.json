@@ -1,0 +1,13 @@
+[
+  {
+    "type": "npc",
+    "id": "dark_elf_hostile",
+    "//": "The other half of a dark elf's coin toss: this one wants your gear, not your company.  Same class as adv_darkelf.",
+    "name_suffix": "dark elf",
+    "class": "NC_ADV_DARKELF",
+    "attitude": 10,
+    "mission": 0,
+    "chat": "TALK_DONE",
+    "faction": "no_faction"
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "//": "turrets finale",
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "dungeon_endgame" ],
+    "weight": 100,
+    "object": {
+      "fill_ter": "t_rock_floor",
+      "rows": [
+        "           ,,          |",
+        "           ,,          |",
+        "           ,,          |",
+        "           ,,          |",
+        "           ,,          |",
+        "           ,,          |",
+        "           ,,          |",
+        "           ,,          |",
+        "           ,,          |",
+        "           ,,          |",
+        "           ,,          |",
+        ",,,,,,,,,,,**,,,,,,,,,,M",
+        ",,,,,,,,,,,**,,,,,,,,,,M",
+        "           ,,          |",
+        "           ,,          |",
+        "           ,,          |",
+        "           ,,    6     |",
+        "           ,,          |",
+        "           ,,          |",
+        "           ,,          |",
+        "           ,,          |",
+        "           ,,          |",
+        "           ,,          |",
+        "-----------MM----------|"
+      ],
+      "palettes": [ "dungeon_palette" ],
+      "terrain": { "*": "t_dimensional_portal", " ": [ [ "t_rock_floor", 9 ], "t_lava" ] },
+      "place_monsters": [
+        { "monster": "GROUP_DUNGEON_ENDGAME", "x": [ 1, 22 ], "y": [ 1, 22 ], "density": 0.5, "repeat": 3 },
+        { "monster": "GROUP_DUNGEON_ENDGAME", "x": [ 6, 17 ], "y": [ 6, 17 ], "density": 0.5, "repeat": 2 }
+      ],
+      "place_monster": [
+        { "group": "GROUP_DUNGEON_LEGENDARY", "x": [ 2, 9 ], "y": [ 2, 9 ] },
+        { "group": "GROUP_DUNGEON_LEGENDARY", "x": [ 14, 21 ], "y": [ 2, 9 ] },
+        { "group": "GROUP_DUNGEON_LEGENDARY", "x": [ 2, 9 ], "y": [ 14, 21 ] },
+        { "group": "GROUP_DUNGEON_LEGENDARY", "x": [ 14, 21 ], "y": [ 14, 21 ] },
+        { "group": "GROUP_DUNGEON_VERY_RARE", "x": [ 1, 22 ], "y": [ 1, 22 ], "repeat": [ 4, 8 ] }
+      ],
+      "place_loot": [ { "group": "dgn_relic_legendary", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 100, "repeat": [ 10, 16 ] } ],
+      "place_nested": [ { "chunks": [ "dgn_border_walls" ], "x": 0, "y": 0 } ]
+    }
+  }
+]

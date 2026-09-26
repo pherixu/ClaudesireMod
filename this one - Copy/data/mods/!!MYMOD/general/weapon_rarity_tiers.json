@@ -1,0 +1,119 @@
+[
+  {
+    "id": "weapons_common",
+    "type": "item_group",
+    "//": "Common-tier weapon loot: ninja gear + the top-end vanilla melee weapons.",
+    "items": [
+      { "group": "crystalkunai", "prob": 15 },
+      { "item": "fumashuriken", "prob": 15 },
+      { "item": "kiba", "prob": 15 },
+      { "item": "gunbai", "prob": 15 },
+      { "item": "foldfan", "prob": 15 },
+      { "item": "kunai", "prob": 11, "count": [ 1, 22 ]  },
+      { "item": "senbon", "prob": 11, "count": [ 1, 22 ]  },
+      { "item": "shuriken", "prob": 11, "count": [ 1, 22 ]  },
+      { "item": "triplekunai", "prob": 15, "count": [ 1, 22 ]  },
+      { "item": "doublekunai", "prob": 15, "count": [ 1, 22 ]  },
+
+      { "item": "nodachi_carbon", "prob": 10 },
+      { "item": "zweihander", "prob": 10 },
+      { "item": "halberd", "prob": 10 },
+      { "item": "lucern_hammer", "prob": 10 },
+      { "item": "battleaxe", "prob": 10 },
+      { "item": "combatsaw_off", "prob": 10 },
+      { "item": "cs_lajatang_off", "prob": 10 },
+      { "item": "hammer_sledge_heavy", "prob": 10 },
+      { "item": "estoc", "prob": 10 },
+      { "item": "longsword", "prob": 10 },
+      { "item": "morningstar", "prob": 10 },
+      { "item": "katana", "prob": 10 },
+      { "item": "naginata", "prob": 10 },
+      { "item": "glaive", "prob": 10 },
+      { "item": "mace", "prob": 10 },
+
+      { "item": "holy_grenade", "prob": 2, "count": [ 1, 1 ] }
+    ]
+  },
+  {
+    "id": "weapons_uncommon",
+    "type": "item_group",
+    "items": [
+      { "item": "spear_beskar", "prob": 12 },
+      { "item": "blood_blade", "prob": 12 },
+      { "group": "soulswords", "prob": 12 },
+      { "item": "retractshuriken", "prob": 12 },
+      { "item": "loxodon_warhammer", "prob": 12 },
+      { "item": "noldori_longblade", "prob": 12 },
+      { "item": "noldori_warbow", "prob": 12 },
+      { "item": "umezawa_jitte", "prob": 12 },
+      { "item": "colossus_hammer", "prob": 12 },
+      { "item": "sunforger", "prob": 12 },
+      { "item": "fireshrieker", "prob": 12 },
+      { "item": "cannon_prosthetic", "prob": 12 },
+
+      { "item": "holy_grenade", "prob": 4, "count": [ 1, 1 ] }
+    ]
+  },
+  {
+    "id": "weapons_rare",
+    "type": "item_group",
+    "items": [
+      { "item": "bloodthirster", "prob": 8 },
+      { "item": "dragonslayer", "prob": 8 },
+      { "item": "flametongue", "prob": 8 },
+      { "item": "venomfang", "prob": 8 },
+      { "item": "frostbrand", "prob": 8 },
+      { "item": "stormrazor", "prob": 8 },
+      { "item": "rune_scimmy", "prob": 8 },
+      { "item": "deaths_dance", "prob": 8 },
+      { "item": "dragons_dogma", "prob": 8 },
+      { "item": "rageblade", "prob": 8 },
+      { "item": "souleater", "prob": 8 },
+      { "item": "light_sword", "prob": 8 },
+      { "item": "ghostblade", "prob": 8 },
+      { "item": "muramana", "prob": 8 },
+      { "item": "seraphs_embrace", "prob": 8 },
+      { "item": "zhonyas", "prob": 8 },
+      { "item": "runechanters_pike", "prob": 8 },
+
+      { "item": "holy_grenade", "prob": 6, "count": [ 1, 2 ] }
+    ]
+  },
+  {
+    "id": "weapons_very_rare",
+    "type": "item_group",
+    "items": [
+      { "item": "deathscythe", "prob": 5 },
+      { "item": "frostmourne", "prob": 5 },
+      { "item": "terablade", "prob": 5 },
+      { "item": "ultima_weapon", "prob": 5 },
+      { "item": "glamdring", "prob": 5 },
+      { "item": "kalina_ann", "prob": 5 },
+      { "item": "edgeblade", "prob": 5 },
+      { "item": "thunderfury", "prob": 5 },
+      { "item": "devil_HMG", "prob": 5 },
+      { "item": "redtape_gun", "prob": 5 },
+      { "item": "trinity_force", "prob": 5 },
+      { "item": "vlad_orb_trans", "prob": 5 },
+
+      { "item": "holy_grenade", "prob": 8, "count": [ 1, 2 ] }
+    ]
+  },
+  {
+    "id": "weapons_legendary",
+    "type": "item_group",
+    "items": [
+      { "item": "godsbane", "prob": 3 },
+      { "item": "holyavenger", "prob": 3 },
+      { "item": "ebony_ivory", "prob": 3 },
+      { "item": "vile_cannon", "prob": 3 },
+      { "item": "x_buster", "prob": 3 },
+      { "item": "lightsaber_argent", "prob": 3 },
+      { "item": "lightsaber_ceruleum", "prob": 3 },
+      { "item": "lightsaber_virid", "prob": 3 },
+      { "item": "lightsaber_crimson", "prob": 3 },
+
+      { "item": "holy_grenade", "prob": 10, "count": [ 1, 3 ] }
+    ]
+  }
+]

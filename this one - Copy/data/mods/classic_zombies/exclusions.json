@@ -1,0 +1,49 @@
+	[
+  {
+    "type": "region_overlay",
+    "regions": [ "all" ],
+    "overmap_feature_flag_settings": { "whitelist": [ "CLASSIC" ] }
+  },
+  {
+    "type": "MONSTER_WHITELIST",
+    "categories": [ "CLASSIC", "WILDLIFE" ]
+  },
+    {
+    "type": "MONSTER_WHITELIST",
+    "monsters": [
+      "mon_feral_human_pipe",
+      "mon_feral_human_crowbar",
+      "mon_feral_human_axe",
+      "mon_feral_scientist_scalpel",
+      "mon_feral_human_tool",
+      "mon_feral_maid_broom",
+      "mon_feral_maid_candlestick",
+      "mon_feral_maid_knife",
+      "mon_feral_fancy_rapier",
+      "mon_feral_fancy_rapier_fake",
+      "mon_feral_fancy_crossbow",
+      "mon_feral_armored_mace",
+      "mon_feral_armored_battleaxe"
+    ]
+  },
+  {
+    "type": "EXTERNAL_OPTION",
+    "name": "DISABLE_ROBOT_RESPONSE",
+    "stype": "bool",
+    "value": true
+  },
+  {
+    "type": "region_overlay",
+    "regions": [ "all" ],
+    "map_extras": {
+      "forest": { "chance": 20, "extras": { "mx_portal": 0, "mx_portal_in": 0, "mx_spider": 0 } },
+      "forest_thick": { "chance": 20, "extras": { "mx_portal": 0, "mx_portal_in": 0, "mx_shia": 0, "mx_spider": 0, "mx_jabberwock": 0 } },
+      "forest_water": { "chance": 20, "extras": { "mx_portal": 0, "mx_portal_in": 0, "mx_spider": 0 } },
+      "field": { "chance": 90, "extras": { "mx_portal": 0, "mx_portal_in": 0 } },
+      "road": { "chance": 75, "extras": { "mx_portal": 0, "mx_portal_in": 0 } },
+      "build": { "chance": 90, "extras": { "mx_house_spider": 0, "mx_house_wasp": 0, "mx_portal": 0, "mx_portal_in": 0 } },
+      "marloss": { "chance": 0, "extras": { "mx_marloss_pilgrimage": 0 } },
+      "subway": { "chance": 75, "extras": { "mx_portal": 0, "mx_portal_in": 0 } }
+    }
+  }
+]

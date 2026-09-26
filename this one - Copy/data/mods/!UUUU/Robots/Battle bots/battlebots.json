@@ -1,0 +1,91 @@
+[
+    {
+    "id": "smg_fake",
+    "copy-from": "ksub2000",
+    "type": "GUN",
+    "name": { "str_sp": "SMG" },
+    "description": "If you see it - it is bug!",
+    "modes": [ [ "DEFAULT", "semi", 1 ], [ "AUTO", "auto", 4 ] ],
+	"skill": "smg",
+    "clip_size": 300,
+    "magazines": [  ]
+  },
+      {
+    "id": "net_fake",
+    "copy-from": "net",
+    "type": "GUN",
+    "name": { "str_sp": "net" },
+    "description": "If you see it - it is bug!",
+	"skill": "throw",
+    "modes": [ [ "DEFAULT", "semi", 1 ] ],
+	"delete": { "flags": [ "NO_DAMAGE" ] },
+    "magazines": [  ]
+  },
+        {
+    "id": "bolas_fake",
+    "copy-from": "bolas",
+    "type": "GUN",
+    "name": { "str_sp": "bolas" },
+    "description": "If you see it - it is bug!",
+	"skill": "throw",
+    "modes": [ [ "DEFAULT", "semi", 1 ] ],
+	"delete": { "flags": [ "NO_DAMAGE" ] },
+    "magazines": [  ]
+  },
+    {
+    "id": "smg_fake2",
+    "copy-from": "american_180",
+    "type": "GUN",
+    "name": { "str_sp": "SMG" },
+    "description": "If you see it - it is bug!",
+    "modes": [ [ "DEFAULT", "semi", 1 ], [ "AUTO", "auto", 6 ] ],
+	"skill": "smg",
+    "clip_size": 300,
+    "magazines": [  ]
+  },
+
+    {
+    "id": "shotgun_fake",
+    "copy-from": "shotgun_d",
+    "type": "GUN",
+    "name": { "str_sp": "Shotgun" },
+    "description": "If you see it - it is bug!",
+    "modes": [ [ "DEFAULT", "semi", 1 ], [ "AUTO", "auto", 2 ] ],
+	"skill": "shotgun",
+    "clip_size": 300,
+    "magazines": [  ]
+  },
+
+  {
+    "id": "rifle_fake",
+    "copy-from": "m16a4",
+    "type": "GUN",
+    "name": { "str_sp": "rifle" },
+    "description": "If you see it - it is bug!",
+    "modes": [ [ "DEFAULT", "semi", 1 ], [ "AUTO", "auto", 3 ] ],
+	"skill": "rifle",
+    "clip_size": 300,
+    "magazines": [  ]
+  },
+    {
+    "id": "aux_flamer_fake",
+    "copy-from": "flamethrower_base",
+    "type": "GUN",
+    "name": { "str_sp": "flamethrower" },
+    "description": "If you see it - it is bug!",
+	"skill": "launcher",
+    "modes": [ [ "DEFAULT", "semi", 1 ], [ "AUTO", "auto", 3 ] ],
+    "clip_size": 300,
+    "magazines": [  ]
+  },
+      {
+    "id": "laser_fake",
+    "copy-from": "laser_rifle_cheap",
+    "type": "GUN",
+    "name": { "str_sp": "shoddy laser rifle" },
+    "description": "If you see it - it is bug!",
+	"skill": "rifle",
+    "modes": [ [ "DEFAULT", "semi", 1 ] ],
+    "magazines": [  ]
+  }
+]

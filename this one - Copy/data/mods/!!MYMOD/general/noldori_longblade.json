@@ -1,0 +1,30 @@
+[
+  {
+    "id": "noldori_longblade",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "2H_SWORDS", "JAPANESE_SWORDS" ],
+    "symbol": "/",
+    "color": "light_cyan",
+    "looks_like": "nodachi",
+    "name": { "str_sp": "Noldori Longblade" },
+    "description": "A huge, curved two-handed blade of Noldori make, its edge inscribed with silver runes that never dull. Far lighter and far deadlier than the nodachi it was patterned after, and utterly indestructible.",
+    "weight": "2600 g",
+    "volume": "3250 ml",
+    "price": "0 cent",
+    "to_hit": 5,
+    "bashing": 12,
+    "cutting": 130,
+    "material": [ "steel", "rune" ],
+    "techniques": [ "WBLOCK_1", "RAPID", "WIDE", "BRUTAL" ],
+    "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 10 ] ],
+    "flags": [
+      "UNBREAKABLE_MELEE",
+      "SHEATH_SWORD",
+      "ALWAYS_TWOHAND",
+      "NONCONDUCTIVE",
+      "NO_REPAIR",
+      "NO_SALVAGE"
+    ]
+  }
+]

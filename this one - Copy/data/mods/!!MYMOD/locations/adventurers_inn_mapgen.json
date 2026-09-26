@@ -1,0 +1,274 @@
+[
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "adv_inn_chequered_floor",
+    "object": {
+      "mapgensize": [ 24, 24 ],
+      "rotation": [ 0, 3 ],
+      "rows": [
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "  xoxoxoxoxoxoxoxoxoxo  ",
+        "  oxoxoxoxoxoxoxoxoxox  ",
+        "  xoxoxoxoxoxoxoxoxoxo  ",
+        "  oxoxoxoxoxoxoxoxoxox  ",
+        "  xoxoxoxoxoxoxoxoxoxo  ",
+        "  oxoxoxoxoxoxoxoxoxox  ",
+        "  xoxoxoxoxoxoxoxoxoxo  ",
+        "  oxoxoxoxoxoxoxoxoxox  ",
+        "  xo                    ",
+        "  oxoxoxoxoxoxox        ",
+        "  xoxoxoxoxoxoxo        ",
+        "  oxoxoxoxoxoxox        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        "
+      ],
+      "terrain": { "o": "t_linoleum_white", "x": "t_linoleum_gray" }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "adv_inn" ],
+    "weight": 300,
+    "object": {
+      "fill_ter": "t_floor",
+      "rows": [
+        "____,____,____,____,___'",
+        "____,____,____,____,____",
+        "____,____,____,____,____",
+        "____,____,____,____,____",
+        "____,____,____,____,____",
+        "========================",
+        "=|OOOOOOOOOOOOOOO||+|||=",
+        "=|HtHHtHHtHHtHHtH....Y|=",
+        "=|HtHHtHHtHHtHHtH.....|=",
+        "=|...................Y|=",
+        "=|U.U.U.U.U.U.U.U.....|=",
+        "=|#################...|=",
+        "=|................#...|=",
+        "=|....................|=",
+        "=|..####ffGGGG####....|=",
+        "=|..||||||||||||||||+||=",
+        "=|..###fffffff##|00|lS|=",
+        "=|..............+l2|ll|=",
+        "=|..............|00|lT|=",
+        "=||||||||||||||||||||||=",
+        "==4=====================",
+        "                        ",
+        "                        ",
+        "                        "
+      ],
+      "terrain": {
+        "+": "t_door_c",
+        ",": "t_pavement_y",
+        " ": "t_region_groundcover_urban",
+        ".": "t_floor",
+        "'": "t_pavement",
+        "=": "t_sidewalk",
+        "O": "t_window",
+        "_": "t_pavement",
+        "4": "t_gutter_downspout",
+        "l": "t_linoleum_white",
+        "S": "t_linoleum_white",
+        "T": "t_linoleum_white",
+        "0": "t_linoleum_white",
+        "2": "t_linoleum_white",
+        "|": "t_wall_w"
+      },
+      "furniture": {
+        "'": "f_street_light",
+        "#": "f_counter",
+        "G": "f_oven",
+        "H": "f_sofa",
+        "S": "f_sink",
+        "Y": "f_rack_coat",
+        "f": "f_fridge",
+        "0": "f_locker",
+        "2": "f_bench",
+        "U": "f_stool",
+        "t": "f_table"
+      },
+      "toilets": { "T": {  } },
+      "place_nested": [ { "chunks": [ "adv_inn_chequered_floor" ], "x": 0, "y": 0 },
+        { "chunks": [ "adv_inn_guest" ], "x": [ 2, 19 ], "y": 9 },
+        { "chunks": [ [ "adv_inn_guest", 50 ], [ "null", 50 ] ], "x": [ 2, 19 ], "y": 13 },
+        { "chunks": [ [ "adv_inn_guest", 50 ], [ "null", 50 ] ], "x": [ 2, 17 ], "y": 12 },
+        { "chunks": [ [ "adv_inn_guest", 50 ], [ "null", 50 ] ], "x": [ 17, 20 ], "y": [ 7, 8 ] },
+        { "chunks": [ [ "adv_inn_guest", 50 ], [ "null", 50 ] ], "x": [ 3, 19 ], "y": 10 } ],
+      "items": { "Y": { "item": "coat_rack", "chance": 35, "repeat": [ 1, 4 ] } },
+      "place_items": [
+        { "item": "dgn_provisions", "x": [ 4, 17 ], "y": 14, "chance": 60, "repeat": [ 1, 4 ] },
+        { "item": "dgn_potions", "x": [ 4, 15 ], "y": 16, "chance": 40, "repeat": [ 1, 2 ] },
+        { "item": "diner_food", "x": [ 4, 17 ], "y": 14, "chance": 75, "repeat": [ 1, 8 ] },
+        { "item": "diner_back", "x": [ 4, 15 ], "y": 16, "chance": 95, "repeat": [ 1, 8 ] },
+        { "item": "coat_rack", "x": [ 17, 18 ], "y": 16, "chance": 45, "repeat": [ 1, 3 ] },
+        { "item": "coat_rack", "x": [ 17, 18 ], "y": 18, "chance": 45, "repeat": [ 1, 3 ] }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "adv_inn_roof" ],
+    "weight": 300,
+    "object": {
+      "fill_ter": "t_tar_flat_roof",
+      "rows": [
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        " |--------------------3 ",
+        " |....................3 ",
+        " |....................3 ",
+        " |....................3 ",
+        " |....................3 ",
+        " |....................3 ",
+        " |....................3 ",
+        " |....................3 ",
+        " |....................3 ",
+        " |....................3 ",
+        " |.........&..........3 ",
+        " |....................3 ",
+        " |.........&..........3 ",
+        " |522222222222222222223 ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        "
+      ],
+      "terrain": {
+        ".": "t_tar_flat_roof",
+        " ": "t_open_air",
+        "|": "t_gutter_west",
+        "2": "t_gutter_south",
+        "-": "t_gutter_north",
+        "3": "t_gutter_east",
+        "5": "t_gutter_drop"
+      },
+      "furniture": { "&": "f_roof_turbine_vent" },
+      "place_items": [ { "item": "roof_trash", "x": [ 4, 16 ], "y": [ 7, 15 ], "chance": 50, "repeat": [ 1, 3 ] } ],
+      "place_nested": [
+        {
+          "chunks": [
+            [ "roof_2x2_utilities_b", 20 ],
+            [ "roof_2x2_utilities_c", 20 ],
+            [ "roof_2x2_utilities_d", 20 ],
+            [ "roof_2x2_utilities", 20 ],
+            [ "null", 40 ]
+          ],
+          "x": [ 13, 17 ],
+          "y": [ 16, 17 ]
+        },
+        {
+          "chunks": [ [ "roof_4x4_utility_1", 30 ], [ "roof_6x6_utility", 30 ], [ "null", 80 ] ],
+          "x": [ 3, 14 ],
+          "y": [ 8, 9 ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "adv_inn_p_fighter",
+    "object": { "mapgensize": [ 1, 1 ], "place_npcs": [ { "class": "adv_fighter", "x": 0, "y": 0 } ] }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "adv_inn_p_mage",
+    "object": { "mapgensize": [ 1, 1 ], "place_npcs": [ { "class": "adv_mage", "x": 0, "y": 0 } ] }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "adv_inn_p_thief",
+    "object": { "mapgensize": [ 1, 1 ], "place_npcs": [ { "class": "adv_thief", "x": 0, "y": 0 } ] }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "adv_inn_p_archer",
+    "object": { "mapgensize": [ 1, 1 ], "place_npcs": [ { "class": "adv_archer", "x": 0, "y": 0 } ] }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "adv_inn_p_elf",
+    "object": { "mapgensize": [ 1, 1 ], "place_npcs": [ { "class": "adv_elf", "x": 0, "y": 0 } ] }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "adv_inn_p_darkelf",
+    "object": { "mapgensize": [ 1, 1 ], "place_npcs": [ { "class": "adv_darkelf", "x": 0, "y": 0 } ] }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "adv_inn_p_darkelf_foe",
+    "object": { "mapgensize": [ 1, 1 ], "place_npcs": [ { "class": "dark_elf_hostile", "x": 0, "y": 0 } ] }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "adv_inn_p_gunbreaker",
+    "object": { "mapgensize": [ 1, 1 ], "place_npcs": [ { "class": "adv_gunbreaker", "x": 0, "y": 0 } ] }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "adv_inn_p_devilhunter",
+    "object": { "mapgensize": [ 1, 1 ], "place_npcs": [ { "class": "devilhunter_main", "x": 0, "y": 0 } ] }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "adv_inn_p_jedi",
+    "object": { "mapgensize": [ 1, 1 ], "place_npcs": [ { "class": "jedi_main", "x": 0, "y": 0 } ] }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "adv_inn_p_mando",
+    "object": { "mapgensize": [ 1, 1 ], "place_npcs": [ { "class": "mando_bounty_hunter", "x": 0, "y": 0 } ] }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "adv_inn_p_outcast",
+    "object": { "mapgensize": [ 1, 1 ], "place_npcs": [ { "class": "mando_outcast", "x": 0, "y": 0 } ] }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "adv_inn_p_outcast_foe",
+    "object": { "mapgensize": [ 1, 1 ], "place_npcs": [ { "class": "mando_outcast_hostile", "x": 0, "y": 0 } ] }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "adv_inn_p_sith",
+    "object": { "mapgensize": [ 1, 1 ], "place_npcs": [ { "class": "sith_main", "x": 0, "y": 0 } ] }
+  },
+  {
+    "//": "One inn guest, picked from every NPC we have made.  Hostile ones (dark elf, outcast, sith) are rare.",
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "adv_inn_guest",
+    "object": { "mapgensize": [ 1, 1 ], "place_nested": [ { "chunks": [ [ "adv_inn_p_fighter", 10 ], [ "adv_inn_p_mage", 10 ], [ "adv_inn_p_thief", 10 ], [ "adv_inn_p_archer", 10 ], [ "adv_inn_p_elf", 8 ], [ "adv_inn_p_darkelf", 6 ], [ "adv_inn_p_darkelf_foe", 4 ], [ "adv_inn_p_gunbreaker", 8 ], [ "adv_inn_p_devilhunter", 6 ], [ "adv_inn_p_jedi", 6 ], [ "adv_inn_p_mando", 6 ], [ "adv_inn_p_outcast", 4 ], [ "adv_inn_p_outcast_foe", 3 ], [ "adv_inn_p_sith", 2 ] ], "x": 0, "y": 0 } ] }
+  }
+]

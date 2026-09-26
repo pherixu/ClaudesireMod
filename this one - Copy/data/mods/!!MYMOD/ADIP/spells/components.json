@@ -1,0 +1,32 @@
+[
+  {
+    "id": "spell_components_lab_rat_generator",
+    "type": "requirement",
+    "components": [ [ [ "mutagen", 1 ], [ "iv_mutagen", 1 ] ] ]
+  },
+  {
+    "id": "spell_components_living_fusion",
+    "type": "requirement",
+    "components": [ [ [ "blood", 1 ] ] ]
+  },
+  {
+    "id": "spell_components_clone_tattoo",
+    "type": "requirement",
+    "qualities": [
+	  { "id": "LAW", "level": 2 }
+    ]
+  },
+  {
+    "id": "spell_components_shield",
+    "type": "requirement",
+	"components": [ [ [ "blood", 1 ], [ "pmc_dogtag", 1 ] ] ],
+    "qualities": [
+	  { "id": "LAW", "level": 1 }
+    ]
+  },
+  {
+    "id": "spell_components_catalyst",
+    "type": "requirement",
+    "components": [ [ [ "blood", 300 ], [ "effervescent_genetics", 1 ] ] ]
+  }
+]

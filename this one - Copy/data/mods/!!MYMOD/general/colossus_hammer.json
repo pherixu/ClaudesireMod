@@ -1,0 +1,102 @@
+[
+  {
+    "id": "colossus_might",
+    "type": "effect_type",
+    "name": [
+      "Colossus Might"
+    ],
+    "desc": [
+      "Titanic strength surges through your limbs, enough to swing the Colossus Hammer."
+    ],
+    "apply_message": "The hammer's weight seems to fall away as your muscles swell.",
+    "remove_message": "The surge of titanic strength fades.",
+    "rating": "good",
+    "base_mods": {
+      "str_mod": [
+        20
+      ]
+    }
+  },
+  {
+    "id": "colossus_might_spell",
+    "type": "SPELL",
+    "name": {
+      "str": "Colossus Might"
+    },
+    "description": "Channel crystallized mana through the hammer to gain +20 Strength for a time.",
+    "valid_targets": [
+      "self"
+    ],
+    "flags": [
+      "NO_FAIL",
+      "NO_LEGS",
+      "SILENT"
+    ],
+    "effect": "target_attack",
+    "effect_str": "colossus_might",
+    "energy_source": "NONE",
+    "difficulty": 0,
+    "base_casting_time": 100,
+    "base_energy_cost": 0,
+    "max_level": 1,
+    "min_damage": 1,
+    "max_damage": 1,
+    "min_duration": 30000,
+    "max_duration": 30000,
+    "duration_increment": 0
+  },
+  {
+    "id": "colossus_hammer",
+    "type": "TOOL",
+    "category": "weapons",
+    "symbol": "/",
+    "color": "dark_gray",
+    "looks_like": "hammer_sledge",
+    "//": "min_strength 35 (same field as Dragonslayer's 20). Weight and to_hit add to the penalty at low Str; the wield spell adds +20 Str.",
+    "weapon_category": [
+      "2H_HAMMERS"
+    ],
+    "name": {
+      "str": "Colossus Hammer"
+    },
+    "description": "An absurdly massive two-handed maul of rune-etched steel, roughly twice the weight of a sledgehammer. Swinging it well takes around 35 Strength, but every landed blow is devastating. Loaded with crystallized mana, its use action grants +20 Strength for a time (must be wielded).",
+    "weight": "8500 g",
+    "volume": "3500 ml",
+    "price": "0 cent",
+    "material": [
+      "steel",
+      "rune"
+    ],
+    "to_hit": -3,
+    "bashing": 160,
+    "techniques": [
+      "WBLOCK_1",
+      "BRUTAL",
+      "WIDE",
+      "SWEEP"
+    ],
+    "flags": [
+      "UNBREAKABLE_MELEE",
+      "NONCONDUCTIVE",
+      "NO_REPAIR",
+      "NO_SALVAGE"
+    ],
+    "qualities": [
+      [
+        "HAMMER",
+        3
+      ]
+    ],
+    "ammo": "crystallized_mana",
+    "max_charges": 10,
+    "charges_per_use": 1,
+    "use_action": {
+      "type": "cast_spell",
+      "spell_id": "colossus_might_spell",
+      "no_fail": true,
+      "level": 1,
+      "need_wielding": true
+    },
+    "min_strength": 35
+  }
+]

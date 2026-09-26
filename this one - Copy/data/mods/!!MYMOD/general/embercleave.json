@@ -1,0 +1,91 @@
+[
+  {
+    "id": "embercleave",
+    "copy-from": "fireshrieker",
+    "type": "GUN",
+    "category": "weapons",
+    "name": {
+      "str": "Embercleave"
+    },
+    "description": "A blazing, flame-forged blade-axe that hums with impatient fury. Carrying it makes you faster on your feet; a swing scorches what it cuts, and pointed at a foe it looses a bolt of fire at no cost.",
+    "symbol": "/",
+    "color": "red",
+    "looks_like": "sword_wood",
+    "weight": "1400 g",
+    "volume": "1500 ml",
+    "price": "0 cent",
+    "material": [
+      "steel",
+      "rune"
+    ],
+    "weapon_category": [
+      "1H_SWORDS"
+    ],
+    "to_hit": 1,
+    "bashing": 0,
+    "attacks": [
+      {
+        "id": "SLASH",
+        "to_hit": 1,
+        "damage": {
+          "values": [
+            {
+              "damage_type": "cut",
+              "amount": 32
+            },
+            {
+              "damage_type": "bash",
+              "amount": 6
+            },
+            {
+              "damage_type": "heat",
+              "amount": 20
+            }
+          ]
+        }
+      }
+    ],
+    "techniques": [
+      "WBLOCK_1",
+      "BRUTAL"
+    ],
+    "range": 20,
+    "ranged_damage": {
+      "damage_type": "heat",
+      "amount": 30,
+      "armor_penetration": 10
+    },
+    "dispersion": 100,
+    "loudness": 8,
+    "ups_charges": 0,
+    "modes": [
+      [
+        "DEFAULT",
+        "Ember Bolt",
+        1
+      ]
+    ],
+    "extend": {
+      "flags": [
+        "UNBREAKABLE_MELEE",
+        "NO_REPAIR",
+        "NO_SALVAGE",
+        "LIGHT_10"
+      ]
+    },
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "values": [
+            {
+              "value": "SPEED",
+              "multiply": 0.05
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

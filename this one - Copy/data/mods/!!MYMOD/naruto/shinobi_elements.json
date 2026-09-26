@@ -1,0 +1,883 @@
+[
+  {
+    "id": "shinobi_fire_gun",
+    "weapon_category": [
+      "ELASTIC"
+    ],
+    "type": "GUN",
+    "symbol": "%",
+    "color": "red",
+    "name": {
+      "str": "Fire Style: hurled kunai"
+    },
+    "description": "A kunai wreathed in fire chakra, ready to pierce that which isn't part of the clan.",
+    "material": [
+      "stone"
+    ],
+    "flags": [
+      "PRIMITIVE_RANGED_WEAPON",
+      "NEVER_JAMS",
+      "NONCONDUCTIVE",
+      "NO_REPAIR",
+      "WATERPROOF_GUN",
+      "NO_SALVAGE",
+      "NO_UNLOAD"
+    ],
+    "skill": "throw",
+    "ammo_effects": [
+      "NO_PENETRATE_OBSTACLES",
+      "NEVER_MISFIRES"
+    ],
+    "ranged_damage": {
+      "damage_type": "heat",
+      "amount": 65,
+      "armor_penetration": 100
+    },
+    "weight": "540 g",
+    "volume": "210 ml",
+    "bashing": 1,
+    "to_hit": 1,
+    "loudness": 2,
+    "range": 12,
+    "dispersion": 50,
+    "durability": 8
+  },
+  {
+    "id": "mon_shinobi_fire",
+    "type": "MONSTER",
+    "name": "Fire Shinobi",
+    "description": "A veteran soul-blade shinobi steeped in fire chakra, far deadlier than the clones it commands.",
+    "default_faction": "devil",
+    "looks_like": "mon_ninja",
+    "bodytype": "human",
+    "species": [
+      "DEVIL"
+    ],
+    "material": [
+      "iflesh"
+    ],
+    "death_function": [
+      "EXPLODE"
+    ],
+    "diff": 30,
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 2000,
+    "speed": 299,
+    "symbol": "h",
+    "color": "red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 8,
+    "melee_dice": 6,
+    "melee_dice_sides": 9,
+    "dodge": 5,
+    "armor_cold": 22,
+    "armor_electric": 22,
+    "armor_acid": 22,
+    "armor_fire": 22,
+    "armor_cut": 22,
+    "armor_stab": 22,
+    "armor_bullet": 22,
+    "armor_bash": 22,
+    "vision_day": 50,
+    "vision_night": 99,
+    "special_attacks": [
+      [
+        "GRAB_DRAG",
+        11
+      ],
+      [
+        "LUNGE",
+        11
+      ],
+      [
+        "GRAB",
+        11
+      ],
+      [
+        "SMASH",
+        11
+      ],
+      [
+        "PULL_METAL_WEAPON",
+        11
+      ],
+      {
+        "type": "gun",
+        "cooldown": 4,
+        "move_cost": 75,
+        "gun_type": "shinobi_fire_gun",
+        "no_ammo_sound": "",
+        "fake_skills": [
+          [
+            "gun",
+            9
+          ],
+          [
+            "throw",
+            9
+          ]
+        ],
+        "fake_dex": 25,
+        "fake_per": 25,
+        "require_targeting_player": false,
+        "ranges": [
+          [
+            2,
+            15,
+            "DEFAULT"
+          ]
+        ],
+        "description": "The shinobi hurls a kunai wreathed in fire chakra!",
+        "no_crits": false
+      },
+      {
+        "type": "leap",
+        "cooldown": 5,
+        "max_range": 6
+      },
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "fire_clone_mother",
+          "min_level": 1
+        },
+        "cooldown": 20,
+        "monster_message": "The ninja quickly casts a jutsu!"
+      }
+    ],
+    "death_drops": "shinobidrops",
+    "harvest": "boss1",
+    "anger_triggers": [
+      "FRIEND_ATTACKED",
+      "FRIEND_DIED",
+      "HURT",
+      "SOUND",
+      "PLAYER_WEAK",
+      "PLAYER_CLOSE"
+    ],
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "KEENNOSE",
+      "LOUDMOVES",
+      "GRABS",
+      "HIT_AND_RUN",
+      "HEARS",
+      "WEBWALK",
+      "NO_BREATHE",
+      "PATH_AVOID_DANGER_1",
+      "PUSH_MON"
+    ]
+  },
+  {
+    "id": "shinobi_water_gun",
+    "weapon_category": [
+      "ELASTIC"
+    ],
+    "type": "GUN",
+    "symbol": "%",
+    "color": "red",
+    "name": {
+      "str": "Water Style: hurled kunai"
+    },
+    "description": "A kunai wreathed in water chakra, ready to pierce that which isn't part of the clan.",
+    "material": [
+      "stone"
+    ],
+    "flags": [
+      "PRIMITIVE_RANGED_WEAPON",
+      "NEVER_JAMS",
+      "NONCONDUCTIVE",
+      "NO_REPAIR",
+      "WATERPROOF_GUN",
+      "NO_SALVAGE",
+      "NO_UNLOAD"
+    ],
+    "skill": "throw",
+    "ammo_effects": [
+      "NO_PENETRATE_OBSTACLES",
+      "NEVER_MISFIRES"
+    ],
+    "ranged_damage": {
+      "damage_type": "cold",
+      "amount": 65,
+      "armor_penetration": 100
+    },
+    "weight": "540 g",
+    "volume": "210 ml",
+    "bashing": 1,
+    "to_hit": 1,
+    "loudness": 2,
+    "range": 12,
+    "dispersion": 50,
+    "durability": 8
+  },
+  {
+    "id": "mon_shinobi_water",
+    "type": "MONSTER",
+    "name": "Water Shinobi",
+    "description": "A veteran soul-blade shinobi steeped in water chakra, far deadlier than the clones it commands.",
+    "default_faction": "devil",
+    "looks_like": "mon_inaka",
+    "bodytype": "human",
+    "species": [
+      "DEVIL"
+    ],
+    "material": [
+      "iflesh"
+    ],
+    "death_function": [
+      "SMOKEBURST"
+    ],
+    "diff": 30,
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 2000,
+    "speed": 299,
+    "symbol": "h",
+    "color": "red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 8,
+    "melee_dice": 6,
+    "melee_dice_sides": 9,
+    "dodge": 5,
+    "armor_cold": 22,
+    "armor_electric": 22,
+    "armor_acid": 22,
+    "armor_fire": 22,
+    "armor_cut": 22,
+    "armor_stab": 22,
+    "armor_bullet": 22,
+    "armor_bash": 22,
+    "vision_day": 50,
+    "vision_night": 99,
+    "attack_effs": [
+      {
+        "id": "cold",
+        "duration": 500,
+        "chance": 33
+      }
+    ],
+    "special_attacks": [
+      [
+        "GRAB_DRAG",
+        11
+      ],
+      [
+        "LUNGE",
+        11
+      ],
+      [
+        "GRAB",
+        11
+      ],
+      [
+        "SMASH",
+        11
+      ],
+      [
+        "PULL_METAL_WEAPON",
+        11
+      ],
+      {
+        "type": "gun",
+        "cooldown": 4,
+        "move_cost": 75,
+        "gun_type": "shinobi_water_gun",
+        "no_ammo_sound": "",
+        "fake_skills": [
+          [
+            "gun",
+            9
+          ],
+          [
+            "throw",
+            9
+          ]
+        ],
+        "fake_dex": 25,
+        "fake_per": 25,
+        "require_targeting_player": false,
+        "ranges": [
+          [
+            2,
+            15,
+            "DEFAULT"
+          ]
+        ],
+        "description": "The shinobi hurls a kunai wreathed in water chakra!",
+        "no_crits": false
+      },
+      {
+        "type": "leap",
+        "cooldown": 5,
+        "max_range": 6
+      },
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "water_clone_mother",
+          "min_level": 1
+        },
+        "cooldown": 20,
+        "monster_message": "The ninja quickly casts a jutsu!"
+      }
+    ],
+    "death_drops": "shinobidrops",
+    "harvest": "boss1",
+    "anger_triggers": [
+      "FRIEND_ATTACKED",
+      "FRIEND_DIED",
+      "HURT",
+      "SOUND",
+      "PLAYER_WEAK",
+      "PLAYER_CLOSE"
+    ],
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "KEENNOSE",
+      "LOUDMOVES",
+      "GRABS",
+      "HIT_AND_RUN",
+      "HEARS",
+      "WEBWALK",
+      "NO_BREATHE",
+      "PATH_AVOID_DANGER_1",
+      "PUSH_MON"
+    ]
+  },
+  {
+    "id": "shinobi_wind_gun",
+    "weapon_category": [
+      "ELASTIC"
+    ],
+    "type": "GUN",
+    "symbol": "%",
+    "color": "red",
+    "name": {
+      "str": "Wind Style: hurled kunai"
+    },
+    "description": "A kunai wreathed in wind chakra, ready to pierce that which isn't part of the clan.",
+    "material": [
+      "stone"
+    ],
+    "flags": [
+      "PRIMITIVE_RANGED_WEAPON",
+      "NEVER_JAMS",
+      "NONCONDUCTIVE",
+      "NO_REPAIR",
+      "WATERPROOF_GUN",
+      "NO_SALVAGE",
+      "NO_UNLOAD"
+    ],
+    "skill": "throw",
+    "ammo_effects": [
+      "NO_PENETRATE_OBSTACLES",
+      "NEVER_MISFIRES"
+    ],
+    "ranged_damage": {
+      "damage_type": "cut",
+      "amount": 65,
+      "armor_penetration": 100
+    },
+    "weight": "540 g",
+    "volume": "210 ml",
+    "bashing": 1,
+    "to_hit": 1,
+    "loudness": 2,
+    "range": 12,
+    "dispersion": 50,
+    "durability": 8
+  },
+  {
+    "id": "mon_shinobi_wind",
+    "type": "MONSTER",
+    "name": "Wind Shinobi",
+    "description": "A veteran soul-blade shinobi steeped in wind chakra, far deadlier than the clones it commands.",
+    "default_faction": "devil",
+    "looks_like": "mon_ninja",
+    "bodytype": "human",
+    "species": [
+      "DEVIL"
+    ],
+    "material": [
+      "iflesh"
+    ],
+    "death_function": [
+      "SMOKEBURST"
+    ],
+    "diff": 30,
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 2000,
+    "speed": 299,
+    "symbol": "h",
+    "color": "red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 8,
+    "melee_dice": 6,
+    "melee_dice_sides": 9,
+    "dodge": 5,
+    "armor_cold": 22,
+    "armor_electric": 22,
+    "armor_acid": 22,
+    "armor_fire": 22,
+    "armor_cut": 22,
+    "armor_stab": 22,
+    "armor_bullet": 22,
+    "armor_bash": 22,
+    "vision_day": 50,
+    "vision_night": 99,
+    "attack_effs": [
+      {
+        "id": "zapped",
+        "duration": 100,
+        "chance": 33
+      }
+    ],
+    "special_attacks": [
+      [
+        "GRAB_DRAG",
+        11
+      ],
+      [
+        "LUNGE",
+        11
+      ],
+      [
+        "GRAB",
+        11
+      ],
+      [
+        "SMASH",
+        11
+      ],
+      [
+        "PULL_METAL_WEAPON",
+        11
+      ],
+      {
+        "type": "gun",
+        "cooldown": 4,
+        "move_cost": 75,
+        "gun_type": "shinobi_wind_gun",
+        "no_ammo_sound": "",
+        "fake_skills": [
+          [
+            "gun",
+            9
+          ],
+          [
+            "throw",
+            9
+          ]
+        ],
+        "fake_dex": 25,
+        "fake_per": 25,
+        "require_targeting_player": false,
+        "ranges": [
+          [
+            2,
+            15,
+            "DEFAULT"
+          ]
+        ],
+        "description": "The shinobi hurls a kunai wreathed in wind chakra!",
+        "no_crits": false
+      },
+      {
+        "type": "leap",
+        "cooldown": 5,
+        "max_range": 6
+      },
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "wind_clone_mother",
+          "min_level": 1
+        },
+        "cooldown": 20,
+        "monster_message": "The ninja quickly casts a jutsu!"
+      }
+    ],
+    "death_drops": "shinobidrops",
+    "harvest": "boss1",
+    "anger_triggers": [
+      "FRIEND_ATTACKED",
+      "FRIEND_DIED",
+      "HURT",
+      "SOUND",
+      "PLAYER_WEAK",
+      "PLAYER_CLOSE"
+    ],
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "KEENNOSE",
+      "LOUDMOVES",
+      "GRABS",
+      "HIT_AND_RUN",
+      "HEARS",
+      "WEBWALK",
+      "NO_BREATHE",
+      "PATH_AVOID_DANGER_1",
+      "PUSH_MON"
+    ]
+  },
+  {
+    "id": "shinobi_earth_gun",
+    "weapon_category": [
+      "ELASTIC"
+    ],
+    "type": "GUN",
+    "symbol": "%",
+    "color": "red",
+    "name": {
+      "str": "Earth Style: hurled kunai"
+    },
+    "description": "A kunai wreathed in earth chakra, ready to pierce that which isn't part of the clan.",
+    "material": [
+      "stone"
+    ],
+    "flags": [
+      "PRIMITIVE_RANGED_WEAPON",
+      "NEVER_JAMS",
+      "NONCONDUCTIVE",
+      "NO_REPAIR",
+      "WATERPROOF_GUN",
+      "NO_SALVAGE",
+      "NO_UNLOAD"
+    ],
+    "skill": "throw",
+    "ammo_effects": [
+      "NO_PENETRATE_OBSTACLES",
+      "NEVER_MISFIRES"
+    ],
+    "ranged_damage": {
+      "damage_type": "bash",
+      "amount": 65,
+      "armor_penetration": 100
+    },
+    "weight": "540 g",
+    "volume": "210 ml",
+    "bashing": 1,
+    "to_hit": 1,
+    "loudness": 2,
+    "range": 12,
+    "dispersion": 50,
+    "durability": 8
+  },
+  {
+    "id": "mon_shinobi_earth",
+    "type": "MONSTER",
+    "name": "Earth Shinobi",
+    "description": "A veteran soul-blade shinobi steeped in earth chakra, far deadlier than the clones it commands.",
+    "default_faction": "devil",
+    "looks_like": "mon_inaka",
+    "bodytype": "human",
+    "species": [
+      "DEVIL"
+    ],
+    "material": [
+      "iflesh"
+    ],
+    "death_function": [
+      "SMOKEBURST"
+    ],
+    "diff": 30,
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 2000,
+    "speed": 299,
+    "symbol": "h",
+    "color": "red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 8,
+    "melee_dice": 6,
+    "melee_dice_sides": 9,
+    "dodge": 5,
+    "armor_cold": 33,
+    "armor_electric": 33,
+    "armor_acid": 33,
+    "armor_fire": 33,
+    "armor_cut": 33,
+    "armor_stab": 33,
+    "armor_bullet": 33,
+    "armor_bash": 33,
+    "vision_day": 50,
+    "vision_night": 99,
+    "special_attacks": [
+      [
+        "GRAB_DRAG",
+        11
+      ],
+      [
+        "LUNGE",
+        11
+      ],
+      [
+        "GRAB",
+        11
+      ],
+      [
+        "SMASH",
+        11
+      ],
+      [
+        "PULL_METAL_WEAPON",
+        11
+      ],
+      {
+        "type": "gun",
+        "cooldown": 4,
+        "move_cost": 75,
+        "gun_type": "shinobi_earth_gun",
+        "no_ammo_sound": "",
+        "fake_skills": [
+          [
+            "gun",
+            9
+          ],
+          [
+            "throw",
+            9
+          ]
+        ],
+        "fake_dex": 25,
+        "fake_per": 25,
+        "require_targeting_player": false,
+        "ranges": [
+          [
+            2,
+            15,
+            "DEFAULT"
+          ]
+        ],
+        "description": "The shinobi hurls a kunai wreathed in earth chakra!",
+        "no_crits": false
+      },
+      {
+        "type": "leap",
+        "cooldown": 5,
+        "max_range": 6
+      },
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "earth_clone_mother",
+          "min_level": 1
+        },
+        "cooldown": 20,
+        "monster_message": "The ninja quickly casts a jutsu!"
+      }
+    ],
+    "death_drops": "shinobidrops",
+    "harvest": "boss1",
+    "anger_triggers": [
+      "FRIEND_ATTACKED",
+      "FRIEND_DIED",
+      "HURT",
+      "SOUND",
+      "PLAYER_WEAK",
+      "PLAYER_CLOSE"
+    ],
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "KEENNOSE",
+      "LOUDMOVES",
+      "GRABS",
+      "HIT_AND_RUN",
+      "HEARS",
+      "WEBWALK",
+      "NO_BREATHE",
+      "PATH_AVOID_DANGER_1",
+      "PUSH_MON"
+    ]
+  },
+  {
+    "id": "shinobi_lightning_gun",
+    "weapon_category": [
+      "ELASTIC"
+    ],
+    "type": "GUN",
+    "symbol": "%",
+    "color": "red",
+    "name": {
+      "str": "Lightning Style: hurled kunai"
+    },
+    "description": "A kunai wreathed in lightning chakra, ready to pierce that which isn't part of the clan.",
+    "material": [
+      "stone"
+    ],
+    "flags": [
+      "PRIMITIVE_RANGED_WEAPON",
+      "NEVER_JAMS",
+      "NONCONDUCTIVE",
+      "NO_REPAIR",
+      "WATERPROOF_GUN",
+      "NO_SALVAGE",
+      "NO_UNLOAD"
+    ],
+    "skill": "throw",
+    "ammo_effects": [
+      "NO_PENETRATE_OBSTACLES",
+      "NEVER_MISFIRES"
+    ],
+    "ranged_damage": {
+      "damage_type": "electric",
+      "amount": 65,
+      "armor_penetration": 100
+    },
+    "weight": "540 g",
+    "volume": "210 ml",
+    "bashing": 1,
+    "to_hit": 1,
+    "loudness": 2,
+    "range": 12,
+    "dispersion": 50,
+    "durability": 8
+  },
+  {
+    "id": "mon_shinobi_lightning",
+    "type": "MONSTER",
+    "name": "Lightning Shinobi",
+    "description": "A veteran soul-blade shinobi steeped in lightning chakra, far deadlier than the clones it commands.",
+    "default_faction": "devil",
+    "looks_like": "mon_ninja",
+    "bodytype": "human",
+    "species": [
+      "DEVIL"
+    ],
+    "material": [
+      "iflesh"
+    ],
+    "death_function": [
+      "SMOKEBURST"
+    ],
+    "diff": 30,
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 2000,
+    "speed": 299,
+    "symbol": "h",
+    "color": "red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 8,
+    "melee_dice": 6,
+    "melee_dice_sides": 9,
+    "dodge": 5,
+    "armor_cold": 22,
+    "armor_electric": 22,
+    "armor_acid": 22,
+    "armor_fire": 22,
+    "armor_cut": 22,
+    "armor_stab": 22,
+    "armor_bullet": 22,
+    "armor_bash": 22,
+    "vision_day": 50,
+    "vision_night": 99,
+    "attack_effs": [
+      {
+        "id": "zapped",
+        "duration": 100,
+        "chance": 33
+      }
+    ],
+    "special_attacks": [
+      [
+        "GRAB_DRAG",
+        11
+      ],
+      [
+        "LUNGE",
+        11
+      ],
+      [
+        "GRAB",
+        11
+      ],
+      [
+        "SMASH",
+        11
+      ],
+      [
+        "PULL_METAL_WEAPON",
+        11
+      ],
+      {
+        "type": "gun",
+        "cooldown": 4,
+        "move_cost": 75,
+        "gun_type": "shinobi_lightning_gun",
+        "no_ammo_sound": "",
+        "fake_skills": [
+          [
+            "gun",
+            9
+          ],
+          [
+            "throw",
+            9
+          ]
+        ],
+        "fake_dex": 25,
+        "fake_per": 25,
+        "require_targeting_player": false,
+        "ranges": [
+          [
+            2,
+            15,
+            "DEFAULT"
+          ]
+        ],
+        "description": "The shinobi hurls a kunai wreathed in lightning chakra!",
+        "no_crits": false
+      },
+      {
+        "type": "leap",
+        "cooldown": 5,
+        "max_range": 6
+      },
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "lightning_clone_mother",
+          "min_level": 1
+        },
+        "cooldown": 20,
+        "monster_message": "The ninja quickly casts a jutsu!"
+      }
+    ],
+    "death_drops": "shinobidrops",
+    "harvest": "boss1",
+    "anger_triggers": [
+      "FRIEND_ATTACKED",
+      "FRIEND_DIED",
+      "HURT",
+      "SOUND",
+      "PLAYER_WEAK",
+      "PLAYER_CLOSE"
+    ],
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "KEENNOSE",
+      "LOUDMOVES",
+      "GRABS",
+      "HIT_AND_RUN",
+      "HEARS",
+      "WEBWALK",
+      "NO_BREATHE",
+      "PATH_AVOID_DANGER_1",
+      "PUSH_MON"
+    ]
+  }
+]

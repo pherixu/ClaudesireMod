@@ -1,0 +1,11 @@
+[
+  { "rule": "*id card", "active": true, "exclude": false },
+  { "rule": "mag laser*", "active": true, "exclude": false },
+  { "rule": "*rinket", "active": true, "exclude": false },
+  { "rule": "antiparasitic", "active": true, "exclude": false },
+  { "rule": "mugwort", "active": true, "exclude": false },
+  { "rule": "holographi*", "active": true, "exclude": false },
+  { "rule": "Batter*", "active": false, "exclude": false },
+  { "rule": "dogtag", "active": true, "exclude": false },
+  { "rule": "kunai", "active": true, "exclude": false }
+]

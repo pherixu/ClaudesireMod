@@ -1,0 +1,404 @@
+[
+  {
+    "type": "city_building",
+    "id": "devilbar",
+    "locations": [
+      "land"
+    ],
+    "overmaps": [
+      {
+        "point": [
+          0,
+          0,
+          0
+        ],
+        "overmap": "devilbar_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          1
+        ],
+        "overmap": "devilbar_roof_north"
+      }
+    ]
+  },
+  {
+    "type": "city_building",
+    "id": "devilteashop",
+    "locations": [
+      "land"
+    ],
+    "overmaps": [
+      {
+        "point": [
+          0,
+          0,
+          0
+        ],
+        "overmap": "devilteashop_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          1
+        ],
+        "overmap": "devilteashop_roof_north"
+      }
+    ]
+  },
+  {
+    "type": "city_building",
+    "id": "devilgunstore",
+    "locations": [
+      "land"
+    ],
+    "overmaps": [
+      {
+        "point": [
+          0,
+          0,
+          0
+        ],
+        "overmap": "devilgunstore_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          1
+        ],
+        "overmap": "devilgunstore_roof_north"
+      }
+    ]
+  },
+  {
+    "type": "city_building",
+    "id": "devillibrary",
+    "locations": [
+      "land"
+    ],
+    "overmaps": [
+      {
+        "point": [
+          0,
+          0,
+          0
+        ],
+        "overmap": "devillibrary_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          1
+        ],
+        "overmap": "devillibrary_roof_north"
+      }
+    ]
+  },
+  {
+    "type": "city_building",
+    "id": "devilfort",
+    "locations": [
+      "land"
+    ],
+    "overmaps": [
+      {
+        "point": [
+          0,
+          0,
+          0
+        ],
+        "overmap": "devilfort_1_NW_north"
+      },
+      {
+        "point": [
+          1,
+          0,
+          0
+        ],
+        "overmap": "devilfort_1_NE_north"
+      },
+      {
+        "point": [
+          0,
+          1,
+          0
+        ],
+        "overmap": "devilfort_1_SW_north"
+      },
+      {
+        "point": [
+          1,
+          1,
+          0
+        ],
+        "overmap": "devilfort_1_SE_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          1
+        ],
+        "overmap": "devilfort_2_NW_north"
+      },
+      {
+        "point": [
+          1,
+          0,
+          1
+        ],
+        "overmap": "devilfort_2_NE_north"
+      },
+      {
+        "point": [
+          0,
+          1,
+          1
+        ],
+        "overmap": "devilfort_2_SW_north"
+      },
+      {
+        "point": [
+          1,
+          1,
+          1
+        ],
+        "overmap": "devilfort_2_SE_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          2
+        ],
+        "overmap": "devilfort_roof_NW_north"
+      },
+      {
+        "point": [
+          1,
+          0,
+          2
+        ],
+        "overmap": "devilfort_roof_NE_north"
+      },
+      {
+        "point": [
+          0,
+          1,
+          2
+        ],
+        "overmap": "devilfort_roof_SW_north"
+      },
+      {
+        "point": [
+          1,
+          1,
+          2
+        ],
+        "overmap": "devilfort_roof_SE_north"
+      }
+    ]
+  },
+  {
+    "type": "city_building",
+    "id": "devilmilsurplus",
+    "locations": [
+      "land"
+    ],
+    "overmaps": [
+      {
+        "point": [
+          0,
+          0,
+          0
+        ],
+        "overmap": "devilmilsurplus_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          1
+        ],
+        "overmap": "devilmilsurplus_roof_north"
+      }
+    ]
+  },
+  {
+    "type": "city_building",
+    "id": "devilhouse_1",
+    "locations": [
+      "land"
+    ],
+    "overmaps": [
+      {
+        "point": [
+          0,
+          0,
+          0
+        ],
+        "overmap": "devilhouse_1_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          1
+        ],
+        "overmap": "devilhouse_1_roof_north"
+      }
+    ]
+  },
+  {
+    "type": "city_building",
+    "id": "devilhouse_2",
+    "locations": [
+      "land"
+    ],
+    "overmaps": [
+      {
+        "point": [
+          0,
+          0,
+          0
+        ],
+        "overmap": "devilhouse_2_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          1
+        ],
+        "overmap": "devilhouse_2_roof_north"
+      }
+    ]
+  },
+  {
+    "type": "city_building",
+    "id": "devilhouse_3",
+    "locations": [
+      "land"
+    ],
+    "overmaps": [
+      {
+        "point": [
+          0,
+          0,
+          0
+        ],
+        "overmap": "devilhouse_3_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          1
+        ],
+        "overmap": "devilhouse_3_roof_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          -1
+        ],
+        "overmap": "devilhouse_3_basement_north"
+      }
+    ]
+  },
+  {
+    "type": "city_building",
+    "id": "devilhouse_4",
+    "locations": [
+      "land"
+    ],
+    "overmaps": [
+      {
+        "point": [
+          0,
+          0,
+          0
+        ],
+        "overmap": "devilhouse_4_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          1
+        ],
+        "overmap": "devilhouse_4_roof_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          -1
+        ],
+        "overmap": "devilhouse_4_basement_north"
+      }
+    ]
+  },
+  {
+    "type": "city_building",
+    "id": "devilhouse_5",
+    "locations": [
+      "land"
+    ],
+    "overmaps": [
+      {
+        "point": [
+          0,
+          0,
+          0
+        ],
+        "overmap": "devilhouse_5_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          1
+        ],
+        "overmap": "devilhouse_5_roof_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          -1
+        ],
+        "overmap": "devilhouse_5_basement_north"
+      }
+    ]
+  },
+  {
+    "type": "region_overlay",
+    "regions": [
+      "all"
+    ],
+    "city": {
+      "shops": {
+        "devilbar": 400,
+        "devilteashop": 320,
+        "devilgunstore": 320,
+        "devillibrary": 320,
+        "devilfort": 130,
+        "devilmilsurplus": 320
+      },
+      "houses": {
+        "devilhouse_1": 130,
+        "devilhouse_2": 130,
+        "devilhouse_3": 130,
+        "devilhouse_4": 130,
+        "devilhouse_5": 130
+      }
+    }
+  }
+]

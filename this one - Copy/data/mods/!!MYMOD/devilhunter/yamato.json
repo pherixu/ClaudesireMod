@@ -1,0 +1,72 @@
+[
+  {
+    "id": "yamato",
+    "copy-from": "katana",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "JAPANESE_SWORDS" ],
+    "name": { "str": "Yamato" },
+    "description": "A slender katana with a black lacquered sheath and an ornate, demonic hilt.  The edge seems to bend the air around it.  Sheathed, it is simply a very sharp sword - but drawing it properly unleashes something else entirely.",
+    "weight": "1133 g",
+    "volume": "2 L",
+    "price": "0 USD",
+    "price_postapoc": "80 USD",
+    "material": [ "steel", "silver" ],
+    "symbol": "/",
+    "color": "light_blue",
+    "to_hit": 3,
+    "bashing": 5,
+    "cutting": 40,
+    "techniques": [ "RAPID", "WBLOCK_2" ],
+    "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 9 ] ],
+    "use_action": [
+      {
+        "menu_text": "Unsheath Yamato",
+        "type": "transform",
+        "target": "yamato_unsheathed",
+        "msg": "You draw Yamato in a flash of blue light.",
+        "moves": 0
+      }
+    ],
+    "flags": [ "DURABLE_MELEE", "SHEATH_SWORD", "NONCONDUCTIVE" ]
+  },
+  {
+    "id": "yamato_unsheathed",
+    "copy-from": "pistol_energy",
+    "type": "GUN",
+    "category": "weapons",
+    "weapon_category": [ "JAPANESE_SWORDS" ],
+    "name": { "str": "Yamato", "str_pl": "Yamato" },
+    "description": "Yamato, drawn and held ready.  A flick of the wrist looses a crescent of compressed air and dark energy screaming out along the blade's edge - a Judgment Cut.  Sheath it to return to a normal blade.",
+    "weight": "1133 g",
+    "volume": "2 L",
+    "price": "0 USD",
+    "price_postapoc": "80 USD",
+    "material": [ "steel", "silver" ],
+    "symbol": "/",
+    "color": "light_blue",
+    "looks_like": "katana",
+    "to_hit": 3,
+    "bashing": 5,
+    "cutting": 40,
+    "techniques": [ "RAPID", "WBLOCK_2" ],
+    "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 9 ] ],
+    "range": 20,
+    "ranged_damage": { "damage_type": "cut", "amount": 35, "armor_penetration": 8 },
+    "dispersion": 50,
+    "loudness": 4,
+    "ups_charges": 0,
+    "modes": [ [ "DEFAULT", "Judgment Cut", 1 ] ],
+    "valid_mod_locations": [],
+    "extend": { "flags": [ "DURABLE_MELEE", "SHEATH_SWORD" ] },
+    "use_action": [
+      {
+        "menu_text": "Sheath Yamato",
+        "type": "transform",
+        "target": "yamato",
+        "msg": "You sheath Yamato.",
+        "moves": 0
+      }
+    ]
+  }
+]

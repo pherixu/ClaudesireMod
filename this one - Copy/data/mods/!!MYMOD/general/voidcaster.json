@@ -1,0 +1,51 @@
+[
+  {
+    "id": "voidcaster_bolt",
+    "type": "SPELL",
+    "name": { "str": "Void Bolt" },
+    "description": "A crackling lance of dark energy fired from the voidcaster. Costs nothing to unleash - the device draws on the raw fabric of the void itself.",
+    "valid_targets": [ "hostile" ],
+    "flags": [ "NO_FAIL", "NO_EXPLOSION_VFX", "SILENT" ],
+    "effect": "target_attack",
+    "effect_str": "",
+    "damage_type": "dark",
+    "min_damage": 20,
+    "max_damage": 20,
+    "damage_increment": 0,
+    "min_range": 12,
+    "max_range": 12,
+    "min_aoe": 0,
+    "max_aoe": 0,
+    "base_casting_time": 100,
+    "base_energy_cost": 0,
+    "energy_source": "NONE",
+    "difficulty": 0,
+    "max_level": 1
+  },
+  {
+    "id": "voidcaster",
+    "type": "TOOL",
+    "name": { "str": "Voidcaster" },
+    "description": "A squat device of warped black metal wrapped around a cold, faintly humming crystal.  Squeeze the grip and it lances out a bolt of dark energy at anything hostile in its sights.  It draws its power from somewhere else entirely - it never needs ammunition, batteries, or reloading.",
+    "weight": "900 g",
+    "volume": "750 ml",
+    "price": "0 USD",
+    "price_postapoc": "75 USD",
+    "material": [ "steel", "plastic" ],
+    "symbol": "(",
+    "color": "dark_gray",
+    "category": "weapons",
+    "to_hit": -1,
+    "bashing": 6,
+    "flags": [ "MAGIC_FOCUS" ],
+    "use_action": [
+      {
+        "type": "cast_spell",
+        "spell_id": "voidcaster_bolt",
+        "no_fail": true,
+        "level": 1,
+        "need_wielding": true
+      }
+    ]
+  }
+]

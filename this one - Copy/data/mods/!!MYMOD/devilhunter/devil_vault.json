@@ -1,0 +1,824 @@
+[
+  {
+    "type": "monstergroup",
+    "name": "GROUP_VAULT_BOSS",
+    "default": "mon_zombie_brute",
+    "//": "PLACEHOLDER - replace default/monsters with your real boss monster whenever it's ready. This just needs to exist so the vault loads.",
+    "monsters": [
+      {
+        "monster": "mon_zombie_brute",
+        "freq": 100,
+        "cost_multiplier": 0,
+        "pack_size": [
+          1,
+          1
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "devilvault_weapons",
+    "subtype": "distribution",
+    "//": "the mod's unique magic melee weapons - vault treasure room",
+    "entries": [
+      {
+        "item": "thunderfury",
+        "prob": 5
+      },
+      {
+        "item": "dragonslayer",
+        "prob": 5
+      },
+      {
+        "item": "colossus_hammer",
+        "prob": 5
+      },
+      {
+        "item": "sunforger",
+        "prob": 5
+      },
+      {
+        "item": "embercleave",
+        "prob": 5
+      },
+      {
+        "item": "loxodon_warhammer",
+        "prob": 5
+      },
+      {
+        "item": "umezawa_jitte",
+        "prob": 5
+      },
+      {
+        "item": "deaths_dance",
+        "prob": 5
+      },
+      {
+        "item": "frostmourne",
+        "prob": 4
+      },
+      {
+        "item": "flametongue",
+        "prob": 5
+      },
+      {
+        "item": "frostbrand",
+        "prob": 5
+      },
+      {
+        "item": "stormrazor",
+        "prob": 5
+      },
+      {
+        "item": "holyavenger",
+        "prob": 4
+      },
+      {
+        "group": "crystalswords",
+        "prob": 12
+      },
+      {
+        "group": "soulswords",
+        "prob": 8
+      },
+      {
+        "group": "all_lightsabers",
+        "prob": 8
+      },
+      {
+        "group": "devil_gunstore_weapons",
+        "prob": 10
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "devilvault_guns",
+    "subtype": "distribution",
+    "//": "ADIP + devil gunstore firearms - vault armory",
+    "entries": [
+      {
+        "item": "fn57",
+        "prob": 10
+      },
+      {
+        "item": "fn_p90",
+        "prob": 8
+      },
+      {
+        "group": "nested_trex_gun",
+        "prob": 8
+      },
+      {
+        "item": "shockgun",
+        "prob": 8
+      },
+      {
+        "item": "redeemer",
+        "prob": 6
+      },
+      {
+        "item": "all_american",
+        "prob": 8
+      },
+      {
+        "item": "howlitzer",
+        "prob": 6
+      },
+      {
+        "item": "icey_acr_300blk",
+        "prob": 8
+      },
+      {
+        "group": "devil_gunstore_guns",
+        "prob": 20
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "devilvault_rings",
+    "subtype": "distribution",
+    "//": "mana ring tiers, weighted toward the common one",
+    "entries": [
+      {
+        "item": "sol_ring",
+        "prob": 45
+      },
+      {
+        "item": "arcane_signet",
+        "prob": 35
+      },
+      {
+        "item": "black_lotus",
+        "prob": 15
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "devilvault_valuables",
+    "subtype": "distribution",
+    "//": "cash/gem/relic filler loot",
+    "entries": [
+      {
+        "group": "jewelry_safe",
+        "prob": 30
+      },
+      {
+        "group": "gemstones",
+        "prob": 20
+      },
+      {
+        "group": "iounstones",
+        "prob": 12
+      },
+      {
+        "group": "magic_rare",
+        "prob": 10
+      },
+      {
+        "group": "magic_uncommon",
+        "prob": 15
+      },
+      {
+        "group": "summonbossitems",
+        "prob": 5
+      },
+      {
+        "group": "runecoredrop",
+        "prob": 5
+      },
+      {
+        "group": "potions_common",
+        "prob": 15
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "devilvault_gunmods",
+    "subtype": "distribution",
+    "//": "loose ADIP gunmods kept in the vault",
+    "entries": [
+      {
+        "group": "adip_gunmods_tier1and2",
+        "prob": 30
+      },
+      {
+        "group": "adip_gunmods_tier2and3",
+        "prob": 25
+      },
+      {
+        "group": "adip_gunmods_tier3and4",
+        "prob": 25
+      },
+      {
+        "group": "adip_gunmods_tier4",
+        "prob": 15
+      },
+      {
+        "group": "adip_gunmods_tier5",
+        "prob": 5
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "devilvault_ammo_case",
+    "subtype": "collection",
+    "//": "mana ammo crate",
+    "entries": [
+      {
+        "item": "crystallized_mana",
+        "count": [
+          20,
+          60
+        ]
+      },
+      {
+        "item": "small_mana_crystal",
+        "count": [
+          4,
+          10
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "devilvault_guard_gear",
+    "subtype": "distribution",
+    "//": "gear on the guard racks up top",
+    "entries": [
+      {
+        "group": "devil_milsurplus_armor",
+        "prob": 40
+      },
+      {
+        "group": "devil_milsurplus_helmets",
+        "prob": 30
+      },
+      {
+        "group": "clothing_military",
+        "prob": 20
+      },
+      {
+        "item": "beskar_cuirass",
+        "prob": 6
+      },
+      {
+        "item": "helmet_beskar",
+        "prob": 6
+      }
+    ]
+  },
+  {
+    "type": "palette",
+    "id": "devilvault_palette",
+    "terrain": {
+      ".": "t_thconc_floor",
+      "!": "t_region_groundcover_urban",
+      "~": "t_sidewalk",
+      "-": "t_wall_w",
+      "|": "t_wall_w",
+      "'": "t_door_c",
+      "\"": "t_door_locked",
+      "`": "t_window_alarm",
+      "+": "t_door_c",
+      "=": "t_door_metal_locked",
+      "Y": "t_concrete",
+      "U": "t_concrete",
+      "4": "t_gutter_downspout",
+      "<": "t_stairs_up",
+      ">": "t_stairs_down",
+      "V": "t_reinforced_glass",
+      "#": "t_metal_grate_window",
+      "%": "t_thconc_floor",
+      "m": "t_wall_b"
+    },
+    "furniture": {
+      "!": "f_street_light",
+      "h": "f_chair",
+      "@": "f_mannequin",
+      "L": "f_locker",
+      "S": "f_safe_l",
+      "A": "f_rack",
+      "B": "f_rack",
+      "C": "f_rack",
+      "D": "f_rack",
+      "G": "f_rack",
+      "d": "f_desk",
+      "c": "f_chair",
+      "T": "f_filing_cabinet",
+      "P": "f_dumpster",
+      "K": "f_counter"
+    },
+    "toilets": {
+      "&": {}
+    },
+    "items": {
+      "K": {
+        "item": "devilvault_valuables",
+        "chance": 40,
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      "S": {
+        "item": "devilvault_valuables",
+        "chance": 100,
+        "repeat": [
+          2,
+          4
+        ]
+      },
+      "A": {
+        "item": "devilvault_weapons",
+        "chance": 90,
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      "B": {
+        "item": "devilvault_guns",
+        "chance": 90,
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      "C": {
+        "item": "devilvault_rings",
+        "chance": 85,
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      "D": {
+        "item": "devilvault_gunmods",
+        "chance": 70,
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      "G": {
+        "item": "devilvault_guard_gear",
+        "chance": 70,
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      "L": {
+        "item": "devilvault_guard_gear",
+        "chance": 60
+      },
+      "P": {
+        "item": "trash_dumpster",
+        "chance": 80
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [
+      "devilvault"
+    ],
+    "weight": 100,
+    "object": {
+      "fill_ter": "t_floor",
+      "rows": [
+        "   SS              SiSS'",
+        " ggGGgggggggggg#######SS",
+        " gA.........ccx.#....##S",
+        " gA........C-C..+....p# ",
+        " gA.........ccx.#aca..##",
+        " ####%##...C-C..#aca..Dw",
+        " #LL#.d-....ccx.#aca..Dw",
+        " #..%.C-...C-C..#.....Dw",
+        " #LL#xx-....%...#ee...##",
+        " #######hGh#########%## ",
+        " #t.*..+...#___$#dx...# ",
+        " ####.s#...#||||#dC...# ",
+        " #t.*.s#...#oooo#d..Cx# ",
+        "########...h....#I.ddd# ",
+        "#RRRRRR#...G.Cda#..II## ",
+        "#R$$$$R#...h.Cd.#..xd#  ",
+        "#R____R##%##+####..Cd#  ",
+        "#R>TT_R#...#.dddI..pd#  ",
+        "#R_TT_R#...#.pCxI..II#  ",
+        "#R_TT_MM.0.%.........#  ",
+        "#R____MM...#..C..IxCp#  ",
+        "#R$$$$R#6..#pddxpIddd#  ",
+        "#RRRRRR###############  ",
+        "########4               "
+      ],
+      "terrain": {
+        " ": "t_region_groundcover_urban",
+        "'": "t_sidewalk",
+        "_": "t_metal_floor",
+        "|": [
+          "t_door_c",
+          "t_wall_w",
+          "t_wall_w",
+          "t_wall_w",
+          "t_wall_w",
+          "t_wall_w",
+          "t_wall_w",
+          "t_wall_w",
+          "t_wall_w"
+        ],
+        "I": "t_wall_w",
+        "#": "t_brick_wall",
+        "$": "t_metal_floor",
+        "%": [
+          "t_door_c",
+          "t_door_c",
+          "t_door_locked_interior"
+        ],
+        "*": [
+          "t_door_c",
+          "t_door_c",
+          "t_door_c",
+          "t_door_locked_interior"
+        ],
+        "+": "t_door_c",
+        "-": "t_window",
+        "x": "t_console_broken",
+        ".": "t_floor",
+        "6": "t_console",
+        "A": "t_atm",
+        "G": "t_door_glass_c",
+        "i": "t_sidewalk",
+        "M": "t_door_metal_locked",
+        "R": "t_wall_metal",
+        "S": "t_sidewalk",
+        ">": "t_stairs_down",
+        "T": "t_metal_floor",
+        "g": "t_wall_glass_alarm",
+        "h": "t_wall_glass",
+        "4": "t_gutter_downspout",
+        "w": "t_window_alarm"
+      },
+      "furniture": {
+        "'": "f_street_light",
+        "a": "f_armchair",
+        "D": "f_sofa",
+        "o": "f_bookcase",
+        "e": "f_fridge",
+        "$": "f_safe_l",
+        "C": "f_chair",
+        "T": "f_table",
+        "c": "f_counter",
+        "i": [
+          "f_us_flag_metal",
+          "f_flagpole_metal"
+        ],
+        "l": "f_stool",
+        "p": [
+          "f_indoor_plant",
+          "f_null"
+        ],
+        "s": "f_sink",
+        "L": "f_locker",
+        "d": "f_desk",
+        "t": "f_toilet"
+      },
+      "toilets": {
+        "t": {}
+      },
+      "items": {
+        "o": {
+          "item": "novels",
+          "chance": 70
+        },
+        "$": {
+          "item": "devilvault_weapons",
+          "chance": 90,
+          "repeat": [
+            1,
+            2
+          ]
+        },
+        "T": {
+          "item": "devilvault_rings",
+          "chance": 60,
+          "repeat": [
+            1,
+            2
+          ]
+        },
+        "e": {
+          "item": "fridge",
+          "chance": 70,
+          "repeat": [
+            2,
+            3
+          ]
+        },
+        "d": {
+          "item": "office",
+          "chance": 50
+        },
+        "L": {
+          "item": "devilvault_guns",
+          "chance": 60
+        }
+      },
+      "place_items": [
+        {
+          "item": "weapons_very_rare",
+          "x": [ 7, 18 ],
+          "y": [ 7, 18 ],
+          "chance": 12
+        },
+        {
+          "item": "armor_very_rare",
+          "x": [ 7, 18 ],
+          "y": [ 7, 18 ],
+          "chance": 12
+        }
+      ],
+      "computers": {
+        "6": {
+          "name": "Devilhunter Treasury Vault Security",
+          "access_denied": "ERROR!  Access denied!  Unauthorized access will be met with lethal force!",
+          "security": 4,
+          "options": [
+            {
+              "name": "Open Vault",
+              "action": "unlock"
+            }
+          ],
+          "failures": [
+            {
+              "action": "alarm"
+            },
+            {
+              "action": "damage"
+            },
+            {
+              "action": "secubots"
+            }
+          ]
+        }
+      },
+      "place_monster": [
+        {
+          "monster": "mon_secubot",
+          "x": [
+            7,
+            18
+          ],
+          "y": [
+            7,
+            18
+          ],
+          "chance": 30,
+          "repeat": 4
+        }
+      ],
+      "place_monsters": [
+        {
+          "monster": "GROUP_TOWER_PMC",
+          "x": [
+            1,
+            22
+          ],
+          "y": [
+            1,
+            22
+          ],
+          "density": 0.5
+        },
+        {
+          "monster": "GROUP_TOWER_DEVIL",
+          "x": [
+            0,
+            7
+          ],
+          "y": [
+            13,
+            21
+          ],
+          "density": 0.7
+        }
+      ],
+      "monsters": {
+        "0": {
+          "monster": "GROUP_VAULT_BOSS",
+          "//": "PLACEHOLDER - user is making this monster group themselves, swap it in here"
+        }
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": "devilvault_roof",
+    "object": {
+      "fill_ter": "t_flat_roof",
+      "rows": [
+        "                        ",
+        " 222222222222222222223  ",
+        " |.>.................33 ",
+        " |....................3 ",
+        " |....................33",
+        " |.....................3",
+        " |.....................3",
+        " |.....................3",
+        " |....................33",
+        " |....................3 ",
+        " |....................3 ",
+        " |....................3 ",
+        " |....................3 ",
+        "|2....................3 ",
+        "|..=.................33 ",
+        "|....................3  ",
+        "|....................3  ",
+        "|....................3  ",
+        "|....................3  ",
+        "|....................3  ",
+        "|....................3  ",
+        "|....................3  ",
+        "|......-5------------3  ",
+        "--------                "
+      ],
+      "terrain": {
+        ".": "t_flat_roof",
+        " ": "t_open_air",
+        "2": "t_gutter_north",
+        "-": "t_gutter_south",
+        "3": "t_gutter_east",
+        "|": "t_gutter_west",
+        ">": "t_ladder_down",
+        "5": "t_gutter_drop"
+      },
+      "furniture": {
+        "&": "f_roof_turbine_vent",
+        "=": "f_vent_pipe"
+      },
+      "place_nested": [
+        {
+          "chunks": [
+            [
+              "null",
+              20
+            ],
+            [
+              "roof_2x2_utilities_b",
+              15
+            ],
+            [
+              "roof_2x2_utilities_c",
+              5
+            ],
+            [
+              "roof_2x2_utilities_d",
+              40
+            ]
+          ],
+          "x": [
+            5,
+            15
+          ],
+          "y": [
+            4,
+            17
+          ]
+        }
+      ],
+      "place_monsters": [
+        {
+          "monster": "GROUP_TOWER_PMC",
+          "x": [
+            1,
+            22
+          ],
+          "y": [
+            1,
+            22
+          ],
+          "density": 0.2
+        }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": "devilvault_under",
+    "object": {
+      "fill_ter": "t_thconc_floor",
+      "rows": [
+        "                        ",
+        "                        ",
+        "  --------------------  ",
+        "  -SSSSSSSSSSSSSSSSSS-  ",
+        "  -SSSSSSSSSSSSSSSSSS-  ",
+        "  -S,..AB....CD....,S-  ",
+        "  -S,..AB....CD....,S-  ",
+        "  -S,..............,S-  ",
+        "  -S,....DG..GD....,S-  ",
+        "  -S,......0.......,S-  ",
+        "  -S,....DG..GD....,S-  ",
+        "  -S,..............,S-  ",
+        "  -S,..AB....CD....,S-  ",
+        "  -S,..AB....CD....,S-  ",
+        "  -S,..............,S-  ",
+        "  -SSSSSSSSSSSSSSSSSS-  ",
+        "  -SSSSSSSSSSSSSSSSSS-  ",
+        "  ---------==---------  ",
+        "     -,,,,,,,,,,,,-     ",
+        "     -,,,,,,,,,,,,-     ",
+        "     -,,,,,,,,,,,,-     ",
+        "     -,,,,<,,,,,,,-     ",
+        "     --------------     ",
+        "                        "
+      ],
+      "palettes": [
+        "devilvault_palette"
+      ],
+      "terrain": {
+        " ": "t_rock",
+        ",": "t_thconc_floor"
+      },
+      "furniture": {},
+      "items": {
+        "0": {
+          "item": "devilvault_ammo_case",
+          "chance": 100,
+          "repeat": [
+            1,
+            2
+          ]
+        }
+      },
+      "place_items": [
+        {
+          "item": "weapons_legendary",
+          "x": [ 3, 20 ],
+          "y": [ 3, 16 ],
+          "chance": 8
+        },
+        {
+          "item": "armor_legendary",
+          "x": [ 3, 20 ],
+          "y": [ 3, 16 ],
+          "chance": 8
+        }
+      ],
+      "place_monsters": [
+        {
+          "monster": "GROUP_TOWER_DEVIL",
+          "x": [
+            3,
+            20
+          ],
+          "y": [
+            3,
+            16
+          ],
+          "density": 1.1
+        },
+        {
+          "monster": "GROUP_TOWER_RUNE",
+          "x": [
+            3,
+            20
+          ],
+          "y": [
+            3,
+            16
+          ],
+          "density": 0.6
+        },
+        {
+          "monster": "GROUP_TOWER_PMC",
+          "x": [
+            3,
+            20
+          ],
+          "y": [
+            3,
+            16
+          ],
+          "density": 0.3
+        }
+      ],
+      "monsters": {
+        "0": {
+          "monster": "GROUP_VAULT_BOSS",
+          "//": "PLACEHOLDER - user is making this monster group themselves, swap it in here"
+        }
+      }
+    }
+  }
+]

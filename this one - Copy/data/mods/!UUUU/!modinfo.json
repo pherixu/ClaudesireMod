@@ -1,0 +1,12 @@
+[
+  {
+    "type": "MOD_INFO",
+    "ident": "Stuff UUUU",
+    "name": "Stuff UUUU²",
+    "authors": [ "UUUU" ],
+    "maintainers": [ "UUUU" ],
+    "description": "wew lad",
+    "category": "content",
+    "dependencies": [ "bn" ]
+  }
+]

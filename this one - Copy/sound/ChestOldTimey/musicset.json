@@ -1,0 +1,274 @@
+[
+       {
+        "type": "playlist",
+        "playlists":
+        [
+        {
+            "id" : "title",
+            "shuffle" : true,
+            "files" : [
+                {
+                    "file": "music/All - I.ogg",
+                    "volume": 90
+                },
+                {
+                    "file": "music/Boodle - Am.ogg",
+                    "volume": 90
+                },
+                {
+                    "file": "music/Butterbeans and Susie - A To Z Blues.ogg",
+                    "volume": 90
+                },
+                {
+                    "file": "music/ClarenceWilliams-JerryTheJunker.ogg",
+                    "volume": 90
+                },
+                {
+                    "file": "music/modernistic.ogg",
+                    "volume": 90
+                },
+                {
+                    "file": "music/Lightning- Long John (Old song by a chain gang).ogg",
+                    "volume": 90
+                },
+                {
+                    "file": "music/Blind Blake- Notoriety Woman Blues.ogg",
+                    "volume": 90
+                },
+                {
+                    "file": "music/Bessie Smith (Send Me To The Electric Chair, 1927) Jazz Legend.ogg",
+                    "volume": 90
+                },
+                {
+                    "file": "music/Neck Bone Blues (Jack Kelly & His South Memphis Jug Band).ogg",
+                    "volume": 90
+                },
+                {
+                    "file": "music/Pink Anderson- Papa's 'Bout to Get Mad.ogg",
+                    "volume": 90
+                },
+                {
+                    "file": "music/LeadbellyhuddieLedbetter-ReeferMadness.ogg",
+                    "volume": 90
+                },
+                {
+                    "file": "music/Take this hammer - Leadbelly.ogg",
+                    "volume": 90
+                },
+                {
+                    "file": "music/getitfixed.ogg",
+                    "volume": 90
+                },
+                {
+                    "file": "music/OldAlabama.ogg",
+                    "volume": 90
+                },
+                {
+                    "file": "music/OH DEATH - Dock Broggs.ogg",
+                    "volume": 90
+                },
+                {
+                    "file": "music/BlackWomen.ogg",
+                    "volume": 90
+                },
+                {
+                    "file": "music/livinhigh.ogg",
+                    "volume": 90
+                },
+                {
+                    "file": "music/War - Horse.ogg",
+                    "volume": 90
+                },
+                {
+                    "file": "music/cushionfootstomp3.ogg",
+                    "volume": 90
+                },
+                {
+                    "file": "music/Doin' The Raccoon by Bailey's Jazz Pirates, 1928.ogg",
+                    "volume": 90
+                },
+                {
+                    "file": "music/Eva Taylor & Clarence Williams - Pile of Logs and Stone.ogg",
+                    "volume": 90
+                },
+                {
+                    "file": "music/Henry Lena- Ghost Walkin' Blues.ogg",
+                    "volume": 90
+                },
+                {
+                    "file": "music/How Ya Gonna Keep 'Em Down on the Farm- (Nora Bayes, 1919).ogg",
+                    "volume": 90
+                },
+                {
+                    "file": "music/Josie Miles - Mad Mama's Blues.ogg",
+                    "volume": 90
+                },
+                {
+                    "file": "music/Lucille Bogan - Coffee Grindin' Blues.ogg",
+                    "volume": 90
+                },
+                {
+                    "file": "music/Mean - Old.ogg",
+                    "volume": 90
+                },
+                {
+                    "file": "music/Papa Charlie Jackson - Fat Mouth Blues.ogg",
+                    "volume": 90
+                },
+                {
+                    "file": "music/Papa Charlie Jackson - Im Alabama Bound.ogg",
+                    "volume": 90
+                },
+                {
+                    "file": "music/shake - that.ogg",
+                    "volume": 90
+                },
+                {
+                    "file": "music/Sheik - of.ogg",
+                    "volume": 90
+                },
+                {
+                    "file": "music/Singin' In The Bath Tub sung by Vaughn De Leath, 1929.ogg",
+                    "volume": 90
+                },
+                {
+                    "file": "music/pothound.ogg",
+                    "volume": 90
+                },
+                {
+                    "file": "music/pawnshop.ogg",
+                    "volume": 90
+                },
+                {
+                    "file": "music/JimTampaBlues.ogg",
+                    "volume": 90
+                },
+				{
+        "file": "music/Allan Gray - Swing Doors.ogg",
+        "volume": 90
+	},
+    {
+        "file": "music/Billie Holiday - Crazy He Calls Me.ogg",
+        "volume": 90
+    },
+    {
+        "file": "music/Billie Holiday- Easy Living.ogg",
+        "volume": 90
+    },
+    {
+        "file": "music/Billy Munn - Jazzy Interlude.ogg",
+        "volume": 90
+    },
+    {
+        "file": "music/Bob Crosby and The Bobcats - Happy Times.ogg",
+        "volume": 90
+    },
+    {
+        "file": "music/Bob Crosby and The Bobcats - Way Back Home.ogg",
+        "volume": 90
+    },
+    {
+        "file": "music/Cole Porter - Anything Goes.ogg",
+        "volume": 90
+    },
+    {
+        "file": "music/Danny Kaye and The Andrews Sisters - Civilization.ogg",
+        "volume": 90
+    },
+    {
+        "file": "music/Dean Martin-Aint That A Kick In the Head.ogg",
+        "volume": 90
+    },
+    {
+        "file": "music/Eddy Arnold-It's a sin.ogg",
+        "volume": 90
+    },
+    {
+        "file": "music/Eddy Christiani and Frans Poptie - Rythm For You.ogg",
+        "volume": 90
+    },
+    {
+        "file": "music/Frank Sinatra-Blue_Moon.ogg",
+        "volume": 100
+    },
+    {
+        "file": "music/Gerhard Trede - Fox Boogie.ogg",
+        "volume": 90
+    },
+    {
+        "file": "music/Gerhard Trede - Jolly Days.ogg",
+        "volume": 90
+    },
+    {
+        "file": "music/Jack Shaindlin - I'm Tickled Pink.ogg",
+        "volume": 90
+    },
+    {
+        "file": "music/Jack Shaindlin - Let's Go Sunning.ogg",
+        "volume": 90
+    },
+    {
+        "file": "music/Johnny Bond-Stars of the Midnight Range.ogg",
+        "volume": 90
+    },
+    {
+        "file": "music/Johnny Mercer-Somethings Gotta Give.ogg",
+        "volume": 100
+    },
+    {
+        "file": "music/Kay Kyser-Jingle Jangle Jingle.ogg",
+        "volume": 90
+    },
+    {
+        "file": "music/Lost Weekend Western Swing Band-Lone_Star.ogg",
+        "volume": 90
+    },
+    {
+        "file": "music/Marty Robbins-Big Iron.ogg",
+        "volume": 90
+    },
+    {
+        "file": "music/Peggy Sue-Johnny_Guitar.ogg",
+        "volume": 90
+    },
+    {
+        "file": "music/Peggy Sue-Why Don't You Do It Right.ogg",
+        "volume": 100
+    },
+    {
+        "file": "music/Roy Brown - Butcher Pete (Part 1).ogg",
+        "volume": 90
+    },
+    {
+        "file": "music/Roy Brown - Mighty Mighty Man.ogg",
+        "volume": 90
+    },
+    {
+        "file": "music/Sid Phillips - Boogie Man.ogg",
+        "volume": 90
+    },
+    {
+        "file": "music/Tex Beneke and Margaret Whiting - A Wonderful Guy.ogg",
+        "volume": 90
+    },
+    {
+        "file": "music/The Ink Spots - I Don't Want to Set the World on Fire.ogg",
+        "volume": 90
+    },
+    {
+        "file": "music/The Ink Spots - Maybe.ogg",
+        "volume": 90
+    },
+    {
+        "file": "music/The Ink Spots and Ella Fitzgerald - Into Each Life Some Rain Must Fall.ogg",
+        "volume": 90
+    },
+    {
+        "file": "music/The Ink Spots-It's as sin to telL Lie.ogg",
+        "volume": 90
+    }
+            ]
+        }
+    ]
+}
+]

@@ -1,0 +1,71 @@
+[
+  {
+    "id": "glamdring_ray",
+    "type": "SPELL",
+    "name": { "str": "Glamdring's Glare" },
+    "description": "The blade's runes flare white-hot, loosing a bolt of pure light at a foe.",
+    "valid_targets": [ "hostile" ],
+    "effect": "target_attack",
+    "damage_type": "light",
+    "min_damage": 40,
+    "max_damage": 40,
+    "damage_increment": 0,
+    "min_range": 1,
+    "max_range": 12,
+    "base_casting_time": 100,
+    "base_energy_cost": 0,
+    "energy_source": "NONE",
+    "difficulty": 0,
+    "max_level": 1,
+    "flags": [ "NO_FAIL", "NO_LEGS", "SILENT" ]
+  },
+  {
+    "id": "glamdring",
+    "type": "TOOL",
+    "category": "weapons",
+    "symbol": "/",
+    "color": "white",
+    "looks_like": "broadsword",
+    "weapon_category": [ "1H_SWORDS" ],
+    "name": { "str": "Glamdring" },
+    "description": "An ancient elven blade of Noldori make, its steel etched with runes that burn cold blue near danger. Wielded, it sharpens body and mind alike far beyond a mortal's reach; its runes can also be woken at will to loose a bolt of searing light at a foe, at no cost.",
+    "weight": "1400 g",
+    "volume": "1750 ml",
+    "price": "0 cent",
+    "material": [ "steel", "rune" ],
+    "to_hit": 3,
+    "bashing": 8,
+    "cutting": 32,
+    "techniques": [ "WBLOCK_1", "RAPID", "PRECISE" ],
+    "flags": [
+      "DURABLE_MELEE",
+      "SHEATH_SWORD",
+      "NONCONDUCTIVE",
+      "NO_REPAIR",
+      "NO_SALVAGE"
+    ],
+    "use_action": {
+      "type": "cast_spell",
+      "spell_id": "glamdring_ray",
+      "no_fail": true,
+      "level": 1,
+      "need_wielding": true
+    },
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "values": [
+            { "value": "STRENGTH", "add": 4 },
+            { "value": "DEXTERITY", "add": 4 },
+            { "value": "INTELLIGENCE", "add": 6 },
+            { "value": "PERCEPTION", "add": 4 },
+            { "value": "MANA_CAP", "add": 1200 },
+            { "value": "MANA_REGEN", "multiply": 0.75 }
+          ]
+        }
+      ]
+    }
+  }
+]

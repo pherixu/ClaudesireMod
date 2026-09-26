@@ -1,0 +1,39 @@
+[
+  {
+    "id": "fireshrieker",
+    "copy-from": "pistol_energy",
+    "type": "GUN",
+    "category": "weapons",
+    "name": { "str": "Fireshrieker" },
+    "description": "A slender wooden wand, warm to the touch. Swung, it scorches whatever it strikes; pointed and willed, it screams and spits a bolt of living flame that costs nothing to loose.",
+    "weight": "115 g",
+    "volume": "500 ml",
+    "price": "100 USD",
+    "price_postapoc": "80 USD",
+    "material": [ "wood" ],
+    "symbol": "|",
+    "color": "brown",
+    "to_hit": 1,
+    "bashing": 3,
+    "attacks": [
+      {
+        "id": "BASH",
+        "to_hit": 1,
+        "damage": {
+          "values": [
+            { "damage_type": "bash", "amount": 3 },
+            { "damage_type": "heat", "amount": 15 }
+          ]
+        }
+      }
+    ],
+    "range": 15,
+    "ranged_damage": { "damage_type": "heat", "amount": 20, "armor_penetration": 5 },
+    "dispersion": 200,
+    "loudness": 8,
+    "ups_charges": 0,
+    "modes": [ [ "DEFAULT", "Fire Bolt", 1 ] ],
+    "valid_mod_locations": [],
+    "extend": { "flags": [ "BELT_CLIP", "NONCONDUCTIVE" ] }
+  }
+]

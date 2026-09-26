@@ -1,0 +1,57 @@
+[
+  {
+    "//": "Same trick as the naruto jutsu: a spell with melee_dam adds the wielded weapon's own damage on top of its (tiny) base damage.  Hitting with these blades fires the spell at the target, so every strike lands twice.",
+    "type": "SPELL",
+    "id": "llanowar_onhit",
+    "name": "Llanowar Twin Strike",
+    "description": "The second blade follows the first.  Adds the weapon's own melee damage to each hit.",
+    "effect": "target_attack",
+    "valid_targets": [ "hostile" ],
+    "flags": [ "NO_FAIL", "SILENT", "NO_EXPLOSION_VFX", "NO_LEGS" ],
+    "damage_type": "cut",
+    "min_damage": 1,
+    "max_damage": 1,
+    "melee_dam": [ "physical", "elemental" ],
+    "min_range": 1,
+    "max_range": 2,
+    "min_aoe": 0,
+    "max_aoe": 0,
+    "max_level": 1,
+    "difficulty": 1,
+    "base_casting_time": 0,
+    "energy_source": "STAMINA",
+    "base_energy_cost": 0,
+    "final_energy_cost": 0
+  },
+  {
+    "id": "llanowar_dual_blades",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "1H_SWORDS" ],
+    "symbol": "/",
+    "color": "light_green",
+    "looks_like": "sword_wood",
+    "name": { "str_sp": "Llanowar Dual Blades" },
+    "description": "A matched pair of leaf-shaped elven blades, grown as much as forged, with edges that hold a green sheen in any light.  They are treated as a single weapon: each strike carries a second, echoing cut that lands right behind the first.",
+    "weight": "1300 g",
+    "volume": "1500 ml",
+    "price": "0 cent",
+    "price_postapoc": "0 cent",
+    "to_hit": 4,
+    "bashing": 4,
+    "cutting": 65,
+    "material": [ "steel", "rune" ],
+    "techniques": [ "WBLOCK_2", "RAPID", "WIDE" ],
+    "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 8 ] ],
+    "flags": [ "UNBREAKABLE_MELEE", "SHEATH_SWORD", "NONCONDUCTIVE", "NO_REPAIR", "NO_SALVAGE" ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [ { "id": "llanowar_onhit" } ]
+        }
+      ]
+    }
+  }
+]

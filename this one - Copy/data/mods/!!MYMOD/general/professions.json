@@ -1,0 +1,493 @@
+[
+ 
+  {
+    "type": "profession",
+    "id": "arisen",
+    "name": "Arisen",
+    "description": "Chivalry! Daring! Honor! All traits that are useless in the Cataclysm. But you know how to fight with a sword and you have this armor so it could be worse.",
+    "points": 4,
+    "spells": [ { "id": "blink_strike", "level": 1 }, { "id": "compass_slash", "level": 1 }],
+    "skills": [ { "level": 2, "name": "melee" }, { "level": 2, "name": "cutting" } ],
+    "traits": [ "PROF_KNIGHT", "ANTIJUNK" ],
+    "items": {
+      "both": {
+        "items": [ "breeches", "chainmail_hauberk", "socks", "chainmail_feet", "holo_mbag", "helmet_plate", "chainmail_hands", "shield_leather" ],
+        "entries": [ { "item": "dragons_dogma", "container-item": "scabbard" } ]
+      },
+      "female": [ "chestwrap" ]
+    }
+  },
+ 
+ 
+  {
+    "type": "profession",
+    "id": "struggler",
+    "name": "Struggler",
+    "description": "Chivalry! Daring! Honor! All traits that are useless in the Cataclysm. But you know how to fight with a sword and you have this armor so it could be worse.",
+    "points": 4,
+    "skills": [ { "level": 2, "name": "melee" }, { "level": 2, "name": "cutting" } ],
+    "traits": [ "PROF_KNIGHT", "ANTIJUNK" ],
+    "items": {
+      "both": {
+        "items": [ "breeches", "chainmail_hauberk", "socks", "holo_mbag", "chainmail_feet", "helmet_plate", "chainmail_hands","sacrifice_brand", "cannon_prosthetic" ],
+        "entries": [
+
+		{ "item": "dragonslayer", "container-item": "scabbard" },
+        { "item": "quiver", "contents-group": "quiver_bionic_prepper" },
+          { "item": "cannon_explosive_shell", "count": 6 },
+          { "item": "cannon_round_ball", "count": 12 }
+
+		]
+      },
+      "female": [ "chestwrap" ]
+    }
+  },
+ 
+ 
+  {
+    "type": "profession",
+    "id": "mandalorian",
+    "name": "Mandalorian",
+    "description": "Chivalry! Daring! Honor! All traits that are useless in the Cataclysm. But you know how to fight with a sword and you have this armor so it could be worse.",
+    "points": 1,
+    "skills": [ { "level": 2, "name": "melee" }, { "level": 2, "name": "cutting" } ],
+    "items": {
+      "both": {
+        "items": [ "breeches", "beskar_cuirass", "socks", "beskar_greaves", "helmet_beskar", "holo_mbag", "gauntlets_beskar" ],
+        "entries": [
+          { "item": "beskar_ammo", "count": 10 },
+		{ "item": "spear_beskar", "container-item": "spearsling" }
+		]
+      },
+      "female": [ "chestwrap" ]
+    }
+  },
+ 
+  {
+    "type": "profession",
+    "id": "devil_hunter",
+    "name": "Devil Hunter",
+    "description": "A stylish demon, hell bent on hunting their own kind.",
+    "points": 1,
+    "skills": [ { "level": 2, "name": "melee" }, { "level": 2, "name": "cutting" } ],
+    "traits": [ "PROF_KNIGHT", "DEVILHUNTER" ],
+    "items": {
+      "both": {
+        
+        "items": [
+          "trenchcoat",
+          "gloves_fingerless",
+          "socks",
+          "boots_combat",
+          "holo_mbag",
+          "weed",
+          "tobacco",
+          "rolling_paper",
+          "ref_lighter",
+          "smart_phone",
+          "mp3",
+          "wristwatch"
+        ],
+        "entries": [
+          { "item": "45_acp", "count": 5 },
+		{ "item": "ebony_ivory", "container-item": "devilstraps" }
+		]
+      },
+      "female": [ "chestwrap" ]
+    }
+  },
+  
+  {
+    "type": "profession",
+    "id": "lady_hunter",
+    "name": "Lady Devil Hunter",
+    "description": "A human, on a quest for vengeance against demonkind.",
+    "points": 1,
+    "skills": [ { "level": 2, "name": "melee" }, { "level": 2, "name": "cutting" } ],
+    "traits": [ "PROF_KNIGHT", "DEVILHUNTER" ],
+    "items": {
+      "both": {
+        
+        "items": [
+          "trenchcoat",
+          "gloves_fingerless",
+          "socks",
+          "boots_combat",
+          "weed",
+          "holo_mbag",
+          "tobacco",
+          "rolling_paper",
+          "ref_lighter",
+          "smart_phone",
+          "mp3",
+          "wristwatch"
+        ],
+        "entries": [
+          { "item": "RPG", "count": 20 },
+		{ "item": "kalina_ann", "container-item": "devilstraps" }
+		]
+      },
+      "female": [ "chestwrap" ]
+    }
+  },
+  
+ 
+ 
+  {
+    "type": "profession",
+    "id": "soul_knight",
+    "name": "Soul Knight",
+    "description": "Chivalry! Daring! Honor! All traits that are useless in the Cataclysm. But you know how to fight with a sword and you have this armor so it could be worse.",
+    "points": 1,
+    "skills": [ { "level": 2, "name": "melee" }, { "level": 2, "name": "cutting" } ],
+    "traits": [ "PROF_KNIGHT", "ANTIJUNK" ],
+    "items": {
+      "both": {
+        "items": [ "breeches", "rune_cuirass", "socks", "holo_mbag", "rune_greaves", "helmet_rune", "gauntlets_rune", "inner_sanctuary" ],
+        "entries": [
+          { "item": "quiver", "contents-group": "quiver_monster_hunter_1" },
+          { "item": "quiver", "contents-group": "quiver_monster_hunter_2" },
+		{ "group": "soulswords", "container-item": "scabbard" }
+		]
+      },
+      "female": [ "chestwrap" ]
+    }
+  },
+ 
+ 
+ 
+  {
+    "type": "profession",
+    "id": "blood_knight",
+    "name": "Blood Knight",
+    "description": "Chivalry! Daring! Honor! All traits that are useless in the Cataclysm. But you know how to fight with a sword and you have this armor so it could be worse.",
+    "points": 1,
+    "skills": [ { "level": 2, "name": "melee" }, { "level": 2, "name": "cutting" } ],
+    "spells": [ { "id": "transfusion", "level": 1 }, { "id": "tides_of_blood", "level": 10 }],
+    "traits": [ "PROF_KNIGHT", "ANTIJUNK" ],
+    "items": {
+      "both": {
+        "items": [ "breeches", "rune_cuirass", "socks", "holo_mbag", "rune_greaves", "helmet_rune", "gauntlets_rune", "vlad_orb_trans" ],
+        "entries": [
+		{ "item": "blood_blade", "container-item": "scabbard" }
+		]
+      },
+      "female": [ "chestwrap" ]
+    }
+  },
+ 
+ 
+  {
+    "type": "profession",
+    "id": "black_mage",
+    "name": "Black Mage",
+    "description": "Chivalry! Daring! Honor! All traits that are useless in the Cataclysm. But you know how to fight with a sword and you have this armor so it could be worse.",
+    "points": 1,
+    "spells": [ { "id": "thundara", "level": 1 }, { "id": "blizzara", "level": 1 }, { "id": "fira", "level": 1 }],
+    "skills": [ { "level": 7, "name": "spellcraft" } ],
+    "traits": [ "MANA_ADD2", "MANA_REGEN1" ],	
+    "items": {
+      "both": {
+        "items": [ "breeches", "sage_surplice", "socks", "holo_mbag", "boots", "wizard_hat", "mring_intelligence_4" ],
+        "entries": [
+          { "group": "enchanted_rings_uncommon"},
+		{ "item": "magi_staff_greater"}
+		]
+      },
+      "female": [ "chestwrap" ]
+    }
+  },
+ 
+ 
+ 
+  {
+    "type": "profession",
+    "id": "proto_lich",
+    "name": "Proto Lich",
+    "description": "Chivalry! Daring! Honor! All traits that are useless in the Cataclysm. But you know how to fight with a sword and you have this armor so it could be worse.",
+    "points": 1,
+    "spells": [ { "id": "summon_skeleton", "level": 10 }, { "id": "summon_zombie", "level": 10 }, { "id": "necrotic_gaze", "level": 10 }],
+    "skills": [ { "level": 6, "name": "spellcraft" }, { "level": 2, "name": "cutting" } ],
+    "traits": [ "MANA_ADD2", "MANA_REGEN1" ],	
+    "items": {
+      "both": {
+        "items": [ "breeches", "rune_cuirass", "socks", "holo_mbag", "boots_fur", "wizard_hat", "gauntlets_rune", "dark_spirit", "dark_spirit2", "lich_cloak" ],
+        "entries": [
+		{ "item": "magi_staff_greater"},
+		{ "item": "primitive_knife"},
+          { "item": "decaying_soul", "count": 16 },
+		{ "item": "soul_cage"}
+		]
+      },
+      "female": [ "chestwrap" ]
+    }
+  },
+ 
+ 
+  {
+    "type": "profession",
+    "id": "death_knight",
+    "name": "Death Knight",
+    "description": "Chivalry! Daring! Honor! All traits that are useless in the Cataclysm. But you know how to fight with a sword and you have this armor so it could be worse.",
+    "points": 1,
+    "spells": [ { "id": "summon_skeleton", "level": 6 }, { "id": "summon_zombie", "level": 6 }, { "id": "necrotic_gaze", "level": 6 }],
+    "skills": [ { "level": 2, "name": "melee" }, { "level": 2, "name": "cutting" } , { "level": 1, "name": "spellcraft" } ],
+    "traits": [ "PROF_KNIGHT", "ANTIJUNK" ],
+    "items": {
+      "both": {
+        "items": [ "breeches", "rune_cuirass", "socks", "holo_mbag", "boots_fur", "helmet_rune", "gauntlets_rune", "dark_spirit", "lich_cloak" ],
+        "entries": [
+		{ "item": "frostmourne", "container-item": "scabbard" }
+		]
+      },
+      "female": [ "chestwrap" ]
+    }
+  },
+ 
+ 
+  {
+    "type": "profession",
+    "id": "holy_knight",
+    "name": "Holy Knight",
+    "description": "Chivalry! Daring! Honor! All traits that are useless in the Cataclysm. But you know how to fight with a sword and you have this armor so it could be worse.",
+    "points": 1,
+    "spells": [{ "id": "light_healing", "level": 5 }],
+    "skills": [ { "level": 2, "name": "melee" }, { "level": 2, "name": "cutting" } ],
+    "traits": [ "PROF_KNIGHT", "ANTIJUNK" ],
+    "items": {
+      "both": {
+        "items": [ "breeches", "rune_cuirass", "socks", "holo_mbag", "rune_greaves", "helmet_rune", "gauntlets_rune", "holy_halo", "shield_leather" ],
+        "entries": [
+		{ "item": "holyavenger", "container-item": "scabbard" }
+		]
+      },
+      "female": [ "chestwrap" ]
+    }
+  },
+ 
+  {
+    "type": "profession",
+    "id": "rune_knight",
+    "name": "Rune Knight",
+    "description": "Chivalry! Daring! Honor! All traits that are useless in the Cataclysm. But you know how to fight with a sword and you have this armor so it could be worse.",
+    "points": 1,
+    "skills": [ { "level": 2, "name": "melee" }, { "level": 2, "name": "cutting" } ],
+    "traits": [ "PROF_KNIGHT", "ANTIJUNK" ],
+    "items": {
+      "both": {
+        "items": [ "breeches", "rune_cuirass", "socks", "holo_mbag", "rune_greaves", "helmet_rune", "gauntlets_rune", "shield_leather" ],
+        "entries": [
+		{ "item": "rune_scimmy", "container-item": "scabbard" }
+		]
+      },
+      "female": [ "chestwrap" ]
+    }
+  },
+ 
+  {
+    "type": "profession",
+    "id": "flame_knight",
+    "name": "Flame Knight",
+    "description": "Chivalry! Daring! Honor! All traits that are useless in the Cataclysm. But you know how to fight with a sword and you have this armor so it could be worse.",
+    "points": 1,
+    "skills": [ { "level": 2, "name": "melee" }, { "level": 2, "name": "cutting" } ],
+    "traits": [ "PROF_KNIGHT", "ANTIJUNK" ],
+    "items": {
+      "both": {
+        "items": [ "fire_ring", "breeches", "rune_cuirass", "holo_mbag", "socks", "rune_greaves", "helmet_rune", "gauntlets_rune", "shield_leather" ],
+        "entries": [ { "item": "flametongue", "container-item": "scabbard" },
+          { "item": "crystallized_mana", "count": 5 }  ]
+      },
+      "female": [ "chestwrap" ]
+    }
+  },
+ 
+  {
+    "type": "profession",
+    "id": "frost_knight",
+    "name": "Frost Knight",
+    "description": "Chivalry! Daring! Honor! All traits that are useless in the Cataclysm. But you know how to fight with a sword and you have this armor so it could be worse.",
+    "points": 1,
+    "skills": [ { "level": 2, "name": "melee" }, { "level": 2, "name": "cutting" } ],
+    "traits": [ "PROF_KNIGHT", "ANTIJUNK" ],
+    "items": {
+      "both": {
+        "items": [ "ice_ring", "breeches", "rune_cuirass", "socks", "holo_mbag", "rune_greaves", "helmet_rune", "gauntlets_rune", "shield_leather" ],
+        "entries": [ { "item": "frostbrand", "container-item": "scabbard" },
+          { "item": "crystallized_mana", "count": 5 }  ]
+      },
+      "female": [ "chestwrap" ]
+    }
+  },
+  
+ 
+  {
+    "type": "profession",
+    "id": "storm_knight",
+    "name": "Storm Knight",
+    "description": "Chivalry! Daring! Honor! All traits that are useless in the Cataclysm. But you know how to fight with a sword and you have this armor so it could be worse.",
+    "points": 1,
+    "skills": [ { "level": 2, "name": "melee" }, { "level": 2, "name": "cutting" } ],
+    "traits": [ "PROF_KNIGHT", "ANTIJUNK" ],
+    "items": {
+      "both": {
+        "items": [ "elec_ring", "breeches", "rune_cuirass", "socks", "holo_mbag", "rune_greaves", "helmet_rune", "gauntlets_rune", "shield_leather" ],
+        "entries": [ { "item": "stormrazor", "container-item": "scabbard" },
+          { "item": "crystallized_mana", "count": 5 }  ]
+      },
+      "female": [ "chestwrap" ]
+    }
+  },
+ 
+  {
+    "type": "profession",
+    "id": "acid_knight",
+    "name": "Acid Knight",
+    "description": "Chivalry! Daring! Honor! All traits that are useless in the Cataclysm. But you know how to fight with a sword and you have this armor so it could be worse.",
+    "points": 1,
+    "skills": [ { "level": 2, "name": "melee" }, { "level": 2, "name": "cutting" } ],
+    "traits": [ "PROF_KNIGHT", "ANTIJUNK" ],
+    "items": {
+      "both": {
+        "items": [ "acid_ring", "breeches", "rune_cuirass", "socks", "holo_mbag", "rune_greaves", "helmet_rune", "gauntlets_rune", "shield_leather" ],
+        "entries": [ { "item": "venomfang", "container-item": "scabbard" },
+          { "item": "crystallized_mana", "count": 5 }  ]
+      },
+      "female": [ "chestwrap" ]
+    }
+  },
+  
+  
+  
+  {
+    "type": "profession",
+    "id": "prof_padawan",
+    "name": "Jedi Padawan",
+    "description": "A fledgling jedi from the republic, off on a mission to become a jedi knight.",
+    "points": 1,
+    "spells": [{ "id": "force_push", "level": 1 },{ "id": "force_leap", "level": 1 }],
+    "skills": [
+      { "level": 2, "name": "dodge" },
+      { "level": 2, "name": "melee" },
+      { "level": 1, "name": "spellcraft" },
+      { "level": 2, "name": "cutting" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "pants",
+          "tabi_dress",
+          "longshirt",
+          "holo_mbag",
+          "bastsandals",
+          "jedi_cloak"
+        ],
+        "entries": [
+          { "group": "jedi_sabers","custom-flags": [ "auto_wield" ]  },
+          { "item": "jedibook" }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "boy_shorts", "sports_bra" ]
+    }
+  },
+ 
+  {
+    "type": "profession",
+    "id": "prof_jedi",
+    "name": "Jedi Master",
+    "description": "A master of the force, what brings you to this strange world?",
+    "points": 1,
+    "spells": [{ "id": "force_push", "level": 1 },{ "id": "force_leap", "level": 1 }],
+    "skills": [
+      { "level": 3, "name": "dodge" },
+      { "level": 3, "name": "melee" },
+      { "level": 3, "name": "spellcraft" },
+      { "level": 3, "name": "cutting" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "pants",
+          "tabi_dress",
+          "holo_mbag",
+          "longshirt",
+          "bastsandals",
+          "jedi_master_cloak"
+        ],
+        "entries": [
+          { "group": "jedi_sabers","custom-flags": [ "auto_wield" ]  },
+          { "item": "jedibook" }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "boy_shorts", "sports_bra" ]
+    }
+  },
+ 
+  {
+    "type": "profession",
+    "id": "prof_apprentice",
+    "name": "Sith Apprentice",
+    "description": "A fledgling sith, trained in secret by a dark lord.",
+    "points": 1,
+    "spells": [{ "id": "force_lightning", "level": 1 },{ "id": "force_push", "level": 1 },{ "id": "force_leap", "level": 1 }],
+    "skills": [
+      { "level": 2, "name": "dodge" },
+      { "level": 2, "name": "melee" },
+      { "level": 1, "name": "spellcraft" },
+      { "level": 2, "name": "cutting" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "pants",
+          "tabi_dress",
+          "holo_mbag",
+          "longshirt",
+          "bastsandals",
+          "sith_cloak"
+        ],
+        "entries": [
+          { "item": "saber_hilt_crimson","custom-flags": [ "auto_wield" ]  },
+          { "item": "sithbook" }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "boy_shorts", "sports_bra" ]
+    }
+  },
+ 
+  {
+    "type": "profession",
+    "id": "prof_sith",
+    "name": "Sith Master",
+    "description": "A master of the force, what brings you to this strange world?",
+    "points": 1,
+    "spells": [{ "id": "force_lightning", "level": 1 },{ "id": "force_push", "level": 1 },{ "id": "force_leap", "level": 1 }],
+    "skills": [
+      { "level": 3, "name": "dodge" },
+      { "level": 3, "name": "melee" },
+      { "level": 3, "name": "spellcraft" },
+      { "level": 3, "name": "cutting" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "pants",
+          "tabi_dress",
+          "longshirt",
+          "bastsandals",
+          "holo_mbag",
+          "sith_master_cloak"
+        ],
+        "entries": [
+          { "item": "saber_hilt_crimson","custom-flags": [ "auto_wield" ]  },
+          { "item": "sithbook" }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "boy_shorts", "sports_bra" ]
+    }
+  }
+]

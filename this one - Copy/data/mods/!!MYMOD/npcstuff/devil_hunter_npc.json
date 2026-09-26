@@ -1,0 +1,176 @@
+[
+  {
+    "type": "npc",
+    "id": "devilhunter_main",
+    "//": "a cocky devil hunter answering a distress beacon.  Dante-ish: red coat, twin pistols, a huge sword, and pizza.",
+    "name_suffix": "Devil Hunter",
+    "class": "NC_DEVILHUNTER",
+    "attitude": 0,
+    "mission": 7,
+    "mission_offered": "MISSION_RECRUIT_DEVILHUNTER",
+    "chat": "TALK_DEVILHUNTER",
+    "faction": "no_faction"
+  },
+
+  {
+    "id": "MISSION_RECRUIT_DEVILHUNTER",
+    "type": "mission_definition",
+    "name": { "str": "Recruit Devil Hunter" },
+    "goal": "MGOAL_RECRUIT_NPC_CLASS",
+    "difficulty": 1,
+    "value": 70000,
+    "start": {
+      "assign_mission_target": { "om_terrain": "house_", "om_terrain_match_type": "PREFIX", "reveal_radius": 2, "random": true, "search_range": 80, "z": 0 },
+      "effect": "follow",
+      "update_mapgen": { "place_npcs": [ { "class": "devilhunter_main", "x": 11, "y": 11, "target": true } ] }
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "You catch a whiff of gun smoke and cheap cologne.  Somebody stylish is about to make a mess.",
+      "offer": "Got a buddy who owes me a slice.  Another hunter, same line of work, worse taste in coats.  Find 'em with me and we'll have a real party.",
+      "accepted": "Now we're talking.  Try to keep up.",
+      "rejected": "Your loss, kid.  The party's still on without you.",
+      "advice": "Look for the fireworks.  Wherever there's smoke, there's a devil, and wherever there's a devil, there's a hunter.",
+      "inquire": "Found my buddy yet?.",
+      "success": "Ha!  Now that's what I call a party!  Two hunters on the job.",
+      "success_lie": "Nice try.  That's no hunter of mine.  Not enough style.",
+      "failure": "Bored already?  Yeah, me too.  Whatever."
+    }
+  },
+
+  {
+    "type": "item_group",
+    "id": "NC_DEVILHUNTER_worn",
+    "subtype": "collection",
+    "//": "red coat, dark leathers, fingerless gloves, no fuss",
+    "items": [
+      { "item": "socks" },
+      { "item": "boxer_shorts" },
+      { "item": "undershirt" },
+      { "item": "pants_leather" },
+      { "item": "boots_combat" },
+      { "item": "gloves_fingerless" },
+      { "item": "trenchcoat_leather" },
+      { "item": "leather_belt" },
+      { "item": "devilstraps" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_DEVILHUNTER_weapon",
+    "subtype": "distribution",
+    "//": "wielded: a big sword, mostly",
+    "entries": [
+      { "item": "rageblade", "prob": 35 },
+      { "item": "edgeblade", "prob": 20 },
+      { "item": "holyavenger", "prob": 15 },
+      { "item": "dragonslayer", "prob": 15 },
+      { "item": "flametongue", "prob": 8 },
+      { "item": "frostbrand", "prob": 7 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_DEVILHUNTER_carried",
+    "subtype": "collection",
+    "//": "twin pistols, a rocket launcher in case of emergencies, and a pizza for after",
+    "items": [
+      { "item": "ebony_ivory" },
+      { "item": "45_acp", "charges": [ 120, 240 ] },
+      { "item": "kalina_ann", "prob": 50 },
+      { "item": "RPG", "prob": 50, "charges": [ 6, 12 ] },
+      { "item": "1st_aid" },
+      { "item": "pizza_supreme" },
+      { "item": "pizza_meat", "prob": 60 },
+      { "item": "strawberries", "prob": 50, "count": [ 1, 3 ] },
+      { "item": "cigar", "prob": 40 },
+      { "item": "ref_lighter" },
+      { "item": "water_clean", "count": [ 1, 2 ] }
+    ]
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_DEVILHUNTER",
+    "name": { "str": "Devil Hunter" },
+    "job_description": "Jackpot.",
+    "traits": [ { "trait": "DEVILHUNTER" }, { "group": "BG_survival_story_UNIVERSAL" }, { "group": "NPC_starting_traits" }, { "group": "Appearance_demographics" } ],
+    "bonus_str": { "rng": [ 8, 14 ] },
+    "bonus_dex": { "rng": [ 10, 16 ] },
+    "bonus_int": { "rng": [ 0, 4 ] },
+    "bonus_per": { "rng": [ 6, 12 ] },
+    "spells": [ { "id": "taunt", "level": 5 }, { "id": "devil_step", "level": 5 }, { "id": "chrono_haste", "level": 5 } ],
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 3 ] }, { "constant": 4 } ] } },
+      { "skill": "melee", "bonus": { "rng": [ 6, 10 ] } },
+      { "skill": "cutting", "bonus": { "rng": [ 6, 10 ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 6, 10 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 5, 9 ] } },
+      { "skill": "pistol", "bonus": { "rng": [ 6, 10 ] } },
+      { "skill": "launcher", "bonus": { "rng": [ 3, 6 ] } },
+      { "skill": "throw", "bonus": { "rng": [ 2, 5 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 3, 6 ] } },
+      { "skill": "speech", "bonus": { "rng": [ 4, 8 ] } }
+    ],
+    "common": true,
+    "worn_override": "NC_DEVILHUNTER_worn",
+    "carry_override": "NC_DEVILHUNTER_carried",
+    "weapon_override": "NC_DEVILHUNTER_weapon"
+  },
+
+  {
+    "type": "talk_topic",
+    "id": "TALK_DEVILHUNTER",
+    "dynamic_line": {
+      "u_has_var": "talked_to_devilhunter",
+      "type": "dialogue",
+      "context": "devilhunter",
+      "value": "yes",
+      "no": "This party's getting crazy! Let's rock.",
+      "yes": "Back for more?  Can't stay away from this face, huh."
+    },
+    "responses": [
+      {
+        "text": "Hello <name_g>.",
+        "topic": "TALK_DEVILHUNTER_INTRO",
+        "effect": { "u_add_var": "talked_to_devilhunter", "type": "dialogue", "context": "devilhunter", "value": "yes" }
+      },
+      { "text": "Nice coat.", "topic": "TALK_DEVILHUNTER_COAT" },
+      { "text": "Wanna get outta here?", "topic": "TALK_SUGGEST_FOLLOW" },
+      { "text": "Let's trade items.", "topic": "TALK_DEVILHUNTER", "effect": "start_trade" },
+      { "text": "Can I do anything for you?", "topic": "TALK_MISSION_LIST", "condition": { "not": "has_assigned_mission" } },
+      { "text": "About the mission...", "topic": "TALK_MISSION_INQUIRE", "condition": "has_assigned_mission" },
+      { "text": "About one of those missions...", "topic": "TALK_MISSION_LIST_ASSIGNED", "condition": "has_many_assigned_missions" },
+      { "text": "Goodbye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_DEVILHUNTER_INTRO",
+    "dynamic_line": "Let's make this quick.  The pizza's getting cold, and something's gonna try to eat us any minute now.",
+    "responses": [
+      { "text": "Why don't you go somewhere else?", "topic": "TALK_DEVILHUNTER_LEAVE" },
+      { "text": "Let's trade then.", "effect": "start_trade", "topic": "TALK_DEVILHUNTER" },
+      { "text": "I'm sorry, I gotta go.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_DEVILHUNTER_COAT",
+    "dynamic_line": "Like it? Hides the blood.",
+    "responses": [
+      { "text": "Wanna get outta here?", "topic": "TALK_SUGGEST_FOLLOW" },
+      { "text": "What can you sell me?", "topic": "TALK_DEVILHUNTER", "effect": "start_trade" },
+      { "text": "Right.  I gotta go.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_DEVILHUNTER_LEAVE",
+    "dynamic_line": "Somewhere else?  Nah, the devils come to me.  It's kind of a talent.",
+    "responses": [
+      { "text": "Wanna get outta here?", "topic": "TALK_SUGGEST_FOLLOW" },
+      { "text": "What can you sell me?", "topic": "TALK_DEVILHUNTER", "effect": "start_trade" },
+      { "text": "I'm sorry, I gotta go.", "topic": "TALK_DONE" }
+    ]
+  }
+]

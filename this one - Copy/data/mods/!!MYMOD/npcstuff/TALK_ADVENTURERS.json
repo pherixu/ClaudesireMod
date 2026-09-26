@@ -1,0 +1,412 @@
+[
+  {
+    "type": "talk_topic",
+    "id": "TALK_ADV_FIGHTER",
+    "dynamic_line": {
+      "u_has_var": "talked_to_adv_fighter",
+      "type": "dialogue",
+      "context": "adv_fighter",
+      "value": "yes",
+      "no": "Hail, traveler!  Steel at your service.  That signal of yours carried a long way.",
+      "yes": "Ah, you again.  My blade is still yours."
+    },
+    "responses": [
+      { "text": "Hello <name_g>.", "topic": "TALK_ADV_FIGHTER_INTRO", "effect": { "u_add_var": "talked_to_adv_fighter", "type": "dialogue", "context": "adv_fighter", "value": "yes" } },
+      { "text": "Wanna get outta here?", "topic": "TALK_SUGGEST_FOLLOW" },
+      { "text": "Let's trade items.", "topic": "TALK_ADV_FIGHTER", "effect": "start_trade" },
+      { "text": "Can I do anything for you?", "topic": "TALK_MISSION_LIST", "condition": { "not": "has_assigned_mission" } },
+      { "text": "About the mission...", "topic": "TALK_MISSION_INQUIRE", "condition": "has_assigned_mission" },
+      { "text": "About one of those missions...", "topic": "TALK_MISSION_LIST_ASSIGNED", "condition": "has_many_assigned_missions" },
+      { "text": "Goodbye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_ADV_FIGHTER_INTRO",
+    "dynamic_line": "Speak plainly.  Is there a monster that needs killing?",
+    "responses": [
+      { "text": "Why don't you go somewhere else?", "topic": "TALK_ADV_FIGHTER_LEAVE" },
+      { "text": "Let's trade then.", "effect": "start_trade", "topic": "TALK_ADV_FIGHTER" },
+      { "text": "I'm sorry, I gotta go.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_ADV_FIGHTER_LEAVE",
+    "dynamic_line": "A knight stays where the fighting is.  Which is everywhere, these days.",
+    "responses": [
+      { "text": "Wanna get outta here?", "topic": "TALK_SUGGEST_FOLLOW" },
+      { "text": "What can you sell me?", "topic": "TALK_ADV_FIGHTER", "effect": "start_trade" },
+      { "text": "I'm sorry, I gotta go.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_ADV_MAGE",
+    "dynamic_line": {
+      "u_has_var": "talked_to_adv_mage",
+      "type": "dialogue",
+      "context": "adv_mage",
+      "value": "yes",
+      "no": "Ah, a signal.  I was in the middle of something delicate.  Never mind, how can I help?",
+      "yes": "Back again?  Good.  I have been meaning to test a theory on something."
+    },
+    "responses": [
+      { "text": "Hello <name_g>.", "topic": "TALK_ADV_MAGE_INTRO", "effect": { "u_add_var": "talked_to_adv_mage", "type": "dialogue", "context": "adv_mage", "value": "yes" } },
+      { "text": "Wanna get outta here?", "topic": "TALK_SUGGEST_FOLLOW" },
+      { "text": "Let's trade items.", "topic": "TALK_ADV_MAGE", "effect": "start_trade" },
+      { "text": "Can I do anything for you?", "topic": "TALK_MISSION_LIST", "condition": { "not": "has_assigned_mission" } },
+      { "text": "About the mission...", "topic": "TALK_MISSION_INQUIRE", "condition": "has_assigned_mission" },
+      { "text": "About one of those missions...", "topic": "TALK_MISSION_LIST_ASSIGNED", "condition": "has_many_assigned_missions" },
+      { "text": "Goodbye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_ADV_MAGE_INTRO",
+    "dynamic_line": "Be brief.  Mana does not regenerate itself.",
+    "responses": [
+      { "text": "Why don't you go somewhere else?", "topic": "TALK_ADV_MAGE_LEAVE" },
+      { "text": "Let's trade then.", "effect": "start_trade", "topic": "TALK_ADV_MAGE" },
+      { "text": "I'm sorry, I gotta go.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_ADV_MAGE_LEAVE",
+    "dynamic_line": "The great works are done in quiet places.  Do not tell anyone where I am.",
+    "responses": [
+      { "text": "Wanna get outta here?", "topic": "TALK_SUGGEST_FOLLOW" },
+      { "text": "What can you sell me?", "topic": "TALK_ADV_MAGE", "effect": "start_trade" },
+      { "text": "I'm sorry, I gotta go.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_ADV_THIEF",
+    "dynamic_line": {
+      "u_has_var": "talked_to_adv_thief",
+      "type": "dialogue",
+      "context": "adv_thief",
+      "value": "yes",
+      "no": "Shh.  Keep your voice down.  Nobody saw me arrive, and nobody needs to.",
+      "yes": "You are getting good at finding me.  Do not let it go to your head."
+    },
+    "responses": [
+      { "text": "Hello <name_g>.", "topic": "TALK_ADV_THIEF_INTRO", "effect": { "u_add_var": "talked_to_adv_thief", "type": "dialogue", "context": "adv_thief", "value": "yes" } },
+      { "text": "Wanna get outta here?", "topic": "TALK_SUGGEST_FOLLOW" },
+      { "text": "Let's trade items.", "topic": "TALK_ADV_THIEF", "effect": "start_trade" },
+      { "text": "Can I do anything for you?", "topic": "TALK_MISSION_LIST", "condition": { "not": "has_assigned_mission" } },
+      { "text": "About the mission...", "topic": "TALK_MISSION_INQUIRE", "condition": "has_assigned_mission" },
+      { "text": "About one of those missions...", "topic": "TALK_MISSION_LIST_ASSIGNED", "condition": "has_many_assigned_missions" },
+      { "text": "Goodbye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_ADV_THIEF_INTRO",
+    "dynamic_line": "Talk fast, and keep your hands where I can see them.",
+    "responses": [
+      { "text": "Why don't you go somewhere else?", "topic": "TALK_ADV_THIEF_LEAVE" },
+      { "text": "Let's trade then.", "effect": "start_trade", "topic": "TALK_ADV_THIEF" },
+      { "text": "I'm sorry, I gotta go.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_ADV_THIEF_LEAVE",
+    "dynamic_line": "A thief goes where the shadows are deepest.  Currently, that is here.",
+    "responses": [
+      { "text": "Wanna get outta here?", "topic": "TALK_SUGGEST_FOLLOW" },
+      { "text": "What can you sell me?", "topic": "TALK_ADV_THIEF", "effect": "start_trade" },
+      { "text": "I'm sorry, I gotta go.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_ADV_ARCHER",
+    "dynamic_line": {
+      "u_has_var": "talked_to_adv_archer",
+      "type": "dialogue",
+      "context": "adv_archer",
+      "value": "yes",
+      "no": "Easy.  I have had an arrow on you since you lit that beacon.  Friend, I assume?",
+      "yes": "Good to see you.  I was starting to run low on targets."
+    },
+    "responses": [
+      { "text": "Hello <name_g>.", "topic": "TALK_ADV_ARCHER_INTRO", "effect": { "u_add_var": "talked_to_adv_archer", "type": "dialogue", "context": "adv_archer", "value": "yes" } },
+      { "text": "Wanna get outta here?", "topic": "TALK_SUGGEST_FOLLOW" },
+      { "text": "Let's trade items.", "topic": "TALK_ADV_ARCHER", "effect": "start_trade" },
+      { "text": "Can I do anything for you?", "topic": "TALK_MISSION_LIST", "condition": { "not": "has_assigned_mission" } },
+      { "text": "About the mission...", "topic": "TALK_MISSION_INQUIRE", "condition": "has_assigned_mission" },
+      { "text": "About one of those missions...", "topic": "TALK_MISSION_LIST_ASSIGNED", "condition": "has_many_assigned_missions" },
+      { "text": "Goodbye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_ADV_ARCHER_INTRO",
+    "dynamic_line": "Speak.  I do not like to keep my bowstring drawn.",
+    "responses": [
+      { "text": "Why don't you go somewhere else?", "topic": "TALK_ADV_ARCHER_LEAVE" },
+      { "text": "Let's trade then.", "effect": "start_trade", "topic": "TALK_ADV_ARCHER" },
+      { "text": "I'm sorry, I gotta go.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_ADV_ARCHER_LEAVE",
+    "dynamic_line": "A good perch beats a good fight every time.",
+    "responses": [
+      { "text": "Wanna get outta here?", "topic": "TALK_SUGGEST_FOLLOW" },
+      { "text": "What can you sell me?", "topic": "TALK_ADV_ARCHER", "effect": "start_trade" },
+      { "text": "I'm sorry, I gotta go.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_ADV_ELF",
+    "dynamic_line": {
+      "u_has_var": "talked_to_adv_elf",
+      "type": "dialogue",
+      "context": "adv_elf",
+      "value": "yes",
+      "no": "These woods are strange to me, but you carry no malice.  Speak, traveler.",
+      "yes": "The forest whispered that you would return."
+    },
+    "responses": [
+      { "text": "Hello <name_g>.", "topic": "TALK_ADV_ELF_INTRO", "effect": { "u_add_var": "talked_to_adv_elf", "type": "dialogue", "context": "adv_elf", "value": "yes" } },
+      { "text": "Wanna get outta here?", "topic": "TALK_SUGGEST_FOLLOW" },
+      { "text": "Let's trade items.", "topic": "TALK_ADV_ELF", "effect": "start_trade" },
+      { "text": "Can I do anything for you?", "topic": "TALK_MISSION_LIST", "condition": { "not": "has_assigned_mission" } },
+      { "text": "About the mission...", "topic": "TALK_MISSION_INQUIRE", "condition": "has_assigned_mission" },
+      { "text": "About one of those missions...", "topic": "TALK_MISSION_LIST_ASSIGNED", "condition": "has_many_assigned_missions" },
+      { "text": "Goodbye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_ADV_ELF_INTRO",
+    "dynamic_line": "Ask what you will.  I have walked a long road.",
+    "responses": [
+      { "text": "Why don't you go somewhere else?", "topic": "TALK_ADV_ELF_LEAVE" },
+      { "text": "Let's trade then.", "effect": "start_trade", "topic": "TALK_ADV_ELF" },
+      { "text": "I'm sorry, I gotta go.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_ADV_ELF_LEAVE",
+    "dynamic_line": "I follow the old trees.  They keep me company.",
+    "responses": [
+      { "text": "Wanna get outta here?", "topic": "TALK_SUGGEST_FOLLOW" },
+      { "text": "What can you sell me?", "topic": "TALK_ADV_ELF", "effect": "start_trade" },
+      { "text": "I'm sorry, I gotta go.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_ADV_DARKELF",
+    "dynamic_line": {
+      "u_has_var": "talked_to_adv_darkelf",
+      "type": "dialogue",
+      "context": "adv_darkelf",
+      "value": "yes",
+      "no": "You call into the dark and expect kindness?  Amusing.  Speak, surface-dweller.",
+      "yes": "You return.  Either you are brave, or you are foolish.  I have not decided which."
+    },
+    "responses": [
+      { "text": "Hello <name_g>.", "topic": "TALK_ADV_DARKELF_INTRO", "effect": { "u_add_var": "talked_to_adv_darkelf", "type": "dialogue", "context": "adv_darkelf", "value": "yes" } },
+      { "text": "Wanna get outta here?", "topic": "TALK_SUGGEST_FOLLOW" },
+      { "text": "Let's trade items.", "topic": "TALK_ADV_DARKELF", "effect": "start_trade" },
+      { "text": "Can I do anything for you?", "topic": "TALK_MISSION_LIST", "condition": { "not": "has_assigned_mission" } },
+      { "text": "About the mission...", "topic": "TALK_MISSION_INQUIRE", "condition": "has_assigned_mission" },
+      { "text": "About one of those missions...", "topic": "TALK_MISSION_LIST_ASSIGNED", "condition": "has_many_assigned_missions" },
+      { "text": "Goodbye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_ADV_DARKELF_INTRO",
+    "dynamic_line": "Make it worth my time.",
+    "responses": [
+      { "text": "Why don't you go somewhere else?", "topic": "TALK_ADV_DARKELF_LEAVE" },
+      { "text": "Let's trade then.", "effect": "start_trade", "topic": "TALK_ADV_DARKELF" },
+      { "text": "I'm sorry, I gotta go.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_ADV_DARKELF_LEAVE",
+    "dynamic_line": "The shadows suit me.  You would not understand.",
+    "responses": [
+      { "text": "Wanna get outta here?", "topic": "TALK_SUGGEST_FOLLOW" },
+      { "text": "What can you sell me?", "topic": "TALK_ADV_DARKELF", "effect": "start_trade" },
+      { "text": "I'm sorry, I gotta go.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_ADV_GUNBREAKER",
+    "dynamic_line": {
+      "u_has_var": "talked_to_adv_gunbreaker",
+      "type": "dialogue",
+      "context": "adv_gunbreaker",
+      "value": "yes",
+      "no": "Steady.  You lit a beacon, I came.  Now, who am I supposed to be shooting?",
+      "yes": "Good to see you.  My rounds are still warm."
+    },
+    "responses": [
+      { "text": "Hello <name_g>.", "topic": "TALK_ADV_GUNBREAKER_INTRO", "effect": { "u_add_var": "talked_to_adv_gunbreaker", "type": "dialogue", "context": "adv_gunbreaker", "value": "yes" } },
+      { "text": "Wanna get outta here?", "topic": "TALK_SUGGEST_FOLLOW" },
+      { "text": "Let's trade items.", "topic": "TALK_ADV_GUNBREAKER", "effect": "start_trade" },
+      { "text": "Can I do anything for you?", "topic": "TALK_MISSION_LIST", "condition": { "not": "has_assigned_mission" } },
+      { "text": "About the mission...", "topic": "TALK_MISSION_INQUIRE", "condition": "has_assigned_mission" },
+      { "text": "About one of those missions...", "topic": "TALK_MISSION_LIST_ASSIGNED", "condition": "has_many_assigned_missions" },
+      { "text": "Goodbye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_ADV_GUNBREAKER_INTRO",
+    "dynamic_line": "Speak.  I have a magazine to burn.",
+    "responses": [
+      { "text": "Why don't you go somewhere else?", "topic": "TALK_ADV_GUNBREAKER_LEAVE" },
+      { "text": "Let's trade then.", "effect": "start_trade", "topic": "TALK_ADV_GUNBREAKER" },
+      { "text": "I'm sorry, I gotta go.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_ADV_GUNBREAKER_LEAVE",
+    "dynamic_line": "A gunbreaker goes where the trouble is.  The trouble is everywhere.",
+    "responses": [
+      { "text": "Wanna get outta here?", "topic": "TALK_SUGGEST_FOLLOW" },
+      { "text": "What can you sell me?", "topic": "TALK_ADV_GUNBREAKER", "effect": "start_trade" },
+      { "text": "I'm sorry, I gotta go.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_JEDI",
+    "dynamic_line": {
+      "u_has_var": "talked_to_jedi",
+      "type": "dialogue",
+      "context": "jedi",
+      "value": "yes",
+      "no": "You called.  The Force led me here.  Peace, stranger.",
+      "yes": "The Force is with us again."
+    },
+    "responses": [
+      { "text": "Hello <name_g>.", "topic": "TALK_JEDI_INTRO", "effect": { "u_add_var": "talked_to_jedi", "type": "dialogue", "context": "jedi", "value": "yes" } },
+      { "text": "Wanna get outta here?", "topic": "TALK_SUGGEST_FOLLOW" },
+      { "text": "Let's trade items.", "topic": "TALK_JEDI", "effect": "start_trade" },
+      { "text": "Can I do anything for you?", "topic": "TALK_MISSION_LIST", "condition": { "not": "has_assigned_mission" } },
+      { "text": "About the mission...", "topic": "TALK_MISSION_INQUIRE", "condition": "has_assigned_mission" },
+      { "text": "About one of those missions...", "topic": "TALK_MISSION_LIST_ASSIGNED", "condition": "has_many_assigned_missions" },
+      { "text": "Goodbye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_JEDI_INTRO",
+    "dynamic_line": "I sense you have a question.  Ask.",
+    "responses": [
+      { "text": "Why don't you go somewhere else?", "topic": "TALK_JEDI_LEAVE" },
+      { "text": "Let's trade then.", "effect": "start_trade", "topic": "TALK_JEDI" },
+      { "text": "I'm sorry, I gotta go.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_JEDI_LEAVE",
+    "dynamic_line": "The Force guides me here, for now.",
+    "responses": [
+      { "text": "Wanna get outta here?", "topic": "TALK_SUGGEST_FOLLOW" },
+      { "text": "What can you sell me?", "topic": "TALK_JEDI", "effect": "start_trade" },
+      { "text": "I'm sorry, I gotta go.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_MANDO",
+    "dynamic_line": {
+      "u_has_var": "talked_to_mando",
+      "type": "dialogue",
+      "context": "mando",
+      "value": "yes",
+      "no": "You pinged a clan beacon.  Talk fast.",
+      "yes": "You again.  Still breathing, I see."
+    },
+    "responses": [
+      { "text": "Hello <name_g>.", "topic": "TALK_MANDO_INTRO", "effect": { "u_add_var": "talked_to_mando", "type": "dialogue", "context": "mando", "value": "yes" } },
+      { "text": "Wanna get outta here?", "topic": "TALK_SUGGEST_FOLLOW" },
+      { "text": "Let's trade items.", "topic": "TALK_MANDO", "effect": "start_trade" },
+      { "text": "Can I do anything for you?", "topic": "TALK_MISSION_LIST", "condition": { "not": "has_assigned_mission" } },
+      { "text": "About the mission...", "topic": "TALK_MISSION_INQUIRE", "condition": "has_assigned_mission" },
+      { "text": "About one of those missions...", "topic": "TALK_MISSION_LIST_ASSIGNED", "condition": "has_many_assigned_missions" },
+      { "text": "Goodbye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_MANDO_INTRO",
+    "dynamic_line": "State your business.",
+    "responses": [
+      { "text": "Why don't you go somewhere else?", "topic": "TALK_MANDO_LEAVE" },
+      { "text": "Let's trade then.", "effect": "start_trade", "topic": "TALK_MANDO" },
+      { "text": "I'm sorry, I gotta go.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_MANDO_LEAVE",
+    "dynamic_line": "A hunter goes where the bounty is.",
+    "responses": [
+      { "text": "Wanna get outta here?", "topic": "TALK_SUGGEST_FOLLOW" },
+      { "text": "What can you sell me?", "topic": "TALK_MANDO", "effect": "start_trade" },
+      { "text": "I'm sorry, I gotta go.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_MANDO_OUTCAST",
+    "dynamic_line": {
+      "u_has_var": "talked_to_mando_outcast",
+      "type": "dialogue",
+      "context": "mando_outcast",
+      "value": "yes",
+      "no": "Do not get too close.  I have nothing left to lose.",
+      "yes": "Still here?  Everyone else left."
+    },
+    "responses": [
+      { "text": "Hello <name_g>.", "topic": "TALK_MANDO_OUTCAST_INTRO", "effect": { "u_add_var": "talked_to_mando_outcast", "type": "dialogue", "context": "mando_outcast", "value": "yes" } },
+      { "text": "Wanna get outta here?", "topic": "TALK_SUGGEST_FOLLOW" },
+      { "text": "Let's trade items.", "topic": "TALK_MANDO_OUTCAST", "effect": "start_trade" },
+      { "text": "Can I do anything for you?", "topic": "TALK_MISSION_LIST", "condition": { "not": "has_assigned_mission" } },
+      { "text": "About the mission...", "topic": "TALK_MISSION_INQUIRE", "condition": "has_assigned_mission" },
+      { "text": "About one of those missions...", "topic": "TALK_MISSION_LIST_ASSIGNED", "condition": "has_many_assigned_missions" },
+      { "text": "Goodbye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_MANDO_OUTCAST_INTRO",
+    "dynamic_line": "What do you want?",
+    "responses": [
+      { "text": "Why don't you go somewhere else?", "topic": "TALK_MANDO_OUTCAST_LEAVE" },
+      { "text": "Let's trade then.", "effect": "start_trade", "topic": "TALK_MANDO_OUTCAST" },
+      { "text": "I'm sorry, I gotta go.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_MANDO_OUTCAST_LEAVE",
+    "dynamic_line": "Alone is safer.  Fewer people to fail.",
+    "responses": [
+      { "text": "Wanna get outta here?", "topic": "TALK_SUGGEST_FOLLOW" },
+      { "text": "What can you sell me?", "topic": "TALK_MANDO_OUTCAST", "effect": "start_trade" },
+      { "text": "I'm sorry, I gotta go.", "topic": "TALK_DONE" }
+    ]
+  }
+]

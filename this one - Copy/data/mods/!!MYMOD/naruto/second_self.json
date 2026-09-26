@@ -1,0 +1,48 @@
+[
+  {
+    "id": "second_self_aura",
+    "type": "TOOL_ARMOR",
+    "category": "clothing",
+    "symbol": "[",
+    "color": "dark_gray",
+    "looks_like": "diamond_ring",
+    "name": { "str": "Second Self" },
+    "description": "A plain band of silver-rune steel, cold to the touch. Worn, it splits the wearer's essence in two: an afterimage mirrors every strike you land, while a spirit guardian can be called forth to fight at your side. Doubles Strength, Dexterity, Intelligence, Perception, and mana all at once.",
+    "weight": "60 g",
+    "volume": "50 ml",
+    "price": "0 cent",
+    "material": [ "rune", "silver" ],
+    "flags": [ "NO_REPAIR", "NO_SALVAGE" ],
+    "max_charges": 1,
+    "initial_charges": 1,
+    "charges_per_use": 1,
+    "use_action": {
+      "type": "cast_spell",
+      "spell_id": "summon_spirit_guardian",
+      "no_fail": true,
+      "level": 1,
+      "need_worn": true
+    },
+    "relic_data": {
+      "recharge_scheme": [
+        { "type": "time", "req": "none", "interval": "1 h", "rate": 1 }
+      ],
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            { "value": "STRENGTH", "multiply": 1.0 },
+            { "value": "DEXTERITY", "multiply": 1.0 },
+            { "value": "INTELLIGENCE", "multiply": 1.0 },
+            { "value": "PERCEPTION", "multiply": 1.0 },
+            { "value": "MANA_CAP", "multiply": 1.0 }
+          ],
+          "hit_you_effect": [
+            { "id": "doublehit_spell" }
+          ]
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,11 @@
+[
+  { "Distraction Type": "Alert", "Bool": false },
+  { "Distraction Type": "Noise", "Bool": true },
+  { "Distraction Type": "Pain", "Bool": true },
+  { "Distraction Type": "Attacked", "Bool": false },
+  { "Distraction Type": "Hostile Far", "Bool": true },
+  { "Distraction Type": "Hostile Near", "Bool": true },
+  { "Distraction Type": "Talk", "Bool": false },
+  { "Distraction Type": "Asthma", "Bool": false },
+  { "Distraction Type": "Weather Change", "Bool": false }
+]

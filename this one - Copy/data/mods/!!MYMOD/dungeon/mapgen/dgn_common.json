@@ -1,0 +1,224 @@
+[
+  {
+    "//": "Placeholder tile, never placed; exists so the 'dungeon' neighbour match string is a valid overmap terrain.",
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "dungeon" ],
+    "weight": 100,
+    "object": {
+      "fill_ter": "t_rock_floor",
+      "rows": [
+        "........................",
+        "........................",
+        "........................",
+        "........................",
+        "........................",
+        "........................",
+        "........................",
+        "........................",
+        "........................",
+        "........................",
+        "........................",
+        "........................",
+        "........................",
+        "........................",
+        "........................",
+        "........................",
+        "........................",
+        "........................",
+        "........................",
+        "........................",
+        "........................",
+        "........................",
+        "........................",
+        "........................"
+      ],
+      "palettes": [ "dungeon_palette" ]
+    }
+  },
+  {
+    "//": "Creates border walls for a dungeon tile based on its neighbouring tiles.  'dungeon' matches every dungeon overmap terrain id.",
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "dgn_border_walls",
+    "object": {
+      "mapgensize": [ 24, 24 ],
+      "place_nested": [
+        { "else_chunks": [ "dgn_sub_t_concrete_wall" ], "x": 11, "y": 23, "neighbors": { "south": [ "dungeon" ] } },
+        { "else_chunks": [ "dgn_sub_t_concrete_wall" ], "x": 12, "y": 23, "neighbors": { "south": [ "dungeon" ] } },
+        { "else_chunks": [ "dgn_sub_t_concrete_wall" ], "x": 23, "y": 11, "neighbors": { "east": [ "dungeon" ] } },
+        { "else_chunks": [ "dgn_sub_t_concrete_wall" ], "x": 23, "y": 12, "neighbors": { "east": [ "dungeon" ] } },
+        { "else_chunks": [ "dgn_north_wall" ], "x": 0, "y": 0, "neighbors": { "north": [ "dungeon" ] } },
+        { "else_chunks": [ "dgn_west_wall" ], "x": 0, "y": 0, "neighbors": { "west": [ "dungeon" ] } }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "dgn_north_wall",
+    "object": { "mapgensize": [ 24, 24 ], "set": [ { "line": "terrain", "id": "t_rock_wall", "x": 0, "x2": 23, "y": 0, "y2": 0 } ] }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "dgn_west_wall",
+    "object": { "mapgensize": [ 24, 24 ], "set": [ { "line": "terrain", "id": "t_rock_wall", "x": 0, "x2": 0, "y": 0, "y2": 23 } ] }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "dgn_sub_t_concrete_wall",
+    "object": { "rows": [ "-" ], "palettes": [ "dungeon_palette" ], "mapgensize": [ 1, 1 ] }
+  },
+  {
+    "//": "Stair landing that leads DOWN.  Dropped over the middle room of a hall layout so the stairs always sit at (11,11).",
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "dgn_stair_chamber_down",
+    "object": {
+      "mapgensize": [ 7, 7 ],
+      "rows": [
+        "1.....1",
+        ".,,,,,.",
+        ".,,,,,.",
+        ".,,>,,.",
+        ".,,,,,.",
+        ".,,,,,.",
+        "1.....1"
+      ],
+      "palettes": [ "dungeon_palette" ],
+      "furniture": { "1": "f_statue" },
+      "terrain": { ">": "t_stairs_down", "1": "t_rock_floor" },
+      "place_monsters": [ { "monster": "GROUP_DUNGEON_STAIRS", "x": [ 0, 6 ], "y": [ 0, 6 ], "density": 0.12 } ],
+      "place_loot": [ { "group": "dgn_loot_stairs", "x": [ 1, 5 ], "y": [ 1, 5 ], "chance": 60, "repeat": 2 } ]
+    }
+  },
+  {
+    "//": "Stair landing that leads UP, sits directly under the DOWN landing.",
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "dgn_stair_chamber_up",
+    "object": {
+      "mapgensize": [ 7, 7 ],
+      "rows": [
+        "1.....1",
+        ".,,,,,.",
+        ".,,,,,.",
+        ".,,<,,.",
+        ".,,,,,.",
+        ".,,,,,.",
+        "1.....1"
+      ],
+      "palettes": [ "dungeon_palette" ],
+      "furniture": { "1": "f_statue" },
+      "terrain": { "<": "t_stairs_up", "1": "t_rock_floor" },
+      "place_monsters": [ { "monster": "GROUP_DUNGEON_STAIRS", "x": [ 0, 6 ], "y": [ 0, 6 ], "density": 0.12 } ],
+      "place_loot": [ { "group": "dgn_loot_stairs", "x": [ 1, 5 ], "y": [ 1, 5 ], "chance": 60, "repeat": 2 } ]
+    }
+  },
+  {
+    "//": "Tile with a stair landing going down (base layout: the classic 3x3 room grid).",
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "dungeon_stairs_1", "dungeon_stairs_2", "dungeon_stairs_3", "dungeon_stairs_4" ],
+    "weight": 100,
+    "object": {
+      "fill_ter": "t_rock_floor",
+      "rows": [
+        "       |       |       |",
+        "       |       |       |",
+        "       |       |       |",
+        "       +       +       |",
+        "       |       |       |",
+        "       |       |       |",
+        "       |       |       |",
+        "---?---|---+---|---?---|",
+        "       |       |       |",
+        "       |       |       |",
+        "       |       |       |",
+        "       ?       +       M",
+        "       |       |       M",
+        "       |       |       |",
+        "       |       |       |",
+        "---+---|---+---|---?---|",
+        "       |       |       |",
+        "       |       |       |",
+        "       |       |       |",
+        "       +       +       |",
+        "       |       |       |",
+        "       |       |       |",
+        "       |       |       |",
+        "-----------MM----------|"
+      ],
+      "palettes": [ "dungeon_palette" ],
+      "terrain": { "?": [ "t_rock_wall", "t_door_c", "t_door_bar_c" ] },
+      "place_nested": [
+        { "chunks": [ "dgn_spawn_7x7_crossdoors" ], "x": 0, "y": 0 },
+        { "chunks": [ "dgn_spawn_7x7" ], "x": 0, "y": 8 },
+        { "chunks": [ "dgn_spawn_7x7_crossdoors" ], "x": 0, "y": 16 },
+        { "chunks": [ "dgn_spawn_7x7" ], "x": 8, "y": 0 },
+        { "chunks": [ "dgn_spawn_7x7" ], "x": 8, "y": 16 },
+        { "chunks": [ "dgn_spawn_7x7_wall_sw" ], "x": 15, "y": 0 },
+        { "chunks": [ "dgn_spawn_7x7" ], "x": 16, "y": 8 },
+        { "chunks": [ "dgn_spawn_7x7_wall_nw" ], "x": 15, "y": 15 },
+        { "chunks": [ "dgn_sub_t_concrete_wall" ], "x": 15, "y": 7 },
+        { "chunks": [ "dgn_sub_t_concrete_wall" ], "x": 15, "y": 15 },
+        { "chunks": [ "dgn_stair_chamber_down" ], "x": 8, "y": 8 },
+        { "chunks": [ "dgn_border_walls" ], "x": 0, "y": 0 }
+      ]
+    }
+  },
+  {
+    "//": "Tile below a stair landing, with the matching landing going up.",
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "dungeon_core_1", "dungeon_core_2", "dungeon_core_3", "dungeon_core_4" ],
+    "weight": 100,
+    "object": {
+      "fill_ter": "t_rock_floor",
+      "rows": [
+        "       |       |       |",
+        "       |       |       |",
+        "       |       |       |",
+        "       +       +       |",
+        "       |       |       |",
+        "       |       |       |",
+        "       |       |       |",
+        "---?---|---+---|---?---|",
+        "       |       |       |",
+        "       |       |       |",
+        "       |       |       |",
+        "       ?       +       M",
+        "       |       |       M",
+        "       |       |       |",
+        "       |       |       |",
+        "---+---|---+---|---?---|",
+        "       |       |       |",
+        "       |       |       |",
+        "       |       |       |",
+        "       +       +       |",
+        "       |       |       |",
+        "       |       |       |",
+        "       |       |       |",
+        "-----------MM----------|"
+      ],
+      "palettes": [ "dungeon_palette" ],
+      "terrain": { "?": [ "t_rock_wall", "t_door_c", "t_door_bar_c" ] },
+      "place_nested": [
+        { "chunks": [ "dgn_spawn_7x7_crossdoors" ], "x": 0, "y": 0 },
+        { "chunks": [ "dgn_spawn_7x7" ], "x": 0, "y": 8 },
+        { "chunks": [ "dgn_spawn_7x7_crossdoors" ], "x": 0, "y": 16 },
+        { "chunks": [ "dgn_spawn_7x7" ], "x": 8, "y": 0 },
+        { "chunks": [ "dgn_spawn_7x7" ], "x": 8, "y": 16 },
+        { "chunks": [ "dgn_spawn_7x7_wall_sw" ], "x": 15, "y": 0 },
+        { "chunks": [ "dgn_spawn_7x7" ], "x": 16, "y": 8 },
+        { "chunks": [ "dgn_spawn_7x7_wall_nw" ], "x": 15, "y": 15 },
+        { "chunks": [ "dgn_sub_t_concrete_wall" ], "x": 15, "y": 7 },
+        { "chunks": [ "dgn_sub_t_concrete_wall" ], "x": 15, "y": 15 },
+        { "chunks": [ "dgn_stair_chamber_up" ], "x": 8, "y": 8 },
+        { "chunks": [ "dgn_border_walls" ], "x": 0, "y": 0 }
+      ]
+    }
+  }
+]

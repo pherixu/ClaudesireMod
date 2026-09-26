@@ -1,0 +1,31 @@
+[
+  {
+    "type": "COMESTIBLE",
+    "id": "kuchiyose_scroll_shinobi",
+    "name": { "str": "Summoning Scroll: Shinobi", "str_pl": "Summoning Scrolls: Shinobi" },
+    "description": "A scroll marked with a blood seal.  Unfurl it and slam your palm down to perform the summoning jutsu, calling forth a shinobi ally in a burst of smoke.",
+    "weight": "50 g",
+    "color": "yellow",
+    "spoils_in": "365 days",
+    "comestible_type": "FOOD",
+    "symbol": "?",
+    "quench": 0,
+    "healthy": -1,
+    "price_postapoc": "20 USD",
+    "use_action": {
+      "type": "place_npc",
+      "npc_class_id": "shinobi_main",
+      "summon_msg": "You slam your palm to the ground - in a burst of smoke, a shinobi appears at your side!",
+      "place_randomly": true,
+      "moves": 100
+    },
+    "calories": 0,
+    "price": "0 USD",
+    "material": [ "paper" ],
+    "volume": "50 ml",
+    "parasites": 0,
+    "stack_size": 1,
+    "fun": 0,
+    "flags": [ "TRADER_AVOID", "CARNIVORE_OK" ]
+  }
+]

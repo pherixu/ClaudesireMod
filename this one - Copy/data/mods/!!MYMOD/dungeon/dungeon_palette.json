@@ -1,0 +1,113 @@
+[
+  {
+    "//": "Same symbols as vanilla lab_palette so every converted layout keeps its exact shape; only the materials changed.",
+    "type": "palette",
+    "id": "dungeon_palette",
+    "furniture": {
+      "b": "f_straw_bed",
+      "l": "f_foot_locker",
+      "X": [ "f_chest", "f_crate_c" ],
+      "r": "f_rack_wood",
+      "d": "f_desk",
+      "s": "f_wardrobe",
+      "h": "f_chair",
+      "ḟ": "f_wood_keg",
+      "t": "f_table",
+      "i": "f_bookcase",
+      "c": "f_counter",
+      "S": "f_glass_cabinet",
+      "T": "f_stool",
+      "#": "f_null",
+      "]": "f_bookcase",
+      "^": "f_rubble_rock"
+    },
+    "terrain": {
+      "%": "t_gates_control_metal",
+      "6": "t_dgn_orb",
+      "x": "t_dgn_orb_broken",
+      "g": "t_window_bars",
+      "G": "t_door_bar_c",
+      ".": "t_rock_floor",
+      ",": "t_carpet_purple",
+      "-": "t_rock_wall",
+      "|": "t_rock_wall",
+      "+": "t_door_c",
+      "W": "t_door_c",
+      "M": "t_door_metal_c",
+      "L": "t_door_metal_locked",
+      "#": "t_rock",
+      "C": "t_dgn_arcane_machinery",
+      "Y": "t_dgn_floor_lit"
+    }
+  },
+  {
+    "type": "palette",
+    "id": "dungeon_loot_research",
+    "//": "Alchemy labs, scriptoria, workshops.",
+    "mapping": {
+      "c": {
+        "items": [
+          { "item": "dgn_alchemy", "chance": 30 },
+          { "item": "dgn_potions", "chance": 20 },
+          { "item": "dgn_relic_vault", "chance": 2 }
+        ]
+      },
+      "S": { "items": [ { "item": "dgn_potions", "chance": 40 }, { "item": "dgn_alchemy", "chance": 15 } ] },
+      "X": {
+        "items": [
+          { "item": "dgn_alchemy", "chance": 25 },
+          { "item": "dgn_potions", "chance": 15 },
+          { "item": "dgn_treasure", "chance": 15 },
+          { "item": "dgn_scribe", "chance": 10 },
+          { "item": "dgn_relic_vault", "chance": 4 }
+        ]
+      },
+      "d": { "items": [ { "item": "dgn_scribe", "chance": 40 }, { "item": "dgn_alchemy", "chance": 10 } ] },
+      "h": { "items": [ { "item": "dgn_wardrobe", "chance": 5 } ] },
+      "]": { "items": [ { "item": "dgn_library", "chance": 40 } ] },
+      "l": {
+        "items": [
+          { "item": "dgn_scribe", "chance": 15 },
+          { "item": "dgn_alchemy", "chance": 15 },
+          { "item": "dgn_potions", "chance": 10 },
+          { "item": "dgn_wardrobe", "chance": 15 },
+          { "item": "dgn_treasure", "chance": 10 }
+        ]
+      }
+    }
+  },
+  {
+    "//": "Barracks, quarters, kitchens and living space.",
+    "type": "palette",
+    "id": "dungeon_loot_home_office",
+    "mapping": {
+      "c": { "items": [ { "item": "dgn_scribe", "chance": 30 }, { "item": "dgn_provisions", "chance": 20 }, { "item": "dgn_alchemy", "chance": 5 } ] },
+      "d": { "items": [ { "item": "dgn_scribe", "chance": 40 }, { "item": "dgn_treasure", "chance": 15 }, { "item": "dgn_potions", "chance": 10 } ] },
+      "f": { "items": [ { "item": "dgn_provisions", "chance": 60, "repeat": 2 } ] },
+      "ḟ": { "items": [ { "item": "dgn_provisions", "chance": 60, "repeat": 2 } ] },
+      "S": { "items": [ { "item": "dgn_potions", "chance": 40 }, { "item": "dgn_alchemy", "chance": 10 } ] },
+      "X": {
+        "items": [
+          { "item": "dgn_alchemy", "chance": 20 },
+          { "item": "dgn_treasure", "chance": 20 },
+          { "item": "dgn_potions", "chance": 15 },
+          { "item": "dgn_armory", "chance": 8 },
+          { "item": "dgn_relic_vault", "chance": 4 }
+        ]
+      },
+      "h": { "items": [ { "item": "dgn_wardrobe", "chance": 3 } ] },
+      "s": { "items": [ { "item": "dgn_wardrobe", "chance": 60 }, { "item": "dgn_treasure", "chance": 10 } ] },
+      "b": { "items": [ { "item": "dgn_bedroom", "chance": 60 }, { "item": "dgn_treasure", "chance": 5 } ] },
+      "]": { "items": [ { "item": "dgn_library", "chance": 60, "repeat": 3 } ] },
+      "l": {
+        "items": [
+          { "item": "dgn_scribe", "chance": 15 },
+          { "item": "dgn_treasure", "chance": 15 },
+          { "item": "dgn_wardrobe", "chance": 25 },
+          { "item": "dgn_armory", "chance": 10 },
+          { "item": "dgn_potions", "chance": 10 }
+        ]
+      }
+    }
+  }
+]

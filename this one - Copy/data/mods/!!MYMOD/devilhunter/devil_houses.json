@@ -1,0 +1,1364 @@
+[
+  {
+    "type": "item_group",
+    "id": "devilhouse_magic_trinket",
+    "subtype": "distribution",
+    "//": "A stray magical trinket tucked in among a devil-infested house's normal valuables",
+    "entries": [
+      {
+        "item": "sol_ring",
+        "prob": 35
+      },
+      {
+        "item": "arcane_signet",
+        "prob": 15
+      },
+      {
+        "item": "black_lotus",
+        "prob": 5
+      },
+      {
+        "group": "iounstones",
+        "prob": 20
+      },
+      {
+        "group": "rings_and_things",
+        "prob": 15
+      },
+      {
+        "group": "gemstones",
+        "prob": 10
+      }
+    ]
+  },
+  {
+    "method": "json",
+    "om_terrain": "devilhouse_1",
+    "type": "mapgen",
+    "weight": 100,
+    "object": {
+      "fill_ter": "t_floor",
+      "rows": [
+        ".%.``````p..............",
+        ".%.````````````..[......",
+        ".%.``````%!!!%`.......[.",
+        ".%#~~~~~~##o##*##oo##...",
+        "..#~~~~~~#IIT| |DbyE#...",
+        ".%#~~~~~~#h  | +    o.[.",
+        ".%#~~~~~~#s  + | @@ o...",
+        ".^#~~~~~~#@@d| |I@@d#...",
+        "..#~~~~~~#|||| |||||#..[",
+        "..#~A~~~~#xxxy |66 F#$;$",
+        "..#NN~qq~# l   |Y  1o..$",
+        "..######*#HHH      O#..$",
+        "$;#t--+  |    R|   5o[.$",
+        "$.#9S8|L + hfhR|7432#..$",
+        "$.##o###*##ooo###oo##..$",
+        "$.....`````!!!%%%!!^...$",
+        "$.....`````............$",
+        "$.....................[$",
+        "$......................$",
+        "$......................$",
+        "$......................$",
+        "$......................$",
+        "$......................$",
+        "$$$$$$$$$$$$$$$$$$$$$$$$"
+      ],
+      "palettes": [
+        "standard_domestic_palette"
+      ],
+      "terrain": {
+        "%": [
+          "t_region_shrub",
+          "t_region_shrub_fruit",
+          "t_region_shrub_decorative"
+        ],
+        "[": [
+          [
+            "t_region_tree_fruit",
+            2
+          ],
+          [
+            "t_region_tree_nut",
+            2
+          ],
+          "t_region_tree_shade"
+        ],
+        "!": "t_region_groundcover_urban",
+        "`": "t_concrete",
+        "$": "t_privacy_fence",
+        ";": "t_privacy_fencegate_c",
+        "#": "t_wall_wood",
+        "-": "t_linoleum_white",
+        "Q": "t_linoleum_white",
+        "8": "t_linoleum_white",
+        "B": "t_linoleum_white",
+        "S": "t_linoleum_white",
+        "t": "t_linoleum_white",
+        ")": "t_wall_glass",
+        "]": "t_door_glass_c",
+        "N": "t_thconc_floor",
+        "q": "t_thconc_floor",
+        "A": "t_thconc_floor",
+        "~": "t_thconc_floor"
+      },
+      "furniture": {
+        "!": "f_region_flower"
+      },
+      "place_loot": [
+        {
+          "item": "television",
+          "x": 11,
+          "y": 9
+        },
+        {
+          "item": "stereo",
+          "x": 10,
+          "y": 9
+        }
+      ],
+      "place_nested": [
+        {
+          "chunks": [
+            [
+              "roof_6x6_garden_4",
+              15
+            ],
+            [
+              "roof_6x6_garden_1",
+              15
+            ],
+            [
+              "greenhouse_6x6_herbal",
+              15
+            ],
+            [
+              "greenhouse_6x6_vegetable",
+              15
+            ],
+            [
+              "pond_6x6",
+              15
+            ],
+            [
+              "shed_6x6_junk",
+              15
+            ],
+            [
+              "shed_6x6_woodworker",
+              15
+            ],
+            [
+              "playset_4x4_2",
+              15
+            ],
+            [
+              "firepit_5x5_1",
+              15
+            ],
+            [
+              "firepit_5x5_2",
+              15
+            ],
+            [
+              "playset_4x4_1",
+              15
+            ]
+          ],
+          "x": [
+            4,
+            13
+          ],
+          "y": 17
+        }
+      ],
+      "place_items": [
+        {
+          "item": "devil_milsurplus_armor",
+          "x": 16,
+          "y": 4,
+          "chance": 35
+        },
+        {
+          "item": "devil_milsurplus_armor",
+          "x": 12,
+          "y": 7,
+          "chance": 25
+        },
+        {
+          "item": "devil_milsurplus_armor",
+          "x": 19,
+          "y": 7,
+          "chance": 25
+        },
+        {
+          "item": "devilhouse_magic_trinket",
+          "x": 11,
+          "y": 10,
+          "chance": 35
+        },
+        {
+          "item": "armor_common",
+          "x": 16,
+          "y": 4,
+          "chance": 15
+        }
+      ],
+      "place_monsters": [
+        {
+          "monster": "GROUP_TOWER_RUNE",
+          "x": [
+            1,
+            22
+          ],
+          "y": [
+            1,
+            22
+          ],
+          "density": 0.3
+        }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": "devilhouse_1_roof",
+    "object": {
+      "fill_ter": "t_shingle_flat_roof",
+      "rows": [
+        "                        ",
+        "                        ",
+        "                        ",
+        "  -------------------   ",
+        "  -.................-   ",
+        "  -.................-   ",
+        "  -.............N...-   ",
+        "  5.................-   ",
+        "  -.................-   ",
+        "  -.................-   ",
+        "  -........&........-   ",
+        "  -.................-   ",
+        "  -......=..........-   ",
+        "  -.................-   ",
+        "  -----------------5-   ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        "
+      ],
+      "palettes": [
+        "roof_palette"
+      ],
+      "terrain": {
+        ".": "t_shingle_flat_roof"
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "om_terrain": "devilhouse_2",
+    "method": "json",
+    "object": {
+      "palettes": [
+        "standard_domestic_palette",
+        "parameterized_linoleum_color_bathroom",
+        "standard_domestic_landscaping_palette"
+      ],
+      "fill_ter": "t_floor",
+      "rows": [
+        "...---..................",
+        "...---.......#####oo##..",
+        "...---.p)))))#ZW|d  \u0278#..",
+        "...---.##oo###\u00a8\u00a8|d  @#..",
+        "...---%#@@ b|B\u00a8t|   @o..",
+        "...---%o@@ D|B\u00a8S|D  \u00a4#..",
+        "...---%#\u00a4  d|8\u00a88|||+|#..",
+        "...---%#   d||+||y  T#..",
+        "...---%#|+|||y    // o..",
+        "...---%o\u018f         //ho..",
+        "...---##||||||||   rr#..",
+        "..#o*o#ffh|xxx     ||#..",
+        "..#\u018f L|ff |/// l   +U#..",
+        "..#  &|h  |/// E   +q#..",
+        "..o      4|HHH   |+||#^.",
+        "..oy     7|sssT  |  y#..",
+        "..#F JJA         |  \u018f#..",
+        "..#J         yRRR|  \u018fo..",
+        "..#5JO126  RR#####o\u00b6##..",
+        "..###oo##oo###$$$`````..",
+        ".............-````````..",
+        "..,,.........-``\u20b8`K`\u20b8`..",
+        ".,[,.........-````\u20b8```..",
+        ".,......................"
+      ],
+      "terrain": {
+        "#": "t_adobe_brick_wall",
+        "|": "t_wall",
+        "~": "t_door_glass_c",
+        "`": "t_floor_noroof",
+        "\u20b8": "t_floor_noroof",
+        "$": "t_floor_noroof",
+        "K": "t_floor_noroof",
+        "W": {
+          "param": "linoleum_color_bathroom",
+          "fallback": "t_linoleum_white"
+        },
+        "Z": {
+          "param": "linoleum_color_bathroom",
+          "fallback": "t_linoleum_white"
+        },
+        ")": "t_shrub_lilac",
+        ",": "t_dirt",
+        "/": "t_carpet_yellow"
+      },
+      "furniture": {
+        "$": "f_rack",
+        "&": "f_rack"
+      },
+      "items": {
+        "&": {
+          "item": "clothing_outdoor_shoes",
+          "chance": 40,
+          "repeat": [
+            1,
+            2
+          ]
+        },
+        "$": [
+          {
+            "item": "sports",
+            "chance": 30
+          },
+          {
+            "item": "camping",
+            "chance": 30
+          }
+        ]
+      },
+      "place_loot": [
+        {
+          "item": "television",
+          "x": 12,
+          "y": 11
+        }
+      ],
+      "place_nested": [
+        {
+          "chunks": [
+            "NC_res_frontlawn_3X3"
+          ],
+          "x": 0,
+          "y": 1
+        },
+        {
+          "chunks": [
+            "NC_res_backyard_3X3"
+          ],
+          "x": 8,
+          "y": 20
+        }
+      ],
+      "place_items": [
+        {
+          "item": "devil_milsurplus_armor",
+          "x": 11,
+          "y": 5,
+          "chance": 35
+        },
+        {
+          "item": "devil_milsurplus_armor",
+          "x": 17,
+          "y": 5,
+          "chance": 25
+        },
+        {
+          "item": "devil_milsurplus_armor",
+          "x": 17,
+          "y": 2,
+          "chance": 25
+        },
+        {
+          "item": "devilhouse_magic_trinket",
+          "x": 15,
+          "y": 12,
+          "chance": 35
+        },
+        {
+          "item": "weapons_common",
+          "x": 11,
+          "y": 5,
+          "chance": 15
+        }
+      ],
+      "place_monsters": [
+        {
+          "monster": "GROUP_TOWER_CASTER",
+          "x": [
+            1,
+            22
+          ],
+          "y": [
+            1,
+            22
+          ],
+          "density": 0.3
+        }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "om_terrain": "devilhouse_2_roof",
+    "method": "json",
+    "object": {
+      "palettes": [
+        "roof_palette"
+      ],
+      "fill_ter": "t_shingle_flat_roof",
+      "rows": [
+        ",,,,,,,,,,,,,,,,,,,,,,,,",
+        ",,,,,,,,,,,,,---------,,",
+        ",,,,,,,,,,,,,-.......-,,",
+        ",,,,,,,-------.......-,,",
+        ",,,,,,,-.............-,,",
+        ",,,,,,,-.............-,,",
+        ",,,,,,,-.............-,,",
+        ",,,,,,,-.............-,,",
+        ",,,,,,,-.............-,,",
+        ",,,,,,,-.............-,,",
+        ",,,,,,--....=........-,,",
+        ",,-----..............-,,",
+        ",,-..................-,,",
+        ",,-..................-,,",
+        ",,-...............X..5,,",
+        ",,-...N..............-,,",
+        ",,-..................-,,",
+        ",,-..................-,,",
+        ",,-..........---------,,",
+        ",,------------,,,,,,,,,,",
+        ",,,,,,,,,,,,,,,,,,,,,,,,",
+        ",,,,,,,,,,,,,,,,,,,,,,,,",
+        ",,,,,,,,,,,,,,,,,,,,,,,,",
+        ",,,,,,,,,,,,,,,,,,,,,,,,"
+      ],
+      "terrain": {
+        ".": "t_shingle_flat_roof",
+        ",": "t_open_air"
+      },
+      "place_nested": [
+        {
+          "chunks": [
+            "NC_res_roof_solar_4X4"
+          ],
+          "x": 14,
+          "y": 6
+        },
+        {
+          "chunks": [
+            "NC_res_roof_chunk_3X3"
+          ],
+          "x": 8,
+          "y": 5
+        }
+      ]
+    }
+  },
+  {
+    "method": "json",
+    "om_terrain": "devilhouse_3",
+    "type": "mapgen",
+    "weight": 200,
+    "object": {
+      "fill_ter": "t_floor",
+      "rows": [
+        "....%...```..%%.p..`....",
+        ".######o#*#o######.`....",
+        ".#766|R     L|t\u00a89#.`....",
+        ".oO Y|R      +\u00a8\u00a8\u00a8#^`....",
+        ".#1         y|8\u00a8\u00a8#%`....",
+        ".#5      h  s|S\u00a8Q#%`....",
+        ".#F234  rr   ||||#%`%...",
+        ".#|JJJ  ||    R|U#$;$$$.",
+        ".# AAA  E|RRT   >#%`..$.",
+        ".o      s|||||+||#.`..$.",
+        ".#y   l H|s@@s  E#!`..$.",
+        ".#x   l H| @@    o!`..$.",
+        ".#x   l H|D    dy#!`..$%",
+        ".###)]#####o######.`..$%",
+        ".$^.````````````````.%$.",
+        ".$.....`..............$.",
+        ".$..X..`..............$.",
+        ".$.....`..............$.",
+        ".$...##*#.............$.",
+        ".$..%#~~#%......%.[...$.",
+        ".$%[.#qq#%%.....[....%$.",
+        ".$%%.####%%%..%..%%.%%$.",
+        ".$$$$$$$$$$$$$$$$$$$$$$.",
+        "........................"
+      ],
+      "palettes": [
+        "standard_domestic_palette",
+        "parameterized_linoleum_color_bathroom",
+        "standard_domestic_landscaping_palette"
+      ],
+      "terrain": {
+        "#": "t_rock_wall",
+        "$": "t_privacy_fence",
+        ";": "t_privacy_fencegate_c",
+        "~": "t_thconc_floor",
+        "N": "t_thconc_floor",
+        "q": "t_thconc_floor",
+        ")": "t_wall_glass",
+        "]": "t_door_glass_c"
+      },
+      "furniture": {
+        "?": "f_beaded_door",
+        "(": "f_chair"
+      },
+      "place_item": [
+        {
+          "item": "television",
+          "repeat": 1,
+          "x": 2,
+          "y": 12
+        },
+        {
+          "item": "lawnmower",
+          "repeat": 1,
+          "x": 7,
+          "y": 20
+        }
+      ],
+      "place_items": [
+        {
+          "chance": 20,
+          "item": "tools_earthworking",
+          "x": 18,
+          "y": 9
+        },
+        {
+          "chance": 20,
+          "item": "tools_earthworking",
+          "x": 21,
+          "y": 8
+        },
+        {
+          "chance": 45,
+          "item": "tool_common_stack",
+          "x": 6,
+          "y": 20
+        },
+        {
+          "chance": 15,
+          "item": "alcohol",
+          "x": 8,
+          "y": [
+            8,
+            9
+          ]
+        },
+        {
+          "item": "devil_milsurplus_armor",
+          "x": 10,
+          "y": 12,
+          "chance": 35
+        },
+        {
+          "item": "devil_milsurplus_armor",
+          "x": 15,
+          "y": 12,
+          "chance": 25
+        },
+        {
+          "item": "devilhouse_magic_trinket",
+          "x": 6,
+          "y": 11,
+          "chance": 35
+        },
+        {
+          "item": "armor_common",
+          "x": 10,
+          "y": 12,
+          "chance": 15
+        },
+        {
+          "item": "weapons_common",
+          "x": 15,
+          "y": 12,
+          "chance": 15
+        }
+      ],
+      "place_monsters": [
+        {
+          "monster": "GROUP_TOWER_GOBLIN",
+          "x": [
+            1,
+            22
+          ],
+          "y": [
+            1,
+            22
+          ],
+          "density": 0.3
+        }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": "devilhouse_3_roof",
+    "object": {
+      "fill_ter": "t_shingle_flat_roof",
+      "rows": [
+        "                        ",
+        " -----------------      ",
+        " -...............-      ",
+        " -...............5      ",
+        " -...............-      ",
+        " -...........=...-      ",
+        " -...............-      ",
+        " -...............-      ",
+        " -...............-      ",
+        " -...............-      ",
+        " -..N.......&....-      ",
+        " -...............-      ",
+        " -...............-      ",
+        " -5---------------      ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "     ....               ",
+        "     ....               ",
+        "     ....               ",
+        "     ....               ",
+        "                        ",
+        "                        "
+      ],
+      "palettes": [
+        "roof_palette"
+      ],
+      "terrain": {
+        ".": "t_shingle_flat_roof"
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": "devilhouse_3_basement",
+    "object": {
+      "fill_ter": "t_thconc_floor",
+      "rows": [
+        "                        ",
+        " |||||||||||||||||      ",
+        " |1.........%..UU|      ",
+        " |...............|      ",
+        " |...............|      ",
+        " |..............F|      ",
+        " |..............g|      ",
+        " |...............|      ",
+        " |..............<|      ",
+        " |...............|      ",
+        " |..............W|      ",
+        " |............A.Z|      ",
+        " |...........zJJJ|      ",
+        " |||||||||||||||||      ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        "
+      ],
+      "palettes": [
+        "basement_empty"
+      ],
+      "nested": {
+        "1": {
+          "chunks": [
+            [
+              "null",
+              70
+            ],
+            [
+              "11x11_gym_open",
+              10
+            ],
+            [
+              "11x11_recroom_open",
+              30
+            ],
+            [
+              "room_11x11_apartment_E",
+              10
+            ]
+          ]
+        }
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": "devilhouse_4",
+    "weight": 300,
+    "object": {
+      "fill_ter": "t_floor",
+      "rows": [
+        "............p._______%..",
+        ".$$$$$$$??$$$#=======##.",
+        ".$.[...!``!..#~~~~~~~&#.",
+        ".$..X..!``![.#~~~~~~~~#.",
+        ".$.....!``!..#~~~~~~~~#.",
+        ".$.....!``!..#~~~~~~~~#.",
+        ".$.....!``!..*~~~~~~~~#.",
+        ".$...[.!``!..#~~~~~~~A#.",
+        ".$.....!``!..#~~~~~~~~#.",
+        ".$.....!``!..#~~~~~~~q#.",
+        ".$.[...!``!..#||~~~~~q#.",
+        ".$.....!``!.^#>+~~~NNq#.",
+        ".######o**o###||+|||||#.",
+        ".#B  S|L      y   YF47#.",
+        ".#B  t|  hhh         Oo.",
+        ".#    +  fff         5o.",
+        ".#b88Y|  hhh    66n321#.",
+        ".##oo##|     |||||||||#.",
+        ".....^#y      +      s#.",
+        ".[....#x   H R|d    @@#.",
+        "....[.#x   H R|D    @@#.",
+        "..u...# EsET R|y     s#.",
+        "......##oo#######oo####.",
+        "........................"
+      ],
+      "palettes": [
+        "standard_domestic_palette"
+      ],
+      "terrain": {
+        "%": [
+          "t_region_shrub",
+          "t_region_shrub_fruit",
+          "t_region_shrub_decorative"
+        ],
+        "[": [
+          [
+            "t_region_tree_fruit",
+            2
+          ],
+          [
+            "t_region_tree_nut",
+            2
+          ],
+          "t_region_tree_shade"
+        ],
+        "!": "t_region_groundcover_urban",
+        "=": "t_door_metal_locked",
+        "_": "t_pavement",
+        "&": "t_gates_control_brick",
+        "G": "t_sidewalk",
+        "K": "t_sidewalk",
+        "~": "t_thconc_floor",
+        "q": "t_thconc_floor",
+        "A": "t_thconc_floor",
+        "N": "t_thconc_floor",
+        "`": "t_concrete",
+        "?": "t_fencegate_c",
+        "$": "t_fence"
+      },
+      "furniture": {
+        "!": "f_region_flower"
+      },
+      "place_loot": [
+        {
+          "group": "mischw",
+          "x": [
+            13,
+            20
+          ],
+          "y": [
+            2,
+            11
+          ],
+          "chance": 80,
+          "repeat": [
+            1,
+            4
+          ]
+        },
+        {
+          "item": "television",
+          "x": 7,
+          "y": 19,
+          "chance": 100
+        },
+        {
+          "group": "home_hw",
+          "x": [
+            13,
+            20
+          ],
+          "y": [
+            2,
+            11
+          ],
+          "chance": 65,
+          "repeat": [
+            1,
+            4
+          ]
+        },
+        {
+          "group": "home_hw",
+          "x": [
+            21,
+            21
+          ],
+          "y": [
+            9,
+            11
+          ],
+          "chance": 85,
+          "repeat": [
+            1,
+            2
+          ]
+        }
+      ],
+      "place_monsters": [
+        {
+          "monster": "GROUP_ZOMBIE",
+          "x": [
+            2,
+            21
+          ],
+          "y": [
+            2,
+            21
+          ],
+          "chance": 2
+        },
+        {
+          "monster": "GROUP_TOWER_PSYCHO",
+          "x": [
+            1,
+            22
+          ],
+          "y": [
+            1,
+            22
+          ],
+          "density": 0.3
+        }
+      ],
+      "place_vehicles": [
+        {
+          "vehicle": "suburban_home",
+          "x": 17,
+          "y": 6,
+          "chance": 15,
+          "fuel": 80,
+          "status": 0,
+          "rotation": 90
+        }
+      ],
+      "place_items": [
+        {
+          "item": "devil_milsurplus_armor",
+          "x": 15,
+          "y": 20,
+          "chance": 35
+        },
+        {
+          "item": "devil_milsurplus_armor",
+          "x": 15,
+          "y": 19,
+          "chance": 25
+        },
+        {
+          "item": "devilhouse_magic_trinket",
+          "x": 7,
+          "y": 13,
+          "chance": 30
+        },
+        {
+          "item": "armor_uncommon",
+          "x": 15,
+          "y": 20,
+          "chance": 10
+        }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": "devilhouse_4_roof",
+    "object": {
+      "fill_ter": "t_shingle_flat_roof",
+      "rows": [
+        "                        ",
+        "             ---------- ",
+        "             -........- ",
+        "             -........- ",
+        "             -........- ",
+        "             -........- ",
+        "             -........- ",
+        "             -........- ",
+        "             -........- ",
+        "             -........- ",
+        "             -........- ",
+        "             -........- ",
+        " ------------5........- ",
+        " -....................- ",
+        " -....................- ",
+        " -.......&............- ",
+        " -.................=..- ",
+        " -----5...............- ",
+        "      -...............- ",
+        "      -...............- ",
+        "      -...............- ",
+        "      -...............- ",
+        "      ----------------- ",
+        "                        "
+      ],
+      "palettes": [
+        "roof_palette"
+      ],
+      "terrain": {
+        ".": "t_shingle_flat_roof"
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": "devilhouse_4_basement",
+    "object": {
+      "fill_ter": "t_thconc_floor",
+      "rows": [
+        "                        ",
+        "             |||||||||| ",
+        "             |1.......| ",
+        "             |........| ",
+        "             |........| ",
+        "             |........| ",
+        "             |........| ",
+        "             |........| ",
+        "             |........| ",
+        "             |........| ",
+        "             |.......Z| ",
+        "             |<...A..J| ",
+        " |||||||||||||.......W| ",
+        " |F.z.................| ",
+        " |U.z.................| ",
+        " |Uz...2..............| ",
+        " |z.g.................| ",
+        " ||||||..........3....| ",
+        "      |...............| ",
+        "      |...............| ",
+        "      |...............| ",
+        "      |...............| ",
+        "      ||||||||||||||||| ",
+        "                        "
+      ],
+      "palettes": [
+        "basement_empty"
+      ],
+      "nested": {
+        "1": {
+          "chunks": [
+            [
+              "null",
+              80
+            ],
+            [
+              "8x8_gym_S",
+              10
+            ],
+            [
+              "room_8x8_hobby_S",
+              20
+            ],
+            [
+              "room_8x8_junk_S",
+              20
+            ]
+          ]
+        },
+        "2": {
+          "chunks": [
+            [
+              "null",
+              60
+            ],
+            [
+              "room_7x7_wine_cellar_N",
+              10
+            ],
+            [
+              "room_7x7_junk_N",
+              40
+            ],
+            [
+              "room_7x7_junk_E",
+              30
+            ],
+            [
+              "room_7x7_recroom_E",
+              30
+            ],
+            [
+              "room_7x7_recroom_N",
+              30
+            ],
+            [
+              "7x7_tent_indoors",
+              15
+            ]
+          ]
+        },
+        "3": {
+          "chunks": [
+            [
+              "null",
+              60
+            ],
+            [
+              "5x5_holdout_N",
+              2
+            ],
+            [
+              "livingroom_5x5_S_1",
+              30
+            ],
+            [
+              "livingroom_5x5_N_1",
+              30
+            ],
+            [
+              "livingroom_5x5_W_1",
+              30
+            ],
+            [
+              "livingroom_5x5_S_2",
+              30
+            ],
+            [
+              "livingroom_5x5_E_2",
+              30
+            ],
+            [
+              "livingroom_5x5_N_2",
+              30
+            ],
+            [
+              "livingroom_5x5_W_2",
+              30
+            ],
+            [
+              "home_office_4x4_N",
+              20
+            ],
+            [
+              "home_office_4x4_S",
+              20
+            ]
+          ]
+        }
+      }
+    }
+  },
+  {
+    "method": "json",
+    "om_terrain": "devilhouse_5",
+    "type": "mapgen",
+    "weight": 100,
+    "object": {
+      "fill_ter": "t_floor",
+      "rows": [
+        "........._.__.__..._....",
+        "..[..!.[..p__.__...[%...",
+        "._.........__.__........",
+        "...%%!!%_..__.__..[...[.",
+        "..####o##..__.__....%.._",
+        "_.#>R|bd#..__.__.%.[....",
+        ".%#  +  o..__.___..%.%[.",
+        "._o y|@@#%.__..__...._%.",
+        "..#  |||#%._______......",
+        ".%#  + t#j.________..!..",
+        "%%# R|S9#j.X________....",
+        ".%# R|||#!!!_______...[.",
+        "..#     *---._______....",
+        "..# AA L####._______.%_.",
+        "..#6JJ  Yrr#..______.[%.",
+        ".%#7      ho..______..%.",
+        "_%#2   TE y#%.______%...",
+        ".%#1 4|Hl  o%._____.%.._",
+        ".^#FO5|Hl k#...____.....",
+        "..##o#######._...__._.!.",
+        "....._.!%%%.............",
+        "..u.%%.%.[...%........%[",
+        "_%%[%...%.[...%_..%.....",
+        "...%...._...%[........%."
+      ],
+      "palettes": [
+        "standard_domestic_palette"
+      ],
+      "terrain": {
+        "%": [
+          "t_region_shrub",
+          "t_region_shrub_fruit",
+          "t_region_shrub_decorative"
+        ],
+        "[": [
+          [
+            "t_region_tree_fruit",
+            2
+          ],
+          [
+            "t_region_tree_nut",
+            2
+          ],
+          "t_region_tree_shade"
+        ],
+        "!": "t_region_groundcover_urban",
+        "`": "t_concrete",
+        "_": "t_dirt"
+      },
+      "furniture": {
+        "!": "f_region_flower"
+      },
+      "place_items": [
+        {
+          "chance": 55,
+          "item": "knifeblock",
+          "x": 4,
+          "y": 18
+        },
+        {
+          "chance": 55,
+          "item": "book_survival",
+          "x": 3,
+          "y": 15
+        },
+        {
+          "chance": 35,
+          "item": "misc_smoking",
+          "x": 9,
+          "y": 17
+        },
+        {
+          "chance": 35,
+          "item": "misc_smoking",
+          "x": 10,
+          "y": 14
+        },
+        {
+          "item": "devil_milsurplus_armor",
+          "x": 7,
+          "y": 5,
+          "chance": 35
+        },
+        {
+          "item": "devilhouse_magic_trinket",
+          "x": 8,
+          "y": 17,
+          "chance": 35
+        },
+        {
+          "item": "devilhouse_magic_trinket",
+          "x": 8,
+          "y": 18,
+          "chance": 20
+        },
+        {
+          "item": "weapons_uncommon",
+          "x": 7,
+          "y": 5,
+          "chance": 10
+        }
+      ],
+      "place_monsters": [
+        {
+          "monster": "GROUP_DOGS",
+          "x": 5,
+          "y": 14
+        },
+        {
+          "monster": "GROUP_TOWER_PMC",
+          "x": [
+            1,
+            22
+          ],
+          "y": [
+            1,
+            22
+          ],
+          "density": 0.3
+        }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": "devilhouse_5_roof",
+    "object": {
+      "fill_ter": "t_shingle_flat_roof",
+      "rows": [
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "  -------               ",
+        "  -.....-               ",
+        "  -.....-               ",
+        "  -.....-               ",
+        "  -.....-               ",
+        "  -..=..-               ",
+        "  -.....-               ",
+        "  -.....-               ",
+        "  -.....-               ",
+        "  -.....----            ",
+        "  -........-            ",
+        "  -.....N..-            ",
+        "  -........-            ",
+        "  -........-            ",
+        "  5...&....-            ",
+        "  ----------            ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        "
+      ],
+      "palettes": [
+        "roof_palette"
+      ],
+      "terrain": {
+        ".": "t_shingle_flat_roof"
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": "devilhouse_5_basement",
+    "object": {
+      "fill_ter": "t_thconc_floor",
+      "rows": [
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "  |||||||               ",
+        "  |<..zz|               ",
+        "  |....z|               ",
+        "  |....z|               ",
+        "  |2....|               ",
+        "  |.....|               ",
+        "  |.....|               ",
+        "  |.....|               ",
+        "  |.....|               ",
+        "  |g....||||            ",
+        "  ||..1....|            ",
+        "  |W.......|            ",
+        "  |Z.......|            ",
+        "  |........|            ",
+        "  |FJJ.....|            ",
+        "  ||||||||||            ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        "
+      ],
+      "palettes": [
+        "basement_empty"
+      ],
+      "nested": {
+        "1": {
+          "chunks": [
+            [
+              "null",
+              70
+            ],
+            [
+              "5x5_holdout_W",
+              10
+            ],
+            [
+              "5x5_sauna_W",
+              20
+            ]
+          ]
+        },
+        "2": {
+          "chunks": [
+            [
+              "null",
+              80
+            ],
+            [
+              "5x5_gym_N",
+              20
+            ],
+            [
+              "5x5_gym_S",
+              20
+            ],
+            [
+              "5x5_gym_E",
+              20
+            ],
+            [
+              "5x5_gym_W",
+              20
+            ],
+            [
+              "livingroom_5x5_S_1",
+              30
+            ],
+            [
+              "livingroom_5x5_E_1",
+              30
+            ],
+            [
+              "livingroom_5x5_N_1",
+              30
+            ],
+            [
+              "livingroom_5x5_W_1",
+              30
+            ],
+            [
+              "livingroom_5x5_S_2",
+              30
+            ],
+            [
+              "livingroom_5x5_E_2",
+              30
+            ],
+            [
+              "livingroom_5x5_N_2",
+              30
+            ],
+            [
+              "livingroom_5x5_W_2",
+              30
+            ]
+          ]
+        }
+      }
+    }
+  }
+]

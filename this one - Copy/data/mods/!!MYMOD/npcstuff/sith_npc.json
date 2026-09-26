@@ -1,0 +1,57 @@
+[
+  {
+    "type": "npc",
+    "id": "sith_main",
+    "//": "an evil jedi answering a distress beacon.  Hostile on sight, red lightsabers only.",
+    "name_suffix": "Sith",
+    "class": "NC_SITH",
+    "attitude": 10,
+    "mission": 0,
+    "chat": "TALK_DONE",
+    "faction": "no_faction"
+  },
+  {
+    "type": "npc",
+    "id": "mando_outcast_hostile",
+    "//": "the other half of the outcast beacon: a Mandalorian outcast who wants your gear, not your help.",
+    "name_suffix": "Outcast",
+    "class": "NC_MANDO_OUTCAST",
+    "attitude": 10,
+    "mission": 0,
+    "chat": "TALK_DONE",
+    "faction": "no_faction"
+  },
+
+  {
+    "id": "sith_ignited_sabers",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [ { "item": "lightsaber_crimson", "prob": 100 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_SITH_worn",
+    "subtype": "collection",
+    "items": [
+      { "item": "socks" },
+      { "item": "undershirt" },
+      { "item": "pants_leather" },
+      { "item": "boots_combat" },
+      { "item": "gloves_light" },
+      { "item": "jacket_leather" },
+      {
+        "distribution": [ { "item": "sith_cloak", "prob": 75 }, { "item": "sith_master_cloak", "prob": 25 } ]
+      }
+    ]
+  },
+  {
+    "//": "Same skills, spells and augmentations as the Jedi, but red sabers and dark robes.",
+    "type": "npc_class",
+    "id": "NC_SITH",
+    "copy-from": "NC_JEDI",
+    "name": { "str": "Sith" },
+    "job_description": "Power is the only truth.",
+    "worn_override": "NC_SITH_worn",
+    "weapon_override": "sith_ignited_sabers"
+  }
+]

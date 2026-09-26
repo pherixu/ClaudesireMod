@@ -1,0 +1,121 @@
+[
+  {
+    "type": "overmap_terrain",
+    "id": "devilhouse_1",
+    "copy-from": "generic_city_building",
+    "name": "possessed home",
+    "sym": "^",
+    "color": "i_red",
+    "flags": [
+      "SIDEWALK"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devilhouse_1_roof",
+    "copy-from": "generic_city_building",
+    "name": "possessed home roof",
+    "sym": "^",
+    "color": "i_red"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devilhouse_2",
+    "copy-from": "generic_city_building",
+    "name": "possessed home",
+    "sym": "^",
+    "color": "i_red",
+    "flags": [
+      "SIDEWALK"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devilhouse_2_roof",
+    "copy-from": "generic_city_building",
+    "name": "possessed home roof",
+    "sym": "^",
+    "color": "i_red"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devilhouse_3",
+    "copy-from": "generic_city_building",
+    "name": "possessed home",
+    "sym": "^",
+    "color": "i_red",
+    "flags": [
+      "SIDEWALK"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devilhouse_3_roof",
+    "copy-from": "generic_city_building",
+    "name": "possessed home roof",
+    "sym": "^",
+    "color": "i_red"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devilhouse_3_basement",
+    "copy-from": "generic_city_building",
+    "name": "possessed home (basement)",
+    "sym": "^",
+    "color": "i_red"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devilhouse_4",
+    "copy-from": "generic_city_building",
+    "name": "possessed home",
+    "sym": "^",
+    "color": "i_red",
+    "flags": [
+      "SIDEWALK"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devilhouse_4_roof",
+    "copy-from": "generic_city_building",
+    "name": "possessed home roof",
+    "sym": "^",
+    "color": "i_red"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devilhouse_4_basement",
+    "copy-from": "generic_city_building",
+    "name": "possessed home (basement)",
+    "sym": "^",
+    "color": "i_red"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devilhouse_5",
+    "copy-from": "generic_city_building",
+    "name": "possessed home",
+    "sym": "^",
+    "color": "i_red",
+    "flags": [
+      "SIDEWALK"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devilhouse_5_roof",
+    "copy-from": "generic_city_building",
+    "name": "possessed home roof",
+    "sym": "^",
+    "color": "i_red"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devilhouse_5_basement",
+    "copy-from": "generic_city_building",
+    "name": "possessed home (basement)",
+    "sym": "^",
+    "color": "i_red"
+  }
+]

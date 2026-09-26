@@ -1,0 +1,91 @@
+[
+  {
+    "type": "npc",
+    "id": "mando_outcast",
+    "//": "a Mandalorian outcast, mostly stripped of armor.",
+    "name_suffix": "Outcast",
+    "class": "NC_MANDO_OUTCAST",
+    "attitude": 0,
+    "mission": 7,
+    "mission_offered": "MISSION_RECRUIT_MANDO_OUTCAST",
+    "chat": "TALK_MANDO_OUTCAST",
+    "faction": "no_faction"
+  },
+  {
+    "id": "MISSION_RECRUIT_MANDO_OUTCAST",
+    "type": "mission_definition",
+    "name": {
+      "str": "Recruit Mandalorian Outcast"
+    },
+    "goal": "MGOAL_RECRUIT_NPC_CLASS",
+    "difficulty": 2,
+    "value": 70000,
+    "start": {
+      "assign_mission_target": {
+        "om_terrain": "house_", "om_terrain_match_type": "PREFIX",
+        "reveal_radius": 2,
+        "random": true,
+        "search_range": 80,
+        "z": 0
+      },
+      "effect": "follow",
+      "update_mapgen": {
+        "place_npcs": [
+          {
+            "class": "mando_outcast",
+            "x": 11,
+            "y": 11,
+            "target": true
+          }
+        ]
+      }
+    },
+    "origins": [
+      "ORIGIN_SECONDARY"
+    ],
+    "dialogue": {
+      "describe": "A lone figure with a single scrap of beskar keeps to the treeline, watching you.",
+      "offer": "I was cast out. Help me find the ones who took my armor and I'll fight at your side.",
+      "accepted": "I have no clan. I'll follow you.",
+      "rejected": "Fine. I've been alone before.",
+      "advice": "Trust nothing you can't shoot.",
+      "inquire": "Have you found them?",
+      "success": "You've earned my blade.",
+      "success_lie": "Don't lie to someone with nothing left to lose.",
+      "failure": "Everyone leaves."
+    }
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "mando_outcast_fob",
+    "name": {
+      "str": "distress beacon"
+    },
+    "weight": "1 g",
+    "color": "light_gray",
+    "spoils_in": "365 days",
+    "comestible_type": "FOOD",
+    "symbol": "*",
+    "quench": 0,
+    "healthy": -1,
+    "price_postapoc": "250 cent",
+    "use_action": {
+      "type": "place_npc",
+      "npc_class_id": "mando_outcast",
+      "summon_msg": "A battered fob crackles. Somewhere a cast-out Mandalorian hears the call.",
+      "place_randomly": false,
+      "moves": 50
+    },
+    "calories": 0,
+    "description": "A cracked, palm-sized comms beacon that still hums faintly.  Activating it broadcasts a distress signal on every frequency, and something out there will answer.  There is no telling what.",
+    "price": "0 cent",
+    "material": "steel",
+    "volume": "1 ml",
+    "parasites": 0,
+    "stack_size": 1,
+    "fun": 0,
+    "flags": [
+      "TRADER_AVOID"
+    ]
+  }
+]

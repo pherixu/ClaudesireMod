@@ -1,0 +1,5 @@
+#ChestOldTimey soundpack
+#Name of the soundpack
+NAME: ChestOldTimey
+#Viewing name of the soundpack
+VIEW: ChestOldTimey

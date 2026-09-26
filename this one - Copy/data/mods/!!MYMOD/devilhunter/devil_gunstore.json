@@ -1,0 +1,298 @@
+[
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [
+      "devilgunstore"
+    ],
+    "weight": 666,
+    "object": {
+      "fill_ter": "t_floor",
+      "rows": [
+        "  BBBBBBBBBBBBBBBBBBBB '",
+        "  B|A|A|BBBBBBBBBBBBBB  ",
+        "  |------  BB  --:::-|  ",
+        "  |T...{:  BB  :....S|  ",
+        "  |T...{:  BB  :....S|  ",
+        "  |T...{|--++--|....S|  ",
+        "  |T................S|  ",
+        "  |T................S|  ",
+        "  :T....{{..{{..{{..S|  ",
+        "  :T....{{..{{..{{..S|  ",
+        "  |T....{{..{{..{{..T|  ",
+        "  |---..............T|  ",
+        "  |&N|...TT#?#T.....T|  ",
+        "  |..D......h.T.....T|  ",
+        "  |--------------+-+-|  ",
+        " 4|$CCCCCCCCCCCCCC|.<|  ",
+        "  |--H--H--H--H--H-+-|  ",
+        "  |~~~~~~~~~~~~~~~~~~|  ",
+        "  |~~~~~~~~~~~~~~~~~~|  ",
+        "  |~~~~~~~~~~~~~~~~~~|  ",
+        "  |~~@~~@~~@~~@~~@~~~|  ",
+        "  |ssssssssssssssssss|  ",
+        "  ====================  ",
+        "                  UUU   "
+      ],
+      "terrain": {
+        " ": "t_region_groundcover_urban",
+        "'": "t_region_groundcover_urban",
+        "*": "t_pavement_y",
+        "+": "t_door_metal_pickable",
+        "-": "t_wall_w",
+        ".": "t_floor",
+        ":": "t_window_bars_alarm",
+        "=": "t_strconc_wall",
+        "_": "t_pavement",
+        "~": "t_thconc_floor",
+        "H": "t_thconc_floor",
+        "C": "t_thconc_floor",
+        "s": "t_thconc_floor",
+        "l": "t_thconc_floor",
+        "$": "t_thconc_floor",
+        "@": "t_thconc_floor",
+        "|": "t_wall_w",
+        "D": "t_door_c",
+        "?": "t_console_broken",
+        "<": "t_ladder_up",
+        "4": "t_gutter_downspout",
+        "A": "t_atm",
+        "B": "t_sidewalk",
+        "U": "t_region_groundcover_urban"
+      },
+      "toilets": {
+        "&": {}
+      },
+      "furniture": {
+        "'": "f_street_light",
+        "#": "f_counter",
+        "H": "f_counter",
+        "h": "f_stool",
+        "l": "f_locker",
+        "s": "f_sandbag_wall",
+        "{": "f_rack",
+        "N": "f_sink",
+        "S": "f_displaycase",
+        "T": "f_displaycase",
+        "U": "f_dumpster",
+        "@": "f_target"
+      },
+      "vendingmachines": {
+        "$": {
+          "item_group": "vending_ammo",
+          "reinforced": true
+        }
+      },
+      "items": {
+        "{": {
+          "item": "devil_gunstore_weapons",
+          "chance": 60,
+          "repeat": [
+            1,
+            2
+          ]
+        },
+        "S": {
+          "item": {
+            "subtype": "distribution",
+            "entries": [
+              {
+                "group": "ammo_rare",
+                "prob": 10
+              },
+              {
+                "group": "ammo_obscure",
+                "prob": 5
+              }
+            ]
+          },
+          "chance": 70,
+          "repeat": [
+            2,
+            5
+          ]
+        },
+        "T": {
+          "item": "devil_gunstore_guns",
+          "chance": 75
+        },
+        "l": {
+          "item": "SUS_janitors_closet",
+          "chance": 60
+        },
+        "H": {
+          "item": "ear_protection",
+          "chance": 80
+        },
+        "U": {
+          "item": "trash_dumpster",
+          "chance": 80
+        },
+        "C": {
+          "item": "casings",
+          "chance": 50,
+          "repeat": [
+            10,
+            100
+          ]
+        }
+      },
+      "place_items": [
+        {
+          "item": "weapons_common",
+          "x": [ 2, 21 ],
+          "y": [ 2, 21 ],
+          "chance": 15
+        },
+        {
+          "item": "weapons_uncommon",
+          "x": [ 2, 21 ],
+          "y": [ 2, 21 ],
+          "chance": 8
+        },
+        {
+          "item": "armor_common",
+          "x": [ 2, 21 ],
+          "y": [ 2, 21 ],
+          "chance": 10
+        }
+      ],
+      "place_monsters": [
+        {
+          "monster": "GROUP_TOWER_DEVIL",
+          "x": [
+            1,
+            22
+          ],
+          "y": [
+            1,
+            22
+          ],
+          "density": 0.4
+        }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": "devilgunstore_roof",
+    "object": {
+      "fill_ter": "t_flat_roof",
+      "rows": [
+        "                        ",
+        "                        ",
+        "  -------      -------  ",
+        "  -.....-      -.....-  ",
+        "  -..X..-      -.....-  ",
+        "  -.....--------.....-  ",
+        "  -..................-  ",
+        "  -..................-  ",
+        "  -..................-  ",
+        "  -..................-  ",
+        "  -..................-  ",
+        "  -..................-  ",
+        "  -..................-  ",
+        "  -..................-  ",
+        "  -..................-  ",
+        "  5.................>-  ",
+        "  -..................-  ",
+        "  -..................-  ",
+        "  -..................-  ",
+        "  -..................-  ",
+        "  -..................-  ",
+        "  -..................-  ",
+        "  --------------------  ",
+        "                        "
+      ],
+      "palettes": [
+        "roof_palette"
+      ],
+      "terrain": {
+        ">": "t_ladder_down"
+      },
+      "place_nested": [
+        {
+          "chunks": [
+            [
+              "null",
+              20
+            ],
+            [
+              "roof_2x2_utilities_b",
+              15
+            ],
+            [
+              "roof_2x2_utilities_c",
+              5
+            ],
+            [
+              "roof_2x2_utilities_d",
+              30
+            ],
+            [
+              "roof_2x2_utilities",
+              30
+            ],
+            [
+              "roof_2x2_golf",
+              10
+            ],
+            [
+              "roof_3x3_wine",
+              10
+            ]
+          ],
+          "x": [
+            4,
+            16
+          ],
+          "y": [
+            7,
+            8
+          ]
+        },
+        {
+          "chunks": [
+            [
+              "null",
+              20
+            ],
+            [
+              "roof_4x4_party",
+              5
+            ],
+            [
+              "roof_4x4_holdout",
+              15
+            ],
+            [
+              "roof_4x4_utility",
+              40
+            ],
+            [
+              "roof_4x4_utility_1",
+              10
+            ],
+            [
+              "roof_6x6_survivor",
+              20
+            ],
+            [
+              "roof_6x6_utility",
+              20
+            ]
+          ],
+          "x": [
+            4,
+            13
+          ],
+          "y": [
+            11,
+            16
+          ]
+        }
+      ]
+    }
+  }
+]

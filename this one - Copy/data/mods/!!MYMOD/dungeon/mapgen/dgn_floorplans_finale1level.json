@@ -1,0 +1,368 @@
+[
+  {
+    "//": "nano_fabricator room",
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "dungeon_finale_2", "dungeon_finale_3", "dungeon_finale_4" ],
+    "weight": 100,
+    "object": {
+      "fill_ter": "t_rock_floor",
+      "rows": [
+        "CCC..................CCC",
+        "C..........YY..........C",
+        "........................",
+        "....cc............cc....",
+        "....cc..c......c..cc....",
+        "....cc..c..//..c..cc....",
+        "........c..//..c........",
+        "........c......c........",
+        "...........YY...........",
+        "........................",
+        ".....-----gGGg-----.....",
+        ".....-c.g,,,,,,g.c-.....",
+        "..YY.-c.G,/,,/,G.c-.YY..",
+        ".....-c.g,?,,?,g.c-.....",
+        "ggGGg----,,,,,,----gGGgg",
+        ".x...-CC-+gggg+-CC-...x.",
+        ".x..x-,,,,,,,,,,,,-x..x.",
+        ".x..C-,r,,,rr,,,r,-C..x.",
+        ".x..C-Y,,,,,,,,,,Y-C..x.",
+        ".x..x----GggggG----x..x.",
+        ".R....G..........G....R.",
+        "......G....YY....G......",
+        ".Yxx..g..........g..xxY.",
+        "......g..........g......"
+      ],
+      "palettes": [ "dungeon_palette", "dungeon_loot_research" ],
+      "furniture": { "R": "f_rack_wood" },
+      "terrain": { "?": "t_dgn_soulforge_panel", "r": "t_carpet_yellow", "/": "t_dgn_soulforge" },
+      "mapping": { "r": { "item": { "item": "rune_core" } }, "R": { "item": { "item": "argent_core" } } },
+      "place_nested": [ { "chunks": [ "dgn_finale_loot" ], "x": 6, "y": 11 } ],
+      "place_loot": [
+        { "group": "dgn_relic_legendary", "x": [ 4, 5 ], "y": [ 3, 5 ] },
+        { "item": "chronocrystal", "x": 17, "y": [ 11, 13 ] }
+      ],
+      "place_monster": [
+        { "group": "GROUP_DUNGEON_RARE", "x": [ 1, 4 ], "y": [ 20, 22 ], "chance": 90 },
+        { "group": "GROUP_DUNGEON_RARE", "x": [ 19, 20 ], "y": [ 20, 22 ], "chance": 90 },
+        { "group": "GROUP_DUNGEON_COMMON", "x": [ 2, 20 ], "y": [ 1, 9 ], "chance": 90, "repeat": [ 1, 2 ] },
+        { "group": "GROUP_DUNGEON_RARE", "x": 2, "y": 2, "chance": 100 }
+      ]
+    }
+  },
+  {
+    "//": "portal room",
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "dungeon_finale_2", "dungeon_finale_3", "dungeon_finale_4" ],
+    "weight": 50,
+    "object": {
+      "fill_ter": "t_rock_floor",
+      "rows": [
+        ".....,...g.....xxxxxxxxx",
+        ".r..r,..ig.YY...........",
+        ".r..r,..tg.....dd..tt...",
+        ".rY.r,..tg.....xh..tt.Y.",
+        ".rY.r,.. G.....d...tt.Y.",
+        ".R..r,...G.........tt...",
+        ".....,..tg..............",
+        "-+-l,,..tg.....d........",
+        "..-l....tggGGggdh.......",
+        "..-lll...G,,,,gd........",
+        "..-----g-ggGGgg-gggGg-+-",
+        "..-,,,,xgY,,,,Y-....l-..",
+        "..-,,,hxg,,,,,,-dDd.l-..",
+        "..-,,,,xg,,,,,,-.h..l-..",
+        "-+--+----,,,,,,-------+-",
+        ".....-CCC,,,,,,CCC-....C",
+        ".....g,,,,,,,,,,,,gx...C",
+        ".....g,,,,CQQC,,,,gC...C",
+        ".....-Y,,,,,,,,,,Y-C...C",
+        "-+-------GggggG-------+-",
+        ".......................-",
+        ".......................-",
+        ".CCCCxxxxx....xCCxxCCCx-",
+        "........................"
+      ],
+      "palettes": [ "dungeon_palette", "dungeon_loot_research" ],
+      "furniture": { "R": "f_rack_wood", "D": "f_desk" },
+      "fields": { "Q": { "field": "fd_fatigue", "intensity": 3 } },
+      "mapping": {
+        "R": { "item": [ { "item": "hyperbolic_crystal" }, { "item": "temporal_armor" } ] },
+        "D": {
+          "item": [
+            { "item": "rune_heart" },
+            { "item": "devil_tower_map" },
+            { "item": "argentium" },
+            { "item": "worldbook" }
+          ]
+        }
+      },
+      "place_nested": [ { "chunks": [ "dgn_finale_loot" ], "x": 4, "y": 1 } ],
+      "place_loot": [ { "item": "chronocrystal", "x": [ 19, 20 ], "y": [ 2, 5 ] } ],
+      "place_monster": [ { "group": "GROUP_DUNGEON_RARE", "x": 2, "y": 2, "chance": 100 } ]
+    }
+  },
+  {
+    "//": "resonance cascade finale",
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "dungeon_finale_2", "dungeon_finale_3", "dungeon_finale_4" ],
+    "weight": 100,
+    "object": {
+      "fill_ter": "t_rock_floor",
+      "rows": [
+        "........................",
+        ".....Y............Y.....",
+        "........................",
+        "-MM|----------------|MM-",
+        "...|C.....o..oCCCCCC|...",
+        "...|C...............|...",
+        "...|C.Y...o..o...Y..|...",
+        "...|C.......6.......|...",
+        "...|-..............-|...",
+        "..Y..................Y..",
+        "..Y.......?..?.......Y..",
+        "...|gggggg----gggggg|...",
+        "...|txttttCCCCtttxxt|...",
+        "...|r.hh........h .r|...",
+        "...|r.Y..........Y.r|...",
+        "...|r..|---MM---|..r|...",
+        "-MM|---|........|---|MM-",
+        "........................",
+        "........................",
+        "........................",
+        "....Y..............Y....",
+        "........................",
+        "........................",
+        "........................"
+      ],
+      "palettes": [ "dungeon_palette" ],
+      "monster": { "?": { "group": "GROUP_DUNGEON_UNCOMMON" } },
+      "terrain": { "o": "t_column" },
+      "computers": {
+        "6": {
+          "name": "Rift Gate Focus",
+          "access_denied": "THE WARDS FLARE!  Trespassers will be met with lethal force!",
+          "security": 2,
+          "options": [
+            { "name": "Toggle the Rift", "action": "portal", "security": 8 },
+            { "name": "Unleash the Cascade", "action": "cascade", "security": 10 }
+          ],
+          "failures": [ { "action": "damage" }, { "action": "alarm" } ]
+        }
+      },
+      "place_nested": [ { "chunks": [ "dgn_finale_loot" ], "x": 4, "y": 13 } ],
+      "place_loot": [ { "item": "chronocrystal", "x": [ 14, 16 ], "y": 12 } ]
+    }
+  },
+  {
+    "//": "cvd forge",
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "dungeon_finale_2", "dungeon_finale_3", "dungeon_finale_4" ],
+    "weight": 100,
+    "object": {
+      "fill_ter": "t_rock_floor",
+      "rows": [
+        "........................",
+        "........................",
+        "..Y..................Y..",
+        "........................",
+        ".........|---------|....",
+        ".........|Y......tt|....",
+        ".....?...|..oooo.hx|....",
+        "....|--|M|..oooo..C|....",
+        "....|r.M....Oooo..C|....",
+        "....|r.|xh..oooo..C|....",
+        "....|rY|ttt......YC|....",
+        "....|--|-----------|....",
+        "........................",
+        "..Y..................Y..",
+        "........................",
+        "........................",
+        "---------|....|--ggggg--",
+        "ttttt.xtt|Y..Y|Y........",
+        ".......h.|....g..hhhhh..",
+        "....Y....M....G.httttth.",
+        "t...Y....M....G.httttth.",
+        "th......t|....g..hhhhh..",
+        "x......hx|....|.........",
+        "---------|....|........."
+      ],
+      "palettes": [ "dungeon_palette" ],
+      "place_nested": [ { "chunks": [ "dgn_finale_loot" ], "x": 5, "y": 8 } ],
+      "monster": { "?": { "group": "GROUP_DUNGEON_UNCOMMON" } },
+      "terrain": { "o": "t_dgn_soulforge", "O": "t_dgn_soulforge_panel" },
+      "place_loot": [ { "item": "chronocrystal", "x": [ 8, 10 ], "y": 10 } ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "dgn_finale_loot",
+    "weight": 25,
+    "object": {
+      "mapgensize": [ 3, 3 ],
+      "rows": [
+        "r  ",
+        "r  ",
+        "R  "
+      ],
+      "palettes": [ "dungeon_palette" ],
+      "mapping": {
+        "r": { "items": [ { "item": "dgn_potions", "chance": 100, "repeat": [ 2, 2 ] } ] },
+        "R": { "items": [ { "item": "dgn_potions", "chance": 100 } ] }
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "dgn_finale_loot",
+    "weight": 25,
+    "object": {
+      "mapgensize": [ 3, 3 ],
+      "rows": [
+        "r  ",
+        "r  ",
+        "R  "
+      ],
+      "palettes": [ "dungeon_palette" ],
+      "mapping": {
+        "r": { "items": [ { "item": "dgn_potions", "chance": 100, "repeat": [ 2, 2 ] } ] },
+        "R": { "items": [ { "item": "dgn_potions", "chance": 100 } ] }
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "dgn_finale_loot",
+    "weight": 25,
+    "object": {
+      "mapgensize": [ 3, 3 ],
+      "rows": [
+        "r  ",
+        "r  ",
+        "R  "
+      ],
+      "palettes": [ "dungeon_palette" ],
+      "mapping": {
+        "r": { "items": [ { "item": "dgn_potions", "chance": 100, "repeat": [ 2, 2 ] } ] },
+        "R": { "items": [ { "item": "dgn_potions", "chance": 100 } ] }
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "dgn_finale_loot",
+    "weight": 25,
+    "object": {
+      "mapgensize": [ 3, 3 ],
+      "rows": [
+        "r  ",
+        "r  ",
+        "R  "
+      ],
+      "palettes": [ "dungeon_palette" ],
+      "mapping": {
+        "r": { "items": [ { "item": "dgn_potions", "chance": 100, "repeat": [ 2, 2 ] } ] },
+        "R": { "items": [ { "item": "dgn_potions", "chance": 100 } ] }
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "dgn_finale_loot",
+    "weight": 100,
+    "object": {
+      "mapgensize": [ 3, 3 ],
+      "rows": [
+        "r  ",
+        "r  ",
+        "R  "
+      ],
+      "palettes": [ "dungeon_palette" ],
+      "mapping": {
+        "r": { "items": [ { "item": "dgn_relic_legendary", "chance": 100, "repeat": [ 3, 8 ] } ] },
+        "R": {
+          "items": [
+            { "item": "dgn_relic_legendary", "chance": 100 },
+            { "item": "dgn_relic_legendary", "chance": 100 },
+            { "item": "dgn_armory", "chance": 100 },
+            { "item": "dgn_armory", "chance": 100 },
+            { "item": "dgn_armory", "chance": 100 },
+            { "item": "dgn_armory", "chance": 100 },
+            { "item": "dgn_library", "chance": 100 }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "dgn_finale_loot",
+    "weight": 100,
+    "object": {
+      "mapgensize": [ 3, 3 ],
+      "rows": [
+        "r  ",
+        "r  ",
+        "R  "
+      ],
+      "palettes": [ "dungeon_palette" ],
+      "mapping": {
+        "r": { "items": [ { "item": "dgn_relic_legendary", "chance": 100, "repeat": [ 12, 20 ] } ] },
+        "R": {
+          "items": [ { "item": "dgn_library", "chance": 100 }, { "item": "dgn_relic_legendary", "chance": 100, "repeat": [ 8, 16 ] } ]
+        }
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "dgn_finale_loot",
+    "weight": 100,
+    "object": {
+      "mapgensize": [ 3, 3 ],
+      "rows": [
+        "r  ",
+        "r  ",
+        "R  "
+      ],
+      "palettes": [ "dungeon_palette" ],
+      "mapping": {
+        "r": { "items": [ { "item": "dgn_relic_legendary", "chance": 100, "repeat": [ 4, 10 ] } ] },
+        "R": { "items": [ { "item": "dgn_armory", "chance": 100 }, { "item": "dgn_library", "chance": 100 } ] }
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "dgn_finale_loot",
+    "weight": 100,
+    "object": {
+      "mapgensize": [ 3, 3 ],
+      "rows": [
+        "r  ",
+        "r  ",
+        "r  "
+      ],
+      "palettes": [ "dungeon_palette" ],
+      "mapping": {
+        "r": {
+          "items": [
+            { "item": "dgn_relic_legendary", "chance": 100, "repeat": [ 2, 4 ] },
+            { "item": "dgn_scribe", "chance": 100, "repeat": [ 1, 3 ] }
+          ]
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,3116 @@
+[
+  {
+    "type": "item_group",
+    "id": "jewelry_front",
+    "items": [
+      {
+        "group": "tiaras_silver",
+        "prob": 5,
+        "count": [
+          1,
+          3
+        ]
+      },
+      {
+        "group": "tiaras_gold",
+        "prob": 3,
+        "count": [
+          1,
+          3
+        ]
+      },
+      {
+        "group": "tiaras_platinum",
+        "prob": 1,
+        "count": [
+          1,
+          3
+        ]
+      },
+      {
+        "group": "pendant_necklaces_silver",
+        "prob": 30,
+        "count": [
+          1,
+          3
+        ]
+      },
+      {
+        "group": "pendant_necklaces_gold",
+        "prob": 10,
+        "count": [
+          1,
+          3
+        ]
+      },
+      {
+        "group": "pendant_necklaces_platinum",
+        "prob": 5,
+        "count": [
+          1,
+          3
+        ]
+      },
+      {
+        "group": "earrings_silver",
+        "prob": 30
+      },
+      {
+        "group": "earrings_gold",
+        "prob": 10
+      },
+      {
+        "group": "earrings_platinum",
+        "prob": 5
+      },
+      {
+        "group": "dental_grills",
+        "prob": 10
+      },
+      {
+        "group": "bracelets_silver",
+        "prob": 30
+      },
+      {
+        "group": "bracelets_gold",
+        "prob": 10
+      },
+      {
+        "group": "bracelets_platinum",
+        "prob": 5
+      },
+      {
+        "group": "rings_silver",
+        "prob": 30
+      },
+      {
+        "group": "rings_gold",
+        "prob": 10
+      },
+      {
+        "group": "rings_platinum",
+        "prob": 5
+      },
+      {
+        "group": "dental_grills",
+        "prob": 10
+      },
+      {
+        "group": "cufflinks_silver",
+        "prob": 30,
+        "count": [
+          1,
+          3
+        ]
+      },
+      {
+        "group": "cufflinks_gold",
+        "prob": 10,
+        "count": [
+          1,
+          3
+        ]
+      },
+      {
+        "group": "cufflinks_platinum",
+        "prob": 5,
+        "count": [
+          1,
+          3
+        ]
+      },
+      {
+        "group": "gemstones",
+        "prob": 30
+      },
+      {
+        "item": "gold_small",
+        "prob": 30,
+        "count": [
+          1,
+          9
+        ]
+      },
+      [
+        "gold_ring",
+        30
+      ],
+      [
+        "gold_ear",
+        30
+      ],
+      [
+        "gold_bracelet",
+        30
+      ],
+      [
+        "gold_necklace",
+        30
+      ],
+      [
+        "gold_watch",
+        30
+      ],
+      [
+        "gold_locket",
+        20
+      ],
+      [
+        "gold_hairpin",
+        20
+      ],
+      [
+        "gold_dental_grill",
+        10
+      ],
+      [
+        "platinum_dental_grill",
+        1
+      ],
+      [
+        "platinum_ring",
+        2
+      ],
+      [
+        "platinum_ear",
+        2
+      ],
+      [
+        "platinum_bracelet",
+        2
+      ],
+      [
+        "platinum_necklace",
+        2
+      ],
+      [
+        "platinum_locket",
+        1
+      ],
+      [
+        "platinum_hairpin",
+        1
+      ],
+      [
+        "platinum_watch",
+        1
+      ],
+      [
+        "ferrystone",
+        30
+      ],
+      [
+        "dullahead",
+        30
+      ],
+      [
+        "petrified_eye",
+        30
+      ],
+      [
+        "chronocrystal",
+        30
+      ],
+      [
+        "argentium",
+        10
+      ],
+      [
+        "ceruleum",
+        10
+      ],
+      [
+        "crimsonite",
+        10
+      ],
+      [
+        "viridite",
+        10
+      ],
+      [
+        "byakugan_eye",
+        10
+      ],
+      [
+        "sharingan_eye",
+        10
+      ],
+      [
+        "uchiha_tablet",
+        10
+      ],
+      [
+        "raw_bloodgem",
+        40
+      ],
+      [
+        "silver_ear",
+        40
+      ],
+      [
+        "silver_necklace",
+        40
+      ],
+      [
+        "silver_bracelet",
+        40
+      ],
+      [
+        "silver_ring",
+        40
+      ],
+      [
+        "silver_locket",
+        30
+      ],
+      [
+        "silver_hairpin",
+        30
+      ],
+      [
+        "silver_watch",
+        15
+      ],
+      [
+        "copper_ear",
+        15
+      ],
+      [
+        "copper_bracelet",
+        15
+      ],
+      [
+        "copper_ring",
+        15
+      ],
+      [
+        "copper_necklace",
+        15
+      ],
+      [
+        "copper_locket",
+        15
+      ],
+      [
+        "copper_hairpin",
+        10
+      ],
+      [
+        "ring_purity",
+        25
+      ],
+      [
+        "ring_engagement",
+        25
+      ],
+      [
+        "ring_wedding",
+        25
+      ],
+      [
+        "cufflinks",
+        25
+      ],
+      [
+        "cufflinks_intricate",
+        15
+      ],
+      [
+        "diamond_ring",
+        10
+      ],
+      [
+        "diamond_dental_grill",
+        5
+      ],
+      [
+        "jade_brooch",
+        30
+      ],
+      [
+        "sf_watch",
+        5
+      ],
+      [
+        "pocketwatch",
+        30
+      ],
+      [
+        "tieclip",
+        35
+      ],
+      [
+        "pearl_collar",
+        30
+      ],
+      [
+        "diamond",
+        10
+      ],
+      [
+        "holy_symbol",
+        20
+      ]
+    ]
+  },
+  {
+    "id": "jewelry_back",
+    "type": "item_group",
+    "items": [
+      [
+        "polisher",
+        10
+      ],
+      [
+        "gold_dental_grill",
+        15
+      ],
+      {
+        "item": "gold_small",
+        "prob": 30,
+        "count": [
+          1,
+          9
+        ]
+      },
+      [
+        "gold_ring",
+        15
+      ],
+      [
+        "gold_ear",
+        15
+      ],
+      [
+        "gold_bracelet",
+        15
+      ],
+      [
+        "gold_necklace",
+        15
+      ],
+      [
+        "gold_locket",
+        15
+      ],
+      [
+        "gold_hairpin",
+        15
+      ],
+      [
+        "gold_watch",
+        10
+      ],
+      [
+        "platinum_dental_grill",
+        1
+      ],
+      [
+        "platinum_ring",
+        3
+      ],
+      [
+        "platinum_ear",
+        3
+      ],
+      [
+        "platinum_bracelet",
+        3
+      ],
+      [
+        "platinum_necklace",
+        3
+      ],
+      [
+        "platinum_locket",
+        3
+      ],
+      [
+        "platinum_hairpin",
+        3
+      ],
+      [
+        "platinum_watch",
+        1
+      ],
+      [
+        "silver_ear",
+        20
+      ],
+      [
+        "silver_necklace",
+        20
+      ],
+      [
+        "silver_bracelet",
+        20
+      ],
+      [
+        "silver_ring",
+        20
+      ],
+      [
+        "silver_locket",
+        20
+      ],
+      [
+        "silver_hairpin",
+        20
+      ],
+      [
+        "silver_watch",
+        15
+      ],
+      [
+        "copper_ear",
+        15
+      ],
+      [
+        "copper_bracelet",
+        15
+      ],
+      [
+        "copper_ring",
+        15
+      ],
+      [
+        "copper_necklace",
+        15
+      ],
+      [
+        "copper_locket",
+        15
+      ],
+      [
+        "copper_hairpin",
+        15
+      ],
+      [
+        "ring_purity",
+        15
+      ],
+      [
+        "byakugan_eye",
+        10
+      ],
+      [
+        "sharingan_eye",
+        10
+      ],
+      [
+        "uchiha_tablet",
+        10
+      ],
+      [
+        "ring_engagement",
+        15
+      ],
+      [
+        "ring_wedding",
+        15
+      ],
+      [
+        "cufflinks",
+        15
+      ],
+      [
+        "cufflinks_intricate",
+        10
+      ],
+      [
+        "ferrystone",
+        30
+      ],
+      [
+        "dullahead",
+        30
+      ],
+      [
+        "petrified_eye",
+        30
+      ],
+      [
+        "chronocrystal",
+        30
+      ],
+      [
+        "argentium",
+        10
+      ],
+      [
+        "ceruleum",
+        10
+      ],
+      [
+        "crimsonite",
+        10
+      ],
+      [
+        "viridite",
+        10
+      ],
+      [
+        "raw_bloodgem",
+        40
+      ],
+      [
+        "sf_watch",
+        5
+      ],
+      [
+        "diamond_ring",
+        5
+      ],
+      [
+        "diamond_dental_grill",
+        2
+      ],
+      [
+        "jade_brooch",
+        15
+      ],
+      [
+        "pocketwatch",
+        15
+      ],
+      [
+        "tieclip",
+        15
+      ],
+      [
+        "pearl_collar",
+        15
+      ],
+      [
+        "crucible",
+        40
+      ],
+      [
+        "forge",
+        40
+      ],
+      [
+        "jewelry_book",
+        40
+      ],
+      [
+        "soldering_iron",
+        60
+      ],
+      [
+        "solder_wire",
+        60
+      ],
+      [
+        "hammer",
+        55
+      ],
+      [
+        "hammer_bronze",
+        5
+      ],
+      [
+        "chisel",
+        60
+      ],
+      [
+        "platinum_small",
+        20
+      ],
+      [
+        "gold_small",
+        20
+      ],
+      [
+        "silver_small",
+        30
+      ],
+      [
+        "diamond",
+        5
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "jewelry_safe",
+    "items": [
+      [
+        "platinum_small",
+        80
+      ],
+      [
+        "gold_small",
+        80
+      ],
+      [
+        "silver_small",
+        85
+      ],
+      [
+        "ferrystone",
+        30
+      ],
+      {
+        "item": "gold_small",
+        "prob": 30,
+        "count": [
+          1,
+          9
+        ]
+      },
+      [
+        "dullahead",
+        30
+      ],
+      [
+        "petrified_eye",
+        30
+      ],
+      [
+        "chronocrystal",
+        30
+      ],
+      [
+        "argentium",
+        10
+      ],
+      [
+        "ceruleum",
+        10
+      ],
+      [
+        "crimsonite",
+        10
+      ],
+      [
+        "byakugan_eye",
+        10
+      ],
+      [
+        "sharingan_eye",
+        10
+      ],
+      [
+        "uchiha_tablet",
+        10
+      ],
+      [
+        "viridite",
+        10
+      ],
+      [
+        "raw_bloodgem",
+        40
+      ],
+      [
+        "diamond",
+        75
+      ],
+      [
+        "diamond",
+        75
+      ],
+      {
+        "group": "gemstones",
+        "prob": 75
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "jewelry_accessories",
+    "items": [
+      [
+        "gold_ring",
+        30
+      ],
+      [
+        "gold_ear",
+        30
+      ],
+      [
+        "gold_bracelet",
+        30
+      ],
+      [
+        "gold_necklace",
+        30
+      ],
+      {
+        "item": "gold_small",
+        "prob": 30,
+        "count": [
+          1,
+          9
+        ]
+      },
+      [
+        "gold_locket",
+        20
+      ],
+      [
+        "gold_hairpin",
+        20
+      ],
+      [
+        "gold_dental_grill",
+        10
+      ],
+      [
+        "ferrystone",
+        30
+      ],
+      [
+        "dullahead",
+        30
+      ],
+      [
+        "petrified_eye",
+        30
+      ],
+      [
+        "chronocrystal",
+        30
+      ],
+      [
+        "argentium",
+        10
+      ],
+      [
+        "ceruleum",
+        10
+      ],
+      [
+        "crimsonite",
+        10
+      ],
+      [
+        "viridite",
+        10
+      ],
+      [
+        "raw_bloodgem",
+        40
+      ],
+      [
+        "platinum_dental_grill",
+        1
+      ],
+      [
+        "platinum_ring",
+        2
+      ],
+      [
+        "platinum_ear",
+        2
+      ],
+      [
+        "platinum_bracelet",
+        2
+      ],
+      [
+        "platinum_necklace",
+        2
+      ],
+      [
+        "platinum_locket",
+        1
+      ],
+      [
+        "platinum_hairpin",
+        1
+      ],
+      [
+        "silver_ear",
+        40
+      ],
+      [
+        "silver_necklace",
+        40
+      ],
+      [
+        "silver_bracelet",
+        40
+      ],
+      [
+        "silver_ring",
+        40
+      ],
+      [
+        "silver_locket",
+        30
+      ],
+      [
+        "silver_hairpin",
+        30
+      ],
+      [
+        "copper_ear",
+        15
+      ],
+      [
+        "byakugan_eye",
+        10
+      ],
+      [
+        "sharingan_eye",
+        10
+      ],
+      [
+        "uchiha_tablet",
+        10
+      ],
+      [
+        "copper_bracelet",
+        15
+      ],
+      [
+        "copper_ring",
+        15
+      ],
+      [
+        "copper_necklace",
+        15
+      ],
+      [
+        "copper_locket",
+        15
+      ],
+      [
+        "copper_hairpin",
+        10
+      ],
+      [
+        "ring_purity",
+        25
+      ],
+      [
+        "ring_engagement",
+        25
+      ],
+      [
+        "ring_wedding",
+        25
+      ],
+      [
+        "cufflinks",
+        25
+      ],
+      [
+        "cufflinks_intricate",
+        15
+      ],
+      [
+        "diamond_ring",
+        10
+      ],
+      [
+        "diamond_dental_grill",
+        5
+      ],
+      [
+        "jade_brooch",
+        30
+      ],
+      [
+        "tieclip",
+        35
+      ],
+      [
+        "bead_ear",
+        35
+      ],
+      [
+        "pearl_collar",
+        30
+      ],
+      [
+        "holy_symbol",
+        20
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "rings_and_things",
+    "items": [
+      [
+        "gold_ring",
+        30
+      ],
+      [
+        "gold_ear",
+        30
+      ],
+      {
+        "item": "gold_small",
+        "prob": 30,
+        "count": [
+          1,
+          9
+        ]
+      },
+      [
+        "gold_bracelet",
+        30
+      ],
+      [
+        "gold_necklace",
+        30
+      ],
+      [
+        "gold_locket",
+        20
+      ],
+      [
+        "platinum_ring",
+        2
+      ],
+      [
+        "platinum_ear",
+        2
+      ],
+      [
+        "ferrystone",
+        30
+      ],
+      [
+        "dullahead",
+        30
+      ],
+      [
+        "petrified_eye",
+        30
+      ],
+      [
+        "chronocrystal",
+        30
+      ],
+      [
+        "argentium",
+        10
+      ],
+      [
+        "ceruleum",
+        10
+      ],
+      [
+        "crimsonite",
+        10
+      ],
+      [
+        "viridite",
+        10
+      ],
+      [
+        "raw_bloodgem",
+        40
+      ],
+      [
+        "platinum_bracelet",
+        2
+      ],
+      [
+        "platinum_necklace",
+        2
+      ],
+      [
+        "platinum_locket",
+        1
+      ],
+      [
+        "silver_ear",
+        40
+      ],
+      [
+        "silver_necklace",
+        40
+      ],
+      [
+        "byakugan_eye",
+        10
+      ],
+      [
+        "sharingan_eye",
+        10
+      ],
+      [
+        "uchiha_tablet",
+        10
+      ],
+      [
+        "silver_bracelet",
+        40
+      ],
+      [
+        "silver_ring",
+        40
+      ],
+      [
+        "silver_locket",
+        30
+      ],
+      [
+        "copper_ear",
+        15
+      ],
+      [
+        "copper_bracelet",
+        15
+      ],
+      [
+        "copper_ring",
+        15
+      ],
+      [
+        "copper_necklace",
+        15
+      ],
+      [
+        "copper_locket",
+        15
+      ],
+      [
+        "ring_purity",
+        25
+      ],
+      [
+        "ring_engagement",
+        25
+      ],
+      [
+        "ring_wedding",
+        25
+      ],
+      [
+        "diamond_ring",
+        10
+      ]
+    ]
+  },
+  {
+    "id": "novels",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      {
+        "item": "novel_romance",
+        "prob": 30
+      },
+      {
+        "item": "casterbook",
+        "prob": 12
+      },
+      {
+        "item": "casterbook2",
+        "prob": 12
+      },
+      {
+        "item": "devilbook",
+        "prob": 12
+      },
+      {
+        "item": "devilhunterbook",
+        "prob": 12
+      },
+      {
+        "item": "jedibook",
+        "prob": 12
+      },
+      {
+        "item": "manual_mma_makashi",
+        "prob": 12
+      },
+      {
+        "item": "manual_mma_soresu",
+        "prob": 12
+      },
+      {
+        "item": "manual_mma_ataru",
+        "prob": 12
+      },
+      {
+        "item": "manual_mma_djem_so",
+        "prob": 12
+      },
+      {
+        "item": "manual_mma_niman",
+        "prob": 12
+      },
+      {
+        "item": "manual_mma_juyo",
+        "prob": 12
+      },
+      {
+        "item": "manual_mma_shii_cho",
+        "prob": 12
+      },
+      {
+        "item": "iounbook",
+        "prob": 12
+      },
+      {
+        "item": "novel_spy",
+        "prob": 28
+      },
+      {
+        "item": "novel_satire",
+        "prob": 15
+      },
+      {
+        "item": "novel_sports",
+        "prob": 22
+      },
+      {
+        "item": "novel_samurai",
+        "prob": 22
+      },
+      {
+        "item": "novel_swash",
+        "prob": 14
+      },
+      {
+        "item": "novel_western",
+        "prob": 22
+      },
+      {
+        "item": "novel_war",
+        "prob": 20
+      },
+      {
+        "item": "novel_adventure",
+        "prob": 14
+      },
+      {
+        "item": "novel_experimental",
+        "prob": 1
+      },
+      {
+        "item": "novel_road",
+        "prob": 10
+      },
+      {
+        "item": "novel_buddy",
+        "prob": 12
+      },
+      {
+        "item": "novel_scifi",
+        "prob": 20
+      },
+      {
+        "item": "novel_drama",
+        "prob": 40
+      },
+      {
+        "item": "novel_mystery",
+        "prob": 25
+      },
+      {
+        "item": "novel_fantasy",
+        "prob": 20
+      },
+      {
+        "item": "novel_erotic",
+        "prob": 4
+      },
+      {
+        "item": "novel_pulp",
+        "prob": 16
+      },
+      {
+        "item": "novel_thriller",
+        "prob": 18
+      },
+      {
+        "item": "novel_coa",
+        "prob": 5
+      },
+      {
+        "item": "novel_crime",
+        "prob": 20
+      },
+      {
+        "item": "novel_horror",
+        "prob": 18
+      },
+      {
+        "item": "novel_tragedy",
+        "prob": 8
+      },
+      {
+        "item": "survnote",
+        "prob": 1
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "religious_books",
+    "//": "Any religious book",
+    "subtype": "distribution",
+    "entries": [
+      {
+        "item": "holybook_bible1",
+        "prob": 1
+      },
+      {
+        "item": "holybook_bible2",
+        "prob": 1
+      },
+      {
+        "item": "holybook_bible3",
+        "prob": 1
+      },
+      {
+        "item": "holybook_bible4",
+        "prob": 1
+      },
+      {
+        "item": "holybook_quran",
+        "prob": 1
+      },
+      {
+        "item": "casterbook",
+        "prob": 1
+      },
+      {
+        "item": "casterbook2",
+        "prob": 1
+      },
+      {
+        "item": "devilbook",
+        "prob": 1
+      },
+      {
+        "item": "devilhunterbook",
+        "prob": 1
+      },
+      {
+        "item": "jedibook",
+        "prob": 1
+      },
+      {
+        "item": "iounbook",
+        "prob": 1
+      },
+      {
+        "item": "holybook_hadith",
+        "prob": 1
+      },
+      {
+        "item": "holybook_havamal",
+        "prob": 1
+      },
+      {
+        "item": "holybook_tanakh",
+        "prob": 1
+      },
+      {
+        "item": "holybook_talmud",
+        "prob": 1
+      },
+      {
+        "item": "holybook_vedas",
+        "prob": 1
+      },
+      {
+        "item": "holybook_upanishads",
+        "prob": 1
+      },
+      {
+        "item": "holybook_tripitaka",
+        "prob": 1
+      },
+      {
+        "item": "holybook_sutras",
+        "prob": 1
+      },
+      {
+        "item": "holybook_granth",
+        "prob": 1
+      },
+      {
+        "item": "holybook_mormon",
+        "prob": 1
+      },
+      {
+        "item": "holybook_kojiki",
+        "prob": 1
+      },
+      {
+        "item": "holybook_pastafarian",
+        "prob": 1
+      },
+      {
+        "item": "holybook_slack",
+        "prob": 1
+      },
+      {
+        "item": "holybook_kallisti",
+        "prob": 1
+      },
+      {
+        "item": "holybook_scientology",
+        "prob": 1
+      },
+      {
+        "item": "holybook_satanic",
+        "prob": 1
+      },
+      {
+        "item": "holybook_taoism",
+        "prob": 1
+      },
+      {
+        "item": "holybook_confucianism",
+        "prob": 1
+      },
+      {
+        "item": "holybook_paganism",
+        "prob": 1
+      },
+      {
+        "item": "holybook_shamanism",
+        "prob": 1
+      }
+    ]
+  },
+  {
+    "id": "gemstones",
+    "type": "item_group",
+    "items": [
+      [
+        "citrine",
+        50
+      ],
+      {
+        "item": "gold_small",
+        "prob": 55,
+        "count": [
+          1,
+          9
+        ]
+      },
+      [
+        "diamond",
+        100
+      ],
+      [
+        "emerald",
+        50
+      ],
+      [
+        "peridot",
+        50
+      ],
+      [
+        "amethyst",
+        50
+      ],
+      [
+        "sapphire",
+        50
+      ],
+      [
+        "aquamarine",
+        50
+      ],
+      [
+        "ferrystone",
+        77
+      ],
+      [
+        "dullahead",
+        77
+      ],
+      [
+        "petrified_eye",
+        77
+      ],
+      [
+        "chronocrystal",
+        77
+      ],
+      [
+        "argentium",
+        55
+      ],
+      [
+        "ceruleum",
+        55
+      ],
+      [
+        "byakugan_eye",
+        10
+      ],
+      [
+        "sharingan_eye",
+        10
+      ],
+      [
+        "uchiha_tablet",
+        10
+      ],
+      [
+        "crimsonite",
+        55
+      ],
+      [
+        "viridite",
+        55
+      ],
+      [
+        "gold_small",
+        55
+      ],
+      [
+        "raw_bloodgem",
+        77
+      ],
+      [
+        "blue_topaz",
+        50
+      ],
+      [
+        "tourmaline",
+        50
+      ],
+      [
+        "alexandrite",
+        50
+      ],
+      [
+        "pearl",
+        100
+      ],
+      [
+        "opal",
+        50
+      ],
+      [
+        "ruby",
+        50
+      ],
+      [
+        "garnet",
+        50
+      ]
+    ]
+  },
+  {
+    "id": "magic_generic",
+    "type": "item_group",
+    "items": [
+      [
+        "spirit_salt",
+        90
+      ],
+      {
+        "item": "gold_small",
+        "prob": 66,
+        "count": [
+          1,
+          3
+        ]
+      },
+      {
+        "item": "spirit_salt",
+        "prob": 66,
+        "count": [
+          1,
+          3
+        ]
+      },
+      {
+        "item": "soul_ash",
+        "prob": 66,
+        "count": [
+          1,
+          3
+        ]
+      },
+      [
+        "soul_ash",
+        44
+      ],
+      [
+        "ritual_blood",
+        22
+      ],
+      [
+        "raw_bloodgem",
+        10
+      ],
+      [
+        "ferrystone",
+        5
+      ],
+      [
+        "petrified_eye",
+        5
+      ],
+      [
+        "dullahead",
+        5
+      ],
+      [
+        "chronocrystal",
+        5
+      ],
+      [
+        "iounizer",
+        5
+      ],
+      [
+        "stimpak",
+        5
+      ],
+      [
+        "senzu_bean",
+        5
+      ],
+      [
+        "decaying_soul",
+        5
+      ],
+      [
+        "argentium",
+        10
+      ],
+      [
+        "crimsonite",
+        10
+      ],
+      [
+        "byakugan_eye",
+        10
+      ],
+      [
+        "sharingan_eye",
+        10
+      ],
+      [
+        "uchiha_tablet",
+        10
+      ],
+      [
+        "viridite",
+        10
+      ],
+      [
+        "ceruleum",
+        10
+      ]
+    ]
+  },
+  {
+    "id": "magic_uncommon",
+    "type": "item_group",
+    "items": [
+      {
+        "item": "ferrystone",
+        "prob": 15,
+        "count": [
+          1,
+          3
+        ]
+      },
+      [
+        "petrified_eye",
+        15
+      ],
+      [
+        "dullahead",
+        15
+      ],
+      [
+        "chronocrystal",
+        15
+      ],
+      [
+        "portcrystal",
+        5
+      ],
+      [
+        "iounizer",
+        15
+      ],
+      [
+        "decaying_soul",
+        15
+      ],
+      [
+        "everwaning_soul",
+        15
+      ],
+      [
+        "acid_bloodshot",
+        15
+      ],
+      [
+        "fire_bloodshot",
+        15
+      ],
+      [
+        "ice_bloodshot",
+        15
+      ],
+      [
+        "elec_bloodshot",
+        15
+      ],
+      [
+        "argent_core",
+        11
+      ],
+      [
+        "virid_core",
+        11
+      ],
+      [
+        "ceruleum_core",
+        11
+      ],
+      [
+        "crimson_core",
+        11
+      ],
+      [
+        "stimpak",
+        15
+      ],
+      [
+        "senzu_bean",
+        15
+      ],
+      [
+        "argent_breaker",
+        1
+      ],
+      [
+        "virid_breaker",
+        1
+      ],
+      [
+        "ceruleum_breaker",
+        1
+      ],
+      [
+        "crimson_breaker",
+        1
+      ],
+      [
+        "engine_trigger",
+        11
+      ],
+      [
+        "lance_trigger",
+        11
+      ],
+      [
+        "aegis_trigger",
+        11
+      ],
+      [
+        "rune_heart",
+        11
+      ],
+      [
+        "argentbow",
+        1
+      ],
+      [
+        "crimsonbow",
+        1
+      ],
+      [
+        "ceruleumbow",
+        1
+      ],
+      [
+        "byakugan_eye",
+        10
+      ],
+      [
+        "sharingan_eye",
+        10
+      ],
+      [
+        "uchiha_tablet",
+        10
+      ],
+      [
+        "viridbow",
+        1
+      ],
+      [
+        "virid_sword",
+        1
+      ],
+      [
+        "argent_sword",
+        1
+      ],
+      [
+        "crimson_sword",
+        1
+      ],
+      [
+        "ceruleum_sword",
+        1
+      ],
+      [
+        "blood_blade",
+        1
+      ],
+      [
+        "blood_whip",
+        1
+      ],
+      [
+        "mana_tear",
+        9
+      ],
+      [
+        "pineapple_surprise",
+        5
+      ],
+      [
+        "holy_grenade",
+        5
+      ],
+      [
+        "argentium",
+        20
+      ],
+      [
+        "crimsonite",
+        20
+      ],
+      [
+        "viridite",
+        20
+      ],
+      [
+        "ceruleum",
+        20
+      ]
+    ]
+  },
+  {
+    "id": "magic_rare",
+    "type": "item_group",
+    "items": [
+      {
+        "item": "senzu_bean",
+        "prob": 15,
+        "count": [
+          1,
+          3
+        ]
+      },
+      {
+        "item": "stimpak",
+        "prob": 15,
+        "count": [
+          1,
+          3
+        ]
+      },
+      [
+        "stimpak",
+        15
+      ],
+      [
+        "senzu_bean",
+        15
+      ],
+      [
+        "argent_breaker",
+        12
+      ],
+      [
+        "virid_breaker",
+        12
+      ],
+      [
+        "ceruleum_breaker",
+        12
+      ],
+      [
+        "crimson_breaker",
+        12
+      ],
+      [
+        "argentbow",
+        15
+      ],
+      [
+        "crimsonbow",
+        15
+      ],
+      [
+        "ceruleumbow",
+        15
+      ],
+      [
+        "viridbow",
+        15
+      ],
+      [
+        "virid_sword",
+        15
+      ],
+      [
+        "argent_sword",
+        15
+      ],
+      [
+        "crimson_sword",
+        15
+      ],
+      [
+        "ceruleum_sword",
+        15
+      ],
+      [
+        "blood_blade",
+        15
+      ],
+      [
+        "blood_whip",
+        15
+      ],
+      [
+        "mana_tear",
+        19
+      ],
+      [
+        "byakugan_eye",
+        10
+      ],
+      [
+        "sharingan_eye",
+        10
+      ],
+      [
+        "uchiha_tablet",
+        10
+      ],
+      [
+        "pineapple_surprise",
+        25
+      ],
+      [
+        "holy_grenade",
+        25
+      ],
+      [
+        "havel_ring",
+        22
+      ],
+      [
+        "ice_ring",
+        12
+      ],
+      [
+        "fire_ring",
+        12
+      ],
+      [
+        "elec_ring",
+        12
+      ],
+      [
+        "acid_ring",
+        12
+      ],
+      [
+        "frostmourne",
+        2
+      ],
+      [
+        "holyavenger",
+        2
+      ],
+      [
+        "frostbrand",
+        11
+      ],
+      [
+        "flametongue",
+        11
+      ],
+      [
+        "venomfang",
+        11
+      ],
+      [
+        "stormrazor",
+        11
+      ],
+      [
+        "rune_scimmy",
+        11
+      ],
+      [
+        "argentium",
+        30
+      ],
+      [
+        "crimsonite",
+        30
+      ],
+      [
+        "viridite",
+        30
+      ],
+      [
+        "ceruleum",
+        30
+      ]
+    ]
+  },
+  {
+    "id": "slug_scrolls",
+    "type": "item_group",
+    "items": [
+      [
+        "summon_scroll_smudged",
+        10
+      ],
+      [
+        "spell_scroll_bio_acidicspray",
+        35
+      ],
+      [
+        "spell_scroll_ethereal_grasp",
+        50
+      ],
+      [
+        "spell_scroll_druid_woodshaft",
+        50
+      ],
+      [
+        "spell_scroll_stonefist",
+        30
+      ],
+      [
+        "spell_scroll_eshaper_piercing_bolt",
+        40
+      ],
+      [
+        "spell_scroll_eshaper_rockbolt",
+        50
+      ],
+      [
+        "spell_scroll_biomancer_paralytic_dart",
+        40
+      ],
+      [
+        "spell_scroll_biomancer_visceral_projection",
+        40
+      ],
+      [
+        "spell_scroll_summon_wisps",
+        30
+      ],
+      [
+        "spell_scroll_pain_split",
+        25
+      ],
+      [
+        "spell_scroll_druid_veggrasp",
+        15
+      ],
+      [
+        "spell_scroll_druid_rootstrike",
+        20
+      ],
+      [
+        "spell_scroll_seismic_stomp",
+        10
+      ],
+      [
+        "spell_scroll_eshaper_shardspray",
+        15
+      ],
+      [
+        "spell_scroll_purification_seed",
+        20
+      ],
+      [
+        "spell_scroll_earthshaper_stoneskin",
+        20
+      ],
+      [
+        "spell_scroll_earthshaper_pillar",
+        15
+      ],
+      [
+        "spell_scroll_recover_mana",
+        1
+      ],
+      [
+        "spell_scroll_recover_pain",
+        1
+      ],
+      [
+        "spell_scroll_recover_fatigue",
+        1
+      ],
+      [
+        "spell_scroll_recover_stamina",
+        1
+      ],
+      [
+        "spell_scroll_eshaper_shardstorm",
+        9
+      ],
+      [
+        "spell_scroll_cats_grace",
+        4
+      ],
+      [
+        "spell_scroll_eagles_sight",
+        4
+      ],
+      [
+        "spell_scroll_ogres_strength",
+        4
+      ],
+      [
+        "spell_scroll_foxs_cunning",
+        4
+      ],
+      [
+        "spell_scroll_druidic_regrowth",
+        9
+      ],
+      [
+        "spell_scroll_druidic_healing",
+        4
+      ]
+    ]
+  },
+  {
+    "id": "worm_scrolls",
+    "type": "item_group",
+    "items": [
+      [
+        "spell_scroll_bio_acidicspray",
+        35
+      ],
+      [
+        "spell_scroll_ethereal_grasp",
+        50
+      ],
+      [
+        "spell_scroll_necrotic_gaze",
+        30
+      ],
+      [
+        "spell_scroll_biomancer_visceral_projection",
+        40
+      ],
+      [
+        "spell_scroll_magic_missile",
+        35
+      ],
+      [
+        "spell_scroll_bio_grotesque",
+        20
+      ],
+      [
+        "spell_scroll_bio_fleshpouch",
+        20
+      ],
+      [
+        "spell_scroll_recover_mana",
+        9
+      ],
+      [
+        "spell_scroll_recover_pain",
+        2
+      ],
+      [
+        "spell_scroll_recover_fatigue",
+        2
+      ],
+      [
+        "spell_scroll_recover_stamina",
+        2
+      ],
+      [
+        "spell_scroll_crystallize_mana",
+        50
+      ],
+      [
+        "spell_scroll_gravity_well",
+        35
+      ],
+      [
+        "spell_scroll_magus_mana_bolt",
+        20
+      ],
+      [
+        "spell_scroll_magus_haste",
+        15
+      ],
+      [
+        "spell_scroll_magus_mana_beam",
+        15
+      ],
+      [
+        "spell_scroll_magus_mana_blast",
+        10
+      ],
+      [
+        "spell_scroll_magus_escape",
+        10
+      ],
+      [
+        "spell_scroll_animated_blade",
+        15
+      ],
+      [
+        "spell_scroll_mirror_image",
+        15
+      ],
+      [
+        "spell_scroll_cats_grace",
+        5
+      ],
+      [
+        "spell_scroll_eagles_sight",
+        5
+      ],
+      [
+        "spell_scroll_ogres_strength",
+        5
+      ],
+      [
+        "spell_scroll_foxs_cunning",
+        5
+      ],
+      [
+        "spell_scroll_dark_sight",
+        25
+      ]
+    ]
+  },
+  {
+    "id": "toad_scrolls",
+    "type": "item_group",
+    "items": [
+      [
+        "spell_scroll_blinding_flash",
+        25
+      ],
+      [
+        "spell_scroll_cats_grace",
+        2
+      ],
+      [
+        "spell_scroll_eagles_sight",
+        2
+      ],
+      [
+        "spell_scroll_ogres_strength",
+        2
+      ],
+      [
+        "spell_scroll_foxs_cunning",
+        2
+      ],
+      [
+        "spell_scroll_taze",
+        25
+      ],
+      [
+        "spell_scroll_lightning_blast",
+        20
+      ],
+      [
+        "spell_scroll_jolt",
+        25
+      ],
+      [
+        "spell_scroll_lightning_bolt",
+        20
+      ],
+      [
+        "spell_scroll_windstrike",
+        40
+      ],
+      [
+        "spell_scroll_windrun",
+        35
+      ],
+      [
+        "spell_scroll_stormshaper_wall_of_fog",
+        25
+      ],
+      [
+        "spell_scroll_seismic_stomp",
+        20
+      ],
+      [
+        "spell_scroll_stormshaper_ionization",
+        5
+      ]
+    ]
+  },
+  {
+    "id": "penguin_scrolls",
+    "type": "item_group",
+    "items": [
+      [
+        "spell_scroll_chilling_touch",
+        50
+      ],
+      [
+        "spell_scroll_blinding_flash",
+        25
+      ],
+      [
+        "spell_scroll_cats_grace",
+        2
+      ],
+      [
+        "spell_scroll_eagles_sight",
+        2
+      ],
+      [
+        "spell_scroll_ogres_strength",
+        2
+      ],
+      [
+        "spell_scroll_foxs_cunning",
+        2
+      ],
+      [
+        "spell_scroll_ethereal_grasp",
+        50
+      ],
+      [
+        "spell_scroll_ice_spike",
+        30
+      ],
+      [
+        "spell_scroll_frost_spray",
+        40
+      ],
+      [
+        "spell_scroll_glide_ice",
+        45
+      ],
+      [
+        "spell_scroll_ice_shield",
+        35
+      ],
+      [
+        "spell_scroll_frost_armor",
+        35
+      ],
+      [
+        "spell_scroll_cone_cold",
+        15
+      ],
+      [
+        "spell_scroll_hoary_blast",
+        15
+      ]
+    ]
+  },
+  {
+    "id": "leech_scrolls",
+    "type": "item_group",
+    "items": [
+      [
+        "spell_scroll_light_healing",
+        30
+      ],
+      [
+        "spell_scroll_bio_acidicspray",
+        40
+      ],
+      [
+        "spell_scroll_necrotic_gaze",
+        40
+      ],
+      [
+        "spell_scroll_biomancer_paralytic_dart",
+        40
+      ],
+      [
+        "spell_scroll_biomancer_visceral_projection",
+        40
+      ],
+      [
+        "spell_scroll_summon_zombie",
+        25
+      ],
+      [
+        "spell_scroll_summon_skeleton",
+        25
+      ],
+      [
+        "spell_scroll_pain_split",
+        20
+      ],
+      [
+        "spell_scroll_bio_grotesque",
+        30
+      ],
+      [
+        "spell_scroll_bio_fleshpouch",
+        30
+      ],
+      [
+        "spell_scroll_recover_mana",
+        5
+      ],
+      [
+        "spell_scroll_recover_pain",
+        5
+      ],
+      [
+        "spell_scroll_recover_fatigue",
+        8
+      ],
+      [
+        "spell_scroll_recover_stamina",
+        8
+      ],
+      [
+        "spell_scroll_vicious_tentacle",
+        20
+      ],
+      [
+        "spell_scroll_summon_decayed_pouncer",
+        15
+      ],
+      [
+        "spell_scroll_bio_bonespear",
+        20
+      ],
+      [
+        "spell_scroll_biomancer_coagulant_weave",
+        30
+      ]
+    ]
+  },
+  {
+    "id": "iounstones",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      {
+        "item": "ioun_argent",
+        "prob": 25
+      },
+      {
+        "item": "ioun_crimson",
+        "prob": 25
+      },
+      {
+        "item": "ioun_ceruleum",
+        "prob": 25
+      },
+      {
+        "item": "ioun_virid",
+        "prob": 25
+      }
+    ]
+  },
+  {
+    "id": "souldrop",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      {
+        "item": "decaying_soul",
+        "prob": 98
+      },
+      {
+        "item": "corrupted_soul",
+        "prob": 2
+      }
+    ]
+  },
+  {
+    "id": "avatargear",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      {
+        "item": "avatar_fist",
+        "prob": 50
+      },
+      {
+        "item": "storm_raiment",
+        "prob": 50
+      }
+    ]
+  },
+  {
+    "id": "inakagear",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      {
+        "item": "wolf_raiment",
+        "prob": 50
+      },
+      {
+        "item": "wolf_wakizashi",
+        "prob": 50
+      },
+      {
+        "item": "wolf_sash",
+        "prob": 50
+      },
+      {
+        "item": "lone_wolf_blade",
+        "prob": 50
+      }
+    ]
+  },
+  {
+    "id": "all_lightsabers",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      {
+        "item": "saber_hilt_crimson",
+        "prob": 25
+      },
+      {
+        "item": "saber_hilt_argent",
+        "prob": 25
+      },
+      {
+        "item": "saber_hilt_virid",
+        "prob": 25
+      },
+      {
+        "item": "saber_hilt_ceruleum",
+        "prob": 25
+      }
+    ]
+  },
+  {
+    "id": "jedi_sabers",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      {
+        "item": "saber_hilt_virid",
+        "prob": 50
+      },
+      {
+        "item": "saber_hilt_ceruleum",
+        "prob": 50
+      }
+    ]
+  },
+  {
+    "id": "potions_common",
+    "type": "item_group",
+    "items": [
+      [
+        "mana_potion_lesser",
+        90
+      ],
+      [
+        "mana_potion",
+        20
+      ],
+      [
+        "stimpak",
+        10
+      ],
+      [
+        "saurian_tail",
+        10
+      ],
+      [
+        "senzu_bean",
+        10
+      ],
+      [
+        "ninja_pellet",
+        10
+      ],
+      [
+        "mana_potion_greater",
+        1
+      ],
+      [
+        "ogres_strength_potion",
+        10
+      ],
+      [
+        "foxs_cunning_potion",
+        10
+      ],
+      [
+        "eagles_sight_potion",
+        10
+      ],
+      [
+        "cats_grace_potion",
+        10
+      ],
+      [
+        "manatouched_serum",
+        1
+      ]
+    ]
+  },
+  {
+    "id": "crystalkunai",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      {
+        "item": "crystal_kunai",
+        "prob": 50
+      },
+      {
+        "item": "virid_kunai",
+        "prob": 50
+      },
+      {
+        "item": "ceruleum_kunai",
+        "prob": 50
+      },
+      {
+        "item": "argent_kunai",
+        "prob": 50
+      },
+      {
+        "item": "crimson_kunai",
+        "prob": 50
+      }
+    ]
+  },
+  {
+    "id": "crystalswords",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      {
+        "item": "crimson_sword",
+        "prob": 50
+      },
+      {
+        "item": "virid_sword",
+        "prob": 50
+      },
+      {
+        "item": "ceruleum_sword",
+        "prob": 50
+      },
+      {
+        "item": "argent_sword",
+        "prob": 50
+      },
+      {
+        "item": "crimson_breaker",
+        "prob": 50
+      },
+      {
+        "item": "virid_breaker",
+        "prob": 50
+      },
+      {
+        "item": "ceruleum_breaker",
+        "prob": 50
+      },
+      {
+        "item": "argent_breaker",
+        "prob": 50
+      },
+      {
+        "item": "blood_blade",
+        "prob": 50
+      }
+    ]
+  },
+  {
+    "id": "soulswords",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      {
+        "item": "crimson_sword",
+        "prob": 25
+      },
+      {
+        "item": "virid_sword",
+        "prob": 25
+      },
+      {
+        "item": "ceruleum_sword",
+        "prob": 25
+      },
+      {
+        "item": "argent_sword",
+        "prob": 25
+      }
+    ]
+  },
+  {
+    "id": "summonbossitems",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      {
+        "item": "boss_item_the_devil",
+        "prob": 1
+      },
+      {
+        "item": "boss_item_kyriakos",
+        "prob": 10
+      },
+      {
+        "item": "boss_item_beholder",
+        "prob": 10
+      },
+      {
+        "item": "boss_item_nature",
+        "prob": 10
+      },
+      {
+        "item": "boss_item_sirens",
+        "prob": 10
+      },
+      {
+        "item": "boss_item_lichtrio",
+        "prob": 10
+      },
+      {
+        "item": "boss_item_flamegod",
+        "prob": 10
+      },
+      {
+        "item": "boss_item_thunderbird",
+        "prob": 10
+      },
+      {
+        "item": "boss_item_avatar",
+        "prob": 10
+      },
+      {
+        "item": "boss_item_doomsayer",
+        "prob": 10
+      },
+      {
+        "item": "boss_item_chimera",
+        "prob": 15
+      },
+      {
+        "item": "boss_item_lamia",
+        "prob": 15
+      },
+      {
+        "item": "boss_item_dullahan",
+        "prob": 10
+      },
+      {
+        "item": "boss_item_ifrit",
+        "prob": 10
+      }
+    ]
+  },
+  {
+    "id": "lolitems",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      {
+        "item": "iceborn_gauntlet",
+        "prob": 11
+      },
+      {
+        "item": "seraphs_embrace",
+        "prob": 11
+      },
+      {
+        "item": "rageblade",
+        "prob": 11
+      },
+      {
+        "item": "zhonyas",
+        "prob": 11
+      },
+      {
+        "item": "bloodthirster",
+        "prob": 11
+      },
+      {
+        "item": "fimbulwinter",
+        "prob": 11
+      },
+      {
+        "item": "rabadons",
+        "prob": 11
+      },
+      {
+        "item": "frozen_heart",
+        "prob": 11
+      },
+      {
+        "item": "ghostblade",
+        "prob": 11
+      },
+      {
+        "item": "trinity_force",
+        "prob": 11
+      },
+      {
+        "item": "muramana",
+        "prob": 11
+      },
+      {
+        "item": "randuins_omen",
+        "prob": 11
+      }
+    ]
+  },
+  {
+    "id": "genfan_items",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      {
+        "item": "shield_beskar",
+        "prob": 22
+      },
+      {
+        "item": "helmet_beskar",
+        "prob": 11
+      },
+      {
+        "item": "frostbrand",
+        "prob": 6
+      },
+      {
+        "item": "flametongue",
+        "prob": 6
+      },
+      {
+        "item": "venomfang",
+        "prob": 6
+      },
+      {
+        "item": "stormrazor",
+        "prob": 6
+      },
+      {
+        "item": "frostmourne",
+        "prob": 3
+      },
+      {
+        "item": "holyavenger",
+        "prob": 3
+      },
+      {
+        "item": "rune_scimmy",
+        "prob": 11
+      },
+      {
+        "item": "gauntlets_beskar",
+        "prob": 15
+      },
+      {
+        "item": "beskar_greaves",
+        "prob": 15
+      },
+      {
+        "item": "beskar_cuirass",
+        "prob": 15
+      },
+      {
+        "item": "fire_cuirass",
+        "prob": 15
+      },
+      {
+        "item": "ice_cuirass",
+        "prob": 15
+      },
+      {
+        "item": "acid_cuirass",
+        "prob": 15
+      },
+      {
+        "item": "elec_cuirass",
+        "prob": 15
+      },
+      {
+        "item": "helmet_rune",
+        "prob": 15
+      },
+      {
+        "item": "gauntlets_rune",
+        "prob": 15
+      },
+      {
+        "item": "rune_greaves",
+        "prob": 15
+      },
+      {
+        "item": "rune_cuirass",
+        "prob": 15
+      },
+      {
+        "item": "stasis_holster",
+        "prob": 15
+      },
+      {
+        "item": "stasis_holster_leg",
+        "prob": 15
+      },
+      {
+        "item": "tri_scabbard",
+        "prob": 22
+      },
+      {
+        "item": "devilstraps",
+        "prob": 17
+      },
+      {
+        "item": "quick_scabbard",
+        "prob": 22
+      },
+      {
+        "item": "sacrifice_brand",
+        "prob": 22
+      },
+      {
+        "item": "sage_surplice",
+        "prob": 22
+      },
+      {
+        "item": "moon_surcoat",
+        "prob": 9
+      },
+      {
+        "item": "sun_gambeson",
+        "prob": 9
+      },
+      {
+        "item": "rune_cape",
+        "prob": 15
+      },
+      {
+        "item": "light_sword",
+        "prob": 15
+      },
+      {
+        "item": "ioun_crimson",
+        "prob": 11
+      },
+      {
+        "item": "ioun_virid",
+        "prob": 11
+      },
+      {
+        "item": "ioun_ceruleum",
+        "prob": 11
+      },
+      {
+        "item": "ioun_argent",
+        "prob": 11
+      },
+      {
+        "item": "lightsaber_crimson",
+        "prob": 5
+      },
+      {
+        "item": "lightsaber_virid",
+        "prob": 5
+      },
+      {
+        "item": "lightsaber_ceruleum",
+        "prob": 5
+      },
+      {
+        "item": "lightsaber_argent",
+        "prob": 5
+      },
+      {
+        "item": "philo_stone",
+        "prob": 3
+      },
+      {
+        "item": "dragons_dogma",
+        "prob": 9
+      },
+      {
+        "item": "godsbane",
+        "prob": 3
+      },
+      {
+        "item": "ultima_weapon",
+        "prob": 1
+      },
+      {
+        "item": "vamp_mask",
+        "prob": 3
+      }
+    ]
+  },
+  {
+    "id": "runecoredrop",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      {
+        "item": "broken_core",
+        "prob": 99
+      },
+      {
+        "item": "rune_core",
+        "prob": 1
+      }
+    ]
+  },
+  {
+    "id": "devil_gunstore_guns",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      {
+        "item": "ebony_ivory",
+        "prob": 8
+      },
+      {
+        "item": "x_buster",
+        "prob": 6
+      },
+      {
+        "item": "vile_cannon",
+        "prob": 6
+      },
+      {
+        "item": "cannon_prosthetic",
+        "prob": 6
+      },
+      {
+        "item": "kalina_ann",
+        "prob": 5
+      },
+      {
+        "item": "kalina_ann_havoc",
+        "prob": 3
+      },
+      {
+        "item": "argentbow",
+        "prob": 6
+      },
+      {
+        "item": "ceruleumbow",
+        "prob": 6
+      },
+      {
+        "item": "viridbow",
+        "prob": 6
+      },
+      {
+        "item": "crimsonbow",
+        "prob": 6
+      },
+      {
+        "group": "guns_milspec",
+        "prob": 15
+      },
+      {
+        "group": "guns_rare",
+        "prob": 15
+      },
+      {
+        "group": "guns_energy",
+        "prob": 12
+      }
+    ]
+  },
+  {
+    "id": "devil_gunstore_weapons",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      {
+        "item": "dragonslayer",
+        "prob": 6
+      },
+      {
+        "item": "ultima_weapon",
+        "prob": 6
+      },
+      {
+        "item": "holyavenger",
+        "prob": 6
+      },
+      {
+        "item": "terablade",
+        "prob": 6
+      },
+      {
+        "item": "frostmourne",
+        "prob": 6
+      },
+      {
+        "item": "flametongue",
+        "prob": 6
+      },
+      {
+        "item": "frostbrand",
+        "prob": 6
+      },
+      {
+        "item": "venomfang",
+        "prob": 6
+      },
+      {
+        "item": "thunderfury",
+        "prob": 6
+      },
+      {
+        "item": "stormrazor",
+        "prob": 6
+      },
+      {
+        "item": "rageblade",
+        "prob": 6
+      },
+      {
+        "item": "deaths_dance",
+        "prob": 6
+      },
+      {
+        "item": "umezawa_jitte",
+        "prob": 6
+      },
+      {
+        "item": "lightsaber_argent",
+        "prob": 4
+      },
+      {
+        "item": "lightsaber_ceruleum",
+        "prob": 4
+      },
+      {
+        "item": "lightsaber_virid",
+        "prob": 4
+      },
+      {
+        "item": "lightsaber_crimson",
+        "prob": 4
+      }
+    ]
+  }
+]

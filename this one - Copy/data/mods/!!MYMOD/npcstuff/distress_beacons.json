@@ -1,0 +1,196 @@
+[
+  {
+    "//": "Distress beacon system.  Every beacon is called 'distress beacon' and looks exactly the same; each has its own item id and its own outcome.  Good: Jedi, Mandalorian, Devil Hunter, Adventuring Party.  Bad: Abductor gang, Contract Killer, Predator Demon, Sith.  50/50: Mandalorian Outcast (ally beacon + foe beacon, each half as common as the others).",
+    "//2": "Old ids kept so existing saves stay valid: jedi_distress_beacon (Jedi, jedi/jedi_ally.json), mando_tracking_fob (Mandalorian, npcstuff/mando_bounty_hunter.json), mando_outcast_fob (outcast ally, npcstuff/mando_outcast.json).",
+    "type": "item_group",
+    "id": "distress_beacons",
+    "subtype": "distribution",
+    "//3": "Nine equal outcomes: eight at prob 100, the outcast split into two beacons at prob 50 each.  The party is four beacons in one drop.",
+    "entries": [
+      { "item": "jedi_distress_beacon", "prob": 100 },
+      { "item": "mando_tracking_fob", "prob": 100 },
+      { "item": "dbeacon_devilhunter", "prob": 100 },
+      {
+        "collection": [ { "item": "dbeacon_party_fighter" }, { "item": "dbeacon_party_mage" }, { "item": "dbeacon_party_thief" }, { "item": "dbeacon_party_archer" } ],
+        "prob": 100
+      },
+      { "item": "dbeacon_abductors", "prob": 100 },
+      { "item": "dbeacon_killer", "prob": 100 },
+      { "item": "dbeacon_predator", "prob": 100 },
+      { "item": "dbeacon_sith", "prob": 100 },
+      { "item": "mando_outcast_fob", "prob": 50 },
+      { "item": "dbeacon_outcast_foe", "prob": 50 }
+    ]
+  },
+
+  {
+    "type": "COMESTIBLE",
+    "id": "dbeacon_devilhunter",
+    "name": { "str": "distress beacon" },
+    "description": "A cracked, palm-sized comms beacon that still hums faintly.  Activating it broadcasts a distress signal on every frequency, and something out there will answer.  There is no telling what.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "color": "light_blue",
+    "symbol": "*",
+    "material": "plastic",
+    "spoils_in": "365 days",
+    "comestible_type": "FOOD",
+    "quench": 0,
+    "healthy": -1,
+    "calories": 0,
+    "price": "0 cent",
+    "price_postapoc": "250 cent",
+    "parasites": 0,
+    "stack_size": 1,
+    "fun": 0,
+    "flags": [ "TRADER_AVOID" ],
+    "use_action": {
+      "type": "place_npc",
+      "npc_class_id": "devilhunter_main",
+      "summon_msg": "The beacon squeals, then goes quiet.  Somewhere behind you a motorcycle engine cuts out and a voice drawls, \"Somebody order a devil hunter?\"",
+      "place_randomly": false,
+      "moves": 50
+    }
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "dbeacon_party_fighter",
+    "copy-from": "dbeacon_devilhunter",
+    "name": { "str": "distress beacon" },
+    "use_action": {
+      "type": "place_npc",
+      "npc_class_id": "adv_fighter",
+      "summon_msg": "The beacon squeals.  Armor clanks in the distance, and a heavily armored fighter strides out of the gloom.",
+      "place_randomly": false,
+      "moves": 50
+    }
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "dbeacon_party_mage",
+    "copy-from": "dbeacon_devilhunter",
+    "name": { "str": "distress beacon" },
+    "use_action": {
+      "type": "place_npc",
+      "npc_class_id": "adv_mage",
+      "summon_msg": "The beacon squeals.  The air crackles, and a robed mage steps out of a shimmer of light.",
+      "place_randomly": false,
+      "moves": 50
+    }
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "dbeacon_party_thief",
+    "copy-from": "dbeacon_devilhunter",
+    "name": { "str": "distress beacon" },
+    "use_action": {
+      "type": "place_npc",
+      "npc_class_id": "adv_thief",
+      "summon_msg": "The beacon squeals.  Something moves in the shadows, and a hooded thief slips into view as if they had been there all along.",
+      "place_randomly": false,
+      "moves": 50
+    }
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "dbeacon_party_archer",
+    "copy-from": "dbeacon_devilhunter",
+    "name": { "str": "distress beacon" },
+    "use_action": {
+      "type": "place_npc",
+      "npc_class_id": "adv_archer",
+      "summon_msg": "The beacon squeals.  An arrow thuds into the ground at your feet, and an archer lowers their bow with a grin.",
+      "place_randomly": false,
+      "moves": 50
+    }
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "dbeacon_sith",
+    "copy-from": "dbeacon_devilhunter",
+    "name": { "str": "distress beacon" },
+    "use_action": {
+      "type": "place_npc",
+      "npc_class_id": "sith_main",
+      "summon_msg": "The beacon squeals, then wails.  A red blade hisses to life in the dark, and a cold voice says, \"Your call has been answered.\"",
+      "place_randomly": false,
+      "moves": 50
+    }
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "dbeacon_outcast_foe",
+    "copy-from": "dbeacon_devilhunter",
+    "name": { "str": "distress beacon" },
+    "use_action": {
+      "type": "place_npc",
+      "npc_class_id": "mando_outcast_hostile",
+      "summon_msg": "The beacon crackles.  Someone in scavenged beskar steps out of cover, blaster already raised.  They were not looking for a rescue.",
+      "place_randomly": false,
+      "moves": 50
+    }
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "dbeacon_killer",
+    "copy-from": "dbeacon_devilhunter",
+    "name": { "str": "distress beacon" },
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_contract_killer",
+      "friendly_msg": "A contract killer steps out of the dark.  They look at you, then at the beacon, and nod.",
+      "hostile_msg": "The beacon crackles with a burst of static.  A contract killer steps out of the dark: this signal was the last thing they needed to find you.",
+      "difficulty": 100,
+      "moves": 50,
+      "place_randomly": false
+    }
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "dbeacon_predator",
+    "copy-from": "dbeacon_devilhunter",
+    "name": { "str": "distress beacon" },
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_predator_demon",
+      "friendly_msg": "Something huge answers the call, and for a moment it hesitates.",
+      "hostile_msg": "The beacon shrieks.  The shadows peel away and a predator demon unfolds beside you, drawn by the signal.",
+      "difficulty": 100,
+      "moves": 50,
+      "place_randomly": false
+    }
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "dbeacon_abductors",
+    "copy-from": "dbeacon_devilhunter",
+    "name": { "str": "distress beacon" },
+    "use_action": { "type": "cast_spell", "spell_id": "dbeacon_summon_abductors", "no_fail": true, "level": 1 }
+  },
+
+  {
+    "type": "SPELL",
+    "id": "dbeacon_summon_abductors",
+    "name": { "str": "Beacon Ambush: Abductors" },
+    "description": "A distress beacon's answer: a gang of abductor demons arrives on top of the signal.",
+    "message": "The beacon shrieks, and abductor demons tear their way into the world around you!",
+    "valid_targets": [ "self" ],
+    "effect": "summon",
+    "effect_str": "mon_abductor",
+    "flags": [ "HOSTILE_SUMMON", "PERMANENT", "NO_EXPLOSION_VFX" ],
+    "min_damage": 4,
+    "max_damage": 4,
+    "min_range": 0,
+    "max_range": 0,
+    "min_aoe": 3,
+    "max_aoe": 3,
+    "min_duration": 120000,
+    "max_duration": 120000,
+    "max_level": 1,
+    "difficulty": -10,
+    "base_casting_time": 100,
+    "energy_source": "STAMINA",
+    "base_energy_cost": 0,
+    "final_energy_cost": 0
+  }
+]

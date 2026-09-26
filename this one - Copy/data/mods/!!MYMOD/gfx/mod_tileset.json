@@ -1,0 +1,1738 @@
+[
+  {
+    "type": "mod_tileset",
+    "compatibility": [
+      "UNDEAD_PEOPLE_BASE",
+      "UNDEAD_PEOPLE",
+      "UltimateCataclysm",
+      "MSX++DEAD_PEOPLE"
+    ],
+    "tiles-new": [
+      {
+        "file": "mageguy.png",
+        "tiles": [
+          {
+            "id": "mon_tester",
+            "fg": 0,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 50,
+        "sprite_height": 128,
+        "sprite_offset_x": 0,
+        "sprite_offset_y": -32
+      },
+      {
+        "file": "liquidflame2.png",
+        "tiles": [
+          {
+            "id": "mon_flamegod_hand",
+            "fg": 1,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 64,
+        "sprite_height": 72,
+        "sprite_offset_x": -9,
+        "sprite_offset_y": -40
+      },
+      {
+        "file": "liquidflame1.png",
+        "tiles": [
+          {
+            "id": "mon_flamegod",
+            "fg": 2,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 64,
+        "sprite_height": 140,
+        "sprite_offset_x": -18,
+        "sprite_offset_y": -108
+      },
+      {
+        "file": "liquidflame3.png",
+        "tiles": [
+          {
+            "id": "mon_flamenado",
+            "fg": 3,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 32,
+        "sprite_height": 42,
+        "sprite_offset_x": -3,
+        "sprite_offset_y": -10
+      },
+      {
+        "file": "mindflayer.png",
+        "tiles": [
+          {
+            "id": "mon_mindflayer",
+            "fg": 4,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 41,
+        "sprite_height": 48,
+        "sprite_offset_x": -3,
+        "sprite_offset_y": -16
+      },
+      {
+        "file": "mindflayer1.png",
+        "tiles": [
+          {
+            "id": "mon_tester1",
+            "fg": 5,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 56,
+        "sprite_height": 67,
+        "sprite_offset_x": -12,
+        "sprite_offset_y": -35
+      },
+      {
+        "file": "gilgamesh2.png",
+        "tiles": [
+          {
+            "id": "mon_tester",
+            "fg": 6,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 80,
+        "sprite_height": 96,
+        "sprite_offset_x": -16,
+        "sprite_offset_y": -64
+      },
+      {
+        "file": "musclegod.png",
+        "tiles": [
+          {
+            "id": "mon_kyriakos",
+            "fg": 7,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 64,
+        "sprite_height": 103,
+        "sprite_offset_x": -12,
+        "sprite_offset_y": -71
+      },
+      {
+        "file": "vargas.png",
+        "tiles": [
+          {
+            "id": "mon_monk_avatar",
+            "fg": 8,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 56,
+        "sprite_height": 79,
+        "sprite_offset_x": -18,
+        "sprite_offset_y": -47
+      },
+      {
+        "file": "ironfist.png",
+        "tiles": [
+          {
+            "id": "mon_monk_disciple",
+            "fg": 9,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 40,
+        "sprite_height": 67,
+        "sprite_offset_x": -4,
+        "sprite_offset_y": -35
+      },
+      {
+        "file": "doomsayer.png",
+        "tiles": [
+          {
+            "id": "mon_monk_doomsayer",
+            "fg": 10,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 88,
+        "sprite_height": 56,
+        "sprite_offset_x": -20,
+        "sprite_offset_y": -24
+      },
+      {
+        "file": "bahamut.png",
+        "tiles": [
+          {
+            "id": "mon_bahamut",
+            "fg": 11,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 88,
+        "sprite_height": 113,
+        "sprite_offset_x": -20,
+        "sprite_offset_y": -82
+      },
+      {
+        "file": "reddragon.png",
+        "tiles": [
+          {
+            "id": "mon_grigori",
+            "fg": 12,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 72,
+        "sprite_height": 60,
+        "sprite_offset_x": -19,
+        "sprite_offset_y": -28
+      },
+      {
+        "file": "yellowdragon.png",
+        "tiles": [
+          {
+            "id": "mon_ghidra",
+            "fg": 13,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 80,
+        "sprite_height": 67,
+        "sprite_offset_x": -18,
+        "sprite_offset_y": -35
+      },
+      {
+        "file": "shielddragon.png",
+        "tiles": [
+          {
+            "id": "mon_dracolich",
+            "fg": 14,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 82,
+        "sprite_height": 60,
+        "sprite_offset_x": -24,
+        "sprite_offset_y": -28
+      },
+      {
+        "file": "dhormechimera.png",
+        "tiles": [
+          {
+            "id": "mon_chimera",
+            "fg": 15,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 68,
+        "sprite_height": 55,
+        "sprite_offset_x": -16,
+        "sprite_offset_y": -23
+      },
+      {
+        "file": "lamiaqueen.png",
+        "tiles": [
+          {
+            "id": "mon_lamia",
+            "fg": 16,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 50,
+        "sprite_height": 54,
+        "sprite_offset_x": -14,
+        "sprite_offset_y": -22
+      },
+      {
+        "file": "soulnecro.png",
+        "tiles": [
+          {
+            "id": "mon_soulnecro",
+            "fg": 17,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 62,
+        "sprite_height": 64,
+        "sprite_offset_x": -18,
+        "sprite_offset_y": -32
+      },
+      {
+        "file": "headstone.png",
+        "tiles": [
+          {
+            "id": "mon_headstone",
+            "fg": 18,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 24,
+        "sprite_height": 48,
+        "sprite_offset_x": 0,
+        "sprite_offset_y": -16
+      },
+      {
+        "file": "guard.png",
+        "tiles": [
+          {
+            "id": "mon_lichguard",
+            "fg": 19,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 32,
+        "sprite_height": 51,
+        "sprite_offset_x": 0,
+        "sprite_offset_y": -19
+      },
+      {
+        "file": "lichking.png",
+        "tiles": [
+          {
+            "id": "mon_lichking",
+            "fg": 20,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 64,
+        "sprite_height": 64,
+        "sprite_offset_x": -16,
+        "sprite_offset_y": -32
+      },
+      {
+        "file": "lichpriest.png",
+        "tiles": [
+          {
+            "id": "mon_lichpriest",
+            "fg": 21,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 53,
+        "sprite_height": 64,
+        "sprite_offset_x": -16,
+        "sprite_offset_y": -32
+      },
+      {
+        "file": "irongiant.png",
+        "tiles": [
+          {
+            "id": "mon_lichknight",
+            "fg": 22,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 64,
+        "sprite_height": 80,
+        "sprite_offset_x": -16,
+        "sprite_offset_y": -48
+      },
+      {
+        "file": "dullahead.png",
+        "tiles": [
+          {
+            "id": "mon_dullahan_head",
+            "fg": 23,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 27,
+        "sprite_height": 28,
+        "sprite_offset_x": 0,
+        "sprite_offset_y": 4
+      },
+      {
+        "file": "necrophobe.png",
+        "tiles": [
+          {
+            "id": "mon_dullahan",
+            "fg": 24,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 56,
+        "sprite_height": 96,
+        "sprite_offset_x": -16,
+        "sprite_offset_y": -64
+      },
+      {
+        "file": "ninja.png",
+        "tiles": [
+          {
+            "id": "mon_inaka",
+            "fg": 25,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 60,
+        "sprite_height": 80,
+        "sprite_offset_x": -16,
+        "sprite_offset_y": -48
+      },
+      {
+        "file": "orog.png",
+        "tiles": [
+          {
+            "id": "mon_collector",
+            "fg": 26,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 61,
+        "sprite_height": 64,
+        "sprite_offset_x": -16,
+        "sprite_offset_y": -32
+      },
+      {
+        "file": "dancingblade.png",
+        "tiles": [
+          {
+            "id": "mon_dancing_blade",
+            "fg": 27,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 27,
+        "sprite_height": 65,
+        "sprite_offset_x": -1,
+        "sprite_offset_y": -32
+      },
+      {
+        "file": "sword-familiar.png",
+        "tiles": [
+          {
+            "id": "mon_sword",
+            "fg": 28,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 48,
+        "sprite_height": 112,
+        "sprite_offset_x": -8,
+        "sprite_offset_y": -80
+      },
+      {
+        "file": "shinobi.png",
+        "tiles": [
+          {
+            "id": "mon_ninja",
+            "fg": 29,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 47,
+        "sprite_height": 64,
+        "sprite_offset_x": -8,
+        "sprite_offset_y": -32
+      },
+      {
+        "file": "wingraptor1.png",
+        "tiles": [
+          {
+            "id": "mon_thunderbird",
+            "fg": 30,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 62,
+        "sprite_height": 72,
+        "sprite_offset_x": -8,
+        "sprite_offset_y": -40
+      },
+      {
+        "file": "whitewolf.png",
+        "tiles": [
+          {
+            "id": "mon_wolf_companion",
+            "fg": 31,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 48,
+        "sprite_height": 48,
+        "sprite_offset_x": -8,
+        "sprite_offset_y": -16
+      },
+      {
+        "file": "delta bug.png",
+        "tiles": [
+          {
+            "id": "mon_delta_bug",
+            "fg": 32,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 30,
+        "sprite_height": 32,
+        "sprite_offset_x": 2,
+        "sprite_offset_y": 0
+      },
+      {
+        "file": "gobbledygook.png",
+        "tiles": [
+          {
+            "id": "mon_bokoblin",
+            "fg": 33,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 32,
+        "sprite_height": 40,
+        "sprite_offset_x": 0,
+        "sprite_offset_y": -8
+      },
+      {
+        "file": "bomb.png",
+        "tiles": [
+          {
+            "id": "mon_bomba",
+            "fg": 34,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 38,
+        "sprite_height": 45,
+        "sprite_offset_x": -8,
+        "sprite_offset_y": -13
+      },
+      {
+        "file": "page32.png",
+        "tiles": [
+          {
+            "id": "mon_abductor",
+            "fg": 35,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 32,
+        "sprite_height": 48,
+        "sprite_offset_x": 0,
+        "sprite_offset_y": -16
+      },
+      {
+        "file": "doomgaze.png",
+        "tiles": [
+          {
+            "id": "mon_tester",
+            "fg": 36,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 56,
+        "sprite_height": 46,
+        "sprite_offset_x": 0,
+        "sprite_offset_y": -14
+      },
+      {
+        "file": "doomgaze1.png",
+        "tiles": [
+          {
+            "id": "mon_wraithlord",
+            "fg": 37,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 69,
+        "sprite_height": 56,
+        "sprite_offset_x": -18,
+        "sprite_offset_y": -24
+      },
+      {
+        "file": "stingray.png",
+        "tiles": [
+          {
+            "id": "mon_wraith",
+            "fg": 38,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 56,
+        "sprite_height": 38,
+        "sprite_offset_x": -18,
+        "sprite_offset_y": -6
+      },
+      {
+        "file": "shadow.png",
+        "tiles": [
+          {
+            "id": "mon_voidrift",
+            "fg": 39,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 24,
+        "sprite_height": 57,
+        "sprite_offset_x": 6,
+        "sprite_offset_y": -25
+      },
+      {
+        "file": "doublizard.png",
+        "tiles": [
+          {
+            "id": "mon_doublizard",
+            "fg": 40,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 56,
+        "sprite_height": 32,
+        "sprite_offset_x": -11,
+        "sprite_offset_y": 0
+      },
+      {
+        "file": "lich.png",
+        "tiles": [
+          {
+            "id": "mon_goblin_wizard",
+            "fg": 41,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 32,
+        "sprite_height": 36,
+        "sprite_offset_x": 0,
+        "sprite_offset_y": -4
+      },
+      {
+        "file": "pao.png",
+        "tiles": [
+          {
+            "id": "mon_hammeroblin",
+            "fg": 42,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 45,
+        "sprite_height": 32,
+        "sprite_offset_x": -4,
+        "sprite_offset_y": 0
+      },
+      {
+        "file": "mudwolf.png",
+        "tiles": [
+          {
+            "id": "mon_mudwolf",
+            "fg": 43,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 48,
+        "sprite_height": 48,
+        "sprite_offset_x": -8,
+        "sprite_offset_y": -16
+      },
+      {
+        "file": "earthdragon.png",
+        "tiles": [
+          {
+            "id": "mon_mud_dragonhead",
+            "fg": 44,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 58,
+        "sprite_height": 32,
+        "sprite_offset_x": -18,
+        "sprite_offset_y": 0
+      },
+      {
+        "file": "phoenix.png",
+        "tiles": [
+          {
+            "id": "mon_phoenix_small",
+            "fg": 45,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 39,
+        "sprite_height": 34,
+        "sprite_offset_x": -5,
+        "sprite_offset_y": -2
+      },
+      {
+        "file": "phoenixlarge.png",
+        "tiles": [
+          {
+            "id": "mon_phoenix_large",
+            "fg": 46,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 96,
+        "sprite_height": 64,
+        "sprite_offset_x": -45,
+        "sprite_offset_y": -32
+      },
+      {
+        "file": "anguiform.png",
+        "tiles": [
+          {
+            "id": "mon_water_dragon",
+            "fg": 47,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 64,
+        "sprite_height": 56,
+        "sprite_offset_x": -30,
+        "sprite_offset_y": -24
+      },
+      {
+        "file": "leviathan.png",
+        "tiles": [
+          {
+            "id": "mon_water_dragon_large",
+            "fg": 48,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 87,
+        "sprite_height": 72,
+        "sprite_offset_x": -30,
+        "sprite_offset_y": -40
+      },
+      {
+        "file": "lootgoblin.png",
+        "tiles": [
+          {
+            "id": "mon_loot_goblin",
+            "fg": 49,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 40,
+        "sprite_height": 55,
+        "sprite_offset_x": -10,
+        "sprite_offset_y": -23
+      },
+      {
+        "file": "Yojimbo.png",
+        "tiles": [
+          {
+            "id": "mon_souleater",
+            "fg": 50,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 63,
+        "sprite_height": 64,
+        "sprite_offset_x": -33,
+        "sprite_offset_y": -32
+      },
+      {
+        "file": "page64.png",
+        "tiles": [
+          {
+            "id": "mon_the_devil",
+            "fg": 51,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 45,
+        "sprite_height": 47,
+        "sprite_offset_x": -15,
+        "sprite_offset_y": -15
+      },
+      {
+        "file": "Catastrophe.png",
+        "tiles": [
+          {
+            "id": "mon_beholder",
+            "fg": 52,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 81,
+        "sprite_height": 87,
+        "sprite_offset_x": -24,
+        "sprite_offset_y": -55
+      },
+      {
+        "file": "Scullion.png",
+        "tiles": [
+          {
+            "id": "mon_tester",
+            "fg": 53,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 77,
+        "sprite_height": 64,
+        "sprite_offset_x": -24,
+        "sprite_offset_y": -32
+      },
+      {
+        "file": "Magissa.png",
+        "tiles": [
+          {
+            "id": "mon_tera",
+            "fg": 54,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 48,
+        "sprite_height": 72,
+        "sprite_offset_x": -6,
+        "sprite_offset_y": -40
+      },
+      {
+        "file": "Forza.png",
+        "tiles": [
+          {
+            "id": "mon_gaia",
+            "fg": 55,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 64,
+        "sprite_height": 80,
+        "sprite_offset_x": -11,
+        "sprite_offset_y": -48
+      },
+      {
+        "file": "Siren2.png",
+        "tiles": [
+          {
+            "id": "mon_siren",
+            "fg": 56,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 48,
+        "sprite_height": 72,
+        "sprite_offset_x": -11,
+        "sprite_offset_y": -40
+      },
+      {
+        "file": "Python.png",
+        "tiles": [
+          {
+            "id": "mon_sneko",
+            "fg": 57,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 38,
+        "sprite_height": 48,
+        "sprite_offset_x": -11,
+        "sprite_offset_y": -16
+      },
+      {
+        "file": "Melusine.png",
+        "tiles": [
+          {
+            "id": "mon_snake_siren",
+            "fg": 58,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 83,
+        "sprite_height": 76,
+        "sprite_offset_x": -27,
+        "sprite_offset_y": -44
+      },
+      {
+        "file": "Calofisteri.png",
+        "tiles": [
+          {
+            "id": "mon_orb_siren",
+            "fg": 59,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 80,
+        "sprite_height": 78,
+        "sprite_offset_x": -24,
+        "sprite_offset_y": -46
+      },
+      {
+        "file": "Nightshade.png",
+        "tiles": [
+          {
+            "id": "mon_nightshade",
+            "fg": 60,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 47,
+        "sprite_height": 40,
+        "sprite_offset_x": -10,
+        "sprite_offset_y": -8
+      },
+      {
+        "file": "Minotaur.png",
+        "tiles": [
+          {
+            "id": "mon_minotaur",
+            "fg": 61,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 71,
+        "sprite_height": 71,
+        "sprite_offset_x": -18,
+        "sprite_offset_y": -39
+      },
+      {
+        "file": "Omniscient.png",
+        "tiles": [
+          {
+            "id": "mon_kelke",
+            "fg": 62,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 72,
+        "sprite_height": 80,
+        "sprite_offset_x": -18,
+        "sprite_offset_y": -48
+      },
+      {
+        "file": "Azulmagia.png",
+        "tiles": [
+          {
+            "id": "mon_azarkan",
+            "fg": 63,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 64,
+        "sprite_height": 96,
+        "sprite_offset_x": -18,
+        "sprite_offset_y": -64
+      },
+      {
+        "file": "FireSoldier.png",
+        "tiles": [
+          {
+            "id": "mon_tester",
+            "fg": 64,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 37,
+        "sprite_height": 48,
+        "sprite_offset_x": -3,
+        "sprite_offset_y": -16
+      },
+      {
+        "file": "GoldSoldier.png",
+        "tiles": [
+          {
+            "id": "mon_tester2",
+            "fg": 65,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 37,
+        "sprite_height": 48,
+        "sprite_offset_x": -3,
+        "sprite_offset_y": -16
+      },
+      {
+        "file": "Calcobrena.png",
+        "tiles": [
+          {
+            "id": "mon_marionette_stringed",
+            "fg": 66,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 48,
+        "sprite_height": 68,
+        "sprite_offset_x": -7,
+        "sprite_offset_y": -36
+      },
+      {
+        "file": "FlameAcolyte2.png",
+        "tiles": [
+          {
+            "id": "mon_tester2",
+            "fg": 67,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 40,
+        "sprite_height": 51,
+        "sprite_offset_x": 1,
+        "sprite_offset_y": -19
+      },
+      {
+        "file": "ElmGigas.png",
+        "tiles": [
+          {
+            "id": "mon_gigas",
+            "fg": 68,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 65,
+        "sprite_height": 67,
+        "sprite_offset_x": -18,
+        "sprite_offset_y": -35
+      },
+      {
+        "file": "waterdrag2.png",
+        "tiles": [
+          {
+            "id": "mon_tester",
+            "fg": 69,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 87,
+        "sprite_height": 43,
+        "sprite_offset_x": -30,
+        "sprite_offset_y": -11
+      },
+      {
+        "file": "tornado.png",
+        "tiles": [
+          {
+            "id": "mon_tester1",
+            "fg": 70,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 67,
+        "sprite_height": 87,
+        "sprite_offset_x": -13,
+        "sprite_offset_y": -55
+      },
+      {
+        "file": "waternado.png",
+        "tiles": [
+          {
+            "id": "mon_tester2",
+            "fg": 71,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 67,
+        "sprite_height": 87,
+        "sprite_offset_x": -13,
+        "sprite_offset_y": -55
+      },
+      {
+        "file": "lightningdrag.png",
+        "tiles": [
+          {
+            "id": "mon_kirin",
+            "fg": 72,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 80,
+        "sprite_height": 80,
+        "sprite_offset_x": -18,
+        "sprite_offset_y": -48
+      },
+      {
+        "file": "chakrabubble.png",
+        "tiles": [
+          {
+            "id": "mon_chakra_bubble",
+            "fg": 73,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 48,
+        "sprite_height": 48,
+        "sprite_offset_x": -10,
+        "sprite_offset_y": -16
+      },
+      {
+        "file": "earthdragon2.png",
+        "tiles": [
+          {
+            "id": "mon_earth_dragon",
+            "fg": 74,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 96,
+        "sprite_height": 95,
+        "sprite_offset_x": -36,
+        "sprite_offset_y": -63
+      },
+      {
+        "file": "papermine2.png",
+        "tiles": [
+          {
+            "id": "mon_paper_mine",
+            "fg": 75,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 20,
+        "sprite_height": 21,
+        "sprite_offset_x": 4,
+        "sprite_offset_y": 0
+      },
+      {
+        "file": "spiritguardian.png",
+        "tiles": [
+          {
+            "id": "mon_spirit_guardian",
+            "fg": 76,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 49,
+        "sprite_height": 64,
+        "sprite_offset_x": -4,
+        "sprite_offset_y": -32
+      },
+      {
+        "file": "ShadowDancer.png",
+        "tiles": [
+          {
+            "id": "mon_blade_dancer",
+            "fg": 77,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 64,
+        "sprite_height": 64,
+        "sprite_offset_x": -16,
+        "sprite_offset_y": -32
+      },
+      {
+        "file": "shinobi-fire.png",
+        "tiles": [
+          {
+            "id": "mon_fire_clone",
+            "fg": 78,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 47,
+        "sprite_height": 64,
+        "sprite_offset_x": -8,
+        "sprite_offset_y": -32
+      },
+      {
+        "file": "shinobi-fire.png",
+        "tiles": [
+          {
+            "id": "mon_shinobi_fire",
+            "fg": 79,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 47,
+        "sprite_height": 64,
+        "sprite_offset_x": -8,
+        "sprite_offset_y": -32
+      },
+      {
+        "file": "shinobi-water.png",
+        "tiles": [
+          {
+            "id": "mon_water_clone",
+            "fg": 80,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 47,
+        "sprite_height": 64,
+        "sprite_offset_x": -8,
+        "sprite_offset_y": -32
+      },
+      {
+        "file": "shinobi-water.png",
+        "tiles": [
+          {
+            "id": "mon_shinobi_water",
+            "fg": 81,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 47,
+        "sprite_height": 64,
+        "sprite_offset_x": -8,
+        "sprite_offset_y": -32
+      },
+      {
+        "file": "shinobi-wind.png",
+        "tiles": [
+          {
+            "id": "mon_wind_clone",
+            "fg": 82,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 47,
+        "sprite_height": 64,
+        "sprite_offset_x": -8,
+        "sprite_offset_y": -32
+      },
+      {
+        "file": "shinobi-wind.png",
+        "tiles": [
+          {
+            "id": "mon_shinobi_wind",
+            "fg": 83,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 47,
+        "sprite_height": 64,
+        "sprite_offset_x": -8,
+        "sprite_offset_y": -32
+      },
+      {
+        "file": "shinobi-earth.png",
+        "tiles": [
+          {
+            "id": "mon_earth_clone",
+            "fg": 84,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 47,
+        "sprite_height": 64,
+        "sprite_offset_x": -8,
+        "sprite_offset_y": -32
+      },
+      {
+        "file": "shinobi-earth.png",
+        "tiles": [
+          {
+            "id": "mon_shinobi_earth",
+            "fg": 85,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 47,
+        "sprite_height": 64,
+        "sprite_offset_x": -8,
+        "sprite_offset_y": -32
+      },
+      {
+        "file": "shinobi-lightning.png",
+        "tiles": [
+          {
+            "id": "mon_lightning_clone",
+            "fg": 86,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 47,
+        "sprite_height": 64,
+        "sprite_offset_x": -8,
+        "sprite_offset_y": -32
+      },
+      {
+        "file": "shinobi-lightning.png",
+        "tiles": [
+          {
+            "id": "mon_shinobi_lightning",
+            "fg": 87,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 47,
+        "sprite_height": 64,
+        "sprite_offset_x": -8,
+        "sprite_offset_y": -32
+      },
+      {
+        "file": "LivingStatue.png",
+        "tiles": [
+          {
+            "id": "mon_living_statue",
+            "fg": 88,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 37,
+        "sprite_height": 41,
+        "sprite_offset_x": -8,
+        "sprite_offset_y": -9
+      },
+      {
+        "file": "MythrilDragon.png",
+        "tiles": [
+          {
+            "id": "mon_crescent_drake",
+            "fg": 89,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 46,
+        "sprite_height": 54,
+        "sprite_offset_x": -8,
+        "sprite_offset_y": -22
+      },
+      {
+        "file": "Traveler.png",
+        "tiles": [
+          {
+            "id": "mon_moonbound_wanderer",
+            "fg": 90,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 52,
+        "sprite_height": 54,
+        "sprite_offset_x": -10,
+        "sprite_offset_y": -22
+      },
+      {
+        "file": "Ifrit.png",
+        "tiles": [
+          {
+            "id": "mon_ifrit",
+            "fg": 91,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 32,
+        "sprite_height": 65,
+        "sprite_offset_x": 0,
+        "sprite_offset_y": -33
+      },
+      {
+        "file": "Executor.png",
+        "tiles": [
+          {
+            "id": "mon_aging_warlock",
+            "fg": 92,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 31,
+        "sprite_height": 30,
+        "sprite_offset_x": 0,
+        "sprite_offset_y": 2
+      },
+      {
+        "file": "Metamorph.png",
+        "tiles": [
+          {
+            "id": "mon_elder_warlock",
+            "fg": 93,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 48,
+        "sprite_height": 45,
+        "sprite_offset_x": -8,
+        "sprite_offset_y": -13
+      },
+      {
+        "file": "Atomos.png",
+        "tiles": [
+          {
+            "id": "mon_atomos",
+            "fg": 94,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 79,
+        "sprite_height": 93,
+        "sprite_offset_x": -24,
+        "sprite_offset_y": -61
+      },
+      {
+        "file": "Tonberry.png",
+        "tiles": [
+          {
+            "id": "mon_lantern_goblin",
+            "fg": 95,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 39,
+        "sprite_height": 30,
+        "sprite_offset_x": -4,
+        "sprite_offset_y": 2
+      },
+      {
+        "file": "Adamantoise.png",
+        "tiles": [
+          {
+            "id": "mon_adamantoise",
+            "fg": 96,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 47,
+        "sprite_height": 48,
+        "sprite_offset_x": -8,
+        "sprite_offset_y": -16
+      },
+      {
+        "file": "alphawampa.png",
+        "tiles": [
+          {
+            "id": "mon_alpha_wampa",
+            "fg": 97,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 56,
+        "sprite_height": 64,
+        "sprite_offset_x": -12,
+        "sprite_offset_y": -32
+      },
+      {
+        "file": "basilisk.png",
+        "tiles": [
+          {
+            "id": "mon_basilisk",
+            "fg": 98,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 55,
+        "sprite_height": 52,
+        "sprite_offset_x": -12,
+        "sprite_offset_y": -20
+      },
+      {
+        "file": "MagicPot.png",
+        "tiles": [
+          {
+            "id": "mon_potoblin",
+            "fg": 99,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 32,
+        "sprite_height": 40,
+        "sprite_offset_x": 0,
+        "sprite_offset_y": -8
+      },
+      {
+        "file": "doublaxdemon.png",
+        "tiles": [
+          {
+            "id": "mon_doublax_devil",
+            "fg": 100,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 70,
+        "sprite_height": 64,
+        "sprite_offset_x": -19,
+        "sprite_offset_y": -32
+      },
+      {
+        "file": "predatordemon.png",
+        "tiles": [
+          {
+            "id": "mon_predator_demon",
+            "fg": 101,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 51,
+        "sprite_height": 64,
+        "sprite_offset_x": -10,
+        "sprite_offset_y": -32
+      },
+      {
+        "file": "Ramuh.png",
+        "tiles": [
+          {
+            "id": "mon_ramuh",
+            "fg": 102,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 56,
+        "sprite_height": 64,
+        "sprite_offset_x": -12,
+        "sprite_offset_y": -32
+      },
+      {
+        "file": "Belphegor.png",
+        "tiles": [
+          {
+            "id": "mon_golden_gargoyle",
+            "fg": 103,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 56,
+        "sprite_height": 56,
+        "sprite_offset_x": -12,
+        "sprite_offset_y": -24
+      },
+      {
+        "file": "Gargoyle.png",
+        "tiles": [
+          {
+            "id": "mon_gargoyle",
+            "fg": 104,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 56,
+        "sprite_height": 56,
+        "sprite_offset_x": -12,
+        "sprite_offset_y": -24
+      },
+      {
+        "file": "Vulture.png",
+        "tiles": [
+          {
+            "id": "mon_cockatrice_devil",
+            "fg": 105,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 63,
+        "sprite_height": 64,
+        "sprite_offset_x": -16,
+        "sprite_offset_y": -32
+      },
+      {
+        "file": "redeyes.png",
+        "tiles": [
+          {
+            "id": "mon_redeyes_black_dragon",
+            "fg": 106,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 64,
+        "sprite_height": 48,
+        "sprite_offset_x": -16,
+        "sprite_offset_y": -16
+      },
+      {
+        "file": "Samurai.png",
+        "tiles": [
+          {
+            "id": "mon_sword_saint",
+            "fg": 107,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 56,
+        "sprite_height": 63,
+        "sprite_offset_x": -12,
+        "sprite_offset_y": -31
+      },
+      {
+        "file": "Shiva.png",
+        "tiles": [
+          {
+            "id": "mon_shiva",
+            "fg": 108,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 37,
+        "sprite_height": 40,
+        "sprite_offset_x": -2,
+        "sprite_offset_y": -8
+      },
+      {
+        "file": "Vector Pup.png",
+        "tiles": [
+          {
+            "id": "mon_shadow_loyal_hound",
+            "fg": 109,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 48,
+        "sprite_height": 40,
+        "sprite_offset_x": -8,
+        "sprite_offset_y": -8
+      },
+      {
+        "file": "blkninja.png",
+        "tiles": [
+          {
+            "id": "mon_shadow_blood_blade_assassin",
+            "fg": 110,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 60,
+        "sprite_height": 80,
+        "sprite_offset_x": -14,
+        "sprite_offset_y": -48
+      },
+      {
+        "file": "Scullion.png",
+        "tiles": [
+          {
+            "id": "mon_omega_mk5",
+            "fg": 111,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 77,
+        "sprite_height": 64,
+        "sprite_offset_x": -25,
+        "sprite_offset_y": -32
+      },
+      {
+        "file": "Trapper.png",
+        "tiles": [
+          {
+            "id": "mon_omega_gatlingbot",
+            "fg": 112,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 32,
+        "sprite_height": 28,
+        "sprite_offset_x": 1,
+        "sprite_offset_y": 1
+      },
+      {
+        "file": "MotorTrap.png",
+        "tiles": [
+          {
+            "id": "mon_omega_repairbot",
+            "fg": 113,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 32,
+        "sprite_height": 41,
+        "sprite_offset_x": 1,
+        "sprite_offset_y": -9
+      },
+      {
+        "file": "Poltergeist.png",
+        "tiles": [
+          {
+            "id": "mon_screaming_skull",
+            "fg": 114,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 1",
+        "sprite_width": 56,
+        "sprite_height": 24,
+        "sprite_offset_x": -10,
+        "sprite_offset_y": 0
+      },
+    ]
+  }
+]

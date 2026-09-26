@@ -1,0 +1,99 @@
+[
+  {
+    "type": "overmap_terrain",
+    "id": "devilvault",
+    "name": "treasure vault bank",
+    "sym": "$",
+    "color": "yellow",
+    "see_cost": 5,
+    "mondensity": 3,
+    "flags": [
+      "SIDEWALK",
+      "SOURCE_LUXURY",
+      "SOURCE_GUN",
+      "SOURCE_WEAPON"
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devilvault_roof",
+    "name": "treasure vault bank roof",
+    "sym": "$",
+    "color": "yellow",
+    "see_cost": 5,
+    "mondensity": 2
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "devilvault_under",
+    "name": "treasure vault",
+    "sym": "$",
+    "color": "red",
+    "see_cost": 5,
+    "mondensity": 5
+  },
+  {
+    "type": "overmap_special",
+    "id": "devilvault_special",
+    "overmaps": [
+      {
+        "point": [
+          0,
+          0,
+          0
+        ],
+        "overmap": "devilvault_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          1
+        ],
+        "overmap": "devilvault_roof_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          -1
+        ],
+        "overmap": "devilvault_under_north"
+      }
+    ],
+    "connections": [
+      {
+        "point": [
+          0,
+          -1,
+          0
+        ],
+        "connection": "local_road",
+        "from": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "locations": [
+      "land"
+    ],
+    "city_distance": [
+      0,
+      10
+    ],
+    "city_sizes": [
+      4,
+      20
+    ],
+    "occurrences": [
+      1,
+      1
+    ],
+    "flags": [
+      "CLASSIC",
+      "ELECTRIC_GRID"
+    ]
+  }
+]

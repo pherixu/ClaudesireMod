@@ -1,0 +1,226 @@
+[
+  {
+    "id": "sunforger_bolt",
+    "type": "SPELL",
+    "name": {
+      "str": "Sunforger Bolt"
+    },
+    "description": "A lance of solar fire hurled from the hammer's head. Detonates in a small burst around the target.",
+    "valid_targets": [
+      "hostile"
+    ],
+    "effect": "target_attack",
+    "damage_type": "fire",
+    "min_damage": 80,
+    "max_damage": 80,
+    "damage_increment": 0,
+    "min_aoe": 1,
+    "max_aoe": 1,
+    "min_range": 25,
+    "max_range": 25,
+    "base_casting_time": 100,
+    "base_energy_cost": 0,
+    "energy_source": "NONE",
+    "difficulty": 0,
+    "max_level": 1,
+    "flags": [
+      "NO_FAIL",
+      "NO_LEGS"
+    ]
+  },
+  {
+    "id": "sunforger_scorch",
+    "type": "SPELL",
+    "name": {
+      "str": "Sunforger Scorch"
+    },
+    "description": "Searing light flares from the hammer as it strikes.",
+    "valid_targets": [
+      "hostile"
+    ],
+    "effect": "target_attack",
+    "damage_type": "fire",
+    "min_damage": 12,
+    "max_damage": 12,
+    "damage_increment": 0,
+    "min_range": 1,
+    "max_range": 1,
+    "base_casting_time": 0,
+    "base_energy_cost": 0,
+    "energy_source": "NONE",
+    "difficulty": 0,
+    "max_level": 1,
+    "flags": [
+      "NO_FAIL",
+      "NO_LEGS",
+      "SILENT"
+    ]
+  },
+  {
+    "id": "sunforger",
+    "type": "TOOL",
+    "category": "weapons",
+    "symbol": "/",
+    "color": "yellow",
+    "looks_like": "warhammer",
+    "weapon_category": [
+      "1H_HAMMERS"
+    ],
+    "name": {
+      "str": "Sunforger"
+    },
+    "description": "A warhammer of sun-gold alloy, warm as a hearthstone. Swung, it scorches what it strikes and lends its wielder strength and clarity of mind. Loaded with crystallized mana, it can hurl a bolt of solar fire at a target, bursting on impact.",
+    "weight": "1600 g",
+    "volume": "1250 ml",
+    "price": "0 cent",
+    "material": [
+      "steel",
+      "rune"
+    ],
+    "techniques": [
+      "WBLOCK_1",
+      "BRUTAL",
+      "SWEEP"
+    ],
+    "flags": [
+      "UNBREAKABLE_MELEE",
+      "STAB",
+      "NONCONDUCTIVE",
+      "BELT_CLIP",
+      "NO_REPAIR",
+      "NO_SALVAGE",
+      "LIGHT_10"
+    ],
+    "to_hit": 2,
+    "attacks": [
+      {
+        "id": "BASH",
+        "to_hit": 2,
+        "damage": {
+          "values": [
+            {
+              "damage_type": "bash",
+              "amount": 26
+            },
+            {
+              "damage_type": "cut",
+              "amount": 12
+            },
+            {
+              "damage_type": "heat",
+              "amount": 15
+            }
+          ]
+        }
+      }
+    ],
+    "qualities": [
+      [
+        "HAMMER",
+        2
+      ]
+    ],
+    "ammo": "crystallized_mana",
+    "max_charges": 10,
+    "charges_per_use": 1,
+    "use_action": {
+      "type": "cast_spell",
+      "spell_id": "sunforger_bolt",
+      "no_fail": true,
+      "level": 1,
+      "need_wielding": true
+    },
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "values": [
+            {
+              "value": "STRENGTH",
+              "add": 4
+            },
+            {
+              "value": "INTELLIGENCE",
+              "add": 3
+            },
+            {
+              "value": "MANA_CAP",
+              "add": 1000
+            }
+          ],
+          "hit_you_effect": [
+            {
+              "id": "sunforger_scorch",
+              "hit_self": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "sunfire_wand",
+    "type": "TOOL",
+    "category": "weapons",
+    "symbol": "/",
+    "color": "yellow",
+    "looks_like": "fireshrieker",
+    "name": {
+      "str": "Sunfire Wand"
+    },
+    "description": "TEST ITEM. A gold-tipped wand loaded with crystallized mana. Firing it spends 1 crystal per bolt; its use action casts Sunforger Bolt for 10 crystals.",
+    "weight": "300 g",
+    "volume": "500 ml",
+    "price": "0 cent",
+    "material": [
+      "rune",
+      "wood"
+    ],
+    "flags": [
+      "BELT_CLIP",
+      "NONCONDUCTIVE",
+      "NO_REPAIR",
+      "NO_SALVAGE"
+    ],
+    "ammo": "crystallized_mana",
+    "magazines": [
+      [
+        "crystallized_mana",
+        [
+          "small_mana_crystal"
+        ]
+      ]
+    ],
+    "magazine_well": "250 ml",
+    "charges_per_use": 10,
+    "use_action": {
+      "type": "cast_spell",
+      "spell_id": "sunforger_bolt",
+      "no_fail": true,
+      "level": 1,
+      "need_wielding": true
+    },
+    "gun_data": {
+      "ammo": "crystallized_mana",
+      "skill": "spellcraft",
+      "range": 15,
+      "ammo_to_fire": 1,
+      "ranged_damage": {
+        "damage_type": "heat",
+        "amount": 25,
+        "armor_penetration": 10
+      },
+      "dispersion": 50,
+      "loudness": 1,
+      "modes": [
+        [
+          "DEFAULT",
+          "sun bolt",
+          1
+        ]
+      ],
+      "reload_noise": "pshzt."
+    }
+  }
+]

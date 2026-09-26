@@ -1,0 +1,342 @@
+[
+  {
+    "type": "material",
+    "id": "chakra",
+    "name": "Chakra",
+    "density": 25,
+    "specific_heat_liquid": 1.01,
+    "specific_heat_solid": 1.01,
+    "latent_heat": 260,
+    "bash_resist": 7,
+    "cut_resist": 7,
+    "bullet_resist": 7,
+    "acid_resist": 50,
+    "fire_resist": 50,
+    "elec_resist": 50,
+    "chip_resist": 100,
+    "repaired_with": "beskar",
+    "salvaged_into": "beskar",
+    "dmg_adj": [ "dented", "bent", "smashed", "shattered" ],
+    "bash_dmg_verb": "dented",
+    "cut_dmg_verb": "scratched"
+  },
+  
+  
+  
+  {
+    "type": "enchantment",
+    "id": "HASHIRAMACELLS",
+    "condition": "ALWAYS",
+          "values": [
+            { "value": "STAMINA_CAP", "multiply": 1 },
+            { "value": "STAMINA_REGEN", "multiply": 1 },
+            { "value": "MANA_CAP", "add": 10000 },
+            { "value": "MANA_REGEN", "multiply": 4 },
+            { "value": "ARMOR_BASH", "add": -5 },
+            { "value": "ARMOR_CUT", "add": -5 },
+            { "value": "ARMOR_BULLET", "add": -20 },
+            { "value": "ARMOR_ACID", "add": -5 },
+            { "value": "ARMOR_COLD", "add": -9 },
+            { "value": "ARMOR_ELEC", "add": -5 },
+            { "value": "BONUS_DODGE", "add": 2 },
+            { "value": "SPEED", "multiply": 0.1 },
+            { "value": "MOVE_COST", "add": -10 },
+            { "value": "DEXTERITY", "multiply": 1 },
+            { "value": "STRENGTH", "multiply": 1 },
+            { "value": "INTELLIGENCE","multiply": 1 },
+            { "value": "PERCEPTION","multiply": 1 }
+          ]
+  },
+  
+  
+  {
+    "type": "mutation",
+    "id": "HASHIRAMA",
+    "name": "Hashirama Cells",
+    "points": 3,
+    "description": "You have the cells of hashirama.",
+    "starting_trait": true,
+    "purifiable": false,
+    "valid": false,
+	"enchantments": [ "HASHIRAMACELLS" ],
+    "healing_awake": 6,
+    "healing_resting": 4,
+    "mending_modifier": 4
+  },
+  
+  {
+    "type": "enchantment",
+    "id": "BYAKUGAN_EYE",
+    "condition": "ALWAYS",
+    "values": [
+      { "value": "MANA_CAP", "add": 3000 },
+      { "value": "STAMINA_CAP", "multiply": 0.6 }
+    ]
+  },
+  
+  
+  {
+    "type": "enchantment",
+    "id": "SHARINGAN_EYE",
+    "condition": "ALWAYS",
+    "values": [
+      { "value": "MANA_CAP", "add": 20000 },
+      { "value": "MOVE_COST", "add": -15 },
+      { "value": "SPEED", "add": 20 },
+      { "value": "STAMINA_CAP", "multiply": 0.6 }
+    ]
+  },
+  
+  {
+    "type": "enchantment",
+    "id": "MANGEKYO_EYE",
+    "condition": "ALWAYS",
+    "values": [
+      { "value": "MANA_CAP", "add": 40000 },
+      { "value": "MOVE_COST", "add": -25 },
+      { "value": "SPEED", "add": 50 },
+      { "value": "STAMINA_CAP", "multiply": 1 }
+    ]
+  },
+  
+  {
+    "id": "mangekyo_mutate_spell",
+    "type": "SPELL",
+    "name": "Evolution",
+    "description": "Mutates yourself.",
+    "effect": "mutate",
+    "components": "spell_components_sharingan",
+	"effect_str": "MANGEKYO_SHARINGAN", 
+    "valid_targets": [ "self" ],
+    "flags": [ "SILENT","MUTATE_TRAIT", "NO_EXPLOSION_VFX" ],
+    "min_range": 1,
+    "max_range": 1,
+	"min_damage": 10000, 
+	"max_damage": 10000, 
+    "max_level": 10,
+    "difficulty": -10,
+    "base_casting_time": 0,
+	"final_casting_time": 0
+  },
+  {
+    "id": "sharingan_mutate_spell",
+    "type": "SPELL",
+    "name": "Evolution",
+    "description": "Mutates yourself.",
+    "effect": "mutate",
+	"effect_str": "SHARINGAN", 
+    "valid_targets": [ "self" ],
+    "flags": [ "SILENT","MUTATE_TRAIT", "NO_EXPLOSION_VFX" ],
+    "min_range": 1,
+    "max_range": 1,
+	"min_damage": 10000, 
+	"max_damage": 10000, 
+    "max_level": 10,
+    "difficulty": -10,
+    "base_casting_time": 0,
+	"final_casting_time": 0
+  },
+  {
+    "id": "byakugan_mutate_spell",
+    "type": "SPELL",
+    "name": "Evolution",
+    "description": "Mutates yourself.",
+    "effect": "mutate",
+	"effect_str": "BYAKUGAN", 
+    "valid_targets": [ "self" ],
+    "flags": [ "SILENT","MUTATE_TRAIT", "NO_EXPLOSION_VFX" ],
+    "min_range": 1,
+    "max_range": 1,
+	"min_damage": 10000, 
+	"max_damage": 10000, 
+    "max_level": 10,
+    "difficulty": -10,
+    "base_casting_time": 0,
+	"final_casting_time": 0
+  },
+  
+  {
+    "id": "spell_components_sharingan",
+    "type": "requirement",
+    "components": [ [ [ "sharingan_eye", 1 ] ] ]
+  },
+  
+   
+  {
+    "id": "uchiha_tablet",
+    "type": "GENERIC",
+    "category": "spellbooks",
+    "name": { "str": "Uchiha Stone Tablet" },
+    "description": "A stone tablet with magical seals allowing only those who wield the power of the sharingan to reveal the secrets of this ancient tablet.",
+    "weight": "585 g",
+    "volume": "250 ml",
+    "price": "50 USD",
+    "symbol": "?",
+    "color": "light_red",
+    "use_action": { "type": "learn_spell", "spells": [ "mangekyo_mutate_spell" ] }
+  },
+  
+  {
+    "type": "COMESTIBLE",
+    "id": "byakugan_eye",
+    "name": { "str": "byakugan", "str_pl": "byakugans" },
+    "weight": "1 g",
+    "color": "pink",
+    "spoils_in": "365 days",
+    "comestible_type": "FOOD",
+    "symbol": "*",
+    "quench": 0,
+    "healthy": -1,
+    "price_postapoc": "250 cent",
+    "use_action": { "type": "cast_spell", "spell_id": "byakugan_mutate_spell", "no_fail": true, "level": 1, "need_wielding": false },
+    "calories": 0,
+    "description": "An eyeball, entirely white with a faint image of an blue iris",
+    "price": "0 cent",
+    "material": "flesh",
+    "volume": "1 ml",
+    "parasites": 0,
+    "stack_size": 1,
+    "fun": 0,
+    "flags": [ "CARNIVORE_OK" ]
+  },
+  
+  
+  {
+    "type": "COMESTIBLE",
+    "id": "sharingan_eye",
+    "name": { "str": "sharingan", "str_pl": "sharingans" },
+    "weight": "1 g",
+    "color": "pink",
+    "spoils_in": "365 days",
+    "comestible_type": "FOOD",
+    "symbol": "*",
+    "quench": 0,
+    "healthy": -1,
+    "price_postapoc": "250 cent",
+    "use_action": { "type": "cast_spell", "spell_id": "sharingan_mutate_spell", "no_fail": true, "level": 1, "need_wielding": false },
+    "calories": 0,
+    "description": "An eyeball with a red iris and 3 tomoe along a concentric circle around the pupil",
+    "price": "0 cent",
+    "material": "flesh",
+    "volume": "1 ml",
+    "parasites": 0,
+    "stack_size": 1,
+    "fun": 0,
+    "flags": [ "CARNIVORE_OK" ]
+  },
+  
+  
+  {
+    "type": "mutation",
+    "id": "MANGEKYO_SHARINGAN",
+    "name": "Dojutsu: Eternal Mangekyo Sharingan",
+    "points": 2,
+    "description": "You have the sharingan eye jutsu.",
+    "starting_trait": true,
+    "purifiable": false,
+    "valid": false,
+    "cancels": [ "SHARINGAN" ],
+    "passive_mods": { "per_mod": 20, "dex_mod": 25, "int_mod": 50 },
+	"dodge_modifier" : 4, 
+	"enchantments": [ "MANGEKYO_EYE" ],
+    "spells_learned": [ [ "genjutsu", 50 ] ]
+  },
+  
+  
+  {
+    "type": "mutation",
+    "id": "SHARINGAN",
+    "name": "Dojutsu: Sharingan",
+    "points": 2,
+    "description": "You have the sharingan eye jutsu.",
+    "starting_trait": true,
+    "purifiable": false,
+    "valid": false,
+    "passive_mods": { "per_mod": 10, "dex_mod": 15, "int_mod": 20 },
+	"dodge_modifier" : 4, 
+	"enchantments": [ "SHARINGAN_EYE" ],
+    "spells_learned": [ [ "genjutsu", 30 ] ]
+  },
+  
+  {
+    "type": "mutation",
+    "id": "BYAKUGAN",
+    "name": "Dojutsu: Byakugan",
+    "points": 2,
+    "description": "You have the byakugan eye jutsu.",
+    "starting_trait": true,
+    "purifiable": false,
+    "valid": false,
+    "passive_mods": { "per_mod": 25, "dex_mod": 9, "int_mod": 9 },
+	"dodge_modifier" : 4, 
+	"enchantments": [ "BYAKUGAN_EYE" ],
+    "spells_learned": [ [ "byakugan_sight", 1 ] ]
+  },
+  
+  {
+    "type": "mutation",
+    "id": "INNERGATES",
+    "name": "Inner Gates Training",
+    "points": 3,
+    "description": "You have training with the inner gates technique.",
+    "starting_trait": true,
+    "purifiable": false,
+    "valid": false,
+    "spells_learned": [[ "chakra_focus", 1 ], [ "gate_one", 1 ],[ "gate_two", 1 ],[ "gate_three", 1 ],[ "gate_four", 1 ],[ "gate_five", 1 ],[ "gate_six", 1 ],[ "gate_seven", 1 ],[ "gate_eight", 1 ] ]
+  },
+  {
+    "type": "mutation",
+    "id": "EARTHCHAKRA",
+    "name": "Chakra: Earth Nature",
+    "points": 3,
+    "description": "You have an affinity for earth release jutsu.",
+    "starting_trait": true,
+    "purifiable": false,
+    "valid": false,
+    "spells_learned": [[ "chakra_focus", 1 ], [ "earthfist", 1 ],[ "earthskin", 1 ],[ "thrown_stones_jutsu", 1 ],[ "tunnelport", 1 ],[ "summon_rockwall", 1 ],[ "summon_mudwolf", 1 ],[ "summon_mudhead", 1 ],[ "earthsmoke", 1 ],[ "summon_rubble", 1 ],[ "bash_terrain", 1 ] ]
+  },
+  {
+    "type": "mutation",
+    "id": "FIRECHAKRA",
+    "name": "Chakra: Fire Nature",
+    "points": 3,
+    "description": "You have an affinity for fire release jutsu.",
+    "starting_trait": true,
+    "purifiable": false,
+    "valid": false,
+    "spells_learned": [[ "chakra_focus", 1 ], [ "fireconejutsu", 1 ], [ "firefield_jutsu", 1 ], [ "fireballjutsu", 1 ] , [ "summon_phoenix", 1 ] , [ "summon_largephoenix", 1 ] , [ "foxfire_spell", 1 ] , [ "firesmoke", 1 ] ]
+  },
+  {
+    "type": "mutation",
+    "id": "ELECCHAKRA",
+    "name": "Chakra: Lightning Nature",
+    "points": 3,
+    "description": "You have an affinity for lightning release jutsu.",
+    "starting_trait": true,
+    "purifiable": false,
+    "valid": false,
+    "spells_learned": [ [ "chakra_focus", 1 ],[ "parapunch", 1 ],[ "lariat", 1 ],[ "chidori", 1 ],[ "flashpillar", 1 ],[ "elecconejutsu", 1 ],[ "elec_armor", 1 ],[ "lightcloudjutsu", 1 ] ]
+  },
+  {
+    "type": "mutation",
+    "id": "WINDCHAKRA",
+    "name": "Chakra: Wind Nature",
+    "points": 3,
+    "description": "You have an affinity for wind release jutsu.",
+    "starting_trait": true,
+    "purifiable": false,
+    "valid": false,
+    "spells_learned": [ [ "chakra_focus", 1 ],[ "galepalm", 1 ],[ "airbullet", 1 ],[ "air_push", 1 ],[ "rasengan", 1 ],[ "rasenshuriken", 1 ] ]
+  },
+  {
+    "type": "mutation",
+    "id": "WATERCHAKRA",
+    "name": "Chakra: Water Nature",
+    "points": 3,
+    "description": "You have an affinity for water release jutsu.",
+    "starting_trait": true,
+    "purifiable": false,
+    "valid": false,
+    "spells_learned": [[ "chakra_focus", 1 ],[ "water_drill", 1 ],[ "hidden_mist", 1 ],[ "falling_rain", 1 ],[ "water_prison", 1 ],[ "water_line", 1 ],[ "summon_eels", 1 ],[ "summon_water_draco", 1 ]]
+  }
+]

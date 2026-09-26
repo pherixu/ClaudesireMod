@@ -1,0 +1,1314 @@
+[
+  {
+    "type": "npc",
+    "id": "mando_bounty_hunter",
+    "//": "a Mandalorian bounty hunter answering a tracking fob signal.",
+    "name_suffix": "Mandalorian",
+    "class": "NC_MANDO_BOUNTY_HUNTER",
+    "attitude": 0,
+    "mission": 7,
+    "mission_offered": "MISSION_RECRUIT_MANDO",
+    "chat": "TALK_MANDO",
+    "faction": "no_faction"
+  },
+  {
+    "id": "MISSION_RECRUIT_MANDO",
+    "type": "mission_definition",
+    "name": {
+      "str": "Recruit Mandalorian"
+    },
+    "goal": "MGOAL_RECRUIT_NPC_CLASS",
+    "difficulty": 2,
+    "value": 70000,
+    "start": {
+      "assign_mission_target": {
+        "om_terrain": "house_", "om_terrain_match_type": "PREFIX",
+        "reveal_radius": 2,
+        "random": true,
+        "search_range": 80,
+        "z": 0
+      },
+      "effect": "follow",
+      "update_mapgen": {
+        "place_npcs": [
+          {
+            "class": "mando_bounty_hunter",
+            "x": 11,
+            "y": 11,
+            "target": true
+          }
+        ]
+      }
+    },
+    "origins": [
+      "ORIGIN_SECONDARY"
+    ],
+    "dialogue": {
+      "describe": "You catch the faint glint of beskar in the corner of your eye, like someone is tracking the same prey as you...",
+      "offer": "Another of my clan went dark near here. Find them with me and the bounty is as good as split.",
+      "accepted": "This is the way.",
+      "rejected": "Then we hunt separately. Stay out of my sights.",
+      "advice": "Keep your head down and your blaster charged. Whatever took my clansman is still out there.",
+      "inquire": "Have you found my clansman yet?",
+      "success": "Good. Two hunters beat one. Let's get paid.",
+      "success_lie": "I've hunted liars before. Try again.",
+      "failure": "Giving up already? Coward."
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "NC_MANDO_weapon",
+    "subtype": "distribution",
+    "//": "main melee (mundane)",
+    "entries": [
+      {
+        "item": "spear_beskar",
+        "prob": 40
+      },
+      {
+        "item": "sword_carbon",
+        "prob": 25
+      },
+      {
+        "item": "katana",
+        "prob": 15
+      },
+      {
+        "item": "nodachi_carbon",
+        "prob": 10
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_MANDO_melee_second",
+    "subtype": "distribution",
+    "//": "small melee",
+    "entries": [
+      {
+        "item": "knife_combat",
+        "prob": 40
+      },
+      {
+        "item": "tanto",
+        "prob": 15
+      },
+      {
+        "item": "wakizashi",
+        "prob": 15
+      },
+      {
+        "item": "katar_carbon",
+        "prob": 10
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_MANDO_melee_magic",
+    "subtype": "distribution",
+    "//": "magical melee",
+    "entries": [
+      {
+        "item": "umezawa_jitte",
+        "prob": 10
+      },
+      {
+        "item": "deaths_dance",
+        "prob": 10
+      },
+      {
+        "item": "thunderfury",
+        "prob": 8
+      },
+      {
+        "item": "frostmourne",
+        "prob": 6
+      },
+      {
+        "item": "flametongue",
+        "prob": 10
+      },
+      {
+        "item": "frostbrand",
+        "prob": 10
+      },
+      {
+        "item": "stormrazor",
+        "prob": 8
+      },
+      {
+        "item": "holyavenger",
+        "prob": 6
+      },
+      {
+        "group": "crystalswords",
+        "prob": 20
+      },
+      {
+        "group": "soulswords",
+        "prob": 12
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_MANDO_weapon_hunter",
+    "subtype": "distribution",
+    "//": "wielded: 8% magic",
+    "entries": [
+      {
+        "group": "NC_MANDO_weapon",
+        "prob": 92
+      },
+      {
+        "group": "NC_MANDO_melee_magic",
+        "prob": 8
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_MANDO_weapon_outcast",
+    "subtype": "distribution",
+    "//": "wielded: 3% magic",
+    "entries": [
+      {
+        "group": "NC_MANDO_weapon",
+        "prob": 97
+      },
+      {
+        "group": "NC_MANDO_melee_magic",
+        "prob": 3
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_MANDO_primary",
+    "subtype": "distribution",
+    "//": "primary long gun kit",
+    "entries": [
+      {
+        "group": "nested_scar_h",
+        "prob": 20
+      },
+      {
+        "group": "nested_hk417_13",
+        "prob": 15
+      },
+      {
+        "group": "nested_m4a1",
+        "prob": 12
+      },
+      {
+        "group": "nested_h&k416a5",
+        "prob": 12
+      },
+      {
+        "group": "nested_m14ebr",
+        "prob": 10
+      },
+      {
+        "group": "nested_m110a1",
+        "prob": 8
+      },
+      {
+        "group": "nested_m1014",
+        "prob": 8
+      },
+      {
+        "group": "nested_hk_mp5",
+        "prob": 8
+      },
+      {
+        "group": "nested_m2010",
+        "prob": 4
+      },
+      {
+        "group": "nested_m107a1",
+        "prob": 3
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_MANDO_sidearm",
+    "subtype": "distribution",
+    "//": "sidearm kit",
+    "entries": [
+      {
+        "group": "nested_glock_18c",
+        "prob": 22
+      },
+      {
+        "group": "nested_mk23",
+        "prob": 22
+      },
+      {
+        "group": "nested_m17",
+        "prob": 20
+      },
+      {
+        "group": "nested_deagle_44",
+        "prob": 14
+      },
+      {
+        "group": "nested_usp_45",
+        "prob": 12
+      },
+      {
+        "group": "nested_kriss_vector_9mm",
+        "prob": 10
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_MANDO_adip_gun",
+    "subtype": "distribution",
+    "//": "special ADIP gun kits",
+    "entries": [
+      {
+        "collection": [
+          {
+            "item": "fn_p90",
+            "ammo-item": "57mm",
+            "charges": 50
+          },
+          {
+            "item": "fnp90mag",
+            "ammo-item": "57mm",
+            "charges": 50,
+            "count": [
+              1,
+              3
+            ]
+          },
+          {
+            "item": "57mm",
+            "charges": [
+              50,
+              100
+            ]
+          }
+        ],
+        "prob": 35
+      },
+      {
+        "collection": [
+          {
+            "item": "fn57",
+            "ammo-item": "57mm",
+            "charges": 20
+          },
+          {
+            "item": "fn57mag",
+            "ammo-item": "57mm",
+            "charges": 20,
+            "count": [
+              1,
+              3
+            ]
+          },
+          {
+            "item": "57mm",
+            "charges": [
+              20,
+              40
+            ]
+          }
+        ],
+        "prob": 35
+      },
+      {
+        "group": "nested_trex_gun",
+        "prob": 30
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_MANDO_adip_mod",
+    "subtype": "distribution",
+    "//": "one ADIP gunmod (scopes, grips, etc)",
+    "entries": [
+      {
+        "group": "adip_gunmods_tier1and2",
+        "prob": 30
+      },
+      {
+        "group": "adip_gunmods_tier2and3",
+        "prob": 25
+      },
+      {
+        "group": "adip_gunmods_tier3and4",
+        "prob": 25
+      },
+      {
+        "group": "adip_gunmods_tier3",
+        "prob": 10
+      },
+      {
+        "group": "adip_gunmods_tier4",
+        "prob": 10
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_MANDO_carried",
+    "subtype": "collection",
+    "//": "guaranteed primary + sidearm + small blade; 40% 2nd primary, 40% 2nd sidearm; 8% ADIP gun; ADIP gunmods 35%/15%",
+    "items": [
+      {
+        "group": "NC_MANDO_primary"
+      },
+      {
+        "group": "NC_MANDO_sidearm"
+      },
+      {
+        "group": "NC_MANDO_melee_second"
+      },
+      {
+        "group": "NC_MANDO_primary",
+        "prob": 40
+      },
+      {
+        "group": "NC_MANDO_sidearm",
+        "prob": 40
+      },
+      {
+        "group": "NC_MANDO_melee_second",
+        "prob": 30
+      },
+      {
+        "group": "NC_MANDO_adip_gun",
+        "prob": 8
+      },
+      {
+        "group": "NC_MANDO_adip_mod",
+        "prob": 35
+      },
+      {
+        "group": "NC_MANDO_adip_mod",
+        "prob": 15
+      },
+      {
+        "item": "1st_aid",
+        "count": [
+          1,
+          2
+        ]
+      },
+      {
+        "item": "saline",
+        "prob": 60
+      },
+      {
+        "item": "water_clean",
+        "count": [
+          1,
+          2
+        ]
+      },
+      {
+        "item": "sports_drink",
+        "prob": 60
+      },
+      {
+        "item": "chocolate",
+        "prob": 50
+      },
+      {
+        "distribution": [
+          {
+            "item": "mre_beef_box",
+            "prob": 10
+          },
+          {
+            "item": "mre_chilibeans_box",
+            "prob": 10
+          },
+          {
+            "item": "mre_bbqbeef_box",
+            "prob": 10
+          },
+          {
+            "item": "mre_meatball_box",
+            "prob": 10
+          },
+          {
+            "item": "mre_chicken_box",
+            "prob": 10
+          },
+          {
+            "item": "mre_beefstew_box",
+            "prob": 10
+          },
+          {
+            "item": "mre_asianbeef_box",
+            "prob": 10
+          },
+          {
+            "item": "mre_southwestbeef_box",
+            "prob": 10
+          }
+        ]
+      },
+      {
+        "distribution": [
+          {
+            "item": "mre_beef_box",
+            "prob": 10
+          },
+          {
+            "item": "mre_chilibeans_box",
+            "prob": 10
+          },
+          {
+            "item": "mre_bbqbeef_box",
+            "prob": 10
+          },
+          {
+            "item": "mre_meatball_box",
+            "prob": 10
+          },
+          {
+            "item": "mre_chicken_box",
+            "prob": 10
+          },
+          {
+            "item": "mre_beefstew_box",
+            "prob": 10
+          },
+          {
+            "item": "mre_asianbeef_box",
+            "prob": 10
+          },
+          {
+            "item": "mre_southwestbeef_box",
+            "prob": 10
+          }
+        ],
+        "prob": 50
+      },
+      {
+        "item": "grenade",
+        "prob": 50,
+        "count": [
+          1,
+          2
+        ]
+      },
+      {
+        "item": "flashbang",
+        "prob": 50
+      },
+      {
+        "item": "c4",
+        "prob": 15
+      },
+      {
+        "item": "goggles_nv",
+        "prob": 25
+      },
+      {
+        "item": "throwing_knife",
+        "prob": 30,
+        "count": [
+          2,
+          5
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_MANDO_worn",
+    "subtype": "collection",
+    "//": "full beskar",
+    "items": [
+      {
+        "item": "under_armor"
+      },
+      {
+        "distribution": [
+          {
+            "item": "socks",
+            "prob": 90
+          },
+          {
+            "item": "socks_wool",
+            "prob": 10
+          }
+        ]
+      },
+      {
+        "distribution": [
+          {
+            "item": "briefs",
+            "prob": 34
+          },
+          {
+            "item": "boxer_briefs",
+            "prob": 33
+          },
+          {
+            "item": "boxer_shorts",
+            "prob": 33
+          }
+        ]
+      },
+      {
+        "item": "army_top"
+      },
+      {
+        "item": "pants_army"
+      },
+      {
+        "item": "boots_combat"
+      },
+      {
+        "item": "webbing_belt"
+      },
+      {
+        "item": "holster",
+        "prob": 80
+      },
+      {
+        "item": "helmet_beskar"
+      },
+      {
+        "item": "beskar_cuirass"
+      },
+      {
+        "item": "gauntlets_beskar"
+      },
+      {
+        "item": "beskar_greaves"
+      },
+      {
+        "distribution": [
+          {
+            "item": "molle_pack",
+            "prob": 50
+          },
+          {
+            "item": "backpack",
+            "prob": 30
+          },
+          {
+            "item": "rucksack",
+            "prob": 20
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_OUTCAST_worn",
+    "subtype": "collection",
+    "//": "exactly one beskar piece (helmet / cuirass / gauntlets / greaves), rest military",
+    "items": [
+      {
+        "item": "under_armor"
+      },
+      {
+        "distribution": [
+          {
+            "item": "socks",
+            "prob": 90
+          },
+          {
+            "item": "socks_wool",
+            "prob": 10
+          }
+        ]
+      },
+      {
+        "distribution": [
+          {
+            "item": "briefs",
+            "prob": 34
+          },
+          {
+            "item": "boxer_briefs",
+            "prob": 33
+          },
+          {
+            "item": "boxer_shorts",
+            "prob": 33
+          }
+        ]
+      },
+      {
+        "item": "army_top"
+      },
+      {
+        "item": "pants_army"
+      },
+      {
+        "item": "webbing_belt"
+      },
+      {
+        "item": "holster",
+        "prob": 80
+      },
+      {
+        "distribution": [
+          {
+            "item": "molle_pack",
+            "prob": 50
+          },
+          {
+            "item": "backpack",
+            "prob": 30
+          },
+          {
+            "item": "rucksack",
+            "prob": 20
+          }
+        ]
+      },
+      {
+        "distribution": [
+          {
+            "collection": [
+              {
+                "item": "helmet_beskar"
+              },
+              {
+                "item": "boots_combat"
+              },
+              {
+                "item": "gloves_tactical"
+              },
+              {
+                "item": "modularvest"
+              }
+            ],
+            "prob": 25
+          },
+          {
+            "collection": [
+              {
+                "item": "beskar_cuirass"
+              },
+              {
+                "item": "boots_combat"
+              },
+              {
+                "item": "helmet_army"
+              },
+              {
+                "item": "gloves_tactical"
+              }
+            ],
+            "prob": 25
+          },
+          {
+            "collection": [
+              {
+                "item": "gauntlets_beskar"
+              },
+              {
+                "item": "boots_combat"
+              },
+              {
+                "item": "helmet_army"
+              },
+              {
+                "item": "modularvest"
+              }
+            ],
+            "prob": 25
+          },
+          {
+            "collection": [
+              {
+                "item": "beskar_greaves"
+              },
+              {
+                "item": "helmet_army"
+              },
+              {
+                "item": "gloves_tactical"
+              },
+              {
+                "item": "modularvest"
+              }
+            ],
+            "prob": 25
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_OUTCAST_carried",
+    "subtype": "collection",
+    "//": "guaranteed primary; sidearm 30%, extra long gun 7%, extra sidearm 4%",
+    "items": [
+      {
+        "group": "NC_MANDO_primary"
+      },
+      {
+        "group": "NC_MANDO_melee_second",
+        "prob": 70
+      },
+      {
+        "group": "NC_MANDO_sidearm",
+        "prob": 30
+      },
+      {
+        "group": "NC_MANDO_primary",
+        "prob": 7
+      },
+      {
+        "group": "NC_MANDO_sidearm",
+        "prob": 4
+      },
+      {
+        "group": "NC_MANDO_melee_second",
+        "prob": 10
+      },
+      {
+        "group": "NC_MANDO_adip_gun",
+        "prob": 3
+      },
+      {
+        "group": "NC_MANDO_adip_mod",
+        "prob": 15
+      },
+      {
+        "group": "NC_MANDO_adip_mod",
+        "prob": 5
+      },
+      {
+        "item": "1st_aid",
+        "count": [
+          1,
+          2
+        ]
+      },
+      {
+        "item": "saline",
+        "prob": 60
+      },
+      {
+        "item": "water_clean",
+        "count": [
+          1,
+          2
+        ]
+      },
+      {
+        "item": "sports_drink",
+        "prob": 60
+      },
+      {
+        "item": "chocolate",
+        "prob": 50
+      },
+      {
+        "distribution": [
+          {
+            "item": "mre_beef_box",
+            "prob": 10
+          },
+          {
+            "item": "mre_chilibeans_box",
+            "prob": 10
+          },
+          {
+            "item": "mre_bbqbeef_box",
+            "prob": 10
+          },
+          {
+            "item": "mre_meatball_box",
+            "prob": 10
+          },
+          {
+            "item": "mre_chicken_box",
+            "prob": 10
+          },
+          {
+            "item": "mre_beefstew_box",
+            "prob": 10
+          },
+          {
+            "item": "mre_asianbeef_box",
+            "prob": 10
+          },
+          {
+            "item": "mre_southwestbeef_box",
+            "prob": 10
+          }
+        ]
+      },
+      {
+        "distribution": [
+          {
+            "item": "mre_beef_box",
+            "prob": 10
+          },
+          {
+            "item": "mre_chilibeans_box",
+            "prob": 10
+          },
+          {
+            "item": "mre_bbqbeef_box",
+            "prob": 10
+          },
+          {
+            "item": "mre_meatball_box",
+            "prob": 10
+          },
+          {
+            "item": "mre_chicken_box",
+            "prob": 10
+          },
+          {
+            "item": "mre_beefstew_box",
+            "prob": 10
+          },
+          {
+            "item": "mre_asianbeef_box",
+            "prob": 10
+          },
+          {
+            "item": "mre_southwestbeef_box",
+            "prob": 10
+          }
+        ],
+        "prob": 50
+      },
+      {
+        "item": "grenade",
+        "prob": 50,
+        "count": [
+          1,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_MANDO_BOUNTY_HUNTER",
+    "name": {
+      "str": "Mandalorian Bounty Hunter"
+    },
+    "job_description": "This is the way.",
+    "traits": [
+      {
+        "group": "BG_survival_story_SOLDIER"
+      },
+      {
+        "group": "NPC_starting_traits"
+      },
+      {
+        "group": "Appearance_demographics"
+      }
+    ],
+    "bonus_str": {
+      "rng": [
+        4,
+        10
+      ]
+    },
+    "bonus_dex": {
+      "rng": [
+        4,
+        10
+      ]
+    },
+    "bonus_int": {
+      "rng": [
+        0,
+        4
+      ]
+    },
+    "bonus_per": {
+      "rng": [
+        4,
+        10
+      ]
+    },
+    "skills": [
+      {
+        "skill": "ALL",
+        "level": {
+          "sum": [
+            {
+              "dice": [
+                3,
+                3
+              ]
+            },
+            {
+              "constant": 2
+            }
+          ]
+        }
+      },
+      {
+        "skill": "gun",
+        "bonus": {
+          "rng": [
+            3,
+            6
+          ]
+        }
+      },
+      {
+        "skill": "rifle",
+        "bonus": {
+          "rng": [
+            3,
+            6
+          ]
+        }
+      },
+      {
+        "skill": "pistol",
+        "bonus": {
+          "rng": [
+            3,
+            6
+          ]
+        }
+      },
+      {
+        "skill": "shotgun",
+        "bonus": {
+          "rng": [
+            2,
+            5
+          ]
+        }
+      },
+      {
+        "skill": "smg",
+        "bonus": {
+          "rng": [
+            2,
+            5
+          ]
+        }
+      },
+      {
+        "skill": "melee",
+        "bonus": {
+          "rng": [
+            3,
+            6
+          ]
+        }
+      },
+      {
+        "skill": "stabbing",
+        "bonus": {
+          "rng": [
+            3,
+            6
+          ]
+        }
+      },
+      {
+        "skill": "cutting",
+        "bonus": {
+          "rng": [
+            3,
+            6
+          ]
+        }
+      },
+      {
+        "skill": "dodge",
+        "bonus": {
+          "rng": [
+            3,
+            6
+          ]
+        }
+      },
+      {
+        "skill": "unarmed",
+        "bonus": {
+          "rng": [
+            2,
+            5
+          ]
+        }
+      },
+      {
+        "skill": "throw",
+        "bonus": {
+          "rng": [
+            2,
+            5
+          ]
+        }
+      },
+      {
+        "skill": "survival",
+        "bonus": {
+          "rng": [
+            3,
+            6
+          ]
+        }
+      },
+      {
+        "skill": "firstaid",
+        "bonus": {
+          "rng": [
+            2,
+            4
+          ]
+        }
+      },
+      {
+        "skill": "traps",
+        "bonus": {
+          "rng": [
+            2,
+            5
+          ]
+        }
+      }
+    ],
+    "common": true,
+    "worn_override": "NC_MANDO_worn",
+    "carry_override": "NC_MANDO_carried",
+    "weapon_override": "NC_MANDO_weapon_hunter"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_MANDO_OUTCAST",
+    "name": {
+      "str": "Mandalorian Outcast"
+    },
+    "job_description": "Cast out by the clan. Still wearing what's left of the armor.",
+    "traits": [
+      {
+        "group": "BG_survival_story_SOLDIER"
+      },
+      {
+        "group": "NPC_starting_traits"
+      },
+      {
+        "group": "Appearance_demographics"
+      }
+    ],
+    "bonus_str": {
+      "rng": [
+        3,
+        8
+      ]
+    },
+    "bonus_dex": {
+      "rng": [
+        3,
+        8
+      ]
+    },
+    "bonus_int": {
+      "rng": [
+        0,
+        4
+      ]
+    },
+    "bonus_per": {
+      "rng": [
+        3,
+        8
+      ]
+    },
+    "skills": [
+      {
+        "skill": "ALL",
+        "level": {
+          "sum": [
+            {
+              "dice": [
+                3,
+                3
+              ]
+            },
+            {
+              "constant": 2
+            }
+          ]
+        }
+      },
+      {
+        "skill": "gun",
+        "bonus": {
+          "rng": [
+            2,
+            4
+          ]
+        }
+      },
+      {
+        "skill": "rifle",
+        "bonus": {
+          "rng": [
+            2,
+            4
+          ]
+        }
+      },
+      {
+        "skill": "pistol",
+        "bonus": {
+          "rng": [
+            2,
+            4
+          ]
+        }
+      },
+      {
+        "skill": "shotgun",
+        "bonus": {
+          "rng": [
+            1,
+            3
+          ]
+        }
+      },
+      {
+        "skill": "smg",
+        "bonus": {
+          "rng": [
+            1,
+            3
+          ]
+        }
+      },
+      {
+        "skill": "melee",
+        "bonus": {
+          "rng": [
+            2,
+            4
+          ]
+        }
+      },
+      {
+        "skill": "stabbing",
+        "bonus": {
+          "rng": [
+            2,
+            4
+          ]
+        }
+      },
+      {
+        "skill": "cutting",
+        "bonus": {
+          "rng": [
+            2,
+            4
+          ]
+        }
+      },
+      {
+        "skill": "dodge",
+        "bonus": {
+          "rng": [
+            2,
+            4
+          ]
+        }
+      },
+      {
+        "skill": "unarmed",
+        "bonus": {
+          "rng": [
+            1,
+            3
+          ]
+        }
+      },
+      {
+        "skill": "throw",
+        "bonus": {
+          "rng": [
+            1,
+            3
+          ]
+        }
+      },
+      {
+        "skill": "survival",
+        "bonus": {
+          "rng": [
+            2,
+            4
+          ]
+        }
+      },
+      {
+        "skill": "firstaid",
+        "bonus": {
+          "rng": [
+            2,
+            4
+          ]
+        }
+      },
+      {
+        "skill": "traps",
+        "bonus": {
+          "rng": [
+            2,
+            5
+          ]
+        }
+      }
+    ],
+    "common": true,
+    "worn_override": "NC_OUTCAST_worn",
+    "carry_override": "NC_OUTCAST_carried",
+    "weapon_override": "NC_MANDO_weapon_outcast"
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "mando_tracking_fob",
+    "name": {
+      "str": "distress beacon"
+    },
+    "weight": "1 g",
+    "color": "light_gray",
+    "spoils_in": "365 days",
+    "comestible_type": "FOOD",
+    "symbol": "*",
+    "quench": 0,
+    "healthy": -1,
+    "price_postapoc": "250 cent",
+    "use_action": {
+      "type": "place_npc",
+      "npc_class_id": "mando_bounty_hunter",
+      "summon_msg": "A dented beskar tracking fob, still pinging. Somewhere out there a bounty hunter is listening for exactly this signal.",
+      "place_randomly": false,
+      "moves": 50
+    },
+    "calories": 0,
+    "description": "A cracked, palm-sized comms beacon that still hums faintly.  Activating it broadcasts a distress signal on every frequency, and something out there will answer.  There is no telling what.",
+    "price": "0 cent",
+    "material": "steel",
+    "volume": "1 ml",
+    "parasites": 0,
+    "stack_size": 1,
+    "fun": 0,
+    "flags": [
+      "TRADER_AVOID"
+    ]
+  }
+]

@@ -1,0 +1,119 @@
+[
+  {
+    "id": "TALK_SUGGEST_FOLLOW_NINJA",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "npc_has_effect": "infection",
+      "no": {
+        "npc_has_effect": "asked_to_follow",
+        "no": "Why should I travel with you?",
+        "yes": "You asked me recently; ask again later."
+      },
+      "yes": "Not until I get some antibiotics..."
+    },
+    "responses": [
+      {
+        "switch": true,
+        "text": "Understood.  I'll get those antibiotics.",
+        "topic": "TALK_NONE",
+        "condition": { "npc_has_effect": "infection" }
+      },
+      {
+        "switch": true,
+        "text": "Right, right, I'll ask later.",
+        "topic": "TALK_NONE",
+        "condition": { "npc_has_effect": "asked_to_follow" }
+      },
+      {
+        "switch": true,
+        "default": true,
+        "text": "I can keep you safe.",
+        "trial": { "type": "CONDITION", "condition": { "or": [ { "u_has_item": "shinobi_contract" }, { "u_has_item": "shinobi_contract_fire" }, { "u_has_item": "shinobi_contract_water" }, { "u_has_item": "shinobi_contract_wind" }, { "u_has_item": "shinobi_contract_earth" }, { "u_has_item": "shinobi_contract_lightning" } ] } },
+        "success": { "topic": "TALK_AGREE_FOLLOW", "effect": "follow", "opinion": { "trust": 1, "value": 1 } },
+        "failure": { "topic": "TALK_DENY_FOLLOW", "effect": "deny_follow", "opinion": { "value": -1, "anger": 1 } }
+      },
+      {
+        "switch": true,
+        "default": true,
+        "text": "You can keep me safe.",
+        "trial": {
+          "type": "PERSUADE",
+          "difficulty": 0,
+          "mod": [ [ "ALTRUISM", 6 ], [ "POS_FEAR", -6 ], [ "BRAVERY", 2 ], [ "ANGER", -6 ], [ "VALUE", 2 ] ]
+        },
+        "success": { "topic": "TALK_AGREE_FOLLOW", "effect": "follow", "opinion": { "value": -1 } },
+        "failure": { "topic": "TALK_DENY_FOLLOW", "effect": "deny_follow", "opinion": { "fear": -1, "value": -1, "anger": 1 } }
+      },
+      {
+        "switch": true,
+        "default": true,
+        "text": "We're friends, aren't we?",
+        "trial": { "type": "PERSUADE", "difficulty": 0, "mod": [ [ "TRUST", 3 ], [ "VALUE", 3 ], [ "ANGER", -3 ] ] },
+        "success": { "topic": "TALK_AGREE_FOLLOW", "effect": "follow", "opinion": { "trust": 2, "anger": -1 } },
+        "failure": { "topic": "TALK_DENY_FOLLOW", "effect": "deny_follow", "opinion": { "trust": 1, "fear": -2, "value": -1, "anger": 1 } }
+      },
+      {
+        "switch": true,
+        "default": true,
+        "text": "I'll kill you if you don't.",
+        "trial": { "type": "INTIMIDATE", "difficulty": 20, "mod": [ [ "FEAR", 8 ], [ "VALUE", 2 ], [ "TRUST", 2 ], [ "BRAVERY", -2 ] ] },
+        "success": { "topic": "TALK_AGREE_FOLLOW", "effect": "follow", "opinion": { "trust": -4, "fear": 3, "value": -1, "anger": 4 } },
+        "failure": { "topic": "TALK_DENY_FOLLOW", "effect": "deny_follow", "opinion": { "trust": 4, "value": -5, "anger": 10 } }
+      },
+      { "switch": true, "default": true, "text": "Nevermind.", "topic": "TALK_NONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SHINOBI",
+    "dynamic_line": {
+      "u_has_var": "talked_to_shinobi",
+      "type": "dialogue",
+      "context": "shinobi",
+      "value": "yes",
+      "no": "Huh? *mumble mumble* … Who are you?",
+      "yes": "Oh, you again."
+    },
+    "responses": [
+      {
+        "text": "Hello <name_g>.",
+        "topic": "TALK_SHINOBI_INTRO",
+        "effect": { "u_add_var": "talked_to_shinobi", "type": "dialogue", "context": "shinobi", "value": "yes" }
+      },
+      { "text": "Wanna get outta here?", "topic": "TALK_SUGGEST_FOLLOW_NINJA" },
+      { "text": "Let's trade items.", "topic": "TALK_SHINOBI", "effect": "start_trade" },
+      {
+        "text": "Can I do anything for you?",
+        "topic": "TALK_MISSION_LIST",
+        "condition": { "not": "has_assigned_mission" }
+      },
+      { "text": "About the mission…", "topic": "TALK_MISSION_INQUIRE", "condition": "has_assigned_mission" },
+      {
+        "text": "About one of those missions…",
+        "topic": "TALK_MISSION_LIST_ASSIGNED",
+        "condition": "has_many_assigned_missions"
+      },
+      { "text": "Goodbye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SHINOBI_INTRO",
+    "dynamic_line": "I'm busy, what is it?",
+    "responses": [
+      { "text": "Why don't you go somewhere else?", "topic": "TALK_SHINOBI_LEAVE" },
+      { "text": "Let's trade then.", "effect": "start_trade", "topic": "TALK_SHINOBI" },
+      { "text": "I'm sorry, I gotta go.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SHINOBI_LEAVE",
+    "dynamic_line": "A battlefield such as this is more suited for solo ninja squads...",
+    "responses": [
+      { "text": "Wanna get outta here?", "topic": "TALK_SUGGEST_FOLLOW_NINJA" },
+      { "text": "What can you sell me?", "topic": "TALK_SHINOBI", "effect": "start_trade" },
+      { "text": "I'm sorry, I gotta go.", "topic": "TALK_DONE" }
+    ]
+  }
+]

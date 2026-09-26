@@ -1,0 +1,585 @@
+[
+  {
+    "type": "item_group",
+    "id": "devil_milsurplus_armor",
+    "subtype": "distribution",
+    "//": "Armor racks/mannequins at the demon surplus depot",
+    "entries": [
+      {
+        "item": "modularvest",
+        "prob": 20
+      },
+      {
+        "item": "kevlar_plate",
+        "prob": 20,
+        "count": [
+          1,
+          6
+        ]
+      },
+      {
+        "item": "ceramic_armor",
+        "prob": 15,
+        "count": [
+          1,
+          6
+        ]
+      },
+      {
+        "item": "beskar_cuirass",
+        "prob": 12
+      },
+      {
+        "item": "rune_cuirass",
+        "prob": 12
+      },
+      {
+        "item": "fire_cuirass",
+        "prob": 8
+      },
+      {
+        "item": "ice_cuirass",
+        "prob": 8
+      },
+      {
+        "item": "acid_cuirass",
+        "prob": 8
+      },
+      {
+        "item": "elec_cuirass",
+        "prob": 8
+      },
+      {
+        "item": "beskar_greaves",
+        "prob": 10
+      },
+      {
+        "item": "rune_greaves",
+        "prob": 10
+      },
+      {
+        "item": "gauntlets_beskar",
+        "prob": 10
+      },
+      {
+        "item": "gauntlets_rune",
+        "prob": 10
+      },
+      {
+        "item": "shield_beskar",
+        "prob": 8
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "devil_milsurplus_helmets",
+    "subtype": "distribution",
+    "entries": [
+      {
+        "item": "helmet_army",
+        "prob": 40
+      },
+      {
+        "item": "tac_helmet",
+        "prob": 10
+      },
+      {
+        "item": "helmet_liner",
+        "prob": 5
+      },
+      {
+        "item": "glasses_bal",
+        "prob": 5
+      },
+      {
+        "item": "mask_gas",
+        "prob": 5
+      },
+      {
+        "item": "helmet_beskar",
+        "prob": 15
+      },
+      {
+        "item": "helmet_rune",
+        "prob": 15
+      },
+      {
+        "item": "vamp_mask",
+        "prob": 3
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "devil_milsurplus_clothing",
+    "subtype": "distribution",
+    "entries": [
+      {
+        "item": "hat_boonie",
+        "prob": 4
+      },
+      {
+        "item": "webbing_belt",
+        "prob": 4
+      },
+      {
+        "item": "pants_army",
+        "prob": 4
+      },
+      {
+        "item": "jacket_army",
+        "prob": 4
+      },
+      {
+        "item": "winter_pants_army",
+        "prob": 4
+      },
+      {
+        "item": "winter_jacket_army",
+        "prob": 4
+      },
+      {
+        "item": "knee_pads",
+        "prob": 4
+      },
+      {
+        "item": "elbow_pads",
+        "prob": 4
+      },
+      {
+        "item": "legpouch_large",
+        "prob": 4
+      },
+      {
+        "item": "gloves_tactical",
+        "prob": 4
+      },
+      {
+        "item": "molle_pack",
+        "prob": 4
+      },
+      {
+        "item": "sage_surplice",
+        "prob": 3
+      },
+      {
+        "item": "moon_surcoat",
+        "prob": 2
+      },
+      {
+        "item": "sun_gambeson",
+        "prob": 2
+      },
+      {
+        "item": "rune_cape",
+        "prob": 3
+      },
+      {
+        "item": "devilstraps",
+        "prob": 4
+      },
+      {
+        "item": "tri_scabbard",
+        "prob": 4
+      },
+      {
+        "item": "quick_scabbard",
+        "prob": 4
+      },
+      {
+        "item": "stasis_holster",
+        "prob": 3
+      },
+      {
+        "item": "stasis_holster_leg",
+        "prob": 3
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "devil_milsurplus_gear",
+    "subtype": "distribution",
+    "entries": [
+      {
+        "item": "canteen",
+        "prob": 3
+      },
+      {
+        "item": "e_tool",
+        "prob": 3
+      },
+      {
+        "item": "two_way_radio",
+        "prob": 1
+      },
+      {
+        "item": "mess_kit",
+        "prob": 3
+      },
+      {
+        "item": "camelbak",
+        "prob": 2
+      },
+      {
+        "item": "mess_tin",
+        "prob": 2
+      },
+      {
+        "group": "iounstones",
+        "prob": 2
+      },
+      {
+        "group": "crystalkunai",
+        "prob": 3
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "devil_milsurplus_counter",
+    "subtype": "distribution",
+    "entries": [
+      {
+        "group": "mil_surplus",
+        "prob": 60
+      },
+      {
+        "group": "crystalkunai",
+        "prob": 15
+      },
+      {
+        "group": "iounstones",
+        "prob": 5
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "devil_milsurplus_books",
+    "subtype": "distribution",
+    "entries": [
+      {
+        "group": "SUS_field_manual_bookcase",
+        "prob": 60
+      },
+      {
+        "group": "dojo_manuals",
+        "prob": 30
+      }
+    ]
+  },
+  {
+    "type": "palette",
+    "id": "devil_milsurplus_palette",
+    "terrain": {
+      ".": "t_region_groundcover_urban",
+      "!": "t_region_groundcover_urban",
+      "~": "t_sidewalk",
+      "-": "t_wall_w",
+      "|": "t_wall_w",
+      "'": "t_window",
+      "`": "t_window_alarm",
+      "+": "t_door_c",
+      "/": "t_door_curtain_c",
+      "Y": "t_concrete",
+      "U": "t_concrete",
+      "Ü": "t_concrete",
+      "4": "t_gutter_downspout",
+      "<": "t_ladder_up"
+    },
+    "furniture": {
+      "!": "f_street_light",
+      "#": "f_counter",
+      "Ü": "f_dumpster",
+      "h": "f_chair",
+      "%": "f_sink",
+      "@": "f_mannequin",
+      "L": "f_locker",
+      "^": [
+        "f_bigmirror",
+        "f_bigmirror",
+        "f_bigmirror",
+        "f_bigmirror_b"
+      ],
+      "S": "f_stool",
+      "A": "f_rack",
+      "B": "f_rack",
+      "C": "f_rack",
+      "D": "f_rack",
+      "E": "f_rack",
+      "F": "f_rack",
+      "*": "f_canvas_wall",
+      "8": "f_groundsheet",
+      "]": "f_canvas_door",
+      "Q": "f_camp_chair",
+      "b": "f_brazier",
+      "r": "f_tourist_table"
+    },
+    "toilets": {
+      "&": {}
+    },
+    "items": {
+      "@": {
+        "item": {
+          "subtype": "distribution",
+          "entries": [
+            {
+              "group": "clothing_military"
+            },
+            {
+              "group": "clothing_military_winter"
+            },
+            {
+              "group": "devil_milsurplus_armor"
+            }
+          ]
+        },
+        "chance": 70
+      },
+      "A": {
+        "item": "devil_milsurplus_gear",
+        "repeat": [
+          1,
+          3
+        ],
+        "chance": 70
+      },
+      "B": {
+        "item": "devil_milsurplus_armor",
+        "repeat": [
+          1,
+          3
+        ],
+        "chance": 75
+      },
+      "C": {
+        "item": "MRE",
+        "chance": 90,
+        "repeat": [
+          1,
+          3
+        ]
+      },
+      "D": {
+        "item": "devil_milsurplus_helmets",
+        "repeat": [
+          1,
+          3
+        ],
+        "chance": 75
+      },
+      "E": {
+        "item": "devil_milsurplus_books",
+        "chance": 60
+      },
+      "F": {
+        "item": "devil_milsurplus_clothing",
+        "repeat": [
+          1,
+          3
+        ],
+        "chance": 65
+      },
+      "L": {
+        "item": "SUS_janitors_closet",
+        "chance": 60
+      },
+      "Ü": {
+        "item": "trash_dumpster",
+        "chance": 80
+      },
+      "#": {
+        "item": "devil_milsurplus_counter",
+        "chance": 35
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [
+      "devilmilsurplus"
+    ],
+    "weight": 666,
+    "object": {
+      "fill_ter": "t_floor",
+      "rows": [
+        "...........~~..........!",
+        "...........~~...........",
+        "..-''''''--++--''''''--.",
+        "..|             QrQ@  |.",
+        "..| #         b     b |.",
+        "..| #           *]*   |.",
+        "..| #        @  *8*   |.",
+        "..| #           ***   |.",
+        "..|                   |.",
+        "..| A A A B B B C C C |.",
+        "..| A A A B B B C C C |.",
+        "..| A A A F E E C C C |.",
+        "..| A A A F E E C C C |.",
+        "..| A A A F E E C C C |.",
+        "..| A A A F E E C C C |.",
+        "..| A A A F F F C C C |.",
+        "..| A A A F F F F F F |.",
+        "..| A A A F D D F F F |.",
+        "..| A A A F D D F F F |.",
+        "..| A A A F D D F F F |.",
+        "..|                   |.",
+        "..|-+-----+--------+- |.",
+        "..|&  |4YYYUÜÜÜU<|LL|@|.",
+        "..|----YYYYYYYYYY-----|."
+      ],
+      "palettes": [
+        "devil_milsurplus_palette"
+      ],
+      "place_items": [
+        {
+          "item": "weapons_common",
+          "x": [ 2, 21 ],
+          "y": [ 3, 22 ],
+          "chance": 12
+        },
+        {
+          "item": "weapons_uncommon",
+          "x": [ 2, 21 ],
+          "y": [ 3, 22 ],
+          "chance": 6
+        }
+      ],
+      "place_monsters": [
+        {
+          "monster": "GROUP_TOWER_DEVIL",
+          "x": [
+            1,
+            22
+          ],
+          "y": [
+            1,
+            22
+          ],
+          "density": 0.4
+        }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": "devilmilsurplus_roof",
+    "object": {
+      "fill_ter": "t_flat_roof",
+      "rows": [
+        "                        ",
+        "                        ",
+        "  --------------------- ",
+        "  -...................- ",
+        "  -...................- ",
+        "  -...................- ",
+        "  -...................- ",
+        "  -...................- ",
+        "  -...................- ",
+        "  -...................- ",
+        "  -...................- ",
+        "  -...................- ",
+        "  -...................- ",
+        "  -...................- ",
+        "  -...................- ",
+        "  -...................- ",
+        "  -...................- ",
+        "  -...................- ",
+        "  -...................- ",
+        "  -...................- ",
+        "  -...................- ",
+        "  -.R.5-------####....- ",
+        "  -...-     ####>#....- ",
+        "  -----          ------ "
+      ],
+      "palettes": [
+        "roof_palette"
+      ],
+      "terrain": {
+        ">": "t_ladder_down"
+      },
+      "nested": {
+        "U": {
+          "chunks": [
+            "roof_2x2_infrastructure"
+          ]
+        },
+        "R": {
+          "chunks": [
+            "roof_2x2_infrastructure_1"
+          ]
+        }
+      },
+      "place_nested": [
+        {
+          "chunks": [
+            [
+              "null",
+              20
+            ],
+            [
+              "roof_2x2_utilities_b",
+              15
+            ],
+            [
+              "roof_2x2_utilities_c",
+              5
+            ],
+            [
+              "roof_2x2_utilities_d",
+              40
+            ],
+            [
+              "roof_2x2_utilities",
+              40
+            ]
+          ],
+          "x": [
+            4,
+            18
+          ],
+          "y": [
+            5,
+            6
+          ]
+        },
+        {
+          "chunks": [
+            [
+              "null",
+              20
+            ],
+            [
+              "roof_4x4_utility",
+              40
+            ],
+            [
+              "roof_6x6_survivor",
+              20
+            ],
+            [
+              "roof_4x4_holdout",
+              5
+            ],
+            [
+              "roof_6x6_utility",
+              20
+            ]
+          ],
+          "x": [
+            3,
+            13
+          ],
+          "y": [
+            8,
+            14
+          ]
+        }
+      ]
+    }
+  }
+]

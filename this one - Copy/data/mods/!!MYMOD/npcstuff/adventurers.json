@@ -1,0 +1,899 @@
+[
+  {
+    "type": "item_group",
+    "id": "NC_ADV_tier_armor",
+    "subtype": "distribution",
+    "//": "One extra piece of armor: mostly common and uncommon, rarely rare or better.",
+    "entries": [
+      { "group": "armor_common", "prob": 40 },
+      { "group": "armor_uncommon", "prob": 30 },
+      { "group": "armor_rare", "prob": 18 },
+      { "group": "armor_very_rare", "prob": 9 },
+      { "group": "armor_legendary", "prob": 3 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_ADV_tier_weapon",
+    "subtype": "distribution",
+    "//": "One spare weapon from the rarity ladder.",
+    "entries": [
+      { "group": "weapons_common", "prob": 40 },
+      { "group": "weapons_uncommon", "prob": 30 },
+      { "group": "weapons_rare", "prob": 18 },
+      { "group": "weapons_very_rare", "prob": 9 },
+      { "group": "weapons_legendary", "prob": 3 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_GB_tier_armor",
+    "subtype": "distribution",
+    "//": "Gunbreaker armor: nothing below uncommon, mostly rare.",
+    "entries": [
+      { "group": "armor_uncommon", "prob": 30 },
+      { "group": "armor_rare", "prob": 40 },
+      { "group": "armor_very_rare", "prob": 22 },
+      { "group": "armor_legendary", "prob": 8 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_ADV_FIGHTER_signature",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "longsword", "prob": 25 },
+      { "item": "arming_sword", "prob": 20 },
+      { "item": "battleaxe", "prob": 15 },
+      { "item": "mace", "prob": 15 },
+      { "item": "glaive", "prob": 10 },
+      { "item": "halberd", "prob": 8 },
+      { "item": "broadsword", "prob": 7 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_ADV_FIGHTER_weapon",
+    "subtype": "distribution",
+    "entries": [
+      { "group": "NC_ADV_FIGHTER_signature", "prob": 55 },
+      { "group": "weapons_common", "prob": 18 },
+      { "group": "weapons_uncommon", "prob": 14 },
+      { "group": "weapons_rare", "prob": 8 },
+      { "group": "weapons_very_rare", "prob": 4 },
+      { "group": "weapons_legendary", "prob": 1 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_ADV_FIGHTER_worn",
+    "subtype": "collection",
+    "items": [
+      { "item": "gambeson" },
+      { "item": "armor_lightplate" },
+      { "item": "helmet_plate" },
+      { "item": "gloves_plate" },
+      { "item": "boots_plate" },
+      { "item": "legguard_lightplate" },
+      { "item": "armguard_lightplate" },
+      { "item": "cloak_wool", "prob": 50 },
+      { "group": "NC_ADV_tier_armor" },
+      { "group": "NC_ADV_tier_armor", "prob": 50 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_ADV_FIGHTER_carried",
+    "subtype": "collection",
+    "items": [
+      { "item": "dagger_medieval", "prob": 60 },
+      { "item": "1st_aid" },
+      { "item": "water_clean" },
+      { "item": "bread", "prob": 60 },
+      { "group": "NC_ADV_tier_weapon", "prob": 35 },
+      { "group": "NC_ADV_tier_armor", "prob": 20 }
+    ]
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_ADV_FIGHTER",
+    "name": { "str": "Fighter" },
+    "job_description": "Steel and shield.  Point me at the trouble.",
+    "traits": [
+      { "group": "BG_survival_story_SOLDIER" },
+      { "group": "NPC_starting_traits" },
+      { "group": "Appearance_demographics" }
+    ],
+    "bonus_str": { "rng": [ 6, 12 ] },
+    "bonus_dex": { "rng": [ 0, 4 ] },
+    "bonus_int": { "rng": [ -2, 2 ] },
+    "bonus_per": { "rng": [ 0, 4 ] },
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 3 ] }, { "constant": 2 } ] } },
+      { "skill": "melee", "bonus": { "rng": [ 6, 10 ] } },
+      { "skill": "bashing", "bonus": { "rng": [ 4, 8 ] } },
+      { "skill": "cutting", "bonus": { "rng": [ 4, 8 ] } },
+      { "skill": "stabbing", "bonus": { "rng": [ 3, 7 ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 2, 5 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 3, 6 ] } },
+      { "skill": "firstaid", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "survival", "bonus": { "rng": [ 1, 3 ] } }
+    ],
+    "common": true,
+    "worn_override": "NC_ADV_FIGHTER_worn",
+    "carry_override": "NC_ADV_FIGHTER_carried",
+    "weapon_override": "NC_ADV_FIGHTER_weapon"
+  },
+  {
+    "type": "npc",
+    "id": "adv_fighter",
+    "//": "adventuring party fighter, from a distress beacon.",
+    "name_suffix": "fighter",
+    "class": "NC_ADV_FIGHTER",
+    "attitude": 0,
+    "mission": 7,
+    "mission_offered": "MISSION_RECRUIT_ADV_FIGHTER",
+    "chat": "TALK_ADV_FIGHTER",
+    "faction": "no_faction"
+  },
+  {
+    "id": "MISSION_RECRUIT_ADV_FIGHTER",
+    "type": "mission_definition",
+    "name": { "str": "Recruit Fighter" },
+    "goal": "MGOAL_RECRUIT_NPC_CLASS",
+    "difficulty": 2,
+    "value": 70000,
+    "start": {
+      "assign_mission_target": { "om_terrain": "house_", "om_terrain_match_type": "PREFIX", "reveal_radius": 2, "random": true, "search_range": 80, "z": 0 },
+      "effect": "follow",
+      "update_mapgen": { "place_npcs": [ { "class": "adv_fighter", "x": 11, "y": 11, "target": true } ] }
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "You look like someone who could use a sturdy shield at your side.",
+      "offer": "A fellow fighter of my company was cut off near here.  Find them with me, and we will be twice the wall.",
+      "accepted": "Then we march.  Stay behind my shield.",
+      "rejected": "Fair enough.  I will look for them alone.",
+      "advice": "If they are a real fighter, they will be standing over something dead.",
+      "inquire": "Have you found my fellow fighter yet?",
+      "success": "Well met, shield-brother!  Now we are a proper company.",
+      "success_lie": "That is no fighter of mine.",
+      "failure": "Faint heart.  Off with you."
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "NC_ADV_MAGE_signature",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "magi_staff_minor", "prob": 40 },
+      { "item": "magi_staff_lesser", "prob": 35 },
+      { "item": "magi_staff_greater", "prob": 15 },
+      { "item": "q_staff", "prob": 10 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_ADV_MAGE_weapon",
+    "subtype": "distribution",
+    "entries": [
+      { "group": "NC_ADV_MAGE_signature", "prob": 70 },
+      { "group": "weapons_common", "prob": 12 },
+      { "group": "weapons_uncommon", "prob": 9 },
+      { "group": "weapons_rare", "prob": 5 },
+      { "group": "weapons_very_rare", "prob": 3 },
+      { "group": "weapons_legendary", "prob": 1 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_ADV_MAGE_worn",
+    "subtype": "collection",
+    "items": [
+      { "item": "robe" },
+      { "item": "wizard_hat" },
+      { "item": "slippers" },
+      { "item": "socks" },
+      { "item": "cloak_wool", "prob": 70 },
+      { "item": "mring_intelligence_1", "prob": 40 },
+      { "item": "mring_intelligence_2", "prob": 20 },
+      { "item": "mring_protection_2", "prob": 25 },
+      { "group": "NC_ADV_tier_armor" },
+      { "group": "NC_ADV_tier_armor", "prob": 50 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_ADV_MAGE_carried",
+    "subtype": "collection",
+    "items": [
+      { "item": "dagger_medieval", "prob": 40 },
+      { "item": "1st_aid", "prob": 60 },
+      { "item": "water_clean" },
+      { "item": "bread", "prob": 60 },
+      { "group": "NC_ADV_tier_weapon", "prob": 35 },
+      { "group": "NC_ADV_tier_armor", "prob": 20 }
+    ]
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_ADV_MAGE",
+    "name": { "str": "Mage" },
+    "job_description": "Knowledge is the sharpest blade.",
+    "traits": [
+      { "trait": "MAGUS" },
+      { "group": "BG_survival_story_UNIVERSAL" },
+      { "group": "NPC_starting_traits" },
+      { "group": "Appearance_demographics" }
+    ],
+    "bonus_str": { "rng": [ -2, 1 ] },
+    "bonus_dex": { "rng": [ -1, 2 ] },
+    "bonus_int": { "rng": [ 3, 7 ] },
+    "bonus_per": { "rng": [ 0, 3 ] },
+    "spells": [ { "id": "magic_missile", "level": 12 }, { "id": "fireball", "level": 9 }, { "id": "lightning_bolt", "level": 9 }, { "id": "ice_spike", "level": 9 }, { "id": "burning_hands", "level": 8 }, { "id": "blinding_flash", "level": 6 }, { "id": "frost_armor", "level": 6 }, { "id": "mirror_image", "level": 6 }, { "id": "light_healing", "level": 6 }, { "id": "fire_storm", "level": 5 }, { "id": "ice_storm", "level": 5 } ],
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 3 ] }, { "constant": 2 } ] } },
+      { "skill": "spellcraft", "bonus": { "rng": [ 6, 12 ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "firstaid", "bonus": { "rng": [ 1, 4 ] } },
+      { "skill": "speech", "bonus": { "rng": [ 1, 4 ] } },
+      { "skill": "survival", "bonus": { "rng": [ 0, 2 ] } }
+    ],
+    "common": true,
+    "worn_override": "NC_ADV_MAGE_worn",
+    "carry_override": "NC_ADV_MAGE_carried",
+    "weapon_override": "NC_ADV_MAGE_weapon"
+  },
+  {
+    "type": "npc",
+    "id": "adv_mage",
+    "//": "adventuring party mage, from a distress beacon.",
+    "name_suffix": "mage",
+    "class": "NC_ADV_MAGE",
+    "attitude": 0,
+    "mission": 7,
+    "mission_offered": "MISSION_RECRUIT_ADV_MAGE",
+    "chat": "TALK_ADV_MAGE",
+    "faction": "no_faction"
+  },
+  {
+    "id": "MISSION_RECRUIT_ADV_MAGE",
+    "type": "mission_definition",
+    "name": { "str": "Recruit Mage" },
+    "goal": "MGOAL_RECRUIT_NPC_CLASS",
+    "difficulty": 2,
+    "value": 70000,
+    "start": {
+      "assign_mission_target": { "om_terrain": "house_", "om_terrain_match_type": "PREFIX", "reveal_radius": 2, "random": true, "search_range": 80, "z": 0 },
+      "effect": "follow",
+      "update_mapgen": { "place_npcs": [ { "class": "adv_mage", "x": 11, "y": 11, "target": true } ] }
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "The air near you smells faintly of ozone.  Someone with magical training is nearby.",
+      "offer": "A fellow mage of my circle came through this region.  Help me find them, and our combined lore will be worth the trip.",
+      "accepted": "Splendid.  Try not to touch anything glowing.",
+      "rejected": "A pity.  I shall consult the stars instead.",
+      "advice": "They will be somewhere strange, doing something unwise.  That is how you tell a mage.",
+      "inquire": "Have you located my fellow mage yet?",
+      "success": "Excellent!  Now the two of us can cast in concert.",
+      "success_lie": "That is no mage of mine.  I can tell by the aura.",
+      "failure": "A shame.  Ah well, back to the books."
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "NC_ADV_THIEF_signature",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "dagger_medieval", "prob": 30 },
+      { "item": "rapier", "prob": 25 },
+      { "item": "knife_combat", "prob": 15 },
+      { "item": "cutlass", "prob": 10 },
+      { "item": "punch_dagger", "prob": 10 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_ADV_THIEF_weapon",
+    "subtype": "distribution",
+    "entries": [
+      { "group": "NC_ADV_THIEF_signature", "prob": 60 },
+      { "group": "weapons_common", "prob": 16 },
+      { "group": "weapons_uncommon", "prob": 12 },
+      { "group": "weapons_rare", "prob": 7 },
+      { "group": "weapons_very_rare", "prob": 4 },
+      { "group": "weapons_legendary", "prob": 1 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_ADV_THIEF_worn",
+    "subtype": "collection",
+    "items": [
+      { "item": "armor_larmor" },
+      { "item": "boots_larmor" },
+      { "item": "gloves_leather" },
+      { "item": "cloak_leather" },
+      { "item": "pants_leather" },
+      { "item": "helmet_larmor", "prob": 40 },
+      { "group": "NC_ADV_tier_armor" },
+      { "group": "NC_ADV_tier_armor", "prob": 50 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_ADV_THIEF_carried",
+    "subtype": "collection",
+    "items": [
+      { "item": "throwing_knife", "charges": [ 6, 14 ] },
+      { "item": "dagger_medieval", "prob": 50 },
+      { "item": "1st_aid", "prob": 60 },
+      { "item": "water_clean" },
+      { "item": "bread", "prob": 60 },
+      { "group": "NC_ADV_tier_weapon", "prob": 35 },
+      { "group": "NC_ADV_tier_armor", "prob": 20 }
+    ]
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_ADV_THIEF",
+    "name": { "str": "Thief" },
+    "job_description": "Nobody misses what they never knew they had.",
+    "traits": [
+      { "group": "BG_survival_story_CRIMINAL" },
+      { "group": "NPC_starting_traits" },
+      { "group": "Appearance_demographics" }
+    ],
+    "bonus_str": { "rng": [ 0, 3 ] },
+    "bonus_dex": { "rng": [ 6, 11 ] },
+    "bonus_int": { "rng": [ 0, 4 ] },
+    "bonus_per": { "rng": [ 3, 7 ] },
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 3 ] }, { "constant": 2 } ] } },
+      { "skill": "melee", "bonus": { "rng": [ 3, 6 ] } },
+      { "skill": "cutting", "bonus": { "rng": [ 4, 8 ] } },
+      { "skill": "stabbing", "bonus": { "rng": [ 4, 8 ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 5, 10 ] } },
+      { "skill": "throw", "bonus": { "rng": [ 3, 7 ] } },
+      { "skill": "traps", "bonus": { "rng": [ 4, 8 ] } },
+      { "skill": "speech", "bonus": { "rng": [ 2, 5 ] } },
+      { "skill": "survival", "bonus": { "rng": [ 1, 3 ] } }
+    ],
+    "common": true,
+    "worn_override": "NC_ADV_THIEF_worn",
+    "carry_override": "NC_ADV_THIEF_carried",
+    "weapon_override": "NC_ADV_THIEF_weapon"
+  },
+  {
+    "type": "npc",
+    "id": "adv_thief",
+    "//": "adventuring party thief, from a distress beacon.",
+    "name_suffix": "thief",
+    "class": "NC_ADV_THIEF",
+    "attitude": 0,
+    "mission": 7,
+    "mission_offered": "MISSION_RECRUIT_ADV_THIEF",
+    "chat": "TALK_ADV_THIEF",
+    "faction": "no_faction"
+  },
+  {
+    "id": "MISSION_RECRUIT_ADV_THIEF",
+    "type": "mission_definition",
+    "name": { "str": "Recruit Thief" },
+    "goal": "MGOAL_RECRUIT_NPC_CLASS",
+    "difficulty": 2,
+    "value": 70000,
+    "start": {
+      "assign_mission_target": { "om_terrain": "house_", "om_terrain_match_type": "PREFIX", "reveal_radius": 2, "random": true, "search_range": 80, "z": 0 },
+      "effect": "follow",
+      "update_mapgen": { "place_npcs": [ { "class": "adv_thief", "x": 11, "y": 11, "target": true } ] }
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "You get the uncomfortable feeling that someone is watching you from just out of sight.",
+      "offer": "One of my crew was casing a place near here.  Help me find them, and I will cut you in.",
+      "accepted": "Good.  Stay quiet, stay in the shadows, and keep your pockets buttoned.",
+      "rejected": "Suit yourself.  I work better alone anyway.",
+      "advice": "They will not be where you expect.  That is what makes them good.",
+      "inquire": "Have you found my fellow thief yet?",
+      "success": "Now that is a sight for sore eyes.  The crew rides again.",
+      "success_lie": "That is no thief of mine.  Thieves do not get caught that easily.",
+      "failure": "Then we are through.  Do not look for me."
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "NC_ADV_ARCHER_signature",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "longbow", "prob": 45 },
+      { "item": "compositebow", "prob": 25 },
+      { "item": "shortbow", "prob": 20 },
+      { "item": "selfbow", "prob": 10 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_ADV_ARCHER_weapon",
+    "subtype": "distribution",
+    "entries": [
+      { "group": "NC_ADV_ARCHER_signature", "prob": 80 },
+      { "group": "weapons_common", "prob": 8 },
+      { "group": "weapons_uncommon", "prob": 6 },
+      { "group": "weapons_rare", "prob": 4 },
+      { "group": "weapons_very_rare", "prob": 2 },
+      { "group": "weapons_legendary", "prob": 1 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_ADV_ARCHER_worn",
+    "subtype": "collection",
+    "items": [
+      { "item": "vest_leather" },
+      { "item": "pants_leather" },
+      { "item": "boots_fur" },
+      { "item": "gloves_light_fingerless" },
+      { "item": "quiver" },
+      { "item": "cloak_wool", "prob": 50 },
+      { "item": "hat_hunting", "prob": 50 },
+      { "group": "NC_ADV_tier_armor" },
+      { "group": "NC_ADV_tier_armor", "prob": 50 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_ADV_ARCHER_carried",
+    "subtype": "collection",
+    "items": [
+      { "item": "arrow_metal", "charges": [ 40, 80 ] },
+      { "item": "arrow_wood", "prob": 60, "charges": [ 20, 40 ] },
+      { "item": "dagger_medieval", "prob": 50 },
+      { "item": "1st_aid", "prob": 60 },
+      { "item": "water_clean" },
+      { "item": "bread", "prob": 60 },
+      { "group": "NC_ADV_tier_weapon", "prob": 35 },
+      { "group": "NC_ADV_tier_armor", "prob": 20 }
+    ]
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_ADV_ARCHER",
+    "name": { "str": "Archer" },
+    "job_description": "One arrow, one problem solved.",
+    "traits": [
+      { "group": "BG_survival_story_RURAL" },
+      { "group": "NPC_starting_traits" },
+      { "group": "Appearance_demographics" }
+    ],
+    "bonus_str": { "rng": [ 0, 4 ] },
+    "bonus_dex": { "rng": [ 3, 8 ] },
+    "bonus_int": { "rng": [ -1, 2 ] },
+    "bonus_per": { "rng": [ 6, 11 ] },
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 3 ] }, { "constant": 2 } ] } },
+      { "skill": "archery", "bonus": { "rng": [ 8, 14 ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 2, 5 ] } },
+      { "skill": "survival", "bonus": { "rng": [ 3, 7 ] } },
+      { "skill": "traps", "bonus": { "rng": [ 2, 5 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "firstaid", "bonus": { "rng": [ 1, 3 ] } }
+    ],
+    "common": true,
+    "worn_override": "NC_ADV_ARCHER_worn",
+    "carry_override": "NC_ADV_ARCHER_carried",
+    "weapon_override": "NC_ADV_ARCHER_weapon"
+  },
+  {
+    "type": "npc",
+    "id": "adv_archer",
+    "//": "adventuring party archer, from a distress beacon.",
+    "name_suffix": "archer",
+    "class": "NC_ADV_ARCHER",
+    "attitude": 0,
+    "mission": 7,
+    "mission_offered": "MISSION_RECRUIT_ADV_ARCHER",
+    "chat": "TALK_ADV_ARCHER",
+    "faction": "no_faction"
+  },
+  {
+    "id": "MISSION_RECRUIT_ADV_ARCHER",
+    "type": "mission_definition",
+    "name": { "str": "Recruit Archer" },
+    "goal": "MGOAL_RECRUIT_NPC_CLASS",
+    "difficulty": 2,
+    "value": 70000,
+    "start": {
+      "assign_mission_target": { "om_terrain": "house_", "om_terrain_match_type": "PREFIX", "reveal_radius": 2, "random": true, "search_range": 80, "z": 0 },
+      "effect": "follow",
+      "update_mapgen": { "place_npcs": [ { "class": "adv_archer", "x": 11, "y": 11, "target": true } ] }
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "You catch the flash of a fletching from the corner of your eye.  An archer is keeping watch.",
+      "offer": "One of my fellow archers went scouting near here.  Help me find them and I will guard your back.",
+      "accepted": "Then keep low and keep moving.  I will cover you.",
+      "rejected": "Your loss.  I will find them from the treeline.",
+      "advice": "Look up.  An archer is always somewhere high.",
+      "inquire": "Have you spotted my fellow archer yet?",
+      "success": "Two bows are better than one.  Between us, nothing gets close.",
+      "success_lie": "That is no archer of mine.  Look at their grip.",
+      "failure": "Then I shall look for them alone."
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "NC_ADV_ELF_signature",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "llanowar_dual_blades", "prob": 30 },
+      { "item": "noldori_longblade", "prob": 25 },
+      { "item": "noldori_warbow", "prob": 25 },
+      { "item": "longbow", "prob": 10 },
+      { "item": "rapier", "prob": 10 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_ADV_ELF_weapon",
+    "subtype": "distribution",
+    "entries": [
+      { "group": "NC_ADV_ELF_signature", "prob": 75 },
+      { "group": "weapons_common", "prob": 10 },
+      { "group": "weapons_uncommon", "prob": 8 },
+      { "group": "weapons_rare", "prob": 4 },
+      { "group": "weapons_very_rare", "prob": 2 },
+      { "group": "weapons_legendary", "prob": 1 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_ADV_ELF_worn",
+    "subtype": "collection",
+    "items": [
+      { "item": "cloak_leather" },
+      { "item": "tunic" },
+      { "item": "vest_leather" },
+      { "item": "pants_leather" },
+      { "item": "boots_fur" },
+      { "item": "gloves_leather" },
+      { "item": "quiver", "prob": 60 },
+      { "group": "NC_ADV_tier_armor" },
+      { "group": "NC_ADV_tier_armor", "prob": 50 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_ADV_ELF_carried",
+    "subtype": "collection",
+    "items": [
+      { "item": "arrow_metal", "charges": [ 40, 80 ] },
+      { "item": "dagger_medieval", "prob": 40 },
+      { "item": "1st_aid", "prob": 60 },
+      { "item": "water_clean" },
+      { "item": "bread", "prob": 60 },
+      { "group": "NC_ADV_tier_weapon", "prob": 35 },
+      { "group": "NC_ADV_tier_armor", "prob": 20 }
+    ]
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_ADV_ELF",
+    "name": { "str": "Elf" },
+    "job_description": "The old forests remember.",
+    "traits": [
+      { "trait": "DRUID" },
+      { "group": "BG_survival_story_RURAL" },
+      { "group": "NPC_starting_traits" },
+      { "group": "Appearance_demographics" }
+    ],
+    "bonus_str": { "rng": [ 0, 3 ] },
+    "bonus_dex": { "rng": [ 4, 9 ] },
+    "bonus_int": { "rng": [ 1, 4 ] },
+    "bonus_per": { "rng": [ 5, 10 ] },
+    "spells": [ { "id": "druid_woodshaft", "level": 10 }, { "id": "druidic_healing", "level": 8 }, { "id": "eagles_sight", "level": 5 }, { "id": "windrun", "level": 6 } ],
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 3 ] }, { "constant": 2 } ] } },
+      { "skill": "archery", "bonus": { "rng": [ 6, 11 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 4, 8 ] } },
+      { "skill": "cutting", "bonus": { "rng": [ 3, 7 ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 4, 8 ] } },
+      { "skill": "survival", "bonus": { "rng": [ 5, 10 ] } },
+      { "skill": "spellcraft", "bonus": { "rng": [ 2, 6 ] } },
+      { "skill": "firstaid", "bonus": { "rng": [ 2, 5 ] } }
+    ],
+    "common": true,
+    "worn_override": "NC_ADV_ELF_worn",
+    "carry_override": "NC_ADV_ELF_carried",
+    "weapon_override": "NC_ADV_ELF_weapon"
+  },
+  {
+    "type": "npc",
+    "id": "adv_elf",
+    "//": "adventuring party elf, from a distress beacon.",
+    "name_suffix": "elf",
+    "class": "NC_ADV_ELF",
+    "attitude": 0,
+    "mission": 7,
+    "mission_offered": "MISSION_RECRUIT_ADV_ELF",
+    "chat": "TALK_ADV_ELF",
+    "faction": "no_faction"
+  },
+  {
+    "id": "MISSION_RECRUIT_ADV_ELF",
+    "type": "mission_definition",
+    "name": { "str": "Recruit Elf" },
+    "goal": "MGOAL_RECRUIT_NPC_CLASS",
+    "difficulty": 2,
+    "value": 70000,
+    "start": {
+      "assign_mission_target": { "om_terrain": "house_", "om_terrain_match_type": "PREFIX", "reveal_radius": 2, "random": true, "search_range": 80, "z": 0 },
+      "effect": "follow",
+      "update_mapgen": { "place_npcs": [ { "class": "adv_elf", "x": 11, "y": 11, "target": true } ] }
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "A soft voice on the wind, in a tongue you almost understand.  An elf is near.",
+      "offer": "One of my kin passed through this land.  Help me find them, and I will sing your name to the trees.",
+      "accepted": "Come, then.  Tread lightly.  The forest listens.",
+      "rejected": "Then I shall follow the wind alone.",
+      "advice": "Follow the birdsong.  My kin never wander far from clean water.",
+      "inquire": "Have you found my kin yet?",
+      "success": "At last.  The fellowship is whole again.",
+      "success_lie": "That is no elf.  I am not so easily fooled.",
+      "failure": "Then the trees will guide me."
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "NC_ADV_DARKELF_signature",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "llanowar_dual_blades", "prob": 45 },
+      { "item": "noldori_longblade", "prob": 20 },
+      { "item": "rapier", "prob": 15 },
+      { "item": "dagger_medieval", "prob": 10 },
+      { "item": "noldori_warbow", "prob": 10 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_ADV_DARKELF_weapon",
+    "subtype": "distribution",
+    "entries": [
+      { "group": "NC_ADV_DARKELF_signature", "prob": 80 },
+      { "group": "weapons_common", "prob": 8 },
+      { "group": "weapons_uncommon", "prob": 6 },
+      { "group": "weapons_rare", "prob": 4 },
+      { "group": "weapons_very_rare", "prob": 2 },
+      { "group": "weapons_legendary", "prob": 1 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_ADV_DARKELF_worn",
+    "subtype": "collection",
+    "items": [
+      { "item": "cloak_leather" },
+      { "item": "jacket_leather" },
+      { "item": "pants_leather" },
+      { "item": "boots_fur" },
+      { "item": "gloves_leather" },
+      { "item": "helmet_larmor", "prob": 30 },
+      { "group": "NC_ADV_tier_armor" },
+      { "group": "NC_ADV_tier_armor", "prob": 50 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_ADV_DARKELF_carried",
+    "subtype": "collection",
+    "items": [
+      { "item": "throwing_knife", "charges": [ 5, 10 ] },
+      { "item": "arrow_metal", "prob": 60, "charges": [ 30, 60 ] },
+      { "item": "dagger_medieval", "prob": 50 },
+      { "item": "1st_aid", "prob": 60 },
+      { "item": "water_clean" },
+      { "item": "bread", "prob": 60 },
+      { "group": "NC_ADV_tier_weapon", "prob": 35 },
+      { "group": "NC_ADV_tier_armor", "prob": 20 }
+    ]
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_ADV_DARKELF",
+    "name": { "str": "Dark Elf" },
+    "job_description": "The shadows keep better company than the sun.",
+    "traits": [
+      { "trait": "MAGUS" },
+      { "group": "BG_survival_story_CRIMINAL" },
+      { "group": "NPC_starting_traits" },
+      { "group": "Appearance_demographics" }
+    ],
+    "bonus_str": { "rng": [ 0, 3 ] },
+    "bonus_dex": { "rng": [ 5, 10 ] },
+    "bonus_int": { "rng": [ 1, 4 ] },
+    "bonus_per": { "rng": [ 4, 9 ] },
+    "spells": [ { "id": "chilling_touch", "level": 8 }, { "id": "necrotic_gaze", "level": 6 }, { "id": "obfuscated_body", "level": 5 }, { "id": "dark_sight", "level": 5 } ],
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 3 ] }, { "constant": 2 } ] } },
+      { "skill": "melee", "bonus": { "rng": [ 6, 10 ] } },
+      { "skill": "cutting", "bonus": { "rng": [ 5, 9 ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 5, 10 ] } },
+      { "skill": "archery", "bonus": { "rng": [ 3, 6 ] } },
+      { "skill": "survival", "bonus": { "rng": [ 3, 7 ] } },
+      { "skill": "spellcraft", "bonus": { "rng": [ 3, 7 ] } },
+      { "skill": "stabbing", "bonus": { "rng": [ 3, 6 ] } }
+    ],
+    "common": true,
+    "worn_override": "NC_ADV_DARKELF_worn",
+    "carry_override": "NC_ADV_DARKELF_carried",
+    "weapon_override": "NC_ADV_DARKELF_weapon"
+  },
+  {
+    "type": "npc",
+    "id": "adv_darkelf",
+    "//": "adventuring party darkelf, from a distress beacon.",
+    "name_suffix": "dark elf",
+    "class": "NC_ADV_DARKELF",
+    "attitude": 0,
+    "mission": 7,
+    "mission_offered": "MISSION_RECRUIT_ADV_DARKELF",
+    "chat": "TALK_ADV_DARKELF",
+    "faction": "no_faction"
+  },
+  {
+    "id": "MISSION_RECRUIT_ADV_DARKELF",
+    "type": "mission_definition",
+    "name": { "str": "Recruit Dark Elf" },
+    "goal": "MGOAL_RECRUIT_NPC_CLASS",
+    "difficulty": 2,
+    "value": 70000,
+    "start": {
+      "assign_mission_target": { "om_terrain": "house_", "om_terrain_match_type": "PREFIX", "reveal_radius": 2, "random": true, "search_range": 80, "z": 0 },
+      "effect": "follow",
+      "update_mapgen": { "place_npcs": [ { "class": "adv_darkelf", "x": 11, "y": 11, "target": true } ] }
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "You notice a pair of pale eyes watching you from the dark.  A dark elf is near.",
+      "offer": "One of my kin was cast out of the deep places and lost near here.  Find them with me, and I will repay the favor.  Perhaps.",
+      "accepted": "Very well.  Stay close and stay silent.",
+      "rejected": "Then I go alone.  It is how I prefer it.",
+      "advice": "They will not be in the light.  Look where the shadows pool.",
+      "inquire": "Have you found my kin?",
+      "success": "So it is true.  The dark is not so lonely after all.",
+      "success_lie": "That is not one of mine.  Do not insult me.",
+      "failure": "Then your word is worthless.  I expected as much."
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "NC_ADV_GUNBREAKER_signature",
+    "subtype": "distribution",
+    "entries": [
+      { "group": "gunbreaker_all", "prob": 100 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_ADV_GUNBREAKER_weapon",
+    "subtype": "distribution",
+    "entries": [
+      { "group": "NC_ADV_GUNBREAKER_signature", "prob": 90 },
+      { "group": "weapons_common", "prob": 4 },
+      { "group": "weapons_uncommon", "prob": 3 },
+      { "group": "weapons_rare", "prob": 2 },
+      { "group": "weapons_very_rare", "prob": 1 },
+      { "group": "weapons_legendary", "prob": 1 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_ADV_GUNBREAKER_worn",
+    "subtype": "collection",
+    "items": [
+      { "item": "gambeson" },
+      { "item": "armor_lightplate" },
+      { "item": "helmet_barbute" },
+      { "item": "gloves_plate" },
+      { "item": "boots_plate" },
+      { "item": "legguard_lightplate" },
+      { "item": "armguard_lightplate" },
+      { "item": "cloak_leather", "prob": 50 },
+      { "group": "NC_GB_tier_armor" },
+      { "group": "NC_GB_tier_armor", "prob": 50 },
+      { "group": "NC_GB_tier_armor", "prob": 25 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_ADV_GUNBREAKER_carried",
+    "subtype": "collection",
+    "items": [
+      { "group": "gunbreaker_all" },
+      { "group": "gunbreaker_all", "prob": 20 },
+      { "item": "fire_bloodshot", "charges": [ 90, 160 ] },
+      { "item": "ice_bloodshot", "charges": [ 90, 160 ] },
+      { "item": "acid_bloodshot", "charges": [ 90, 160 ] },
+      { "item": "elec_bloodshot", "charges": [ 90, 160 ] },
+      { "group": "magic_uncommon", "prob": 40 },
+      { "group": "magic_rare", "prob": 25 },
+      { "group": "iounstones", "prob": 15 },
+      { "group": "jewelry_accessories", "prob": 20 },
+      { "item": "1st_aid" },
+      { "item": "water_clean" },
+      { "item": "bread", "prob": 60 },
+      { "group": "NC_ADV_tier_weapon", "prob": 35 },
+      { "group": "NC_ADV_tier_armor", "prob": 20 }
+    ]
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_ADV_GUNBREAKER",
+    "name": { "str": "Gunbreaker" },
+    "job_description": "Steel in one hand, thunder in the other.",
+    "traits": [
+      { "group": "BG_survival_story_SOLDIER" },
+      { "group": "NPC_starting_traits" },
+      { "group": "Appearance_demographics" }
+    ],
+    "bonus_str": { "rng": [ 6, 11 ] },
+    "bonus_dex": { "rng": [ 4, 9 ] },
+    "bonus_int": { "rng": [ 0, 4 ] },
+    "bonus_per": { "rng": [ 4, 9 ] },
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 3 ] }, { "constant": 2 } ] } },
+      { "skill": "melee", "bonus": { "rng": [ 6, 10 ] } },
+      { "skill": "cutting", "bonus": { "rng": [ 4, 8 ] } },
+      { "skill": "bashing", "bonus": { "rng": [ 3, 6 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 5, 9 ] } },
+      { "skill": "pistol", "bonus": { "rng": [ 6, 10 ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 3, 6 ] } },
+      { "skill": "firstaid", "bonus": { "rng": [ 1, 4 ] } },
+      { "skill": "survival", "bonus": { "rng": [ 2, 5 ] } }
+    ],
+    "common": true,
+    "worn_override": "NC_ADV_GUNBREAKER_worn",
+    "carry_override": "NC_ADV_GUNBREAKER_carried",
+    "weapon_override": "NC_ADV_GUNBREAKER_weapon"
+  },
+  {
+    "type": "npc",
+    "id": "adv_gunbreaker",
+    "//": "adventuring party gunbreaker, from a distress beacon.",
+    "name_suffix": "gunbreaker",
+    "class": "NC_ADV_GUNBREAKER",
+    "attitude": 0,
+    "mission": 7,
+    "mission_offered": "MISSION_RECRUIT_ADV_GUNBREAKER",
+    "chat": "TALK_ADV_GUNBREAKER",
+    "faction": "no_faction"
+  },
+  {
+    "id": "MISSION_RECRUIT_ADV_GUNBREAKER",
+    "type": "mission_definition",
+    "name": { "str": "Recruit Gunbreaker" },
+    "goal": "MGOAL_RECRUIT_NPC_CLASS",
+    "difficulty": 2,
+    "value": 70000,
+    "start": {
+      "assign_mission_target": { "om_terrain": "house_", "om_terrain_match_type": "PREFIX", "reveal_radius": 2, "random": true, "search_range": 80, "z": 0 },
+      "effect": "follow",
+      "update_mapgen": { "place_npcs": [ { "class": "adv_gunbreaker", "x": 11, "y": 11, "target": true } ] }
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "You hear the distinctive crack of a blade and a gunshot, all in one motion.  A gunbreaker is near.",
+      "offer": "Another gunbreaker of my order went missing near here.  Help me find them and we will be a real firing line.",
+      "accepted": "Good.  Stay behind me until the shooting starts.",
+      "rejected": "Fair enough.  I will find them alone.",
+      "advice": "Follow the gunfire.  A gunbreaker never fights quietly.",
+      "inquire": "Have you found my fellow gunbreaker yet?",
+      "success": "Two blades and two barrels.  Let them come.",
+      "success_lie": "That is no gunbreaker.  Look at the grip on that weapon.",
+      "failure": "Then I shall look for them alone."
+    }
+  }
+]

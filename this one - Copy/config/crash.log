@@ -1,0 +1,56 @@
+The program has crashed.
+See the log file for a stack trace.
+CRASH LOG FILE: ./config/crash.log
+VERSION: c879aaf
+TYPE: Signal
+MESSAGE: SIGSEGV: Segmentation fault
+STACK TRACE:
+
+  #0
+    (dbghelp: @0,000,7FF,71C,AA2,9BE[cataclysm-bn-tiles.exe+0x1,342,9be]), 
+  #1
+    (dbghelp: @0,000,7FF,71C,A80,898[cataclysm-bn-tiles.exe+0x1,320,898]), 
+  #2
+    (dbghelp: @0,000,7FF,71C,A80,CE7[cataclysm-bn-tiles.exe+0x1,320,ce7]), 
+  #3
+    (dbghelp: @0,000,7FF,71D,B84,3DE[cataclysm-bn-tiles.exe+0x2,424,3de]), 
+  #4
+    (dbghelp: @0,000,7FF,71D,C27,071[cataclysm-bn-tiles.exe+0x2,4c7,071]), 
+  #5
+    (dbghelp: @0,000,7FF,71D,B53,893[cataclysm-bn-tiles.exe+0x2,3f3,893]), 
+  #6
+    (dbghelp: _chkstk+0x9f@0,000,7FF,F0F,D65,4FF[ntdll.dll+0x165,4ff]), 
+  #7
+    (dbghelp: RtlWow64GetCurrentMachine+0x655@0,000,7FF,F0F,CCB,D25[ntdll.dll+0xcb,d25]), 
+  #8
+    (dbghelp: KiUserExceptionDispatcher+0x2e@0,000,7FF,F0F,D64,E3E[ntdll.dll+0x164,e3e]), 
+  #9
+    (dbghelp: @0,000,7FF,71D,502,AF8[cataclysm-bn-tiles.exe+0x1,da2,af8]), 
+  #10
+    (dbghelp: @0,000,7FF,71D,0FC,D07[cataclysm-bn-tiles.exe+0x1,99c,d07]), 
+  #11
+    (dbghelp: @0,000,7FF,71D,0DF,480[cataclysm-bn-tiles.exe+0x1,97f,480]), 
+  #12
+    (dbghelp: @0,000,7FF,71D,0D5,678[cataclysm-bn-tiles.exe+0x1,975,678]), 
+  #13
+    (dbghelp: @0,000,7FF,71D,0DE,B6D[cataclysm-bn-tiles.exe+0x1,97e,b6d]), 
+  #14
+    (dbghelp: @0,000,7FF,71D,014,B88[cataclysm-bn-tiles.exe+0x1,8b4,b88]), 
+  #15
+    (dbghelp: @0,000,7FF,71D,014,97A[cataclysm-bn-tiles.exe+0x1,8b4,97a]), 
+  #16
+    (dbghelp: @0,000,7FF,71D,5DD,246[cataclysm-bn-tiles.exe+0x1,e7d,246]), 
+  #17
+    (dbghelp: @0,000,7FF,71C,C24,E97[cataclysm-bn-tiles.exe+0x1,4c4,e97]), 
+  #18
+    (dbghelp: @0,000,7FF,71C,FE9,600[cataclysm-bn-tiles.exe+0x1,889,600]), 
+  #19
+    (dbghelp: @0,000,7FF,71C,FEB,825[cataclysm-bn-tiles.exe+0x1,88b,825]), 
+  #20
+    (dbghelp: @0,000,7FF,71B,A02,10F[cataclysm-bn-tiles.exe+0x2a2,10f]), 
+  #21
+    (dbghelp: @0,000,7FF,71D,B51,4E2[cataclysm-bn-tiles.exe+0x2,3f1,4e2]), 
+  #22
+    (dbghelp: BaseThreadInitThunk+0x17@0,000,7FF,F0E,B8C,D87[KERNEL32.DLL+0x2c,d87]), 
+  #23
+    (dbghelp: RtlUserThreadStart+0x2c@0,000,7FF,F0F,CAC,AEC[ntdll.dll+0xac,aec]), 

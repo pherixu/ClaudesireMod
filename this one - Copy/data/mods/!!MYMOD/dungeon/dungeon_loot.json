@@ -1,0 +1,205 @@
+[
+  {
+    "//": "Adventurer's Dungeon loot.  Built out of the mod's own rarity-tier groups (weapons_*, armor_*, magic_*) so the dungeon pays out in the same currency it drops in monsters.",
+    "type": "item_group",
+    "id": "dgn_potions",
+    "items": [
+      { "group": "potions_common", "prob": 70 },
+      { "group": "magic_generic", "prob": 8 },
+      { "item": "senzu_bean", "prob": 4 },
+      { "item": "divine_fruit_flame", "prob": 2 },
+      { "item": "divine_fruit_frost", "prob": 2 },
+      { "item": "divine_fruit_quicksilver", "prob": 2 },
+      { "item": "divine_fruit_ascension", "prob": 1 },
+      { "item": "divine_blood_fruit", "prob": 1 },
+      { "item": "cleansed_soul", "prob": 1 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "dgn_alchemy",
+    "//": "Reagents, monster parts and gems for the workshop rooms.",
+    "items": [
+      { "group": "gemstones", "prob": 25 },
+      { "group": "potions_common", "prob": 20 },
+      { "item": "spirit_salt", "prob": 8, "count": [ 1, 4 ] },
+      { "item": "soul_ash", "prob": 8, "count": [ 1, 4 ] },
+      { "item": "slug_tallow", "prob": 6 },
+      { "item": "worm_grease", "prob": 6 },
+      { "item": "toad_wart", "prob": 6 },
+      { "item": "leech_ichor", "prob": 6 },
+      { "item": "rune_silt", "prob": 6 },
+      { "item": "runic_boneshard", "prob": 6 },
+      { "item": "shadow_thread", "prob": 5 },
+      { "item": "ritual_blood", "prob": 4 },
+      { "group": "iounstones", "prob": 3 },
+      { "group": "runecoredrop", "prob": 3 },
+      { "item": "argentium", "prob": 2 },
+      { "item": "ceruleum", "prob": 2 },
+      { "item": "crimsonite", "prob": 2 },
+      { "item": "viridite", "prob": 2 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "dgn_scribe",
+    "//": "Scrolls, tomes and loose notes.",
+    "items": [
+      { "group": "magic_generic", "prob": 30 },
+      { "group": "novels", "prob": 15 },
+      { "group": "religious_books", "prob": 10 },
+      { "group": "slug_scrolls", "prob": 5 },
+      { "group": "worm_scrolls", "prob": 5 },
+      { "group": "toad_scrolls", "prob": 5 },
+      { "group": "penguin_scrolls", "prob": 5 },
+      { "group": "leech_scrolls", "prob": 5 },
+      { "group": "magic_uncommon", "prob": 10 },
+      { "item": "devil_tower_map", "prob": 1 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "dgn_library",
+    "items": [
+      { "group": "magic_generic", "prob": 35 },
+      { "group": "magic_uncommon", "prob": 25 },
+      { "group": "magic_rare", "prob": 6 },
+      { "group": "novels", "prob": 15 },
+      { "group": "religious_books", "prob": 10 },
+      { "item": "casterbook", "prob": 3 },
+      { "item": "casterbook2", "prob": 2 },
+      { "item": "devilbook", "prob": 2 },
+      { "item": "devilhunterbook", "prob": 2 },
+      { "item": "iounbook", "prob": 2 },
+      { "item": "worldbook", "prob": 1 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "dgn_wardrobe",
+    "items": [
+      { "group": "armor_common", "prob": 55 },
+      { "group": "armor_uncommon", "prob": 22 },
+      { "group": "armor_rare", "prob": 4 },
+      { "group": "jewelry_accessories", "prob": 12 },
+      { "group": "rings_and_things", "prob": 7 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "dgn_provisions",
+    "items": [
+      { "group": "alcohol", "prob": 40 },
+      { "group": "snacks", "prob": 25 },
+      { "group": "potions_common", "prob": 20 },
+      { "item": "senzu_bean", "prob": 3 },
+      { "item": "divine_fruit_love", "prob": 2 },
+      { "item": "divine_fruit_angel", "prob": 2 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "dgn_bedroom",
+    "items": [
+      { "group": "bed", "prob": 60 },
+      { "group": "dgn_wardrobe", "prob": 20 },
+      { "group": "jewelry_accessories", "prob": 8 },
+      { "group": "gemstones", "prob": 6 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "dgn_arena",
+    "//": "Training yards and drill halls.",
+    "items": [
+      { "group": "weapons_common", "prob": 50 },
+      { "group": "armor_common", "prob": 30 },
+      { "group": "weapons_uncommon", "prob": 10 },
+      { "group": "armor_uncommon", "prob": 6 },
+      { "group": "potions_common", "prob": 10 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "dgn_armory",
+    "items": [
+      { "group": "weapons_common", "prob": 30 },
+      { "group": "weapons_uncommon", "prob": 30 },
+      { "group": "weapons_rare", "prob": 12 },
+      { "group": "weapons_very_rare", "prob": 2 },
+      { "group": "armor_common", "prob": 22 },
+      { "group": "armor_uncommon", "prob": 22 },
+      { "group": "armor_rare", "prob": 8 },
+      { "group": "armor_very_rare", "prob": 1 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "dgn_treasure",
+    "items": [
+      { "group": "gemstones", "prob": 40 },
+      { "group": "jewelry_front", "prob": 15 },
+      { "group": "jewelry_back", "prob": 15 },
+      { "group": "jewelry_safe", "prob": 10 },
+      { "group": "rings_and_things", "prob": 12 },
+      { "group": "iounstones", "prob": 4 },
+      { "group": "souldrop", "prob": 4 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "dgn_relic_vault",
+    "//": "Vaults and hoards.  Rare-and-up gear, loaded toward the top.",
+    "items": [
+      { "group": "weapons_rare", "prob": 22 },
+      { "group": "weapons_very_rare", "prob": 8 },
+      { "group": "weapons_legendary", "prob": 1 },
+      { "group": "armor_rare", "prob": 22 },
+      { "group": "armor_very_rare", "prob": 8 },
+      { "group": "armor_legendary", "prob": 1 },
+      { "group": "magic_rare", "prob": 12 },
+      { "group": "summonbossitems", "prob": 3 },
+      { "group": "souldrop", "prob": 6 },
+      { "group": "iounstones", "prob": 6 },
+      { "group": "runecoredrop", "prob": 6 },
+      { "group": "jewelry_safe", "prob": 8 },
+      { "group": "avatargear", "prob": 2 },
+      { "group": "inakagear", "prob": 2 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "dgn_relic_legendary",
+    "//": "Finale hoards: nothing below very rare.",
+    "items": [
+      { "group": "weapons_very_rare", "prob": 30 },
+      { "group": "weapons_legendary", "prob": 20 },
+      { "group": "armor_very_rare", "prob": 30 },
+      { "group": "armor_legendary", "prob": 20 },
+      { "group": "summonbossitems", "prob": 8 },
+      { "group": "avatargear", "prob": 6 },
+      { "group": "inakagear", "prob": 6 },
+      { "group": "all_lightsabers", "prob": 2 },
+      { "item": "glamdring", "prob": 2 },
+      { "item": "embercleave", "prob": 2 },
+      { "item": "voidcaster", "prob": 2 },
+      { "item": "runechanters_pike", "prob": 2 },
+      { "item": "sunforger", "prob": 2 },
+      { "item": "chronocrystal", "prob": 2 },
+      { "item": "hyperbolic_crystal", "prob": 2 },
+      { "item": "temporal_armor", "prob": 1 },
+      { "item": "argent_core", "prob": 1 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "dgn_loot_stairs",
+    "//": "Offerings on the stair landings.",
+    "items": [
+      { "group": "dgn_potions", "prob": 40 },
+      { "group": "dgn_treasure", "prob": 30 },
+      { "group": "dgn_armory", "prob": 20 },
+      { "group": "dgn_relic_vault", "prob": 10 }
+    ]
+  }
+]

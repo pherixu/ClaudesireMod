@@ -1,0 +1,8 @@
+[
+  { "rule": "wild vegetables (fresh)", "active": true, "exclude": false },
+  { "rule": "bee balm", "active": true, "exclude": false },
+  { "rule": "soul ashes", "active": true, "exclude": false },
+  { "rule": "viridite", "active": true, "exclude": false },
+  { "rule": "crimsonite", "active": true, "exclude": false },
+  { "rule": "Science SD-Memory card", "active": true, "exclude": false }
+]

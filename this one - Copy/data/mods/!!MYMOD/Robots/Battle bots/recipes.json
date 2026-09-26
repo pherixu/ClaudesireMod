@@ -1,0 +1,377 @@
+[
+	  {
+    "type": "recipe",
+    "result": "bot_anarchybot",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_OTHER",
+    "skill_used": "electronics",
+    "skills_required": [ [ "mechanics", 5 ], [ "computer", 6 ] ],
+    "reversible": true,
+    "decomp_learn": 8,
+    "book_learn": [ [ "recipe_lab_elec", 6 ], [ "textbook_robots", 7 ] ],
+    "difficulty": 6,
+    "time": "50 m",
+    "using": [ [ "soldering_standard", 20 ], [ "welding_standard", 5 ] ],
+    "qualities": [
+      { "id": "SCREW", "level": 1 },
+      { "id": "SCREW_FINE", "level": 1 },
+      { "id": "WRENCH", "level": 2 },
+      { "id": "WRENCH_FINE", "level": 1 }
+    ],
+    "components": [
+      [ [ "ai_module", 1 ] ],
+      [ [ "self_monitoring_module", 1 ] ],
+      [ [ "sensor_module", 1 ] ],
+      [ [ "memory_module", 1 ] ],
+      [ [ "pathfinding_module", 1 ] ],
+      [ [ "targeting_module", 1 ] ],
+      [ [ "identification_module", 1 ] ],
+      [ [ "omni_wheel", 1 ] ],
+      [ [ "copbot_chassis", 1 ] ],
+      [ [ "android_arms", 1 ] ],
+      [ [ "power_supply", 6 ] ],
+      [ [ "solar_cell", 4 ] ],
+      [ [ "blade", 1 ] ],
+	  [ [ "pipe_double_shotgun", 1 ], [ "shotgun_d", 1 ]  ],
+	  [ [ "shield_riot", 1 ], [ "shield_ballistic", 1 ], [ "shield_ballistic_large", 1 ], [ "shield_welded", 1 ],[ "shield_welded_hard", 1 ], [ "shield_welded_composite", 1  ] ],
+	  ]
+	  },
+	    {
+    "type": "recipe",
+    "result": "bot_skitterpack_556",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_OTHER",
+    "skill_used": "electronics",
+    "skills_required": [ [ "mechanics", 6 ], [ "computer", 5 ] ],
+    "reversible": true,
+    "decomp_learn": 5,
+    "book_learn": [ [ "recipe_lab_elec", 6 ], [ "textbook_robots", 7 ] ],
+    "difficulty": 7,
+    "time": "30 m",
+    "using": [ [ "soldering_standard", 10 ] ],
+    "qualities": [
+      { "id": "SCREW", "level": 1 },
+      { "id": "SCREW_FINE", "level": 1 },
+      { "id": "WRENCH", "level": 2 },
+      { "id": "WRENCH_FINE", "level": 1 }
+    ],
+    "components": [
+      [ [ "ai_module", 1 ] ],
+      [ [ "small_storage_battery", 1 ] ],
+      [ [ "material_aluminium_ingot", 1 ] ],
+      [ [ "spidery_legs_small", 1 ] ],
+	  [ [ "gun_module", 1 ] ],
+      [ [ "sensor_module", 1 ] ],
+      [ [ "memory_module", 1 ] ],
+      [ [ "pathfinding_module", 1 ] ],
+      [ [ "identification_module", 1 ] ],
+      [ [ "power_supply", 1 ] ],
+	  [ [ "m4a1", 1 ], [ "m16a4", 1 ], [ "scar_l", 1 ], [ "sig552", 1 ], [ "steyr_aug", 1 ], [ "carbon_rifle", 1 ],  ],
+      [ [ "material_aluminium_ingot", 4 ] ]
+    ]
+  },
+  	    {
+    "type": "recipe",
+    "result": "bot_skitterpack_lasershoddy",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_OTHER",
+    "skill_used": "electronics",
+    "skills_required": [ [ "mechanics", 6 ], [ "computer", 5 ] ],
+    "reversible": true,
+    "decomp_learn": 5,
+    "book_learn": [ [ "recipe_lab_elec", 6 ], [ "textbook_robots", 7 ] ],
+    "difficulty": 7,
+    "time": "30 m",
+    "using": [ [ "soldering_standard", 10 ] ],
+    "qualities": [
+      { "id": "SCREW", "level": 1 },
+      { "id": "SCREW_FINE", "level": 1 },
+      { "id": "WRENCH", "level": 2 },
+      { "id": "WRENCH_FINE", "level": 1 }
+    ],
+    "components": [
+      [ [ "ai_module", 1 ] ],
+      [ [ "small_storage_battery", 1 ] ],
+      [ [ "material_aluminium_ingot", 1 ] ],
+      [ [ "spidery_legs_small", 1 ] ],
+	  [ [ "gun_module", 1 ] ],
+      [ [ "sensor_module", 1 ] ],
+      [ [ "memory_module", 1 ] ],
+      [ [ "pathfinding_module", 1 ] ],
+      [ [ "identification_module", 1 ] ],
+      [ [ "power_supply", 2 ] ],
+	  [ [ "laser_rifle_cheap", 1 ],  ],
+      [ [ "material_aluminium_ingot", 4 ] ]
+    ]
+  },
+
+	  
+  	  {
+    "type": "recipe",
+    "result": "bot_anarchybot_superalloy",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_OTHER",
+    "skill_used": "electronics",
+    "skills_required": [ [ "mechanics", 5 ], [ "computer", 6 ] ],
+    "reversible": true,
+    "decomp_learn": 8,
+    "book_learn": [ [ "recipe_lab_elec", 6 ], [ "textbook_robots", 7 ] ],
+    "difficulty": 6,
+    "time": "10 m",
+    "using": [ [ "soldering_standard", 20 ], [ "welding_standard", 5 ] ],
+    "qualities": [
+      { "id": "SCREW", "level": 1 },
+      { "id": "SCREW_FINE", "level": 1 },
+      { "id": "WRENCH", "level": 2 },
+      { "id": "WRENCH_FINE", "level": 1 }
+    ],
+    "components": [
+      [ [ "bot_anarchybot", 1 ] ],
+      [ [ "alloy_sheet", 12 ] ]
+    ]
+  },
+  	    {
+    "type": "recipe",
+    "result": "bot_skitterpack_smg_superalloy",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_OTHER",
+    "skill_used": "electronics",
+    "skills_required": [ [ "mechanics", 6 ], [ "computer", 5 ] ],
+    "reversible": true,
+    "decomp_learn": 5,
+    "book_learn": [ [ "recipe_lab_elec", 6 ], [ "textbook_robots", 7 ] ],
+    "difficulty": 7,
+    "time": "30 m",
+    "using": [ [ "soldering_standard", 10 ], [ "welding_standard", 5 ] ],
+    "qualities": [
+      { "id": "SCREW", "level": 1 },
+      { "id": "SCREW_FINE", "level": 1 },
+      { "id": "WRENCH", "level": 2 },
+      { "id": "WRENCH_FINE", "level": 1 }
+    ],
+    "components": [
+      [ [ "bot_skitterpack_smg", 1 ] ],
+      [ [ "alloy_sheet", 4 ] ]
+    ]
+  },
+      {
+    "type": "recipe",
+    "result": "bot_skitterpack_556_superalloy",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_OTHER",
+    "skill_used": "electronics",
+    "skills_required": [ [ "mechanics", 6 ], [ "computer", 5 ] ],
+    "reversible": true,
+    "decomp_learn": 5,
+    "book_learn": [ [ "recipe_lab_elec", 6 ], [ "textbook_robots", 7 ] ],
+    "difficulty": 7,
+    "time": "30 m",
+    "using": [ [ "soldering_standard", 10 ], [ "welding_standard", 5 ] ],
+    "qualities": [
+      { "id": "SCREW", "level": 1 },
+      { "id": "SCREW_FINE", "level": 1 },
+      { "id": "WRENCH", "level": 2 },
+      { "id": "WRENCH_FINE", "level": 1 }
+    ],
+    "components": [
+      [ [ "bot_skitterpack_556", 1 ] ],
+      [ [ "alloy_sheet", 4 ] ]
+    ]
+  },
+        {
+    "type": "recipe",
+    "result": "bot_skitterpack_lasershoddy_superalloy",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_OTHER",
+    "skill_used": "electronics",
+    "skills_required": [ [ "mechanics", 6 ], [ "computer", 5 ] ],
+    "reversible": true,
+    "decomp_learn": 5,
+    "book_learn": [ [ "recipe_lab_elec", 6 ], [ "textbook_robots", 7 ] ],
+    "difficulty": 7,
+    "time": "30 m",
+    "using": [ [ "soldering_standard", 10 ], [ "welding_standard", 5 ] ],
+    "qualities": [
+      { "id": "SCREW", "level": 1 },
+      { "id": "SCREW_FINE", "level": 1 },
+      { "id": "WRENCH", "level": 2 },
+      { "id": "WRENCH_FINE", "level": 1 }
+    ],
+    "components": [
+      [ [ "bot_skitterpack_lasershoddy", 1 ] ],
+      [ [ "alloy_sheet", 4 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "bot_skitterpack_smg",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_OTHER",
+    "skill_used": "electronics",
+    "skills_required": [ [ "mechanics", 6 ], [ "computer", 5 ] ],
+    "reversible": true,
+    "decomp_learn": 5,
+    "book_learn": [ [ "recipe_lab_elec", 6 ], [ "textbook_robots", 7 ] ],
+    "difficulty": 6,
+    "time": "30 m",
+    "using": [ [ "soldering_standard", 10 ] ],
+    "qualities": [
+      { "id": "SCREW", "level": 1 },
+      { "id": "SCREW_FINE", "level": 1 },
+      { "id": "WRENCH", "level": 2 },
+      { "id": "WRENCH_FINE", "level": 1 }
+    ],
+    "components": [
+      [ [ "ai_module", 1 ] ],
+      [ [ "small_storage_battery", 1 ] ],
+      [ [ "material_aluminium_ingot", 1 ] ],
+      [ [ "spidery_legs_small", 1 ] ],
+	  [ [ "gun_module", 1 ] ],
+      [ [ "sensor_module", 1 ] ],
+      [ [ "memory_module", 1 ] ],
+      [ [ "pathfinding_module", 1 ] ],
+      [ [ "identification_module", 1 ] ],
+      [ [ "power_supply", 1 ] ],
+	  [ [ "hk_mp5", 1 ], [ "ksub2000", 1 ], [ "smg_9mm", 1 ], [ "uzi", 1 ], [ "kriss_vector_9mm", 1 ]  ],
+      [ [ "material_aluminium_ingot", 4 ] ]
+    ]
+  },
+      {
+    "type": "recipe",
+    "result": "bot_manhunter00",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_OTHER",
+    "skill_used": "electronics",
+    "skills_required": [ [ "mechanics", 5 ], [ "computer", 5 ] ],
+    "difficulty": 6,
+    "time": "25 m",
+    "reversible": true,
+    "decomp_learn": 7,
+    "book_learn": [ [ "recipe_lab_elec", 6 ], [ "textbook_robots", 7 ] ],
+    "using": [ [ "soldering_standard", 10 ] ],
+    "qualities": [ { "id": "SCREW", "level": 1 } ],
+    "components": [
+      [ [ "ai_module_basic", 1 ] ],
+      [ [ "RAM", 1 ] ],
+      [ [ "small_storage_battery", 1 ] ],
+      [ [ "scrap", 1 ] ],
+      [ [ "quad_rotors", 1 ] ],
+	  [ [ "gun_module", 1 ] ],
+	  [ [ "spike", 2 ] ],
+      [ [ "sensor_module", 1 ] ],
+	  [ [ "pipe_double_shotgun", 1 ], [ "shotgun_d", 1 ]  ],
+      [ [ "identification_module", 1 ] ]
+    ]
+  },  
+      {
+    "type": "recipe",
+    "result": "bot_manhunterflame",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_OTHER",
+    "skill_used": "electronics",
+    "skills_required": [ [ "mechanics", 5 ], [ "computer", 5 ] ],
+    "difficulty": 6,
+    "time": "25 m",
+    "reversible": true,
+    "decomp_learn": 7,
+    "book_learn": [ [ "recipe_lab_elec", 6 ], [ "textbook_robots", 7 ] ],
+    "using": [ [ "soldering_standard", 10 ] ],
+    "qualities": [ { "id": "SCREW", "level": 1 } ],
+    "components": [
+      [ [ "ai_module_basic", 1 ] ],
+      [ [ "RAM", 1 ] ],
+      [ [ "small_storage_battery", 1 ] ],
+      [ [ "scrap", 1 ] ],
+      [ [ "quad_rotors", 1 ] ],
+	  [ [ "gun_module", 1 ] ],
+	  [ [ "spike", 2 ] ],
+      [ [ "sensor_module", 1 ] ],
+	  [ [ "aux_flamer", 1 ], [ "flamethrower_simple", 1 ], [ "rm451_flamethrower", 1 ]   ],
+      [ [ "identification_module", 1 ] ]
+    ]
+  },
+        {
+    "type": "recipe",
+    "result": "bot_manhunterlasershoddy",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_OTHER",
+    "skill_used": "electronics",
+    "skills_required": [ [ "mechanics", 5 ], [ "computer", 5 ] ],
+    "difficulty": 6,
+    "time": "25 m",
+    "reversible": true,
+    "decomp_learn": 7,
+    "book_learn": [ [ "recipe_lab_elec", 6 ], [ "textbook_robots", 7 ] ],
+    "using": [ [ "soldering_standard", 10 ] ],
+    "qualities": [ { "id": "SCREW", "level": 1 } ],
+    "components": [
+      [ [ "ai_module_basic", 1 ] ],
+      [ [ "RAM", 1 ] ],
+      [ [ "small_storage_battery", 1 ] ],
+      [ [ "scrap", 1 ] ],
+      [ [ "quad_rotors", 1 ] ],
+	  [ [ "gun_module", 1 ] ],
+	  [ [ "spike", 2 ] ],
+      [ [ "sensor_module", 1 ] ],
+	  [ [ "laser_rifle_cheap", 1 ],   ],
+	  [ [ "power_supply", 1 ] ],
+      [ [ "identification_module", 1 ] ]
+    ]
+  },   
+  {
+    "type": "recipe",
+    "result": "bot_manhunter22",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_OTHER",
+    "skill_used": "electronics",
+    "skills_required": [ [ "mechanics", 5 ], [ "computer", 5 ] ],
+    "difficulty": 6,
+    "time": "25 m",
+    "reversible": true,
+    "decomp_learn": 7,
+    "book_learn": [ [ "recipe_lab_elec", 6 ], [ "textbook_robots", 7 ] ],
+    "using": [ [ "soldering_standard", 10 ] ],
+    "qualities": [ { "id": "SCREW", "level": 1 } ],
+    "components": [
+      [ [ "ai_module_basic", 1 ] ],
+      [ [ "RAM", 1 ] ],
+      [ [ "small_storage_battery", 1 ] ],
+      [ [ "scrap", 1 ] ],
+      [ [ "quad_rotors", 1 ] ],
+	  [ [ "gun_module", 1 ] ],
+	  [ [ "spike", 2 ] ],
+      [ [ "sensor_module", 1 ] ],
+	  [ [ "american_180", 1 ], [ "ruger_1022", 1 ], [ "sig_mosquito", 1 ], [ "j22", 1 ], [ "walther_p22", 1 ]  ],
+      [ [ "identification_module", 1 ] ]
+    ]
+  },
+    {
+    "type": "recipe",
+    "result": "bot_manhunter9mm",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_OTHER",
+    "skill_used": "electronics",
+    "skills_required": [ [ "mechanics", 5 ], [ "computer", 5 ] ],
+    "difficulty": 6,
+    "time": "25 m",
+    "reversible": true,
+    "decomp_learn": 7,
+    "book_learn": [ [ "recipe_lab_elec", 6 ], [ "textbook_robots", 7 ] ],
+    "using": [ [ "soldering_standard", 10 ] ],
+    "qualities": [ { "id": "SCREW", "level": 1 } ],
+    "components": [
+      [ [ "ai_module_basic", 1 ] ],
+      [ [ "RAM", 1 ] ],
+	  [ [ "gun_module", 1 ] ],
+      [ [ "small_storage_battery", 1 ] ],
+      [ [ "scrap", 1 ] ],
+      [ [ "quad_rotors", 1 ] ],
+	  [ [ "spike", 2 ] ],
+      [ [ "sensor_module", 1 ] ],
+	  [ [ "hk_mp5", 1 ], [ "ksub2000", 1 ], [ "smg_9mm", 1 ], [ "uzi", 1 ], [ "kriss_vector_9mm", 1 ]  ],
+      [ [ "identification_module", 1 ] ]
+    ]
+  }
+]
+
+

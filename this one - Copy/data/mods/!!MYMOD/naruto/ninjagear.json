@@ -1,0 +1,1498 @@
+[
+  {
+    "id": "ninja_headband",
+    "type": "ARMOR",
+    "name": {
+      "str": "Ninja Headband"
+    },
+    "description": "A headband representing a ninja has graduated the ninja academy and attained the rank of genin.",
+    "weight": "2175 g",
+    "volume": "2750 ml",
+    "price": "400 USD",
+    "price_postapoc": "50 USD",
+    "bashing": 10,
+    "material": [
+      "beskar"
+    ],
+    "symbol": "[",
+    "looks_like": "helmet_barbute",
+    "color": "light_gray",
+    "covers": [
+      "head"
+    ],
+    "coverage": 100,
+    "encumbrance": 1,
+    "warmth": 10,
+    "material_thickness": 5,
+    "environmental_protection": 1,
+    "techniques": [
+      "WBLOCK_1"
+    ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            {
+              "value": "STAMINA_CAP",
+              "multiply": 0.3
+            },
+            {
+              "value": "STAMINA_REGEN",
+              "multiply": 0.3
+            },
+            {
+              "value": "MANA_CAP",
+              "add": 500
+            },
+            {
+              "value": "STAMINA_REGEN",
+              "multiply": 0.1
+            },
+            {
+              "value": "ARMOR_BASH",
+              "add": -1
+            },
+            {
+              "value": "ARMOR_CUT",
+              "add": -1
+            },
+            {
+              "value": "ARMOR_BULLET",
+              "add": -10
+            },
+            {
+              "value": "ARMOR_ACID",
+              "add": -1
+            },
+            {
+              "value": "ARMOR_COLD",
+              "add": -1
+            },
+            {
+              "value": "ARMOR_HEAT",
+              "add": -1
+            },
+            {
+              "value": "ARMOR_ELEC",
+              "add": -1
+            },
+            {
+              "value": "BONUS_DODGE",
+              "add": 1
+            },
+            {
+              "value": "SPEED",
+              "add": 5
+            }
+          ]
+        }
+      ]
+    },
+    "flags": [
+      "VARSIZE",
+      "STURDY",
+      "HELMET_COMPAT"
+    ]
+  },
+  {
+    "id": "chunin_headband",
+    "type": "ARMOR",
+    "name": {
+      "str": "Chunin Headband"
+    },
+    "description": "A headband representing a ninja has passed the chunin exams and attained the rank of chunin.",
+    "weight": "2175 g",
+    "volume": "2750 ml",
+    "price": "400 USD",
+    "price_postapoc": "50 USD",
+    "bashing": 10,
+    "material": [
+      "beskar"
+    ],
+    "symbol": "[",
+    "looks_like": "helmet_barbute",
+    "color": "light_gray",
+    "covers": [
+      "head"
+    ],
+    "coverage": 100,
+    "encumbrance": 1,
+    "warmth": 10,
+    "material_thickness": 5,
+    "environmental_protection": 1,
+    "techniques": [
+      "WBLOCK_1"
+    ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            {
+              "value": "STAMINA_CAP",
+              "multiply": 0.6
+            },
+            {
+              "value": "STAMINA_REGEN",
+              "multiply": 0.6
+            },
+            {
+              "value": "MANA_CAP",
+              "add": 1000
+            },
+            {
+              "value": "STAMINA_REGEN",
+              "multiply": 0.2
+            },
+            {
+              "value": "ARMOR_BASH",
+              "add": -2
+            },
+            {
+              "value": "ARMOR_CUT",
+              "add": -2
+            },
+            {
+              "value": "ARMOR_BULLET",
+              "add": -20
+            },
+            {
+              "value": "ARMOR_ACID",
+              "add": -2
+            },
+            {
+              "value": "ARMOR_COLD",
+              "add": -2
+            },
+            {
+              "value": "ARMOR_HEAT",
+              "add": -2
+            },
+            {
+              "value": "ARMOR_ELEC",
+              "add": -2
+            },
+            {
+              "value": "BONUS_DODGE",
+              "add": 2
+            },
+            {
+              "value": "SPEED",
+              "add": 10
+            }
+          ]
+        }
+      ]
+    },
+    "flags": [
+      "VARSIZE",
+      "STURDY",
+      "HELMET_COMPAT"
+    ]
+  },
+  {
+    "id": "jonin_headband",
+    "type": "ARMOR",
+    "name": {
+      "str": "Jonin Headband"
+    },
+    "description": "A headband representing a ninja has extensive experience in the field and has attained the rank of jonin.",
+    "weight": "2175 g",
+    "volume": "2750 ml",
+    "price": "400 USD",
+    "price_postapoc": "50 USD",
+    "bashing": 10,
+    "material": [
+      "beskar"
+    ],
+    "symbol": "[",
+    "looks_like": "helmet_barbute",
+    "color": "light_gray",
+    "covers": [
+      "head"
+    ],
+    "coverage": 100,
+    "encumbrance": 1,
+    "warmth": 10,
+    "material_thickness": 5,
+    "environmental_protection": 1,
+    "techniques": [
+      "WBLOCK_1"
+    ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            {
+              "value": "STAMINA_CAP",
+              "multiply": 0.9
+            },
+            {
+              "value": "STAMINA_REGEN",
+              "multiply": 0.9
+            },
+            {
+              "value": "MANA_CAP",
+              "add": 2000
+            },
+            {
+              "value": "STAMINA_REGEN",
+              "multiply": 0.3
+            },
+            {
+              "value": "ARMOR_BASH",
+              "add": -3
+            },
+            {
+              "value": "ARMOR_CUT",
+              "add": -3
+            },
+            {
+              "value": "ARMOR_BULLET",
+              "add": -30
+            },
+            {
+              "value": "ARMOR_ACID",
+              "add": -3
+            },
+            {
+              "value": "ARMOR_COLD",
+              "add": -3
+            },
+            {
+              "value": "ARMOR_HEAT",
+              "add": -3
+            },
+            {
+              "value": "ARMOR_ELEC",
+              "add": -3
+            },
+            {
+              "value": "BONUS_DODGE",
+              "add": 3
+            },
+            {
+              "value": "SPEED",
+              "add": 15
+            }
+          ]
+        }
+      ]
+    },
+    "flags": [
+      "VARSIZE",
+      "STURDY",
+      "HELMET_COMPAT"
+    ]
+  },
+  {
+    "id": "anbu_mask",
+    "type": "ARMOR",
+    "name": {
+      "str": "Porcelain Animal Mask"
+    },
+    "description": "A porcelain mask with the visage of an animal worn by the special assassination and tactical squadron; a hand-chosen group of elite ninja employed for secretive missions.",
+    "weight": "2175 g",
+    "volume": "2750 ml",
+    "price": "400 USD",
+    "price_postapoc": "50 USD",
+    "bashing": 10,
+    "material": [
+      "beskar"
+    ],
+    "symbol": "[",
+    "looks_like": "helmet_barbute",
+    "color": "light_gray",
+    "covers": [
+      "head",
+      "eyes",
+      "mouth"
+    ],
+    "coverage": 100,
+    "encumbrance": 1,
+    "warmth": 10,
+    "material_thickness": 5,
+    "environmental_protection": 1,
+    "techniques": [
+      "WBLOCK_1"
+    ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            {
+              "value": "STAMINA_CAP",
+              "multiply": 1.1
+            },
+            {
+              "value": "STAMINA_REGEN",
+              "multiply": 1.1
+            },
+            {
+              "value": "MANA_CAP",
+              "add": 3000
+            },
+            {
+              "value": "STAMINA_REGEN",
+              "multiply": 0.3
+            },
+            {
+              "value": "ARMOR_BASH",
+              "add": -3
+            },
+            {
+              "value": "ARMOR_CUT",
+              "add": -3
+            },
+            {
+              "value": "ARMOR_BULLET",
+              "add": -30
+            },
+            {
+              "value": "ARMOR_ACID",
+              "add": -3
+            },
+            {
+              "value": "ARMOR_COLD",
+              "add": -3
+            },
+            {
+              "value": "ARMOR_HEAT",
+              "add": -3
+            },
+            {
+              "value": "ARMOR_ELEC",
+              "add": -3
+            },
+            {
+              "value": "BONUS_DODGE",
+              "add": 3
+            },
+            {
+              "value": "SPEED",
+              "add": 15
+            }
+          ]
+        }
+      ]
+    },
+    "flags": [
+      "VARSIZE",
+      "STURDY",
+      "HELMET_COMPAT"
+    ]
+  },
+  {
+    "id": "kage_robes",
+    "type": "ARMOR",
+    "name": {
+      "str": "Kage Robes"
+    },
+    "description": "Ceremonial robes worn by the leader of a ninja village.",
+    "weight": "2175 g",
+    "volume": "2750 ml",
+    "price": "400 USD",
+    "price_postapoc": "50 USD",
+    "bashing": 10,
+    "material": [
+      "beskar"
+    ],
+    "symbol": "[",
+    "looks_like": "helmet_barbute",
+    "color": "light_gray",
+    "covers": [
+      "torso"
+    ],
+    "coverage": 100,
+    "encumbrance": 10,
+    "warmth": 10,
+    "material_thickness": 5,
+    "environmental_protection": 5,
+    "techniques": [
+      "WBLOCK_1"
+    ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            {
+              "value": "STAMINA_CAP",
+              "multiply": 1.5
+            },
+            {
+              "value": "STAMINA_REGEN",
+              "multiply": 1.5
+            },
+            {
+              "value": "MANA_CAP",
+              "add": 4000
+            },
+            {
+              "value": "STAMINA_REGEN",
+              "multiply": 0.4
+            },
+            {
+              "value": "ARMOR_BASH",
+              "add": -4
+            },
+            {
+              "value": "ARMOR_CUT",
+              "add": -4
+            },
+            {
+              "value": "ARMOR_BULLET",
+              "add": -40
+            },
+            {
+              "value": "ARMOR_ACID",
+              "add": -4
+            },
+            {
+              "value": "ARMOR_COLD",
+              "add": -4
+            },
+            {
+              "value": "ARMOR_HEAT",
+              "add": -4
+            },
+            {
+              "value": "ARMOR_ELEC",
+              "add": -4
+            },
+            {
+              "value": "BONUS_DODGE",
+              "add": 4
+            },
+            {
+              "value": "SPEED",
+              "add": 30
+            }
+          ]
+        }
+      ]
+    },
+    "flags": [
+      "VARSIZE",
+      "STURDY"
+    ]
+  },
+  {
+    "id": "sand_gourd",
+    "type": "ARMOR",
+    "name": {
+      "str": "Sand Gourd"
+    },
+    "description": "A gourd once worn by a powerful jinchuriki and kazekage to the hidden sand village.",
+    "weight": "2175 g",
+    "volume": "2750 ml",
+    "price": "400 USD",
+    "price_postapoc": "50 USD",
+    "bashing": 10,
+    "material": [
+      "beskar"
+    ],
+    "symbol": "[",
+    "looks_like": "backpack",
+    "color": "light_gray",
+    "covers": [
+      "torso"
+    ],
+    "coverage": 100,
+    "encumbrance": 10,
+    "warmth": 10,
+    "material_thickness": 5,
+    "environmental_protection": 1,
+    "techniques": [
+      "WBLOCK_1"
+    ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            {
+              "value": "STAMINA_CAP",
+              "multiply": 1.5
+            },
+            {
+              "value": "STAMINA_REGEN",
+              "multiply": 1.5
+            },
+            {
+              "value": "MANA_CAP",
+              "add": 4000
+            },
+            {
+              "value": "STAMINA_REGEN",
+              "multiply": 0.4
+            },
+            {
+              "value": "ARMOR_BASH",
+              "add": -24
+            },
+            {
+              "value": "ARMOR_CUT",
+              "add": -24
+            },
+            {
+              "value": "ARMOR_BULLET",
+              "add": -40
+            },
+            {
+              "value": "ARMOR_ACID",
+              "add": -24
+            },
+            {
+              "value": "ARMOR_COLD",
+              "add": -24
+            },
+            {
+              "value": "ARMOR_HEAT",
+              "add": -24
+            },
+            {
+              "value": "ARMOR_ELEC",
+              "add": -24
+            },
+            {
+              "value": "BONUS_DODGE",
+              "add": 4
+            },
+            {
+              "value": "SPEED",
+              "add": 30
+            }
+          ]
+        }
+      ]
+    },
+    "flags": [
+      "AURA",
+      "STURDY"
+    ]
+  },
+  {
+    "id": "akatsuke_robes",
+    "type": "ARMOR",
+    "name": {
+      "str": "Akatsuke Robes"
+    },
+    "description": "Black robes with red clouds worn by a group of powerful rogue ninja.",
+    "weight": "2175 g",
+    "volume": "2750 ml",
+    "price": "400 USD",
+    "price_postapoc": "50 USD",
+    "bashing": 10,
+    "material": [
+      "beskar"
+    ],
+    "symbol": "[",
+    "looks_like": "helmet_barbute",
+    "color": "light_gray",
+    "covers": [
+      "torso"
+    ],
+    "coverage": 100,
+    "encumbrance": 10,
+    "warmth": 10,
+    "material_thickness": 5,
+    "environmental_protection": 5,
+    "techniques": [
+      "WBLOCK_1"
+    ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            {
+              "value": "STAMINA_CAP",
+              "multiply": 1.5
+            },
+            {
+              "value": "STAMINA_REGEN",
+              "multiply": 1.5
+            },
+            {
+              "value": "MANA_CAP",
+              "add": 4000
+            },
+            {
+              "value": "STAMINA_REGEN",
+              "multiply": 0.4
+            },
+            {
+              "value": "ARMOR_BASH",
+              "add": -4
+            },
+            {
+              "value": "ARMOR_CUT",
+              "add": -4
+            },
+            {
+              "value": "ARMOR_BULLET",
+              "add": -40
+            },
+            {
+              "value": "ARMOR_ACID",
+              "add": -4
+            },
+            {
+              "value": "ARMOR_COLD",
+              "add": -4
+            },
+            {
+              "value": "ARMOR_HEAT",
+              "add": -4
+            },
+            {
+              "value": "ARMOR_ELEC",
+              "add": -4
+            },
+            {
+              "value": "BONUS_DODGE",
+              "add": 4
+            },
+            {
+              "value": "SPEED",
+              "add": 30
+            }
+          ]
+        }
+      ]
+    },
+    "flags": [
+      "VARSIZE",
+      "STURDY"
+    ]
+  },
+  {
+    "id": "shinobi_suit",
+    "type": "ARMOR",
+    "name": {
+      "str": "Shinobi Combat Suit"
+    },
+    "description": "Tactical gear worn by ninja of all ranks, providing chakra stability and enhanced physical prowess.",
+    "weight": "2175 g",
+    "volume": "2750 ml",
+    "price": "400 USD",
+    "price_postapoc": "50 USD",
+    "bashing": 10,
+    "material": [
+      "rune"
+    ],
+    "symbol": "[",
+    "looks_like": "helmet_barbute",
+    "color": "light_gray",
+    "covers": [
+      "head",
+      "mouth",
+      "eyes",
+      "torso",
+      "arms",
+      "hands",
+      "legs",
+      "feet"
+    ],
+    "coverage": 100,
+    "encumbrance": 1,
+    "warmth": 10,
+    "material_thickness": 3,
+    "environmental_protection": 1,
+    "techniques": [
+      "WBLOCK_1"
+    ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            {
+              "value": "STAMINA_CAP",
+              "multiply": 0.2
+            },
+            {
+              "value": "STAMINA_REGEN",
+              "multiply": 0.3
+            },
+            {
+              "value": "MANA_CAP",
+              "add": 500
+            },
+            {
+              "value": "STAMINA_REGEN",
+              "multiply": 0.1
+            },
+            {
+              "value": "ARMOR_BASH",
+              "add": -1
+            },
+            {
+              "value": "ARMOR_CUT",
+              "add": -1
+            },
+            {
+              "value": "ARMOR_BULLET",
+              "add": -10
+            },
+            {
+              "value": "ARMOR_ACID",
+              "add": -1
+            },
+            {
+              "value": "ARMOR_COLD",
+              "add": -1
+            },
+            {
+              "value": "ARMOR_HEAT",
+              "add": -1
+            },
+            {
+              "value": "ARMOR_ELEC",
+              "add": -1
+            },
+            {
+              "value": "BONUS_DODGE",
+              "add": 1
+            },
+            {
+              "value": "SPEED",
+              "add": 10
+            }
+          ]
+        }
+      ]
+    },
+    "flags": [
+      "VARSIZE",
+      "PERSONAL",
+      "STURDY"
+    ]
+  },
+  {
+    "type": "tool_quality",
+    "id": "WARFAN",
+    "name": {
+      "str": "Ninja Warfan"
+    }
+  },
+  {
+    "id": "warfan_req",
+    "type": "requirement",
+    "//": "Crafting or repair of fabric items",
+    "qualities": [
+      {
+        "id": "WARFAN",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "type": "tool_quality",
+    "id": "KIBA",
+    "name": {
+      "str": "Boltswords"
+    }
+  },
+  {
+    "id": "kiba_req",
+    "type": "requirement",
+    "//": "Crafting or repair of fabric items",
+    "qualities": [
+      {
+        "id": "KIBA",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": "spell_components_allthrow",
+    "type": "requirement",
+    "components": [
+      [
+        [
+          "shuriken",
+          1
+        ],
+        [
+          "kunai",
+          1
+        ],
+        [
+          "doublekunai",
+          1
+        ],
+        [
+          "triplekunai",
+          1
+        ],
+        [
+          "fumashuriken",
+          1
+        ],
+        [
+          "senbon",
+          1
+        ],
+        [
+          "retractshuriken",
+          1
+        ],
+        [
+          "extendshuriken",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "spell_components_shuriken",
+    "type": "requirement",
+    "components": [
+      [
+        [
+          "shuriken",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "spell_components_fumashuriken",
+    "type": "requirement",
+    "components": [
+      [
+        [
+          "fumashuriken",
+          1
+        ],
+        [
+          "retractshuriken",
+          1
+        ],
+        [
+          "extendshuriken",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "spell_components_senbon",
+    "type": "requirement",
+    "components": [
+      [
+        [
+          "senbon",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "spell_components_pbomb",
+    "type": "requirement",
+    "components": [
+      [
+        [
+          "paperbomb",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "spell_components_kunai",
+    "type": "requirement",
+    "components": [
+      [
+        [
+          "kunai",
+          1
+        ],
+        [
+          "doublekunai",
+          1
+        ],
+        [
+          "triplekunai",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "paperbomb",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": {
+      "str": "paper bomb"
+    },
+    "description": "This is a shinobi-grade explosive tag.  Use this item to activate the seal and start the timer.  You will then have five turns before it explodes; placing it would be a good idea.",
+    "weight": "397 g",
+    "volume": "250 ml",
+    "price": "15 USD",
+    "price_postapoc": "10 USD",
+    "to_hit": -1,
+    "bashing": 6,
+    "material": [
+      "paper"
+    ],
+    "symbol": "*",
+    "color": "green",
+    "thrown_damage": [
+      {
+        "damage_type": "stab",
+        "amount": 45
+      }
+    ],
+    "use_action": {
+      "target": "grenade_act",
+      "msg": "You activate the seal on the paper bom.",
+      "target_charges": 5,
+      "active": true,
+      "menu_text": "Activate seal",
+      "type": "transform"
+    },
+    "flags": [
+      "RADIO_MODABLE",
+      "RADIO_INVOKE_PROC",
+      "BOMB",
+      "GRENADE"
+    ]
+  },
+  {
+    "id": "paperbomb_act",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": {
+      "str": "paper bomb (active)"
+    },
+    "description": "This is an active paper bomb, and will explode any second now.  Better place it!",
+    "weight": "397 g",
+    "volume": "250 ml",
+    "price": "0 cent",
+    "price_postapoc": "0 cent",
+    "to_hit": -1,
+    "bashing": 6,
+    "material": [
+      "paper"
+    ],
+    "symbol": "*",
+    "color": "green",
+    "initial_charges": 5,
+    "max_charges": 5,
+    "turns_per_charge": 1,
+    "thrown_damage": [
+      {
+        "damage_type": "stab",
+        "amount": 45
+      }
+    ],
+    "use_action": {
+      "type": "explosion",
+      "sound_volume": 0,
+      "sound_msg": "Tick.",
+      "no_deactivate_msg": "You've already activated the %s's seal; try placing it instead.",
+      "explosion": {
+        "damage": 555,
+        "radius": 11
+      }
+    },
+    "flags": [
+      "BOMB",
+      "TRADER_AVOID"
+    ]
+  },
+  {
+    "id": "kiba",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [
+      "JAPANESE_SWORDS"
+    ],
+    "name": {
+      "str": "kiba"
+    },
+    "description": "A unique sword with thin prongs stemming from the blade making the sword somewhat resemble a bolt of lightning, otherwise known as boltswords. used to channel lightning nature jutsu.",
+    "weight": "1133 g",
+    "volume": "2 L",
+    "price": "980 USD",
+    "price_postapoc": "45 USD",
+    "to_hit": 2,
+    "bashing": 5,
+    "cutting": 51,
+    "material": "steel",
+    "symbol": "/",
+    "color": "light_gray",
+    "techniques": [
+      "RAPID",
+      "WBLOCK_2"
+    ],
+    "qualities": [
+      [
+        "KIBA",
+        1
+      ],
+      [
+        "CUT",
+        1
+      ],
+      [
+        "BUTCHER",
+        9
+      ]
+    ],
+    "flags": [
+      "UNBREAKABLE_MELEE",
+      "SHEATH_SWORD",
+      "NONCONDUCTIVE"
+    ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "foldfan",
+    "category": "weapons",
+    "name": {
+      "str": "Giant Folding Warfan"
+    },
+    "description": "A gigantic folding warfan, when unfolded it does cutting damage.",
+    "price": "24 USD",
+    "price_postapoc": "1 USD",
+    "symbol": ";",
+    "color": "light_gray",
+    "looks_like": "throwing_knife",
+    "material": "steel",
+    "volume": "1500 ml",
+    "weight": "1225 g",
+    "techniques": [
+      "WBLOCK_3"
+    ],
+    "qualities": [
+      [
+        "WARFAN",
+        1
+      ]
+    ],
+    "bashing": 55,
+    "use_action": [
+      {
+        "menu_text": "Extend Fan",
+        "type": "transform",
+        "target": "extendfan",
+        "msg": "fflp-"
+      }
+    ],
+    "flags": [
+      "UNBREAKABLE_MELEE"
+    ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "extendfan",
+    "category": "weapons",
+    "name": {
+      "str": "Giant Folding Warfan"
+    },
+    "description": "A gigantic folding warfan, when unfolded it does cutting damage.",
+    "price": "24 USD",
+    "price_postapoc": "1 USD",
+    "symbol": ";",
+    "color": "light_gray",
+    "looks_like": "throwing_knife",
+    "material": "steel",
+    "volume": "1500 ml",
+    "weight": "1225 g",
+    "techniques": [
+      "WBLOCK_3"
+    ],
+    "qualities": [
+      [
+        "WARFAN",
+        1
+      ]
+    ],
+    "cutting": 55,
+    "use_action": [
+      {
+        "menu_text": "Extend Fan",
+        "type": "transform",
+        "target": "extendfan",
+        "msg": "fflp-"
+      }
+    ],
+    "flags": [
+      "UNBREAKABLE_MELEE"
+    ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "fumashuriken",
+    "category": "weapons",
+    "weapon_category": [
+      "JAPANESE_SWORDS"
+    ],
+    "name": {
+      "str": "fuma shuriken"
+    },
+    "description": "A giant, 4-bladed throwing weapon used by shinobi.  It's size makes it more damaging both up close and at range.",
+    "price": "24 USD",
+    "price_postapoc": "1 USD",
+    "symbol": ";",
+    "color": "light_gray",
+    "looks_like": "throwing_knife",
+    "material": "steel",
+    "volume": "1500 ml",
+    "weight": "1225 g",
+    "techniques": [
+      "WBLOCK_1"
+    ],
+    "cutting": 35,
+    "thrown_damage": [
+      {
+        "damage_type": "stab",
+        "amount": 45
+      }
+    ],
+    "flags": [
+      "STAB",
+      "SHEATH_SWORD"
+    ],
+    "qualities": [
+      [
+        "CUT",
+        1
+      ],
+      [
+        "CUT_FINE",
+        1
+      ],
+      [
+        "BUTCHER",
+        30
+      ]
+    ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "retractshuriken",
+    "category": "weapons",
+    "name": {
+      "str": "Demon Wind Shuriken (retracted)"
+    },
+    "description": "A giant, 4-bladed throwing weapon used by shinobi.  It's size makes it more damaging both up close and at range, it also possesses the ability to retract it's blades and fold together, allowing for better melee usage and easier storage.",
+    "price": "24 USD",
+    "price_postapoc": "1 USD",
+    "symbol": ";",
+    "color": "light_gray",
+    "looks_like": "throwing_knife",
+    "material": "steel",
+    "volume": "700 ml",
+    "weight": "1225 g",
+    "techniques": [
+      "WBLOCK_3"
+    ],
+    "cutting": 55,
+    "use_action": [
+      {
+        "menu_text": "Extend Blades",
+        "type": "transform",
+        "target": "extendshuriken",
+        "msg": "shnk-"
+      }
+    ],
+    "thrown_damage": [
+      {
+        "damage_type": "stab",
+        "amount": 25
+      }
+    ],
+    "flags": [
+      "DURABLE_MELEE",
+      "STAB",
+      "SHEATH_KNIFE"
+    ],
+    "qualities": [
+      [
+        "CUT",
+        1
+      ],
+      [
+        "CUT_FINE",
+        1
+      ],
+      [
+        "BUTCHER",
+        30
+      ]
+    ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "extendshuriken",
+    "category": "weapons",
+    "name": {
+      "str": "Demon Wind Shuriken (extended)"
+    },
+    "description": "A giant, 4-bladed throwing weapon used by shinobi.  It's size makes it more damaging both up close and at range, it also possesses the ability to retract it's blades and fold together, allowing for better melee usage and easier storage.",
+    "price": "24 USD",
+    "price_postapoc": "1 USD",
+    "symbol": ";",
+    "color": "light_gray",
+    "looks_like": "throwing_knife",
+    "material": "steel",
+    "volume": "1500 ml",
+    "weight": "1225 g",
+    "techniques": [
+      "WBLOCK_1"
+    ],
+    "cutting": 25,
+    "use_action": [
+      {
+        "menu_text": "Retract Blades",
+        "type": "transform",
+        "target": "retractshuriken",
+        "msg": "shnk-"
+      }
+    ],
+    "thrown_damage": [
+      {
+        "damage_type": "stab",
+        "amount": 45
+      }
+    ],
+    "flags": [
+      "STAB",
+      "SHEATH_KNIFE"
+    ],
+    "qualities": [
+      [
+        "CUT",
+        1
+      ],
+      [
+        "CUT_FINE",
+        1
+      ],
+      [
+        "BUTCHER",
+        20
+      ]
+    ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "senbon",
+    "category": "weapons",
+    "weapon_category": [
+      "STILETTOS"
+    ],
+    "name": {
+      "str": "senbon"
+    },
+    "description": "A small throwing needle used by shinobi.  Slightly less damaging than shuriken but more accurate and lightweight.",
+    "price": "24 USD",
+    "price_postapoc": "1 USD",
+    "symbol": ";",
+    "color": "light_gray",
+    "looks_like": "throwing_knife",
+    "material": "steel",
+    "volume": "100 ml",
+    "weight": "25 g",
+    "cutting": 3,
+    "thrown_damage": [
+      {
+        "damage_type": "stab",
+        "amount": 15
+      }
+    ],
+    "flags": [
+      "STAB",
+      "SHEATH_KNIFE"
+    ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "doublekunai",
+    "category": "weapons",
+    "name": {
+      "str": "twin kunai"
+    },
+    "description": "A small double-bladed throwing dagger used by shinobi. It's 2 sides offer better melee and blocking capabilities, at the cost of slightly worse throwing damage.",
+    "price": "24 USD",
+    "price_postapoc": "1 USD",
+    "symbol": ";",
+    "color": "light_gray",
+    "looks_like": "throwing_knife",
+    "techniques": [
+      "WBLOCK_1"
+    ],
+    "material": "steel",
+    "volume": "100 ml",
+    "weight": "325 g",
+    "cutting": 25,
+    "thrown_damage": [
+      {
+        "damage_type": "stab",
+        "amount": 20
+      }
+    ],
+    "flags": [
+      "DURABLE_MELEE",
+      "STAB",
+      "SHEATH_KNIFE"
+    ],
+    "qualities": [
+      [
+        "CUT",
+        1
+      ],
+      [
+        "CUT_FINE",
+        1
+      ],
+      [
+        "BUTCHER",
+        30
+      ]
+    ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "triplekunai",
+    "category": "weapons",
+    "name": {
+      "str": "three-pronged kunai"
+    },
+    "description": "A small throwing dagger with 3 points used by shinobi. It's 2 extra prongs offer greater melee and blocking capabilities without the drawback of double-bladed kunai.",
+    "price": "24 USD",
+    "price_postapoc": "1 USD",
+    "symbol": ";",
+    "color": "light_gray",
+    "looks_like": "throwing_knife",
+    "techniques": [
+      "WBLOCK_1"
+    ],
+    "material": "steel",
+    "volume": "100 ml",
+    "weight": "225 g",
+    "cutting": 25,
+    "thrown_damage": [
+      {
+        "damage_type": "stab",
+        "amount": 25
+      }
+    ],
+    "flags": [
+      "DURABLE_MELEE",
+      "STAB",
+      "SHEATH_KNIFE"
+    ],
+    "qualities": [
+      [
+        "CUT",
+        1
+      ],
+      [
+        "CUT_FINE",
+        1
+      ],
+      [
+        "BUTCHER",
+        30
+      ]
+    ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "kunai",
+    "category": "weapons",
+    "name": {
+      "str": "kunai"
+    },
+    "weapon_category": [
+      "KNIVES"
+    ],
+    "description": "A small throwing dagger used by shinobi. Better for melee usage than shuriken but slightly heavier.",
+    "price": "24 USD",
+    "price_postapoc": "1 USD",
+    "symbol": ";",
+    "color": "light_gray",
+    "looks_like": "throwing_knife",
+    "techniques": [
+      "WBLOCK_1"
+    ],
+    "material": "steel",
+    "volume": "100 ml",
+    "weight": "225 g",
+    "cutting": 20,
+    "qualities": [
+      [
+        "CUT",
+        1
+      ],
+      [
+        "CUT_FINE",
+        1
+      ],
+      [
+        "BUTCHER",
+        25
+      ]
+    ],
+    "thrown_damage": [
+      {
+        "damage_type": "stab",
+        "amount": 21
+      }
+    ],
+    "flags": [
+      "DURABLE_MELEE",
+      "STAB",
+      "SHEATH_KNIFE"
+    ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "shuriken",
+    "category": "weapons",
+    "name": {
+      "str": "shuriken"
+    },
+    "weapon_category": [
+      "KNIVES"
+    ],
+    "description": "A small throwing star.  Easy to store and quite light, but not very useful for anything but throwing.",
+    "price": "24 USD",
+    "price_postapoc": "1 USD",
+    "symbol": ";",
+    "color": "light_gray",
+    "looks_like": "throwing_knife",
+    "material": "steel",
+    "volume": "100 ml",
+    "weight": "125 g",
+    "cutting": 5,
+    "thrown_damage": [
+      {
+        "damage_type": "stab",
+        "amount": 30
+      }
+    ],
+    "flags": [
+      "HURT_WHEN_WIELDED",
+      "SHEATH_KNIFE"
+    ]
+  }
+]

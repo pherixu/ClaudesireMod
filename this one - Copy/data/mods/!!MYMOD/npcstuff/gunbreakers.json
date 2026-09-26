@@ -1,0 +1,85 @@
+[
+  {
+    "type": "item_group",
+    "id": "gunbreaker_engine",
+    "subtype": "distribution",
+    "//": "All 16 engine breakers (4 elements x 4 materials), base form only.  Each transforms into its second mode in-game.",
+    "entries": [
+      { "item": "engine_fire_argentium", "prob": 10 },
+      { "item": "engine_fire_ceruleum", "prob": 10 },
+      { "item": "engine_fire_crimsonite", "prob": 10 },
+      { "item": "engine_fire_viridite", "prob": 10 },
+      { "item": "engine_ice_argentium", "prob": 10 },
+      { "item": "engine_ice_ceruleum", "prob": 10 },
+      { "item": "engine_ice_crimsonite", "prob": 10 },
+      { "item": "engine_ice_viridite", "prob": 10 },
+      { "item": "engine_elec_argentium", "prob": 10 },
+      { "item": "engine_elec_ceruleum", "prob": 10 },
+      { "item": "engine_elec_crimsonite", "prob": 10 },
+      { "item": "engine_elec_viridite", "prob": 10 },
+      { "item": "engine_acid_argentium", "prob": 10 },
+      { "item": "engine_acid_ceruleum", "prob": 10 },
+      { "item": "engine_acid_crimsonite", "prob": 10 },
+      { "item": "engine_acid_viridite", "prob": 10 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "gunbreaker_lance",
+    "subtype": "distribution",
+    "//": "All 16 lance breakers (4 elements x 4 materials), base form only.  Each transforms into its second mode in-game.",
+    "entries": [
+      { "item": "lance_fire_argentium", "prob": 10 },
+      { "item": "lance_fire_ceruleum", "prob": 10 },
+      { "item": "lance_fire_crimsonite", "prob": 10 },
+      { "item": "lance_fire_viridite", "prob": 10 },
+      { "item": "lance_ice_argentium", "prob": 10 },
+      { "item": "lance_ice_ceruleum", "prob": 10 },
+      { "item": "lance_ice_crimsonite", "prob": 10 },
+      { "item": "lance_ice_viridite", "prob": 10 },
+      { "item": "lance_elec_argentium", "prob": 10 },
+      { "item": "lance_elec_ceruleum", "prob": 10 },
+      { "item": "lance_elec_crimsonite", "prob": 10 },
+      { "item": "lance_elec_viridite", "prob": 10 },
+      { "item": "lance_acid_argentium", "prob": 10 },
+      { "item": "lance_acid_ceruleum", "prob": 10 },
+      { "item": "lance_acid_crimsonite", "prob": 10 },
+      { "item": "lance_acid_viridite", "prob": 10 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "gunbreaker_aegis",
+    "subtype": "distribution",
+    "//": "All 16 aegis breakers (4 elements x 4 materials), base form only.  Each transforms into its second mode in-game.",
+    "entries": [
+      { "item": "aegis_fire_argentium", "prob": 10 },
+      { "item": "aegis_fire_ceruleum", "prob": 10 },
+      { "item": "aegis_fire_crimsonite", "prob": 10 },
+      { "item": "aegis_fire_viridite", "prob": 10 },
+      { "item": "aegis_frost_argentium", "prob": 10 },
+      { "item": "aegis_frost_ceruleum", "prob": 10 },
+      { "item": "aegis_frost_crimsonite", "prob": 10 },
+      { "item": "aegis_frost_viridite", "prob": 10 },
+      { "item": "aegis_elec_argentium", "prob": 10 },
+      { "item": "aegis_elec_ceruleum", "prob": 10 },
+      { "item": "aegis_elec_crimsonite", "prob": 10 },
+      { "item": "aegis_elec_viridite", "prob": 10 },
+      { "item": "aegis_acid_argentium", "prob": 10 },
+      { "item": "aegis_acid_ceruleum", "prob": 10 },
+      { "item": "aegis_acid_crimsonite", "prob": 10 },
+      { "item": "aegis_acid_viridite", "prob": 10 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "gunbreaker_all",
+    "subtype": "distribution",
+    "//": "Any gunbreaker: engine, lance or aegis, any element, any material.",
+    "entries": [
+      { "group": "gunbreaker_engine", "prob": 1 },
+      { "group": "gunbreaker_lance", "prob": 1 },
+      { "group": "gunbreaker_aegis", "prob": 1 }
+    ]
+  }
+]

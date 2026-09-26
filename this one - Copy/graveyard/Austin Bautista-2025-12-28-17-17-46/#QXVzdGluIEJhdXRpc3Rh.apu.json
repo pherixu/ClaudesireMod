@@ -1,0 +1,4 @@
+[
+  { "rule": "bandage", "active": true, "exclude": false },
+  { "rule": "medical gauze", "active": true, "exclude": false }
+]

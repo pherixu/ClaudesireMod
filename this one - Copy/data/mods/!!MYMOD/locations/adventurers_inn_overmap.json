@@ -1,0 +1,27 @@
+[
+  {
+    "type": "overmap_terrain",
+    "id": "adv_inn",
+    "copy-from": "s_restaurant_3",
+    "name": "adventurer's inn",
+    "color": "light_green"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "adv_inn_roof",
+    "copy-from": "s_restaurant_roof_3",
+    "name": "adventurer's inn roof",
+    "color": "light_green"
+  },
+  {
+    "type": "city_building",
+    "id": "adv_inn",
+    "locations": [ "land" ],
+    "overmaps": [ { "point": [ 0, 0, 0 ], "overmap": "adv_inn_north" }, { "point": [ 0, 0, 1 ], "overmap": "adv_inn_roof_north" } ]
+  },
+  {
+    "type": "region_overlay",
+    "regions": [ "all" ],
+    "city": { "shops": { "adv_inn": 300 } }
+  }
+]

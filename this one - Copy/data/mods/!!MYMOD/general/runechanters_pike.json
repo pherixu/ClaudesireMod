@@ -1,0 +1,134 @@
+[
+  {
+    "id": "runechanters_focus",
+    "type": "effect_type",
+    "name": [ "Runechanter's Focus" ],
+    "desc": [ "Arcane current sharpens your mind, swelling your capacity for mana and quickening its flow." ],
+    "apply_message": "Runes flare down the pike's shaft, and clarity floods your mind.",
+    "remove_message": "The arcane current fades from your thoughts.",
+    "rating": "good",
+    "base_mods": { "int_mod": [ 6 ] }
+  },
+  {
+    "id": "runechanters_mana_flare",
+    "type": "SPELL",
+    "name": { "str": "Runechanter's Mana Flare" },
+    "description": "A burst of stored mana floods back into the caster as the runes wake.",
+    "valid_targets": [ "self" ],
+    "effect": "recover_energy",
+    "effect_str": "MANA",
+    "min_damage": 150,
+    "max_damage": 150,
+    "damage_increment": 0,
+    "base_casting_time": 0,
+    "base_energy_cost": 0,
+    "energy_source": "NONE",
+    "difficulty": 0,
+    "max_level": 1,
+    "flags": [ "NO_FAIL", "NO_LEGS", "SILENT" ]
+  },
+  {
+    "id": "runechanters_surge",
+    "type": "SPELL",
+    "name": { "str": "Runechanter's Surge" },
+    "description": "Wake the pike's runes, sharpening your mind and quickening your mana for an hour.",
+    "valid_targets": [ "self" ],
+    "effect": "target_attack",
+    "effect_str": "runechanters_focus",
+    "min_damage": 1,
+    "max_damage": 1,
+    "damage_increment": 0,
+    "min_duration": 60000,
+    "max_duration": 60000,
+    "duration_increment": 0,
+    "base_casting_time": 100,
+    "base_energy_cost": 0,
+    "energy_source": "NONE",
+    "difficulty": 0,
+    "max_level": 1,
+    "extra_effects": [ { "id": "runechanters_mana_flare", "hit_self": true } ],
+    "flags": [ "NO_FAIL", "NO_LEGS", "SILENT" ]
+  },
+  {
+    "id": "runechanters_intellect_strike",
+    "type": "SPELL",
+    "name": { "str": "Runechanter's Insight" },
+    "description": "The pike's runes translate the wielder's intellect into a searing thrust.",
+    "valid_targets": [ "hostile" ],
+    "effect": "target_attack",
+    "damage_type": "stab",
+    "min_damage": 0,
+    "max_damage": 60,
+    "damage_increment": 0,
+    "scale_int": true,
+    "min_range": 1,
+    "max_range": 1,
+    "base_casting_time": 0,
+    "base_energy_cost": 0,
+    "energy_source": "NONE",
+    "difficulty": 0,
+    "max_level": 1,
+    "flags": [ "NO_FAIL", "NO_LEGS", "SILENT" ]
+  },
+  {
+    "id": "runechanters_pike",
+    "type": "TOOL",
+    "category": "weapons",
+    "symbol": "/",
+    "color": "cyan",
+    "looks_like": "pike",
+    "weapon_category": [ "PIKES" ],
+    "name": { "str": "Runechanter's Pike" },
+    "description": "A tall steel pike inscribed with living runes down its length. Wielded, its sigils sharpen the mind and quicken the flow of mana; struck home, the point channels the bearer's own intellect into the wound. Once an hour its runes can be woken to sharpen mind and mana further still.",
+    "weight": "2600 g",
+    "volume": "3500 ml",
+    "price": "0 cent",
+    "material": [ "steel", "rune" ],
+    "bashing": 10,
+    "cutting": 28,
+    "to_hit": 1,
+    "techniques": [ "IMPALE", "WBLOCK_1", "SWEEP" ],
+    "flags": [
+      "DURABLE_MELEE",
+      "POLEARM",
+      "SPEAR",
+      "REACH_ATTACK",
+      "REACH3",
+      "NONCONDUCTIVE",
+      "SHEATH_SPEAR",
+      "ALWAYS_TWOHAND",
+      "STAB",
+      "NO_REPAIR",
+      "NO_SALVAGE"
+    ],
+    "max_charges": 1,
+    "initial_charges": 1,
+    "charges_per_use": 1,
+    "use_action": {
+      "type": "cast_spell",
+      "spell_id": "runechanters_surge",
+      "no_fail": true,
+      "level": 1,
+      "need_wielding": true
+    },
+    "relic_data": {
+      "recharge_scheme": [
+        { "type": "time", "req": "none", "interval": "1 h", "rate": 1 }
+      ],
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "values": [
+            { "value": "INTELLIGENCE", "add": 3 },
+            { "value": "MANA_CAP", "add": 800 },
+            { "value": "MANA_REGEN", "multiply": 0.5 }
+          ],
+          "hit_you_effect": [
+            { "id": "runechanters_intellect_strike", "hit_self": false }
+          ]
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,8 @@
+[
+  { "rule": "RA110 5x50mm flechette", "active": true, "exclude": false },
+  { "rule": "gold", "active": true, "exclude": false },
+  { "rule": "raw bloodgem", "active": true, "exclude": false },
+  { "rule": "devil tear", "active": true, "exclude": false },
+  { "rule": "argentium", "active": true, "exclude": false },
+  { "rule": "pale white scale", "active": true, "exclude": false }
+]

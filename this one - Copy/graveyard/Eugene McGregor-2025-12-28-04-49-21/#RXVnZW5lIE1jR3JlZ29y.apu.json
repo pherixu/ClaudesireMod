@@ -1,0 +1,5 @@
+[
+  { "rule": "wild vegetables (fresh)", "active": true, "exclude": false },
+  { "rule": "bird egg (fresh)", "active": true, "exclude": false },
+  { "rule": "reptile egg (fresh)", "active": true, "exclude": false }
+]

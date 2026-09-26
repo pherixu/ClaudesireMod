@@ -1,0 +1,1055 @@
+[
+  {
+    "type": "mutation",
+    "id": "MAKASHI",
+    "name": { "str": "Jedi Training: Makashi" },
+    "points": 1,
+    "description": "You are trained in the ways of the Jedi.  Your knowledge allows you to utilize a form of lightsaber combat.",
+    "starting_trait": true,
+    "initial_ma_styles": [ "style_mma_makashi" ],
+    "valid": false
+  },
+  {
+    "type": "mutation",
+    "id": "SORESU",
+    "name": { "str": "Jedi Training: Soresu" },
+    "points": 1,
+    "description": "You are trained in the ways of the Jedi.  Your knowledge allows you to utilize a form of lightsaber combat.",
+    "starting_trait": true,
+    "initial_ma_styles": [ "style_mma_soresu" ],
+    "valid": false
+  },
+  {
+    "type": "mutation",
+    "id": "ATARU",
+    "name": { "str": "Jedi Training: Ataru" },
+    "points": 1,
+    "description": "You are trained in the ways of the Jedi.  Your knowledge allows you to utilize a form of lightsaber combat.",
+    "starting_trait": true,
+    "initial_ma_styles": [ "style_mma_ataru" ],
+    "valid": false
+  },
+  {
+    "type": "mutation",
+    "id": "DJEMSO",
+    "name": { "str": "Jedi Training: Djem So" },
+    "points": 1,
+    "description": "You are trained in the ways of the Jedi.  Your knowledge allows you to utilize a form of lightsaber combat.",
+    "starting_trait": true,
+    "initial_ma_styles": [ "style_mma_djem_so" ],
+    "valid": false
+  },
+  {
+    "type": "mutation",
+    "id": "JUYO",
+    "name": { "str": "Jedi Training: Juyo" },
+    "points": 1,
+    "description": "You are trained in the ways of the Jedi.  Your knowledge allows you to utilize a form of lightsaber combat.",
+    "starting_trait": true,
+    "initial_ma_styles": [ "style_mma_juyo" ],
+    "valid": false
+  },
+  {
+    "type": "mutation",
+    "id": "NIMAN",
+    "name": { "str": "Jedi Training: Niman" },
+    "points": 1,
+    "description": "You are trained in the ways of the Jedi.  Your knowledge allows you to utilize a form of lightsaber combat.",
+    "starting_trait": true,
+    "initial_ma_styles": [ "style_mma_niman" ],
+    "valid": false
+  },
+  {
+    "type": "martial_art",
+    "id": "style_mma_makashi",
+    "name": { "str": "Makashi" },
+    "description": "A style regarded for its elegance, graceful presentation, and balletic approach in wielding a lightsaber. It is excellent for saber-to-saber combat, and was developed to combat the rise of enemy lightsaber wielders. It was notable for its primary focus on facing a single opponent, preventing disarmament, and quick, very precise strikes. However, it is poorly suited for multiple enemies and defense against long-range attacks.",
+    "initiate": [
+      "You adopt a narrow stance, blade angled forward with surgical precision.",
+      "%s adopts a narrow dueling stance."
+    ],
+    "learn_difficulty": 9,
+    "primary_skill": "cutting",
+    "strictly_melee": true,
+    "static_buffs": [
+      {
+        "id": "mma_buff_makashi_static1",
+        "name": "Duelist Training",
+        "description": "+Accuracy, reduced move cost.",
+        "melee_allowed": true,
+		"skill_requirements": [ { "name": "spellcraft", "level": 2 } ],
+        "flat_bonuses": [
+          { "stat": "hit", "scaling-stat": "per", "scale": 0.5 }
+        ],
+		"mult_bonuses": [ { "stat": "movecost", "scale": 0.90 } ]
+      }
+	  ],
+	"onmove_buffs": [
+      {
+        "id": "mma_buff_makashi_move",
+        "name": "Elegant footwork",
+		"description": "Makashi, \"The Way of the Ysalamiri\", emphasizes precision, footwork, and efficiency. Designed primarily for lightsaber dueling, Makashi sacrifices crowd control for deadly accuracy against single opponents.",       "skill_requirements": [ { "name": "melee", "level": 2 } ],
+        "melee_allowed": true,
+		"buff_duration": 3,
+	    "max_stacks": 3,
+        "flat_bonuses": [
+          { "stat": "arpen", "type": "cut", "scaling-stat": "per", "scale": 1.0 },
+          { "stat": "arpen", "type": "bash", "scaling-stat": "per", "scale": 1.0 },
+          { "stat": "arpen", "type": "stab", "scaling-stat": "per", "scale": 1.0 },
+          { "stat": "arpen", "type": "heat", "scaling-stat": "per", "scale": 1.0 }
+        ]
+	  }
+	  ],
+  "onmiss_buffs": [
+    {
+      "id": "mma_buff_makashi_miss",
+      "name": "Flowing blade",
+      "description": "Your blade is in constant motion.",
+      "melee_allowed": true,
+      "skill_requirements": [
+        { "name": "melee", "level": 2 },
+        { "name": "spellcraft", "level": 2 }
+      ],
+      "buff_duration": 3,
+      "flat_bonuses": [
+        { "stat": "hit", "scaling-stat": "per", "scale": 0.5 },
+        { "stat": "block", "scaling-stat": "per", "scale": 0.5 }
+      ]
+    }
+  ],
+
+  "techniques": [
+    "mma_tec_makashi_riposte",
+    "mma_tec_makashi_disarm",
+    "mma_tec_makashi_feint",
+    "mma_tec_makashi_rapid",
+    "mma_tec_makashi_compound",
+	"mma_tec_makashi_lunge"
+  ],
+  "weapon_category": [ "1H_SWORDS", "BATONS" ]
+  },
+
+  {
+    "type": "martial_art",
+    "id": "style_mma_soresu",
+    "name": { "str": "Soresu" },
+    "description": "A defensive style that utilized tight, controlled movements and strict economy of action. It was developed in response to the growing prevalence of blasters throughout the galaxy. It took advantage of the lightsaber blade's ability to deflect blaster bolts. Though practitioners of this form focused on defense against attacks of any nature in any situation and committed to analyzing their opponents and openings created, often from the frustration and fatigue of the enemy, while not succumbing to fatigue or making mistakes themselves. It remained popular even during the creation of other lightsaber forms. However, it was limited in its offensive capabilities.",
+    "initiate": [
+      "You center yourself and raise your weapon defensively.",
+      "%s raises their weapon in a guarded stance."
+    ],
+    "learn_difficulty": 11,
+    "primary_skill": "cutting",
+    "strictly_melee": true,
+    "static_buffs": [
+      {
+        "id": "mma_buff_soresu_static1",
+        "name": "Absolute Defense",
+        "description": "+2 block attempts, increased block effectiveness, scaled with intelligence.",
+        "melee_allowed": true,
+		"skill_requirements": [ { "name": "spellcraft", "level": 3 } ],
+		"flat_bonuses": [
+          { "stat": "block", "scaling-stat": "int", "scale": 1.0 },
+		  { "stat": "armor", "type": "bullet", "scaling-stat": "per",  "scale": 2.0 }
+        ],
+        "bonus_blocks": 2
+      }
+	  ],
+	"onpause_buffs": [
+      {
+        "id": "mma_buff_soresu_pause2",
+        "name": "Enduring Guard",
+	    "description": "Use the force to deflect and dodge blows beyond the capabilities of any normal human and look for an opening.",
+        "skill_requirements": [ { "name": "dodge", "level": 3 } ],
+        "melee_allowed": true,
+		"buff_duration": 2,
+        "bonus_blocks": 2,
+		"max_stacks": 2,
+        "flat_bonuses": [
+          { "stat": "block", "scaling-stat": "int",  "scale": 1.0 },
+		  { "stat": "dodge", "scaling-stat": "per",  "scale": 0.2 },
+		  { "stat": "armor", "type": "bullet", "scaling-stat": "int",  "scale": 2.0 }
+        ]
+      }
+    ],	
+	"onblock_buffs": [
+      {
+        "id": "mma_buff_soresu_block",
+        "name": "Patient Timing",
+	    "description": "Soresu is a purely defensive form focused on survival. Practitioners weather storms of attacks, waiting patiently for the perfect opening.",
+        "skill_requirements": [ { "name": "melee", "level": 3 } ],
+        "melee_allowed": true,
+		"buff_duration": 2,
+        "bonus_blocks": 1,
+		"max_stacks": 2,
+        "flat_bonuses": [
+          { "stat": "hit", "scaling-stat": "dex",  "scale": 0.4 },
+		  { "stat": "hit", "scaling-stat": "per",  "scale": 0.4 }
+      ]
+    }
+],
+	"ondodge_buffs": [
+      {
+        "id": "mma_buff_soresu_dodge",
+        "name": "Change of position",
+	    "description": "Soresu is a purely defensive form focused on survival. Practitioners weather storms of attacks, waiting patiently for the perfect opening.",
+        "skill_requirements": [ { "name": "melee", "level": 3 } ],
+        "melee_allowed": true,
+		"buff_duration": 2,
+		"max_stacks": 2,
+		"bonus_blocks": 1,
+        "flat_bonuses": [
+          { "stat": "hit", "scaling-stat": "dex",  "scale": 0.4 },
+		  { "stat": "hit", "scaling-stat": "per",  "scale": 0.4 }
+      ]
+    }
+],
+   
+    "techniques": [ "mma_tec_soresu_dcounter", "mma_tec_soresu_bcounter", "mma_tec_soresu_break", "mma_tec_soresu_rapid" ],
+    "weapon_category": [ "1H_SWORDS", "2H_SWORDS", "BATONS" ]
+  },
+
+  {
+    "type": "martial_art",
+    "id": "style_mma_ataru",
+    "name": { "str": "Ataru" },
+    "description": "An acrobatic and aggressive lightsaber combat style that focuses almost exclusively on offense, aiming to end the fight as quickly as possible. It placed greater emphasis on using the Force to enhance movements in all areas of combat and required great room to attack from all directions. Due to its nature, it was considered a demanding fighting style both physically and through the Force. It was also severely limited in its defensive capabilities.",
+    "initiate": [
+      "You bounce lightly on your feet, ready to spring.",
+      "%s moves with restless energy."
+    ],
+    "learn_difficulty": 13,
+    "primary_skill": "cutting",
+    "strictly_melee": true,
+    "static_buffs": [
+      {
+        "id": "mma_buff_ataru_static1",
+        "name": "Acrobatic Assault",
+        "description": "+hit",
+        "skill_requirements": [ { "name": "spellcraft", "level": 4 } ],
+        "melee_allowed": true,
+        "flat_bonuses": [
+          { "stat": "speed", "scaling-stat": "dex", "scale": 1.0 }
+        ]
+      }
+	  
+	  ],
+	"onmiss_buffs": [
+      {
+        "id": "mma_buff_ataru_miss3",
+        "name": "Spot an opening",
+        "description": "You feel they have a weak point you can exploit.",
+        "melee_allowed": true,
+		"skill_requirements": [ { "name": "melee", "level": 4 } ],
+		"buff_duration": 1, 
+        "flat_bonuses": [
+          { "stat": "hit", "scaling-stat": "dex", "scale": 0.5 }
+        ]
+      }
+	  
+	  ],
+	"onmove_buffs": [
+	        {
+        "id": "mma_buff_ataru_onmove2",
+        "name": "Lets end this quick.",
+        "description": "damage buff",
+        "melee_allowed": true,
+		"buff_duration": 3,
+		"skill_requirements": [ { "name": "melee", "level": 4 } ],
+		"max_stacks": 4,
+        "flat_bonuses": [
+          { "stat": "arpen", "type": "cut", "scaling-stat": "per", "scale": 1.0 },
+          { "stat": "arpen", "type": "bash", "scaling-stat": "per", "scale": 1.0 },
+          { "stat": "arpen", "type": "stab", "scaling-stat": "per", "scale": 1.0 },
+          { "stat": "arpen", "type": "heat", "scaling-stat": "per", "scale": 1.0 }
+        ]
+      }
+    ],
+    "techniques": [ "mma_tec_ataru_lunge", "mma_tec_ataru_spin", "mma_tec_ataru_feint", "mma_tec_ataru_rapid" ],
+    "weapon_category": [ "1H_SWORDS", "2H_SWORDS" ]
+  },
+
+  {
+    "type": "martial_art",
+    "id": "style_mma_djem_so",
+    "name": { "str": "Djem So" },
+    "description": "Two fluid disciplines of lightsaber combat, which were considered physically demanding styles due to their requirement of quick transitions from dedicated defensive stances to all-out attacks. The Shien variant emphasized blaster redirection, and practitioners could utilize a reverse blade grip. The Djem So variant taught users maneuvers for saber-to-saber combat and blaster deflection.",
+    "initiate": [
+      "You brace yourself, blade held high and ready to strike.",
+      "%s adopts a powerful, aggressive stance."
+    ],
+    "learn_difficulty": 14,
+	"leg_block": 6,
+    "primary_skill": "cutting",
+    "strictly_melee": true,
+    "static_buffs": [
+      {
+        "id": "mma_buff_djemso_static1",
+        "name": "Reverse grip",
+        "description": "Your shit is all backwards.",
+		"buff_duration": 1,
+		"skill_requirements": [ { "name": "melee", "level": 5 } ],
+        "melee_allowed": true,
+        "flat_bonuses": [
+          { "stat": "speed", "scaling-stat": "dex", "scale": 1.0 },
+		  { "stat": "hit", "scaling-stat": "dex", "scale": 0.3 }
+        ],
+        "bonus_blocks": -1
+      }
+	  ],
+        "onpause_buffs": [
+    {
+		"id": "mma_buff_djemso_pause1",
+		"name": "Defensive Transition",
+		"description": "You focus on defensive options.",
+		"buff_duration":3,
+		"melee_allowed": true,
+		"skill_requirements": [ { "name": "spellcraft", "level": 4 }, { "name": "melee", "level": 4 } ],
+		"max_stacks": 2,
+		"flat_bonuses": [
+		{ "stat": "block", "scaling-stat": "str",  "scale": 1.0 },
+		{ "stat": "dodge", "scaling-stat": "dex",  "scale": 0.5 },
+	    { "stat": "armor", "type": "bullet", "scaling-stat": "str",  "scale": 2.0 }
+	]
+	}
+	],
+	"onhit_buffs": [
+      {
+        "id": "mma_buff_djemso_hit2",
+        "name": "Power Blows",
+        "description": "+200% damage scaling with Dex. Max stacks 2.",
+		"buff_duration": 3,
+        "melee_allowed": true,
+        "skill_requirements": [ { "name": "spellcraft", "level": 5 } ],
+		"max_stacks": 2,
+        "flat_bonuses": [
+          { "stat": "damage", "type": "bash", "scaling-stat": "dex", "scale": 2.0 },
+          { "stat": "damage", "type": "cut", "scaling-stat": "dex", "scale": 2.0 },
+		  { "stat": "damage", "type": "heat", "scaling-stat": "dex", "scale": 2.0 },
+          { "stat": "damage", "type": "stab", "scaling-stat": "dex", "scale": 2.0 }
+        ]
+      }
+	  ],
+    "techniques": [ "mma_tec_djemso_counter", "mma_tec_djemso_crush", "mma_tec_djemso_swipe" ],
+    "weapon_category": [ "BATONS", "1H_SWORDS" ]
+  },
+
+  {
+    "type": "martial_art",
+    "id": "style_mma_niman",
+    "name": { "str": "Niman" },
+    "description": "Considered the most popular lightsaber combat form in the Jedi Order, it balanced the qualities presented in all the other forms and lacked any of their major weaknesses, but it also did not incorporate any of their notable strengths. Less demanding than all the other previous combat styles, its approach was a careful balance between offense and defense but leaned towards the latter and extensive integration of Force powers.",
+    "initiate": [
+      "You settle into a calm, balanced stance.",
+      "%s adopts a flexible combat posture."
+    ],
+    "learn_difficulty": 15,
+    "primary_skill": "cutting",
+    "strictly_melee": true,
+    "static_buffs": [
+      {
+        "id": "mma_buff_niman_static1",
+        "name": "Balanced Form",
+        "description": "+Accuracy, +Dodge, +Block.",
+        "melee_allowed": true,
+		"bonus_dodges": 1,
+		"skill_requirements": [ { "name": "melee", "level": 5 } ],
+        "bonus_blocks": 1,
+        "flat_bonuses": [
+          { "stat": "hit", "scaling-stat": "int", "scale": 0.5 },
+          { "stat": "dodge", "scaling-stat": "dex", "scale": 0.5 },
+          { "stat": "block", "scaling-stat": "per", "scale": 0.5 }
+        ]
+      }
+    ],
+	    "onpause_buffs": [
+      {
+        "id": "mma_buff_niman_pause2",
+        "name": "Steady blade",
+        "description": "+Block, +bullet armor.",
+        "melee_allowed": true,
+		"buff_duration": 3,
+        "skill_requirements": [ { "name": "spellcraft", "level": 5 } ],
+		"max_stacks": 3,
+        "flat_bonuses": [
+          { "stat": "block", "scaling-stat": "int", "scale": 1.0 },
+		  { "stat": "armor", "type": "bullet", "scaling-stat": "dex",  "scale": 1.0}
+        ],
+		"mult_bonuses": [
+          { "stat": "block", "scaling-stat": "dex", "scale": 1.0 },
+		  { "stat": "armor", "type": "bullet", "scaling-stat": "int",  "scale": 1.0}
+        ]
+      }
+    ],
+    "techniques": [ "mma_tec_niman_push","mma_tec_niman_arc", "mma_tec_niman_counter", "mma_tec_niman_break", "mma_tec_niman_feint", "mma_tec_niman_rapid" ],
+    "weapon_category": [ "1H_SWORDS", "2H_SWORDS" ]
+  },
+
+  {
+    "type": "martial_art",
+    "id": "style_mma_juyo",
+    "name": { "str": "Juyo" },
+    "description": "Considered the most aggressive and unpredictable form and therefore the most controversial, it was a combat style with a history of the Jedi High Council forbidding it and later allowing only select users to practice the style. It was a style considered both physically and emotionally exhausting. The Juyo variant focused on aggressive assault and a mindset that drew upon anger and negative emotions to fuel relentless assault. This mindset caused many users to fall to the dark side of the Force or close to it.",
+    "initiate": [
+      "You unleash your fury, blade trembling with intent.",
+      "%s radiates barely contained aggression."
+    ],
+    "learn_difficulty": 16,
+    "primary_skill": "cutting",
+    "strictly_melee": true,
+    "static_buffs": [
+      {
+        "id": "mma_buff_juyo_static1",
+        "name": "Unrelenting Assault",
+        "description": "+200% damage, -90% block. +50% speed.",
+		"skill_requirements": [ { "name": "spellcraft", "level": 6 } ],
+        "melee_allowed": true,
+        "mult_bonuses": [
+          { "stat": "damage", "type": "bash", "scale": 2.0 },
+          { "stat": "damage", "type": "cut", "scale": 2.0 },
+		  { "stat": "damage", "type": "heat",  "scale": 2.0 },
+		  { "stat": "damage", "type": "stab",  "scale": 2.0 },
+          { "stat": "speed",  "scale": 1.5 },
+          { "stat": "block", "scale": -0.90 }
+        ]
+      }
+	 ],
+	 "onkill_buffs":[
+	   {
+        "id": "mma_buff_juyo_kill2",
+        "name": "Warmed up",
+        "description": "+200% damage, -50% block.",
+		"skill_requirements": [ { "name": "melee", "level": 6 } ],
+        "melee_allowed": true,
+		"max_stacks": 3,
+		"buff_duration": 6,
+        "mult_bonuses": [
+          { "stat": "arpen", "type": "bash","scaling-stat": "str", "scale": 2.0 },
+          { "stat": "arpen", "type": "cut","scaling-stat": "str", "scale": 2.0 },
+		  { "stat": "arpen", "type": "heat","scaling-stat": "str",  "scale": 2.0 },
+		  { "stat": "arpen", "type": "stab","scaling-stat": "str",  "scale": 2.0 }
+        ]
+      }
+    ],
+    "techniques": [ "mma_tec_juyo_frenzy", "mma_tec_juyo_execute" ],
+    "weapon_category": [ "2H_SWORDS" ]
+  },
+  {
+    "type": "technique",
+    "id": "mma_tec_makashi_rapid",
+    "name": "Rapid Strike",
+    "messages": [ "You deftly strike %s with a flourishing moulinette!", "<npcname> swiftly strikes %s!" ],
+    "skill_requirements": [ { "name": "melee", "level": 2 } ],
+    "melee_allowed": true,
+    "mult_bonuses": [ { "stat": "movecost", "scale": 0.6 } ],
+	"stun_dur": 1,
+	"crit_ok": true
+  },
+    {
+    "type": "technique",
+    "id": "mma_tec_makashi_lunge",
+    "name": "Lunging Strike",
+    "messages": [ "You strike with your weapon and step in!", "<npcname> swiftly strikes %s!" ],
+    "skill_requirements": [ { "name": "melee", "level": 2 } ],
+    "melee_allowed": true,
+    "mult_bonuses": [ { "stat": "movecost", "scale": 0.8 } ],
+	"req_buffs": "mma_buff_makashi_move",
+	"stun_dur": 1,
+	"knockback_dist": 1,
+	"knockback_follow": true,
+	"crit_ok": true,
+	"weighting": 2
+  },
+{
+  "type": "technique",
+  "id": "mma_tec_makashi_riposte",
+  "name": "Makashi Riposte",
+  "messages": [
+    "You turn aside %s's strike and respond with a precise riposte!",
+    "<npcname> deflects %s's attack and counters with precision!"
+  ],
+  "skill_requirements": [ { "name": "melee", "level": 2 } ],
+  "melee_allowed": true,
+  "crit_ok": true,
+  "block_counter": true
+},
+  {
+    "type": "technique",
+    "id": "mma_tec_makashi_feint",
+    "name": "Feint",
+    "messages": [ "Your attack misses %s but you don't let up!", "<npcname>'s attack misses %s but they don't let up!" ],
+    "skill_requirements": [ { "name": "melee", "level": 2 } ],
+    "unarmed_allowed": true,
+    "defensive": true,
+    "miss_recovery": true
+  },
+{
+  "type": "technique",
+  "id": "mma_tec_makashi_disarm",
+  "name": "Elegant Disarm",
+  "messages": [
+    "You deftly twist %s's weapon from their grasp!",
+    "<npcname> elegantly disarms %s!"
+  ],
+  "skill_requirements": [ { "name": "melee", "level": 3 } ],
+  "melee_allowed": true,
+  "mult_bonuses": [ { "stat": "movecost", "scale": 0.8 } ],
+  "crit_ok": true,
+  "disarms": true
+},
+  {
+    "type": "technique",
+    "id": "mma_tec_makashi_compound",
+    "name": "Compound Attack",
+    "messages": [ "Your feint leads to a compound attack against %s", "<npcname>'s feint leads to a compound attack against %s" ],
+    "skill_requirements": [ { "name": "melee", "level": 3 } ],
+    "melee_allowed": true,
+    "req_buffs": [ "mma_buff_makashi_miss" ],
+    "weighting": 4,
+    "crit_ok": true,
+    "mult_bonuses": [
+      { "stat": "damage", "type": "bash", "scale": 1.5 },
+      { "stat": "damage", "type": "cut", "scale": 1.5 },
+      { "stat": "damage", "type": "stab", "scale": 1.5 },
+	  { "stat": "damage", "type": "heat", "scale": 1.5 }
+    ]
+  },
+{
+  "type": "technique",
+  "id": "mma_tec_soresu_swift",
+  "name": "Swift Return",
+  "messages": [
+    "You weather %s's assault and strike back calmly.",
+    "<npcname> absorbs %s's attack and counters patiently."
+  ],
+  "skill_requirements": [ { "name": "melee", "level": 2 } ],
+  "melee_allowed": true,
+  "crit_ok": true,
+  "block_counter": true,
+  "req_buffs": [ "mma_buff_soresu_pause2" ],
+  "weighting": 2,
+  "disarms": true,
+  "mult_bonuses": [ { "stat": "movecost", "scale": 0 } ],
+  "stun_dur": 2
+
+},
+{
+  "type": "technique",
+  "id": "mma_tec_soresu_dcounter",
+  "name": "Strike the opening",
+  "messages": [
+    "You weather %s's assault and strike back calmly.",
+    "<npcname> absorbs %s's attack and counters patiently"
+  ],
+  "skill_requirements": [ { "name": "melee", "level": 4 } ],
+  "melee_allowed": true,
+  "req_buffs": [ "mma_buff_soresu_dodge" ],
+  "dodge_counter": true,
+  "disarms": true,
+  "mult_bonuses": [ { "stat": "movecost", "scale": 0 } ],
+  "weighting": 4,
+  "knockback_dist": 2
+
+},
+{
+  "type": "technique",
+  "id": "mma_tec_soresu_bcounter",
+  "name": "Strike the opening",
+  "messages": [
+    "You weather %s's assault and strike back calmly.",
+    "<npcname> absorbs %s's attack and counters patiently"
+  ],
+  "skill_requirements": [ { "name": "spellcraft", "level": 3 } ],
+  "melee_allowed": true,
+  "block_counter": true,
+  "crit_ok": true,
+  "req_buffs": [ "mma_buff_soresu_pause2" ],
+  "mult_bonuses": [ { "stat": "movecost", "scale": 0 } ],
+  "weighting": 4,
+  "stun_dur": 2
+
+},
+  {
+    "type": "technique",
+    "id": "mma_tec_soresu_break",
+    "name": "Grab Break",
+    "messages": [ "The %s tries to grab you, but you evade.", "The %s tries to grab <npcname>, but they stumble away!" ],
+    "skill_requirements": [ { "name": "melee", "level": 2 } ],
+    "unarmed_allowed": true,
+    "melee_allowed": true,
+    "defensive": true,
+    "grab_break": true
+  },
+    {
+    "type": "technique",
+    "id": "mma_tec_ataru_feint",
+    "name": "Feint",
+    "messages": [ "Your attack misses %s but you don't let up!", "<npcname>'s attack misses %s but they don't let up!" ],
+    "skill_requirements": [ { "name": "melee", "level": 3 } ],
+    "melee_allowed": true,
+    "defensive": true,
+    "miss_recovery": true
+  },
+{
+  "type": "technique",
+  "id": "mma_tec_ataru_lunge",
+  "name": "Ataru Lunge",
+  "messages": [
+    "You leap forward and strike %s with explosive speed!",
+    "<npcname> lunges forward and strikes %s!"
+  ],
+  "skill_requirements": [ { "name": "melee", "level": 3 } ],
+  "melee_allowed": true,
+  "stun_dur": 1,
+  "crit_ok": true,
+  "req_buffs": [ "mma_buff_ataru_miss3" ],
+  "weighting": 2,
+  "mult_bonuses": [ { "stat": "movecost", "scale": 0 } ],
+  "dodge_counter": true
+},
+{
+  "type": "technique",
+  "id": "mma_tec_ataru_spin",
+  "name": "Whirling Strike",
+  "messages": [
+    "You spin through %s and lash out at nearby foes!",
+    "<npcname> spins violently, striking multiple targets!"
+  ],
+  "skill_requirements": [ { "name": "spellcraft", "level": 4 } ],
+  "melee_allowed": true,
+  "req_buffs": [ "mma_buff_ataru_onmove2" ],
+  "weighting": 4,
+  "down_dur": 1,
+  "aoe": "spin"
+},
+{
+  "type": "technique",
+  "id": "mma_tec_djemso_counter",
+  "name": "Power Reversal",
+  "messages": [
+    "You meet %s's blow head-on and smash back with force!",
+    "<npcname> absorbs %s's strike and retaliates brutally!"
+  ],
+  "skill_requirements": [ { "name": "melee", "level": 4 } ],
+  "melee_allowed": true,
+  "weighting": 2,
+  "stun_dur": 2,
+  "crit_ok": true,
+  "block_counter": true
+},
+{
+  "type": "technique",
+  "id": "mma_tec_djemso_crush",
+  "name": "Overwhelming Blow",
+  "messages": [
+    "You reel your weapon back and strike at %s with crushing strength!",
+    "<npcname> delivers a devastating blow to %s!"
+  ],
+  "skill_requirements": [ { "name": "melee", "level": 4 } ],
+  "melee_allowed": true,
+  "knockback_dist": 2,
+  "weighting": 2,
+  "disarms": true,
+  "aoe": "impale"
+},
+{
+  "type": "technique",
+  "id": "mma_tec_djemso_swipe",
+  "name": "Wounding rend",
+  "messages": [
+    "You plant your feet and strike at %s legs with a hard swipe!",
+    "<npcname> delivers a devastating blow to %s!"
+  ],
+  "skill_requirements": [ { "name": "melee", "level": 5 } ],
+  "melee_allowed": true,
+  "knockback_dist": 2,
+  "knockback_follow": true,
+  "weighting": 2,
+  "disarms": true,
+  "aoe": "Wide",
+  "down_dur":2,
+  "crit_ok": true
+},
+{
+  "type": "technique",
+  "id": "mma_tec_niman_push",
+  "name": "Deflection blow",
+  "messages": [
+    "You deflect and send them reeling behind you!",
+    "<npcname> forces %s backward with controlled force!"
+  ],
+  "skill_requirements": [ { "name": "melee", "level": 5 } ],
+  "melee_allowed": true,
+  "req_buffs": [ "mma_buff_niman_pause2" ],
+  "weighting": 2,
+  "crit_ok": true,
+  "side_switch": true,
+  "down_dur": 1,
+  "knockback_dist": 1
+},
+{
+  "type": "technique",
+  "id": "mma_tec_niman_arc",
+  "name": "Sweeping arc",
+  "messages": [
+    "You beat them back with a arcing blow!",
+    "<npcname> forces %s backward with controlled force!"
+  ],
+  "skill_requirements": [ { "name": "melee", "level": 5 } ],
+  "melee_allowed": true,
+  "weighting": 2,
+  "crit_ok": true,
+  "side_switch": true,
+  "knockback_follow":true,
+  "aoe": "wide",
+  "down_dur": 1,
+  "knockback_dist": 1
+},
+{
+  "type": "technique",
+  "id": "mma_tec_niman_counter",
+  "name": "Adaptive Counter",
+  "messages": [
+    "You adapt to %s's attack and counter efficiently",
+    "<npcname> adapts instantly and counters %s."
+  ],
+  "skill_requirements": [ { "name": "melee", "level": 5 } ],
+  "melee_allowed": true,
+  "crit_ok": true,
+  "weighting": 2,
+  "block_counter": true,
+  "disarms": true
+},
+    {
+    "type": "technique",
+    "id": "mma_tec_soresu_rapid",
+    "name": "Disruptive Strike",
+    "messages": [ "You strike %s with a flick of your blade.", "<npcname> swiftly strikes %s." ],
+    "skill_requirements": [ { "name": "melee", "level": 3 } ],
+    "melee_allowed": true,
+	"req_buffs": [ "mma_buff_soresu_pause2" ],
+    "mult_bonuses": [ { "stat": "movecost", "scale": 0.8 } ],
+	"weighting": 2,
+	"crit_ok": true,
+	"stun_dur": 1
+  },
+  {
+    "type": "technique",
+    "id": "mma_tec_niman_rapid",
+    "name": "Swift Strike",
+    "messages": [ "You swiftly strike %s.", "<npcname> swiftly strikes %s." ],
+    "skill_requirements": [ { "name": "melee", "level": 4 } ],
+    "melee_allowed": true,
+    "mult_bonuses": [ { "stat": "movecost", "scale": 0.7 } ],
+	"stun_dur": 1,    
+	"crit_ok": true,
+	"weighting": 1
+  },
+      {
+    "type": "technique",
+    "id": "mma_tec_ataru_rapid",
+    "name": "Flowing blade",
+    "messages": [ "You strike %s with blinding speed!", "<npcname> swiftly strikes %s!" ],
+    "skill_requirements": [ { "name": "melee", "level": 2 } ],
+    "melee_allowed": true,    
+	"crit_ok": true,
+    "mult_bonuses": [ { "stat": "movecost", "scale": 0.5 } ],
+	"weighting": 1,
+	"aoe": "wide"
+  },
+    {
+    "type": "technique",
+    "id": "mma_tec_niman_feint",
+    "name": "Feint",
+    "messages": [ "You fake a strike at %s!", "<npcname> fakes a strike at %s!" ],
+    "skill_requirements": [ { "name": "melee", "level": 2 } ],
+    "melee_allowed": true,
+    "defensive": true,
+    "miss_recovery": true
+  },
+  {
+    "type": "technique",
+    "id": "mma_tec_niman_break",
+    "name": "Grab Break",
+    "messages": [ "The %s tries to grab you, but you evade its grab!", "The %s tries to grab <npcname>, but they evade its grab!" ],
+    "skill_requirements": [ { "name": "melee", "level": 3 } ],
+    "melee_allowed": true,
+    "defensive": true,
+    "grab_break": true
+  },
+{
+  "type": "technique",
+  "id": "mma_tec_juyo_frenzy",
+  "name": "Frenzied Assault",
+  "messages": [
+    "You unleash a savage flurry of strikes on %s!",
+    "<npcname> overwhelms %s with relentless fury!"
+  ],
+  "skill_requirements": [ { "name": "melee", "level": 4 } ],
+  "mult_bonuses": [ { "stat": "movecost", "scale": 0.6 } ],
+  "melee_allowed": true,
+  "aoe": "wide",
+  "stun_dur": 2,
+  "down_dur": 2,
+  "disarms": true
+},
+{
+  "type": "technique",
+  "id": "mma_tec_juyo_execute",
+  "name": "Merciless Finish",
+  "messages": [
+    "You attempt to finish %s with a brutal strike!",
+    "<npcname> attempts to finish %s mercilessly!"
+  ],
+  "req_buffs": [ "mma_buff_juyo_kill2" ],
+  "skill_requirements": [ { "name": "melee", "level": 6 } ],
+      "mult_bonuses": [
+      { "stat": "damage", "type": "bash", "scale": 1.5 },
+      { "stat": "damage", "type": "cut", "scale": 1.5 },
+      { "stat": "damage", "type": "heat", "scale": 1.5 },
+	  { "stat": "arpen", "type": "heat", "scaling-stat": "str", "scale": 1 }
+    ],
+  "melee_allowed": true,
+  "crit_ok": true,
+  "aoe": "wide",
+  "weighting": 4
+},
+{
+  "id": "manual_mma_makashi",
+  "copy-from": "book_martial",
+  "looks_like": "manual_karate",
+  "type": "GENERIC",
+  "name": { "str_sp": "Jedi Holocron: Form II" },
+  "description": "This device contains the teachings of the second form of Jedi lightsaber combat: Makashi.",
+  "book_data": { "martial_art": "style_mma_makashi" }
+},
+{
+  "id": "manual_mma_soresu",
+  "copy-from": "book_martial",
+  "looks_like": "manual_karate",
+  "type": "GENERIC",
+  "name": { "str_sp": "Jedi Holocron: Form III" },
+  "description": "This device contains the teachings of the third form of Jedi lightsaber combat: Soresu.",
+  "book_data": { "martial_art": "style_mma_soresu" }
+},
+{
+  "id": "manual_mma_ataru",
+  "copy-from": "book_martial",
+  "looks_like": "manual_karate",
+  "type": "GENERIC",
+  "name": { "str_sp": "Jedi Holocron: Form IV" },
+  "description": "This device contains the teachings of the fourth form of Jedi lightsaber combat: Ataru.",
+  "book_data": { "martial_art": "style_mma_ataru" }
+},
+{
+  "id": "manual_mma_djem_so",
+  "copy-from": "book_martial",
+  "looks_like": "manual_karate",
+  "type": "GENERIC",
+  "name": { "str_sp": "Jedi Holocron: Form V" },
+  "description": "This device contains the teachings of the fifth form of Jedi lightsaber combat: Djem So.",
+  "book_data": { "martial_art": "style_mma_djem_so" }
+},
+{
+  "id": "manual_mma_niman",
+  "copy-from": "book_martial",
+  "looks_like": "manual_karate",
+  "type": "GENERIC",
+  "name": { "str_sp": "Jedi Holocron: Form VI" },
+  "description": "This device contains the teachings of the sixth form of Jedi lightsaber combat: Niman.",
+  "book_data": { "martial_art": "style_mma_niman" }
+},
+{
+  "id": "manual_mma_juyo",
+  "copy-from": "book_martial",
+  "looks_like": "manual_karate",
+  "type": "GENERIC",
+  "name": { "str_sp": "Jedi Holocron: Form VII" },
+  "description": "This device contains the teachings of the seventh and most aggressive form of Jedi lightsaber combat: Juyo.",
+  "book_data": { "martial_art": "style_mma_juyo" }
+},
+    {
+    "id": "saberthrow",
+    "type": "SPELL",
+    "name": { "str": "Force Throw" },
+    "description": "You focus your energy and throw your weapon at your opponent like a boomerang.",
+    "valid_targets": [ "hostile", "ground" ],
+    "scale_int": true,
+	"scale_dex": true,
+    "flags": [  "PHYSICAL", "NO_EXPLOSION_VFX", "SOMATIC", "NO_LEGS", "MOD_MELEE_STAM", "MOD_MELEE_MOVES" ],
+    "effect": "line_attack",
+    "energy_source": "STAMINA",
+    "base_casting_time": 150,
+    "base_energy_cost": 150,
+    "difficulty": 6,
+    "max_level": 10,
+    "min_damage": 5,
+    "max_damage": 5,
+	"field_id": "fd_laser",
+	"field_chance": 2,
+	"min_field_intensity": 1,
+	"max_field_intensity": 3,
+    "damage_increment": 0,
+	"melee_dam": ["physical", "elemental"],
+    "min_range": 3,
+    "max_range": 23,
+    "range_increment": 2,
+	"skill": "throw",
+	"damage_type": "bash"
+  },
+    {
+    "type": "mutation",
+    "id": "forcesensitive",
+    "name": "Force Sensitive",
+    "points": 3,
+    "description": "You have an exceptionally high midichlorian count.",
+    "starting_trait": true,
+    "purifiable": false,
+    "valid": false,
+    "spells_learned": [ [ "saberthrow", 1 ] ]
+  },
+  {
+    "id": "ench_theforce",
+    "type": "enchantment",
+    "has": "HELD",
+	"mutations": [ "forcesensitive" ]
+  },
+    {
+    "id": "lightsaber_argent",
+	"looks_like": "broadsword",
+	"copy-from": "lightsaber_argent",
+	"name": { "str": "white lightsaber" },
+	"type": "GENERIC",
+	"relic_data": { "passive_effects": [ { "id": "ench_theforce" } ] },
+    "use_action": [
+      {
+        "menu_text": "Power Off",
+        "type": "transform",
+        "target": "saber_hilt_argent",
+        "msg": "psshht-"
+      },
+	      {
+      "type": "OXYTORCH"
+    },
+	{
+	"type": "learn_spell", "spells": [ "saberthrow" ] 
+	}
+	]
+  },
+  {
+	"id": "lightsaber_ceruleum",
+	"looks_like": "broadsword",
+	"copy-from": "lightsaber_ceruleum",
+	"name": { "str": "blue lightsaber" },
+	"type": "GENERIC",
+	"relic_data": { "passive_effects": [ { "id": "ench_theforce" } ] },
+    "use_action": [
+      {
+        "menu_text": "Power Off",
+        "type": "transform",
+        "target": "saber_hilt_ceruleum",
+        "msg": "psshht-"
+      },
+	      {
+      "type": "OXYTORCH"
+    },
+	{
+	"type": "learn_spell", "spells": [ "saberthrow" ] 
+	}
+	]
+  },
+  {
+	"id": "lightsaber_virid",
+	"copy-from": "lightsaber_virid",
+	"looks_like": "broadsword",
+	"name": { "str": "green lightsaber" },
+	"type": "GENERIC",
+	"relic_data": { "passive_effects": [ { "id": "ench_theforce" } ] },
+    "use_action": [
+      {
+        "menu_text": "Power Off",
+        "type": "transform",
+        "target": "saber_hilt_virid",
+        "msg": "psshht-"
+      },
+	      {
+      "type": "OXYTORCH"
+    },
+	{
+	"type": "learn_spell", "spells": [ "saberthrow" ] 
+	}
+	]
+  },
+  {
+	"id": "lightsaber_crimson",
+	"copy-from": "lightsaber_crimson",
+	"looks_like": "broadsword",
+	"name": { "str": "red lightsaber" },
+	"type": "GENERIC",
+	"relic_data": { "passive_effects": [ { "id": "ench_theforce" } ] },
+    "use_action": [
+      {
+        "menu_text": "Power Off",
+        "type": "transform",
+        "target": "saber_hilt_crimson",
+        "msg": "psshht-"
+      },
+	      {
+      "type": "OXYTORCH"
+    },
+	{
+	"type": "learn_spell", "spells": [ "saberthrow" ] 
+	}
+	]
+  },
+    {
+    "id": "welding_standard",
+    "type": "requirement",
+    "qualities": [ { "id": "GLARE", "level": 2 } ],
+    "tools": [ [ [ "welder", 10 ], [ "toolset", 15 ], [ "oxy_torch", 2 ], [ "lightsaber_argent", -1 ], [ "lightsaber_ceruleum", -1 ], [ "lightsaber_virid", -1 ], [ "lightsaber_crimson", -1 ] ] ]
+  },
+  {
+    "id": "guntrinket_focus",
+    "type": "GUNMOD",
+    "name": { "str": "focus trinket" },
+    "description": "A small trinket that allows a weapon to function as a magic focus. This makes it much easier to hit small targets.",
+    "weight": "6 g",
+    "volume": "250 ml",
+    "integral_volume": "0 ml",
+    "price": "40 USD",
+    "price_postapoc": "250 cent",
+    "material": [ "plastic" ],
+    "symbol": ":",
+	"install_time": "5 m",
+    "color": "dark_gray",
+    "location": "accessories",
+	"flags": [ "MAGIC_FOCUS", "IRREMOVABLE" ]
+  },
+    {
+    "type": "recipe",
+    "result": "guntrinket_focus",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_MODS",
+	"id_suffix": "22",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": "1 m",
+    "autolearn": [ [ "gun", 1 ] ],
+    "qualities": [ { "id": "TRANSMUTATION", "level": 1 } ],
+    "components": [ [ 
+	[ "deck_of_cards", 1 ], 
+	[ "magic_8_ball", 1 ], 
+	[ "cards_magic", 1 ],
+	[ "icon", 1 ],
+	[ "creepy_doll", 1 ],
+	[ "etched_skull", 1 ],
+	[ "pocketwatch", 1 ],
+	[ "pocketwatch_crude", 1 ],
+	[ "bone_flute", 1 ],
+	[ "barometer", 1 ],
+	[ "dog_whistle_wood", 1 ],
+	[ "pmc_dogtag", 1 ],
+	[ "family_photo", 1 ] ] 
+	]
+  }
+]

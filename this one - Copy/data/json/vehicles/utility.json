@@ -1,0 +1,275 @@
+[
+  {
+    "id": "autosweeper",
+    "type": "vehicle",
+    "name": "Automatic Street Sweeper",
+    "blueprint": [
+      [ "o--o" ],
+      [ "+=Xo" ],
+      [ "o--o" ]
+    ],
+    "parts": [
+      { "x": -1, "y": 1, "parts": [ "frame_vertical", "board_vertical" ] },
+      { "x": -1, "y": -1, "parts": [ "frame_vertical", "board_vertical" ] },
+      { "x": 1, "y": 0, "parts": [ "frame_horizontal", "board_horizontal", "headlight", "omnicam" ] },
+      { "x": 1, "y": 1, "parts": [ "frame_horizontal", "wheel_mount_medium_steerable", "wheel", "board_ne" ] },
+      { "x": -2, "y": 0, "parts": [ "frame_horizontal", "hatch" ] },
+      { "x": 0, "y": 0, "parts": [ "frame_vertical_2", "robot_controls", "engine_electric", "roof" ] },
+      { "x": -1, "y": 0, "parts": [ "frame_vertical_2", "roof", "vehicle_scoop" ] },
+      {
+        "x": -2,
+        "y": 1,
+        "parts": [
+          "frame_horizontal",
+          "wheel_mount_medium_steerable",
+          "wheel",
+          "storage_battery_mount",
+          "storage_battery_removable",
+          "board_se"
+        ]
+      },
+      { "x": 0, "y": 1, "parts": [ "frame_vertical", "board_vertical" ] },
+      { "x": 0, "y": -1, "parts": [ "frame_vertical", "board_vertical" ] },
+      { "x": 1, "y": -1, "parts": [ "frame_horizontal", "wheel_mount_medium_steerable", "wheel", "board_nw" ] },
+      {
+        "x": -2,
+        "y": -1,
+        "parts": [
+          "frame_horizontal",
+          "wheel_mount_medium_steerable",
+          "wheel",
+          "storage_battery_mount",
+          "storage_battery_removable",
+          "board_sw"
+        ]
+      }
+    ],
+    "items": [
+      { "x": -2, "y": 0, "chance": 50, "item_groups": [ "trash", "trash", "trash", "trash", "trash", "trash" ] },
+      { "x": -1, "y": 0, "chance": 100, "item_groups": [ "trash" ] }
+    ]
+  },
+  {
+    "id": "excavator",
+    "type": "vehicle",
+    "name": "Excavator",
+    "blueprint": [
+      [ "o-=o" ],
+      [ "|X={" ],
+      [ "o-=o" ]
+    ],
+    "parts": [
+      { "x": -1, "y": 1, "parts": [ "frame_se", "roof", "wheel_mount_medium", "wheel", "board_se", "muffler" ] },
+      { "x": 2, "y": -1, "parts": [ "frame_nw", "halfboard_nw", "headlight_reinforced" ] },
+      { "x": -1, "y": -1, "parts": [ "frame_sw", "roof", "wheel_mount_medium", "wheel", "board_sw" ] },
+      {
+        "x": 1,
+        "y": 0,
+        "parts": [ "frame_cross", "roof", "reinforced_windshield", "diesel_engine_i6", "alternator_truck", "battery_car" ]
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "parts": [ "frame_vertical", "roof", "wheel_mount_medium_steerable", "wheel", "reinforced_windshield" ]
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "parts": [ "frame_cross", "roof", "seat", "seatbelt", "floodlight", "controls", "dashboard", "horn_big" ]
+      },
+      { "x": 2, "y": 0, "parts": [ "crane_medium" ] },
+      { "x": -1, "y": 0, "parts": [ "frame_horizontal", "roof", "hatch", { "part": "tank", "fuel": "diesel" } ] },
+      { "x": 0, "y": 1, "parts": [ "frame_vertical", "roof", "door" ] },
+      { "x": 0, "y": -1, "parts": [ "frame_vertical", "roof", "door" ] },
+      { "x": 2, "y": 1, "parts": [ "frame_ne", "halfboard_ne", "headlight_reinforced" ] },
+      {
+        "x": 1,
+        "y": -1,
+        "parts": [ "frame_vertical", "roof", "wheel_mount_medium_steerable", "wheel", "reinforced_windshield" ]
+      }
+    ],
+    "items": [  ]
+  },
+  {
+    "id": "portable_generator",
+    "type": "vehicle",
+    "name": "Portable Generator",
+    "blueprint": [ [ "o-" ] ],
+    "parts": [
+      {
+        "x": 1,
+        "y": 0,
+        "parts": [
+          "frame_cover",
+          { "part": "tank_small", "fuel": "gasoline" },
+          "stowboard_vertical",
+          "controls_electronic",
+          "wheel_mount_light",
+          "wheel_small"
+        ]
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "parts": [ "frame_cover", "small_storage_battery", "engine_vtwin", "generator_7500w", "wheel_mount_light", "wheel_small" ]
+      }
+    ],
+    "items": [
+      { "x": 1, "y": 0, "chance": 50, "items": [ "jumper_cable" ] },
+      { "x": 1, "y": 0, "chance": 30, "items": [ "jumper_cable_heavy" ] },
+      { "x": 1, "y": 0, "chance": 20, "item_groups": [ "fuel_gasoline" ] }
+    ]
+  },
+  {
+    "id": "road_roller",
+    "type": "vehicle",
+    "name": "Road Roller",
+    "blueprint": [
+      [ "B--+'B" ],
+      [ "B='H'B" ],
+      [ "B=+#'B" ],
+      [ "B='H'B" ],
+      [ "B--+'B" ]
+    ],
+    "parts": [
+      { "x": -3, "y": 1, "parts": [ "frame_horizontal", "roller_drum" ] },
+      { "x": -1, "y": 1, "parts": [ "frame_horizontal", "windshield", "roof" ] },
+      { "x": 2, "y": 2, "parts": [ "frame_horizontal", "roller_drum" ] },
+      { "x": 0, "y": 2, "parts": [ "frame_horizontal", "door", "roof" ] },
+      { "x": 2, "y": -1, "parts": [ "frame_horizontal", "roller_drum" ] },
+      { "x": -1, "y": -1, "parts": [ "frame_horizontal", "windshield", "roof" ] },
+      { "x": -2, "y": 2, "parts": [ "frame_horizontal", "halfboard_horizontal" ] },
+      {
+        "x": 1,
+        "y": 0,
+        "parts": [ "frame_horizontal", "windshield", "roof", "diesel_engine_i6", "alternator_truck", "battery_car" ]
+      },
+      { "x": -3, "y": 2, "parts": [ "frame_horizontal", "roller_drum" ] },
+      { "x": 0, "y": -2, "parts": [ "frame_horizontal", "door", "roof" ] },
+      { "x": 1, "y": -2, "parts": [ "frame_horizontal", "windshield", "roof" ] },
+      {
+        "x": -1,
+        "y": -2,
+        "parts": [ "frame_horizontal", "roof", "halfboard_horizontal", { "part": "tank", "fuel": "diesel" } ]
+      },
+      { "x": 1, "y": 1, "parts": [ "frame_horizontal", "windshield", "roof", "headlight" ] },
+      { "x": -3, "y": 0, "parts": [ "frame_horizontal", "roller_drum" ] },
+      { "x": -2, "y": 0, "parts": [ "frame_horizontal", "trunk" ] },
+      {
+        "x": 0,
+        "y": 0,
+        "parts": [ "frame_horizontal", "roof", "seat", "seatbelt", "controls", "dashboard", "vehicle_alarm", "horn_car" ]
+      },
+      { "x": 2, "y": 0, "parts": [ "frame_horizontal", "roller_drum" ] },
+      { "x": -2, "y": -2, "parts": [ "frame_horizontal", "halfboard_horizontal" ] },
+      { "x": -1, "y": 0, "parts": [ "frame_horizontal", "door", "roof" ] },
+      { "x": -2, "y": 1, "parts": [ "frame_horizontal", "trunk" ] },
+      { "x": -3, "y": -2, "parts": [ "frame_horizontal", "roller_drum" ] },
+      { "x": 2, "y": -2, "parts": [ "frame_horizontal", "roller_drum" ] },
+      { "x": 0, "y": 1, "parts": [ "frame_horizontal", "roof", "trunk_floor" ] },
+      { "x": 0, "y": -1, "parts": [ "frame_horizontal", "roof", "trunk_floor" ] },
+      {
+        "x": -1,
+        "y": 2,
+        "parts": [ "frame_horizontal", "roof", "halfboard_horizontal", { "part": "tank", "fuel": "diesel" } ]
+      },
+      { "x": 1, "y": 2, "parts": [ "frame_horizontal", "windshield", "roof" ] },
+      { "x": 2, "y": 1, "parts": [ "frame_horizontal", "roller_drum" ] },
+      { "x": 1, "y": -1, "parts": [ "frame_horizontal", "windshield", "roof", "headlight" ] },
+      { "x": -3, "y": -1, "parts": [ "frame_horizontal", "roller_drum" ] },
+      { "x": -2, "y": -1, "parts": [ "frame_horizontal", "trunk" ] }
+    ],
+    "items": [ { "x": 0, "y": 0, "chance": 5, "items": [ "hat_hard" ] } ]
+  },
+  {
+    "id": "forklift",
+    "type": "vehicle",
+    "name": "Forklift",
+    "blueprint": [
+      [ "o#o-" ],
+      [ "o|o-" ]
+    ],
+    "parts": [
+      { "x": -1, "y": 1, "parts": [ "frame_se", "halfboard_se", "wheel_mount_light_steerable", "wheel_small" ] },
+      { "x": 1, "y": 0, "parts": [ "frame_nw", "halfboard_nw", "wheel_mount_light_steerable", "wheel_small" ] },
+      { "x": 1, "y": 1, "parts": [ "frame_ne", "halfboard_ne", "wheel_mount_light_steerable", "wheel_small" ] },
+      { "x": 0, "y": 0, "parts": [ "frame_horizontal", "seat", "roof", "controls", "dashboard" ] },
+      { "x": 2, "y": 0, "parts": [ "forklift_fork" ] },
+      { "x": -1, "y": 0, "parts": [ "frame_sw", "halfboard_sw", "wheel_mount_light_steerable", "wheel_small" ] },
+      {
+        "x": 0,
+        "y": 1,
+        "parts": [ "frame_horizontal", "engine_electric", "roof", "halfboard_vertical", "storage_battery" ]
+      },
+      { "x": 2, "y": 1, "parts": [ "forklift_fork" ] }
+    ],
+    "items": [
+      { "x": 0, "y": 0, "chance": 5, "items": [ "hat_hard" ] },
+      { "x": 2, "y": 0, "chance": 10, "items": [ "2x4" ] },
+      { "x": 2, "y": 1, "chance": 10, "items": [ "2x4" ] }
+    ]
+  },
+  {
+    "id": "trencher",
+    "type": "vehicle",
+    "name": "Trencher",
+    "blueprint": [
+      [ "o-=o " ],
+      [ "|X==&" ],
+      [ "o-=o " ]
+    ],
+    "parts": [
+      { "x": -1, "y": 1, "parts": [ "frame_se", "roof", "wheel_mount_medium", "wheel_wide_or", "board_se" ] },
+      { "x": 2, "y": -1, "parts": [ "frame_nw", "halfboard_nw", "headlight_reinforced" ] },
+      { "x": -1, "y": -1, "parts": [ "frame_sw", "roof", "wheel_mount_medium", "wheel_wide_or", "board_sw" ] },
+      { "x": 1, "y": 0, "parts": [ "frame_cross", "roof", "reinforced_windshield" ] },
+      { "x": 3, "y": 0, "parts": [ "rockwheel" ] },
+      {
+        "x": 1,
+        "y": 1,
+        "parts": [ "frame_vertical", "roof", "wheel_mount_medium_steerable", "wheel_wide_or", "reinforced_windshield" ]
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "parts": [
+          "frame_cross",
+          "roof",
+          "seat",
+          "seatbelt",
+          "floodlight",
+          "controls",
+          "dashboard",
+          "horn_big",
+          "engine_electric",
+          "storage_battery"
+        ]
+      },
+      { "x": 2, "y": 0, "parts": [ "frame_horizontal" ] },
+      { "x": -1, "y": 0, "parts": [ "frame_horizontal", "roof", "hatch" ] },
+      { "x": 0, "y": 1, "parts": [ "frame_vertical", "roof", "door" ] },
+      { "x": 0, "y": -1, "parts": [ "frame_vertical", "roof", "door" ] },
+      { "x": 2, "y": 1, "parts": [ "frame_ne", "halfboard_ne", "headlight_reinforced" ] },
+      {
+        "x": 1,
+        "y": -1,
+        "parts": [ "frame_vertical", "roof", "wheel_mount_medium_steerable", "wheel_wide_or", "reinforced_windshield" ]
+      }
+    ],
+    "items": [  ]
+  },
+  {
+    "id": "oa_work_light",
+    "type": "vehicle",
+    "name": "work light",
+    "blueprint": [ "^" ],
+    "parts": [
+      {
+        "x": 0,
+        "y": 0,
+        "parts": [ "xlframe_vertical_2", "wheel_caster", "small_storage_battery", "floodlight", "controls_electronic" ]
+      }
+    ],
+    "items": [  ]
+  }
+]

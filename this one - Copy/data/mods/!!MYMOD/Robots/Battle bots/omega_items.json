@@ -1,0 +1,11 @@
+[
+  {
+    "id": "omega_bmg_burst_fake",
+    "copy-from": "m2browning_turret_fake",
+    "type": "GUN",
+    "name": { "str_sp": "M2HB Browning MG" },
+    "description": "If you see it - it is bug!",
+    "modes": [ [ "DEFAULT", "burst", 3 ] ],
+    "//": "fake fire-control gun for Omega Mk. V - guarantees an exact 3-round burst every attack, no reliance on inherited AUTO behavior"
+  }
+]

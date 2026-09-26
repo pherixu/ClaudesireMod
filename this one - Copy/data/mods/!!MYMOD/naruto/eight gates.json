@@ -1,0 +1,738 @@
+[
+  
+  {
+    "type": "skill",
+    "id": "jutsu",
+    "name": { "str": "Chakra Control" },
+    "display_category": "display_ranged",
+    "description": "Represents your ability to cast jutsu and use chakra effectively."
+  },
+  {
+    "id": "ench_gate_one",
+    "type": "enchantment",
+    "has": "WORN",
+    "ench_effects": [ { "effect": "gate_one", "intensity": 1 } ]
+  },
+  {
+    "type": "effect_type",
+    "id": "gate_one_pain",
+    "name": [ "Inner Gates Pain" ],
+    "desc": [ "You are experiencing great deals of pain from using the eight inner gates" ],
+    "apply_message": "Your body was taken beyond it's limit...",
+    "remove_message": "You are slowly recovering from using the eight inner gates form.",
+    "rating": "good",
+    "base_mods": {  "pain_min": [ 40 ],"pain_max_val": [ 40 ] }
+  },
+  
+  {
+    "type": "effect_type",
+    "id": "gate_one",
+    "name": [ "First Gate: Gate of Opening" ],
+    "desc": [ "Chakra flows freely through your body, increasing your physical prowess" ],
+    "apply_message": "You feel youthful energy burning inside you",
+    "remove_message": "You exit the eight inner gates formation.",
+    "rating": "good",
+    "effects_on_remove": [ { "allow_on_remove": true, "effect_type": "gate_one_pain", "duration": "1 m" } ],
+    "base_mods": { "dex_mod": [ 7 ],"str_mod": [ 7 ],"per_mod": [ 3 ], "pain_min": [ 40 ],"pain_max_val": [ 40 ], "speed_mod": [ 40 ] }
+  },
+  
+  {
+    "id": "gate_one_armor",
+    "type": "ARMOR",
+    "name": "First Gate: Gate of Opening",
+    "description": "Youthful energy flows through your body!",
+    "weight": "1g",
+    "volume": "1ml",
+    "material": "concentrated_mana",
+    "price": "3646 cent",
+    "symbol": "o",
+    "color": "light_gray",
+    "covers": [ "legs", "torso", "arms", "hands", "head", "feet", "mouth", "eyes" ],
+	"relic_data": {
+      "passive_effects": [
+	  { "id": "ench_gate_one" },
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            { "value": "BONUS_DODGE", "add": 4 },
+            { "value": "SPEED", "multiply": 0.12},
+            { "value": "MOVE_COST", "add": -10 },
+            { "value": "ATTACK_COST", "add": -10 },
+            { "value": "DEXTERITY", "multiply": 0.12 },
+            { "value": "STRENGTH", "multiply": 0.12 }
+          ]
+        }
+      ]
+    },
+    "flags": [
+      "AURA",
+      "SEMITANGIBLE",
+      "OVERSIZE",
+      "ONLY_ONE",
+      "TRADER_AVOID",
+      "NO_TAKEOFF",
+      "NONCONDUCTIVE",
+      "POWERARMOR_COMPATIBLE"
+    ]
+  },
+  
+  {
+    "id": "gate_one",
+    "type": "SPELL",
+    "name": { "str": "First Gate: Gate of Opening" },
+    "description": "Enter the eight gates!",
+    "valid_targets": [ "self" ],
+    "flags": [ "CONCENTRATE", "LOUD", "VERBAL", "NO_LEGS", "NO_EXPLOSION_VFX" ],
+    "min_damage": 1,
+    "max_damage": 1,
+    "effect": "spawn_item",
+    "effect_str": "gate_one_armor",
+    "energy_source": "HP",
+    "difficulty": -10,
+    "max_level": 20,
+    "base_casting_time": 50,
+	"final_casting_time": 50, 
+    "base_energy_cost": 10,
+    "min_duration": 5000,
+    "max_duration": 5000,
+    "duration_increment": 2000
+  },
+  {
+    "id": "ench_gate_two",
+    "type": "enchantment",
+    "has": "WORN",
+    "ench_effects": [ { "effect": "gate_two", "intensity": 1 } ]
+  },
+  {
+    "type": "effect_type",
+    "id": "gate_two_pain",
+    "name": [ "Inner Gates Pain" ],
+    "desc": [ "You are experiencing great deals of pain from using the eight inner gates" ],
+    "apply_message": "Your body was taken beyond it's limit...",
+    "remove_message": "You are slowly recovering from using the eight inner gates form.",
+    "rating": "good",
+    "base_mods": {  "pain_min": [ 80 ],"pain_max_val": [ 80 ] }
+  },
+  
+  {
+    "type": "effect_type",
+    "id": "gate_two",
+    "name": [ "Second Gate: Gate of Healing" ],
+    "desc": [ "Chakra flows freely through your body, increasing your physical prowess" ],
+    "apply_message": "You feel youthful energy burning inside you",
+    "remove_message": "You exit the eight inner gates formation.",
+    "rating": "good",
+    "effects_on_remove": [ { "allow_on_remove": true, "effect_type": "gate_two_pain", "duration": "1 m" } ],
+    "base_mods": { "dex_mod": [ 10 ],"str_mod": [ 10 ],"per_mod": [ 5 ], "pain_min": [ 80 ],"pain_max_val": [ 80 ], "speed_mod": [ 60 ] }
+  },
+  
+  {
+    "id": "gate_two_armor",
+    "type": "ARMOR",
+    "name": "Second Gate: Gate of Healing",
+    "description": "Youthful energy flows through your body!",
+    "weight": "1g",
+    "volume": "1ml",
+    "material": "concentrated_mana",
+    "price": "3646 cent",
+    "symbol": "o",
+    "color": "light_gray",
+    "covers": [ "legs", "torso", "arms", "hands", "head", "feet", "mouth", "eyes" ],
+	"relic_data": {
+      "passive_effects": [
+	  { "id": "ench_gate_two" },
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            { "value": "BONUS_DODGE", "add": 6 },
+            { "value": "SPEED", "multiply": 0.24},
+            { "value": "MOVE_COST", "add": -15 },
+            { "value": "ATTACK_COST", "add": -15 },
+            { "value": "DEXTERITY", "multiply": 0.24 },
+            { "value": "STRENGTH", "multiply": 0.24 }
+          ]
+        }
+      ]
+    },
+    "flags": [
+      "AURA",
+      "SEMITANGIBLE",
+      "OVERSIZE",
+      "ONLY_ONE",
+      "TRADER_AVOID",
+      "NO_TAKEOFF",
+      "NONCONDUCTIVE",
+      "POWERARMOR_COMPATIBLE"
+    ]
+  },
+  
+  {
+    "id": "gate_two",
+    "type": "SPELL",
+    "name": { "str": "Second Gate: Gate of Healing" },
+    "description": "Enter the eight gates!",
+    "valid_targets": [ "self" ],
+    "flags": [ "CONCENTRATE", "LOUD", "VERBAL", "NO_LEGS", "NO_EXPLOSION_VFX" ],
+    "min_damage": 1,
+    "max_damage": 1,
+    "effect": "spawn_item",
+    "effect_str": "gate_two_armor",
+    "energy_source": "HP",
+    "difficulty": -10,
+    "max_level": 20,
+    "base_casting_time": 50,
+	"final_casting_time": 50, 
+    "base_energy_cost": 10,
+    "min_duration": 5000,
+    "max_duration": 5000,
+    "duration_increment": 2000
+  },
+  {
+    "id": "ench_gate_three",
+    "type": "enchantment",
+    "has": "WORN",
+    "ench_effects": [ { "effect": "gate_three", "intensity": 1 } ]
+  },
+  {
+    "type": "effect_type",
+    "id": "gate_three_pain",
+    "name": [ "Inner Gates Pain" ],
+    "desc": [ "You are experiencing great deals of pain from using the eight inner gates" ],
+    "apply_message": "Your body was taken beyond it's limit...",
+    "remove_message": "You are slowly recovering from using the eight inner gates form.",
+    "rating": "good",
+    "base_mods": {  "pain_min": [ 120 ],"pain_max_val": [ 120 ] }
+  },
+  
+  {
+    "type": "effect_type",
+    "id": "gate_three",
+    "name": [ "Third Gate: Gate of Life" ],
+    "desc": [ "Chakra flows freely through your body, increasing your physical prowess" ],
+    "apply_message": "You feel youthful energy burning inside you",
+    "remove_message": "You exit the eight inner gates formation.",
+    "rating": "good",
+    "effects_on_remove": [ { "allow_on_remove": true, "effect_type": "gate_three_pain", "duration": "1 m" } ],
+    "base_mods": { "dex_mod": [ 13 ],"str_mod": [ 13 ],"per_mod": [ 7 ], "pain_min": [ 130 ],"pain_max_val": [ 130 ], "speed_mod": [ 80 ] }
+  },
+  
+  {
+    "id": "gate_three_armor",
+    "type": "ARMOR",
+    "name": "Third Gate: Gate of Life",
+    "description": "Youthful energy flows through your body!",
+    "weight": "1g",
+    "volume": "1ml",
+    "material": "concentrated_mana",
+    "price": "3646 cent",
+    "symbol": "o",
+    "color": "light_gray",
+    "covers": [ "legs", "torso", "arms", "hands", "head", "feet", "mouth", "eyes" ],
+	"relic_data": {
+      "passive_effects": [
+	  { "id": "ench_gate_three" },
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            { "value": "BONUS_DODGE", "add": 8 },
+            { "value": "SPEED", "multiply": 0.36},
+            { "value": "MOVE_COST", "add": -20 },
+            { "value": "ATTACK_COST", "add": -20 },
+            { "value": "DEXTERITY", "multiply": 0.36 },
+            { "value": "STRENGTH", "multiply": 0.36 }
+          ]
+        }
+      ]
+    },
+    "flags": [
+      "AURA",
+      "SEMITANGIBLE",
+      "OVERSIZE",
+      "ONLY_ONE",
+      "TRADER_AVOID",
+      "NO_TAKEOFF",
+      "NONCONDUCTIVE",
+      "POWERARMOR_COMPATIBLE"
+    ]
+  },
+  
+  {
+    "id": "gate_three",
+    "type": "SPELL",
+    "name": { "str": "Third Gate: Gate of Life" },
+    "description": "Enter the eight gates!",
+    "valid_targets": [ "self" ],
+    "flags": [ "CONCENTRATE", "LOUD", "VERBAL", "NO_LEGS", "NO_EXPLOSION_VFX" ],
+    "min_damage": 1,
+    "max_damage": 1,
+    "effect": "spawn_item",
+    "effect_str": "gate_three_armor",
+    "energy_source": "HP",
+    "difficulty": -10,
+    "max_level": 20,
+    "base_casting_time": 50,
+	"final_casting_time": 50, 
+    "base_energy_cost": 10,
+    "min_duration": 5000,
+    "max_duration": 5000,
+    "duration_increment": 2000
+  },
+  {
+    "id": "ench_gate_four",
+    "type": "enchantment",
+    "has": "WORN",
+    "ench_effects": [ { "effect": "gate_four", "intensity": 1 } ]
+  },
+  {
+    "type": "effect_type",
+    "id": "gate_four_pain",
+    "name": [ "Inner Gates Pain" ],
+    "desc": [ "You are experiencing great deals of pain from using the eight inner gates" ],
+    "apply_message": "Your body was taken beyond it's limit...",
+    "remove_message": "You are slowly recovering from using the eight inner gates form.",
+    "rating": "good",
+    "base_mods": {  "pain_min": [ 160 ],"pain_max_val": [ 160 ] }
+  },
+  
+  {
+    "type": "effect_type",
+    "id": "gate_four",
+    "name": [ "Fourth Gate: Gate of Pain" ],
+    "desc": [ "Chakra flows freely through your body, increasing your physical prowess" ],
+    "apply_message": "You feel youthful energy burning inside you",
+    "remove_message": "You exit the eight inner gates formation.",
+    "rating": "good",
+    "effects_on_remove": [ { "allow_on_remove": true, "effect_type": "gate_four_pain", "duration": "1 m" } ],
+    "base_mods": { "dex_mod": [ 16 ],"str_mod": [ 16 ],"per_mod": [ 9 ], "pain_min": [ 250 ],"pain_max_val": [ 250 ], "speed_mod": [ 100 ] }
+  },
+  
+  {
+    "id": "gate_four_armor",
+    "type": "ARMOR",
+    "name": "Fourth Gate: Gate of Pain",
+    "description": "Youthful energy flows through your body!",
+    "weight": "1g",
+    "volume": "1ml",
+    "material": "concentrated_mana",
+    "price": "3646 cent",
+    "symbol": "o",
+    "color": "light_gray",
+    "covers": [ "legs", "torso", "arms", "hands", "head", "feet", "mouth", "eyes" ],
+	"relic_data": {
+      "passive_effects": [
+	  { "id": "ench_gate_four" },
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            { "value": "BONUS_DODGE", "add": 10 },
+            { "value": "SPEED", "multiply": 0.48},
+            { "value": "MOVE_COST", "add": -25 },
+            { "value": "ATTACK_COST", "add": -25 },
+            { "value": "DEXTERITY", "multiply": 0.48 },
+            { "value": "STRENGTH", "multiply": 0.48 }
+          ]
+        }
+      ]
+    },
+    "flags": [
+      "AURA",
+      "SEMITANGIBLE",
+      "OVERSIZE",
+      "ONLY_ONE",
+      "TRADER_AVOID",
+      "NO_TAKEOFF",
+      "NONCONDUCTIVE",
+      "POWERARMOR_COMPATIBLE"
+    ]
+  },
+  
+  {
+    "id": "gate_four",
+    "type": "SPELL",
+    "name": { "str": "Fourth Gate: Gate of Pain" },
+    "description": "Enter the eight gates!",
+    "valid_targets": [ "self" ],
+    "flags": [ "CONCENTRATE", "LOUD", "VERBAL", "NO_LEGS", "NO_EXPLOSION_VFX" ],
+    "min_damage": 1,
+    "max_damage": 1,
+    "effect": "spawn_item",
+    "effect_str": "gate_four_armor",
+    "energy_source": "HP",
+    "difficulty": -10,
+    "max_level": 20,
+    "base_casting_time": 50,
+	"final_casting_time": 50, 
+    "base_energy_cost": 10,
+    "min_duration": 5000,
+    "max_duration": 5000,
+    "duration_increment": 2000
+  },
+  {
+    "id": "ench_gate_five",
+    "type": "enchantment",
+    "has": "WORN",
+    "ench_effects": [ { "effect": "gate_five", "intensity": 1 } ]
+  },
+  {
+    "type": "effect_type",
+    "id": "gate_five_pain",
+    "name": [ "Inner Gates Pain" ],
+    "desc": [ "You are experiencing great deals of pain from using the eight inner gates" ],
+    "apply_message": "Your body was taken beyond it's limit...",
+    "remove_message": "You are slowly recovering from using the eight inner gates form.",
+    "rating": "good",
+    "base_mods": {  "pain_min": [ 200 ],"pain_max_val": [ 200 ] }
+  },
+  
+  {
+    "type": "effect_type",
+    "id": "gate_five",
+    "name": [ "Fifth Gate: Gate of Limit" ],
+    "desc": [ "Chakra flows freely through your body, increasing your physical prowess" ],
+    "apply_message": "You feel youthful energy burning inside you",
+    "remove_message": "You exit the eight inner gates formation.",
+    "rating": "good",
+    "effects_on_remove": [ { "allow_on_remove": true, "effect_type": "gate_five_pain", "duration": "1 m" } ],
+    "base_mods": { "dex_mod": [ 19 ],"str_mod": [ 19 ],"per_mod": [ 11 ], "pain_min": [ 455 ],"pain_max_val": [ 455 ], "speed_mod": [ 120 ] }
+  },
+  
+  {
+    "id": "gate_five_armor",
+    "type": "ARMOR",
+    "name": "Fifth Gate: Gate of Limit",
+    "description": "Youthful energy flows through your body!",
+    "weight": "1g",
+    "volume": "1ml",
+    "material": "concentrated_mana",
+    "price": "3646 cent",
+    "symbol": "o",
+    "color": "light_gray",
+    "covers": [ "legs", "torso", "arms", "hands", "head", "feet", "mouth", "eyes" ],
+	"relic_data": {
+      "passive_effects": [
+	  { "id": "ench_gate_five" },
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            { "value": "BONUS_DODGE", "add": 12 },
+            { "value": "SPEED", "multiply": 0.60},
+            { "value": "MOVE_COST", "add": -30 },
+            { "value": "ATTACK_COST", "add": -30 },
+            { "value": "DEXTERITY", "multiply": 0.60 },
+            { "value": "STRENGTH", "multiply": 0.60 }
+          ]
+        }
+      ]
+    },
+    "flags": [
+      "AURA",
+      "SEMITANGIBLE",
+      "OVERSIZE",
+      "ONLY_ONE",
+      "TRADER_AVOID",
+      "NO_TAKEOFF",
+      "NONCONDUCTIVE",
+      "POWERARMOR_COMPATIBLE"
+    ]
+  },
+  
+  {
+    "id": "gate_five",
+    "type": "SPELL",
+    "name": { "str": "Fifth Gate: Gate of Limit" },
+    "description": "Enter the eight gates!",
+    "valid_targets": [ "self" ],
+    "flags": [ "CONCENTRATE", "LOUD", "VERBAL", "NO_LEGS", "NO_EXPLOSION_VFX" ],
+    "min_damage": 1,
+    "max_damage": 1,
+    "effect": "spawn_item",
+    "effect_str": "gate_five_armor",
+    "energy_source": "HP",
+    "difficulty": -10,
+    "max_level": 20,
+    "base_casting_time": 50,
+	"final_casting_time": 50, 
+    "base_energy_cost": 10,
+    "min_duration": 5000,
+    "max_duration": 5000,
+    "duration_increment": 2000
+  },
+  {
+    "id": "ench_gate_six",
+    "type": "enchantment",
+    "has": "WORN",
+    "ench_effects": [ { "effect": "gate_six", "intensity": 1 } ]
+  },
+  {
+    "type": "effect_type",
+    "id": "gate_six_pain",
+    "name": [ "Inner Gates Pain" ],
+    "desc": [ "You are experiencing great deals of pain from using the eight inner gates" ],
+    "apply_message": "Your body was taken beyond it's limit...",
+    "remove_message": "You are slowly recovering from using the eight inner gates form.",
+    "rating": "good",
+    "base_mods": {  "pain_min": [ 240 ],"pain_max_val": [ 240 ] }
+  },
+  
+  {
+    "type": "effect_type",
+    "id": "gate_six",
+    "name": [ "Sixth Gate: Gate of View" ],
+    "desc": [ "Chakra flows freely through your body, increasing your physical prowess" ],
+    "apply_message": "You feel youthful energy burning inside you",
+    "remove_message": "You exit the eight inner gates formation.",
+    "rating": "good",
+    "effects_on_remove": [ { "allow_on_remove": true, "effect_type": "gate_six_pain", "duration": "1 m" } ],
+    "base_mods": { "dex_mod": [ 22 ],"str_mod": [ 22 ],"per_mod": [ 13 ], "pain_min": [ 777 ],"pain_max_val": [ 777 ], "speed_mod": [ 140 ] }
+  },
+  
+  {
+    "id": "gate_six_armor",
+    "type": "ARMOR",
+    "name": "Sixth Gate: Gate of View",
+    "description": "Youthful energy flows through your body!",
+    "weight": "1g",
+    "volume": "1ml",
+    "material": "concentrated_mana",
+    "price": "3646 cent",
+    "symbol": "o",
+    "color": "light_gray",
+    "covers": [ "legs", "torso", "arms", "hands", "head", "feet", "mouth", "eyes" ],
+	"relic_data": {
+      "passive_effects": [
+	  { "id": "ench_gate_six" },
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            { "value": "BONUS_DODGE", "add": 14 },
+            { "value": "SPEED", "multiply": 0.72},
+            { "value": "MOVE_COST", "add": -35 },
+            { "value": "ATTACK_COST", "add": -35 },
+            { "value": "DEXTERITY", "multiply": 0.72 },
+            { "value": "STRENGTH", "multiply": 0.72 }
+          ]
+        }
+      ]
+    },
+    "flags": [
+      "AURA",
+      "SEMITANGIBLE",
+      "OVERSIZE",
+      "ONLY_ONE",
+      "TRADER_AVOID",
+      "NO_TAKEOFF",
+      "NONCONDUCTIVE",
+      "POWERARMOR_COMPATIBLE"
+    ]
+  },
+  
+  {
+    "id": "gate_six",
+    "type": "SPELL",
+    "name": { "str": "Sixth Gate: Gate of View" },
+    "description": "Enter the eight gates!",
+    "valid_targets": [ "self" ],
+    "flags": [ "CONCENTRATE", "LOUD", "VERBAL", "NO_LEGS", "NO_EXPLOSION_VFX" ],
+    "min_damage": 1,
+    "max_damage": 1,
+    "effect": "spawn_item",
+    "effect_str": "gate_six_armor",
+    "energy_source": "HP",
+    "difficulty": -10,
+    "max_level": 20,
+    "base_casting_time": 50,
+	"final_casting_time": 50, 
+    "base_energy_cost": 10,
+    "min_duration": 5000,
+    "max_duration": 5000,
+    "duration_increment": 2000
+  },
+  {
+    "id": "ench_gate_seven",
+    "type": "enchantment",
+    "has": "WORN",
+    "ench_effects": [ { "effect": "gate_seven", "intensity": 1 } ]
+  },
+  {
+    "type": "effect_type",
+    "id": "gate_seven_pain",
+    "name": [ "Inner Gates Pain" ],
+    "desc": [ "You are experiencing great deals of pain from using the eight inner gates" ],
+    "apply_message": "Your body was taken beyond it's limit...",
+    "remove_message": "You are slowly recovering from using the eight inner gates form.",
+    "rating": "good",
+    "base_mods": {  "pain_min": [ 280 ],"pain_max_val": [ 280 ] }
+  },
+  
+  {
+    "type": "effect_type",
+    "id": "gate_seven",
+    "name": [ "Seventh Gate: Gate of Wonder" ],
+    "desc": [ "Chakra flows freely through your body, increasing your physical prowess" ],
+    "apply_message": "You feel youthful energy burning inside you",
+    "remove_message": "You exit the eight inner gates formation.",
+    "rating": "good",
+    "effects_on_remove": [ { "allow_on_remove": true, "effect_type": "gate_seven_pain", "duration": "1 m" } ],
+    "base_mods": { "dex_mod": [ 25 ],"str_mod": [ 25 ],"per_mod": [ 15 ], "pain_min": [ 999 ],"pain_max_val": [ 999 ], "speed_mod": [ 160 ] }
+  },
+  
+  {
+    "id": "gate_seven_armor",
+    "type": "ARMOR",
+    "name": "Seventh Gate: Gate of Wonder",
+    "description": "Youthful energy flows through your body!",
+    "weight": "1g",
+    "volume": "1ml",
+    "material": "concentrated_mana",
+    "price": "3646 cent",
+    "symbol": "o",
+    "color": "light_gray",
+    "covers": [ "legs", "torso", "arms", "hands", "head", "feet", "mouth", "eyes" ],
+	"relic_data": {
+      "passive_effects": [
+	  { "id": "ench_gate_seven" },
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            { "value": "BONUS_DODGE", "add": 16 },
+            { "value": "SPEED", "multiply": 0.84},
+            { "value": "MOVE_COST", "add": -40 },
+            { "value": "ATTACK_COST", "add": -40 },
+            { "value": "DEXTERITY", "multiply": 0.84 },
+            { "value": "STRENGTH", "multiply": 0.84 }
+          ]
+        }
+      ]
+    },
+    "flags": [
+      "AURA",
+      "SEMITANGIBLE",
+      "OVERSIZE",
+      "ONLY_ONE",
+      "TRADER_AVOID",
+      "NO_TAKEOFF",
+      "NONCONDUCTIVE",
+      "POWERARMOR_COMPATIBLE"
+    ]
+  },
+  
+  {
+    "id": "gate_seven",
+    "type": "SPELL",
+    "name": { "str": "Seventh Gate: Gate of Wonder" },
+    "description": "Enter the eight gates!",
+    "valid_targets": [ "self" ],
+    "flags": [ "CONCENTRATE", "LOUD", "VERBAL", "NO_LEGS", "NO_EXPLOSION_VFX" ],
+    "min_damage": 1,
+    "max_damage": 1,
+    "effect": "spawn_item",
+    "effect_str": "gate_seven_armor",
+    "energy_source": "HP",
+    "difficulty": -10,
+    "max_level": 20,
+    "base_casting_time": 50,
+	"final_casting_time": 50, 
+    "base_energy_cost": 10,
+    "min_duration": 5000,
+    "max_duration": 5000,
+    "duration_increment": 2000
+  },
+  {
+    "id": "ench_gate_eight",
+    "type": "enchantment",
+    "has": "WORN",
+    "ench_effects": [ { "effect": "gate_eight", "intensity": 1 } ]
+  },
+  {
+    "type": "effect_type",
+    "id": "gate_eight_pain",
+    "name": [ "Inner Gates Death" ],
+    "desc": [ "You are experiencing great deals of pain from using the eight inner gates" ],
+    "apply_message": "Your body was taken beyond it's limit...",
+    "remove_message": "You are slowly recovering from using the eight inner gates form.",
+    "rating": "good",
+    "base_mods": {  "hurt_amount": [ 9999 ], "pain_min": [ 320 ],"pain_max_val": [ 320 ] }
+  },
+  
+  {
+    "type": "effect_type",
+    "id": "gate_eight",
+    "name": [ "Eighth Gate: Gate of Death" ],
+    "desc": [ "Chakra flows freely through your body, increasing your physical prowess" ],
+    "apply_message": "You feel youthful energy burning inside you",
+    "remove_message": "You exit the eight inner gates formation.",
+    "rating": "good",
+    "effects_on_remove": [ { "allow_on_remove": true, "effect_type": "gate_eight_pain", "duration": "1 m" } ],
+    "base_mods": { "dex_mod": [ 28 ],"str_mod": [ 28 ],"per_mod": [ 17 ], "pain_min": [ 320 ],"pain_max_val": [ 320 ], "speed_mod": [ 180 ] }
+  },
+  
+  {
+    "id": "gate_eight_armor",
+    "type": "ARMOR",
+    "name": "Eighth Gate: Gate of Death",
+    "description": "Youthful energy flows through your body!",
+    "weight": "1g",
+    "volume": "1ml",
+    "material": "concentrated_mana",
+    "price": "3646 cent",
+    "symbol": "o",
+    "color": "light_gray",
+    "covers": [ "legs", "torso", "arms", "hands", "head", "feet", "mouth", "eyes" ],
+	"relic_data": {
+      "passive_effects": [
+	  { "id": "ench_gate_eight" },
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            { "value": "BONUS_DODGE", "add": 18 },
+            { "value": "SPEED", "multiply": 1},
+            { "value": "MOVE_COST", "add": -45 },
+            { "value": "ATTACK_COST", "add": -45 },
+            { "value": "DEXTERITY", "multiply": 1 },
+            { "value": "STRENGTH", "multiply": 1 }
+          ]
+        }
+      ]
+    },
+    "flags": [
+      "AURA",
+      "SEMITANGIBLE",
+      "OVERSIZE",
+      "ONLY_ONE",
+      "TRADER_AVOID",
+      "NO_TAKEOFF",
+      "NONCONDUCTIVE",
+      "POWERARMOR_COMPATIBLE"
+    ]
+  },
+  
+  {
+    "id": "gate_eight",
+    "type": "SPELL",
+    "name": { "str": "Eighth Gate: Gate of Death" },
+    "description": "Enter the eight gates!",
+    "valid_targets": [ "self" ],
+    "flags": [ "CONCENTRATE", "LOUD", "VERBAL", "NO_LEGS", "NO_EXPLOSION_VFX" ],
+    "min_damage": 1,
+    "max_damage": 1,
+    "effect": "spawn_item",
+    "effect_str": "gate_eight_armor",
+    "energy_source": "HP",
+    "difficulty": -10,
+    "max_level": 20,
+    "base_casting_time": 50,
+	"final_casting_time": 50, 
+    "base_energy_cost": 10,
+    "min_duration": 5000,
+    "max_duration": 5000,
+    "duration_increment": 2000
+  }
+]

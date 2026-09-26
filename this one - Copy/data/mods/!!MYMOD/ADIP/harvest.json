@@ -1,0 +1,323 @@
+[
+  {
+    "id": "hemor",
+    "type": "harvest",
+    "entries": [
+      { "drop": "meat_tainted", "type": "flesh", "mass_ratio": 0.1 },
+	  { "drop": "chunk_sulfur", "type": "flesh", "mass_ratio": 0.01 },
+	  { "drop": "hemor_seed", "type": "bionic", "max": 1 },
+      { "drop": "chitin_piece", "type": "bone", "mass_ratio": 0.04 }
+    ]
+  },
+  {
+    "id": "walker",
+    "type": "harvest",
+    "entries": [
+      { "drop": "blood_tainted", "type": "blood", "mass_ratio": 0.01 },
+      { "drop": "meat_tainted", "type": "flesh", "mass_ratio": 0.04 },
+	  { "drop": "chunk_sulfur", "type": "flesh", "mass_ratio": 0.04 },
+      { "drop": "fat_tainted", "type": "flesh", "mass_ratio": 0.02 },
+      { "drop": "bone_tainted", "type": "bone", "mass_ratio": 0.01 }
+    ]
+  },
+  {
+    "id": "divine_calf_harvest",
+    "//": "drops large stomach",
+    "type": "harvest",
+    "entries": [
+      { "drop": "animal_blood", "type": "blood", "mass_ratio": 0.1 },
+	  { "drop": "veggy", "type": "offal", "mass_ratio": 0.05 },
+      { "drop": "meat", "type": "flesh", "mass_ratio": 0.5 },
+      { "drop": "meat_scrap", "type": "flesh", "mass_ratio": 0.01 },
+      { "drop": "lung", "type": "flesh", "mass_ratio": 0.0035 },
+      { "drop": "liver", "type": "offal", "mass_ratio": 0.01 },
+      { "drop": "brain", "type": "flesh", "mass_ratio": 0.005 },
+      { "drop": "sweetbread", "type": "flesh", "mass_ratio": 0.002 },
+      { "drop": "kidney", "type": "offal", "mass_ratio": 0.002 },
+      { "drop": "stomach_large", "scale_num": [ 1, 1 ], "max": 1, "type": "offal" },
+      { "drop": "sinew", "type": "bone", "mass_ratio": 0.001 },
+      { "drop": "bone", "type": "bone", "mass_ratio": 0.15 },
+      { "drop": "raw_fur", "type": "skin", "mass_ratio": 0.04 },
+	  { "drop": "hemor_seed", "type": "bionic", "max": 1 },
+	  { "drop": "switch_wandwood", "type": "bionic", "max": 1 },
+      { "drop": "fat", "type": "flesh", "mass_ratio": 0.07 }
+    ]
+  },
+  {
+    "id": "divine_elk_harvest",
+    "//": "drops large stomach",
+    "type": "harvest",
+    "entries": [
+      { "drop": "animal_blood", "type": "blood", "mass_ratio": 0.1 },
+	  { "drop": "blood", "type": "blood", "mass_ratio": 0.01 },
+	  { "drop": "veggy", "type": "offal", "mass_ratio": 0.05 },
+      { "drop": "meat", "type": "flesh", "mass_ratio": 0.5 },
+      { "drop": "meat_scrap", "type": "flesh", "mass_ratio": 0.01 },
+      { "drop": "lung", "type": "flesh", "mass_ratio": 0.0035 },
+      { "drop": "liver", "type": "offal", "mass_ratio": 0.01 },
+      { "drop": "brain", "type": "flesh", "mass_ratio": 0.005 },
+      { "drop": "sweetbread", "type": "flesh", "mass_ratio": 0.002 },
+      { "drop": "kidney", "type": "offal", "mass_ratio": 0.002 },
+      { "drop": "stomach_large", "scale_num": [ 1, 1 ], "max": 1, "type": "offal" },
+      { "drop": "sinew", "type": "bone", "mass_ratio": 0.001 },
+      { "drop": "bone", "type": "bone", "mass_ratio": 0.15 },
+      { "drop": "raw_fur", "type": "skin", "mass_ratio": 0.04 },
+	  { "drop": "hemor_seed", "type": "bionic", "max": 1 },
+	  { "drop": "switch_wandwood", "type": "bionic", "max": 6 },
+      { "drop": "fat", "type": "flesh", "mass_ratio": 0.07 }
+    ]
+  },
+  {
+    "id": "divine_elk_harvest",
+    "//": "drops large stomach",
+    "type": "harvest",
+    "entries": [
+      { "drop": "animal_blood", "type": "blood", "mass_ratio": 0.1 },
+	  { "drop": "blood", "type": "blood", "mass_ratio": 0.01 },
+	  { "drop": "veggy", "type": "offal", "mass_ratio": 0.05 },
+      { "drop": "meat", "type": "flesh", "mass_ratio": 0.5 },
+      { "drop": "meat_scrap", "type": "flesh", "mass_ratio": 0.01 },
+      { "drop": "lung", "type": "flesh", "mass_ratio": 0.0035 },
+      { "drop": "liver", "type": "offal", "mass_ratio": 0.01 },
+      { "drop": "brain", "type": "flesh", "mass_ratio": 0.005 },
+      { "drop": "sweetbread", "type": "flesh", "mass_ratio": 0.002 },
+      { "drop": "kidney", "type": "offal", "mass_ratio": 0.002 },
+      { "drop": "stomach_large", "scale_num": [ 1, 1 ], "max": 1, "type": "offal" },
+      { "drop": "sinew", "type": "bone", "mass_ratio": 0.001 },
+      { "drop": "bone", "type": "bone", "mass_ratio": 0.15 },
+      { "drop": "raw_fur", "type": "skin", "mass_ratio": 0.04 },
+	  { "drop": "ascended_seed", "type": "bionic", "max": 1 },
+	  { "drop": "crown_golden", "type": "bionic", "max": 1 },
+	  { "drop": "switch_wandwood", "type": "bionic", "max": 12 },
+      { "drop": "fat", "type": "flesh", "mass_ratio": 0.07 }
+    ]
+  },
+  {
+    "id": "accursed_elk_harvest",
+    "//": "drops large stomach",
+    "type": "harvest",
+    "entries": [
+      { "drop": "blood_tainted", "type": "blood", "mass_ratio": 0.1 },
+	  { "drop": "withered", "type": "offal", "mass_ratio": 0.05 },
+      { "drop": "meat", "type": "flesh", "mass_ratio": 0.32 },
+      { "drop": "meat_scrap", "type": "flesh", "mass_ratio": 0.01 },
+	  { "drop": "chunk_sulfur", "type": "flesh", "mass_ratio": 0.06 },
+      { "drop": "lung", "type": "flesh", "mass_ratio": 0.0035 },
+      { "drop": "liver", "type": "offal", "mass_ratio": 0.01 },
+      { "drop": "brain", "type": "flesh", "mass_ratio": 0.005 },
+      { "drop": "sweetbread", "type": "flesh", "mass_ratio": 0.002 },
+      { "drop": "kidney", "type": "offal", "mass_ratio": 0.002 },
+      { "drop": "stomach_large", "scale_num": [ 1, 1 ], "max": 1, "type": "offal" },
+      { "drop": "sinew", "type": "bone", "mass_ratio": 0.001 },
+      { "drop": "bone", "type": "bone", "mass_ratio": 0.15 },
+      { "drop": "raw_fur", "type": "skin", "mass_ratio": 0.04 },
+	  { "drop": "accursed_tree_seed", "type": "bionic", "max": 1 },
+	  { "drop": "wandwood_branch", "type": "bionic", "max": 1 },
+      { "drop": "fat", "type": "flesh", "mass_ratio": 0.07 }
+    ]
+  },
+  {
+    "id": "shockjock_harvest",
+    "type": "harvest",
+    "entries": [
+      { "drop": "harvest_maybe_military_heavy", "type": "bionic_group", "faults": [ "fault_bionic_nonsterile" ] },
+      { "drop": "blood", "type": "blood", "mass_ratio": 0.1 },
+      { "drop": "human_flesh", "type": "flesh", "mass_ratio": 0.2 },
+      { "drop": "hstomach", "scale_num": [ 1, 1 ], "max": 1, "type": "offal" },
+      { "drop": "human_fat", "type": "flesh", "mass_ratio": 0.1 },
+      { "drop": "sinew", "type": "bone", "mass_ratio": 0.001 },
+      { "drop": "bone_human", "type": "bone", "mass_ratio": 0.15 },
+      { "drop": "raw_hleather", "type": "skin", "mass_ratio": 0.03 },
+	  { "drop": "shock_jock_book", "type": "bionic", "max": 1 }
+    ]
+  },
+  {
+    "id": "lab_geek_harvest",
+    "type": "harvest",
+    "entries": [
+      { "drop": "harvest_power_storage_civ", "type": "bionic_group", "faults": [ "fault_bionic_nonsterile" ] },
+      { "drop": "harvest_bionics_sci", "type": "bionic_group", "faults": [ "fault_bionic_nonsterile" ] },
+      { "drop": "blood", "type": "blood", "mass_ratio": 0.1 },
+      { "drop": "human_flesh", "type": "flesh", "mass_ratio": 0.2 },
+      { "drop": "hstomach", "scale_num": [ 1, 1 ], "max": 1, "type": "offal" },
+      { "drop": "human_fat", "type": "flesh", "mass_ratio": 0.1 },
+      { "drop": "sinew", "type": "bone", "mass_ratio": 0.001 },
+      { "drop": "bone_human", "type": "bone", "mass_ratio": 0.15 },
+      { "drop": "raw_hleather", "type": "skin", "mass_ratio": 0.03 },
+	  { "drop": "lab_geek_book_self_mutation", "type": "bionic", "max": 1 }
+    ]
+  },
+  {
+    "id": "biohazard_harvest",
+    "type": "harvest",
+    "entries": [
+      { "drop": "blood", "type": "blood", "mass_ratio": 0.1 },
+      { "drop": "human_flesh", "type": "flesh", "mass_ratio": 0.2 },
+      { "drop": "hstomach", "scale_num": [ 1, 1 ], "max": 1, "type": "offal" },
+      { "drop": "human_fat", "type": "flesh", "mass_ratio": 0.1 },
+      { "drop": "sinew", "type": "bone", "mass_ratio": 0.001 },
+      { "drop": "bone_human", "type": "bone", "mass_ratio": 0.15 },
+      { "drop": "raw_hleather", "type": "skin", "mass_ratio": 0.03 },
+	  { "drop": "hazardous_reactor", "type": "bionic", "max": 1 }
+    ]
+  },
+  {
+    "id": "peace_officer_harvest",
+    "type": "harvest",
+    "entries": [
+      { "drop": "blood_tainted", "type": "blood", "mass_ratio": 0.1 },
+      { "drop": "meat_tainted", "type": "flesh", "mass_ratio": 0.25 },
+      { "drop": "fat_tainted", "type": "flesh", "mass_ratio": 0.08 },
+	  { "drop": "peace_officer_book", "type": "bionic", "max": 1 },
+      { "drop": "bone_tainted", "type": "bone", "mass_ratio": 0.1 }
+    ]
+  },
+  {
+    "id": "accursed_tree_harvest",
+    "type": "harvest",
+    "entries": [
+      { "drop": "log", "type": "bone", "mass_ratio": 0.35 },
+      { "drop": "stick_fiber", "type": "bone", "mass_ratio": 0.1 },
+      { "drop": "veggy", "type": "flesh", "mass_ratio": 0.2 },
+	  { "drop": "accursed_tree_seed", "type": "bionic", "max": 1 },
+	  { "drop": "wandwood_branch", "type": "bionic", "max": 1 },
+      { "drop": "veggy", "type": "offal", "mass_ratio": 0.05 }
+    ]
+  },
+  {
+    "id": "mandrake_harvest",
+    "type": "harvest",
+    "entries": [
+      { "drop": "stick_fiber", "type": "bone", "mass_ratio": 0.1 },
+      { "drop": "veggy", "type": "flesh", "mass_ratio": 0.2 },
+	  { "drop": "mandrake_root", "type": "bionic", "max": 2 },
+      { "drop": "veggy", "type": "offal", "mass_ratio": 0.05 }
+    ]
+  },
+  {
+    "id": "brineweed_harvest",
+    "type": "harvest",
+    "entries": [
+	  { "drop": "brineweed", "type": "bionic", "max": 1 },
+      { "drop": "pearl", "type": "offal", "mass_ratio": 0.01 }
+    ]
+  },
+  {
+    "id": "secret_sedge_harvest",
+    "type": "harvest",
+    "entries": [
+	  { "drop": "sedge_buds", "type": "bionic", "max": 3 },
+      { "drop": "veggy", "type": "offal", "mass_ratio": 0.05 }
+    ]
+  },
+  {
+    "id": "yinyang_koi_harvest",
+    "type": "harvest",
+    "entries": [
+      { "drop": "fish", "type": "flesh", "mass_ratio": 0.32 },
+      { "drop": "meat_scrap", "type": "flesh", "mass_ratio": 0.08 }
+    ]
+  },
+  {
+    "id": "psycho_harvest",
+    "type": "harvest",
+    "entries": [
+      { "drop": "harvest_maybe_survivalist", "type": "bionic_group", "faults": [ "fault_bionic_nonsterile" ] },
+      { "drop": "blood", "type": "blood", "mass_ratio": 0.1 },
+      { "drop": "human_flesh", "type": "flesh", "mass_ratio": 0.2 },
+      { "drop": "hstomach", "scale_num": [ 1, 1 ], "max": 1, "type": "offal" },
+      { "drop": "human_fat", "type": "flesh", "mass_ratio": 0.1 },
+      { "drop": "sinew", "type": "bone", "mass_ratio": 0.001 },
+      { "drop": "bone_human", "type": "bone", "mass_ratio": 0.15 },
+	  { "drop": "psycho_mask", "type": "bionic", "max": 1 },
+      { "drop": "raw_hleather", "type": "skin", "mass_ratio": 0.03 }
+    ]
+  },
+  {
+    "id": "psycho_wolf_harvest",
+    "//": "drops regular stomach",
+    "type": "harvest",
+    "entries": [
+      { "drop": "animal_blood", "type": "blood", "mass_ratio": 0.1 },
+      { "drop": "meat", "type": "flesh", "mass_ratio": 0.3 },
+      { "drop": "meat_scrap", "type": "flesh", "mass_ratio": 0.03 },
+      { "drop": "lung", "type": "flesh", "mass_ratio": 0.0035 },
+      { "drop": "liver", "type": "offal", "mass_ratio": 0.01 },
+      { "drop": "brain", "type": "flesh", "mass_ratio": 0.005 },
+      { "drop": "sweetbread", "type": "flesh", "mass_ratio": 0.002 },
+      { "drop": "kidney", "type": "offal", "mass_ratio": 0.002 },
+      { "drop": "stomach", "scale_num": [ 1, 1 ], "max": 1, "type": "offal" },
+      { "drop": "sinew", "type": "bone", "mass_ratio": 0.001 },
+      { "drop": "bone", "type": "bone", "mass_ratio": 0.15 },
+      { "drop": "raw_fur", "type": "skin", "mass_ratio": 0.08 },
+	  { "drop": "howlitzer", "type": "bionic", "max": 1 },
+	  { "drop": "helmet_skull", "type": "bionic", "max": 1 },
+      { "drop": "fat", "type": "flesh", "mass_ratio": 0.075 }
+    ]
+  },
+  {
+    "id": "superpsycho_harvest",
+    "type": "harvest",
+    "entries": [
+      { "drop": "harvest_maybe_military", "type": "bionic_group", "faults": [ "fault_bionic_nonsterile" ] },
+	  { "drop": "harvest_maybe_sci", "type": "bionic_group", "faults": [ "fault_bionic_nonsterile" ] },
+	  { "drop": "harvest_maybe_tech", "type": "bionic_group", "faults": [ "fault_bionic_nonsterile" ] },
+	  { "drop": "harvest_maybe_survivalist", "type": "bionic_group", "faults": [ "fault_bionic_nonsterile" ] },
+      { "drop": "blood", "type": "blood", "mass_ratio": 0.1 },
+      { "drop": "human_flesh", "type": "flesh", "mass_ratio": 0.2 },
+      { "drop": "hstomach", "scale_num": [ 1, 1 ], "max": 1, "type": "offal" },
+      { "drop": "human_fat", "type": "flesh", "mass_ratio": 0.1 },
+      { "drop": "sinew", "type": "bone", "mass_ratio": 0.001 },
+      { "drop": "bone_human", "type": "bone", "mass_ratio": 0.15 },
+      { "drop": "raw_hleather", "type": "skin", "mass_ratio": 0.03 },
+	  { "drop": "bio_shotgun", "type": "bionic", "max": 1 },
+	  { "drop": "bio_time_freeze", "type": "bionic", "max": 1 }
+    ]
+  },
+  {
+    "id": "tailor",
+    "type": "harvest",
+    "entries": [
+      { "drop": "blood", "type": "blood", "mass_ratio": 0.1 },
+      { "drop": "sinew", "type": "flesh", "mass_ratio": 0.2 },
+      { "drop": "sinew", "scale_num": [ 1, 1 ], "max": 1, "type": "offal" },
+      { "drop": "sinew", "type": "flesh", "mass_ratio": 0.1 },
+      { "drop": "sinew", "type": "bone", "mass_ratio": 0.001 },
+      { "drop": "sinew", "type": "bone", "mass_ratio": 0.15 },
+	  { "drop": "tailors_fingers", "type": "bionic", "max": 1 },
+      { "drop": "sinew", "type": "skin", "mass_ratio": 0.03 }
+    ]
+  },
+  {
+    "id": "wandwood_brush",
+    "type": "harvest",
+    "entries": [
+      { "drop": "stick_fiber", "type": "bone", "mass_ratio": 0.5 },
+	  { "drop": "wandwood_branch", "type": "flesh", "mass_ratio": 0.1 },
+      { "drop": "veggy", "type": "flesh", "mass_ratio": 0.2 },
+      { "drop": "veggy", "type": "offal", "mass_ratio": 0.05 }
+    ]
+  },
+  {
+    "id": "giant_rattlesnake_harvest",
+    "//": "drops large stomach",
+    "type": "harvest",
+    "entries": [
+      { "drop": "mutant_blood", "type": "blood", "mass_ratio": 0.1 },
+      { "drop": "mutant_meat", "type": "flesh", "mass_ratio": 0.32 },
+      { "drop": "mutant_meat_scrap", "type": "flesh", "mass_ratio": 0.01 },
+      { "drop": "lung", "type": "flesh", "mass_ratio": 0.0035 },
+      { "drop": "liver", "type": "offal", "mass_ratio": 0.01 },
+      { "drop": "brain", "type": "flesh", "mass_ratio": 0.005 },
+      { "drop": "sweetbread", "type": "flesh", "mass_ratio": 0.002 },
+      { "drop": "kidney", "type": "offal", "mass_ratio": 0.002 },
+      { "drop": "stomach_large", "scale_num": [ 1, 1 ], "max": 1, "type": "offal" },
+      { "drop": "sinew", "type": "bone", "mass_ratio": 0.001 },
+      { "drop": "bone_heavy", "type": "bone", "mass_ratio": 0.15 },
+      { "drop": "scute_piece", "type": "skin", "mass_ratio": 0.02 },
+      { "drop": "raw_leather", "type": "skin", "mass_ratio": 0.02 },
+	  { "drop": "giant_rattlesnake_gland", "type": "bionic", "max": 1 },
+      { "drop": "mutant_fat", "type": "flesh", "mass_ratio": 0.07 }
+    ]
+  }
+]

@@ -1,0 +1,281 @@
+[
+  {
+    "id": "sol_ring_recharge",
+    "type": "SPELL",
+    "name": {
+      "str": "Sol Ring Surge"
+    },
+    "description": "Draw a burst of mana from the Sol Ring.",
+    "valid_targets": [
+      "self"
+    ],
+    "effect": "recover_energy",
+    "effect_str": "MANA",
+    "energy_source": "NONE",
+    "base_energy_cost": 0,
+    "difficulty": 0,
+    "base_casting_time": 100,
+    "max_level": 1,
+    "min_damage": 500,
+    "max_damage": 500,
+    "damage_increment": 0,
+    "flags": [
+      "NO_FAIL",
+      "NO_LEGS",
+      "SILENT",
+      "NO_EXPLOSION_VFX"
+    ]
+  },
+  {
+    "id": "sol_ring",
+    "type": "TOOL_ARMOR",
+    "category": "clothing",
+    "name": {
+      "str": "Sol Ring"
+    },
+    "description": "A simple silver band that hums with stored light. Worn, it swells and steadies your mana; when the light gathers, use it to draw a burst of mana back into yourself.",
+    "weight": "20 g",
+    "volume": "10 ml",
+    "price": "0 cent",
+    "material": [
+      "silver",
+      "rune"
+    ],
+    "symbol": "=",
+    "color": "light_gray",
+    "covers": [
+      "hand_either"
+    ],
+    "coverage": 0,
+    "encumbrance": 0,
+    "material_thickness": 1,
+    "flags": [
+      "WATER_FRIENDLY",
+      "NO_SALVAGE",
+      "NO_REPAIR",
+      "UNBREAKABLE_MELEE"
+    ],
+    "initial_charges": 3,
+    "max_charges": 3,
+    "charges_per_use": 1,
+    "use_action": {
+      "type": "cast_spell",
+      "spell_id": "sol_ring_recharge",
+      "no_fail": true,
+      "level": 1,
+      "need_wielding": false
+    },
+    "relic_data": {
+      "recharge_scheme": [
+        {
+          "type": "time",
+          "req": "none",
+          "interval": "2 h",
+          "rate": 1
+        }
+      ],
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            {
+              "value": "MANA_CAP",
+              "add": 500
+            },
+            {
+              "value": "MANA_REGEN",
+              "multiply": 0.25
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "arcane_signet_recharge",
+    "type": "SPELL",
+    "name": {
+      "str": "Arcane Signet Surge"
+    },
+    "description": "Draw a burst of mana from the Arcane Signet.",
+    "valid_targets": [
+      "self"
+    ],
+    "effect": "recover_energy",
+    "effect_str": "MANA",
+    "energy_source": "NONE",
+    "base_energy_cost": 0,
+    "difficulty": 0,
+    "base_casting_time": 100,
+    "max_level": 1,
+    "min_damage": 1500,
+    "max_damage": 1500,
+    "damage_increment": 0,
+    "flags": [
+      "NO_FAIL",
+      "NO_LEGS",
+      "SILENT",
+      "NO_EXPLOSION_VFX"
+    ]
+  },
+  {
+    "id": "arcane_signet",
+    "type": "TOOL_ARMOR",
+    "category": "clothing",
+    "name": {
+      "str": "Arcane Signet"
+    },
+    "description": "A heavier signet etched with the sigils of every school. Tier 2 of the Sol Ring: a larger reservoir, faster regeneration and a deeper mana burst.",
+    "weight": "20 g",
+    "volume": "10 ml",
+    "price": "0 cent",
+    "material": [
+      "silver",
+      "rune"
+    ],
+    "symbol": "=",
+    "color": "cyan",
+    "covers": [
+      "hand_either"
+    ],
+    "coverage": 0,
+    "encumbrance": 0,
+    "material_thickness": 1,
+    "flags": [
+      "WATER_FRIENDLY",
+      "NO_SALVAGE",
+      "NO_REPAIR",
+      "UNBREAKABLE_MELEE"
+    ],
+    "initial_charges": 5,
+    "max_charges": 5,
+    "charges_per_use": 1,
+    "use_action": {
+      "type": "cast_spell",
+      "spell_id": "arcane_signet_recharge",
+      "no_fail": true,
+      "level": 1,
+      "need_wielding": false
+    },
+    "relic_data": {
+      "recharge_scheme": [
+        {
+          "type": "time",
+          "req": "none",
+          "interval": "1 h",
+          "rate": 1
+        }
+      ],
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            {
+              "value": "MANA_CAP",
+              "add": 1500
+            },
+            {
+              "value": "MANA_REGEN",
+              "multiply": 0.5
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "black_lotus_recharge",
+    "type": "SPELL",
+    "name": {
+      "str": "Black Lotus Surge"
+    },
+    "description": "Draw a burst of mana from the Black Lotus.",
+    "valid_targets": [
+      "self"
+    ],
+    "effect": "recover_energy",
+    "effect_str": "MANA",
+    "energy_source": "NONE",
+    "base_energy_cost": 0,
+    "difficulty": 0,
+    "base_casting_time": 100,
+    "max_level": 1,
+    "min_damage": 4000,
+    "max_damage": 4000,
+    "damage_increment": 0,
+    "flags": [
+      "NO_FAIL",
+      "NO_LEGS",
+      "SILENT",
+      "NO_EXPLOSION_VFX"
+    ]
+  },
+  {
+    "id": "black_lotus",
+    "type": "TOOL_ARMOR",
+    "category": "clothing",
+    "name": {
+      "str": "Black Lotus"
+    },
+    "description": "A single black petal set in a ring of pure mana. Tier 3 of the Sol Ring: a vast reservoir, rapid regeneration, and a torrent of mana on demand.",
+    "weight": "20 g",
+    "volume": "10 ml",
+    "price": "0 cent",
+    "material": [
+      "silver",
+      "rune"
+    ],
+    "symbol": "=",
+    "color": "magenta",
+    "covers": [
+      "hand_either"
+    ],
+    "coverage": 0,
+    "encumbrance": 0,
+    "material_thickness": 1,
+    "flags": [
+      "WATER_FRIENDLY",
+      "NO_SALVAGE",
+      "NO_REPAIR",
+      "UNBREAKABLE_MELEE"
+    ],
+    "initial_charges": 8,
+    "max_charges": 8,
+    "charges_per_use": 1,
+    "use_action": {
+      "type": "cast_spell",
+      "spell_id": "black_lotus_recharge",
+      "no_fail": true,
+      "level": 1,
+      "need_wielding": false
+    },
+    "relic_data": {
+      "recharge_scheme": [
+        {
+          "type": "time",
+          "req": "none",
+          "interval": "30 m",
+          "rate": 1
+        }
+      ],
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            {
+              "value": "MANA_CAP",
+              "add": 5000
+            },
+            {
+              "value": "MANA_REGEN",
+              "multiply": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

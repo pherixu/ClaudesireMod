@@ -1,0 +1,4 @@
+build type: windows-tiles-sounds-x64-msvc
+build number: 2025-12-24-0111
+commit sha: c879aaf66421a61c59ff9f576143edbcf3174daa
+commit url: https://github.com/cataclysmbnteam/Cataclysm-BN/commit/c879aaf66421a61c59ff9f576143edbcf3174daa

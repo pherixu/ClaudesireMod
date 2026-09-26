@@ -1,0 +1,435 @@
+[
+  {
+    "type": "overmap_special",
+    "id": "deviltower1",
+    "overmaps": [
+      {
+        "point": [
+          0,
+          0,
+          0
+        ],
+        "overmap": "deviltower1_ground_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          1
+        ],
+        "overmap": "deviltower1_living_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          2
+        ],
+        "overmap": "deviltower1_golems_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          3
+        ],
+        "overmap": "deviltower1_study_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          4
+        ],
+        "overmap": "deviltower1_roof_north"
+      }
+    ],
+    "locations": [
+      "wilderness"
+    ],
+    "city_distance": [
+      20,
+      -1
+    ],
+    "city_sizes": [
+      0,
+      20
+    ],
+    "occurrences": [
+      0,
+      2
+    ],
+    "flags": [
+      "ELECTRIC_GRID"
+    ]
+  },
+  {
+    "type": "overmap_special",
+    "id": "deviltower2",
+    "overmaps": [
+      {
+        "point": [
+          0,
+          0,
+          0
+        ],
+        "overmap": "deviltower2_ground_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          1
+        ],
+        "overmap": "deviltower2_stairs1_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          2
+        ],
+        "overmap": "deviltower2_stairs2_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          3
+        ],
+        "overmap": "deviltower2_study_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          4
+        ],
+        "overmap": "deviltower2_roof_north"
+      }
+    ],
+    "locations": [
+      "wilderness"
+    ],
+    "city_distance": [
+      20,
+      -1
+    ],
+    "city_sizes": [
+      0,
+      20
+    ],
+    "occurrences": [
+      0,
+      2
+    ],
+    "flags": [
+      "ELECTRIC_GRID"
+    ]
+  },
+  {
+    "type": "overmap_special",
+    "id": "deviltower5",
+    "overmaps": [
+      {
+        "point": [
+          0,
+          0,
+          0
+        ],
+        "overmap": "deviltower5_ground_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          1
+        ],
+        "overmap": "deviltower5_living_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          2
+        ],
+        "overmap": "deviltower5_golems_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          3
+        ],
+        "overmap": "deviltower5_study_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          4
+        ],
+        "overmap": "deviltower5_roof_north"
+      }
+    ],
+    "locations": [
+      "wilderness"
+    ],
+    "city_distance": [
+      20,
+      -1
+    ],
+    "city_sizes": [
+      0,
+      20
+    ],
+    "occurrences": [
+      0,
+      2
+    ],
+    "flags": [
+      "ELECTRIC_GRID"
+    ]
+  },
+  {
+    "type": "overmap_special",
+    "id": "deviltower6",
+    "overmaps": [
+      {
+        "point": [
+          0,
+          0,
+          0
+        ],
+        "overmap": "deviltower6_ground_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          1
+        ],
+        "overmap": "deviltower6_stairs1_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          2
+        ],
+        "overmap": "deviltower6_stairs2_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          3
+        ],
+        "overmap": "deviltower6_study_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          4
+        ],
+        "overmap": "deviltower6_roof_north"
+      }
+    ],
+    "locations": [
+      "wilderness"
+    ],
+    "city_distance": [
+      20,
+      -1
+    ],
+    "city_sizes": [
+      0,
+      20
+    ],
+    "occurrences": [
+      0,
+      2
+    ],
+    "flags": [
+      "ELECTRIC_GRID"
+    ]
+  },
+  {
+    "type": "overmap_special",
+    "id": "deviltower3",
+    "overmaps": [
+      {
+        "point": [
+          0,
+          0,
+          0
+        ],
+        "overmap": "deviltower3_ground_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          1
+        ],
+        "overmap": "deviltower3_living_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          2
+        ],
+        "overmap": "deviltower3_golems_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          3
+        ],
+        "overmap": "deviltower3_study_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          4
+        ],
+        "overmap": "deviltower3_roof_north"
+      }
+    ],
+    "locations": [
+      "wilderness"
+    ],
+    "city_distance": [
+      20,
+      -1
+    ],
+    "city_sizes": [
+      0,
+      20
+    ],
+    "occurrences": [
+      0,
+      2
+    ],
+    "flags": [
+      "ELECTRIC_GRID"
+    ]
+  },
+  {
+    "type": "overmap_special",
+    "id": "deviltower4",
+    "overmaps": [
+      {
+        "point": [
+          0,
+          0,
+          0
+        ],
+        "overmap": "deviltower4_ground_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          1
+        ],
+        "overmap": "deviltower4_stairs1_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          2
+        ],
+        "overmap": "deviltower4_stairs2_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          3
+        ],
+        "overmap": "deviltower4_study_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          4
+        ],
+        "overmap": "deviltower4_roof_north"
+      }
+    ],
+    "locations": [
+      "wilderness"
+    ],
+    "city_distance": [
+      20,
+      -1
+    ],
+    "city_sizes": [
+      0,
+      20
+    ],
+    "occurrences": [
+      0,
+      2
+    ],
+    "flags": [
+      "ELECTRIC_GRID"
+    ]
+  },
+  {
+    "type": "overmap_special",
+    "id": "devil_lmoe",
+    "overmaps": [
+      {
+        "point": [
+          0,
+          0,
+          0
+        ],
+        "overmap": "devillmoe_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          1
+        ],
+        "overmap": "devillmoe_roof_north"
+      },
+      {
+        "point": [
+          0,
+          0,
+          -1
+        ],
+        "overmap": "devillmoe_under_north"
+      }
+    ],
+    "locations": [
+      "forest_without_trail"
+    ],
+    "city_distance": [
+      25,
+      -1
+    ],
+    "city_sizes": [
+      0,
+      12
+    ],
+    "occurrences": [
+      1,
+      3
+    ],
+    "flags": [
+      "CLASSIC",
+      "ELECTRIC_GRID"
+    ]
+  }
+]

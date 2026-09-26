@@ -1,0 +1,4 @@
+[
+  { "rule": "withered plant", "active": true, "exclude": false },
+  { "rule": "long string", "active": true, "exclude": false }
+]

@@ -1,0 +1,71 @@
+[
+  {
+    "id": "third_eye_beam",
+    "type": "SPELL",
+    "name": { "str": "Third Eye Beam" },
+    "description": "A lance of searing light lashes out from the wearer's third eye.",
+    "valid_targets": [ "hostile" ],
+    "effect": "target_attack",
+    "damage_type": "light",
+    "min_damage": 45,
+    "max_damage": 45,
+    "damage_increment": 0,
+    "min_range": 1,
+    "max_range": 20,
+    "base_casting_time": 100,
+    "base_energy_cost": 0,
+    "energy_source": "NONE",
+    "difficulty": 0,
+    "max_level": 1,
+    "flags": [ "NO_FAIL", "NO_LEGS", "SILENT" ]
+  },
+  {
+    "id": "third_eye",
+    "type": "ARMOR",
+    "category": "clothing",
+    "symbol": "[",
+    "color": "magenta",
+    "looks_like": "copper_locket",
+    "name": { "str": "Third Eye" },
+    "description": "An amulet set with a single unblinking eye of crystallized mana. Worn, it doubles the wearer's mana, sharpens their mind to one and a half times its normal keenness, and opens the senses wide, raising Perception by 20 and lending a touch of extra Strength and Dexterity. A faint film of force clings to the skin beneath it, turning aside a small amount of every kind of harm. Its eye can loose a beam of searing light at will, at no cost.",
+    "weight": "80 g",
+    "volume": "50 ml",
+    "price": "0 cent",
+    "material": [ "rune", "silver" ],
+    "flags": [ "NO_REPAIR", "NO_SALVAGE" ],
+    "use_action": {
+      "type": "cast_spell",
+      "spell_id": "third_eye_beam",
+      "no_fail": true,
+      "level": 1,
+      "need_worn": true
+    },
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            { "value": "INTELLIGENCE", "multiply": 0.5 },
+            { "value": "PERCEPTION", "add": 20 },
+            { "value": "DEXTERITY", "add": 5 },
+            { "value": "STRENGTH", "add": 5 },
+            { "value": "MANA_CAP", "multiply": 1.0 },
+            { "value": "ARMOR_BASH", "add": -3 },
+            { "value": "ARMOR_CUT", "add": -3 },
+            { "value": "ARMOR_STAB", "add": -3 },
+            { "value": "ARMOR_BULLET", "add": -3 },
+            { "value": "ARMOR_HEAT", "add": -3 },
+            { "value": "ARMOR_COLD", "add": -3 },
+            { "value": "ARMOR_ELEC", "add": -3 },
+            { "value": "ARMOR_ACID", "add": -3 },
+            { "value": "ARMOR_BIO", "add": -3 },
+            { "value": "ARMOR_DARK", "add": -3 },
+            { "value": "ARMOR_LIGHT", "add": -3 },
+            { "value": "ARMOR_PSI", "add": -3 }
+          ]
+        }
+      ]
+    }
+  }
+]

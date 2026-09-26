@@ -1,0 +1,72 @@
+[
+  {
+    "id": "loxodon_heal",
+    "type": "SPELL",
+    "name": {
+      "str": "Loxodon Vigor"
+    },
+    "description": "The warhammer's momentum surges back into your body, mending your wounds with every blow.",
+    "valid_targets": [
+      "self"
+    ],
+    "effect": "target_attack",
+    "effect_str": "",
+    "min_damage": -12,
+    "max_damage": -12,
+    "damage_increment": 0,
+    "min_range": 1,
+    "max_range": 1,
+    "base_casting_time": 0,
+    "base_energy_cost": 0,
+    "energy_source": "NONE",
+    "difficulty": 0,
+    "max_level": 1,
+    "flags": [
+      "NO_FAIL",
+      "NO_LEGS",
+      "SILENT"
+    ]
+  },
+  {
+    "id": "loxodon_warhammer",
+    "copy-from": "hammer_sledge",
+    "type": "GENERIC",
+    "category": "weapons",
+    "looks_like": "hammer_sledge",
+    "name": {
+      "str": "Loxodon Warhammer"
+    },
+    "description": "A massive two-handed war hammer, its head cast from some dense, faintly warm alloy. Every blow it lands seems to feed something back into the wielder's own body.",
+    "material": [
+      "steel",
+      "wood"
+    ],
+    "proportional": {
+      "bashing": 1.6,
+      "weight": 1.2,
+      "price": 3
+    },
+    "relative": {
+      "to_hit": 2
+    },
+    "extend": {
+      "flags": [
+        "UNBREAKABLE_MELEE"
+      ]
+    },
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [
+            {
+              "id": "loxodon_heal",
+              "hit_self": true
+            }
+          ]
+        }
+      ]
+    }
+  }
+]
